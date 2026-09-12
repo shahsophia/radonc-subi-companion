@@ -1,4 +1,39 @@
 /* ============================================================
+   MOTION HELPERS (scroll reveal, count-up, view transitions)
+   ============================================================ */
+const REDUCED_MOTION = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+
+const revealObserver = ("IntersectionObserver" in window) ? new IntersectionObserver((entries) => {
+  for (const entry of entries) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-visible");
+      revealObserver.unobserve(entry.target);
+    }
+  }
+}, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }) : null;
+
+function armReveal(el, delayMs = 0) {
+  if (REDUCED_MOTION || !revealObserver) return;
+  el.classList.add("reveal-pending");
+  el.style.setProperty("--d", delayMs + "ms");
+  revealObserver.observe(el);
+}
+
+function animateNumber(el, to, suffix = "") {
+  const from = parseFloat((el.textContent || "").replace(/[^0-9.-]/g, "")) || 0;
+  if (REDUCED_MOTION || from === to) { el.textContent = to + suffix; return; }
+  const duration = 650;
+  const start = performance.now();
+  function tick(now) {
+    const p = Math.min(1, (now - start) / duration);
+    const eased = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.round(from + (to - from) * eased) + suffix;
+    if (p < 1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+
+/* ============================================================
    SRS ENGINE (simplified Leitner / SM-2-lite)
    Intervals (days) by box: 0(new)->1, 1->2, 2->4, 3->9, 4->18, 5->35, 6+ mastered(60)
    ============================================================ */
@@ -94,11 +129,11 @@ function renderDashboard(){
   const seen = all.filter(c => getCardState(c.id).seen).length;
   const modulesReviewed = SERVICES.filter(s => svcSeenCount(s.id) > 0).length;
 
-  document.getElementById("stat-mastery").textContent = total ? Math.round(100*mastered/total)+"%" : "0%";
+  animateNumber(document.getElementById("stat-mastery"), total ? Math.round(100*mastered/total) : 0, "%");
   document.getElementById("stat-mastery-sub").textContent = `${mastered} of ${total} cards mastered`;
-  document.getElementById("stat-due").textContent = due;
-  document.getElementById("stat-reviewed").textContent = modulesReviewed;
-  document.getElementById("stat-seen").textContent = seen;
+  animateNumber(document.getElementById("stat-due"), due);
+  animateNumber(document.getElementById("stat-reviewed"), modulesReviewed);
+  animateNumber(document.getElementById("stat-seen"), seen);
   document.getElementById("stat-seen-sub").textContent = `of ${total} in deck`;
   document.getElementById("study-all-count").textContent = due;
 
@@ -106,6 +141,7 @@ function renderDashboard(){
 
   const grid = document.getElementById("service-grid");
   grid.innerHTML = "";
+  let tileIdx = 0;
   for(const svc of SERVICES){
     const cards = svcCards(svc.id);
     const dueN = svcDueCards(svc.id).length;
@@ -136,6 +172,8 @@ function renderDashboard(){
       </div>
     `;
     tile.addEventListener("click", () => openService(svc.id));
+    armReveal(tile, tileIdx * 50);
+    tileIdx++;
     grid.appendChild(tile);
   }
 }
@@ -147,6 +185,7 @@ function renderBackgroundGrid(){
   const grid = document.getElementById("background-grid");
   if(!grid) return;
   grid.innerHTML = "";
+  let bgIdx = 0;
   for(const sec of BACKGROUND){
     const tile = document.createElement("button");
     tile.className = "tile bg-tile";
@@ -160,6 +199,8 @@ function renderBackgroundGrid(){
       <div class="tile-meta"><span>${sec.question}</span></div>
     `;
     tile.addEventListener("click", () => openBackground(sec.id));
+    armReveal(tile, bgIdx * 50);
+    bgIdx++;
     grid.appendChild(tile);
   }
 }
@@ -215,6 +256,7 @@ function openService(svcId){
   if(cats.size === 0){
     catList.innerHTML = `<div class="empty-state"><div class="e-icon">🗂️</div>No cards in this deck yet.</div>`;
   }
+  let catIdx = 0;
   for(const [catName, catCards] of cats){
     const catDue = catCards.filter(c=>isDue(c.id)).length;
     const catMastered = catCards.filter(c=>getCardState(c.id).box >= MASTERY_BOX).length;
@@ -237,6 +279,8 @@ function openService(svcId){
     if(hasDoc){
       row.querySelector(".cat-info").addEventListener("click", () => openDoc(svcId, catName));
     }
+    armReveal(row, catIdx * 45);
+    catIdx++;
     catList.appendChild(row);
   }
 
@@ -382,8 +426,13 @@ function finishSession(){
    VIEW SWITCHING
    ============================================================ */
 function showView(id){
-  document.querySelectorAll(".view").forEach(v => v.classList.remove("active"));
-  document.getElementById(id).classList.add("active");
+  document.querySelectorAll(".view").forEach(v => v.classList.remove("active","view-enter"));
+  const next = document.getElementById(id);
+  next.classList.add("active");
+  if(!REDUCED_MOTION){
+    next.classList.add("view-enter");
+    next.addEventListener("animationend", () => next.classList.remove("view-enter"), { once:true });
+  }
   window.scrollTo({top:0, behavior:"instant"});
 }
 
@@ -465,6 +514,8 @@ function init(){
       if(e.key === "4") handleRate("easy");
     }
   });
+
+  document.querySelectorAll(".stat-cell").forEach((el, i) => armReveal(el, i * 60));
 
   renderDashboard();
 }
