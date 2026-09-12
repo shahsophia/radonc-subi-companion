@@ -1,0 +1,242 @@
+[
+  {
+    "id": "br-1",
+    "category": "Epidemiology & Risk Factors",
+    "front": "What is a woman's lifetime risk of developing breast cancer, and where does breast cancer rank among cancer diagnoses and cancer deaths in US women?",
+    "back": "Lifetime risk is about 1 in 8. Breast cancer is the most common malignancy in women (excluding non-melanoma skin cancer) and the 2nd leading cause of cancer death in women, after lung cancer."
+  },
+  {
+    "id": "br-2",
+    "category": "Epidemiology & Risk Factors",
+    "front": "What two receptor/oncogene statuses form the basis of breast cancer's clinical classification?",
+    "back": "Hormone receptor status (ER/PR positive vs negative) and HER2/neu oncogene status (amplified/overexpressed vs not), together these define the molecular subtypes and drive treatment selection."
+  },
+  {
+    "id": "br-3",
+    "category": "Epidemiology & Risk Factors",
+    "front": "Compare BRCA1 and BRCA2: inheritance pattern, gene locus, lifetime breast cancer risk, and phenotype association.",
+    "back": "BRCA1 (autosomal dominant, 17q21): 30-50% lifetime risk, more often triple-negative breast cancer.\nBRCA2 (autosomal dominant, 13q12): 50-60% lifetime risk."
+  },
+  {
+    "id": "br-4",
+    "category": "Epidemiology & Risk Factors",
+    "front": "Name three hereditary cancer syndromes (besides BRCA) associated with increased breast cancer risk, and a key feature of each.",
+    "back": "• Li-Fraumeni (TP53, 17p, AD): also sarcoma, leukemia, brain tumors, adrenocortical carcinoma\n• Cowden (PTEN, 10q23, AD): hamartomas\n• Ataxia-telangiectasia (ATM, 11q22, AR)\nPeutz-Jeghers is also associated with increased risk."
+  },
+  {
+    "id": "br-5",
+    "category": "Epidemiology & Risk Factors",
+    "front": "Which molecular subtype has the best prognosis and which has the worst? What is the general ER/PR/HER2/Ki67 profile of each?",
+    "back": "Luminal A (ER/PR+, HER2-, Ki67 <14%, ~70% of cases), best prognosis.\nLuminal B (ER/PR+, HER2 +/-, Ki67 ≥14%, ~10%).\nHER2-enriched (ER/PR-, HER2 amplified, ~10%).\nBasal-like (ER/PR-, HER2-, ~10%), worst prognosis; along with HER2-enriched, has higher response to neoadjuvant chemo.\nSeparately: ~80% of invasive cancers are IDC and 5-10% are ILC; the single most common specific diagnosis is \"invasive mammary carcinoma, NOS\" (essentially pure IDC)."
+  },
+  {
+    "id": "br-6",
+    "category": "Anatomy & Lymphatics",
+    "front": "Which breast quadrant harbors the most cancers, and which the fewest?",
+    "back": "Upper outer quadrant (UOQ) has the most breast volume and is the most common site for cancer. Lower inner quadrant (LIQ) is the least common site."
+  },
+  {
+    "id": "br-7",
+    "category": "Anatomy & Lymphatics",
+    "front": "What defines the boundaries of axillary level I?",
+    "back": "Inferior: pectoralis major inserts on the 4th rib. Superior: axillary vessels exit lateral to pectoralis minor."
+  },
+  {
+    "id": "br-8",
+    "category": "Anatomy & Lymphatics",
+    "front": "What defines axillary level II, and what are Rotter's nodes?",
+    "back": "Level II lies posterior to pectoralis major, where the axillary vessels cross behind pec minor. Rotter's (interpectoral) nodes lie in the space between the pectoralis major and minor muscles."
+  },
+  {
+    "id": "br-9",
+    "category": "Anatomy & Lymphatics",
+    "front": "What defines axillary level III (infraclavicular nodes)?",
+    "back": "Inferior: axillary vessels medial to pectoralis minor. Superior: pectoralis minor inserts on the coracoid process."
+  },
+  {
+    "id": "br-10",
+    "category": "Anatomy & Lymphatics",
+    "front": "Define the boundaries of the supraclavicular and internal mammary nodal regions, and note which tumors preferentially drain to the internal mammary chain.",
+    "back": "Supraclavicular nodes: from the bottom of the clavicular head to the cricoid, between the SCM and scalene muscles.\nInternal mammary nodes: first 3 intercostal spaces lateral to the sternum, following the internal mammary artery.\nMedial tumors (especially LIQ) are more likely to drain to internal mammary nodes."
+  },
+  {
+    "id": "br-11",
+    "category": "Workup & Staging",
+    "front": "Why is core needle biopsy strongly preferred over fine needle aspiration (FNA) for a suspicious breast lesion?",
+    "back": "FNA does not sample enough tissue/architecture to distinguish DCIS from invasive ductal carcinoma; core biopsy does. FNA may still be used if a patient is on anticoagulation and cannot hold it before biopsy."
+  },
+  {
+    "id": "br-12",
+    "category": "Workup & Staging",
+    "front": "At what clinical stage does additional systemic staging workup become indicated, and what does it include?",
+    "back": "Clinical stage IIIA and higher (T3N1, T4, or N2) warrants: CT chest/abdomen/pelvis, bone scan or PET-CT, consider brain MRI, and an echocardiogram if anthracycline-based chemotherapy is being considered."
+  },
+  {
+    "id": "br-13",
+    "category": "Workup & Staging",
+    "front": "What ER/PR and HER2 IHC cutoffs define positive, negative, and equivocal results?",
+    "back": "ER/PR: <1% is negative, <10% is considered low positive.\nHER2 IHC: 0 and 1+ = negative, 2+ = equivocal (reflex to FISH), 3+ = positive. FISH determines exact HER2 gene copy number (chromosome 17)."
+  },
+  {
+    "id": "br-14",
+    "category": "Workup & Staging",
+    "front": "How is Nottingham grade calculated, and what score ranges correspond to grades 1-3?",
+    "back": "A score of 1-3 is assigned for each of 3 factors (tubular formation, nuclear pleomorphism, mitotic count) and summed. Grade 1 = score 3-5; Grade 2 = score 6-7; Grade 3 = score 8-9."
+  },
+  {
+    "id": "br-15",
+    "category": "Workup & Staging",
+    "front": "What margin is considered adequate after breast-conserving surgery for invasive cancer vs. for DCIS?",
+    "back": "Invasive cancer: \"no tumor on ink\" is sufficient. DCIS: a margin >2 mm is considered negative/sufficient."
+  },
+  {
+    "id": "br-16",
+    "category": "Imaging",
+    "front": "What are the two standard screening mammogram views, and what unique anatomic region does one of them capture?",
+    "back": "Craniocaudal (CC) and mediolateral oblique (MLO). MLO is the only standard view that shows the axillary tail/upper-outer breast tissue."
+  },
+  {
+    "id": "br-17",
+    "category": "Imaging",
+    "front": "What do BI-RADS categories 3, 4, 5, and 6 mean?",
+    "back": "BI-RADS 3 = probably benign (≤2% malignancy risk; short-interval follow-up at 6/12/24 months).\nBI-RADS 4 = suspicious, consider biopsy (subdivided 4a/4b/4c).\nBI-RADS 5 = highly suggestive of malignancy, biopsy required (PPV ~71-95%+).\nBI-RADS 6 = biopsy-proven malignancy, imaging used for staging/extent."
+  },
+  {
+    "id": "br-18",
+    "category": "Imaging",
+    "front": "What are the classic mammographic findings suspicious for malignancy, and how do calcification patterns correlate with DCIS subtype?",
+    "back": "Spiculated mass, pleomorphic/clustered/linear-branching microcalcifications, and architectural distortion (often a subtle early sign). Casting-type/linear-branching calcifications correlate with comedo-type (high-grade) DCIS; granular calcifications correlate with non-comedo (lower-grade) DCIS."
+  },
+  {
+    "id": "br-19",
+    "category": "Imaging",
+    "front": "On breast ultrasound, what features distinguish a malignant mass from a benign mass?",
+    "back": "Malignant: hypoechoic, irregular/spiculated margins, taller-than-wide orientation, posterior acoustic shadowing, hyperechoic halo.\nBenign: oval, circumscribed, wider-than-tall, with posterior acoustic enhancement."
+  },
+  {
+    "id": "br-20",
+    "category": "Imaging",
+    "front": "On breast MRI, which two morphologic features have the highest positive predictive value for malignancy, and what do Type II/III kinetic curves suggest?",
+    "back": "Spiculated margins (~100% PPV) and irregular shape (~97% PPV) are the strongest predictors of malignancy. Type II (plateau) and Type III (washout) kinetic curves suggest malignancy; Type I (persistent/rising) favors a benign lesion."
+  },
+  {
+    "id": "br-21",
+    "category": "Imaging",
+    "front": "How does DCIS typically appear on breast MRI vs. mammography, and why does this matter for RT planning?",
+    "back": "On MRI, DCIS shows non-mass enhancement in a segmental/linear distribution, with \"clustered ring\" internal enhancement being the most specific pattern. On mammography, DCIS is most often calcifications alone (50-75%, often casting-type), but calcifications underestimate the true extent of disease, relevant when defining RT treatment margins."
+  },
+  {
+    "id": "br-22",
+    "category": "Imaging",
+    "front": "What imaging findings correlate with the clinical \"peau d'orange\" appearance of inflammatory breast cancer, and which modality best defines its extent?",
+    "back": "Diffuse skin thickening and coarsening of trabecular/Cooper's ligaments, diffusely increased breast density on mammography, often without a discrete dominant mass (mammography can be insensitive). MRI best defines extent, typically showing multiple small confluent masses (73%) with skin thickening. Diagnosis requires biopsy of skin/dermal lymphatics, it is a clinicopathologic diagnosis, not purely radiologic."
+  },
+  {
+    "id": "br-23",
+    "category": "Treatment Paradigms",
+    "front": "What is the standard management approach for DCIS, and when might radiation be omitted after mastectomy?",
+    "back": "After BCS, adjuvant RT is generally recommended, it roughly halves the risk of local recurrence, and about half of recurrences are invasive. Boost is considered for high grade, age ≤50, or close/positive margins; partial breast irradiation (PBI) can be considered if guideline-eligible. After mastectomy for DCIS, observation is typically adequate even with close or positive margins."
+  },
+  {
+    "id": "br-24",
+    "category": "Treatment Paradigms",
+    "front": "What is the current standard for axillary surgical staging, and when is full ALND still indicated?",
+    "back": "Sentinel lymph node biopsy (SLNB) is now standard for most invasive cancers (radioactive tracer +/- blue dye; average 2-3 nodes removed; false negative rate 8-10%). ALND remains standard for inflammatory breast cancer or a clinically positive axilla without neoadjuvant chemo. DCIS patients only get SLNB if undergoing mastectomy."
+  },
+  {
+    "id": "br-25",
+    "category": "Treatment Paradigms",
+    "front": "What are the absolute indications for post-mastectomy radiation therapy (PMRT)?",
+    "back": "T3-T4 disease, ≥4 positive nodes, or positive surgical margins. For 1-3 positive nodes, PMRT is \"strongly considered\" per NCCN. For T3N0, it's controversial, weigh other high-risk features (LVSI, grade, close/positive margins, premenopausal status)."
+  },
+  {
+    "id": "br-26",
+    "category": "Treatment Paradigms",
+    "front": "What nodal regions are included in regional nodal irradiation (RNI), and who typically receives it?",
+    "back": "RNI covers axillary levels I-III, supraclavicular nodes, and internal mammary nodes. It is typically given for node-positive disease, with consideration in any patient with microscopic nodal disease (>0.2 mm), accounting for other high-risk features (young age, grade, hormone status, LVSI, Ki67)."
+  },
+  {
+    "id": "br-27",
+    "category": "Treatment Paradigms",
+    "front": "How do you choose between a SERM and an aromatase inhibitor for adjuvant endocrine therapy, and what is the rule for LHRH agonists?",
+    "back": "Tamoxifen (SERM) is typically used in premenopausal patients (antagonist in breast, agonist in bone/uterus; risks: hot flashes, clots, uterine cancer). Aromatase inhibitors (anastrozole, letrozole) are typically used in postmenopausal patients (risks: bone loss, arthralgias/myalgias). LHRH agonists (leuprolide, goserelin) for ovarian suppression are never given alone, always combined with tamoxifen or an AI."
+  },
+  {
+    "id": "br-28",
+    "category": "Treatment Paradigms",
+    "front": "How does chemotherapy regimen selection and pCR rate differ by breast cancer subtype (HR+/HER2-, HER2+, triple-negative)?",
+    "back": "HR+/HER2-: lowest pCR (~10-20%); regimen chosen via genomic testing (Oncotype/Mammaprint); AC-T if node positive, TC if node negative.\nHER2+: ~60% pCR with neoadjuvant TCHP (docetaxel/carboplatin/trastuzumab/pertuzumab).\nTriple-negative: ~65% pCR with neoadjuvant Keynote-522 regimen (paclitaxel/carboplatin/pembrolizumab, then AC/pembrolizumab)."
+  },
+  {
+    "id": "br-29",
+    "category": "Treatment Paradigms",
+    "front": "What are the whole-breast RT dose/fractionation options, from conventional to extreme hypofractionation, and are they equivalent?",
+    "back": "Conventional: 50 Gy/25 Fx (5 weeks). Moderate hypofractionation: 42.56 Gy/16 Fx (Canadian/Whelan trial) or 40-40.05 Gy/15 Fx (UK Start B), non-inferior to conventional. Extreme hypofractionation: 26 Gy/5 Fx daily over 1 week (UK FAST Forward), non-inferior to 40 Gy/15 Fx and now widely adopted (27 Gy/5 Fx had worse toxicity). All are considered equivalent for local control in appropriately selected patients."
+  },
+  {
+    "id": "br-30",
+    "category": "Treatment Paradigms",
+    "front": "What are the ASTRO consensus criteria for adding a tumor bed boost after whole breast RT, and what is the typical dose?",
+    "back": "Boost is recommended for age ≤50, age 51-70 with high grade, or positive margins. Generally not needed in patients >70 with hormone-positive, low/intermediate-grade disease and negative margins >2mm. Typical dose: 10 Gy/4 Fx or 12.5 Gy/5 Fx. Boost reduces local recurrence but increases fibrosis/telangiectasia risk."
+  },
+  {
+    "id": "br-31",
+    "category": "High-Yield Literature",
+    "front": "What did NSABP B-06 establish about breast-conserving therapy vs. mastectomy?",
+    "back": "Lumpectomy + RT achieved equivalent overall survival to mastectomy, while adjuvant RT after lumpectomy significantly reduced ipsilateral breast tumor recurrence (39% → 14% at 20 years), the foundational trial for breast conservation."
+  },
+  {
+    "id": "br-32",
+    "category": "High-Yield Literature",
+    "front": "What did the EBCTCG 2011 meta-analysis show about adding RT after breast-conserving surgery?",
+    "back": "Across >10,000 patients, RT after BCS nearly halved 10-year recurrence (35% → 19%) and reduced 15-year breast cancer mortality by ~3.8%, roughly a 4:1 ratio of recurrences avoided (year 10) to deaths avoided (year 15)."
+  },
+  {
+    "id": "br-33",
+    "category": "High-Yield Literature",
+    "front": "What is the key takeaway from the DCIS radiation trials (NSABP B-17, SweDCIS, EORTC 10853, UK/ANZ) and RTOG 9804?",
+    "back": "Adjuvant whole breast RT after lumpectomy for DCIS roughly halves the risk of local recurrence (both invasive and in-situ) in every trial, with no overall survival benefit. RTOG 9804 showed this benefit holds even in \"low-risk\" DCIS (grade 1-2, <2.5 cm): IBTR 7% → 1% with RT."
+  },
+  {
+    "id": "br-34",
+    "category": "High-Yield Literature",
+    "front": "What did TAILORx establish about the 21-gene Oncotype DX Recurrence Score?",
+    "back": "In node-negative, hormone-positive patients with Oncotype score 11-25, endocrine therapy alone was non-inferior to chemotherapy + endocrine therapy for invasive disease-free survival at 9 years (83% vs. 84%), validating omission of chemotherapy in this group."
+  },
+  {
+    "id": "br-35",
+    "category": "High-Yield Literature",
+    "front": "What do NSABP B-32, AMAROS, and ACOSOG Z0011 collectively establish about SLNB vs. ALND?",
+    "back": "SLNB is highly accurate (~97%), and when SLN-positive, RNI (or, per Z0011, tangential fields covering the low axilla) gives equivalent oncologic outcomes to completion ALND with significantly less lymphedema and better arm function, SLNB has replaced routine ALND in appropriately selected patients."
+  },
+  {
+    "id": "br-36",
+    "category": "High-Yield Literature",
+    "front": "What did MA.20 and EORTC 22922 show about adding regional nodal irradiation (RNI) to whole breast RT in early-stage, node-positive/high-risk node-negative disease?",
+    "back": "Both showed a modest DFS benefit with RNI (MA.20: 82% vs 77% at 10 years; EORTC 22922: 72% vs 69%) without a significant 10-year OS benefit, though EORTC 22922 showed improved breast-cancer-specific mortality at 15 years. Toxicity (lymphedema, pneumonitis) is increased with RNI."
+  },
+  {
+    "id": "br-37",
+    "category": "High-Yield Literature",
+    "front": "What did CALGB 9343 and PRIME II show about omitting RT in elderly, low-risk, hormone-positive early-stage breast cancer?",
+    "back": "In patients ≥65-70 with stage I, ER+ disease treated with lumpectomy + tamoxifen, adding RT significantly reduced IBTR (roughly 10% → 1-2%) but did not improve overall survival, supporting individualized omission of RT with shared decision-making in this population."
+  },
+  {
+    "id": "br-38",
+    "category": "High-Yield Literature",
+    "front": "What did the DBCG 82b/82c and British Columbia trials establish about PMRT?",
+    "back": "In high-risk patients (axillary node-positive, tumor >5cm, or chest wall/skin invasion) treated with mastectomy + ALND + chemotherapy, adding PMRT + RNI improved not just locoregional control but also overall survival (~10% absolute OS benefit), establishing PMRT as an OS-improving therapy in high-risk disease."
+  },
+  {
+    "id": "br-39",
+    "category": "High-Yield Literature",
+    "front": "What did NSABP B-18 and B-27 establish about neoadjuvant vs. adjuvant chemotherapy timing, and the value of adding a taxane?",
+    "back": "B-18: no significant difference in DFS/OS between preoperative and postoperative chemo, but preoperative chemo allowed more breast-conserving surgery. B-27: adding preoperative docetaxel (AC-T) roughly doubled pathologic complete response (26% vs 13% with AC alone), though pCR should not be used as a surrogate survival endpoint."
+  },
+  {
+    "id": "br-40",
+    "category": "High-Yield Literature",
+    "front": "For patients with residual disease after neoadjuvant chemotherapy (no pCR), what adjuvant therapy is used based on HER2 status, and what trials support this?",
+    "back": "HER2-negative: adjuvant capecitabine (CREATE-X trial) improved DFS and OS, with greater benefit in triple-negative disease. HER2-positive: adjuvant T-DM1/Kadcyla (KATHERINE trial) improved 3-year DFS (88% vs 77%) compared to continuing trastuzumab."
+  }
+]

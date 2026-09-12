@@ -1,0 +1,272 @@
+[
+  {
+    "id": "gi-1",
+    "category": "Epidemiology & Risk Factors",
+    "front": "What is the ABCDEF mnemonic for squamous cell carcinoma of the esophagus risk factors?",
+    "back": "Achalasia, Bad diet (high fat/high temperature foods), Caustic stricture (lye ingestion), Cigarette smoking, Dysplasia/diverticuli, Esophageal webs (Plummer-Vinson), Familial/genetic."
+  },
+  {
+    "id": "gi-2",
+    "category": "Epidemiology & Risk Factors",
+    "front": "What is the BOG mnemonic for esophageal adenocarcinoma risk factors, and how does GERD frequency affect risk?",
+    "back": "Barrett's esophagus, Obesity, GERD. Weekly GERD symptoms increase risk by a factor of ~5; daily symptoms increase risk by a factor of ~7."
+  },
+  {
+    "id": "gi-3",
+    "category": "Epidemiology & Risk Factors",
+    "front": "What is the predominant esophageal cancer histology globally vs. in North America/Western Europe?",
+    "back": "Squamous cell carcinoma is ~90% of cases globally (typically upper/middle esophagus). Adenocarcinoma is ~70% of cases in North America and Western Europe (typically distal esophagus)."
+  },
+  {
+    "id": "gi-4",
+    "category": "Epidemiology & Risk Factors",
+    "front": "What is the 5-year survival for pancreatic adenocarcinoma overall, and by extent of disease at presentation?",
+    "back": "Overall ~13% 5-year survival: ~44% if localized, ~16% if locoregional, ~3% if metastatic. Pancreatic cancer is the 4th leading cause of cancer death; ~50% of patients present with distant metastasis."
+  },
+  {
+    "id": "gi-5",
+    "category": "Epidemiology & Risk Factors",
+    "front": "Which hereditary syndromes warrant high-risk pancreatic cancer screening, and what is the screening approach?",
+    "back": "Peutz-Jeghers (STK11/LKB1, start age 40), FAMMM (CDKN2A/TP16, start age 40), hereditary pancreatitis (PRSS1/SPINK1), and BRCA1/2, TP16, or Lynch (HNPCC) mutation carriers with ≥1 first-degree relative with pancreatic cancer (start age 45 or 10 years before the youngest affected relative's diagnosis). Screening is EUS and/or MRI/MRCP approximately every 12 months."
+  },
+  {
+    "id": "gi-6",
+    "category": "Epidemiology & Risk Factors",
+    "front": "What fraction of colorectal cancers arise in the rectum, and at what age does average-risk screening begin?",
+    "back": "Rectal cancer accounts for ~40% of colorectal cancer. Colorectal cancer is the 3rd most common cancer and 3rd most common cause of cancer death, with rising incidence in younger adults. Average-risk screening (colonoscopy is the gold standard, every 10 years) begins at age 45."
+  },
+  {
+    "id": "gi-7",
+    "category": "Epidemiology & Risk Factors",
+    "front": "What proportion of anal cancer cases are HPV-associated, and what are the other key risk factors?",
+    "back": "HPV is associated with ~85-90% of anal cancer cases (HPV-16 most common). Other risk factors: HIV, immunosuppression, smoking, receptive anal intercourse, and history of other HPV-related cancers (cervical, vulvar, vaginal). Anal cancer is 2x more common in women; rectal cancer is 5x more common than anal cancer overall."
+  },
+  {
+    "id": "gi-8",
+    "category": "Workup & Staging",
+    "front": "How is T-stage defined for esophageal cancer based on depth of invasion?",
+    "back": "T1a: lamina propria/muscularis mucosa • T1b: submucosa • T2: muscularis propria • T3: adventitia • T4a: pleura, pericardium, azygos vein, diaphragm, or peritoneum • T4b: aorta, vertebral body, or airway."
+  },
+  {
+    "id": "gi-9",
+    "category": "Workup & Staging",
+    "front": "What is the Siewert classification for gastroesophageal junction (GEJ) tumors?",
+    "back": "Class I: 1-5 cm superior to the GEJ. Class II: 1 cm above to 2 cm below the GEJ. Class III: 2-5 cm below the GEJ. GEJ tumors are defined as being within 5 cm of the true GEJ."
+  },
+  {
+    "id": "gi-10",
+    "category": "Workup & Staging",
+    "front": "Do squamous cell carcinoma and adenocarcinoma of the esophagus share the same TNM staging criteria in AJCC v8?",
+    "back": "Yes, TNM criteria (T/N/M definitions) are identical for SCC and ACA, but AJCC v8 assigns separate clinical group-stage tables for each histology, so the same T/N combination can map to a different overall stage depending on histology."
+  },
+  {
+    "id": "gi-11",
+    "category": "Workup & Staging",
+    "front": "How is T-stage defined for pancreatic adenocarcinoma in AJCC v8, and what defines N1 vs. N2?",
+    "back": "T1: ≤2 cm (T1a ≤0.5 cm, T1b 0.5-1 cm, T1c 1-2 cm) • T2: >2-4 cm • T3: >4 cm • T4: tumor involves the celiac axis, SMA, and/or common hepatic artery. N1: 1-3 positive nodes; N2: ≥4 positive nodes."
+  },
+  {
+    "id": "gi-12",
+    "category": "Workup & Staging",
+    "front": "How is T-stage defined for rectal cancer based on wall layer invasion?",
+    "back": "T1: invades submucosa • T2: invades muscularis propria • T3: invades pericolorectal soft tissue/fat • T4a: invades visceral peritoneum • T4b: invades adjacent organs/structures."
+  },
+  {
+    "id": "gi-13",
+    "category": "Workup & Staging",
+    "front": "What is the most accurate method to assess a rectal tumor's distance from the anal verge, and what imaging is standard for locoregional staging?",
+    "back": "DRE with proctoscopy is the most accurate method for measuring distance from the anal verge. MRI rectum with contrast is standard for locoregional (T and N) staging, with T2-weighted sequences most useful and DWI used to assess restricted diffusion."
+  },
+  {
+    "id": "gi-14",
+    "category": "Workup & Staging",
+    "front": "How is T-stage defined for anal cancer (AJCC 9th edition), and what are the nodal categories?",
+    "back": "T1: ≤2 cm • T2: 2-5 cm • T3: >5 cm • T4: invades adjacent organs (e.g., vagina, urethra, bladder). N1a: inguinal, mesorectal, superior rectal, internal iliac, or obturator nodes • N1b: external iliac nodes • N1c: N1a + N1b nodal involvement."
+  },
+  {
+    "id": "gi-15",
+    "category": "Imaging",
+    "front": "Which imaging modality is most accurate for T-staging esophageal cancer, and why?",
+    "back": "Endoscopic ultrasound (EUS), it resolves the 5-layer wall architecture of the esophagus, allowing distinction between T1/T2/T3 depth of invasion. EUS is also the most accurate modality for regional nodal staging (better than PET-CT) and allows FNA biopsy of suspicious nodes."
+  },
+  {
+    "id": "gi-16",
+    "category": "Imaging",
+    "front": "What are the strengths and weaknesses of PET-CT in esophageal cancer staging?",
+    "back": "PET-CT is superior for detecting nodal metastases (including FDG-avid normal-sized nodes) and distant metastases (bone, liver most common), but has poor accuracy for depth-of-invasion/T-staging (~50% sensitivity, ~80% specificity), should be correlated with EUS."
+  },
+  {
+    "id": "gi-17",
+    "category": "Imaging",
+    "front": "What is the 'double duct sign' and what does it suggest?",
+    "back": "Simultaneous dilation of both the common bile duct and the pancreatic duct, highly concerning for malignancy of the pancreatic head (or an ampullary tumor) obstructing both ducts. Should be approached as malignancy until proven otherwise."
+  },
+  {
+    "id": "gi-18",
+    "category": "Imaging",
+    "front": "On pancreatic protocol CT, during which phase is a tumor best seen, and how does it appear?",
+    "back": "Best conspicuity is on the late arterial/pancreatic phase (~30-40 seconds after contrast), the tumor is typically hypodense relative to normal pancreas and may become isodense (harder to see) on the delayed portal venous phase."
+  },
+  {
+    "id": "gi-19",
+    "category": "Imaging",
+    "front": "By CT, what degree of tumor-vessel contact defines an unresectable pancreatic tumor around the SMA or celiac axis?",
+    "back": "Contact >180° (encasement) around the SMA or celiac axis = unresectable (T4); CT has 89-100% positive predictive value for unresectability. SMV/portal vein involvement is assessed by similar degree-of-contact and contour-irregularity criteria."
+  },
+  {
+    "id": "gi-20",
+    "category": "Imaging",
+    "front": "What does a positive mesorectal fascia (MRF) on rectal MRI indicate, and what is EMVI?",
+    "back": "MRF-positive = CRM-positive: tumor, an involved node, or EMVI lies within 1 mm of the mesorectal fascia, this finding drives the decision for neoadjuvant chemoRT. EMVI (extramural vascular invasion) is serpiginous tumor signal tracking along a vein into perirectal fat, a marker of hematogenous spread and poor prognosis."
+  },
+  {
+    "id": "gi-21",
+    "category": "Imaging",
+    "front": "How does PET-CT compare to MRI/CT for nodal staging in anal cancer?",
+    "back": "PET-CT nodal sensitivity is 89-93% vs. only ~62% for MRI/CT, PET is strongly preferred for node detection and often changes radiation field design. Nodal assessment relies on morphology (irregular/spiculated margins, necrosis/heterogeneity), not size."
+  },
+  {
+    "id": "gi-22",
+    "category": "Treatment Paradigms: Esophageal & Pancreatic",
+    "front": "How is T1 esophageal cancer managed?",
+    "back": "Endoscopic resection (EMR or ESD) ± ablation is preferred; esophagectomy is an alternative. EMR is best for small lesions (<1.5 cm, piecemeal); ESD allows en bloc resection of larger lesions with more precise histologic staging."
+  },
+  {
+    "id": "gi-23",
+    "category": "Treatment Paradigms: Esophageal & Pancreatic",
+    "front": "What are the two main treatment paradigms for resectable T2-T4 or node-positive esophageal cancer?",
+    "back": "(1) Preoperative chemoRT (41.4-50.4 Gy with carboplatin/paclitaxel) → esophagectomy → adjuvant nivolumab if residual disease and R0 resection. (2) Perioperative FLOT chemotherapy → esophagectomy → FLOT (adenocarcinoma only)."
+  },
+  {
+    "id": "gi-24",
+    "category": "Treatment Paradigms: Esophageal & Pancreatic",
+    "front": "What is the standard definitive (non-surgical) chemoRT regimen for esophageal cancer?",
+    "back": "50.4 Gy/28 fractions with concurrent carboplatin/paclitaxel (or cisplatin/5-FU-based regimens) for patients who are not surgical candidates. No survival benefit to dose escalation beyond this (RTOG 9405 and ARTDECO were both negative dose-escalation trials)."
+  },
+  {
+    "id": "gi-25",
+    "category": "Treatment Paradigms: Esophageal & Pancreatic",
+    "front": "How does MSI-H/dMMR status change esophageal cancer treatment?",
+    "back": "Patients with MSI-H/dMMR tumors may receive neoadjuvant or perioperative immunotherapy alone (e.g., ipilimumab + nivolumab, pembrolizumab, or tremelimumab + durvalumab) instead of standard chemoRT or chemotherapy."
+  },
+  {
+    "id": "gi-26",
+    "category": "Treatment Paradigms: Esophageal & Pancreatic",
+    "front": "How is resectable pancreatic adenocarcinoma managed?",
+    "back": "Upfront surgery (Whipple procedure for head tumors, Appleby procedure for body/tail) → adjuvant chemotherapy (FOLFIRINOX preferred, gemcitabine/capecitabine an alternative). Adjuvant chemoRT (45-50.4 Gy/25-28 fx) is considered for positive nodes or positive margins."
+  },
+  {
+    "id": "gi-27",
+    "category": "Treatment Paradigms: Esophageal & Pancreatic",
+    "front": "How is borderline resectable pancreatic cancer managed?",
+    "back": "Neoadjuvant chemotherapy (FOLFIRINOX or gemcitabine/nab-paclitaxel) → reassess. If resectable → surgery; if still borderline → chemoRT or SBRT, then attempt surgery. The main goal of RT in this setting is to reduce the rate of R1 resection."
+  },
+  {
+    "id": "gi-28",
+    "category": "Treatment Paradigms: Esophageal & Pancreatic",
+    "front": "How is unresectable (locally advanced) pancreatic cancer managed?",
+    "back": "Chemotherapy is the backbone (FOLFIRINOX or gem/nab-paclitaxel); consider chemoRT or SBRT for locoregional control, or RT alone for symptom palliation. ChemoRT/SBRT does not improve OS but does improve locoregional control (LAP07)."
+  },
+  {
+    "id": "gi-29",
+    "category": "Treatment Paradigms: Esophageal & Pancreatic",
+    "front": "What are common SBRT dose-fractionation schemes for pancreatic cancer, and why is 5-fraction preferred over single-fraction?",
+    "back": "Common regimen: 40 Gy/5 fx to gross tumor + tumor-vessel interface, 25 Gy/5 fx to the elective nodal volume (celiac, SMA, peripancreatic nodes). Single-fraction SBRT (25 Gy/1 fx) causes unacceptably high duodenal toxicity (~29% at 1 year); 5-fraction regimens significantly reduce GI toxicity. SBRT is contraindicated if duodenal perforation is present."
+  },
+  {
+    "id": "gi-30",
+    "category": "Treatment Paradigms: Rectal & Anal",
+    "front": "How is stage I (T1-2 N0) rectal cancer typically managed?",
+    "back": "Surgery alone. Select small T1 tumors (<3 cm, <30% circumference, >3 mm margin, within 8 cm of the anal verge, well/moderately differentiated, no PNI/LVSI) can undergo transanal local excision; otherwise total mesorectal excision (TME) as either LAR or APR."
+  },
+  {
+    "id": "gi-31",
+    "category": "Treatment Paradigms: Rectal & Anal",
+    "front": "What is total neoadjuvant therapy (TNT) for locally advanced rectal cancer?",
+    "back": "Delivery of both chemotherapy and chemoRT prior to surgery (rather than splitting chemotherapy pre- and post-op), used to increase compliance with systemic therapy, maximize tumor response/downstaging, and enable organ preservation via a 'watch and wait' approach in patients with a complete response."
+  },
+  {
+    "id": "gi-32",
+    "category": "Treatment Paradigms: Rectal & Anal",
+    "front": "What are the two main radiotherapy fractionation schemes used for rectal cancer?",
+    "back": "Long-course chemoRT: 45 Gy to the elective nodal volume with a boost to 50.4-54 Gy to the involved mesorectum/nodes, given with concurrent 5-FU or capecitabine over ~5-5.5 weeks. Short-course RT: 25 Gy/5 fractions, RT alone, followed by surgery (or, within a TNT approach, followed by chemotherapy before surgery)."
+  },
+  {
+    "id": "gi-33",
+    "category": "Treatment Paradigms: Rectal & Anal",
+    "front": "What does surveillance ('watch and wait') look like for a rectal cancer patient with clinical complete response?",
+    "back": "H&P, CEA, DRE, and proctoscopy/flex sig every 3 months for 2 years, then every 6 months for 5 years • MRI rectum every 6 months for 3 years • CT CAP every 6 months for 5 years • Colonoscopy at 1 year post-treatment."
+  },
+  {
+    "id": "gi-34",
+    "category": "Treatment Paradigms: Rectal & Anal",
+    "front": "How is dMMR/MSI-H locally advanced rectal cancer treated?",
+    "back": "Immune checkpoint inhibitor (dostarlimab, nivolumab, or pembrolizumab) as neoadjuvant/definitive therapy, followed by surveillance/watch-and-wait, chemoRT and surgery are reserved for persistent disease at 6 months. A phase II dostarlimab study showed 100% sustained clinical complete response in dMMR patients."
+  },
+  {
+    "id": "gi-35",
+    "category": "Treatment Paradigms: Rectal & Anal",
+    "front": "What is the standard definitive treatment for T1 N0 anal canal SCC or T2-T4/N+ anal cancer?",
+    "back": "Definitive chemoRT with concurrent 5-fluorouracil + mitomycin-C (Nigro-type regimen), given as 2 cycles concurrent with RT (weeks 1 and 5). Response is assessed at 26 weeks; salvage APR is reserved for residual/persistent disease."
+  },
+  {
+    "id": "gi-36",
+    "category": "Treatment Paradigms: Rectal & Anal",
+    "front": "What are the RTOG 0529 IMRT dose-fractionation schemes for anal cancer by T/N stage?",
+    "back": "T1-T2 N0: 50.4 Gy/28 fx to primary tumor, 42 Gy/28 fx to pelvis. T3-T4 N0 or N1: 54 Gy/30 fx to primary tumor, 45 Gy/30 fx to pelvis, with a nodal boost to 50.4 Gy/28 fx (nodes ≤3 cm) or 54 Gy/30 fx (nodes >3 cm)."
+  },
+  {
+    "id": "gi-37",
+    "category": "Treatment Paradigms: Rectal & Anal",
+    "front": "How is a well-differentiated T1 N0 anal margin SCC treated, and what is the difference between LAR and APR?",
+    "back": "T1 N0 anal margin well-differentiated SCC: wide local excision with ≥1 cm margins (definitive chemoRT is reserved for anal canal or more advanced tumors). Low anterior resection (LAR) is sphincter-sparing; abdominoperineal resection (APR) is not sphincter-sparing and is used for low-lying tumors or as salvage for anal cancer recurrence/persistence."
+  },
+  {
+    "id": "gi-38",
+    "category": "High-Yield Literature",
+    "front": "What did the CROSS trial establish for esophageal/GEJ cancer?",
+    "back": "Preoperative chemoRT (41.4 Gy/23 fx with weekly carboplatin/paclitaxel) followed by surgery significantly improved OS vs. surgery alone (median OS 49 vs. 24 months) and improved R0 resection rate (92% vs. 69%). Established preoperative chemoRT as a standard paradigm."
+  },
+  {
+    "id": "gi-39",
+    "category": "High-Yield Literature",
+    "front": "What did CheckMate 577 show about adjuvant nivolumab in esophageal cancer?",
+    "back": "In patients with residual disease (ypT/N+) after neoadjuvant chemoRT and R0 resection, adjuvant nivolumab (up to 1 year) significantly improved DFS vs. placebo (median 22 vs. 11 months), regardless of histology or PD-L1 status."
+  },
+  {
+    "id": "gi-40",
+    "category": "High-Yield Literature",
+    "front": "What did the ESOPEC trial show comparing perioperative FLOT to preoperative chemoRT (CROSS regimen) for esophageal adenocarcinoma?",
+    "back": "Perioperative FLOT significantly improved OS vs. preop chemoRT (3-year OS 57% vs. 51%; median OS 66 vs. 37 months), plus improved pCR and RFS, making periop FLOT an alternative standard, though it is a more toxic regimen and was not directly compared to CheckMate 577 (adjuvant nivolumab)."
+  },
+  {
+    "id": "gi-41",
+    "category": "High-Yield Literature",
+    "front": "What do CONKO-001 and PRODIGE-24 establish about adjuvant chemotherapy for resected pancreatic cancer?",
+    "back": "CONKO-001 showed adjuvant gemcitabine improves OS/DFS vs. observation. PRODIGE-24 showed adjuvant modified FOLFIRINOX improves OS vs. gemcitabine (median OS 55 vs. 35 months), FOLFIRINOX is now preferred for good performance-status patients."
+  },
+  {
+    "id": "gi-42",
+    "category": "High-Yield Literature",
+    "front": "What did PREOPANC-1 show for resectable and borderline resectable pancreatic cancer?",
+    "back": "Neoadjuvant chemoRT (gemcitabine + 36 Gy/15 fx) improved R0 resection rate (41% vs. 28%) and 5-year OS (21% vs. 7%) compared to upfront surgery, with greater benefit seen in borderline resectable patients."
+  },
+  {
+    "id": "gi-43",
+    "category": "High-Yield Literature",
+    "front": "What do the Dutch TME trial and the German CAO/ARO/AIO-94 trial establish about rectal cancer radiotherapy?",
+    "back": "Dutch TME trial: with modern TME surgery, preop short-course RT (25 Gy/5 fx) still improves local control (5% vs. 11% at 10 years) but not overall OS (except in stage III patients with negative margins). German CAO/ARO/AIO-94: preoperative long-course chemoRT improves local control and sphincter preservation vs. postoperative chemoRT, with no OS difference, establishing preop sequencing as standard."
+  },
+  {
+    "id": "gi-44",
+    "category": "High-Yield Literature",
+    "front": "What did RAPIDO show about short-course TNT vs. long-course chemoRT for locally advanced (T4/high-risk) rectal cancer?",
+    "back": "Short-course RT plus TNT chemotherapy improved 3-year disease-related treatment failure vs. long-course chemoRT, but updated 5-year results showed worse local control with SC-TNT (11.7% vs. 8.1% LRF), likely reflecting RAPIDO's higher-risk population (more T4, low-lying tumors). Long-course chemoRT is still preferred for T4 tumors, extra-mesorectal node involvement, MRF involvement, or low-lying tumors."
+  },
+  {
+    "id": "gi-45",
+    "category": "High-Yield Literature",
+    "front": "What did the Nigro regimen and RTOG 9811 establish for anal cancer chemoRT?",
+    "back": "The Nigro regimen (Wayne State) first established that chemoRT with concurrent 5-FU/mitomycin-C could achieve high complete response rates, avoiding routine APR. RTOG 9811 confirmed concurrent 5-FU/MMC (no induction) is superior to induction plus concurrent 5-FU/cisplatin, with better 5-year OS (78% vs. 71%) and DFS (68% vs. 58%), 5-FU/MMC with RT remains the standard of care."
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "id": "hn-1",
+    "category": "Epidemiology & Risk Factors",
+    "front": "What proportion of head & neck malignancies arise in the oral cavity, and what are the typical histology and M:F ratio?",
+    "back": "Oral cavity cancer accounts for about 30% of H&N malignancies. 95% are squamous cell carcinoma, with a M:F ratio of roughly 3:2. Oral tongue and lip are the most common subsites in the US."
+  },
+  {
+    "id": "hn-2",
+    "category": "Epidemiology & Risk Factors",
+    "front": "List the major risk factors for oral cavity cancer.",
+    "back": "Smoking, alcohol, chewing tobacco, betel nut, poor oral hygiene/periodontal disease, chronic denture irritation, chronic sun exposure (lip cancer), immunosuppression (HIV, transplant), and genetic syndromes such as Fanconi anemia and dyskeratosis congenita."
+  },
+  {
+    "id": "hn-3",
+    "category": "Epidemiology & Risk Factors",
+    "front": "Oropharyngeal cancer: what proportion of H&N malignancies does it represent, and what is its typical histology and M:F ratio?",
+    "back": "Oropharynx is the most common site of HNSCC, representing slightly over 30% of H&N malignancies. Over 90% are squamous cell carcinoma, with a M:F ratio of about 4:1."
+  },
+  {
+    "id": "hn-4",
+    "category": "Epidemiology & Risk Factors",
+    "front": "Contrast the risk-factor and demographic profile of HPV-positive vs HPV-negative oropharyngeal SCC.",
+    "back": "HPV+: younger, non/light smoker, Caucasian, high-risk sexual behavior, predilection for tonsil/base of tongue, nonkeratinizing and basaloid histology, poorly differentiated, p16 upregulated.\nHPV-: older, heavy smoking/drinking, non-Caucasian, unrelated to sexual behavior, no subsite preference, keratinizing histology, p53 mutation, EGFR amplification.\nAJCC 8th edition stages HPV+ and HPV- OPSCC as two separate diseases; HPV+ disease carries a better prognosis."
+  },
+  {
+    "id": "hn-5",
+    "category": "Epidemiology & Risk Factors",
+    "front": "How does the incidence of nasopharyngeal carcinoma differ between the US and endemic regions, and which histologic subtype predominates in endemic disease?",
+    "back": "NPC is rare in the US (0.5-2 per 100,000) but endemic in South China, Southeast Asia, and North Africa (up to ~25 per 100,000). The nonkeratinizing undifferentiated subtype (WHO type III, associated with EBV) makes up ~95% of endemic cases and carries the most favorable prognosis, versus ~63% of cases overall in the US."
+  },
+  {
+    "id": "hn-6",
+    "category": "Epidemiology & Risk Factors",
+    "front": "Besides EBV, what other risk factors are associated with nasopharyngeal carcinoma?",
+    "back": "Salt-preserved fish, other preserved foods, low fruit/vegetable diet, tobacco smoke, family history, and HPV (more relevant to non-endemic, keratinizing disease)."
+  },
+  {
+    "id": "hn-7",
+    "category": "Anatomy & Lymphatics",
+    "front": "Name the 7 subsites of the oral cavity and describe how nodal drainage differs among them.",
+    "back": "Subsites: lip, gingiva/alveolar ridges, oral tongue (anterior 2/3), floor of mouth, buccal mucosa, retromolar trigone, hard palate.\nDrainage: Lip → Ib, II-IV (lower lip → Ia; upper lip → facial lymphatics). Oral tongue → Ia (anterior), Ib (lateral), II-IV (medial). Floor of mouth → Ia (anterior), Ib, II-IV. Gingiva, buccal mucosa, retromolar trigone → Ib, II-IV. Hard palate → II-IV."
+  },
+  {
+    "id": "hn-8",
+    "category": "Anatomy & Lymphatics",
+    "front": "Name the 4 subsites of the oropharynx and its anatomic boundaries.",
+    "back": "Subsites: base of tongue, palatine tonsils, posterior pharyngeal wall, soft palate.\nBoundaries: anterior = circumvallate papillae/anterior tonsillar pillars; posterior = posterior pharyngeal wall; superior = soft palate; inferior = vallecula/tip of epiglottis; lateral = tonsillar fossae/pillars."
+  },
+  {
+    "id": "hn-9",
+    "category": "Anatomy & Lymphatics",
+    "front": "What are the boundaries of the nasopharynx, and where do most nasopharyngeal carcinomas originate?",
+    "back": "Anterior: posterior nares/posterior nasal septum. Posterior: C1-C2. Superior: skull base (basosphenoid). Inferior: soft palate. Lateral: eustachian tube, torus tubarius, fossa of Rosenmuller. Most NPCs originate from the fossa of Rosenmuller."
+  },
+  {
+    "id": "hn-10",
+    "category": "Anatomy & Lymphatics",
+    "front": "How are the supraglottic, glottic, and subglottic larynx defined, and how does lymphatic drainage differ between them?",
+    "back": "Supraglottis: tip of epiglottis to laryngeal ventricle (epiglottis, false cords, arytenoids, aryepiglottic folds), extensive lymphatics, levels II-IV bilaterally.\nGlottis: true vocal cords plus anterior/posterior commissure, sparse lymphatics; early-stage nodal involvement is rare (~2% T1, ~5% T2).\nSubglottis: inferior true cords to inferior cricoid cartilage, extensive lymphatics, drains to II-IV plus level VI (pretracheal/Delphian).\nOverall site distribution: ~2/3 glottis, ~1/3 supraglottis, only 1-2% subglottis; more common in men."
+  },
+  {
+    "id": "hn-11",
+    "category": "Anatomy & Lymphatics",
+    "front": "Summarize the boundaries and contents of cervical lymph node Levels I through VII.",
+    "back": "I: submental (Ia)/submandibular (Ib); superior=mylohyoid/mandible, inferior=hyoid.\nII: upper jugular, skull base to hyoid (IIa anterior to IJV, IIb posterior).\nIII: mid jugular, hyoid to inferior cricoid cartilage.\nIV: lower jugular, cricoid to clavicle.\nV: posterior triangle (posterior to SCM), skull base to clavicle (Va superior/spinal accessory, Vb inferior/supraclavicular).\nVI: central compartment, pretracheal, paratracheal, prelaryngeal (Delphian), perithyroid nodes; hyoid to suprasternal notch.\nVII: retropharyngeal (Rouvière) nodes, posterior to pharynx/anterior to prevertebral fascia, a cranial extension of level II."
+  },
+  {
+    "id": "hn-12",
+    "category": "Anatomy & Lymphatics",
+    "front": "What are the general principles for which lymph node levels to electively cover, by H&N subsite?",
+    "back": "Cover levels II-IV almost always, bilaterally, except well-lateralized tonsil (no BOT/soft palate involvement) or select well-lateralized oral cavity tumors, which may get unilateral coverage. Any “pharynx” site → cover retropharyngeal (level VII) nodes. Nasopharynx → also cover level V. Subglottic extension → cover level VI. Lower lip/anterior oral tongue/anterior floor of mouth → cover level Ia (upper lip needs facial lymphatics). If one nodal level is involved, cover adjacent levels at low dose."
+  },
+  {
+    "id": "hn-13",
+    "category": "Workup & Staging",
+    "front": "What standard pretreatment evaluations should every H&N cancer patient undergo, regardless of subsite?",
+    "back": "H&P with cranial nerve and cervical node exam, cross-sectional imaging (CT neck with contrast, CT chest without contrast, consider PET-CT), tissue diagnosis, plus dental evaluation (extractions before RT, fluoride during/after), speech/swallow/nutrition evaluation, audiology (pre-chemo), and smoking cessation counseling."
+  },
+  {
+    "id": "hn-14",
+    "category": "Workup & Staging",
+    "front": "What exams are specific to laryngeal cancer workup, beyond the standard H&N evaluation?",
+    "back": "Flexible nasolaryngoscopy to evaluate the primary and vocal cord mobility, videostroboscopy to assess the mucosal wave, and EUA with triple endoscopy (laryngoscopy, bronchoscopy, esophagoscopy) for diagnosis and second-primary screening."
+  },
+  {
+    "id": "hn-15",
+    "category": "Workup & Staging",
+    "front": "What workup is unique to nasopharyngeal carcinoma, and how does its N-staging differ from other H&N sites?",
+    "back": "EBV DNA PCR (pretreatment and posttreatment levels are both prognostic) and EBV testing on pathology (LMP IHC or EBER ISH); MRI of the skull base is preferred over CT for primary tumor extent/neural involvement. Unlike other H&N sites, NPC N-stage is based on laterality and location relative to the caudal border of the cricoid cartilage rather than node size/number: N1 = unilateral/RP nodes ≤6cm above the cricoid; N2 = bilateral nodes ≤6cm; N3 = any node >6cm or below the cricoid level."
+  },
+  {
+    "id": "hn-16",
+    "category": "Workup & Staging",
+    "front": "How should a suspicious neck node be worked up in suspected oropharyngeal cancer, and what molecular testing is recommended?",
+    "back": "FNA biopsy of the node is acceptable for initial diagnosis; p16/HPV testing is specifically recommended for oropharyngeal HNSCC (FNA typically provides sufficient material). EUA with tonsillectomy or base-of-tongue biopsy provides confirmatory diagnosis of the primary."
+  },
+  {
+    "id": "hn-17",
+    "category": "Workup & Staging",
+    "front": "How is oral cavity T-stage determined per AJCC 8th edition, and what unique staging element does it use?",
+    "back": "Depth of invasion (DOI) is incorporated alongside tumor size: T1 = ≤2cm & DOI ≤5mm; T2 = ≤2cm & DOI >5mm, or 2-4cm & DOI ≤10mm; T3 = 2-4cm & DOI >10mm, or >4cm & DOI ≤10mm; T4a = >4cm & DOI >10mm or invasion of adjacent structures (mandible, maxilla, maxillary sinus, facial skin). DOI is a staging element unique to oral cavity among H&N subsites."
+  },
+  {
+    "id": "hn-18",
+    "category": "Workup & Staging",
+    "front": "Why does oropharyngeal cancer use two separate AJCC 8th edition staging systems?",
+    "back": "HPV/p16-positive and HPV/p16-negative OPSCC are staged as biologically distinct diseases. p16+ disease uses a less aggressive N-staging system based on laterality/number of nodes (no upstaging for ECE) and a more favorable group-stage grouping overall, reflecting its better prognosis."
+  },
+  {
+    "id": "hn-19",
+    "category": "Imaging",
+    "front": "For H&N cancer, which imaging modality is best for primary tumor/perineural extent, cortical bone/cartilage invasion, and nodal/distant staging or post-RT recurrence?",
+    "back": "MRI: best soft-tissue/perineural/skull-base detail (primary tumor extent, especially NPC and oropharynx T-staging). CT: best for cortical bone/cartilage erosion, more accessible, standard for larynx staging. PET-CT: best for nodal and distant metastases, and for distinguishing post-RT recurrence from fibrosis/neuritis (tumor is FDG-avid; radiation change typically is not)."
+  },
+  {
+    "id": "hn-20",
+    "category": "Imaging",
+    "front": "What imaging features suggest a malignant cervical lymph node and extracapsular extension (ECE)? What is the classic HPV+ oropharyngeal nodal imaging pearl?",
+    "back": "Malignant node: short-axis >10mm, loss of fatty hilum, cystic/necrotic change. ECE: fat-plane loss, irregular capsular enhancement, ill-defined margins.\nHPV/p16+ pearl: strong predilection for early Level II nodal metastasis, often with cystic-appearing nodes, even when the primary is small or occult."
+  },
+  {
+    "id": "hn-21",
+    "category": "Imaging",
+    "front": "What are the CT/MRI correlates of laryngeal T3, T4a, and T4b disease?",
+    "back": "T3: vocal cord fixation, and/or paraglottic/pre-epiglottic space invasion, and/or inner cortex thyroid cartilage invasion.\nT4a: outer cortex thyroid cartilage breakthrough, cricoid cartilage invasion, or extralaryngeal extension (trachea, strap muscles, thyroid).\nT4b: prevertebral space, mediastinal invasion, or carotid artery encasement."
+  },
+  {
+    "id": "hn-22",
+    "category": "Imaging",
+    "front": "How does laryngeal cartilage invasion appear on CT vs MRI, and what anterior commissure finding suggests tumor extension?",
+    "back": "CT shows cartilage sclerosis and cortical erosion (inner cortex invasion). MRI shows paraglottic fat obliteration as an indirect sign of invasion. Anterior commissure soft-tissue thickness >1 mm is considered abnormal and suggestive of tumor extension."
+  },
+  {
+    "id": "hn-23",
+    "category": "Imaging",
+    "front": "What is the classic nodal imaging pearl for nasopharyngeal carcinoma?",
+    "back": "Retropharyngeal nodes are typically the first echelon of spread, but skip metastasis directly to Level II occurs in up to 35% of cases. Levels II and V are the most commonly involved cervical nodal levels overall in NPC."
+  },
+  {
+    "id": "hn-24",
+    "category": "Imaging",
+    "front": "What are the classic MRI signs of perineural tumor spread, and how can PET-CT help distinguish recurrence from radiation-induced neuritis?",
+    "back": "MRI signs: nerve thickening, widened neural foramen, loss of perineural fat, and abnormal nerve enhancement post-contrast. Trigeminal (V) and facial (VII) branches (and the infraorbital nerve) are most often involved. On PET-CT, true recurrent/spreading perineural tumor is FDG-avid, while radiation-induced neuritis is not. True (radiologically visible) perineural spread is distinct from microscopic perineural invasion (PNI), which is a pathology-only finding."
+  },
+  {
+    "id": "hn-25",
+    "category": "Treatment Paradigms",
+    "front": "What is the standard definitive RT dose scheme (SIB) for HNSCC, and what are the glottic larynx exceptions?",
+    "back": "70 Gy/35 Fx SIB: 70 Gy to primary/+nodes, 63 Gy to mucosal margin and involved nodal levels, 56 Gy to the elective neck.\nExceptions: T1N0 glottic larynx = 63 Gy/28 Fx (2.25 Gy/Fx); T2N0 glottic larynx = 65.25 Gy/29 Fx (2.25 Gy/Fx)."
+  },
+  {
+    "id": "hn-26",
+    "category": "Treatment Paradigms",
+    "front": "What is the standard postoperative RT dose scheme (SIB), and when is an additional sequential boost given?",
+    "back": "60 Gy/30 Fx SIB: 60 Gy to tumor bed, 57 Gy to operative bed, 54 Gy to elective neck. A sequential boost of 6 Gy/3 Fx (total 66 Gy/33 Fx) is added for areas of positive margin or extracapsular extension (ECE)."
+  },
+  {
+    "id": "hn-27",
+    "category": "Treatment Paradigms",
+    "front": "What pathologic risk factors indicate a need for postoperative RT, and when should concurrent chemotherapy be added (postop and definitive settings)?",
+    "back": "Postop RT indicated for: pT3-T4, pN2-N3, ECE, close/positive surgical margins, LVSI, or PNI.\nAdd concurrent chemo: in the postop setting for positive margins or ECE; in the definitive setting for cT3-T4 or cN2+ disease."
+  },
+  {
+    "id": "hn-28",
+    "category": "Treatment Paradigms",
+    "front": "What are the standard concurrent chemotherapy regimens for HNSCC, and what are the alternatives if cisplatin is contraindicated?",
+    "back": "Cisplatin is standard: weekly 40 mg/m2, or 100 mg/m2 every 3 weeks (higher toxicity; historically standard, NCCN category 1). If cisplatin is contraindicated: concurrent cetuximab or carboplatin/paclitaxel (both NCCN category 2B)."
+  },
+  {
+    "id": "hn-29",
+    "category": "Treatment Paradigms",
+    "front": "For locally advanced laryngeal cancer, how does treatment selection depend on laryngeal function?",
+    "back": "A functional larynx favors definitive concurrent chemoRT (larynx-preservation approach); a non-functional larynx favors total laryngectomy."
+  },
+  {
+    "id": "hn-30",
+    "category": "Treatment Paradigms",
+    "front": "What is the general treatment paradigm for nasopharyngeal carcinoma by stage, and is surgery typically used?",
+    "back": "Stage I (T1N0M0): definitive RT alone. Stage II (T2N0M0): concurrent chemoRT. Stage II(N+)-IVA: concurrent chemoRT plus induction or adjuvant chemo. Stage IVB (M+): locoregional RT if CR/PR to initial chemo. NPC is typically managed non-operatively, surgery is generally reserved for salvage due to the challenging location near critical nerves/vessels."
+  },
+  {
+    "id": "hn-31",
+    "category": "Treatment Paradigms",
+    "front": "What is the primary treatment approach for oral cavity cancer, and how does this differ from most other H&N subsites?",
+    "back": "Oral cavity cancer is managed with upfront surgery whenever possible, aiming for en bloc resection with negative margins, unlike NPC (non-operative) or larynx/oropharynx (definitive RT/chemoRT is a primary option). Adjuvant RT ± chemo is added based on pathologic risk factors."
+  },
+  {
+    "id": "hn-32",
+    "category": "Treatment Paradigms",
+    "front": "What clinical benefit does IMRT provide over 3D conformal RT in H&N cancer, and what data support it?",
+    "back": "IMRT reduces xerostomia via parotid sparing. University of Michigan study: mean parotid dose 20 Gy (IMRT) vs 57 Gy (3D); 1-year salivary flow recovery 63% vs 3%. PARSPORT trial: 40% rate of grade 2+ xerostomia at 1 year with IMRT vs 74% with 3D. Other theoretical benefits: less dysphagia (pharyngeal constrictor sparing), less osteoradionecrosis (mandible sparing), better hearing/brainstem preservation."
+  },
+  {
+    "id": "hn-33",
+    "category": "High-Yield Literature",
+    "front": "What did the MACH-NC meta-analysis show about the benefit of chemotherapy in HNSCC?",
+    "back": "Patient-level meta-analysis of >17,000 HNSCC patients: addition of any chemotherapy gave a 4.5% absolute OS benefit at 5 years. Concurrent chemoRT showed the largest benefit (6.5% OS at 5 years, statistically significant); induction chemo showed only a 2.4% benefit (not significant). Patients over 70 did not benefit."
+  },
+  {
+    "id": "hn-34",
+    "category": "High-Yield Literature",
+    "front": "What did RTOG 9501 and EORTC 22931 (and their pooled analysis) establish about postoperative chemoRT?",
+    "back": "RTOG 9501 (postop RT ± cisplatin): improved LRC with chemoRT overall; a subset analysis of patients with +margins and/or ECE showed significant LRF and DFS benefit. EORTC 22931 (similar design, broader high-risk criteria): chemoRT significantly improved 5-year PFS and OS. Pooled analysis showed ECE and/or microscopically positive margins were the only risk factors with significant benefit from chemoRT in both trials, establishing adjuvant chemoRT as standard for +margin/ECE."
+  },
+  {
+    "id": "hn-35",
+    "category": "High-Yield Literature",
+    "front": "What did the Bonner trial show about adding cetuximab to definitive RT, and which subsite benefited most?",
+    "back": "Cetuximab + RT improved median OS vs RT alone (49 vs 29 months) in stage III-IV HNSCC. Oropharyngeal cancer patients had the most significant OS benefit (>66 vs 23 months); larynx/hypopharynx patients had minimal benefit. Grade 2+ cetuximab-induced rash correlated with improved survival."
+  },
+  {
+    "id": "hn-36",
+    "category": "High-Yield Literature",
+    "front": "What did the VA Larynx Study and RTOG 91-11 establish about larynx preservation?",
+    "back": "VA Larynx Study: induction chemo → RT (if responsive) achieved a 64% larynx preservation rate with no OS difference vs. surgery + postop RT. RTOG 91-11 then compared induction chemo→RT, concurrent chemoRT, and RT alone: concurrent chemoRT gave the best larynx preservation (82%) and local control (69%), RT alone was significantly worse, with no OS difference between arms. Concurrent chemoRT became the preferred larynx-preservation approach for locally advanced disease."
+  },
+  {
+    "id": "hn-37",
+    "category": "High-Yield Literature",
+    "front": "What did the Tata Memorial RCT show about elective neck dissection in early oral cavity cancer?",
+    "back": "In T1-T2 cN0 well-lateralized oral cavity cancer, elective ipsilateral neck dissection significantly improved 3-year OS (80% vs 67.5%) and DFS (70% vs 46%) compared to therapeutic (watch-and-wait) dissection, establishing elective ND as standard even for early-stage disease."
+  },
+  {
+    "id": "hn-38",
+    "category": "High-Yield Literature",
+    "front": "What did RTOG 0129's retrospective analysis (Ang et al.) show about HPV/p16 status, and what happened when cetuximab was tested as a de-escalation strategy in HPV+ disease?",
+    "back": "RTOG 0129 showed HPV+/p16+ oropharyngeal cancer has significantly better OS and PFS than HPV-/p16- disease (3-yr OS 82-84% vs 51-57%), leading to a risk-stratification nomogram (smoking pack-years, T/N stage). However, when cetuximab was substituted for cisplatin to de-escalate toxicity in HPV+ disease, RTOG 1016 and De-ESCALaTE both showed significantly worse OS and/or PFS with cetuximab, de-escalation via cetuximab was abandoned."
+  },
+  {
+    "id": "hn-39",
+    "category": "High-Yield Literature",
+    "front": "What did the ORATOR trial show when comparing transoral robotic surgery (TORS) to definitive RT for early-stage oropharyngeal cancer?",
+    "back": "In T1-T2 N0-2 OPSCC, definitive RT resulted in significantly better 1-year swallowing function (MDADI score 86.9 vs 80.1) than TORS + neck dissection, with the swallowing advantage persisting (smaller magnitude) at 2-3 years, establishing RT as at least equivalent, with better functional outcomes, for early-stage disease."
+  },
+  {
+    "id": "hn-40",
+    "category": "High-Yield Literature",
+    "front": "What evidence supports adding chemotherapy to RT for locally advanced nasopharyngeal carcinoma?",
+    "back": "Intergroup 00-99 showed concurrent + adjuvant cisplatin-based chemo significantly improved OS (5-year 67% vs 37%) and PFS over RT alone in T3-T4/N+ NPC. The MAC-NPC meta-analysis (7,080 patients, 26 trials) confirmed the largest OS benefit comes from adding concurrent chemo to RT, with additional benefit from adjuvant or induction chemo, overall ~6% absolute OS benefit at 5 years and ~8% at 10 years."
+  }
+]

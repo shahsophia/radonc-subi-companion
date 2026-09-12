@@ -1,0 +1,272 @@
+[
+  {
+    "id": "th-1",
+    "category": "Epidemiology & Risk Factors",
+    "front": "What is lung cancer's rank among cancers and cancer deaths in the US?",
+    "back": "2nd most common cancer in the US (not counting skin cancer); the leading cause of cancer death in the US."
+  },
+  {
+    "id": "th-2",
+    "category": "Epidemiology & Risk Factors",
+    "front": "What percentage of lung cancers occur in patients with no smoking history?",
+    "back": "About 20% of lung cancers are not related to smoking."
+  },
+  {
+    "id": "th-3",
+    "category": "Epidemiology & Risk Factors",
+    "front": "Compare NSCLC and SCLC in frequency, aggressiveness, and metastatic pattern.",
+    "back": "NSCLC is more common overall. SCLC is more aggressive, is almost always associated with a smoking history, and has a higher propensity for distant failure and brain metastases."
+  },
+  {
+    "id": "th-4",
+    "category": "Epidemiology & Risk Factors",
+    "front": "What are the USPSTF criteria for annual lung cancer screening, and what trial supports it?",
+    "back": "Annual low-dose CT for ages 50-80 with a 20 pack-year smoking history who currently smoke or quit within the last 15 years. The National Lung Cancer Screening Trial (NLST) randomized patients to LDCT vs. chest x-ray and showed a 20% relative reduction in mortality with LDCT (NEJM 2011)."
+  },
+  {
+    "id": "th-5",
+    "category": "Epidemiology & Risk Factors",
+    "front": "What paraneoplastic syndromes are classically associated with squamous cell carcinoma vs. SCLC?",
+    "back": "Squamous cell carcinoma - hypercalcemia from PTH-related peptide.\nSCLC - SIADH, Lambert-Eaton myasthenic syndrome, cerebellar ataxia."
+  },
+  {
+    "id": "th-6",
+    "category": "Epidemiology & Risk Factors",
+    "front": "In a non-smoking woman with lung adenocarcinoma, what mutation is commonly found and why does it matter?",
+    "back": "EGFR mutation is common in this population; it is targetable with therapy (e.g., osimertinib) and is associated with an improved prognosis."
+  },
+  {
+    "id": "th-7",
+    "category": "Anatomy & Lymphatics",
+    "front": "How are hilar lymph nodes numbered, and what N-stage does ipsilateral hilar involvement confer?",
+    "back": "Hilar nodes are double-digit stations (10-14). Ipsilateral hilar node involvement = N1 disease (stage IIB)."
+  },
+  {
+    "id": "th-8",
+    "category": "Anatomy & Lymphatics",
+    "front": "How are mediastinal lymph nodes numbered, and what N-stage does their involvement confer?",
+    "back": "Mediastinal nodes are single-digit stations (2-9). Involvement = N2 disease (stage IIIA)."
+  },
+  {
+    "id": "th-9",
+    "category": "Anatomy & Lymphatics",
+    "front": "What defines N3 disease in NSCLC staging?",
+    "back": "Contralateral mediastinal or hilar nodes, or supraclavicular (level 1) nodes, define N3 disease (stage IIIB or IIIC)."
+  },
+  {
+    "id": "th-10",
+    "category": "Anatomy & Lymphatics",
+    "front": "Why are lymph node levels 5 (subaortic) and 6 (para-aortic) automatically N3 for a right-sided lung primary?",
+    "back": "Levels 5 and 6 are left-sided nodal stations by definition, so their involvement with a right-sided primary tumor represents contralateral spread, making it automatic N3 disease."
+  },
+  {
+    "id": "th-11",
+    "category": "Anatomy & Lymphatics",
+    "front": "Which lymph node stations does EBUS sample compared to mediastinoscopy?",
+    "back": "EBUS samples levels 2, 4, 7, and 10. Mediastinoscopy samples levels 2, 4, and 7."
+  },
+  {
+    "id": "th-12",
+    "category": "Workup & Staging",
+    "front": "What are the minimum PFT values required for medical operability in lung cancer?",
+    "back": "FEV1 >40% and DLCO >40% at minimum."
+  },
+  {
+    "id": "th-13",
+    "category": "Workup & Staging",
+    "front": "When is brain MRI with contrast mandatory in the workup of NSCLC vs. SCLC?",
+    "back": "NSCLC: mandatory for stage II (>4 cm), optional for stage IB (>3 cm). SCLC: mandatory for all patients."
+  },
+  {
+    "id": "th-14",
+    "category": "Workup & Staging",
+    "front": "What PD-L1 TPS cutoff defines positivity, and when can ICI monotherapy be used in the advanced/metastatic setting?",
+    "back": "TPS ≥1% is considered PD-L1 positive. ICI monotherapy may be considered if TPS ≥50%."
+  },
+  {
+    "id": "th-15",
+    "category": "Workup & Staging",
+    "front": "Match each targetable NSCLC mutation to its associated first-line targeted therapy: EGFR (exon 19 del/L858R), ALK, ROS1, BRAF V600E, NTRK, MET exon 14 skipping, RET, HER2, KRAS G12C.",
+    "back": "EGFR → osimertinib\nALK → alectinib (or lorlatinib in metastatic disease)\nROS1 → repotrectinib\nBRAF V600E → vemurafenib\nNTRK fusion → larotrectinib/entrectinib\nMET exon 14 skipping → capmatinib\nRET rearrangement → cabozantinib\nHER2 mutation → trastuzumab-emtansine\nKRAS G12C → sotorasib/adagrasib (2nd line, after initial systemic therapy)"
+  },
+  {
+    "id": "th-16",
+    "category": "Workup & Staging",
+    "front": "Does ctDNA ('liquid biopsy') testing replace tissue biopsy for molecular testing in NSCLC?",
+    "back": "No. ctDNA testing is faster and can help identify targetable mutations sooner, but it does not replace histological tissue diagnosis."
+  },
+  {
+    "id": "th-17",
+    "category": "Workup & Staging",
+    "front": "How are Limited-Stage and Extensive-Stage SCLC defined?",
+    "back": "Limited stage: any T, any N, M0 that can be safely treated with a definitive radiation plan (typically stage I-III, excluding T3-T4 disease too extensive for tolerable RT). Extensive stage: any T, any N, M1a/b/c, or T3-T4 disease too large/extensive for a tolerable RT plan."
+  },
+  {
+    "id": "th-18",
+    "category": "Workup & Staging",
+    "front": "What is the minimum nodal sampling required during surgical resection of NSCLC?",
+    "back": "At minimum, one N1 station and three N2 stations should be sampled (or a complete lymph node dissection performed). If N2 disease is found, a formal ipsilateral mediastinal lymph node dissection is required."
+  },
+  {
+    "id": "th-19",
+    "category": "Imaging",
+    "front": "What are the IASLC 8th edition T-stage size cutoffs for NSCLC on CT?",
+    "back": "T1 <3 cm; T2 3-5 cm (or main bronchus involvement without carina); T3 5-7 cm (or chest wall/phrenic nerve/pericardium invasion); T4 >7 cm (or diaphragm/mediastinum/heart/trachea/carina invasion)."
+  },
+  {
+    "id": "th-20",
+    "category": "Imaging",
+    "front": "On which CT window should the solid component of a part-solid nodule be measured, and why does it matter?",
+    "back": "Measure on lung window, not mediastinal window - this distinction can change the T-stage in adenocarcinoma."
+  },
+  {
+    "id": "th-21",
+    "category": "Imaging",
+    "front": "What CT features favor malignancy vs. benignity in an indeterminate pulmonary nodule?",
+    "back": "Favor malignancy: spiculated margins, solid > part-solid > pure GGO composition (part-solid nodules carry paradoxically high risk despite slow growth), enhancement >20 HU, upper lobe location, size >3 cm (=mass), doubling time <400 days.\nFavor benignity: smooth/lobulated margins, enhancement <15 HU."
+  },
+  {
+    "id": "th-22",
+    "category": "Imaging",
+    "front": "What is the classic CT appearance of squamous cell lung carcinoma, and what is a high-yield discriminating imaging feature?",
+    "back": "Central location (66-90%), often causing obstructive pneumonitis/collapse. Cavitation occurs in up to 82% due to necrosis - a classic discriminator vs. adenocarcinoma. IHC is p63+/TTF1- (adenocarcinoma is TTF1+)."
+  },
+  {
+    "id": "th-23",
+    "category": "Imaging",
+    "front": "What is the classic imaging pattern of SCLC?",
+    "back": "Central, perihilar mass with bulky mediastinal adenopathy that often dwarfs the primary tumor - the 'iceberg' pattern. Highly FDG-avid with rapid growth."
+  },
+  {
+    "id": "th-24",
+    "category": "Imaging",
+    "front": "What imaging pearls apply to Pancoast (superior sulcus) tumors?",
+    "back": "Located at the lung apex; often initially mistaken for apical pleural thickening/scarring. MRI is superior to CT for assessing brachial plexus, subclavian vessel, and vertebral body/foraminal invasion (drives resectability/RT planning). T3 = chest wall invasion only; T4 = brachial plexus, subclavian vessel, or vertebral body invasion. Horner syndrome (ptosis, miosis, anhidrosis) results from stellate ganglion/sympathetic chain invasion."
+  },
+  {
+    "id": "th-25",
+    "category": "Imaging",
+    "front": "What is the role of PET/CT in NSCLC staging, and what is the traditional SUVmax malignancy threshold?",
+    "back": "PET/CT is standard for N and M staging and upstages ~20-30% of patients compared to CT alone, avoiding futile thoracotomy. Traditional SUVmax threshold for malignancy is >2.5, but this overlaps with infection/granulomatous disease - false positives include TB, fungal infection, and sarcoid; false negatives include carcinoid, lepidic-predominant adenocarcinoma, and sub-centimeter nodules."
+  },
+  {
+    "id": "th-26",
+    "category": "Imaging",
+    "front": "How is 4D-CT used in lung SBRT planning, and which tumors move more with respiration?",
+    "back": "4D-CT captures respiratory tumor motion across the breathing cycle; an ITV is generated via maximum-intensity-projection across phases. Lower lobe tumors move more (due to diaphragmatic excursion) than upper lobe tumors; motion >1 cm typically prompts gating, breath-hold, or tumor tracking."
+  },
+  {
+    "id": "th-27",
+    "category": "Treatment Paradigms",
+    "front": "For a medically operable early-stage NSCLC patient, what determines sublobar resection vs. lobectomy?",
+    "back": "Tumors ≤2 cm → sublobar resection (wedge resection or segmentectomy). Tumors >2 cm → lobectomy, which remains the historical standard and is always preferred over pneumonectomy."
+  },
+  {
+    "id": "th-28",
+    "category": "Treatment Paradigms",
+    "front": "What are the standard SBRT dose/fractionation regimens for early-stage NSCLC, and how is a 'central' tumor defined?",
+    "back": "Standard regimens: 50 Gy/5 Fx, 48 Gy/4 Fx, 54 Gy/3 Fx (peripheral tumors only), and 34 Gy/1 Fx. A central tumor is defined as being within 2 cm of any mediastinal critical structure (bronchial tree, esophagus, heart, brachial plexus, major vessels, spinal cord, phrenic/recurrent laryngeal nerve); central tumors require at least 4-5 fractions (no single or 3-fraction SBRT)."
+  },
+  {
+    "id": "th-29",
+    "category": "Treatment Paradigms",
+    "front": "What is the modern standard neoadjuvant approach for resectable stage II+ NSCLC?",
+    "back": "Immune checkpoint inhibitor plus platinum-based doublet chemotherapy for 3-4 cycles prior to surgery (e.g., nivolumab + carboplatin/paclitaxel), based on CheckMate 816."
+  },
+  {
+    "id": "th-30",
+    "category": "Treatment Paradigms",
+    "front": "If neoadjuvant therapy is not given, what determines adjuvant systemic therapy after resection of NSCLC?",
+    "back": "Molecular testing guides the choice: ALK+ → adjuvant alectinib; EGFR+ → adjuvant osimertinib; no targetable mutation with PD-L1 ≥1% → adjuvant ICI; PD-L1 <1% or not a candidate → platinum-based doublet chemotherapy alone. Adjuvant chemotherapy (x4 cycles) is the backbone for tumors ≥4 cm or node-positive disease."
+  },
+  {
+    "id": "th-31",
+    "category": "Treatment Paradigms",
+    "front": "What is the standard of care for unresectable stage III NSCLC?",
+    "back": "Concurrent chemoradiotherapy (platinum-based doublet chemo with 60 Gy/30 Fx to the primary tumor and involved nodes only, no elective nodal irradiation) followed by adjuvant durvalumab for 1 year (PACIFIC regimen). If EGFR-mutant, adjuvant osimertinib is used instead of durvalumab (LAURA)."
+  },
+  {
+    "id": "th-32",
+    "category": "Treatment Paradigms",
+    "front": "What is the clearest indication for postoperative radiotherapy (PORT) after NSCLC resection?",
+    "back": "R1 or R2 resection (positive margin or gross residual disease). Routine PORT is not indicated for pN1 or pN2 disease based on modern RCTs (Lung ART, PORT-C), though it may be considered for pN2 disease with high-risk features like extracapsular extension or multi-station involvement."
+  },
+  {
+    "id": "th-33",
+    "category": "Treatment Paradigms",
+    "front": "What is the general treatment paradigm for superior sulcus (Pancoast) tumors?",
+    "back": "Induction chemoradiotherapy (cisplatin/etoposide-based chemo with ~45 Gy RT) followed by surgical resection. If resection is not feasible, definitive RT to 60 Gy is given instead."
+  },
+  {
+    "id": "th-34",
+    "category": "Treatment Paradigms",
+    "front": "What is the general systemic therapy hierarchy for metastatic NSCLC?",
+    "back": "Targeted therapy (if a targetable mutation is present) > immune checkpoint inhibitor (PD-L1 ≥1%; monotherapy if ≥50%) > chemotherapy ± ICI (if PD-L1 <1%)."
+  },
+  {
+    "id": "th-35",
+    "category": "Treatment Paradigms",
+    "front": "What is the role of SBRT for oligometastatic or oligoprogressive NSCLC?",
+    "back": "SBRT/local consolidative therapy to all sites of oligometastatic or oligoprogressive disease (typically ≤5 lesions) can delay the next line of systemic therapy or allow patients to remain off systemic therapy. Evidence is strongest in the pre-immunotherapy era; benefit in the modern IO era is mixed, and patient selection matters (favorable factors: adenocarcinoma, T1a primary, low nodal burden, solitary metastasis, good performance status, metachronous disease, driver mutation present)."
+  },
+  {
+    "id": "th-36",
+    "category": "Treatment Paradigms",
+    "front": "What is the standard treatment paradigm for limited-stage SCLC?",
+    "back": "Concurrent chemoradiotherapy - cisplatin/etoposide with 45 Gy/30 Fx BID (or 66 Gy/33 Fx daily as an alternative), starting with cycle 1 or 2 of chemo - followed by adjuvant durvalumab for 2 years if no progression, and PCI (25 Gy/10 Fx, hippocampal avoidance preferred) if there is a complete or partial response."
+  },
+  {
+    "id": "th-37",
+    "category": "Treatment Paradigms",
+    "front": "What is the standard treatment paradigm for extensive-stage SCLC?",
+    "back": "Platinum-etoposide chemotherapy with concurrent and maintenance immunotherapy (atezolizumab or durvalumab). Consolidative thoracic RT (30 Gy/10 Fx) may be considered for good responders. PCI vs. MRI surveillance alone for brain metastasis prevention remains debated and practice varies by institution."
+  },
+  {
+    "id": "th-38",
+    "category": "High-Yield Literature",
+    "front": "PACIFIC trial - what was the key finding?",
+    "back": "In unresectable stage III NSCLC after concurrent chemoRT, adjuvant durvalumab significantly improved PFS and OS (5-year OS ~43%, roughly a 10% absolute improvement) compared to placebo. Adjuvant durvalumab is now standard of care."
+  },
+  {
+    "id": "th-39",
+    "category": "High-Yield Literature",
+    "front": "LAURA trial - what was the key finding?",
+    "back": "In EGFR-mutant unresectable stage III NSCLC, adjuvant osimertinib after chemoRT significantly improved PFS (39.1 vs. 5.6 months) compared to placebo."
+  },
+  {
+    "id": "th-40",
+    "category": "High-Yield Literature",
+    "front": "RTOG 0617 - what was the key finding?",
+    "back": "Dose escalation to 74 Gy was worse than standard 60 Gy for unresectable stage III NSCLC (worse OS, no improvement in local control). Concurrent cetuximab provided no benefit and increased toxicity. Established 60 Gy/30 Fx as the standard dose."
+  },
+  {
+    "id": "th-41",
+    "category": "High-Yield Literature",
+    "front": "CheckMate 816 - what was the key finding?",
+    "back": "Neoadjuvant nivolumab plus platinum-doublet chemotherapy improved event-free survival, pathologic complete response rate, and OS compared to chemotherapy alone in stage II+ resectable NSCLC - the first phase III trial to support neoadjuvant chemoimmunotherapy."
+  },
+  {
+    "id": "th-42",
+    "category": "High-Yield Literature",
+    "front": "RTOG 0236 - what was the key finding?",
+    "back": "First multicenter prospective trial of SBRT in medically inoperable early-stage NSCLC; ~54 Gy/3 Fx (actual delivered dose) achieved 91% 3-year primary tumor control, establishing SBRT as standard for inoperable disease."
+  },
+  {
+    "id": "th-43",
+    "category": "High-Yield Literature",
+    "front": "Lung ART and PORT-C trials - what was the key finding?",
+    "back": "Both modern RCTs of postoperative radiotherapy for resected pN2 NSCLC failed to show a DFS or OS benefit to PORT, though PORT reduced mediastinal recurrence at the cost of increased toxicity (grade 3-4 pneumonitis)."
+  },
+  {
+    "id": "th-44",
+    "category": "High-Yield Literature",
+    "front": "ADRIATIC trial - what was the key finding?",
+    "back": "Adjuvant durvalumab after concurrent chemoRT significantly improved OS and PFS in limited-stage SCLC. Adjuvant durvalumab is now standard of care for LS-SCLC."
+  },
+  {
+    "id": "th-45",
+    "category": "High-Yield Literature",
+    "front": "IMpower133 and CASPIAN trials - what was the key finding?",
+    "back": "Adding atezolizumab (IMpower133) or durvalumab (CASPIAN) to first-line platinum-etoposide chemotherapy improves OS in extensive-stage SCLC, establishing chemo-immunotherapy as standard first-line treatment."
+  }
+]

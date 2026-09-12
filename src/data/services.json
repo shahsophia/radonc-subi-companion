@@ -1,0 +1,58 @@
+[
+  {
+    "id": "overview",
+    "name": "Overview",
+    "icon": "◎",
+    "color": "var(--svc-overview)",
+    "blurb": "Radiation basics, physics, biology & terminology"
+  },
+  {
+    "id": "headneck",
+    "name": "Head & Neck",
+    "icon": "⬡",
+    "color": "var(--svc-headneck)",
+    "blurb": "Oral cavity, oropharynx, larynx, nasopharynx"
+  },
+  {
+    "id": "breast",
+    "name": "Breast",
+    "icon": "◈",
+    "color": "var(--svc-breast)",
+    "blurb": "DCIS through locally advanced disease"
+  },
+  {
+    "id": "thoracic",
+    "name": "Thoracic",
+    "icon": "◑",
+    "color": "var(--svc-thoracic)",
+    "blurb": "NSCLC & SCLC, all stages"
+  },
+  {
+    "id": "prostate",
+    "name": "Prostate",
+    "icon": "⬢",
+    "color": "var(--svc-prostate)",
+    "blurb": "Localized through metastatic disease"
+  },
+  {
+    "id": "gyn",
+    "name": "GYN",
+    "icon": "◇",
+    "color": "var(--svc-gyn)",
+    "blurb": "Cervical, endometrial & vulvar cancer"
+  },
+  {
+    "id": "cns",
+    "name": "CNS",
+    "icon": "◍",
+    "color": "var(--svc-cns)",
+    "blurb": "Gliomas, GBM & brain metastases"
+  },
+  {
+    "id": "gi",
+    "name": "GI",
+    "icon": "◐",
+    "color": "var(--svc-gi)",
+    "blurb": "Esophageal, pancreatic, rectal & anal"
+  }
+]

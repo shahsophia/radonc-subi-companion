@@ -1,0 +1,272 @@
+[
+  {
+    "id": "gy-1",
+    "category": "Epidemiology & Risk Factors",
+    "front": "What is the global incidence ranking of cervical cancer among cancers in women, and how has U.S. incidence trended?",
+    "back": "Cervical cancer is the 4th most common malignancy in women globally. U.S. incidence has been decreasing due to Pap smear screening and HPV vaccination."
+  },
+  {
+    "id": "gy-2",
+    "category": "Epidemiology & Risk Factors",
+    "front": "What is the median age at diagnosis of cervical cancer, and which age range is most commonly affected?",
+    "back": "Median age at diagnosis is 50 years; most commonly diagnosed in women ages 35-44."
+  },
+  {
+    "id": "gy-3",
+    "category": "Epidemiology & Risk Factors",
+    "front": "What fraction of cervical cancers are HPV-associated, and which HPV subtypes are most implicated?",
+    "back": "HPV is associated with >90-95% of cervical cancers. HPV 16 and 18 account for ~70% of cases. Other high-risk oncogenic strains include 31, 33, 45, 52, and 58."
+  },
+  {
+    "id": "gy-4",
+    "category": "Epidemiology & Risk Factors",
+    "front": "Aside from HPV, what are the major risk factors for cervical cancer?",
+    "back": "• Smoking\n• Immunocompromised status (AIDS, transplant)\n• Young age at first intercourse\n• Multiple sexual partners\n• Multiparity\n• Low socioeconomic status\n• In utero diethylstilbestrol (DES) exposure, associated with clear cell carcinoma of the cervix/vagina"
+  },
+  {
+    "id": "gy-5",
+    "category": "Epidemiology & Risk Factors",
+    "front": "Summarize the USPSTF cervical cancer screening recommendations by age, and how HPV vaccination status affects them.",
+    "back": "• Age 21-29: cervical cytology alone every 3 years\n• Age 30-65: cytology alone q3yr, OR hrHPV testing alone q5yr, OR cotesting (cytology + hrHPV) q5yr\n• Age >65: if no history of moderate/severe dysplasia and adequate prior negative screening (3 negative Paps or 2 negative cotests), no further screening needed\nHaving received the HPV vaccine does NOT change screening recommendations."
+  },
+  {
+    "id": "gy-6",
+    "category": "Epidemiology & Risk Factors",
+    "front": "What racial disparity exists in cervical cancer mortality (SEER data 2013-2019)?",
+    "back": "The death rate from cervical cancer in Black women and Native American women is 65% higher than in white women."
+  },
+  {
+    "id": "gy-7",
+    "category": "Epidemiology & Risk Factors",
+    "front": "What is the typical histology and age demographic of vulvar cancer, and what is its common precursor lesion?",
+    "back": "~80-85% of vulvar cancers are squamous cell carcinoma; peak incidence age is 65-70. VIN (vulvar intraepithelial neoplasia) is a common precursor lesion."
+  },
+  {
+    "id": "gy-8",
+    "category": "Anatomy & Lymphatics",
+    "front": "Describe the epithelial anatomy of the cervix and identify the most common site of carcinogenesis.",
+    "back": "The endocervical canal is lined by columnar epithelium, while the ectocervix is lined by squamous epithelium. The squamocolumnar junction, located at the external os, is the most common site for carcinogenesis."
+  },
+  {
+    "id": "gy-9",
+    "category": "Anatomy & Lymphatics",
+    "front": "Name the three key ligaments involved in cervical cancer local spread and what each attaches.",
+    "back": "• Cardinal ligament: cervix to pelvic sidewall\n• Broad ligament: uterus to pelvic sidewall\n• Uterosacral ligament: lower uterus to sacrum"
+  },
+  {
+    "id": "gy-10",
+    "category": "Anatomy & Lymphatics",
+    "front": "What are the regional lymph node drainage stations and common distant metastatic sites for cervical cancer?",
+    "back": "Regional drainage (via the cardinal, broad, and uterosacral ligaments): presacral, obturator, internal & external iliac, common iliac, and paraaortic nodes. Common distant metastatic sites: lungs, liver, bone; supraclavicular lymph nodes can be involved via the thoracic duct."
+  },
+  {
+    "id": "gy-11",
+    "category": "Anatomy & Lymphatics",
+    "front": "Describe the lymphatic drainage pathway of the vulva.",
+    "back": "Superficial inguinal nodes → deep inguinal nodes → external iliac nodes → pelvic chain, via channels running along the femoral vein."
+  },
+  {
+    "id": "gy-12",
+    "category": "Anatomy & Lymphatics",
+    "front": "Why does the vulvar lymphatic drainage pathway matter clinically for radiation planning?",
+    "back": "Because deep inguinal nodes drain directly into the external iliac/pelvic chain, vulvar cancer with positive groin (inguinofemoral) nodes often requires extended pelvic nodal RT coverage."
+  },
+  {
+    "id": "gy-13",
+    "category": "Workup & Staging",
+    "front": "What does the standard workup for cervical cancer include?",
+    "back": "H&P focused on gynecologic history with pelvic/abdominal exam (including supraclavicular & inguinal nodes); labs (CBC, CMP, consider HIV, pregnancy test); colposcopy with cervical biopsy (LEEP) or cold-knife cone if biopsy inadequate; EUA with cystoscopy/rectosigmoidoscopy if advanced disease or suspected bladder/rectal extension; pelvic MRI for local extent and PET/CT for nodal/distant staging."
+  },
+  {
+    "id": "gy-14",
+    "category": "Workup & Staging",
+    "front": "In the 2018 FIGO cervical cancer staging system, how are Stage IA1, IA2, and IB substaged?",
+    "back": "IA1: stromal invasion ≤3mm depth. IA2: stromal invasion >3-5mm depth. IB1: ≥5mm stromal invasion, tumor <2cm. IB2: tumor 2-4cm. IB3: tumor >4cm."
+  },
+  {
+    "id": "gy-15",
+    "category": "Workup & Staging",
+    "front": "What defines FIGO Stage III cervical cancer (2018), and what was the major change from prior staging editions?",
+    "back": "IIIA: invades lower third of vagina, no pelvic sidewall extension. IIIB: extends to pelvic sidewall or causes hydronephrosis/non-functioning kidney. IIIC1: pelvic lymph node metastasis only. IIIC2: paraaortic lymph node metastasis. The 2018 FIGO update added nodal status (IIIC1/C2) as a stage-defining criterion for the first time."
+  },
+  {
+    "id": "gy-16",
+    "category": "Workup & Staging",
+    "front": "How does FIGO Stage II cervical cancer differ from Stage III?",
+    "back": "Stage II invades beyond the uterus but not to the pelvic sidewall or lower vagina (includes parametrial invasion not reaching pelvic wall = IIB). Stage III involves the lower third of the vagina, the pelvic sidewall, hydronephrosis, or lymph node metastasis."
+  },
+  {
+    "id": "gy-17",
+    "category": "Workup & Staging",
+    "front": "In endometrial cancer, what is the key FIGO discriminator between Stage IA and Stage IB?",
+    "back": "Depth of myometrial invasion: <50% invasion = Stage IA; ≥50% invasion = Stage IB (2023 FIGO also incorporates histology, LVSI, and grade)."
+  },
+  {
+    "id": "gy-18",
+    "category": "Workup & Staging",
+    "front": "What findings define endometrial cancer Stage II, III, and IV?",
+    "back": "Stage II: cervical stromal invasion. Stage III: serosal/adnexal involvement (IIIA), vaginal/parametrial involvement (IIIB), or pelvic/paraaortic nodal spread (IIIC). Stage IV: bladder/bowel mucosal invasion or distant metastases."
+  },
+  {
+    "id": "gy-19",
+    "category": "Workup & Staging",
+    "front": "Outline the general framework of FIGO staging for vulvar cancer.",
+    "back": "Stage 0: carcinoma in situ. Stage I: confined to the vulva/perineum. Stage II: local invasion of adjacent structures. Stage III: pelvic (inguinofemoral) nodal or local spread. Stage IV: distant metastases."
+  },
+  {
+    "id": "gy-20",
+    "category": "Imaging",
+    "front": "What is the key MRI pearl for predicting the absence of parametrial invasion in cervical cancer?",
+    "back": "An intact, hypointense T2 cervical stromal ring is a strong negative predictor of parametrial invasion, it often distinguishes surgical candidates from chemoRT candidates. Coronal imaging best depicts parametrial extension."
+  },
+  {
+    "id": "gy-21",
+    "category": "Imaging",
+    "front": "How does vaginal extent on MRI determine cervical cancer substage?",
+    "back": "Involvement of the upper 2/3 of the vagina corresponds to Stage IIA; involvement of the lower 1/3 corresponds to Stage IIIA."
+  },
+  {
+    "id": "gy-22",
+    "category": "Imaging",
+    "front": "What MRI findings suggest pelvic sidewall invasion (Stage IIIB) in cervical cancer?",
+    "back": "Tumor within 3mm of, or abutting, the obturator internus, levator ani, piriformis, or iliac vessels; hydronephrosis also signals Stage IIIB."
+  },
+  {
+    "id": "gy-23",
+    "category": "Imaging",
+    "front": "What is the primary role of PET/CT versus MRI in cervical cancer staging?",
+    "back": "MRI is the modality of choice for LOCAL staging of the primary tumor. PET/CT's primary role is NODAL (pelvic/paraaortic) and distant metastatic staging."
+  },
+  {
+    "id": "gy-24",
+    "category": "Imaging",
+    "front": "How reliable is MRI for excluding bladder or rectal invasion in cervical cancer, and what are the imaging signs?",
+    "back": "MRI is excellent at excluding invasion. Bladder invasion is suggested by posterior wall thickening or mucosal disruption; rectal invasion is suggested by loss of the posterior perirectal fat plane."
+  },
+  {
+    "id": "gy-25",
+    "category": "Imaging",
+    "front": "Why is myometrial invasion depth considered the single most testable imaging concept in endometrial cancer?",
+    "back": "Because accurate measurement of invasion depth (<50% vs ≥50%) is the pivotal FIGO discriminator (Stage IA vs IB) and directly changes management, it drives the extent of lymphadenectomy and the decision for adjuvant RT."
+  },
+  {
+    "id": "gy-26",
+    "category": "Imaging",
+    "front": "What is the role of MRI in vulvar cancer imaging?",
+    "back": "MRI assesses local lesion size/extent with ~80% accuracy (low-to-intermediate T1, intermediate-to-high T2 signal) and evaluates inguinal/femoral groin nodal metastases, critical since inguinofemoral node status drives prognosis and RT field decisions."
+  },
+  {
+    "id": "gy-27",
+    "category": "Treatment Paradigms",
+    "front": "Which cervical cancer patients are candidates for primary surgical management?",
+    "back": "Early-stage disease (IA1, IA2, IB1, IB2, IIA1), tumor <4cm with no parametrial involvement."
+  },
+  {
+    "id": "gy-28",
+    "category": "Treatment Paradigms",
+    "front": "What are the fertility-sparing surgical options for early-stage cervical cancer?",
+    "back": "• Cold knife cone excision (CKC): removes cone-shaped tissue containing the ectocervix and endocervical canal en bloc\n• Radical trachelectomy: removes cervix, upper vagina, and parametria while leaving the uterus in place, with a cerclage ('purse-string stitch') at the distal uterus"
+  },
+  {
+    "id": "gy-29",
+    "category": "Treatment Paradigms",
+    "front": "Compare the three types of hysterectomy used in cervical cancer treatment.",
+    "back": "• Type I (simple/total): uterus & cervix; parametria left intact\n• Type II (modified radical): uterus, cervix, upper 1-2cm of vagina, wide local excision of parametria, acceptable only for <5mm invasion (Stage IA)\n• Type III (radical): uterus, cervix, 1/4-1/3 of vagina, and parametria to the pelvic sidewall/sacrum, used for Stage IB1 and above"
+  },
+  {
+    "id": "gy-30",
+    "category": "Treatment Paradigms",
+    "front": "What are the Sedlis criteria, and what do they indicate?",
+    "back": "Need 2 of 3 ('LIS'): LVSI; deep stromal Invasion (middle or deep third); tumor Size ≥4cm. Presence of 2/3 indicates need for adjuvant RT alone after radical hysterectomy."
+  },
+  {
+    "id": "gy-31",
+    "category": "Treatment Paradigms",
+    "front": "What are the Peters criteria ('3 P's'), and what do they indicate?",
+    "back": "Positive margins; positive nodes; Parametrial involvement. Any one of these indicates need for adjuvant chemoRT (RT + concurrent cisplatin) after radical hysterectomy."
+  },
+  {
+    "id": "gy-32",
+    "category": "Treatment Paradigms",
+    "front": "What is the standard postoperative RT regimen for cervical cancer, and what field does it cover?",
+    "back": "45-50.4 Gy in 1.8 Gy fractions to the pelvis, covering pelvic nodes (common iliac, external/internal iliac, obturator), vagina, and parametria. A vaginal cuff brachytherapy boost (5 Gy x 2 fx) is added for close (<5mm) or positive margins; weekly cisplatin 40mg/m2 is added if Peters criteria are met."
+  },
+  {
+    "id": "gy-33",
+    "category": "Treatment Paradigms",
+    "front": "What is the definitive management paradigm for locally advanced cervical cancer (Stage IIA2 or greater)?",
+    "back": "Concurrent chemoradiotherapy plus brachytherapy boost: pelvic RT 45 Gy/25 fx (simultaneous integrated boost to 55-57.5 Gy for involved nodes) with weekly concurrent cisplatin 40mg/m2, followed by intracavitary brachytherapy boost targeting HR CTV D90 of 85-90 Gy (cumulative EQD2)."
+  },
+  {
+    "id": "gy-34",
+    "category": "Treatment Paradigms",
+    "front": "In endometrial cancer, how does myometrial invasion depth drive treatment decisions?",
+    "back": "It determines the extent of lymphadenectomy performed during surgical staging and the decision for adjuvant RT."
+  },
+  {
+    "id": "gy-35",
+    "category": "Treatment Paradigms",
+    "front": "How does inguinofemoral lymph node status shape vulvar cancer treatment planning?",
+    "back": "Because groin nodes drain directly into the pelvic chain, positive inguinofemoral nodes often require extending nodal RT fields to cover the pelvis in addition to local excision and groin node management."
+  },
+  {
+    "id": "gy-36",
+    "category": "High-Yield Literature",
+    "front": "GOG 92, what did it establish, and what was the practice-changing takeaway?",
+    "back": "Randomized radical hysterectomy + pelvic LND ± adjuvant pelvic RT in stage IB cervical cancer with risk factors. RT significantly improved local recurrence (31%→18%) and PFS (65%→78%) but not OS. Established the Sedlis criteria (LVSI, deep stromal invasion, size ≥4cm, need 2/3) for adjuvant RT alone."
+  },
+  {
+    "id": "gy-37",
+    "category": "High-Yield Literature",
+    "front": "GOG 109, what did it establish, and what was the practice-changing takeaway?",
+    "back": "Randomized adjuvant pelvic RT ± concurrent/adjuvant cisplatin + 5-FU chemotherapy after radical hysterectomy in patients with positive margins, positive nodes, or parametrial involvement. Adding chemo improved 4-year PFS (63%→80%) and OS (71%→81%). Established the Peters criteria (3 P's) for adjuvant chemoRT."
+  },
+  {
+    "id": "gy-38",
+    "category": "High-Yield Literature",
+    "front": "GOG 123, what did it establish, and what was the practice-changing takeaway?",
+    "back": "Randomized EBRT alone vs. EBRT + concurrent weekly cisplatin (40mg/m2) in bulky (>4cm) cervical cancer, all followed by extrafascial hysterectomy. Concurrent cisplatin improved PFS (60%→71%) and OS (64%→78%). Established that concurrent chemoradiation improves outcomes in the definitive setting; adjuvant hysterectomy is no longer standard."
+  },
+  {
+    "id": "gy-39",
+    "category": "High-Yield Literature",
+    "front": "GOG 71, what did it establish, and what was the practice-changing takeaway?",
+    "back": "Randomized definitive RT alone vs. RT followed by extrafascial hysterectomy in cervical tumors >4cm. No significant improvement in OS or PFS with added hysterectomy. Takeaway: adjuvant hysterectomy does not improve outcomes after definitive RT, don't pursue trimodality therapy if already receiving definitive chemoRT."
+  },
+  {
+    "id": "gy-40",
+    "category": "High-Yield Literature",
+    "front": "GOG 120, what did it establish, and what was the practice-changing takeaway?",
+    "back": "Randomized concurrent cisplatin weekly vs. hydroxyurea vs. cisplatin+5-FU+hydroxyurea with RT in stage IIB-IVA cervical cancer. Hydroxyurea alone was inferior; both cisplatin-based arms performed similarly. Established weekly cisplatin 40mg/m2 as the standard concurrent chemotherapy regimen."
+  },
+  {
+    "id": "gy-41",
+    "category": "High-Yield Literature",
+    "front": "OUTBACK trial, what did it establish, and what was the practice-changing takeaway?",
+    "back": "Randomized standard cisplatin-based chemoRT alone vs. chemoRT followed by adjuvant carboplatin/paclitaxel x4 cycles. No improvement in 5-year PFS (61% vs 63%) or OS (71% vs 72%) with adjuvant chemo. Takeaway: adjuvant chemotherapy after definitive chemoRT does not improve outcomes."
+  },
+  {
+    "id": "gy-42",
+    "category": "High-Yield Literature",
+    "front": "EMBRACE I, what did it establish, and what was the practice-changing takeaway?",
+    "back": "Prospective cohort of MRI-guided adaptive brachytherapy with chemoRT; 92% 5-year local control, 7% G3-5 toxicity. Established 45 Gy/25fx as the standard EBRT dose (50 Gy showed no LC benefit but worse late GI toxicity: 3-yr G2+ diarrhea 9.5% vs 19.9%). Also showed adenocarcinoma has worse local control than squamous cell histology."
+  },
+  {
+    "id": "gy-43",
+    "category": "High-Yield Literature",
+    "front": "RetroEMBRACE, what did it establish, and what was the practice-changing takeaway?",
+    "back": "Established the dose-volume relationship for tumor control probability: target HR CTV D90 ≥85 Gy (EQD2). Larger tumor volume requires more dose (+5 Gy per +10cc volume for equivalent LC), and each week of treatment prolongation beyond 7 weeks requires +5 Gy for equivalent LC, recommended total treatment time is 49 days (7 weeks)."
+  },
+  {
+    "id": "gy-44",
+    "category": "High-Yield Literature",
+    "front": "EMBRACE II, what is it investigating, and what is its practice-relevant pearl?",
+    "back": "Prospective validation study of IMRT/IGRT + image-guided adaptive brachytherapy (IGABT) with detailed DVH constraints, also investigating prophylactic paraaortic nodal irradiation in pelvic node-positive patients. Related data (Vargo 2014, Nomden 2019) show paraaortic failure is low (~2.5%) with pelvic-only node involvement, but risk rises with common iliac nodes, ≥3 nodes, or bulky nodes, some practices favor prophylactic paraaortic RT in these high-risk cases."
+  },
+  {
+    "id": "gy-45",
+    "category": "High-Yield Literature",
+    "front": "RTOG 1203/TIME-C, what did it establish, and what was the practice-changing takeaway?",
+    "back": "Randomized 3D-conformal RT vs. IMRT in cervical/endometrial patients receiving pelvic RT. IMRT significantly reduced patient-reported GI/GU toxicity (clinician-reported toxicity showed no significant difference, indicating clinician under-reporting). Takeaway: IMRT is the preferred modality for pelvic radiation due to decreased toxicity."
+  }
+]

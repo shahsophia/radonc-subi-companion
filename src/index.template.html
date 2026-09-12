@@ -1,0 +1,154 @@
+<title>RadOnc Sub-I Companion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+/*__STYLES__*/
+</style>
+<div id="app">
+  <div class="topbar">
+    <div class="brand">
+      <div class="brand-mark">R₂</div>
+      <div class="brand-text">
+        <h1>RadOnc Sub-I Companion</h1>
+        <p>Active-recall flashcards for your radiation oncology rotation</p>
+      </div>
+    </div>
+    <div class="theme-toggle" role="group" aria-label="Theme">
+      <button id="theme-light" title="Light">☀︎</button>
+      <button id="theme-system" title="System">◐</button>
+      <button id="theme-dark" title="Dark">☾</button>
+    </div>
+  </div>
+
+  <!-- DASHBOARD VIEW -->
+  <div id="view-dashboard" class="view active">
+    <div class="stats-strip">
+      <div class="stat-cell">
+        <div class="stat-label">Overall Mastery</div>
+        <div class="stat-value accent tabular" id="stat-mastery">0%</div>
+        <div class="stat-sub" id="stat-mastery-sub">0 of 0 cards mastered</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-label">Due Today</div>
+        <div class="stat-value warm tabular" id="stat-due">0</div>
+        <div class="stat-sub">across all services</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-label">Modules Reviewed</div>
+        <div class="stat-value tabular" id="stat-reviewed">0</div>
+        <div class="stat-sub">of 8 total</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-label">Total Cards Seen</div>
+        <div class="stat-value tabular" id="stat-seen">0</div>
+        <div class="stat-sub" id="stat-seen-sub">of 0 in deck</div>
+      </div>
+    </div>
+
+    <div class="cta-row">
+      <button class="btn-primary" id="btn-study-all">
+        Study all due cards <span class="count-pill" id="study-all-count">0</span>
+      </button>
+      <button class="btn-secondary" id="btn-reset-progress">Reset progress</button>
+    </div>
+
+    <div class="section-heading"><h2>Before You Start</h2></div>
+    <div class="grid bg-grid" id="background-grid"></div>
+
+    <div class="section-heading"><h2>Disease Sites</h2></div>
+    <div class="grid" id="service-grid"></div>
+  </div>
+
+  <!-- SERVICE DETAIL VIEW -->
+  <div id="view-service" class="view">
+    <button class="back-link" id="btn-back-dashboard">← All services</button>
+    <div class="svc-header">
+      <div class="tile-icon" id="svc-detail-icon"></div>
+      <div>
+        <h2 id="svc-detail-name"></h2>
+        <div class="svc-stats" id="svc-detail-stats"></div>
+      </div>
+      <div style="margin-left:auto;display:flex;gap:10px;">
+        <button class="btn-primary" id="btn-study-service">Study due cards <span class="count-pill" id="svc-due-count">0</span></button>
+      </div>
+    </div>
+    <div class="cat-list" id="cat-list"></div>
+  </div>
+
+  <!-- DOC VIEW -->
+  <div id="view-doc" class="view">
+    <button class="back-link" id="btn-back-from-doc">← Back</button>
+    <div class="doc-wrap">
+      <div class="doc-header">
+        <div class="doc-eyebrow"><span class="dot"></span><span id="doc-svc-name"></span></div>
+        <h2 class="doc-title" id="doc-title"></h2>
+      </div>
+      <div class="doc-toolbar" id="disease-doc-toolbar">
+        <button class="doc-study-link" id="btn-study-from-doc">Study these flashcards <span id="doc-study-count" class="count-pill" style="background:var(--surface);border:1px solid var(--line);"></span></button>
+      </div>
+      <div class="doc-body" id="doc-body"></div>
+      <div class="doc-footer-cta" id="disease-doc-footer">
+        <p>Ready to test your recall? Jump into active-recall flashcards for this exact topic.</p>
+        <button class="btn-primary" id="btn-study-from-doc-2">Study flashcards</button>
+      </div>
+      <div class="doc-footer-cta bg-footer-nav" id="bg-footer-nav" hidden>
+        <button class="btn-secondary" id="btn-bg-prev">&larr; Previous section</button>
+        <div style="font-size:12.5px;color:var(--ink-faint);font-family:var(--font-mono);">Section <span id="bg-nav-current"></span> of 10</div>
+        <button class="btn-primary" id="btn-bg-next">Next section &rarr;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STUDY VIEW -->
+  <div id="view-study" class="view">
+    <div class="study-wrap">
+      <div class="study-progress-row">
+        <button class="study-exit" id="btn-exit-study" title="Exit study session">✕</button>
+        <div class="study-progress-track"><div class="study-progress-fill" id="study-progress-fill"></div></div>
+        <div class="study-count tabular" id="study-count">0 / 0</div>
+      </div>
+
+      <div id="study-active">
+        <div class="card-stage">
+          <div class="flashcard" id="flashcard">
+            <div class="card-face front">
+              <div class="card-cat-tag" id="card-cat-front"></div>
+              <div class="card-prompt-label">Prompt</div>
+              <div class="card-text" id="card-front-text"></div>
+              <div class="card-hint">Tap card to reveal answer</div>
+            </div>
+            <div class="card-face back">
+              <div class="card-cat-tag" id="card-cat-back"></div>
+              <div class="card-prompt-label">Answer</div>
+              <div class="card-text" id="card-back-text"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="reveal-prompt" class="reveal-hint">Tap the card above to reveal the answer, then rate your recall</div>
+        <div id="rate-row" class="rate-row" style="display:none;">
+          <button class="rate-btn again" data-rating="again"><span class="rate-label">Again</span><span class="rate-sub">&lt;1 day</span></button>
+          <button class="rate-btn hard" data-rating="hard"><span class="rate-label">Hard</span><span class="rate-sub">2 days</span></button>
+          <button class="rate-btn good" data-rating="good"><span class="rate-label">Good</span><span class="rate-sub">4 days</span></button>
+          <button class="rate-btn easy" data-rating="easy"><span class="rate-label">Easy</span><span class="rate-sub">9 days</span></button>
+        </div>
+      </div>
+
+      <div id="study-complete" class="complete-wrap" style="display:none;">
+        <div class="complete-icon">✓</div>
+        <h2>Session complete</h2>
+        <p id="complete-msg">You've reviewed every due card in this set.</p>
+        <div class="complete-stats">
+          <div class="complete-stat"><div class="n tabular" id="complete-reviewed">0</div><div class="l">Reviewed</div></div>
+          <div class="complete-stat"><div class="n tabular" id="complete-again">0</div><div class="l">Missed</div></div>
+        </div>
+        <button class="btn-primary" id="btn-complete-done">Back to dashboard</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+/*__DATA__*/
+/*__APP_JS__*/
+</script>

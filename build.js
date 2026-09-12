@@ -1,0 +1,66 @@
+#!/usr/bin/env node
+/**
+ * Build script for the RadOnc Sub-I Companion app.
+ *
+ * Assembles the modular source files in src/ into a single, self-contained
+ * dist/index.html that can be opened directly in a browser (no server, no
+ * build tools needed to VIEW it) or republished as a Claude Artifact.
+ *
+ * Usage:  node build.js
+ */
+const fs = require("fs");
+const path = require("path");
+
+const ROOT = __dirname;
+const SRC = path.join(ROOT, "src");
+const DIST = path.join(ROOT, "dist");
+
+function readJSON(p) {
+  return JSON.parse(fs.readFileSync(p, "utf8"));
+}
+
+// --- load data ---
+const services = readJSON(path.join(SRC, "data", "services.json"));
+const background = readJSON(path.join(SRC, "data", "background.json"));
+
+const decksDir = path.join(SRC, "data", "decks");
+const decks = {};
+for (const file of fs.readdirSync(decksDir).sort()) {
+  if (!file.endsWith(".json")) continue;
+  const svcId = file.replace(/\.json$/, "");
+  decks[svcId] = readJSON(path.join(decksDir, file));
+}
+
+const docsDir = path.join(SRC, "data", "docs");
+const docs = {};
+for (const file of fs.readdirSync(docsDir).sort()) {
+  if (!file.endsWith(".json")) continue;
+  const svcId = file.replace(/\.json$/, "");
+  docs[svcId] = readJSON(path.join(docsDir, file));
+}
+
+// --- load code ---
+const styles = fs.readFileSync(path.join(SRC, "styles.css"), "utf8").trim();
+const appJs = fs.readFileSync(path.join(SRC, "app.js"), "utf8").trim();
+const template = fs.readFileSync(path.join(SRC, "index.template.html"), "utf8");
+
+// --- assemble ---
+const dataBlock = [
+  `const SERVICES = ${JSON.stringify(services)};`,
+  `const DECKS = ${JSON.stringify(decks)};`,
+  `const DOCS = ${JSON.stringify(docs)};`,
+  `const BACKGROUND = ${JSON.stringify(background)};`,
+].join("\n");
+
+let out = template.replace("/*__STYLES__*/", styles);
+out = out.replace("/*__DATA__*/\n/*__APP_JS__*/", dataBlock + "\n\n" + appJs);
+
+fs.mkdirSync(DIST, { recursive: true });
+const outPath = path.join(DIST, "index.html");
+fs.writeFileSync(outPath, out, "utf8");
+
+const stats = fs.statSync(outPath);
+console.log(`Built ${outPath} (${(stats.size / 1024).toFixed(0)} KB)`);
+console.log(`  services: ${services.length}, background sections: ${background.length}`);
+console.log(`  decks: ${Object.keys(decks).join(", ")}`);
+console.log(`  docs:  ${Object.keys(docs).join(", ")}`);
