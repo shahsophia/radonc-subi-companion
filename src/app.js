@@ -2164,7 +2164,7 @@ const QUIZ_SETS = {
     },
     {
       q: "Who qualifies for low-dose CT lung cancer screening under the USPSTF (2021) criteria?",
-      a: "Age <strong>50&ndash;80</strong>, at least a <strong>20 pack-year</strong> history, and <strong>currently smoking or quit within the past 15 years</strong>. Screen annually. NLST showed a <strong>20% relative reduction</strong> in lung cancer mortality with LDCT vs chest X-ray.",
+      a: "Age <strong>50&ndash;80</strong>, at least a <strong>20 pack-year</strong> history, and <strong>currently smoking or quit within the past 15 years</strong>. Screen annually. Screening finds cancers earlier, when more patients can be cured with <strong>surgery or SBRT</strong>.",
     },
     {
       q: "What is the most common cause of lung cancer in people who have never smoked?",
@@ -2177,8 +2177,8 @@ const QUIZ_SETS = {
       a: "Right: <strong>3 lobes</strong> (upper, middle, lower; separated by the horizontal and oblique fissures). Left: <strong>2 lobes</strong> (upper, lower; one oblique fissure). The <strong>lingula</strong> of the left upper lobe is the counterpart of the right middle lobe.",
     },
     {
-      q: "What is the \"no-fly zone,\" and why does it matter for SBRT?",
-      a: "A <strong>2 cm zone in all directions around the proximal bronchial tree</strong> (trachea, carina, main bronchi, and lobar bronchi). Tumors inside it are <strong>central</strong>. In Timmerman's early SBRT experience, 3-fraction ablative doses to central tumors caused far more severe toxicity, so central tumors get more fractions.",
+      q: "Why does a tumor's distance from the proximal bronchial tree matter for SBRT?",
+      a: "Tumors near the <strong>proximal bronchial tree</strong> (trachea, carina, main and lobar bronchi) or other mediastinal structures are <strong>central</strong>; the classic definition is within about 2 cm, but definitions vary by protocol. In early SBRT experience, 3-fraction ablative doses to central tumors caused far more severe toxicity, so the closer the tumor sits to these structures, the more fractions and organ limits shape the plan.",
     },
     {
       q: "A left upper lobe tumor causes hoarseness. Which nerve is involved, and where does it run?",
@@ -2234,13 +2234,13 @@ const QUIZ_SETS = {
     },
     {
       q: "A patient treated with SBRT 18 months ago has a growing, bulging opacity at the treated site that is losing its air bronchograms. What are you worried about?",
-      a: "<strong>Local recurrence.</strong> Post-SBRT fibrosis is expected, but <strong>enlargement after 12 months</strong>, a <strong>bulging margin</strong>, loss of air bronchograms, and craniocaudal growth are high-risk features. Next step: PET/CT and consider biopsy.",
+      a: "<strong>Local recurrence.</strong> Post-SBRT fibrosis is expected, but a <strong>new or progressively enlarging</strong> opacity after the early post-treatment period, a <strong>bulging margin</strong>, loss of air bronchograms, and craniocaudal growth are high-risk features. Next step: PET/CT and/or biopsy.",
     },
   ],
   "th-staging": [
     {
-      q: "A 2.4 cm tumor invades the visceral pleura. What's the T stage?",
-      a: "<strong>T2a.</strong> Visceral pleural invasion makes any tumor at least T2, even if it measures &le;3 cm.",
+      q: "A 1.8 cm peripheral N0 tumor is easily resectable, but the patient's lung function is too poor for surgery. Which term describes the problem: stage, resectability, or operability?",
+      a: "<strong>Operability.</strong> The stage is early and the tumor is resectable, but the <strong>patient</strong> can't tolerate the operation, so the plan is <strong>SBRT</strong>. Resectability is about the tumor's anatomy and nodal burden; operability is about the patient.",
     },
     {
       q: "A tumor has a separate nodule in a different lobe of the same lung. T3, T4, or M1a?",
@@ -2262,19 +2262,19 @@ const QUIZ_SETS = {
   "th-treatment-n0": [
     {
       q: "A 1.8 cm peripheral adenocarcinoma, N0 on PET and EBUS, in a patient with FEV1 32% predicted. What's the treatment?",
-      a: "<strong>Definitive SBRT</strong>, e.g., <strong>54 Gy in 3 fractions</strong> or 48 Gy in 4 or 50 Gy in 5. No chemotherapy. Local control is roughly 90&ndash;95%.",
+      a: "<strong>Definitive SBRT</strong>: a highly ablative course in a few fractions (for example, <strong>54 Gy in 3</strong>). No chemotherapy. Local control is high.",
     },
     {
       q: "A 2.2 cm tumor sits against the chest wall, N0. What changes in the SBRT plan?",
-      a: "Nothing about the indication; the concern is <strong>chest wall pain and rib fracture</strong>. Many centers favor <strong>4&ndash;5 fractions</strong> (48 Gy/4 or 50 Gy/5) and limit the chest wall volume getting 30 Gy.",
+      a: "Nothing about the indication; the concern is <strong>chest wall pain and rib fracture</strong>. Many centers use <strong>more fractions</strong> (for example, 4&ndash;5) and limit the chest wall dose.",
     },
     {
-      q: "A 2 cm tumor sits 1.2 cm from the right main bronchus. What's the tumor called, and which regimen do you use?",
-      a: "<strong>Central</strong> (within 2 cm of the proximal bronchial tree). Avoid 3 fractions; use <strong>50 Gy in 5 fractions</strong> (RTOG 0813) or 60 Gy in 8.",
+      q: "A 2 cm tumor sits 1.2 cm from the right main bronchus. What's the tumor called, and how does the SBRT regimen change?",
+      a: "<strong>Central.</strong> Three-fraction SBRT is generally avoided because of the risk of severe toxicity; safer regimens use more fractions (for example, <strong>50 Gy in 5</strong>, as in RTOG 0813).",
     },
     {
       q: "What makes a tumor ultracentral, and what toxicity are you most afraid of?",
-      a: "The tumor (or PTV) <strong>directly abuts or overlaps</strong> the trachea, main bronchi, or esophagus. The fear is <strong>fatal hemoptysis</strong> and fistula (HILUS trial). Use more fractions (e.g., <strong>60 Gy/8 or 60 Gy/15</strong>) or conventional fractionation.",
+      a: "The tumor (or PTV) <strong>directly abuts or overlaps</strong> the trachea, main bronchi, or esophagus. The fear is <strong>fatal hemoptysis</strong> and fistula (HILUS trial). There is no universal regimen: fractionation is individualized around the airway, esophagus, and vessels, often with more fractions or conventional fractionation.",
     },
   ],
   "th-treatment": [
@@ -2284,7 +2284,7 @@ const QUIZ_SETS = {
     },
     {
       q: "Same patient, but the tumor has an EGFR exon 19 deletion. What changes?",
-      a: "Consolidation is <strong>osimertinib</strong> instead of durvalumab (<strong>LAURA</strong>, a large PFS benefit). Immunotherapy works poorly in EGFR-mutant disease and raises pneumonitis risk with osimertinib.",
+      a: "Consolidation is <strong>osimertinib</strong> instead of durvalumab (<strong>LAURA</strong>, a large PFS benefit). Immunotherapy benefit appears limited in EGFR-mutant disease, and combining it with osimertinib raises pneumonitis risk.",
     },
     {
       q: "Why don't we treat stage III NSCLC to 74 Gy?",
@@ -2297,6 +2297,10 @@ const QUIZ_SETS = {
     {
       q: "Limited-stage SCLC: what's the classic radiation regimen, and what's given after chemoradiation?",
       a: "<strong>45 Gy in 30 twice-daily fractions</strong> (Turrisi) or 60&ndash;66 Gy daily (CONVERT), <strong>concurrent with cisplatin/etoposide</strong>, starting early. Then <strong>durvalumab</strong> consolidation (ADRIATIC) and <strong>PCI or MRI surveillance</strong>.",
+    },
+    {
+      q: "Three weeks into chemoradiation for stage III NSCLC, a patient has painful swallowing. Which organ at risk explains it, and which late toxicity is the plan's lung dose trying to prevent?",
+      a: "<strong>Esophagus</strong>: acute <strong>esophagitis</strong> is the most expected toxicity of conventional thoracic chemoRT. Lung dose drives <strong>radiation pneumonitis</strong> (usually 1&ndash;6 months after RT), and heart dose drives late <strong>cardiac toxicity</strong>.",
     },
   ],
   "pr-epi": [

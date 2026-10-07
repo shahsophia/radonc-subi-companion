@@ -64,7 +64,7 @@
       "8 Gy in 1 fraction"
      ],
      "correctIndex": 1,
-     "explanation": "A tumor abutting the chest wall is still an SBRT case, but many centers spread the dose over 4-5 fractions to lower the risk of chest wall pain and rib fracture. The goal is still a BED10 of at least 100 Gy; below that, local control drops."
+     "explanation": "A tumor abutting the chest wall is still an SBRT case, but many centers spread the dose over 4-5 fractions to lower the risk of chest wall pain and rib fracture while keeping the dose ablative."
     },
     {
      "label": "Two years later",
@@ -98,7 +98,7 @@
       "Systemic therapy alone"
      ],
      "correctIndex": 1,
-     "explanation": "For a fit patient with N0 disease, surgery is the standard and SBRT is for everyone else. For a peripheral N0 tumor 2 cm or smaller, segmentectomy is now standard: CALGB 140503 showed it was noninferior to lobectomy, and JCOG0802 showed better overall survival."
+     "explanation": "For a fit patient with N0 disease, surgery is the standard; SBRT is the curative option for medically inoperable patients or selected patients who decline surgery. For a peripheral N0 tumor 2 cm or smaller, segmentectomy is now standard: CALGB 140503 showed it was noninferior to lobectomy, and JCOG0802 showed better overall survival."
     },
     {
      "label": "Surprise",
@@ -268,7 +268,7 @@
       "SBRT to the primary and node"
      ],
      "correctIndex": 2,
-     "explanation": "The first question for every stage III patient is resectable or not. Single-station, non-bulky N2 is often resectable, and those patients get neoadjuvant (perioperative) chemo-immunotherapy and then surgery."
+     "explanation": "The first question for every stage III patient is resectable or not. Limited, non-bulky N2 is often resectable, but tumor board decides based on nodal burden, tumor anatomy, expected morbidity, and surgical expertise, not N stage alone. Resectable patients get neoadjuvant (perioperative) chemo-immunotherapy and then surgery."
     },
     {
      "label": "Trial",
@@ -287,7 +287,7 @@
      "label": "Radiation",
      "prompt": "Is radiation part of her upfront plan? When would it come in?",
      "answer": "No. Radiation would only be added after surgery for a positive margin, not simply because she had N2 disease.",
-     "explanation": "Had the disease been bulky or multi-station N2, she would have gone down the unresectable path: concurrent chemoRT to 60 Gy, then durvalumab."
+     "explanation": "Had tumor board judged the nodal disease unresectable (for example, bulky or extensive multi-station N2), she would have gone down the definitive path: concurrent chemoRT to 60 Gy, then durvalumab."
     }
    ]
   },
@@ -384,7 +384,7 @@
     {
      "label": "Location",
      "image": "images/thoracic/th-pbt.jpg",
-     "caption": "Frontal drawing of the trachea, main and lobar bronchi, pleura, chest wall, and diaphragm. The zone 2 cm around the proximal bronchial tree defines a central tumor.",
+     "caption": "Frontal drawing of the trachea, main and lobar bronchi, pleura, chest wall, and diaphragm. The zone about 2 cm around the proximal bronchial tree is the classic definition of a central tumor.",
      "prompt": "What makes this tumor 'central'?",
      "choices": [
       "It is larger than 2 cm",
@@ -393,7 +393,7 @@
       "It is in the right lung"
      ],
      "correctIndex": 1,
-     "explanation": "The proximal bronchial tree runs from the trachea to the lobar bronchi. Tumors within 2 cm of it are central, and the airway, vessels, and esophagus can't take a 3-fraction dose."
+     "explanation": "The proximal bronchial tree runs from the trachea to the lobar bronchi. Tumors within about 2 cm of it are usually called central (exact definitions vary by protocol), and the airway, vessels, and esophagus tolerate a 3-fraction dose poorly."
     },
     {
      "label": "Trial",
@@ -418,19 +418,19 @@
       "30 Gy in 10 fractions"
      ],
      "correctIndex": 1,
-     "explanation": "The closer to the middle of the chest, the more fractions: peripheral 3, central 5, ultracentral 8 or more. Never 3 fractions for a central tumor."
+     "explanation": "The closer to the middle of the chest, the more fractions: peripheral 3, central 5, ultracentral 8 or more. Three-fraction regimens are generally avoided for central tumors."
     },
     {
      "label": "Ultracentral",
      "prompt": "On the plan, the PTV overlaps the wall of the right main bronchus. Now what?",
      "choices": [
       "Keep 50 Gy in 5 fractions and ignore the bronchus",
-      "Treat as ultracentral: 60 Gy in 8 or 15 (or 60 Gy in 30), respecting airway limits even if part of the PTV is underdosed",
+      "Treat as ultracentral: use more fractions (for example 60 Gy in 8 or 15, or conventional fractionation) and respect airway limits even if part of the PTV is underdosed",
       "Switch to 54 Gy in 3",
       "Abandon treatment"
      ],
      "correctIndex": 1,
-     "explanation": "When the tumor or PTV touches the trachea, main bronchi, or esophagus, toxicity drives the plan. In HILUS, 56 Gy in 8 near the main bronchi caused treatment-related death in about 15%, mostly from bleeding."
+     "explanation": "When the tumor or PTV touches the trachea, main bronchi, or esophagus, toxicity drives the plan, and the regimen is individualized around those organs. In HILUS, 56 Gy in 8 near the main bronchi caused treatment-related death in about 15%, mostly from bleeding."
     },
     {
      "label": "Toxicity",

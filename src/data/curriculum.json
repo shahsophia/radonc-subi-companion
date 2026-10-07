@@ -263,21 +263,22 @@
   },
   "thoracic": {
    "title": "Thoracic Cancer",
-   "summary": "NSCLC and SCLC at every stage: nodal stations, AJCC 9th edition staging, and when to choose SBRT, surgery, or chemoradiation.",
+   "summary": "NSCLC and SCLC from biopsy to radiation plan: what kind of lung cancer it is, where it sits, how far it has spread, whether it is resectable, and what the radiation field must treat and protect.",
    "topics": [
     "NSCLC vs SCLC",
     "Nodal Stations",
-    "AJCC 9 Staging",
-    "SBRT",
-    "Stage III ChemoRT"
+    "Stage vs Resectability",
+    "SBRT by Location",
+    "Stage III ChemoRT",
+    "Targets and Toxicity"
    ],
    "objectives": [
-    "Distinguish NSCLC from SCLC and explain why every adenocarcinoma gets driver mutation testing",
-    "Locate the thoracic lymph node stations on anatomy and CT, and assign the N stage",
-    "Read the mediastinum level by level on CT and know what PET/CT and 4D-CT add",
-    "Stage NSCLC with the AJCC 9th edition, and SCLC as limited or extensive",
-    "Choose between SBRT, surgery, and chemoradiation for peripheral, chest wall, central, and ultracentral tumors",
-    "Work through node-positive, stage III, and metastatic paradigms"
+    "Distinguish NSCLC from SCLC and explain how histology and driver testing change treatment",
+    "Predict from tumor location what the tumor can invade and which organs the plan must protect",
+    "Use each scan for its question, and explain how 4D-CT turns tumor motion into the ITV",
+    "Separate stage, resectability, and operability, and assign N stage by station",
+    "Choose between surgery, SBRT, chemoradiation, and systemic therapy for each paradigm",
+    "Describe what the radiation field treats and link each organ at risk to its toxicity"
    ],
    "guideline": "NCCN Non-Small Cell and Small Cell Lung Cancer Guidelines",
    "staging": [
@@ -303,82 +304,83 @@
    ],
    "modules": {
     "Epidemiology & Risk Factors": {
-     "lede": "Separate NSCLC from SCLC, learn the risk factors and driver mutations, and know who qualifies for low-dose CT screening.",
+     "lede": "Answer the first question, what kind of lung cancer this is: NSCLC versus SCLC, the histologies that change treatment, risk factors, driver testing, and screening.",
      "essentials": [
       "NSCLC versus SCLC",
-      "Smoking and radon",
-      "Biomarker testing in nonsquamous NSCLC",
-      "Low-dose CT screening eligibility"
+      "Adenocarcinoma, squamous, and small cell",
+      "Driver-positive versus driver-negative NSCLC",
+      "Why screening finds small peripheral tumors"
      ],
      "objectives": [
       "Distinguish NSCLC histologies from small cell lung cancer",
       "Identify the main risk factors, including in never-smokers",
-      "Explain why every nonsquamous NSCLC gets driver mutation and PD-L1 testing",
-      "State who is eligible for low-dose CT screening",
-      "Recognize how lung cancer presents"
+      "Explain how driver mutations and PD-L1 shape systemic therapy",
+      "Trace the path from biopsy to radiation strategy",
+      "State who is eligible for low-dose CT screening"
      ]
     },
     "Anatomy & Lymphatics": {
-     "lede": "Learn the lobes and airways that define central and ultracentral tumors, and the mediastinal nodal stations that decide N1, N2, and N3.",
+     "lede": "Learn where the tumor is and where it can spread: how location predicts invasion and the organs at risk, and how nodal stations set N1, N2, and N3.",
      "essentials": [
-      "Lobes, fissures, and motion",
+      "Tumor location and the organs at risk",
       "Central versus ultracentral",
       "Station numbers and N stage",
-      "What EBUS can reach"
+      "Tissue when nodes change management"
      ],
      "objectives": [
       "Identify the lobes and fissures of each lung",
-      "Define central and ultracentral tumors and why location changes SBRT dose",
-      "Map the thoracic nodal stations to N1, N2, and N3",
+      "Predict what a peripheral, chest wall, central, apical, or lower lobe tumor puts at risk",
+      "Explain why central and ultracentral definitions vary and why proximity changes the plan",
+      "Map the major nodal stations to N1, N2, and N3",
       "Know which stations EBUS reaches and which need surgical sampling"
      ]
     },
     "Imaging": {
-     "lede": "Read CT chest level by level, find the nodal stations, use PET/CT and brain MRI for staging, and understand 4D-CT planning and post-SBRT follow-up.",
+     "lede": "Organize thoracic imaging around five questions, from whether a nodule is cancer to how the tumor moves, with 4D-CT and the ITV as the radiation oncologist's scan.",
      "essentials": [
-      "CT for the primary, PET/CT for nodes and metastases",
+      "Each scan answers one question",
       "Features of a suspicious nodule",
-      "Why PET-positive nodes need tissue",
-      "4D-CT and the ITV"
+      "PET-positive nodes need tissue if they change treatment",
+      "GTV, ITV, and PTV on 4D-CT"
      ],
      "objectives": [
-      "Follow the mediastinum and nodal stations level by level on CT",
+      "Match each scan to the clinical question it answers",
       "Describe the features of a suspicious nodule",
-      "Explain the role and limits of PET/CT and when brain MRI is needed",
-      "Describe 4D-CT planning and the ITV",
-      "Tell expected post-SBRT fibrosis from recurrence"
+      "Explain the limits of PET/CT and when brain MRI is needed",
+      "Explain how 4D-CT builds the ITV and how large motion is managed",
+      "Tell expected post-SBRT fibrosis from possible recurrence"
      ]
     },
     "Workup & Staging": {
-     "lede": "Work through the core workup and AJCC 9th edition TNM, then limited versus extensive small cell lung cancer.",
+     "lede": "Turn a suspicious lesion into a treatment-ready diagnosis: the workup, which parts of T, N, and M change management, and why stage is not the same as resectability or operability.",
      "essentials": [
       "The core workup",
-      "T stage size cutoffs and invasion",
-      "N1, N2a, N2b, and N3",
-      "Limited versus extensive SCLC"
+      "Invasion can upstage a small tumor",
+      "N stage drives the biggest treatment change",
+      "Stage, resectability, and operability"
      ],
      "objectives": [
       "List the core workup every lung cancer patient gets",
-      "Assign T stage by size and invasion",
-      "Assign N stage by station",
-      "Recognize what makes disease M1",
+      "Explain what each part of TNM changes in management",
+      "Assign N stage by station, including N2a and N2b",
+      "Separate stage, resectability, and operability",
       "Stage small cell lung cancer as limited or extensive"
      ]
     },
     "Treatment Paradigms": {
-     "lede": "Follow the paradigms from node-negative SBRT by tumor location, through stage III chemoradiation, to metastatic disease and small cell lung cancer.",
+     "lede": "Decide what treatment fits the patient, from surgery or SBRT for early disease through stage III, metastatic disease, and small cell, then see what the radiation field treats and protects.",
      "essentials": [
-      "Lobectomy versus SBRT",
-      "SBRT dose by location",
-      "Stage III chemoradiation and consolidation",
-      "Limited-stage SCLC"
+      "Surgery versus SBRT",
+      "Location changes fractionation",
+      "Resectable versus unresectable stage III",
+      "Targets, organs at risk, and toxicity"
      ],
      "objectives": [
-      "Explain the roles of surgery, chemotherapy, and systemic therapy",
-      "Choose SBRT dose by tumor location",
-      "Describe the standard for unresectable stage III NSCLC",
-      "Outline treatment of metastatic disease",
-      "Describe treatment of limited-stage and extensive-stage small cell lung cancer"
+      "Explain the roles of surgery and systemic therapy",
+      "Explain how tumor location changes SBRT fractionation",
+      "Describe the approach to resectable and unresectable stage III NSCLC",
+      "Explain why small cell is treated differently",
+      "Describe the SBRT and stage III targets and link each organ at risk to its toxicity"
      ]
     }
    }

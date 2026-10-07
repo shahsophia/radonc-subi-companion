@@ -24,15 +24,15 @@
   "id": "thx-54",
   "category": "Epidemiology & Risk Factors",
   "front": "Why is every nonsquamous NSCLC tested for driver mutations and PD-L1?",
-  "back": "The results change systemic therapy: a driver mutation (e.g., EGFR, ALK) means a targeted pill instead of immunotherapy, and PD-L1 guides how much immunotherapy is used.",
-  "extra": "This now matters for early-stage and stage III disease too, not just metastatic disease. Classic EGFR patient: a younger never-smoking woman with adenocarcinoma (treated with osimertinib); ALK is the other classic never-smoker driver."
+  "back": "The results change systemic therapy: an actionable driver (e.g., EGFR, ALK) often makes targeted therapy the main systemic strategy, and without one, PD-L1 helps guide immunotherapy.",
+  "extra": "This now matters for early-stage and stage III disease too, not just metastatic disease. Immunotherapy decisions in driver-positive disease depend on the specific alteration and setting. Classic EGFR patient: a younger never-smoking woman with adenocarcinoma."
  },
  {
   "id": "thx-8",
   "category": "Epidemiology & Risk Factors",
   "front": "Who qualifies for lung cancer screening (USPSTF), and with what test?",
   "back": "Annual low-dose CT for ages 50-80 with ≥20 pack-years who currently smoke or quit within the last 15 years",
-  "extra": "NLST showed a 20% relative reduction in lung cancer deaths. Screening finds the small peripheral tumors that often become SBRT patients."
+  "extra": "Screening finds earlier, often small peripheral tumors, so more patients can be cured with surgery or SBRT."
  },
  {
   "id": "thx-55",
@@ -44,9 +44,9 @@
  {
   "id": "thx-10",
   "category": "Anatomy & Lymphatics",
-  "front": "What makes a lung tumor \"central\" for SBRT?",
-  "back": "Within 2 cm of the proximal bronchial tree (trachea, carina, main and lobar bronchi) or touching the mediastinal or pericardial pleura",
-  "extra": "The 2 cm \"no-fly zone.\" Central tumors cannot safely get 3-fraction SBRT."
+  "front": "What makes a lung tumor \"central,\" and why does it matter for SBRT?",
+  "back": "Proximity to the proximal bronchial tree (trachea, carina, main and lobar bronchi) or other mediastinal structures, classically within about 2 cm. Central tumors get more fractions because the airway and mediastinum tolerate ablative doses poorly.",
+  "extra": "Definitions of central and especially ultracentral vary by protocol. Three-fraction SBRT is generally avoided for central tumors."
  },
  {
   "id": "thx-14",
@@ -94,7 +94,7 @@
   "id": "thx-28",
   "category": "Imaging",
   "front": "A mass-like opacity appears at the lung SBRT site months after treatment. What is it most likely, and when should recurrence be suspected?",
-  "back": "Usually expected radiation fibrosis, which follows the high-dose region and then stabilizes. Suspect recurrence if it keeps growing (especially beyond about a year); that gets PET/CT and biopsy.",
+  "back": "Usually expected radiation fibrosis, which follows the high-dose region and then stabilizes. Suspect recurrence if a mass-like opacity is new or keeps enlarging after the early post-treatment period; that may prompt PET/CT and/or biopsy.",
   "extra": "Other worrisome signs: a bulging margin or loss of air bronchograms. Calling recurrence too early leads to unnecessary procedures."
  },
  {
@@ -123,7 +123,7 @@
   "category": "Workup & Staging",
   "front": "In early-stage NSCLC, what usually decides surgery vs SBRT?",
   "back": "The patient's fitness for surgery (mainly lung function on PFTs: FEV1 and DLCO), not the tumor",
-  "extra": "Predicted postoperative FEV1 and DLCO >60% = low surgical risk; very poor function favors SBRT."
+  "extra": "Predicted postoperative values and exercise testing refine the assessment in borderline cases; very poor function favors SBRT."
  },
  {
   "id": "thx-29",
@@ -168,6 +168,13 @@
   "extra": "Limited stage is treated for cure with concurrent chemoradiation. About 2/3 of patients present with extensive stage."
  },
  {
+  "id": "thx-66",
+  "category": "Workup & Staging",
+  "front": "What is the difference between stage, resectability, and operability in lung cancer?",
+  "back": "Stage = how far the disease has spread. Resectability = whether surgery can achieve an appropriate oncologic resection with acceptable morbidity (the tumor's anatomy and nodal burden). Operability = whether this patient can tolerate the operation.",
+  "extra": "A stage IIIA patient can be surgical or unresectable; a stage IA tumor can be resectable but inoperable (then SBRT). Tumor board decides surgery-based treatment vs definitive chemoradiation."
+ },
+ {
   "id": "thx-59",
   "category": "Treatment Paradigms",
   "front": "What is the standard treatment for node-negative early-stage NSCLC in a patient fit for surgery?",
@@ -192,22 +199,15 @@
   "id": "thx-42",
   "category": "Treatment Paradigms",
   "front": "How does tumor location change SBRT fractionation for early-stage lung cancer?",
-  "back": "The closer to the middle of the chest, the more fractions: peripheral about 3 (e.g., 54 Gy/3), central about 5 (e.g., 50 Gy/5, not 3), ultracentral 8 or more",
-  "extra": "Tumors abutting the chest wall often get 4-5 fractions to limit rib fracture and chest wall pain."
+  "back": "The closer to the middle of the chest, the more fractions: peripheral tumors get a short, highly ablative course; central tumors get more fractions (3-fraction regimens are generally avoided); ultracentral regimens are individualized around the organs at risk.",
+  "extra": "Tumors abutting the chest wall often get more fractions to limit rib fracture and chest wall pain. Representative examples: 54 Gy/3 peripheral, 50 Gy/5 central."
  },
  {
   "id": "thx-43",
   "category": "Treatment Paradigms",
   "front": "For an ultracentral lung tumor (touching the proximal bronchial tree or esophagus), what is the feared SBRT toxicity?",
   "back": "Fatal hemoptysis (and fistula) from high dose to the main airways, great vessels, or esophagus",
-  "extra": "Ultracentral = the tumor or PTV touches or overlaps the proximal bronchial tree, trachea, or esophagus; these get 8 or more fractions or conventional fractionation. In HILUS, about 15% of patients died of treatment, mostly from bleeding. Here toxicity, not tumor control, drives the plan."
- },
- {
-  "id": "thx-61",
-  "category": "Treatment Paradigms",
-  "front": "What biologic dose target do lung SBRT regimens aim for, and why?",
-  "back": "A BED10 of at least 100 Gy, because local control drops below that",
-  "extra": "54 Gy in 3 fractions and 50 Gy in 5 fractions both clear this bar."
+  "extra": "Ultracentral = the tumor or PTV directly abuts or overlaps the trachea, main bronchi, or esophagus (definitions vary). There is no universal regimen; fractionation is individualized, and organ limits may win over full PTV coverage. HILUS showed a high rate of fatal bleeding."
  },
  {
   "id": "thx-44",
@@ -240,9 +240,9 @@
  {
   "id": "thx-47",
   "category": "Treatment Paradigms",
-  "front": "What is the modern approach for resectable stage III NSCLC (e.g., single-station, non-bulky N2)?",
+  "front": "What is the modern approach for stage III NSCLC that tumor board judges resectable?",
   "back": "Neoadjuvant chemo-immunotherapy, then surgery",
-  "extra": "CheckMate 816 raised the complete response rate from 2% to 24%. Radiation is reserved for a positive margin."
+  "extra": "N2 pattern influences resectability, but it is a multidisciplinary judgment (nodal burden, tumor anatomy, expected morbidity, response to therapy), not N stage alone. CheckMate 816 greatly raised the complete pathologic response rate. Radiation is mainly for a positive margin."
  },
  {
   "id": "thx-48",
@@ -255,8 +255,8 @@
   "id": "thx-49",
   "category": "Treatment Paradigms",
   "front": "When does radiation pneumonitis typically appear, and which dose metrics predict it?",
-  "back": "About 1-6 months after RT. Predicted by lung V20 (keep <30-35%) and mean lung dose (keep <20 Gy).",
-  "extra": "Classic symptoms are cough, dyspnea, and low-grade fever; it is treated with steroids."
+  "back": "About 1-6 months after RT. Its risk rises with the amount of lung receiving dose (lung V20 and mean lung dose).",
+  "extra": "Classic symptoms are cough, dyspnea, and low-grade fever; it is treated with steroids. Common goals: V20 under about 30-35% and mean lung dose under about 20 Gy."
  },
  {
   "id": "thx-63",

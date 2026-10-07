@@ -310,3 +310,17 @@ alone does not contraindicate RT and that ATM risk is the homozygous state; br-1
 and br-42 dropped rigid stage rules; br-32 moved to Epidemiology with the DCIS/LCIS
 material. Added br-57 (Z0011 is not an RNI decision) and br-58 (anatomic vs
 prognostic stage). Existing card ids were kept.
+
+**Thoracic reading revision (October 7, 2026), 332 cards (no change in count).** The
+thoracic reading was reorganized around the patient (what kind of lung cancer, where
+it is, how far it has spread, whether it is resectable, what RT treats, and which
+normal tissue limits the plan), with a location-to-OAR table, imaging by clinical
+question with 4D-CT/ITV as a signature section, "stage vs resectability vs
+operability," a target map for SBRT vs stage III, and an OAR-to-toxicity section.
+Absolute statements were softened: thx-54 (a driver no longer means "instead of
+immunotherapy"), thx-10/thx-42/thx-43 (central and ultracentral definitions vary;
+regimens individualized, no "never 3 fractions"), thx-28 (recurrence after SBRT
+without a fixed 12-month rule), and thx-47 (resectability is a tumor board
+judgment, not N2a vs N2b). The BED10 card (thx-61) was retired and replaced by
+thx-66 (stage vs resectability vs operability). NLST (thx-8), PFT (thx-58), and
+dose-constraint (thx-49) numbers moved to Extra or were removed.
