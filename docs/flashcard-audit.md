@@ -324,3 +324,21 @@ without a fixed 12-month rule), and thx-47 (resectability is a tumor board
 judgment, not N2a vs N2b). The BED10 card (thx-61) was retired and replaced by
 thx-66 (stage vs resectability vs operability). NLST (thx-8), PFT (thx-58), and
 dose-constraint (thx-49) numbers moved to Extra or were removed.
+
+**Prostate reading revision (October 7, 2026), 332 → 334 cards.** The prostate
+reading was rebuilt around the full radiation oncology workflow (PSA → MRI → biopsy
+→ NCCN risk → PSMA PET → RT vs surgery vs surveillance → targets → technique → OARs
+→ PSA follow-up → salvage). Epidemiology now separates risk of developing cancer
+from risk of progression and moves PSA kinetics and biomarkers into an expandable
+box; anatomy moves contouring boundaries and the Roach formula into reference
+boxes; imaging adds "MRI does not set clinical T stage," "PSMA PET changes the
+map," and a simulation walkthrough; staging adds AJCC vs NCCN and life expectancy;
+treatment is organized by pathway with brachytherapy, plan-building, and
+toxicity-by-timing sections. Softened absolutes: prx-4 (screening as individualized
+shared decision-making, ages in Extra), prx-10 (rectum is one of the principal
+dose-limiting organs; spacer is an adjunct), prx-26 (negative PSMA PET does not
+exclude microscopic disease), prx-45/prx-48 (pelvic nodes by estimated nodal risk;
+abiraterone as intensification for selected patients), prx-63 ("generally" no ADT),
+prx-42 (α/β wording). prx-59 now contrasts AJCC stage with NCCN risk group. Retired
+prx-20 (Roach formula, now a historical pearl). Added prx-69 (life expectancy
+first), prx-70 (LDR vs HDR), prx-71 (negative PSMA PET does not delay salvage RT).

@@ -2314,15 +2314,19 @@ const QUIZ_SETS = {
     },
     {
       q: "A 50-year-old Black man whose father had prostate cancer at 58 asks about screening. What do you tell him?",
-      a: "He's <strong>higher risk</strong> on two counts, so screening with shared decision-making should start earlier, at about <strong>40&ndash;45</strong>, rather than at 55.",
+      a: "He's at <strong>increased risk</strong> on two counts (Black ancestry and a first-degree relative), so the shared decision-making conversation about screening should start <strong>earlier</strong>, at about 40&ndash;45 in current AUA guidance.",
     },
     {
       q: "Name three benign causes of a raised PSA.",
       a: "<strong>BPH</strong>, <strong>prostatitis/UTI</strong>, and recent <strong>instrumentation</strong> (biopsy, catheter, cystoscopy). Also urinary retention and recent ejaculation. Repeat the PSA before acting on one value.",
     },
     {
-      q: "A PSA of 6 in a man with an 80 cc gland vs a 25 cc gland: which is more worrying, and what number captures that?",
-      a: "The <strong>25 cc gland</strong>. <strong>PSA density</strong> (PSA &divide; volume): 6/25 = 0.24 (worrying) vs 6/80 = 0.075. Above <strong>0.15</strong> suggests clinically significant cancer.",
+      q: "A man's PSA comes back at 5.8. What is the next step before MRI or biopsy?",
+      a: "<strong>Repeat and confirm the PSA.</strong> An elevated PSA is not a diagnosis: BPH, inflammation, infection, and recent instrumentation all raise it. Then risk assessment, prostate MRI &plusmn; biomarkers, and biopsy if concerning.",
+    },
+    {
+      q: "Family history and BRCA2 raise the risk of <em>developing</em> prostate cancer. What determines the risk that an established cancer will progress?",
+      a: "<strong>PSA, Grade Group, clinical T stage, and the extent of disease</strong> on biopsy and imaging, combined into the <strong>NCCN risk group</strong>. Risk of developing cancer decides screening; risk of progression frames treatment.",
     },
   ],
   "pr-anatomy": [
@@ -2331,8 +2335,8 @@ const QUIZ_SETS = {
       a: "The <strong>peripheral zone</strong> (~70%), the posterior part of the gland right against the rectum. That's the part a DRE can feel. BPH arises in the <strong>transition zone</strong>.",
     },
     {
-      q: "Which structure separates the prostate from the rectum, and what do we inject there to protect the rectum?",
-      a: "<strong>Denonvilliers' fascia</strong> (rectoprostatic fascia). A <strong>hydrogel spacer</strong> (e.g., SpaceOAR) injected between the prostate and rectum pushes the rectum away and lowers rectal dose.",
+      q: "Which structure separates the prostate from the rectum, and what can be placed there to protect the rectum?",
+      a: "<strong>Denonvilliers' fascia</strong> (rectoprostatic fascia). A <strong>hydrogel spacer</strong> increases the separation between the prostate and anterior rectal wall, which can reduce rectal dose in selected patients. It is an adjunct, not a requirement.",
     },
     {
       q: "Where do the neurovascular bundles run, and why do they matter?",
@@ -2353,30 +2357,30 @@ const QUIZ_SETS = {
       a: "<strong>M1a.</strong> Only pelvic nodes below the common iliac bifurcation (obturator, internal/external iliac, sacral) are regional. Common iliac, para-aortic, and inguinal nodes are distant.",
     },
     {
-      q: "Where does the elective pelvic nodal RT volume start superiorly (RTOG/NRG)?",
-      a: "At about <strong>L5/S1</strong> (distal common iliac), and down to the top of the pubic symphysis, covering obturator, internal/external iliac, and presacral (S1&ndash;S3) nodes.",
+      q: "Which nodal regions does an elective pelvic nodal RT field generally cover?",
+      a: "The <strong>obturator, internal iliac, external iliac, and presacral</strong> nodes, plus the <strong>distal common iliac</strong> nodes. Exact contouring boundaries are resident-level detail.",
     },
     {
-      q: "What does the Roach formula estimate, and what's the formula?",
-      a: "The <strong>risk of lymph node involvement</strong>: <strong>(2/3 &times; PSA) + [(Gleason score &minus; 6) &times; 10]</strong>. Over ~15&ndash;20% is used to justify pelvic nodal RT.",
+      q: "What did the Roach formula estimate, and why isn't it a decision rule today?",
+      a: "The <strong>risk of nodal involvement</strong> from PSA and Gleason score. It historically guided pelvic nodal RT, but contemporary decisions also weigh <strong>MRI, PSMA PET, Grade Group, clinical stage, and guideline-based risk</strong>.",
     },
   ],
   "pr-imaging": [
     {
-      q: "On mpMRI, which sequence drives the PI-RADS score in the peripheral zone vs the transition zone?",
-      a: "<strong>Peripheral zone: DWI/ADC.</strong> <strong>Transition zone: T2.</strong> DCE only helps upgrade a peripheral zone 3 to a 4.",
+      q: "On mpMRI, which sequence matters most for a peripheral zone lesion, and which for a transition zone lesion or local extension?",
+      a: "<strong>Peripheral zone: DWI/ADC.</strong> <strong>Transition zone and extension (EPE, SVI): T2.</strong> DCE has only a limited, tie-breaking role.",
     },
     {
-      q: "What does cancer look like on T2 and ADC?",
-      a: "<strong>Dark (low signal) on T2</strong> and <strong>dark on the ADC map</strong> (bright on high b-value DWI) because packed tumor cells restrict water diffusion.",
+      q: "PSA 7, normal DRE, and a 2 cm PI-RADS 5 lesion on MRI. Does the MRI make this cT2?",
+      a: "<strong>No: cT1c.</strong> NCCN clinical T stage comes from the DRE. The MRI directs the biopsy and shapes the radiation plan, but MRI appearance doesn't automatically become the clinical T stage.",
     },
     {
       q: "A bone scan shows uniformly intense skeletal uptake and the kidneys are barely visible. Normal?",
       a: "<strong>No: a superscan.</strong> Diffuse bony metastases take up so much tracer that the kidneys fade. Classic for prostate cancer.",
     },
     {
-      q: "Why has PSMA PET largely replaced CT + bone scan for staging high-risk disease?",
-      a: "Much better accuracy: <strong>proPSMA</strong> showed 92% vs 65% for nodal/distant disease, with fewer equivocal scans. It also finds recurrence at low PSA levels after surgery.",
+      q: "PSMA PET is more sensitive than CT and bone scan. What does a negative PSMA PET <em>not</em> tell you?",
+      a: "It does <strong>not exclude microscopic disease</strong>. A positive scan can change the radiation map (add nodes, boost a lesion), but a negative scan is not proof that the disease is confined.",
     },
     {
       q: "Why do we place fiducial markers before prostate RT?",
@@ -2408,11 +2412,11 @@ const QUIZ_SETS = {
   "pr-treatment-local": [
     {
       q: "A 64-year-old has cT1c, Gleason 3+3, PSA 5, 2 of 12 cores. What's recommended?",
-      a: "<strong>Active surveillance</strong> (low risk). ProtecT: ~97% prostate cancer survival at 15 years regardless of approach, with surveillance avoiding treatment side effects.",
+      a: "<strong>Active surveillance</strong> (low risk): regular PSA, repeat MRI, and repeat biopsy, with curative treatment if the cancer is reclassified. It's active management, not doing nothing (ProtecT).",
     },
     {
-      q: "Favorable intermediate risk: which RT options, and is ADT needed?",
-      a: "<strong>No ADT.</strong> EBRT (e.g., <strong>60 Gy/20</strong> or <strong>70 Gy/28</strong>), <strong>SBRT 36.25 Gy/5</strong>, or <strong>LDR brachytherapy monotherapy</strong>.",
+      q: "Which step up in risk group is where ADT enters the radiation treatment paradigm?",
+      a: "<strong>Favorable to unfavorable intermediate.</strong> ADT is generally omitted for favorable intermediate risk; unfavorable intermediate gets <strong>short-term ADT</strong> (about 4&ndash;6 months) with RT.",
     },
     {
       q: "How long is ADT for unfavorable intermediate vs high risk with RT?",
@@ -2420,13 +2424,13 @@ const QUIZ_SETS = {
     },
     {
       q: "Why does hypofractionation work so well for prostate cancer?",
-      a: "Prostate cancer has a <strong>low &alpha;/&beta; (~1.5)</strong>, lower than the rectum (~3). Bigger fractions hurt the tumor more than the rectum. CHHiP, PROFIT, and PACE-B confirmed it.",
+      a: "Prostate cancer is thought to have a relatively <strong>low &alpha;/&beta; ratio</strong>, so larger fractions can maintain tumor control while shortening treatment. <strong>CHHiP</strong> (60 Gy/20) and <strong>PACE-B</strong> (36.25 Gy/5) confirmed it clinically.",
     },
   ],
   "pr-treatment": [
     {
       q: "cN1 (pelvic nodes on PSMA PET), M0. What's the standard radiation-based treatment?",
-      a: "<strong>RT to the prostate + pelvic nodes</strong> (boost the involved nodes) with <strong>2&ndash;3 years of ADT</strong> + <strong>abiraterone</strong> (STAMPEDE).",
+      a: "<strong>RT to the prostate + pelvic nodes</strong> (boost the involved nodes) with <strong>long-term ADT</strong>, and systemic intensification such as <strong>abiraterone</strong> for appropriate patients (STAMPEDE).",
     },
     {
       q: "After prostatectomy, margins positive, PSA undetectable. Adjuvant RT now or wait?",
@@ -2441,8 +2445,12 @@ const QUIZ_SETS = {
       a: "<strong>Yes: low-volume</strong> metastatic disease. RT to the prostate (e.g., 36 Gy/6 weekly or 55 Gy/20) + systemic therapy improved overall survival (STAMPEDE arm H). Not for high-volume disease.",
     },
     {
-      q: "Which rectal dose limit do you hear most for 78&ndash;79 Gy plans?",
-      a: "Rectum <strong>V70 &lt;20%</strong> (and V75 &lt;15%, V50 &lt;50%). Bladder V80 &lt;15%. Femoral heads V50 &lt;5%.",
+      q: "Rising PSA after prostatectomy, and the PSMA PET is negative. Should salvage RT wait until the PET is positive?",
+      a: "<strong>No.</strong> A negative PSMA PET does not mean withholding salvage prostate-bed RT when the indication is present (AUA/ASTRO/SUO 2024). Salvage works best at low PSA.",
+    },
+    {
+      q: "Why does baseline urinary and sexual function matter when counseling about prostate RT?",
+      a: "Toxicity is experienced <strong>on top of</strong> pre-treatment function. A man with bad baseline urinary symptoms tolerates acute GU effects (and brachy) worse.",
     },
   ],
   "gyn-epi": [
@@ -3175,7 +3183,7 @@ const DRILL_SETS = {
       { p: "cT1c, Gleason 3+4, PSA 8, 8 of 12 cores positive", a: "Unfavorable intermediate", why: "One intermediate factor, but <strong>&ge;50% of cores</strong> positive: unfavorable." },
       { p: "cT2a, Gleason 4+4, PSA 7", a: "High", why: "One high-risk feature (GG4): <strong>high risk</strong>." },
       { p: "cT1c, Gleason 3+4, PSA 26", a: "High", why: "One high-risk feature (PSA &gt;20): <strong>high risk</strong>." },
-      { p: "cT3a on MRI, Gleason 3+4, PSA 9", a: "High", why: "T3a (extraprostatic extension) is a high-risk feature: <strong>high risk</strong>." },
+      { p: "cT3a (extension palpable on DRE), Gleason 3+4, PSA 9", a: "High", why: "T3a (extraprostatic extension) is a high-risk feature: <strong>high risk</strong>." },
       { p: "cT3b (seminal vesicle invasion), Gleason 3+4, PSA 8", a: "Very high", why: "<strong>T3b&ndash;T4 = very high risk</strong>, on its own." },
       { p: "cT3a, Gleason 4+5, PSA 11", a: "Very high", why: "Two high-risk features (T3a and GG5): <strong>very high risk</strong>." },
       { p: "cT1c, Gleason 5+4, PSA 6", a: "Very high", why: "<strong>Primary Gleason pattern 5</strong> = very high risk." },

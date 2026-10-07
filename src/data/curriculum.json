@@ -387,23 +387,25 @@
   },
   "prostate": {
    "title": "Prostate Cancer",
-   "summary": "From an elevated PSA to a risk-adapted plan: MRI, Gleason and Grade Group, NCCN risk groups, and how EBRT, brachytherapy, and ADT fit together.",
+   "summary": "The full radiation oncology workflow on one disease: PSA, MRI, and biopsy to an NCCN risk group, then radiation indication, target volumes, fractionation, image guidance, toxicity, and PSA follow-up.",
    "topics": [
     "PSA & MRI",
-    "Gleason & Grade Group",
-    "NCCN Risk Groups",
-    "EBRT & Brachytherapy",
-    "ADT"
+    "Grade Group & NCCN Risk",
+    "PSMA PET",
+    "Simulation & Targets",
+    "Brachytherapy",
+    "ADT & Salvage RT"
    ],
    "objectives": [
-    "Interpret an elevated PSA and the multiparametric MRI",
-    "Build a Gleason score and Grade Group",
-    "Assign an NCCN risk group, and know where the AJCC stage fits",
-    "Match each risk group to treatment, including when ADT is added and for how long",
+    "Work up an elevated PSA through MRI and biopsy",
+    "Build a Grade Group and assign an NCCN risk group, and explain how it differs from the AJCC stage",
+    "Explain how risk group, life expectancy, and patient factors shape the treatment options",
+    "Know when ADT is added to radiation, and when pelvic nodes are treated",
+    "Describe how a prostate RT plan is built, from simulation and targets to image guidance",
     "Recognize the transrectal ultrasound view you will see in the brachytherapy suite",
-    "Know which patients need staging imaging with PSMA PET/CT or bone scan"
+    "Lay out PSA follow-up and early salvage RT after prostatectomy"
    ],
-   "guideline": "NCCN Prostate Cancer Guidelines",
+   "guideline": "NCCN Prostate Cancer Guidelines; AUA/ASTRO/SUO localized and salvage guidelines",
    "staging": [
     "AJCC 8th edition",
     "NCCN risk groups"
@@ -416,99 +418,105 @@
     "RTOG 9413",
     "RTOG 0415",
     "CHHiP",
+    "PROFIT",
     "HYPO-RT-PC",
     "PACE-B",
     "ASCENDE-RT",
     "RTOG 0232",
+    "FLAME",
+    "POP-RT",
     "RTOG 9601",
-    "GETUG-AFU 16",
+    "SPPORT",
     "GETUG-AFU 17",
     "RADICALS",
     "RAVES",
-    "SPPORT",
     "STAMPEDE"
    ],
    "modules": {
     "Epidemiology & Risk Factors": {
-     "lede": "Understand incidence, risk factors, presentation, and the clinical significance of PSA before moving into anatomy, workup, and treatment.",
+     "lede": "Who has prostate cancer, and which cancers matter? Separate the risk of developing cancer from the risk that a cancer will progress, and learn why an elevated PSA is not a diagnosis.",
      "essentials": [
-      "How common prostate cancer is, and why most men don't die of it",
-      "The major risk factors, including BRCA2",
-      "Why PSA screening is a shared decision",
-      "How to interpret an elevated PSA"
+      "Common does not mean dangerous",
+      "Risk of developing cancer versus risk of progression",
+      "The pathway after an elevated PSA",
+      "Why genetics matters to a radiation oncologist"
      ],
      "objectives": [
-      "Explain the basic epidemiology of prostate cancer and why it is often indolent",
-      "Identify the major risk factors and who needs germline testing",
-      "Recognize the typical (usually silent) clinical presentation",
-      "Explain the benefits and harms of PSA screening and who is offered it",
-      "Refine an elevated PSA with density, free PSA, and velocity, and adjust for 5-alpha reductase inhibitors"
+      "Explain why prostate cancer is common but often indolent",
+      "Distinguish risk factors for developing cancer from features that predict progression",
+      "Lay out the pathway after an elevated PSA: confirm, assess risk, MRI, biopsy",
+      "Explain screening as individualized shared decision-making",
+      "Describe what a germline result changes for treatment and family counseling"
      ]
     },
     "Anatomy & Lymphatics": {
-     "lede": "Learn the zones of the prostate, the transrectal ultrasound view from the brachytherapy suite, and the nodal drainage that defines N1 versus M1a.",
+     "lede": "Where is the cancer, and what can it reach? Connect the zones, local spread, and pelvic nodes to the targets and organs at risk of a radiation plan.",
      "essentials": [
       "The peripheral zone and why it matters",
-      "The rectum as the dose-limiting organ",
-      "The order of pelvic nodal drainage",
-      "Which nodes are N1 and which are M1a"
+      "How local spread enlarges the target",
+      "The organs that limit a prostate plan",
+      "The order of pelvic nodal drainage, and N1 versus M1a"
      ],
      "objectives": [
       "Identify the main regions of the prostate and where most cancers arise",
-      "Recognize the key structures on the transrectal ultrasound view",
-      "Trace lymphatic drainage from the obturator and internal iliac nodes outward",
-      "Distinguish regional (N1) from distant (M1a) nodes",
-      "Describe the boundaries of the elective pelvic nodal field"
+      "Trace local spread from the capsule to the seminal vesicles",
+      "Name the organs at risk and explain the role of a rectal spacer",
+      "Trace lymphatic drainage and distinguish regional (N1) from distant (M1a) nodes",
+      "Know which nodal regions an elective pelvic field covers"
      ]
     },
     "Imaging": {
-     "lede": "Match each scan to its job: multiparametric MRI inside the gland, CT simulation for planning, and PSMA PET or bone scan outside it.",
+     "lede": "What does each image tell me? MRI inside the gland, PSMA PET or bone scan outside it, and the simulation CT where the plan is built.",
      "essentials": [
-      "T2, DWI, and ADC appearance of prostate cancer",
-      "PI-RADS and who gets a targeted biopsy",
-      "EPE and seminal vesicle invasion on MRI",
-      "When PSMA PET beats CT and bone scan"
+      "What T2, DWI/ADC, and DCE are each for",
+      "MRI does not set the clinical T stage by itself",
+      "PSMA PET changes the radiation map",
+      "What happens at prostate simulation"
      ],
      "objectives": [
-      "Read the core multiparametric MRI sequences and the PI-RADS score",
-      "Recognize extraprostatic extension and seminal vesicle invasion on MRI",
-      "Know what the CT simulation scan is used for",
-      "Explain when PSMA PET/CT and bone scan are used for staging"
+      "Know the job of each mpMRI sequence and what PI-RADS means",
+      "Explain why an MRI lesion does not by itself change the clinical T stage",
+      "Describe how PSMA PET is used for staging, recurrence, and planning, and its limits",
+      "Walk through prostate simulation and why image guidance matters",
+      "Recognize the key structures on the transrectal ultrasound view"
      ]
     },
     "Workup & Staging": {
-     "lede": "Walk the workup step by step, from a high PSA to a biopsy, Gleason score, clinical T stage, and the NCCN risk group that drives treatment.",
+     "lede": "How do I turn a PSA into a treatment-ready diagnosis? Walk from biopsy to Grade Group, clinical T stage, NCCN risk group, and life expectancy.",
      "essentials": [
       "The order of the workup",
       "Gleason score to Grade Group",
-      "NCCN risk group features",
-      "Who needs staging imaging"
+      "NCCN risk group versus AJCC stage",
+      "Life expectancy before treatment"
      ],
      "objectives": [
       "Lay out the workup from PSA and DRE through MRI and biopsy",
-      "Build a Gleason score and convert it to a Grade Group",
+      "Convert a Gleason score to a Grade Group and recognize adverse features",
       "Assign clinical T stage from the DRE",
-      "Assign an NCCN risk group",
-      "Decide who needs staging imaging, and where the AJCC stage group fits"
+      "Assign an NCCN risk group and decide who needs staging imaging",
+      "Explain how the AJCC stage differs from the NCCN risk group",
+      "Weigh life expectancy before choosing curative treatment"
      ]
     },
     "Treatment Paradigms": {
-     "lede": "Connect each NCCN risk group to its treatment: surveillance, radiation or surgery, how long to add ADT, and what changes after prostatectomy or with metastases.",
+     "lede": "What does this patient's risk actually mean for radiation? Follow localized, node-positive, post-prostatectomy, and metastatic disease, then build the plan.",
      "essentials": [
-      "Risk group to treatment",
-      "When ADT is added, and for how long",
-      "Adjuvant versus early salvage RT",
-      "Why hypofractionation works in prostate cancer"
+      "Risk group frames the options; patient factors decide",
+      "Where ADT enters, and when pelvic nodes are treated",
+      "Early salvage RT after prostatectomy",
+      "How a prostate RT plan is built"
      ],
      "objectives": [
-      "Match each risk group to its standard treatment options",
-      "Explain when ADT is added and for how long",
-      "Describe node-positive and post-prostatectomy treatment",
-      "Outline the approach to metastatic disease",
-      "Recall key dose constraints, toxicities, and the trials behind each paradigm"
+      "Match each risk group to its treatment options without treating risk group as the whole decision",
+      "Explain when ADT is added and for how long, and what systemic intensification means",
+      "Describe what happens during LDR and HDR brachytherapy",
+      "Lay out PSA follow-up and early salvage RT after prostatectomy, including a negative PSMA PET",
+      "Outline the role of radiation in metastatic disease",
+      "Describe how a prostate plan is built and organize toxicity by timing"
      ]
     }
-   }
+   },
+   "reviewed": "2026-10"
   },
   "gyn": {
    "title": "Gynecologic Cancer",

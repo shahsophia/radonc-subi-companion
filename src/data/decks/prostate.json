@@ -23,9 +23,9 @@
  {
   "id": "prx-4",
   "category": "Epidemiology & Risk Factors",
-  "front": "What age group is the core population for PSA screening?",
-  "back": "Men 55-69, through shared decision-making",
-  "extra": "Don't routinely screen at 70+ or with a life expectancy under 10-15 years. Why shared decision-making: screening modestly lowers prostate cancer deaths but has no clear overall survival benefit and causes overdiagnosis of indolent cancers."
+  "front": "How should the decision to screen with PSA be made, and who should start the conversation earlier?",
+  "back": "Individualized shared decision-making, started earlier for men at increased risk (Black ancestry, strong family history, germline mutations)",
+  "extra": "Screening modestly lowers prostate cancer deaths but has no clear overall survival benefit and causes overdiagnosis. Guideline ages change (AUA amended 2026: about 40-45 for increased risk; 55-69 is the core average-risk group)."
  },
  {
   "id": "prx-7",
@@ -44,9 +44,9 @@
  {
   "id": "prx-10",
   "category": "Anatomy & Lymphatics",
-  "front": "Which organ is the main dose-limiting structure in prostate radiation, and what can be placed to protect it?",
-  "back": "The rectum, which sits directly behind the prostate. A hydrogel spacer can push it away.",
-  "extra": "Rectal toxicity shows up as proctitis, urgency, and bleeding."
+  "front": "Which organ behind the prostate is one of the principal dose-limiting structures, and what can be placed to protect it?",
+  "back": "The rectum. A hydrogel spacer increases the separation from the prostate and can reduce rectal dose in selected patients.",
+  "extra": "The spacer is an adjunct, not a requirement. Bladder, urethra, and bowel also constrain the plan depending on technique and volume. Rectal toxicity shows up as proctitis, urgency, and bleeding."
  },
  {
   "id": "prx-11",
@@ -61,13 +61,6 @@
   "front": "Which prostate cancer nodes are regional (N1), and which count as distant (M1a)?",
   "back": "Nodes in the true pelvis (obturator, internal and external iliac, sacral) are N1. Common iliac and above, or inguinal, are M1a.",
   "extra": "N1 M0 is stage IVA but still treated for cure. Drainage order: obturator and internal iliac first, then external iliac and presacral, then common iliac, then para-aortic."
- },
- {
-  "id": "prx-20",
-  "category": "Anatomy & Lymphatics",
-  "front": "What is the Roach formula, and what is it used for?",
-  "back": "(2/3 × PSA) + [(Gleason - 6) × 10]: an estimate of pelvic nodal risk that helps decide whether to treat the pelvic nodes",
-  "extra": "Estimated risk above roughly 15-20% supports pelvic nodal RT."
  },
  {
   "id": "prx-57",
@@ -86,9 +79,9 @@
  {
   "id": "prx-26",
   "category": "Imaging",
-  "front": "What is the main advantage of PSMA PET over CT plus bone scan?",
-  "back": "It is much more accurate for nodal and distant disease, and it finds recurrences at low PSA levels.",
-  "extra": "proPSMA: 92% vs 65% accuracy. Caution: the trials that set treatment standards used conventional imaging. On a bone scan, a \"superscan\" (diffuse intense skeletal uptake with faint kidneys) means extensive bone metastases."
+  "front": "What can PSMA PET do that CT plus bone scan can't, and what can't a negative PSMA PET tell you?",
+  "back": "It is more sensitive for nodal and distant disease (and recurrence at low PSA), but a negative scan does not exclude microscopic disease.",
+  "extra": "PSMA PET can change the radiation map (add nodes, boost a lesion). The trials that set most treatment standards used conventional imaging."
  },
  {
   "id": "prx-28",
@@ -107,9 +100,9 @@
  {
   "id": "prx-59",
   "category": "Workup & Staging",
-  "front": "Of the Grade Group, TNM stage, and NCCN risk group, which one drives prostate cancer treatment?",
-  "back": "The NCCN risk group, which combines clinical T stage, Grade Group, and PSA",
-  "extra": "The AJCC stage group appears in notes but is the least useful day to day."
+  "front": "What does the AJCC stage describe, and what does the NCCN risk group describe?",
+  "back": "AJCC stage = anatomic extent. NCCN risk group = a treatment-oriented risk classification (PSA, Grade Group, clinical T stage, biopsy extent).",
+  "extra": "They aren't interchangeable: cT1c, 4+5, PSA 6 is AJCC IIIC but NCCN high risk."
  },
  {
   "id": "prx-32",
@@ -175,6 +168,13 @@
   "extra": "Very low, low, and favorable intermediate risk have a tiny chance of metastases, so scans would mostly find false positives."
  },
  {
+  "id": "prx-69",
+  "category": "Workup & Staging",
+  "front": "Before choosing between surveillance, surgery, and radiation, what question about the patient comes first?",
+  "back": "Does he have enough life expectancy to benefit from curative treatment?",
+  "extra": "Limited life expectancy points toward observation (watchful waiting); baseline urinary, bowel, and sexual function also shape the choice."
+ },
+ {
   "id": "prx-41",
   "category": "Treatment Paradigms",
   "front": "What is the preferred management of very low and low-risk prostate cancer?",
@@ -199,7 +199,7 @@
   "id": "prx-63",
   "category": "Treatment Paradigms",
   "front": "How is favorable intermediate-risk prostate cancer treated?",
-  "back": "One treatment with no ADT: radiation alone (EBRT, SBRT, or brachytherapy) or prostatectomy",
+  "back": "One local treatment, generally without ADT: EBRT, SBRT, brachytherapy, or prostatectomy",
   "extra": "Select men with low-volume GG2 disease can be on active surveillance."
  },
  {
@@ -213,22 +213,22 @@
   "id": "prx-45",
   "category": "Treatment Paradigms",
   "front": "What is the radiation-based treatment for high and very high-risk node-negative prostate cancer?",
-  "back": "RT to the prostate and seminal vesicles, usually with the pelvic nodes, plus long-term ADT (18-36 months)",
-  "extra": "POP-RT supports pelvic nodal RT. Very high risk adds abiraterone for 2 years (STAMPEDE)."
+  "back": "Dose-escalated RT to the prostate and seminal vesicles plus long-term ADT (18-36 months), with the pelvic nodes when the estimated nodal risk is high enough",
+  "extra": "POP-RT supports pelvic nodal RT for high-risk patients with substantial nodal risk. Selected patients get systemic intensification such as abiraterone (STAMPEDE)."
  },
  {
   "id": "prx-48",
   "category": "Treatment Paradigms",
   "front": "How is node-positive (cN1, M0) prostate cancer treated with radiation?",
-  "back": "RT to the prostate and pelvic nodes with a boost to the involved nodes, plus 2-3 years of ADT and abiraterone",
+  "back": "RT to the prostate and pelvic nodes with a boost to the involved nodes, plus long-term ADT, with systemic intensification (e.g., abiraterone) for appropriate patients",
   "extra": "Still treated for cure (stage IVA)."
  },
  {
   "id": "prx-42",
   "category": "Treatment Paradigms",
   "front": "Why do short, hypofractionated courses work well for prostate cancer?",
-  "back": "Prostate cancer has a low α/β ratio (~1.5), lower than the rectum (~3), so bigger fractions hurt the tumor more than the normal tissue.",
-  "extra": "CHHiP and PACE-B showed shorter courses were noninferior."
+  "back": "Prostate cancer is thought to have a low α/β ratio, so larger fractions can maintain tumor control while shortening the course.",
+  "extra": "CHHiP (60 Gy/20) and PACE-B (36.25 Gy/5) showed shorter courses were noninferior."
  },
  {
   "id": "prx-43",
@@ -236,6 +236,13 @@
   "front": "What are the standard moderately hypofractionated and SBRT regimens for the prostate?",
   "back": "Moderate: 60 Gy in 20 fractions (or 70 Gy in 28). SBRT: 36.25 Gy in 5 fractions.",
   "extra": "Conventional dose-escalated courses (78-79.2 Gy in 39-44 fractions) are now used less."
+ },
+ {
+  "id": "prx-70",
+  "category": "Treatment Paradigms",
+  "front": "What is the difference between LDR and HDR prostate brachytherapy?",
+  "back": "LDR leaves permanent seeds in the prostate. HDR passes a single source temporarily through catheters, which are removed after treatment.",
+  "extra": "Both are placed through the perineum under transrectal ultrasound guidance and exploit rapid dose fall-off outside the gland."
  },
  {
   "id": "prx-64",
@@ -264,6 +271,13 @@
   "front": "What does salvage radiation after prostatectomy treat, and what is often added?",
   "back": "The prostate bed (about 64-66 Gy), often with ADT and, for higher risk, the pelvic nodes",
   "extra": "Treat early, at a low PSA, after a PSMA PET. RTOG 9601 (ADT) and SPPORT (pelvic nodes + ADT)."
+ },
+ {
+  "id": "prx-71",
+  "category": "Treatment Paradigms",
+  "front": "PSA is rising after prostatectomy and the PSMA PET is negative. Should salvage RT wait for a positive scan?",
+  "back": "No. A negative PSMA PET is not a reason to withhold salvage prostate-bed RT when it is indicated.",
+  "extra": "Early recurrences are often too small to see, and salvage works best at low PSA (AUA/ASTRO/SUO 2024)."
  },
  {
   "id": "prx-52",
