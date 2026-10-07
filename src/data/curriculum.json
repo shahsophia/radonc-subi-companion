@@ -650,119 +650,143 @@
   },
   "cns": {
    "title": "CNS Tumors",
-   "summary": "Gliomas, brain metastases, and the benign tumors radiation treats: WHO 2021 classification, MRI sequences, SRS, and prognosis.",
+   "summary": "A CNS lesion worked through in order: what it is, where it is, what it looks like, how to classify it, how to treat it, and how to turn the MRI into a safe plan. Brain metastases, glioblastoma, benign skull base tumors, and the spine emergency.",
    "topics": [
-    "WHO 2021 Gliomas",
+    "Primary vs Metastatic",
     "Brain Metastases",
-    "SRS",
-    "GPA",
-    "Benign Tumors"
+    "Glioblastoma",
+    "Benign Tumors",
+    "Spine Emergency",
+    "MRI to Plan"
    ],
    "objectives": [
-    "Classify gliomas with the WHO 2021 integrated diagnosis",
-    "Navigate neuroanatomy across six axial levels, plus the sella, orbits, and spine",
-    "Know what each MRI sequence shows and how brain metastases are planned for SRS",
-    "Estimate brain metastasis prognosis with the GPA",
-    "Follow treatment paradigms from limited brain metastases to glioblastoma, meningioma, and vestibular schwannoma"
+    "Separate primary CNS tumors from metastases and name the five tumors you'll see most",
+    "Localize a lesion and identify the skull base structures and organs at risk around it",
+    "Use each imaging test for the question it answers, and recognize that enhancement is not always tumor",
+    "Follow the three workflows: primary tumor, brain metastasis, and spine metastasis",
+    "Walk the brain metastasis algorithm from symptomatic disease to supportive care",
+    "Describe standard treatment of glioblastoma, lower-grade glioma, meningioma, vestibular schwannoma, and cord compression",
+    "Turn an MRI into a plan: fusion, target, organs at risk, and technique, and counsel on toxicity"
    ],
    "guideline": "NCCN Central Nervous System Cancers Guidelines",
    "staging": [
-    "WHO 2021 CNS classification"
+    "WHO CNS classification (integrated diagnosis)"
    ],
    "trials": [
-    "Stupp (EORTC/NCIC)",
-    "EORTC 26951",
-    "RTOG 9402",
-    "RTOG 9802",
-    "RTOG 0614",
-    "NRG CC001",
-    "NRG BN003",
-    "N0574",
+    "NCCTG N0574",
+    "Mahajan",
     "N107C",
+    "NRG CC001",
     "JLGK0901",
     "QUARTZ",
+    "Stupp (EORTC/NCIC)",
+    "EF-14",
+    "Perry",
+    "Roa",
+    "RTOG 9802",
+    "INDIGO",
+    "RTOG 9402",
+    "EORTC 26951",
+    "CATNON",
     "Patchell",
     "RTOG 90-05"
    ],
    "modules": {
-    "Epidemiology & Risk Factors": {
-     "lede": "Learn which brain tumors are most common, the few established risk factors, and why brain tumors are classified rather than staged.",
+    "Tumor Biology & Risk Factors": {
+     "lede": "Answer the first question for any CNS lesion: is it a primary tumor or a metastasis, and which of the common tumors is it likely to be?",
      "essentials": [
-      "The most common brain tumors",
-      "IDH-mutant versus IDH-wildtype",
-      "Radiation as the established risk factor",
-      "Classification instead of TNM"
+      "Primary vs metastatic",
+      "The CNS 5",
+      "IDH and 1p/19q as the foundation",
+      "MGMT methylation"
      ],
      "objectives": [
-      "Name the most common brain tumors overall, primary, and malignant",
-      "Contrast IDH-mutant gliomas with IDH-wildtype glioblastoma",
-      "Identify the established risk factors and hereditary syndromes",
-      "Explain why brain tumors are classified instead of staged",
-      "Recognize how brain tumors present"
+      "Separate tumors that start in the CNS from tumors that spread there",
+      "Name who gets each of the five common CNS tumors and why it matters",
+      "Identify the established risk factors and the syndromes that point to them",
+      "Explain why adult CNS tumors are classified instead of staged",
+      "Recognize how CNS tumors present"
      ]
     },
     "Neuroanatomy": {
-     "lede": "Localize symptoms by lobe, follow CSF flow, and learn six axial levels plus the sella, orbits, and spine that radiation plans are built around.",
+     "lede": "Just enough anatomy to localize a lesion, recognize it on MRI, and know which nearby structures will limit the radiation plan.",
      "essentials": [
       "Localizing symptoms by region",
+      "Intra-axial vs extra-axial",
       "CSF flow and hydrocephalus",
-      "Cavernous sinus contents",
-      "Optic and spinal cord dose limits"
+      "Skull base neighborhoods and OARs"
      ],
      "objectives": [
-      "Localize symptoms to a lobe or the cerebellum",
-      "Trace CSF flow and explain posterior fossa hydrocephalus",
-      "Identify key structures on six axial levels",
-      "Name the contents of the cavernous sinus and internal auditory canal",
-      "Recall dose limits for the optic apparatus, brainstem, and spinal cord"
+      "Localize symptoms to a lobe, the cerebellum, or the brainstem",
+      "Use the intra-axial vs extra-axial distinction to narrow the differential",
+      "Explain why posterior fossa masses cause hydrocephalus and why CSF spread needs craniospinal RT",
+      "Name what sits next to the sella, cavernous sinus, internal auditory canal, and orbit",
+      "Link each organ at risk to the function it protects"
      ]
     },
     "Imaging": {
-     "lede": "Know what each MRI sequence shows, the classic appearance of gliomas, metastases, and benign tumors, and how treatment effect mimics progression.",
+     "lede": "Learn each imaging test by the question it answers, the classic look of the common tumors, and why new enhancement after treatment is not always tumor.",
      "essentials": [
-      "T1 post-contrast versus T2/FLAIR",
-      "Glioblastoma versus metastasis",
-      "Classic benign tumor signs",
+      "Modality by clinical question",
+      "T1 post-contrast vs T2/FLAIR",
+      "Enhancement is not always tumor",
       "Pseudoprogression and necrosis"
      ],
      "objectives": [
-      "Explain what each core MRI sequence shows",
-      "Distinguish glioblastoma from a metastasis",
-      "Recognize meningioma, vestibular schwannoma, and pituitary adenoma",
-      "Describe SRS planning imaging",
-      "Tell treatment effect from tumor progression"
+      "Choose the imaging test that answers each clinical question",
+      "Explain what T1 post-contrast and T2/FLAIR show",
+      "Distinguish glioblastoma, metastases, and the classic benign tumors",
+      "Tell pseudoprogression and radionecrosis from progression by timing",
+      "Explain why the MRI is fused to a planning CT"
      ]
     },
-    "Workup & Classification": {
-     "lede": "Cover the core workup, WHO 2021 glioma classification and grading, brain metastasis assessment, and the other tumors radiation treats.",
+    "Workup & Decision-Making": {
+     "lede": "Replace TNM with three questions, then follow the right workflow: primary tumor, brain metastasis, or spine metastasis.",
      "essentials": [
       "The three questions instead of TNM",
-      "WHO 2021 glioma types",
-      "MGMT methylation",
-      "The GPA for brain metastases"
+      "Three different workflows",
+      "The integrated diagnosis",
+      "Bilsky and SINS"
      ],
      "objectives": [
-      "Lay out the core workup for a brain tumor",
-      "Classify gliomas with IDH and 1p/19q status",
-      "Explain the significance of MGMT promoter methylation",
-      "Assess brain metastases by count, size, and GPA",
-      "Recognize the other CNS tumors radiation treats"
+      "Ask what it is, where and how big it is, and how the patient is doing",
+      "Follow separate workflows for primary tumors, brain metastases, and spine metastases",
+      "Build an integrated glioma diagnosis from IDH and 1p/19q status",
+      "List the factors besides lesion count that drive brain metastasis treatment",
+      "Explain what Bilsky and SINS measure in spine metastases"
      ]
     },
     "Treatment Paradigms": {
-     "lede": "Follow the paradigms from limited and extensive brain metastases to glioblastoma, lower-grade gliomas, benign tumors, and spine emergencies.",
+     "lede": "Walk the brain metastasis algorithm, then glioblastoma, lower-grade glioma, the benign skull base tumors, lymphoma, and the spine emergency.",
      "essentials": [
-      "SRS for limited brain metastases",
-      "Hippocampal-avoidant WBRT",
-      "The Stupp regimen",
-      "Benign tumor options"
+      "The brain metastasis algorithm",
+      "SRS vs whole-brain RT",
+      "The Stupp paradigm",
+      "The spine emergency"
      ],
      "objectives": [
-      "Choose between SRS and whole-brain RT for brain metastases",
-      "Describe the standard treatment of glioblastoma",
-      "Outline treatment of lower-grade gliomas",
-      "Describe options for meningioma, vestibular schwannoma, and pituitary tumors",
-      "Recall the evidence behind each paradigm"
+      "Walk a brain metastasis patient through the treatment algorithm",
+      "Explain what decides SRS beyond lesion count",
+      "Describe standard treatment of glioblastoma and lower-grade glioma",
+      "Decide between observation, surgery, SRS, and fractionated RT for benign tumors",
+      "Manage metastatic spinal cord compression",
+      "Say what each landmark trial changed"
+     ]
+    },
+    "Radiation Planning & Toxicity": {
+     "lede": "Turn the MRI into a plan (fusion, target, organs at risk, technique) and connect each organ at risk to the side effect you'll counsel about.",
+     "essentials": [
+      "MRI fused to the planning CT",
+      "GTV, CTV, and PTV",
+      "Matching technique to disease",
+      "Toxicity by timing"
+     ],
+     "objectives": [
+      "Describe the four steps from MRI to treatment plan",
+      "Explain why a glioma plan has a CTV and a metastasis SRS plan usually doesn't",
+      "Match SRS, fractionated RT, WBRT, and craniospinal RT to the shape of the disease",
+      "Link each organ at risk to its toxicity",
+      "Recognize and manage radionecrosis"
      ]
     }
    }

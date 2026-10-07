@@ -34,7 +34,7 @@
       "label": "Optic Chiasm",
       "x": 35.5,
       "y": 66.0,
-      "blurb": "Just above the pituitary. OAR: ~54 Gy conventional; ≤8–10 Gy single-fraction SRS."
+      "blurb": "Just above the pituitary. The critical organ at risk for sellar tumors: injury means vision loss."
      },
      {
       "id": "pineal",
@@ -55,7 +55,7 @@
       "label": "Pons",
       "x": 50.0,
       "y": 75.0,
-      "blurb": "Diffuse midline glioma (DIPG) in children lives here: RT 54 Gy is the main treatment."
+      "blurb": "Diffuse midline glioma (DIPG) in children lives here; radiation is the main treatment."
      },
      {
       "id": "medulla",
@@ -259,7 +259,7 @@
       "label": "Hippocampus (Temporal Horn)",
       "x": 40.5,
       "y": 52.0,
-      "blurb": "Medial temporal lobe. Spared in HA-WBRT (D100% ≤9 Gy, Dmax ≤16 Gy in 10 fx)."
+      "blurb": "Medial temporal lobe; forms new memories. Spared in hippocampal-avoidance whole-brain RT."
      },
      {
       "id": "mb-temporal",
@@ -310,7 +310,7 @@
       "label": "Cochlea",
       "x": 35.5,
       "y": 48.5,
-      "blurb": "Hearing OAR: mean ≤35–45 Gy conventional; ≤4 Gy for vestibular schwannoma SRS."
+      "blurb": "Hearing organ at risk; keeping its dose low matters most for vestibular schwannoma SRS."
      },
      {
       "id": "p-fourth",
@@ -426,28 +426,28 @@
       "label": "Lens",
       "x": 19.4,
       "y": 21.0,
-      "blurb": "Very radiosensitive: cataract with just a few Gy (keep Dmax <7 Gy when possible)."
+      "blurb": "Very radiosensitive: even low doses can cause a cataract."
      },
      {
       "id": "o-globe",
       "label": "Globe / Retina",
       "x": 22.4,
       "y": 28.6,
-      "blurb": "Retina Dmax <45–50 Gy (retinopathy)."
+      "blurb": "Organ at risk for retinopathy and vision loss."
      },
      {
       "id": "o-lacrimal",
       "label": "Lacrimal Gland",
       "x": 10.0,
       "y": 29.4,
-      "blurb": "Upper outer orbit. Mean <26–30 Gy to avoid dry eye."
+      "blurb": "Upper outer orbit. Too much dose causes a dry eye."
      },
      {
       "id": "o-nerve",
       "label": "Optic Nerve",
       "x": 26.1,
       "y": 50.4,
-      "blurb": "Dmax ~54 Gy conventional; blindness risk above ~55–60 Gy."
+      "blurb": "Organ at risk: injury means blindness on that side."
      },
      {
       "id": "o-chiasm",
@@ -470,7 +470,7 @@
       "label": "Spinal Cord",
       "x": 56,
       "y": 30,
-      "blurb": "Dmax ~45–50 Gy conventional; SBRT limits are much lower per fraction."
+      "blurb": "Organ at risk in every spine and craniospinal plan: injury means myelopathy."
      },
      {
       "id": "sp-conus",

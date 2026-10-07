@@ -50,7 +50,7 @@
       "Craniospinal RT"
      ],
      "correctIndex": 1,
-     "explanation": "Growing small to medium schwannomas are treated with SRS (about 95% control). Large Koos IV tumors with brainstem compression or hydrocephalus go to surgery."
+     "explanation": "For a growing small-to-medium schwannoma, SRS offers high tumor control without an operation. Surgery remains important for large Koos IV tumors with brainstem compression or hydrocephalus, and for selected patients."
     },
     {
      "label": "Dose",
@@ -146,7 +146,7 @@
       "Best supportive care"
      ],
      "correctIndex": 1,
-     "explanation": "SRS alone is standard for limited brain metastases (about 1-4, and up to 10 small ones in selected patients). Surgery is for a large lesion, major mass effect, or when tissue is needed."
+     "explanation": "SRS alone is preferred for limited, safely treatable brain metastases. Lesion number matters, but so do total volume, size, location, symptoms, and prognosis; she is symptomatic, so treatment shouldn't be delayed. Surgery is for a large lesion, major mass effect, or when tissue is needed."
     },
     {
      "label": "Trial",
@@ -222,7 +222,7 @@
      "context": "<p><strong>Post-op MRI (48 h):</strong> gross total resection of the enhancing tumor. <strong>Pathology:</strong> IDH-wildtype glioma with necrosis and microvascular proliferation; <strong>MGMT promoter methylated</strong>. KPS 90.</p>",
      "prompt": "What is the integrated WHO 2021 diagnosis?",
      "answer": "Glioblastoma, IDH-wildtype, WHO grade 4 (MGMT promoter methylated)",
-     "explanation": "IDH-wildtype plus necrosis and/or microvascular proliferation is glioblastoma. MGMT methylation predicts more benefit from temozolomide."
+     "explanation": "An IDH-wildtype diffuse astrocytic tumor with necrosis and/or microvascular proliferation meets criteria for glioblastoma. MGMT methylation is prognostic and associated with greater benefit from temozolomide."
     },
     {
      "label": "Trial",

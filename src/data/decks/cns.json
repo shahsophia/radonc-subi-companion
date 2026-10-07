@@ -1,45 +1,45 @@
 [
  {
   "id": "cnsx-1",
-  "category": "Epidemiology & Risk Factors",
+  "category": "Tumor Biology & Risk Factors",
   "front": "What is the most common intracranial tumor in adults?",
   "back": "Brain metastases",
   "extra": "Lung is the most common source; melanoma has the highest tendency to spread to the brain. Most patients have more than one lesion."
  },
  {
   "id": "cnsx-63",
-  "category": "Epidemiology & Risk Factors",
+  "category": "Tumor Biology & Risk Factors",
   "front": "Which primary cancers most commonly metastasize to the brain?",
   "back": "Lung (most common), breast, and melanoma; also renal cell and colorectal",
   "extra": "Melanoma has the highest tendency to spread to the brain relative to how common it is. Mets that tend to hemorrhage: melanoma, renal cell, choriocarcinoma, and thyroid."
  },
  {
   "id": "cnsx-2",
-  "category": "Epidemiology & Risk Factors",
+  "category": "Tumor Biology & Risk Factors",
   "front": "What is the most common primary brain tumor, and the most common malignant primary brain tumor in adults?",
   "back": "Most common primary: meningioma. Most common malignant primary: glioblastoma.",
-  "extra": "Meningiomas are usually benign and more common in women. Glioblastoma: median age ~65, median survival ~15 months with treatment."
+  "extra": "Meningiomas are usually benign and more common in women. Glioblastoma is the aggressive adult diffuse glioma."
  },
  {
   "id": "cnsx-53",
-  "category": "Epidemiology & Risk Factors",
+  "category": "Tumor Biology & Risk Factors",
   "front": "How do IDH-mutant gliomas differ from IDH-wildtype glioblastoma in who gets them and how they behave?",
   "back": "IDH-mutant gliomas occur in younger adults (30s-40s), often present with seizures, and grow slowly, with survival often many years; glioblastoma is aggressive and almost always recurs.",
   "extra": "IDH mutation is the strongest favorable prognostic factor in gliomas."
  },
  {
   "id": "cnsx-3",
-  "category": "Epidemiology & Risk Factors",
+  "category": "Tumor Biology & Risk Factors",
   "front": "What is the only established environmental risk factor for brain tumors?",
   "back": "Ionizing radiation",
   "extra": "Childhood cranial RT raises the risk of meningioma (most), glioma, and sarcoma, often decades later. Cell phones: no proven link."
  },
  {
   "id": "cnsx-8",
-  "category": "Epidemiology & Risk Factors",
+  "category": "Tumor Biology & Risk Factors",
   "front": "Why don't brain tumors get a TNM stage, and how are they described instead?",
   "back": "They almost never spread outside the CNS, so they are classified by WHO tumor type and grade (1-4), now driven by molecular markers.",
-  "extra": "For gliomas, IDH and 1p/19q status sort almost everything."
+  "extra": "For adult diffuse gliomas, IDH and 1p/19q status are the foundation of the integrated diagnosis."
  },
  {
   "id": "cnsx-10",
@@ -61,13 +61,6 @@
   "front": "Why do posterior fossa tumors often cause hydrocephalus?",
   "back": "They block CSF outflow at the fourth ventricle or cerebral aqueduct, causing obstructive hydrocephalus.",
   "extra": "Headache, vomiting, papilledema. It needs a shunt or ventriculostomy before RT. Most adult brain tumors are supratentorial; most childhood tumors are infratentorial (posterior fossa)."
- },
- {
-  "id": "cnsx-56",
-  "category": "Neuroanatomy",
-  "front": "Which tumors need craniospinal irradiation, and why?",
-  "back": "Tumors that spread through the CSF (e.g., medulloblastoma, some germ cell tumors), because the whole CSF space is at risk",
-  "extra": "The field covers the brain and spine down to the bottom of the thecal sac. Planning detail: the brain and spine field junctions are \"feathered\" (shifted every few fractions) so hot and cold spots don't pile up at one level. The adult cord ends at L1-L2, but the thecal sac ends about S2, which sets the bottom of the spine field."
  },
  {
   "id": "cnsx-19",
@@ -113,52 +106,59 @@
  },
  {
   "id": "cnsx-28",
-  "category": "Workup & Classification",
+  "category": "Workup & Decision-Making",
   "front": "How do IDH and 1p/19q status sort adult diffuse gliomas (WHO 2021)?",
-  "back": "IDH-mutant + 1p/19q codeleted = oligodendroglioma. IDH-mutant, 1p/19q intact = astrocytoma. IDH-wildtype adult diffuse astrocytic glioma = glioblastoma.",
+  "back": "IDH-mutant + 1p/19q codeleted = oligodendroglioma. IDH-mutant without codeletion = astrocytoma. IDH-wildtype tumors that meet specific histologic or molecular criteria = glioblastoma, IDH-wildtype.",
   "extra": "Molecular trumps the microscope: an IDH-wildtype glioma that looks low grade is still glioblastoma (grade 4) if it has TERT promoter mutation, EGFR amplification, or +7/-10. Oligodendrogliomas do best; an IDH-mutant astrocytoma can be grade 4 but is not called glioblastoma."
  },
  {
   "id": "cnsx-30",
-  "category": "Workup & Classification",
-  "front": "What does MGMT promoter methylation predict in glioblastoma?",
-  "back": "Benefit from temozolomide (and better survival)",
-  "extra": ""
+  "category": "Workup & Decision-Making",
+  "front": "What does MGMT promoter methylation mean in glioblastoma?",
+  "back": "It is prognostic and associated with greater benefit from temozolomide",
+  "extra": "The predictive link isn't absolute: fit patients with unmethylated tumors still get standard RT + temozolomide (or a trial)."
  },
  {
   "id": "cnsx-31",
-  "category": "Workup & Classification",
+  "category": "Workup & Decision-Making",
   "front": "Why are steroids held before biopsy of a suspected primary CNS lymphoma?",
   "back": "Steroids can shrink the lymphoma and make the biopsy nondiagnostic.",
   "extra": "For other tumors, dexamethasone is given for symptomatic edema."
  },
  {
   "id": "cnsx-59",
-  "category": "Workup & Classification",
+  "category": "Workup & Decision-Making",
   "front": "Do meningiomas and vestibular schwannomas always need a biopsy before radiation?",
   "back": "No. When the imaging is classic and the tumor is growing, they are often treated on imaging alone.",
   "extra": "Small, asymptomatic ones are usually just observed with serial MRI."
  },
  {
   "id": "cnsx-32",
-  "category": "Workup & Classification",
+  "category": "Workup & Decision-Making",
   "front": "What does the GPA estimate in brain metastases, and how is it used?",
   "back": "Survival (prognosis), which helps choose between SRS, whole-brain RT, or supportive care",
   "extra": "Original factors: age, KPS, number of brain metastases, and extracranial metastases. The diagnosis-specific GPA adds cancer type and markers."
  },
  {
   "id": "cnsx-60",
-  "category": "Workup & Classification",
+  "category": "Workup & Decision-Making",
   "front": "A cancer patient has back pain and new leg weakness. What are the first two steps?",
   "back": "Give dexamethasone right away and get an MRI of the entire spine.",
   "extra": "Spinal cord compression is an emergency: same-day spine surgery and radiation oncology input. Multiple levels are common."
  },
  {
+  "id": "cnsx-65",
+  "category": "Workup & Decision-Making",
+  "front": "In spine metastases, what does the SINS score assess?",
+  "back": "Mechanical stability of the spine",
+  "extra": "A potentially unstable or unstable spine (SINS 7 or higher) needs a surgical consult. Bilsky grades epidural cord compression."
+ },
+ {
   "id": "cnsx-61",
   "category": "Treatment Paradigms",
-  "front": "What is the standard radiation approach for a patient with a limited number of brain metastases (about 1-4)?",
+  "front": "What is the preferred radiation approach for many patients with limited, safely treatable brain metastases?",
   "back": "Stereotactic radiosurgery (SRS) alone",
-  "extra": "Selected patients with up to ~10 small mets also do well with SRS (JLGK0901). New lesions on follow-up MRI get more SRS."
+  "extra": "Guidelines support SRS alone for 1-4 unresected metastases in appropriate patients and consider it for 5-10 in selected patients (JLGK0901). Number matters, but so do total volume, size, location, symptoms, prognosis, and systemic options."
  },
  {
   "id": "cnsx-41",
@@ -198,16 +198,16 @@
  {
   "id": "cnsx-37",
   "category": "Treatment Paradigms",
-  "front": "What is the Stupp regimen for glioblastoma?",
-  "back": "After maximal safe resection: 60 Gy in 30 fractions with daily temozolomide, then 6 cycles of adjuvant temozolomide",
-  "extra": "Improved median and 5-year survival; largest benefit with MGMT methylation. Tumor treating fields can be added."
+  "front": "What did the Stupp trial establish for glioblastoma?",
+  "back": "Postoperative RT with concurrent and adjuvant temozolomide as standard therapy for fit patients",
+  "extra": "Regimen: 60 Gy in 30 fractions with daily temozolomide, then adjuvant temozolomide. Benefit is greater with MGMT methylation. Tumor treating fields can be added."
  },
  {
   "id": "cnsx-38",
   "category": "Treatment Paradigms",
   "front": "How is radiation adjusted for older or frail glioblastoma patients?",
-  "back": "Shorter courses: 40 Gy in 15 fractions with temozolomide, or 25 Gy in 5",
-  "extra": "Perry and Roa. Very frail, MGMT-methylated patients can get temozolomide alone."
+  "back": "Shorter RT courses, with or without temozolomide",
+  "extra": "For example 40 Gy in 15 (Perry) or 25 Gy in 5 (Roa). Very frail, MGMT-methylated patients can get temozolomide alone."
  },
  {
   "id": "cnsx-39",
@@ -228,7 +228,7 @@
   "category": "Treatment Paradigms",
   "front": "How is a small, growing vestibular schwannoma treated with radiation, and what nearby structure limits it?",
   "back": "SRS, with the cochlea dose kept low to preserve hearing",
-  "extra": "About 95% control. Large tumors compressing the brainstem go to surgery. Bilateral vestibular schwannomas = NF2 (which also causes meningiomas and spinal ependymomas). Imaging: an \"ice cream cone\" mass widening the internal auditory canal and filling the cerebellopontine angle."
+  "extra": "Surgery remains important for large tumors compressing the brainstem. Bilateral vestibular schwannomas = NF2 (which also causes meningiomas and spinal ependymomas). Imaging: an \"ice cream cone\" mass widening the internal auditory canal and filling the cerebellopontine angle."
  },
  {
   "id": "cnsx-49",
@@ -248,8 +248,8 @@
   "id": "cnsx-51",
   "category": "Treatment Paradigms",
   "front": "How is metastatic spinal cord compression treated in a fit patient vs one who can't have surgery?",
-  "back": "Fit, single level: surgery then RT. Not a surgical candidate: steroids and RT alone (e.g., 8 Gy/1, 20 Gy/5, or 30 Gy/10).",
-  "extra": "Patchell: surgery + RT kept more patients walking. SBRT is used for radioresistant tumors."
+  "back": "Fit, with compression or instability: surgery then RT. Not a surgical candidate: urgent RT plus steroids.",
+  "extra": "Patchell: surgery + RT kept more patients walking. Common regimens are 8 Gy/1, 20 Gy/5, or 30 Gy/10; SBRT for selected radioresistant or oligometastatic disease."
  },
  {
   "id": "cnsx-52",
@@ -257,5 +257,47 @@
   "front": "Which non-cancer conditions are treated with radiosurgery?",
   "back": "Arteriovenous malformations (AVMs) and trigeminal neuralgia",
   "extra": "AVM obliteration takes 2-3 years, and bleeding risk persists until then. Trigeminal neuralgia pain relief comes in weeks to months."
+ },
+ {
+  "id": "cnsx-64",
+  "category": "Treatment Paradigms",
+  "front": "An asymptomatic patient has small brain metastases and a CNS-active systemic option. How is the decision to defer radiation made?",
+  "back": "Case by case, by a multidisciplinary team, with close MRI monitoring",
+  "extra": "Not a universal rule. Symptomatic brain metastases should not wait for local therapy."
+ },
+ {
+  "id": "cnsx-56",
+  "category": "Radiation Planning & Toxicity",
+  "front": "Which tumors need craniospinal irradiation, and why?",
+  "back": "Tumors that spread through the CSF (e.g., medulloblastoma, some germ cell tumors), because the whole CSF space is at risk",
+  "extra": "The field covers the brain and spine down to the bottom of the thecal sac. Planning detail: the brain and spine field junctions are \"feathered\" (shifted every few fractions) so hot and cold spots don't pile up at one level. The adult cord ends at L1-L2, but the thecal sac ends about S2, which sets the bottom of the spine field."
+ },
+ {
+  "id": "cnsx-66",
+  "category": "Radiation Planning & Toxicity",
+  "front": "Why is the brain MRI fused to the planning CT?",
+  "back": "The MRI defines the tumor and anatomy; the CT provides the electron density needed to calculate dose",
+  "extra": "Use a recent thin-slice contrast MRI for SRS, since metastases grow and new ones appear."
+ },
+ {
+  "id": "cnsx-67",
+  "category": "Radiation Planning & Toxicity",
+  "front": "Why does a glioblastoma plan include a CTV, while SRS for an intact brain metastasis usually doesn't?",
+  "back": "Glioblastoma infiltrates microscopically beyond the visible tumor; a metastasis is well-defined",
+  "extra": "The glioblastoma CTV is trimmed at anatomic barriers such as the skull, falx, and tentorium."
+ },
+ {
+  "id": "cnsx-68",
+  "category": "Radiation Planning & Toxicity",
+  "front": "For a sellar or suprasellar tumor, which organ at risk most often decides between SRS and fractionated RT?",
+  "back": "The optic chiasm",
+  "extra": "Too close for single-fraction SRS means fractionated RT. Hypopituitarism is the main late effect, so patients need lifelong endocrine follow-up."
+ },
+ {
+  "id": "cnsx-69",
+  "category": "Radiation Planning & Toxicity",
+  "front": "What is the first-line treatment for symptomatic radionecrosis?",
+  "back": "Corticosteroids",
+  "extra": "Then bevacizumab, laser ablation, or surgery if needed. Radionecrosis can look identical to recurrence on MRI."
  }
 ]

@@ -83,7 +83,7 @@
       "label": "Brainstem",
       "x": 63.0,
       "y": 78.0,
-      "blurb": "Cranial nerve nuclei and long tracts. A key OAR (Dmax ~54 Gy)."
+      "blurb": "Cranial nerve nuclei and long tracts. A key organ at risk: injury causes major neurologic deficits."
      }
     ],
     "image": "images/cns/cns-lobes.jpg"
@@ -207,7 +207,7 @@
       "label": "Optic Nerve (CN II)",
       "x": 45,
       "y": 41,
-      "blurb": "Vision. Runs back from each eye through the optic canal. Dose limit about 54 Gy."
+      "blurb": "Vision. Runs back from each eye through the optic canal. An organ at risk: injury means blindness."
      },
      {
       "id": "cns-anat-inferior-2",
@@ -297,12 +297,6 @@
    }
   ],
   "gallery": [
-   {
-    "title": "Vascular territories",
-    "caption": "ACA (yellow: medial frontal/parietal), MCA (red: most of the lateral hemisphere), PCA (blue: occipital, inferior temporal). Source: Frank Gaillard, derivative work (Wikimedia Commons, Cerebral vascular territories), CC BY 2.5.",
-    "style": "schematic",
-    "image": "images/cns/cns-g-territories.jpg"
-   },
    {
     "title": "Homunculus",
     "caption": "Sensory homunculus on the postcentral gyrus; the motor strip just in front follows the same map: leg medial, arm and face lateral. Source: OpenStax College (Wikimedia Commons, 1421 Sensory Homunculus), CC BY 3.0.",

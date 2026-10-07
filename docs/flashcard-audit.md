@@ -362,3 +362,21 @@ full system), gynx-33 (molecular class as a modifier of adjuvant therapy, not ju
 best vs worst), gynx-43 (adjuvant ladder by recurrence risk). Dose numbers moved to
 Extra (gynx-37) or removed (gynx-25, gynx-61). Retired gynx-56 (four shells); added
 gynx-64 (organ, local, nodes, distant, then FIGO).
+
+**CNS reading revision (October 7, 2026), 334 → 340 cards.** The CNS reading was
+narrowed to one question (what is it, where is it, how aggressive is it, and should
+the plan be focal, regional, whole-brain, or craniospinal?) and split into six
+sections: Tumor Biology & Risk Factors (renamed from Epidemiology), Neuroanatomy,
+Imaging, Workup & Decision-Making (renamed from Workup & Classification), Treatment
+Paradigms, and a new Radiation Planning & Toxicity section. Brain metastases are now
+the centerpiece (a 7-step algorithm), the spine emergency is its own pathway, and
+doses, constraints, WHO criteria, and trial statistics moved into reference boxes.
+Softened absolutes: cnsx-28 (IDH-wildtype is glioblastoma only when it meets
+criteria), cnsx-30 (MGMT associated with, not guaranteeing, temozolomide benefit),
+cnsx-61 (SRS for limited, safely treatable disease, not a fixed 1-4 count), cnsx-37
+(Stupp as "what it established"; regimen in Extra), cnsx-38 and cnsx-51 (regimens
+moved to Extra). cnsx-56 (craniospinal RT) moved to Radiation Planning. Added
+cnsx-64 (deferring RT for CNS-active systemic therapy is a multidisciplinary,
+case-by-case decision), cnsx-65 (SINS), cnsx-66 (MRI-CT fusion), cnsx-67 (CTV for
+glioma vs none for SRS), cnsx-68 (optic chiasm decides SRS vs fractionated for
+sellar tumors), cnsx-69 (steroids first for radionecrosis).

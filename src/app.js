@@ -2605,130 +2605,152 @@ const QUIZ_SETS = {
   ],
   "cns-epi": [
     {
-      q: "What is the most common intracranial tumor in adults? The most common primary brain tumor? The most common malignant primary brain tumor?",
-      a: "<strong>Brain metastases</strong> (most common overall). <strong>Meningioma</strong> (most common primary, ~40%). <strong>Glioblastoma</strong> (most common malignant primary).",
-    },
-    {
-      q: "What is the only well-established environmental risk factor for brain tumors?",
-      a: "<strong>Ionizing radiation</strong> (e.g., childhood cranial RT): raises the risk of <strong>meningioma</strong> (most), glioma, and sarcoma. Cell phones have no proven link.",
-    },
-    {
-      q: "A 32-year-old has bilateral vestibular schwannomas. What syndrome, and what other tumors should you look for?",
-      a: "<strong>NF2</strong> (merlin, chromosome 22). Also <strong>meningiomas</strong> and spinal <strong>ependymomas</strong>. (NF1 = optic pathway gliomas, neurofibromas.)",
+      q: "What is the most common intracranial tumor in adults? The most common primary brain tumor? The most common malignant primary?",
+      a: "<strong>Brain metastases</strong> (most common overall). <strong>Meningioma</strong> (most common primary). <strong>Glioblastoma</strong> (most common malignant primary).",
     },
     {
       q: "Which cancers most commonly spread to the brain?",
-      a: "<strong>Lung</strong> (most common), <strong>breast</strong>, <strong>melanoma</strong> (highest propensity), <strong>kidney</strong>, and <strong>colorectal</strong>. Melanoma, renal, and choriocarcinoma mets tend to bleed.",
+      a: "<strong>Lung</strong>, <strong>breast</strong>, and <strong>melanoma</strong>; also kidney and colorectal. Melanoma, renal, and choriocarcinoma metastases tend to bleed.",
     },
     {
-      q: "An HIV-positive patient has a periventricular enhancing mass. Which primary CNS tumor is linked to immunosuppression, and why hold steroids before biopsy?",
-      a: "<strong>Primary CNS lymphoma</strong> (EBV-related in the immunosuppressed). Steroids can make it <strong>melt away</strong> and ruin the biopsy.",
+      q: "A 32-year-old has bilateral vestibular schwannomas. What syndrome, and what other tumors should you look for?",
+      a: "<strong>NF2</strong>. Also look for <strong>meningiomas</strong> and spinal <strong>ependymomas</strong>. (NF1 = optic pathway gliomas; VHL = hemangioblastomas.)",
+    },
+    {
+      q: "An HIV-positive patient has a periventricular enhancing mass. Which tumor is linked to immunosuppression, and why hold steroids before biopsy?",
+      a: "<strong>Primary CNS lymphoma</strong>. Steroids can make it <strong>shrink or disappear</strong> and leave the biopsy nondiagnostic.",
+    },
+    {
+      q: "Is every IDH-wildtype diffuse glioma automatically a glioblastoma?",
+      a: "<strong>No.</strong> IDH and 1p/19q status are the foundation, but an IDH-wildtype diffuse astrocytic tumor is classified as glioblastoma only when it meets <strong>specific histologic or molecular criteria</strong>.",
     },
   ],
   "cns-anatomy": [
     {
       q: "A patient can't speak fluently but understands. Where is the lesion?",
-      a: "<strong>Broca's area</strong>: the inferior frontal gyrus of the <strong>dominant (usually left)</strong> hemisphere. Fluent but meaningless speech with poor comprehension = <strong>Wernicke's</strong> (superior temporal gyrus).",
+      a: "<strong>Broca's area</strong>: the inferior frontal lobe of the <strong>dominant (usually left)</strong> hemisphere. Fluent speech with poor comprehension = <strong>Wernicke's</strong> (temporal).",
     },
     {
-      q: "Trace the flow of CSF.",
-      a: "<strong>Lateral ventricles &rarr; foramina of Monro &rarr; 3rd ventricle &rarr; cerebral aqueduct &rarr; 4th ventricle &rarr; foramina of Luschka and Magendie &rarr; subarachnoid space</strong> &rarr; arachnoid granulations. A posterior fossa tumor compressing the 4th ventricle causes obstructive hydrocephalus.",
+      q: "Why can a cerebellar or 4th ventricle tumor cause headache, vomiting, and papilledema?",
+      a: "It blocks CSF outflow at the <strong>aqueduct or 4th ventricle</strong>, causing <strong>obstructive hydrocephalus</strong>. That often needs a shunt or ventriculostomy first.",
     },
     {
       q: "Which structure do we spare in hippocampal-avoidance WBRT, and why?",
-      a: "The <strong>hippocampi</strong> (medial temporal lobes), where neural stem cells for <strong>memory</strong> live. NRG CC001: HA-WBRT + memantine preserved cognition better than WBRT + memantine.",
+      a: "The <strong>hippocampi</strong> (medial temporal lobes), which form new <strong>memories</strong>.",
     },
     {
       q: "What runs through the cavernous sinus, and what happens when a tumor grows into it?",
-      a: "The <strong>internal carotid artery</strong> and cranial nerves <strong>III, IV, V1, V2, and VI</strong>. A tumor there (pituitary adenoma, meningioma) causes <strong>double vision</strong>, ptosis, and facial numbness.",
+      a: "The <strong>internal carotid artery</strong> and cranial nerves <strong>III, IV, V1, V2, and VI</strong>. Invasion causes <strong>double vision</strong> and facial numbness, and makes complete resection risky, which is why radiation is often used there.",
     },
     {
-      q: "Where does a vestibular schwannoma arise, and which nearby structure limits the SRS plan for hearing?",
-      a: "The <strong>vestibular division of CN VIII</strong> in the <strong>internal auditory canal</strong>, growing into the cerebellopontine angle. Keep the <strong>cochlea</strong> mean dose <strong>&le;4 Gy</strong> to preserve hearing.",
+      q: "A meningioma sits just above the sella. Which organ at risk will shape the plan, and what does injury mean?",
+      a: "The <strong>optic chiasm</strong>: injury means <strong>vision loss</strong>. It's the critical constraint for any sellar or suprasellar tumor.",
     },
   ],
   "cns-imaging": [
     {
-      q: "Which MRI sequence shows the enhancing tumor, and which shows the surrounding edema/infiltrative tumor?",
-      a: "<strong>T1 post-contrast</strong> = enhancing tumor (blood-brain barrier breakdown). <strong>T2/FLAIR</strong> = edema and non-enhancing infiltrative tumor.",
+      q: "Which MRI sequence shows the enhancing tumor, and which shows the surrounding edema and infiltrative tumor?",
+      a: "<strong>T1 post-contrast</strong> = enhancing tumor (broken blood-brain barrier). <strong>T2/FLAIR</strong> = edema and non-enhancing infiltrative tumor.",
+    },
+    {
+      q: "Does enhancement on MRI always mean viable tumor?",
+      a: "<strong>No.</strong> Enhancement means a broken blood-brain barrier. Post-surgical change, <strong>pseudoprogression</strong>, and <strong>radionecrosis</strong> all enhance too.",
+    },
+    {
+      q: "A month after chemoRT for glioblastoma, the enhancing area is larger. What else could it be besides progression, and what do you do?",
+      a: "<strong>Pseudoprogression</strong>, especially in <strong>MGMT-methylated</strong> tumors. Don't stop treatment for one scan: <strong>repeat the MRI</strong> (advanced imaging can help).",
     },
     {
       q: "Name the classic MRI signs of a meningioma.",
-      a: "Extra-axial, homogeneous enhancement, <strong>dural tail</strong>, a <strong>CSF cleft</strong> between tumor and brain, and <strong>hyperostosis</strong> of adjacent bone.",
-    },
-    {
-      q: "A month after chemoRT for GBM, the enhancing area is larger. What else could it be besides progression?",
-      a: "<strong>Pseudoprogression</strong>: treatment effect in the first ~3 months, more common with <strong>MGMT-methylated</strong> tumors. Advanced imaging (perfusion rCBV, spectroscopy, amino-acid PET) and short-interval MRI help; true tumor has high rCBV.",
+      a: "Extra-axial, homogeneous enhancement, a <strong>dural tail</strong>, a <strong>CSF cleft</strong> between tumor and brain, and <strong>hyperostosis</strong> of the adjacent bone.",
     },
     {
       q: "What does an 'ice cream cone' in the cerebellopontine angle suggest?",
-      a: "<strong>Vestibular schwannoma</strong>: the 'cone' in the internal auditory canal and the 'scoop' in the CPA cistern. Meningiomas tend to be broad-based on the dura without widening the IAC.",
-    },
-    {
-      q: "Which brain tumor classically calcifies on CT?",
-      a: "<strong>Oligodendroglioma</strong> (also craniopharyngioma and meningioma). Calcification is common in oligodendroglioma (~70&ndash;90%).",
+      a: "<strong>Vestibular schwannoma</strong>: the 'cone' in the internal auditory canal and the 'scoop' in the CPA.",
     },
   ],
   "cns-staging": [
     {
-      q: "Why don't gliomas have a TNM stage?",
-      a: "They almost <strong>never spread outside the CNS</strong>, so nodes and distant metastases don't apply. They're described by <strong>WHO grade (1&ndash;4)</strong> and <strong>molecular features</strong> instead.",
-    },
-    {
-      q: "IDH wild-type diffuse glioma, histologically grade 2, with a TERT promoter mutation. What's the diagnosis?",
-      a: "<strong>Glioblastoma, IDH-wildtype, WHO grade 4</strong>. TERT promoter mutation, EGFR amplification, or +7/&minus;10 makes it GBM even without necrosis or microvascular proliferation.",
+      q: "Why don't adult brain tumors have a TNM stage, and what three questions replace it?",
+      a: "They almost <strong>never spread outside the CNS</strong>. Instead ask: <strong>what is it</strong> (type, grade, markers), <strong>where and how big</strong>, and <strong>how is the patient</strong> (KPS, systemic disease).",
     },
     {
       q: "What defines an oligodendroglioma?",
-      a: "<strong>IDH mutation + 1p/19q codeletion.</strong> IDH-mutant without codeletion (usually ATRX loss, TP53 mutation) = astrocytoma.",
+      a: "<strong>IDH mutation + 1p/19q codeletion.</strong> IDH-mutant without codeletion = astrocytoma.",
     },
     {
-      q: "What does MGMT promoter methylation tell you in GBM?",
-      a: "It predicts <strong>benefit from temozolomide</strong> (and better survival). Unmethylated tumors get less from TMZ; in the elderly, methylation favors TMZ.",
+      q: "What does MGMT promoter methylation tell you in glioblastoma?",
+      a: "It is <strong>prognostic</strong> and associated with <strong>greater benefit from temozolomide</strong>, but not absolutely: unmethylated tumors in fit patients still get standard RT + temozolomide.",
     },
     {
-      q: "What's the difference between a WHO grade 1 and grade 2 (atypical) meningioma?",
-      a: "Grade 2: <strong>brain invasion</strong> or <strong>4&ndash;19 mitoses per 10 HPF</strong> (or 3 of 5 atypical features). Grade 3: &ge;20 mitoses, anaplastic features, or TERT promoter mutation / CDKN2A/B deletion.",
+      q: "Besides the number of lesions, what drives the plan for brain metastases?",
+      a: "<strong>Total volume</strong>, lesion <strong>size and location</strong>, <strong>symptoms</strong>/mass effect, <strong>performance status</strong>, <strong>extracranial disease</strong>, and <strong>CNS-active systemic options</strong>.",
+    },
+    {
+      q: "In spine metastases, what do Bilsky and SINS each measure?",
+      a: "<strong>Bilsky</strong> = degree of <strong>epidural cord compression</strong>. <strong>SINS</strong> = <strong>mechanical stability</strong> (an unstable spine needs a surgeon).",
     },
   ],
   "cns-treatment-mets": [
     {
-      q: "A patient with NSCLC and 3 brain mets (all under 2 cm), KPS 90. SRS alone or SRS + WBRT?",
-      a: "<strong>SRS alone.</strong> NCCTG N0574: adding WBRT improved intracranial control but caused <strong>more cognitive decline</strong> with no survival benefit.",
+      q: "A patient with NSCLC has 3 small brain metastases, KPS 90, no symptoms. SRS alone or SRS + WBRT?",
+      a: "<strong>SRS alone.</strong> Adding WBRT improves intracranial control but causes <strong>more cognitive decline</strong> with no survival benefit (N0574). Follow with close MRI.",
     },
     {
-      q: "What are the RTOG 90-05 single-fraction SRS doses by size?",
-      a: "<strong>&le;2 cm: 24 Gy</strong>; <strong>2.1&ndash;3 cm: 18 Gy</strong>; <strong>3.1&ndash;4 cm: 15 Gy</strong>. Larger lesions or cavities are often done in 3&ndash;5 fractions.",
+      q: "A single 4.5 cm metastasis causes midline shift and confusion. First step?",
+      a: "<strong>Steroids and neurosurgery</strong> for resection, then <strong>SRS to the cavity</strong> (Mahajan, N107C).",
     },
     {
-      q: "After resection of a single brain met, what's the standard adjuvant RT?",
-      a: "<strong>SRS to the cavity</strong> (often 27 Gy/3 or 30 Gy/5). Mahajan: better local control than observation. N107C: similar survival to WBRT with <strong>less cognitive decline</strong>.",
+      q: "When many brain metastases need whole-brain RT, how do you protect memory?",
+      a: "<strong>Hippocampal avoidance + memantine</strong> (NRG CC001).",
     },
     {
-      q: "When WBRT is used, how do you protect memory?",
-      a: "<strong>Hippocampal avoidance + memantine</strong> (NRG CC001), 30 Gy/10.",
+      q: "An asymptomatic patient with ALK-positive lung cancer has small brain metastases and is starting a CNS-active drug. Is radiation required now?",
+      a: "<strong>Not necessarily.</strong> In selected asymptomatic patients, a <strong>multidisciplinary team</strong> may defer local therapy with close MRI monitoring. Symptomatic disease should not wait.",
     },
   ],
   "cns-treatment": [
     {
-      q: "What is the Stupp regimen for GBM?",
-      a: "<strong>60 Gy in 30 fractions</strong> with <strong>daily temozolomide (75 mg/m&sup2;)</strong>, then <strong>6 cycles of adjuvant TMZ</strong>. Median OS 14.6 vs 12.1 months; 5-year 10% vs 2%. Add TTFields (EF-14).",
+      q: "What did the Stupp trial establish for glioblastoma?",
+      a: "<strong>Postoperative RT with concurrent and adjuvant temozolomide</strong> as standard therapy for fit patients with newly diagnosed glioblastoma.",
     },
     {
-      q: "A 77-year-old with GBM, KPS 60, MGMT methylated. What's reasonable?",
-      a: "<strong>Hypofractionated RT: 40 Gy/15 + TMZ</strong> (Perry), or 25 Gy/5 (Roa), or TMZ alone if methylated and very frail. Short courses are as effective in older patients.",
+      q: "How is treatment adjusted for an older or frail patient with glioblastoma?",
+      a: "<strong>Shorter RT courses</strong>, with or without temozolomide; temozolomide alone for very frail patients with MGMT-methylated tumors.",
     },
     {
-      q: "Which trial established RT + PCV for high-risk low-grade glioma?",
-      a: "<strong>RTOG 9802</strong>: RT (54 Gy) + PCV nearly doubled median OS (13.3 vs 7.8 years) vs RT alone, especially for IDH-mutant tumors.",
+      q: "What drives treatment of a lower-grade (IDH-mutant) glioma?",
+      a: "<strong>Molecular type, grade, residual disease, age, symptoms, and risk of progression.</strong> Lower-risk grade 2: observe or vorasidenib (INDIGO). Higher-risk grade 2 or grade 3: <strong>RT + chemotherapy</strong> (RTOG 9802).",
     },
     {
-      q: "What is the typical SRS dose for a vestibular schwannoma?",
-      a: "<strong>12&ndash;13 Gy</strong> to the margin. Tumor control ~95%; hearing preservation declines over time. Fractionated options: 25 Gy/5 or 50.4&ndash;54 Gy.",
+      q: "A cavernous sinus meningioma wraps the carotid and sits 2 mm from the optic chiasm. SRS or fractionated RT?",
+      a: "<strong>Fractionated RT.</strong> It can't be safely resected, and it's too close to the chiasm for single-fraction SRS.",
     },
     {
-      q: "Standard RT for metastatic epidural spinal cord compression in a patient not fit for surgery?",
-      a: "<strong>Dexamethasone</strong> first, then RT: <strong>8 Gy &times; 1</strong>, <strong>20 Gy/5</strong>, or <strong>30 Gy/10</strong>. Surgery + RT for fit patients with single-level compression (Patchell).",
+      q: "A fit patient with a single level of high-grade spinal cord compression and an unstable spine. Plan?",
+      a: "<strong>Dexamethasone</strong>, then <strong>surgery (decompression and stabilization) + postoperative RT</strong> (Patchell). Not a surgical candidate: urgent RT + steroids.",
+    },
+  ],
+  "cns-planning": [
+    {
+      q: "Why is the MRI fused to the planning CT?",
+      a: "The <strong>MRI</strong> shows the tumor and anatomy; the <strong>CT</strong> provides the <strong>electron density</strong> needed to calculate dose.",
+    },
+    {
+      q: "Why does a glioblastoma plan have a CTV but an intact brain metastasis SRS plan usually doesn't?",
+      a: "Glioblastoma <strong>infiltrates</strong> beyond what's visible, so the CTV covers microscopic spread (trimmed at anatomic barriers). A metastasis is <strong>well-defined</strong>, so GTV plus a tiny margin is enough.",
+    },
+    {
+      q: "Match the technique to the disease: small focal target, infiltrative tumor, diffuse intracranial disease, CSF spread.",
+      a: "<strong>SRS</strong>; <strong>fractionated RT</strong>; <strong>WBRT</strong> (hippocampal avoidance); <strong>craniospinal RT</strong>.",
+    },
+    {
+      q: "Nine months after SRS, a treated metastasis is larger and enhancing, and the patient is mildly symptomatic. What is the dilemma, and the first-line treatment if it's necrosis?",
+      a: "<strong>Radionecrosis vs recurrence</strong> (advanced imaging helps). Symptomatic necrosis: <strong>steroids</strong> first, then <strong>bevacizumab</strong> or laser ablation.",
+    },
+    {
+      q: "Which late effect needs lifelong monitoring after RT for a pituitary adenoma?",
+      a: "<strong>Hypopituitarism</strong>: lifelong endocrine follow-up.",
     },
   ],
   "gi-epi": [
@@ -3321,7 +3343,7 @@ const POSTOP_TX = {
 function classifyGlioma(o){
   if(!o.idh){
     if(o.necmvp || o.molgbm) return { dx: "Glioblastoma, IDH-wildtype", grade: 4,
-      tx: "Maximal safe resection &rarr; <strong>60 Gy/30 + temozolomide &rarr; 6 cycles adjuvant TMZ</strong> (Stupp) &plusmn; TTFields. Older/frail: 40 Gy/15 + TMZ or 25 Gy/5. MGMT methylation predicts TMZ benefit." };
+      tx: "Maximal safe resection &rarr; <strong>60 Gy/30 + temozolomide &rarr; 6 cycles adjuvant TMZ</strong> (Stupp) &plusmn; TTFields. Older/frail: shorter courses. MGMT methylation is associated with greater TMZ benefit." };
     return { dx: "IDH-wildtype diffuse glioma without GBM criteria", grade: null,
       tx: "Uncommon in adults: send more molecular testing (TERT, EGFR, +7/&minus;10, H3, BRAF). Many turn out to be GBM or a pediatric-type glioma." };
   }
