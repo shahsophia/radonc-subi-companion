@@ -12,12 +12,12 @@
     "Staging by Subsite"
    ],
    "objectives": [
-    "Explain why HPV-positive and HPV-negative oropharynx cancer behave as two different diseases",
-    "Identify the oral cavity, oropharynx, nasopharynx, and larynx subsites and the nerves at risk in the neck",
-    "Map the cervical lymph node levels and how drainage predicts what gets treated",
-    "Match the imaging modality to the clinical question, including perineural spread",
-    "Work through the core workup and the staging differences that matter by subsite",
-    "Apply a four-question framework to head and neck treatment decisions"
+    "Explain how the subsite predicts biology, spread, staging, and treatment, including HPV-positive oropharynx cancer",
+    "Trace each subsite's patterns of local spread to the symptoms and T-stage they produce",
+    "Predict nodal risk from the primary site and distinguish involved from elective nodes",
+    "Choose imaging by the clinical question and read a scan in a consistent order",
+    "Work up a new patient from exam to stage, and explain why stage is not treatment",
+    "Apply four questions to a treatment decision and connect the radiation plan to its toxicities"
    ],
    "guideline": "NCCN Head and Neck Cancers Guidelines",
    "staging": [
@@ -25,104 +25,109 @@
    ],
    "trials": [
     "RTOG 91-11",
+    "VA Larynx",
     "RTOG 9501",
     "EORTC 22931",
     "RTOG 1016",
-    "De-ESCALaTE"
+    "De-ESCALaTE",
+    "Tata Memorial",
+    "PARSPORT"
    ],
    "modules": {
     "Epidemiology & Risk Factors": {
-     "lede": "See how common each head and neck subsite is and what drives it: tobacco and alcohol, HPV, and EBV.",
+     "lede": "Start with the subsite: it predicts the cause, the spread, the staging system, and the treatment, from tobacco and alcohol to HPV and EBV.",
      "essentials": [
-      "Risk factors by subsite",
+      "What each subsite makes you think about first",
       "HPV-positive versus HPV-negative oropharynx",
-      "p16 as a stand-in for HPV",
-      "EBV and nasopharyngeal carcinoma"
+      "p16 as the staging surrogate for HPV",
+      "Why nasopharyngeal carcinoma behaves differently"
      ],
      "objectives": [
-      "Identify the main risk factors for each subsite",
+      "Match each subsite to its main drivers and the question it raises first",
       "Explain why HPV-positive and HPV-negative oropharynx cancer are different diseases",
-      "Explain why p16 is used as a surrogate for HPV",
-      "Describe the drivers of nasopharyngeal carcinoma"
+      "Explain how p16 status decides the oropharynx staging system",
+      "Use the history to predict the biology and the next step in the workup",
+      "Explain why nasopharyngeal carcinoma is treated with radiation"
      ]
     },
     "Anatomy": {
-     "lede": "Learn the boundaries of the oral cavity, oropharynx, nasopharynx, and larynx, and the nerves at risk in the neck.",
+     "lede": "Learn where each tumor can go: the boundaries of the oral cavity, oropharynx, nasopharynx, and larynx, the patterns of local spread, and the anatomy on a planning CT.",
      "essentials": [
       "Oral tongue versus base of tongue",
-      "Oropharynx boundaries",
       "Nasopharynx red flags",
-      "Larynx compartments and T3/T4a"
+      "Patterns of local spread and T-stage",
+      "Anatomy on a CT simulation scan"
      ],
      "objectives": [
-      "Define the boundaries of the oral cavity and oropharynx",
-      "Locate the nasopharynx and the fossa of Rosenmuller",
+      "Define the boundaries of the oral cavity, oropharynx, and nasopharynx",
       "Describe the three laryngeal compartments and why early glottic cancer skips the neck",
-      "Recognize the anatomic features that make laryngeal cancer T3 or T4a",
+      "Trace each subsite's local spread to its symptoms and staging consequence",
+      "Recognize the major organs at risk on a head and neck planning CT",
       "Identify the nerves at risk in the neck"
      ]
     },
     "Lymph Nodes": {
-     "lede": "Learn the cervical lymph node levels I to VII and how predictable drainage decides which levels get treated.",
+     "lede": "Learn the cervical node levels I to VII, how the primary site predicts nodal risk, and why involved and elective nodes are treated differently.",
      "essentials": [
       "The level system I to VII",
       "The hyoid, cricoid, and clavicle landmarks",
-      "Coverage rules by subsite",
-      "Bilateral versus unilateral neck"
+      "Nodal risk by primary site",
+      "Involved versus elective nodes"
      ],
      "objectives": [
       "Name the cervical node levels and their boundaries",
-      "Match classic primaries to the levels they drain to",
-      "Apply the coverage rules by subsite",
-      "Decide when the neck is treated on both sides or one"
+      "Predict the levels at risk from the primary site",
+      "List the factors that change the elective nodal volume",
+      "Decide when one or both sides of the neck are at risk",
+      "Define GTVn, CTV, and PTV for the neck"
      ]
     },
     "Imaging": {
-     "lede": "Match the modality to the question, then read the oral cavity, nasopharynx, larynx, lymph nodes, and perineural spread on imaging.",
+     "lede": "Choose CT, MRI, or PET/CT by the question you need answered, then read every scan in the same order: primary, neighbors, nodes, distant disease, and treatment implications.",
      "essentials": [
-      "MRI versus CT versus PET-CT",
+      "Choosing imaging by the question",
+      "How a Rad Onc reads the scan",
       "Features of a suspicious node",
-      "The cystic level II node",
       "Thyroid cartilage invasion"
      ],
      "objectives": [
-      "Choose MRI, CT, or PET-CT for the clinical question",
+      "Choose CT, MRI, or PET/CT for each clinical question",
+      "Read a head and neck scan in a consistent order",
       "Recognize the imaging features of a suspicious lymph node",
-      "Know the typical nodal spread of nasopharyngeal carcinoma",
       "Stage laryngeal cartilage invasion on CT",
       "Recognize perineural spread"
      ]
     },
     "Workup & Staging": {
-     "lede": "Cover the core workup every patient gets, the T, N, and M framework, and the staging differences that matter by subsite.",
+     "lede": "Turn a new patient into a complete oncologic diagnosis: exam, tissue, imaging, pathology, function, stage, and the tumor board decision.",
      "essentials": [
-      "The core workup",
+      "The seven-step workup",
+      "What changes the stage by subsite",
       "N stage for non-HPV sites",
-      "Depth of invasion in the oral cavity",
-      "p16-positive oropharynx staging"
+      "Stage is not treatment"
      ],
      "objectives": [
-      "List the core workup for a head and neck cancer patient",
+      "Walk a new patient through the workup from exam to tumor board",
+      "Name the staging feature that matters most at each subsite",
       "Assign N stage for non-HPV sites",
-      "Use depth of invasion to stage the oral cavity",
-      "Explain why p16 status is checked first in the oropharynx",
-      "Recognize the staging rules unique to the nasopharynx"
+      "Use depth of invasion and p16 status in staging",
+      "Explain why the stage alone does not decide treatment"
      ]
     },
     "Treatment Paradigms": {
-     "lede": "Carry one four-question framework for head and neck treatment decisions, then add each site's unique twist.",
+     "lede": "Use four questions to decide what to treat and why, see what a head and neck radiation plan looks like, then add each site's twist and the toxicities you're trying to prevent.",
      "essentials": [
-      "Surgery first when resectable",
-      "Adjuvant RT triggers",
-      "When chemo is added",
-      "The two big dose numbers"
+      "The four questions",
+      "Adjuvant RT and chemo triggers",
+      "Targets and organs at risk",
+      "Toxicity by organ at risk"
      ],
      "objectives": [
       "Apply the four-question framework to a new patient",
-      "Identify the pathology features that trigger adjuvant radiation",
-      "Know the two features that add concurrent chemo",
-      "Recall the standard definitive and postoperative doses",
-      "Describe what makes each subsite unique"
+      "Identify the pathology features that trigger postoperative RT and chemoradiation",
+      "Describe GTV, CTV, PTV, and the organs at risk in a head and neck plan",
+      "Explain each subsite's treatment paradigm, including avoiding triple therapy",
+      "Link dose to each organ at risk to the toxicity it causes"
      ]
     }
    }

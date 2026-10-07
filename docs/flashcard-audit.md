@@ -292,3 +292,10 @@ sparing in rectal RT (gix-60); which cancers metastasize to brain (cnsx-63).
 toxicity section (mucositis and dermatitis appear only in the background "consult"
 chapter). No reading defines the ECOG/KPS scale, so no performance-status card was
 added.
+
+**H&N reading revision (October 7, 2026), 328 → 330 cards.** The H&N reading was
+reorganized around clinical reasoning (subsite first, patterns of local spread,
+nodal risk by site, imaging by question, a seven-step workup, four treatment
+questions, and a new toxicity section). Two cards were added for concepts the
+reading now teaches: hn-59 (involved vs elective nodes) and hn-60 (pharyngeal
+constrictors and dysphagia). Existing card ids were kept.

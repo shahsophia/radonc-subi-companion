@@ -2664,3 +2664,20 @@ html:has(body.on-home){scroll-snap-type:y proximity;scroll-padding-top:var(--nav
 }
 .pn-link{white-space:nowrap;}
 @media (max-width:1000px){ .primary-nav{margin-left:12px;gap:0;} .primary-nav .pn-link{padding:0 8px;font-size:13.5px;} }
+
+/* ============ H&N TARGET MAP (nested GTV/CTV/PTV + OAR list) ============ */
+.doc-body .target-map{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:14px;margin:18px 0 24px;align-items:stretch;}
+.doc-body .target-map .tn-ring{border:2px solid color-mix(in srgb, var(--svc,var(--accent)) 55%, transparent);border-radius:14px;padding:10px 12px 12px;display:flex;flex-direction:column;gap:2px;}
+.doc-body .target-map .tn-ring .tn-ring{margin-top:8px;}
+.doc-body .target-map .tn-4{border-style:dashed;background:color-mix(in srgb, var(--svc,var(--accent)) 4%, var(--surface));}
+.doc-body .target-map .tn-3{background:color-mix(in srgb, var(--svc,var(--accent)) 9%, var(--surface));}
+.doc-body .target-map .tn-2{background:color-mix(in srgb, var(--svc,var(--accent)) 16%, var(--surface));}
+.doc-body .target-map .tn-1{background:color-mix(in srgb, var(--svc,var(--accent)) 28%, var(--surface));border-color:var(--svc,var(--accent));}
+.doc-body .target-map .tn-label{font-family:var(--font-mono);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--svc,var(--accent));}
+.doc-body .target-map .tn-desc{font-size:13px;line-height:1.45;color:var(--ink-soft);}
+.doc-body .target-map .tn-oars{border:1px solid var(--line);border-radius:14px;background:var(--surface-2);padding:10px 14px 12px;}
+.doc-body .target-map .tn-oars .tn-label{color:var(--ink-faint);}
+.doc-body .target-map .tn-oars ul{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px;}
+.doc-body .target-map .tn-oars li{margin:0;font-size:12.5px;padding:3px 9px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);}
+.doc-body .target-map .tn-oars li::before{content:none;}
+@media (max-width:640px){ .doc-body .target-map{grid-template-columns:1fr;} }

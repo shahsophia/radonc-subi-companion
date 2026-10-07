@@ -2032,7 +2032,7 @@ const QUIZ_SETS = {
   "hn-epi": [
     {
       q: "What is the surrogate IHC marker used clinically to identify HPV-driven oropharyngeal cancer, and what upstream viral event causes it to be overexpressed?",
-      a: "<strong>p16.</strong> HPV's E7 oncoprotein inactivates the retinoblastoma protein (pRb), which normally keeps p16 suppressed - so p16 becomes markedly overexpressed, tracking HPV infection with roughly 95% concordance.",
+      a: "<strong>p16.</strong> HPV's E7 oncoprotein inactivates the retinoblastoma protein (pRb), which normally keeps p16 suppressed, so p16 becomes overexpressed. A p16-positive oropharynx cancer is staged with the HPV-associated system.",
     },
     {
       q: "A 45-year-old non-smoker presents with a tonsil mass. Compared to a 65-year-old heavy smoker/drinker with the same diagnosis, what's different about the tumor biology to expect?",
@@ -2071,12 +2071,12 @@ const QUIZ_SETS = {
       a: "<strong>Level Ia (submental)</strong> - at risk from the lower lip, anterior oral tongue, and anterior floor of mouth specifically; most other oral cavity subsites drain to Ib instead.",
     },
     {
-      q: "Why does nasopharyngeal carcinoma get elective coverage of level V, when most other H&N subsites don't?",
-      a: "Nasopharynx is unique among H&N subsites in routinely requiring coverage of the posterior triangle (<strong>level V</strong>), in addition to the near-universal levels II-IV and the pharyngeal-specific level VII.",
+      q: "Which nodal regions are at risk in nasopharyngeal carcinoma, and how does that differ from most other H&N sites?",
+      a: "The <strong>retropharyngeal</strong> nodes, <strong>level II</strong>, and <strong>level V</strong>, usually on <strong>both sides</strong>. NPC has rich lymphatic drainage, so level V (posterior triangle) is routinely at risk, which is not true for most other subsites.",
     },
     {
-      q: "A patient has an involved level II lymph node on imaging. What's the general rule for how far the elective (prophylactic) coverage should extend?",
-      a: "Extend coverage to the <strong>adjacent</strong> nodal levels (here, Ib and V) at a lower elective dose, in addition to full-dose coverage of the entire involved level (II).",
+      q: "A patient has a grossly involved level II node and no other visible nodes. How are the involved node and the rest of the neck treated differently?",
+      a: "The node itself is <strong>GTVn</strong> and gets the <strong>full definitive dose</strong>. The levels at risk for microscopic spread (which become more likely when a neighboring level is involved) form the <strong>elective CTV</strong> at a lower dose. The exact levels depend on the primary site, laterality, and extent.",
     },
     {
       q: "Subglottic tumor extension specifically mandates coverage of which nodal level, and why?",
@@ -2093,8 +2093,8 @@ const QUIZ_SETS = {
       a: "Effacement of the <strong>fossa of Rosenm&uuml;ller</strong>, the mucosal recess (still confined by the pharyngobasilar fascia) where most NPC arises.",
     },
     {
-      q: "On CT, what finding at the anterior commissure of the larynx is considered abnormal?",
-      a: "Soft tissue thickness <strong>greater than 1mm</strong> - suggesting tumor extension across the midline.",
+      q: "A patient finishes chemoradiation for a node-positive oropharynx cancer. Which scan is used to look for residual neck disease, and when?",
+      a: "<strong>PET/CT about 12 weeks after treatment.</strong> Active tumor is FDG-avid while scar usually is not, so a negative scan can spare the patient a neck dissection.",
     },
     {
       q: "A patient completes chemoradiation for oropharyngeal cancer and a follow-up scan shows an FDG-avid area along a nerve near the treated site. How does PET-CT help distinguish what this represents?",
@@ -2135,6 +2135,10 @@ const QUIZ_SETS = {
     {
       q: "A patient with HPV-positive oropharyngeal cancer asks whether they can get a less intense treatment given their better prognosis. What's the current standard answer?",
       a: "Outside of a clinical trial, HPV-positive disease is still treated with the <strong>same intensity</strong> as HPV-negative disease. Substituting cetuximab for cisplatin produced worse survival, and dose de-escalation strategies have so far failed to show they're safe.",
+    },
+    {
+      q: "A patient asks why the plan is trying to keep dose low in the muscles at the back of the throat. Which structures are these, and what toxicity are they linked to?",
+      a: "The <strong>pharyngeal constrictors</strong>. Higher dose to them is linked to long-term <strong>dysphagia</strong> and aspiration, just as parotid dose drives xerostomia and mandible dose drives osteoradionecrosis risk.",
     },
   ],
   "th-epi": [

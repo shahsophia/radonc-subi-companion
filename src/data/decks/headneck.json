@@ -105,6 +105,13 @@
   "extra": "Midline or near-midline primaries (base of tongue, soft palate, pharyngeal wall, supraglottis, nasopharynx) get both sides."
  },
  {
+  "id": "hn-59",
+  "category": "Lymph Nodes",
+  "front": "In head and neck RT, how is a grossly involved node (GTVn) treated differently from an elective nodal level?",
+  "back": "The involved node gets the full definitive dose; elective levels at risk only for microscopic disease get a lower dose.",
+  "extra": "The PTV adds a small margin around the CTVs for daily setup variation."
+ },
+ {
   "id": "hn-21",
   "category": "Imaging",
   "front": "Why is CT, rather than MRI, the standard for staging larynx cancer?",
@@ -278,5 +285,12 @@
   "front": "What is the dominant acute toxicity of head and neck chemoradiation, and when does it peak?",
   "back": "Mucositis with painful swallowing and weight loss (plus skin reaction); it builds from about weeks 2-3 and peaks near the end of treatment or shortly after.",
   "extra": "Managed with pain control, nutrition support (sometimes a feeding tube), and oral care. Taste loss and thick saliva are also common."
+ },
+ {
+  "id": "hn-60",
+  "category": "Treatment Paradigms",
+  "front": "Dose to which structure is most linked to long-term dysphagia after head and neck RT?",
+  "back": "The pharyngeal constrictors",
+  "extra": "Parallel links to know: parotids drive xerostomia, the mandible drives osteoradionecrosis risk."
  }
 ]
