@@ -21,18 +21,11 @@
   "extra": "Germline testing is recommended for high/very high-risk, node-positive, or metastatic disease. BRCA2 or ATM mutations can open the door to PARP inhibitors."
  },
  {
-  "id": "prx-5",
-  "category": "Epidemiology & Risk Factors",
-  "front": "Why is PSA screening a shared decision rather than a routine test?",
-  "back": "It modestly lowers prostate cancer deaths but has no clear overall survival benefit, and it causes overdiagnosis and overtreatment of indolent cancers.",
-  "extra": "Active surveillance for low-risk cancers has reduced the harm of screening."
- },
- {
   "id": "prx-4",
   "category": "Epidemiology & Risk Factors",
   "front": "What age group is the core population for PSA screening?",
   "back": "Men 55-69, through shared decision-making",
-  "extra": "Don't routinely screen at 70+ or with a life expectancy under 10-15 years."
+  "extra": "Don't routinely screen at 70+ or with a life expectancy under 10-15 years. Why shared decision-making: screening modestly lowers prostate cancer deaths but has no clear overall survival benefit and causes overdiagnosis of indolent cancers."
  },
  {
   "id": "prx-7",
@@ -44,9 +37,9 @@
  {
   "id": "prx-9",
   "category": "Anatomy & Lymphatics",
-  "front": "Which prostate zone gives rise to most cancers, and why can a DRE feel them?",
-  "back": "The peripheral zone (about 70%), which sits posteriorly against the rectum",
-  "extra": "BPH grows in the transition zone around the urethra. Anterior tumors are missed by DRE but seen on MRI."
+  "front": "In which prostate zone do most cancers arise, and why can a DRE feel them?",
+  "back": "The peripheral zone, which sits posteriorly against the rectum",
+  "extra": "About 70% of cancers arise there. BPH grows in the transition zone around the urethra. Anterior tumors are missed by DRE but seen on MRI."
  },
  {
   "id": "prx-10",
@@ -63,18 +56,11 @@
   "extra": "Tumor bulging out here is a common route for extraprostatic extension (T3a). The penile bulb below the apex is the other erectile-function structure in RT plans."
  },
  {
-  "id": "prx-16",
-  "category": "Anatomy & Lymphatics",
-  "front": "What are the first-echelon lymph nodes for the prostate?",
-  "back": "Obturator and internal iliac nodes",
-  "extra": "Then external iliac and presacral, then common iliac, then para-aortic."
- },
- {
   "id": "prx-17",
   "category": "Anatomy & Lymphatics",
   "front": "Which prostate cancer nodes are regional (N1), and which count as distant (M1a)?",
   "back": "Nodes in the true pelvis (obturator, internal and external iliac, sacral) are N1. Common iliac and above, or inguinal, are M1a.",
-  "extra": "N1 M0 is stage IVA but still treated for cure."
+  "extra": "N1 M0 is stage IVA but still treated for cure. Drainage order: obturator and internal iliac first, then external iliac and presacral, then common iliac, then para-aortic."
  },
  {
   "id": "prx-20",
@@ -88,14 +74,7 @@
   "category": "Imaging",
   "front": "What question does prostate MRI answer, compared with PSMA PET or bone scan?",
   "back": "MRI looks inside the gland (find, target, and locally stage the tumor). PSMA PET or CT + bone scan looks outside the gland (nodes and bone metastases).",
-  "extra": "The planning CT is then fused with MRI because the prostate edge, especially the apex, is hard to see on CT."
- },
- {
-  "id": "prx-21",
-  "category": "Imaging",
-  "front": "What does prostate cancer look like on T2 and ADC MRI?",
-  "back": "Dark on T2 and dark on the ADC map (restricted diffusion)",
-  "extra": "Diffusion (DWI/ADC) drives the score in the peripheral zone; T2 drives it in the transition zone."
+  "extra": "The planning CT is then fused with MRI because the prostate edge, especially the apex, is hard to see on CT. On MRI, cancer is dark on T2 and dark on the ADC map (restricted diffusion)."
  },
  {
   "id": "prx-23",
@@ -109,14 +88,7 @@
   "category": "Imaging",
   "front": "What is the main advantage of PSMA PET over CT plus bone scan?",
   "back": "It is much more accurate for nodal and distant disease, and it finds recurrences at low PSA levels.",
-  "extra": "proPSMA: 92% vs 65% accuracy. Caution: the trials that set treatment standards used conventional imaging."
- },
- {
-  "id": "prx-25",
-  "category": "Imaging",
-  "front": "What is a bone scan \"superscan,\" and what does it mean?",
-  "back": "Diffuse, intense skeletal uptake with faint or absent kidneys. It means extensive bone metastases, even though it can look deceptively clean.",
-  "extra": "Classically prostate cancer in a man with a very high PSA."
+  "extra": "proPSMA: 92% vs 65% accuracy. Caution: the trials that set treatment standards used conventional imaging. On a bone scan, a \"superscan\" (diffuse intense skeletal uptake with faint kidneys) means extensive bone metastases."
  },
  {
   "id": "prx-28",
@@ -220,8 +192,8 @@
   "id": "prx-62",
   "category": "Treatment Paradigms",
   "front": "What did ProtecT show about surgery, radiation, and active monitoring for localized prostate cancer?",
-  "back": "The same prostate cancer survival (~97% at 15 years); the options differ in side effects, not survival.",
-  "extra": "Monitoring had more progression. Surgery causes more incontinence and erectile dysfunction early; RT causes more bowel effects."
+  "back": "Prostate cancer deaths were low and similar with all three; the options differ in side effects (and monitoring allowed more progression), not survival.",
+  "extra": "Prostate cancer-specific survival was about 97% at 15 years in every arm. Surgery causes more incontinence and erectile dysfunction early; RT causes more bowel effects."
  },
  {
   "id": "prx-63",

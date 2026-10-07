@@ -7,13 +7,6 @@
   "extra": "Because of this, AJCC 8 stages p16-positive and p16-negative oropharynx cancer as two separate diseases."
  },
  {
-  "id": "hn-50",
-  "category": "Epidemiology & Risk Factors",
-  "front": "Why is p16 overexpressed in HPV-positive head and neck cancer?",
-  "back": "The HPV E7 oncoprotein inactivates pRb, which normally keeps p16 turned down.",
-  "extra": "That is why p16 IHC is the clinical surrogate for HPV. HPV E6 degrades p53."
- },
- {
   "id": "hn-2",
   "category": "Epidemiology & Risk Factors",
   "front": "What are the classic risk factors for oral cavity cancer?",
@@ -25,7 +18,7 @@
   "category": "Epidemiology & Risk Factors",
   "front": "Which virus drives nasopharyngeal carcinoma, and where is the disease endemic?",
   "back": "Epstein-Barr virus (EBV); endemic in southern China, Southeast Asia, and North Africa",
-  "extra": "Salt-preserved fish is the classic dietary risk factor. Endemic disease is the nonkeratinizing, undifferentiated type with the best prognosis."
+  "extra": "Salt-preserved fish is the classic dietary risk factor. Endemic disease is the nonkeratinizing, undifferentiated type with the best prognosis. Plasma EBV DNA is used for prognosis and response monitoring in NPC."
  },
  {
   "id": "hn-7",
@@ -147,13 +140,6 @@
   "extra": "Don't call a cystic neck node in an adult a benign branchial cleft cyst until this is excluded."
  },
  {
-  "id": "hn-23",
-  "category": "Imaging",
-  "front": "What is the first-echelon nodal station for nasopharyngeal carcinoma?",
-  "back": "The retropharyngeal nodes",
-  "extra": "Skip metastases straight to level II happen, and levels II and V are the most common neck levels in NPC."
- },
- {
   "id": "hn-13",
   "category": "Workup & Staging",
   "front": "Why does every head and neck radiation patient get a dental evaluation before treatment?",
@@ -165,14 +151,7 @@
   "category": "Workup & Staging",
   "front": "Which test must be done on every oropharynx squamous cell carcinoma before it can be staged?",
   "back": "p16 immunohistochemistry (the surrogate for HPV)",
-  "extra": "A neck node FNA usually provides enough tissue. p16 status picks which staging system to use."
- },
- {
-  "id": "hn-15",
-  "category": "Workup & Staging",
-  "front": "Which blood test is used for prognosis and response monitoring in nasopharyngeal carcinoma?",
-  "back": "Plasma EBV DNA",
-  "extra": "NPC workup also includes MRI of the skull base and EBV (EBER) testing on the biopsy."
+  "extra": "A neck node FNA usually provides enough tissue. p16 status picks which staging system to use. Why p16 works as a surrogate: the HPV E7 protein inactivates pRb, which normally keeps p16 turned down (E6 degrades p53)."
  },
  {
   "id": "hn-56",
@@ -227,8 +206,8 @@
   "id": "hn-47",
   "category": "Treatment Paradigms",
   "front": "After head and neck cancer surgery, which pathologic findings call for adjuvant radiation?",
-  "back": "Advanced disease (pT3-T4 or pN2-N3) or intermediate-risk features (perineural invasion, LVSI, close margin, or deep invasion)",
-  "extra": "These predict local and regional recurrence with surgery alone. Postoperative RT is about 60 Gy."
+  "back": "Advanced pathologic stage (pT3-T4 or pN2-N3) or adverse features such as perineural invasion, lymphovascular invasion, or close margins",
+  "extra": "These predict local and regional recurrence with surgery alone. Postoperative RT is about 60 Gy; ENE or a positive margin adds concurrent cisplatin."
  },
  {
   "id": "hn-27",
@@ -242,7 +221,7 @@
   "category": "Treatment Paradigms",
   "front": "What is the standard definitive radiation dose for head and neck squamous cell carcinoma?",
   "back": "70 Gy in 35 fractions to gross disease",
-  "extra": "Lower doses go to at-risk areas, often in the same plan (simultaneous integrated boost)."
+  "extra": "Lower doses go to at-risk areas, often in the same plan (simultaneous integrated boost). Avoid treatment breaks: tumor repopulation during gaps lowers cure rates, so nutrition and pain are managed proactively."
  },
  {
   "id": "hn-26",
@@ -287,17 +266,17 @@
   "extra": "The skull base makes resection impractical. The neck, including level V and retropharyngeal nodes, is always treated."
  },
  {
-  "id": "hn-49",
-  "category": "Treatment Paradigms",
-  "front": "Why are treatment breaks avoided during head and neck radiation?",
-  "back": "Tumor cells repopulate during gaps, so delays lower the chance of cure.",
-  "extra": "This is why nutrition, pain, and swallowing are managed proactively during treatment."
- },
- {
   "id": "hn-32",
   "category": "Treatment Paradigms",
   "front": "Which late toxicity does parotid-sparing IMRT reduce?",
   "back": "Xerostomia (dry mouth)",
   "extra": "PARSPORT showed much less xerostomia with IMRT than with older 3D techniques. Dry mouth also drives dental decay and osteoradionecrosis risk."
+ },
+ {
+  "id": "hn-58",
+  "category": "Treatment Paradigms",
+  "front": "What is the dominant acute toxicity of head and neck chemoradiation, and when does it peak?",
+  "back": "Mucositis with painful swallowing and weight loss (plus skin reaction); it builds from about weeks 2-3 and peaks near the end of treatment or shortly after.",
+  "extra": "Managed with pain control, nutrition support (sometimes a feeding tube), and oral care. Taste loss and thick saliva are also common."
  }
 ]

@@ -4,14 +4,14 @@
   "category": "Epidemiology & Risk Factors",
   "front": "How does small cell lung cancer behave differently from non-small cell lung cancer?",
   "back": "It is a fast-growing neuroendocrine tumor that spreads early (especially to the brain), so it is treated mainly with chemo ± radiation rather than surgery.",
-  "extra": "About 15% of lung cancers, almost always in smokers. Staged as limited vs extensive instead of by TNM groupings."
+  "extra": "About 15% of lung cancers, almost always in smokers. Staged as limited vs extensive instead of by TNM groupings. Paraneoplastic clues: small cell causes SIADH, ectopic ACTH, and Lambert-Eaton; squamous cell causes hypercalcemia (PTHrP)."
  },
  {
   "id": "thx-3",
   "category": "Epidemiology & Risk Factors",
   "front": "What is the most common lung cancer histology, and where in the lung does it usually arise?",
   "back": "Adenocarcinoma, usually peripheral",
-  "extra": "It is also the most common type in never-smokers and carries most of the targetable driver mutations."
+  "extra": "It is also the most common type in never-smokers and carries most of the targetable driver mutations. Radon (from soil, collecting in basements) is the leading cause of lung cancer in never-smokers."
  },
  {
   "id": "thx-4",
@@ -21,32 +21,11 @@
   "extra": "Both S's sit in the Center. Both are strongly tied to smoking."
  },
  {
-  "id": "thx-5",
-  "category": "Epidemiology & Risk Factors",
-  "front": "What is the leading cause of lung cancer in never-smokers?",
-  "back": "Radon",
-  "extra": "A radioactive gas from soil that collects in basements. It is the #2 cause overall, after smoking."
- },
- {
-  "id": "thx-6",
-  "category": "Epidemiology & Risk Factors",
-  "front": "A smoker with a central lung mass has hyponatremia from SIADH. Which histology is most likely?",
-  "back": "Small cell lung cancer",
-  "extra": "Small cell also causes ectopic ACTH and Lambert-Eaton. Squamous cell is the classic cause of hypercalcemia (PTHrP)."
- },
- {
   "id": "thx-54",
   "category": "Epidemiology & Risk Factors",
   "front": "Why is every nonsquamous NSCLC tested for driver mutations and PD-L1?",
   "back": "The results change systemic therapy: a driver mutation (e.g., EGFR, ALK) means a targeted pill instead of immunotherapy, and PD-L1 guides how much immunotherapy is used.",
-  "extra": "This now matters for early-stage and stage III disease too, not just metastatic disease."
- },
- {
-  "id": "thx-7",
-  "category": "Epidemiology & Risk Factors",
-  "front": "Which driver mutation is classic in a young woman who never smoked and has lung adenocarcinoma?",
-  "back": "EGFR",
-  "extra": "Targeted with osimertinib. ALK is the other classic never-smoker driver."
+  "extra": "This now matters for early-stage and stage III disease too, not just metastatic disease. Classic EGFR patient: a younger never-smoking woman with adenocarcinoma (treated with osimertinib); ALK is the other classic never-smoker driver."
  },
  {
   "id": "thx-8",
@@ -70,13 +49,6 @@
   "extra": "The 2 cm \"no-fly zone.\" Central tumors cannot safely get 3-fraction SBRT."
  },
  {
-  "id": "thx-11",
-  "category": "Anatomy & Lymphatics",
-  "front": "What makes a lung tumor \"ultracentral\"?",
-  "back": "The tumor (or its PTV) touches or overlaps the proximal bronchial tree, trachea, or esophagus.",
-  "extra": "The highest-risk location for SBRT: treated with 8 or more fractions or conventional fractionation."
- },
- {
   "id": "thx-14",
   "category": "Anatomy & Lymphatics",
   "front": "What causes the classic symptoms of a superior sulcus (Pancoast) tumor?",
@@ -89,13 +61,6 @@
   "front": "What N stage is a subcarinal (station 7) node, regardless of tumor side?",
   "back": "N2",
   "extra": "Station 7 drains both lungs, so it always counts as ipsilateral. It is the most commonly involved mediastinal station."
- },
- {
-  "id": "thx-16",
-  "category": "Anatomy & Lymphatics",
-  "front": "Is a supraclavicular node in lung cancer N3 or M1?",
-  "back": "N3 (either side). It is regional, so the patient can still be treated for cure.",
-  "extra": "Contralateral mediastinal or hilar nodes are the other way to be N3."
  },
  {
   "id": "thx-56",
@@ -119,20 +84,6 @@
   "extra": "PET cannot screen the brain because normal brain is always FDG-avid."
  },
  {
-  "id": "thx-21",
-  "category": "Imaging",
-  "front": "What CT features make a lung nodule suspicious for cancer (margin, texture, and behavior over time)?",
-  "back": "Spiculated margin, part-solid texture, and growth",
-  "extra": "Also upper lobe and larger size (>3 cm = a mass). Reassuring: smooth margin, benign calcification, fat, 2-year stability."
- },
- {
-  "id": "thx-22",
-  "category": "Imaging",
-  "front": "In a part-solid adenocarcinoma, which part is measured for the T stage?",
-  "back": "Only the solid (invasive) component",
-  "extra": "The ground-glass part is usually non-invasive lepidic growth."
- },
- {
   "id": "thx-27",
   "category": "Imaging",
   "front": "On a lung radiation plan, what is the ITV, and what scan is used to build it?",
@@ -142,9 +93,9 @@
  {
   "id": "thx-28",
   "category": "Imaging",
-  "front": "A mass-like opacity appears at the SBRT site 6 months after treatment. What is it most likely, and what would suggest recurrence instead?",
-  "back": "Expected radiation fibrosis. Recurrence is suggested by enlargement after 12 months, a bulging margin, or loss of air bronchograms.",
-  "extra": "Fibrosis conforms to the high-dose region and stabilizes. Suspicious changes get PET/CT and biopsy; don't call recurrence too early."
+  "front": "A mass-like opacity appears at the lung SBRT site months after treatment. What is it most likely, and when should recurrence be suspected?",
+  "back": "Usually expected radiation fibrosis, which follows the high-dose region and then stabilizes. Suspect recurrence if it keeps growing (especially beyond about a year); that gets PET/CT and biopsy.",
+  "extra": "Other worrisome signs: a bulging margin or loss of air bronchograms. Calling recurrence too early leads to unnecessary procedures."
  },
  {
   "id": "thx-57",
@@ -179,7 +130,7 @@
   "category": "Workup & Staging",
   "front": "What are the size cutoffs for T1 through T4 in lung cancer?",
   "back": "T1 ≤3 cm, T2 >3-5 cm, T3 >5-7 cm, T4 >7 cm",
-  "extra": "Invasion beats size: a small tumor that invades a T3 or T4 structure takes that higher T. Subcategories (T1a-c, T2a-b) live in the AJCC tables."
+  "extra": "Invasion beats size: a small tumor that invades a T3 or T4 structure takes that higher T. Subcategories (T1a-c, T2a-b) live in the AJCC tables. In a part-solid adenocarcinoma, only the solid (invasive) component is measured for T."
  },
  {
   "id": "thx-31",
@@ -199,8 +150,8 @@
   "id": "thx-15",
   "category": "Workup & Staging",
   "front": "What separates N1, N2, and N3 in lung cancer?",
-  "back": "N1 = ipsilateral hilar/intrapulmonary nodes (stations 10-14). N2 = ipsilateral mediastinal nodes (stations 2-9). N3 = contralateral mediastinal/hilar or any supraclavicular nodes.",
-  "extra": "Double digits = hilum, single digits = mediastinum. AJCC 9th edition splits N2 into one station (N2a) vs several (N2b)."
+  "back": "N1 = ipsilateral hilar/intrapulmonary nodes (stations 10-14). N2 = ipsilateral mediastinal or subcarinal nodes (stations 2-9). N3 = contralateral mediastinal/hilar or any supraclavicular nodes; N3 is still regional (stage III), so it can be treated for cure.",
+  "extra": "Double digits = hilum, single digits = mediastinum. AJCC 9th edition splits N2 into one station (N2a) vs several (N2b). A contralateral supraclavicular node is still N3, not M1."
  },
  {
   "id": "thx-35",
@@ -241,15 +192,15 @@
   "id": "thx-42",
   "category": "Treatment Paradigms",
   "front": "How does tumor location change SBRT fractionation for early-stage lung cancer?",
-  "back": "The closer to the middle of the chest, the more fractions: peripheral about 3 (e.g., 54 Gy/3), central 5 (e.g., 50 Gy/5, never 3), ultracentral 8 or more",
+  "back": "The closer to the middle of the chest, the more fractions: peripheral about 3 (e.g., 54 Gy/3), central about 5 (e.g., 50 Gy/5, not 3), ultracentral 8 or more",
   "extra": "Tumors abutting the chest wall often get 4-5 fractions to limit rib fracture and chest wall pain."
  },
  {
   "id": "thx-43",
   "category": "Treatment Paradigms",
-  "front": "What is the feared toxicity when treating an ultracentral lung tumor with SBRT?",
-  "back": "Fatal hemoptysis (and fistula) from high dose to the main airways or esophagus",
-  "extra": "In HILUS, about 15% of patients died of treatment, mostly from bleeding. Here toxicity, not tumor control, drives the plan."
+  "front": "For an ultracentral lung tumor (touching the proximal bronchial tree or esophagus), what is the feared SBRT toxicity?",
+  "back": "Fatal hemoptysis (and fistula) from high dose to the main airways, great vessels, or esophagus",
+  "extra": "Ultracentral = the tumor or PTV touches or overlaps the proximal bronchial tree, trachea, or esophagus; these get 8 or more fractions or conventional fractionation. In HILUS, about 15% of patients died of treatment, mostly from bleeding. Here toxicity, not tumor control, drives the plan."
  },
  {
   "id": "thx-61",
@@ -313,6 +264,13 @@
   "front": "Which acute toxicity is most expected during conventional thoracic chemoradiation, and when does it start?",
   "back": "Esophagitis (painful swallowing), starting around weeks 2-3",
   "extra": "Mean esophagus dose is kept under about 34 Gy."
+ },
+ {
+  "id": "thx-65",
+  "category": "Treatment Paradigms",
+  "front": "Which four organs at risk are checked on every conventionally fractionated lung plan?",
+  "back": "Lungs, esophagus, heart, and spinal cord",
+  "extra": "Lung (V20, mean dose) for pneumonitis, esophagus for esophagitis, heart for late cardiac events (RTOG 0617), and the cord max (about 50 Gy). Apical tumors add the brachial plexus."
  },
  {
   "id": "thx-50",

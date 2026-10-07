@@ -228,3 +228,67 @@ mechanism-level detail in Biology/Physics, notation in Constraints/Acronyms.
 DNA-repair syndrome list, the HYTEC fraction table, QUANTEC numbers beyond cord,
 brainstem/optics, lung, and parotid, the GBM and NSCLC worked examples (taught in
 the site decks), LINAC energy ranges, MLC delivery modes.
+
+---
+
+# Second pass: active-recall audit (October 7, 2026), 377 → 328 cards
+
+The first pass decided what the reading covers. This pass asked a stricter question
+of every card: *with 10 minutes of review, is this worth one repetition?* Nothing
+was removed from the website. Facts that failed the test were folded into the
+Extra field of the closest surviving card (MOVE) or, when the reading already
+covers them and they duplicate another deck, dropped (DELETE). Card ids were kept
+for rewritten cards; new concepts got new ids.
+
+| Deck | Before | After | Keep | Rewrite | Move to Extra | Delete | Add |
+|---|---|---|---|---|---|---|---|
+| Overview | 64 | 50 | 48 | 1 | 8 | 7 | 1 |
+| Thoracic | 50 | 44 | 39 | 4 | 6 | 1 | 1 |
+| Head & Neck | 43 | 40 | 38 | 1 | 4 | 0 | 1 |
+| Breast | 42 | 38 | 31 | 5 | 6 | 0 | 2 |
+| Prostate | 46 | 42 | 40 | 2 | 4 | 0 | 0 |
+| GI | 40 | 38 | 35 | 2 | 3 | 0 | 1 |
+| GYN | 46 | 39 | 37 | 2 | 7 | 0 | 0 |
+| CNS | 46 | 37 | 33 | 3 | 10 | 0 | 1 |
+
+**Cross-deck duplicates removed.** CSI rationale (ov-87 = cnsx-56), the 54 Gy
+optic/brainstem limit (cnsx-15 = ov-35), lung V20 (ov-36 = ov-94 + thx-49), DIBH
+(ov-40 = br-40), prostate low α/β (ov-52 = prx-42), treatment breaks (hn-49 =
+ov-48), palliative GI bleeding (gix-52, already in gix-48).
+
+**Within-deck duplicates merged.** Supraclavicular = N3 (thx-16, br-34) folded into
+the N-framework cards; NPC first echelon (hn-23 = hn-52); PET for early breast
+(br-39 = br-12); node-positive cervix field (gynx-42 = gynx-25); endometrial MRI
+(gynx-22 → gynx-32); TNT features (gix-31 → gix-42); Lynch (gix-4 → gix-36);
+hippocampal sparing (cnsx-17 → cnsx-44); molecular GBM (cnsx-27 → cnsx-28);
+ultracentral definition (thx-11 → thx-43).
+
+**Resident-level / reference detail moved to Extra.** NHEJ vs HR, PARP synthetic
+lethality, OER vs LET, photoelectric effect, electron surface-dose trap, SOBP, PRV,
+CBCT vs diagnostic CT, CSI junction feathering; SIADH/paraneoplastic, radon, EGFR
+patient, part-solid measurement; p16/pRb mechanism, EBV DNA; BRCA1 → TNBC,
+mammographic findings, AJCC prognostic staging; prostate T2/ADC signal, superscan,
+first-echelon node order; vulvar pathways, transformation zone, MRI stromal-ring
+detail as a standalone fact, brachy HR-CTV D90 goal, bladder-filling sim; NF2,
+PCNSL risk, supra/infratentorial, cord vs thecal sac level, ice-cream-cone sign,
+hemorrhagic mets, prolactinoma.
+
+**Rewritten for clinical reasoning or accuracy.** ov-6 (list → why smoking
+cessation matters); prx-9 (dropped "70%"); prx-62 and gix-43 (trial percentages to
+Extra); gix-11 (height bins → why a low tumor matters); cnsx-58 (rCBV → the
+necrosis-vs-tumor dilemma); cnsx-32 (GPA factors → what GPA is for); cnsx-28 (IDH-wt
+= GBM made precise); thx-28 (radiology criteria → fibrosis vs recurrence logic);
+gynx-20 (MRI sign → why it changes treatment). Accuracy fixes: br-53 "never
+concurrent" → "generally not"; br-25 PMRT "T3-T4" → T4 or T3N+ (T3N0
+individualized); br-30 boost for a margin that can't be re-excised; br-54 relative vs
+absolute RT contraindications; hn-47 adjuvant triggers (dropped vague "deep
+invasion"); gynx-59 softened "doubles side effects"; thx-42 "never 3" → "not 3".
+
+**Gaps filled.** CT simulation (ov-102); lung OARs (thx-65); H&N acute toxicity /
+mucositis (hn-58); breast dermatitis (br-55) and breast OARs (br-56); small-bowel
+sparing in rectal RT (gix-60); which cancers metastasize to brain (cnsx-63).
+
+**Reading gaps to consider.** The H&N, breast, and CNS readings have no dedicated
+toxicity section (mucositis and dermatitis appear only in the background "consult"
+chapter). No reading defines the ECOG/KPS scale, so no performance-status card was
+added.

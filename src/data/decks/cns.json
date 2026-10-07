@@ -7,6 +7,13 @@
   "extra": "Lung is the most common source; melanoma has the highest tendency to spread to the brain. Most patients have more than one lesion."
  },
  {
+  "id": "cnsx-63",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Which primary cancers most commonly metastasize to the brain?",
+  "back": "Lung (most common), breast, and melanoma; also renal cell and colorectal",
+  "extra": "Melanoma has the highest tendency to spread to the brain relative to how common it is. Mets that tend to hemorrhage: melanoma, renal cell, choriocarcinoma, and thyroid."
+ },
+ {
   "id": "cnsx-2",
   "category": "Epidemiology & Risk Factors",
   "front": "What is the most common primary brain tumor, and the most common malignant primary brain tumor in adults?",
@@ -28,20 +35,6 @@
   "extra": "Childhood cranial RT raises the risk of meningioma (most), glioma, and sarcoma, often decades later. Cell phones: no proven link."
  },
  {
-  "id": "cnsx-4",
-  "category": "Epidemiology & Risk Factors",
-  "front": "Which genetic syndrome causes bilateral vestibular schwannomas?",
-  "back": "Neurofibromatosis type 2 (NF2)",
-  "extra": "NF2 also causes meningiomas and spinal ependymomas. NF1 causes optic pathway gliomas."
- },
- {
-  "id": "cnsx-6",
-  "category": "Epidemiology & Risk Factors",
-  "front": "Which primary brain tumor is linked to immunosuppression (HIV, transplant)?",
-  "back": "Primary CNS lymphoma (EBV-driven)",
-  "extra": "It is very responsive to chemo and radiation."
- },
- {
   "id": "cnsx-8",
   "category": "Epidemiology & Risk Factors",
   "front": "Why don't brain tumors get a TNM stage, and how are they described instead?",
@@ -53,7 +46,7 @@
   "category": "Neuroanatomy",
   "front": "A patient has bitemporal hemianopia. Where is the lesion, and what is the classic cause?",
   "back": "The optic chiasm, classically compressed from below by a pituitary adenoma",
-  "extra": "Craniopharyngioma is the other classic suprasellar cause. The chiasm is a key organ at risk for any sellar treatment."
+  "extra": "Craniopharyngioma is the other classic suprasellar cause. The chiasm is a key organ at risk for any sellar treatment. With conventional fractionation the optic chiasm, nerves, and brainstem are kept to about 54 Gy. Pituitary adenomas: prolactinomas get cabergoline first; others get transsphenoidal surgery, with RT for residual or recurrent disease."
  },
  {
   "id": "cnsx-54",
@@ -63,46 +56,18 @@
   "extra": "That one distinction narrows the differential a lot."
  },
  {
-  "id": "cnsx-55",
-  "category": "Neuroanatomy",
-  "front": "Where do most adult vs most childhood brain tumors arise relative to the tentorium?",
-  "back": "Adults: supratentorial (cerebrum). Children: infratentorial (posterior fossa: cerebellum and brainstem).",
-  "extra": ""
- },
- {
   "id": "cnsx-12",
   "category": "Neuroanatomy",
   "front": "Why do posterior fossa tumors often cause hydrocephalus?",
   "back": "They block CSF outflow at the fourth ventricle or cerebral aqueduct, causing obstructive hydrocephalus.",
-  "extra": "Headache, vomiting, papilledema. It needs a shunt or ventriculostomy before RT."
+  "extra": "Headache, vomiting, papilledema. It needs a shunt or ventriculostomy before RT. Most adult brain tumors are supratentorial; most childhood tumors are infratentorial (posterior fossa)."
  },
  {
   "id": "cnsx-56",
   "category": "Neuroanatomy",
   "front": "Which tumors need craniospinal irradiation, and why?",
   "back": "Tumors that spread through the CSF (e.g., medulloblastoma, some germ cell tumors), because the whole CSF space is at risk",
-  "extra": "The field covers the brain and spine down to the bottom of the thecal sac."
- },
- {
-  "id": "cnsx-15",
-  "category": "Neuroanatomy",
-  "front": "With conventional fractionation, about what maximum dose do the optic chiasm, optic nerves, and brainstem tolerate?",
-  "back": "About 54 Gy",
-  "extra": "The \"54 Gy club.\" Exceeding it risks blindness or brainstem necrosis."
- },
- {
-  "id": "cnsx-17",
-  "category": "Neuroanatomy",
-  "front": "Why is the hippocampus spared during whole-brain radiation?",
-  "back": "It forms new memories, so sparing it reduces memory and cognitive decline.",
-  "extra": "It sits in the medial temporal lobe next to the temporal horn of the lateral ventricle (NRG CC001)."
- },
- {
-  "id": "cnsx-18",
-  "category": "Neuroanatomy",
-  "front": "Where does the adult spinal cord end, and where does the thecal sac end?",
-  "back": "Cord: L1-L2 (conus medullaris). Thecal sac: about S2.",
-  "extra": "S2 sets the bottom of a craniospinal field."
+  "extra": "The field covers the brain and spine down to the bottom of the thecal sac. Planning detail: the brain and spine field junctions are \"feathered\" (shifted every few fractions) so hot and cold spots don't pile up at one level. The adult cord ends at L1-L2, but the thecal sac ends about S2, which sets the bottom of the spine field."
  },
  {
   "id": "cnsx-19",
@@ -133,13 +98,6 @@
   "extra": "Also a CSF cleft between tumor and brain, and hyperostosis of adjacent bone."
  },
  {
-  "id": "cnsx-22",
-  "category": "Imaging",
-  "front": "An \"ice cream cone\" mass widens the internal auditory canal and fills the cerebellopontine angle. What is it?",
-  "back": "Vestibular schwannoma (acoustic neuroma)",
-  "extra": "It arises from CN VIII. RT planning protects the cochlea, brainstem, and facial nerve."
- },
- {
   "id": "cnsx-25",
   "category": "Imaging",
   "front": "What is pseudoprogression after glioblastoma treatment, and how should it be handled?",
@@ -149,30 +107,16 @@
  {
   "id": "cnsx-58",
   "category": "Imaging",
-  "front": "When does radiation necrosis appear, and how can perfusion MRI help tell it from tumor?",
-  "back": "Months to years after SRS or high-dose RT. Necrosis has low blood volume (rCBV) on perfusion; true tumor has high rCBV.",
-  "extra": "Spectroscopy and amino-acid PET also help. Necrosis is treated with steroids, bevacizumab, or laser ablation."
- },
- {
-  "id": "cnsx-26",
-  "category": "Imaging",
-  "front": "Which brain metastases tend to hemorrhage?",
-  "back": "Melanoma, renal cell carcinoma, choriocarcinoma, and thyroid cancer",
-  "extra": "Classic story: sudden severe headache and a new bright lesion on CT in a patient with melanoma."
+  "front": "Months to years after SRS or high-dose brain RT, a lesion enlarges. What is the key imaging dilemma?",
+  "back": "Telling radiation necrosis (treatment effect) from recurrent tumor, since both enhance; advanced imaging such as perfusion MRI, or tissue, helps sort it out.",
+  "extra": "Necrosis has low blood volume (rCBV) on perfusion; tumor has high rCBV. Spectroscopy and amino-acid PET also help. Necrosis is treated with steroids, bevacizumab, or laser ablation."
  },
  {
   "id": "cnsx-28",
   "category": "Workup & Classification",
   "front": "How do IDH and 1p/19q status sort adult diffuse gliomas (WHO 2021)?",
-  "back": "IDH-wildtype = glioblastoma. IDH-mutant + 1p/19q codeleted = oligodendroglioma. IDH-mutant, 1p/19q intact = astrocytoma.",
-  "extra": "Oligodendrogliomas do best. An IDH-mutant astrocytoma can be grade 4 but is not called glioblastoma."
- },
- {
-  "id": "cnsx-27",
-  "category": "Workup & Classification",
-  "front": "Can an IDH-wildtype glioma that looks low grade under the microscope be called glioblastoma?",
-  "back": "Yes. Molecular features (TERT promoter mutation, EGFR amplification, or +7/-10) make it glioblastoma, grade 4.",
-  "extra": "Molecular trumps the microscope in WHO 2021."
+  "back": "IDH-mutant + 1p/19q codeleted = oligodendroglioma. IDH-mutant, 1p/19q intact = astrocytoma. IDH-wildtype adult diffuse astrocytic glioma = glioblastoma.",
+  "extra": "Molecular trumps the microscope: an IDH-wildtype glioma that looks low grade is still glioblastoma (grade 4) if it has TERT promoter mutation, EGFR amplification, or +7/-10. Oligodendrogliomas do best; an IDH-mutant astrocytoma can be grade 4 but is not called glioblastoma."
  },
  {
   "id": "cnsx-30",
@@ -198,9 +142,9 @@
  {
   "id": "cnsx-32",
   "category": "Workup & Classification",
-  "front": "What does the GPA estimate in brain metastases, and what are its original four factors?",
-  "back": "Survival (prognosis). Factors: age, KPS, number of brain metastases, and extracranial metastases.",
-  "extra": "The diagnosis-specific GPA adds the cancer type and markers. Prognosis helps choose SRS, WBRT, or supportive care."
+  "front": "What does the GPA estimate in brain metastases, and how is it used?",
+  "back": "Survival (prognosis), which helps choose between SRS, whole-brain RT, or supportive care",
+  "extra": "Original factors: age, KPS, number of brain metastases, and extracranial metastases. The diagnosis-specific GPA adds cancer type and markers."
  },
  {
   "id": "cnsx-60",
@@ -242,7 +186,7 @@
   "category": "Treatment Paradigms",
   "front": "When many brain metastases need whole-brain RT, how is cognition protected?",
   "back": "Hippocampal avoidance plus memantine",
-  "extra": "Typically 30 Gy in 10 fractions (NRG CC001)."
+  "extra": "Typically 30 Gy in 10 fractions (NRG CC001). Why: the hippocampus forms new memories, so sparing it reduces cognitive decline."
  },
  {
   "id": "cnsx-45",
@@ -284,21 +228,14 @@
   "category": "Treatment Paradigms",
   "front": "How is a small, growing vestibular schwannoma treated with radiation, and what nearby structure limits it?",
   "back": "SRS, with the cochlea dose kept low to preserve hearing",
-  "extra": "About 95% control. Large tumors compressing the brainstem go to surgery."
- },
- {
-  "id": "cnsx-48",
-  "category": "Treatment Paradigms",
-  "front": "What is the first-line treatment for a prolactinoma?",
-  "back": "Cabergoline (a dopamine agonist), even for large tumors",
-  "extra": "Other pituitary adenomas get transsphenoidal surgery, with RT for residual or recurrent disease; hypopituitarism is the main late effect."
+  "extra": "About 95% control. Large tumors compressing the brainstem go to surgery. Bilateral vestibular schwannomas = NF2 (which also causes meningiomas and spinal ependymomas). Imaging: an \"ice cream cone\" mass widening the internal auditory canal and filling the cerebellopontine angle."
  },
  {
   "id": "cnsx-49",
   "category": "Treatment Paradigms",
   "front": "What is the initial treatment for primary CNS lymphoma?",
   "back": "High-dose methotrexate-based chemotherapy",
-  "extra": "Whole-brain RT is used for consolidation or when chemo isn't possible; neurotoxicity is a big risk in older patients."
+  "extra": "Whole-brain RT is used for consolidation or when chemo isn't possible; neurotoxicity is a big risk in older patients. PCNSL is linked to immunosuppression (HIV, transplant) and EBV."
  },
  {
   "id": "cnsx-50",

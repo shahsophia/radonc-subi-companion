@@ -35,13 +35,6 @@
   "extra": "Hepatitis B can cause HCC without cirrhosis. Liver function often limits treatment as much as the tumor does."
  },
  {
-  "id": "gix-4",
-  "category": "Epidemiology & Risk Factors",
-  "front": "Which hereditary syndrome causes MSI-high (MMR-deficient) colorectal cancer, and why does MMR status matter for treatment?",
-  "back": "Lynch syndrome. MMR-deficient tumors respond very well to immunotherapy.",
-  "extra": "Lynch also causes endometrial, ovarian, gastric, and urinary tract cancers."
- },
- {
   "id": "gix-10",
   "category": "Anatomy & Lymphatics",
   "front": "Why do esophageal radiation fields use long margins up and down but short margins sideways?",
@@ -51,9 +44,9 @@
  {
   "id": "gix-11",
   "category": "Anatomy & Lymphatics",
-  "front": "How are rectal tumors classified by height, and why does a low tumor matter?",
-  "back": "Measured from the anal verge: low 0-5 cm, mid 5-10 cm, upper 10-15 cm. Low tumors may need an APR (permanent colostomy), so they are prime candidates for organ preservation.",
-  "extra": "Upper rectal tumors above the peritoneal reflection behave more like colon cancer."
+  "front": "Why does a low rectal tumor (within about 5 cm of the anal verge) matter for treatment?",
+  "back": "It may need an abdominoperineal resection with a permanent colostomy, so it is a prime candidate for organ-preserving neoadjuvant therapy.",
+  "extra": "Height is measured from the anal verge: low 0-5 cm, mid 5-10 cm, upper 10-15 cm. Upper rectal tumors above the peritoneal reflection behave more like colon cancer."
  },
  {
   "id": "gix-12",
@@ -161,18 +154,11 @@
   "extra": ""
  },
  {
-  "id": "gix-31",
-  "category": "Workup & Staging",
-  "front": "Which rectal MRI features push a patient toward total neoadjuvant therapy?",
-  "back": "T4 disease, a threatened mesorectal fascia, EMVI, N2 or lateral pelvic nodes, or a low tumor where organ preservation is the goal",
-  "extra": ""
- },
- {
   "id": "gix-36",
   "category": "Workup & Staging",
   "front": "Which biomarker changes rectal cancer management the most, and how?",
   "back": "MMR deficiency (MSI-high): these patients get immunotherapy first.",
-  "extra": "With dostarlimab alone, essentially all patients in the Cercek study had a complete clinical response."
+  "extra": "With dostarlimab alone, essentially all patients in the Cercek study had a complete clinical response. MMR deficiency can be hereditary (Lynch syndrome), which also causes endometrial, ovarian, gastric, and urinary tract cancers."
  },
  {
   "id": "gix-33",
@@ -217,6 +203,13 @@
   "extra": "Long-course is preferred for a threatened margin or T4 tumor."
  },
  {
+  "id": "gix-60",
+  "category": "Treatment Paradigms",
+  "front": "Which organ at risk most limits pelvic radiation for rectal cancer, and how is it moved out of the field?",
+  "back": "The small bowel; treating with a full bladder (and sometimes prone) pushes bowel up and out of the pelvis.",
+  "extra": "Other OARs: bladder and femoral heads. Small bowel dose drives diarrhea and late bowel injury."
+ },
+ {
   "id": "gix-41",
   "category": "Treatment Paradigms",
   "front": "For locally advanced rectal cancer, is chemoradiation better before or after surgery?",
@@ -228,14 +221,14 @@
   "category": "Treatment Paradigms",
   "front": "What is total neoadjuvant therapy (TNT) for rectal cancer?",
   "back": "Giving all the chemotherapy and radiation before surgery",
-  "extra": "RAPIDO (fewer treatment failures) and PRODIGE 23 (better survival). It is followed by TME, or watch-and-wait after a complete response."
+  "extra": "RAPIDO (fewer treatment failures) and PRODIGE 23 (better survival). It is followed by TME, or watch-and-wait after a complete response. MRI features that push toward TNT: T4, a threatened mesorectal fascia, EMVI, N2 or lateral pelvic nodes, or a low tumor where organ preservation is the goal."
  },
  {
   "id": "gix-43",
   "category": "Treatment Paradigms",
-  "front": "What is \"watch-and-wait\" in rectal cancer, and how often does it work?",
-  "back": "Skipping surgery after a complete clinical response to neoadjuvant therapy, with close surveillance. In OPRA, about half of patients kept their rectum.",
-  "extra": "ChemoRT followed by consolidation chemo did best."
+  "front": "What is \"watch-and-wait\" in rectal cancer?",
+  "back": "Skipping TME surgery after a complete clinical response to neoadjuvant therapy, with close endoscopy and MRI surveillance and surgery if the tumor regrows",
+  "extra": "In OPRA, about half of patients kept their rectum; chemoRT followed by consolidation chemo did best."
  },
  {
   "id": "gix-45",
@@ -256,7 +249,7 @@
   "category": "Treatment Paradigms",
   "front": "What is the role of radiation in gastric cancer?",
   "back": "Limited: adjuvant chemoRT after an inadequate node dissection or a positive margin, and palliation of bleeding",
-  "extra": "The standard is perioperative FLOT chemotherapy with D2 gastrectomy; adding postoperative chemoRT after that didn't help (CRITICS)."
+  "extra": "The standard is perioperative FLOT chemotherapy with D2 gastrectomy; adding postoperative chemoRT after that didn't help (CRITICS). Typical palliative courses for bleeding: 8 Gy × 1-2 up to 30 Gy in 10."
  },
  {
   "id": "gix-50",
@@ -271,12 +264,5 @@
   "front": "When is SBRT used for hepatocellular carcinoma, and what patient factor limits it?",
   "back": "For tumors not suited to resection or ablation, as a bridge to transplant, or for portal vein thrombus; limited by liver function (Child-Pugh A to B7)",
   "extra": "RTOG 1112: SBRT + sorafenib improved survival. Enough normal liver must be spared to avoid radiation-induced liver disease."
- },
- {
-  "id": "gix-52",
-  "category": "Treatment Paradigms",
-  "front": "What radiation course is used for bleeding from an incurable gastric or rectal cancer?",
-  "back": "A short palliative course (e.g., 8 Gy × 1-2 up to 30 Gy in 10)",
-  "extra": "Very effective for bleeding."
  }
 ]

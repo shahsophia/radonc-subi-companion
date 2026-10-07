@@ -11,7 +11,7 @@
   "category": "Epidemiology & Risk Factors",
   "front": "Besides HPV infection itself, what raises the risk of cervical cancer?",
   "back": "Smoking and immunosuppression (which keep HPV from clearing), more HPV exposure, and above all lack of screening",
-  "extra": "The HPV vaccine prevents new infections but doesn't clear existing ones, so vaccinated women are still screened."
+  "extra": "The HPV vaccine prevents new infections but doesn't clear existing ones, so vaccinated women are still screened. Nearly all cervical cancers start in the transformation zone, where glandular canal cells meet the squamous outer cervix."
  },
  {
   "id": "gynx-5",
@@ -33,20 +33,6 @@
   "front": "Why is every endometrial cancer tested for mismatch repair (MMR/MSI)?",
   "back": "To screen for Lynch syndrome, and because MMR-deficient tumors respond well to immunotherapy",
   "extra": "Lynch carries a 30-60% lifetime endometrial cancer risk. A young patient with a family history of colon cancer is the classic case."
- },
- {
-  "id": "gynx-8",
-  "category": "Epidemiology & Risk Factors",
-  "front": "What are the two pathways to vulvar cancer, and which has the worse prognosis?",
-  "back": "HPV-associated (younger women) and HPV-independent from lichen sclerosus (older women, p53-mutated). The lichen sclerosus pathway is worse.",
-  "extra": "Biopsy any persistent vulvar lesion; these are often treated for months as \"irritation.\""
- },
- {
-  "id": "gynx-9",
-  "category": "Anatomy & Lymphatics",
-  "front": "Where on the cervix do nearly all cervical cancers start?",
-  "back": "The transformation zone, where the glandular cells of the canal meet the squamous cells of the outer cervix",
-  "extra": "That is why most cervical cancers are squamous and a minority are adenocarcinomas."
  },
  {
   "id": "gynx-11",
@@ -74,7 +60,7 @@
   "category": "Anatomy & Lymphatics",
   "front": "Where does vulvar cancer spread first, and what does a positive pelvic node mean?",
   "back": "To the inguinofemoral (groin) nodes. A pelvic node is distant (stage IVB) for the vulva.",
-  "extra": "Lateral tumors drain to one groin; midline tumors (clitoris, perineum) drain to both."
+  "extra": "Lateral tumors drain to one groin; midline tumors (clitoris, perineum) drain to both. Two pathways to vulvar cancer: HPV-associated (younger women) and HPV-independent from lichen sclerosus (older, p53-mutated, worse prognosis)."
  },
  {
   "id": "gynx-55",
@@ -93,37 +79,16 @@
  {
   "id": "gynx-20",
   "category": "Imaging",
-  "front": "On T2 MRI of the cervix, what finding essentially rules out parametrial invasion?",
-  "back": "An intact dark (low-signal) cervical stromal ring",
-  "extra": "Tumor is intermediate gray. A broken ring with tumor spiculating into the fat = IIB = chemoradiation, not surgery."
- },
- {
-  "id": "gynx-22",
-  "category": "Imaging",
-  "front": "What does MRI assess in endometrial cancer?",
-  "back": "Depth of myometrial invasion (under vs over half) and whether the cervical stroma is involved",
-  "extra": "Endometrial cancer is staged surgically, so MRI mainly guides surgery and stages medically inoperable patients."
+  "front": "On cervical MRI, what finding indicates parametrial invasion, and why does it change treatment?",
+  "back": "A break in the dark (low-signal) cervical stromal ring with tumor extending into the parametrial fat. That is stage IIB, treated with chemoradiation rather than radical hysterectomy.",
+  "extra": "An intact stromal ring essentially rules out parametrial invasion. Tumor is intermediate gray on T2."
  },
  {
   "id": "gynx-25",
   "category": "Imaging",
   "front": "In cervical cancer, what PET/CT finding usually extends the radiation field above the pelvis?",
   "back": "Para-aortic (or common iliac) nodal uptake, which leads to an extended field up to the renal vessels",
-  "extra": "A PET-positive pelvic node gets a boost. A 3-month post-treatment PET showing complete response predicts excellent outcomes."
- },
- {
-  "id": "gynx-23",
-  "category": "Imaging",
-  "front": "Why is a cervical cancer patient simulated with both a full and an empty bladder?",
-  "back": "The uterus moves with bladder filling, so the target has to cover both positions.",
-  "extra": "Patients also follow a consistent bladder-filling routine at every treatment."
- },
- {
-  "id": "gynx-24",
-  "category": "Imaging",
-  "front": "How is cervical brachytherapy planned, and what is the main dose goal?",
-  "back": "On MRI (or CT) with the applicator in place, contouring the HR-CTV (whole cervix + residual tumor); the goal is HR-CTV D90 ≥85 Gy EQD2 with EBRT and brachy combined.",
-  "extra": "Bladder, rectum, and sigmoid D2cc limits drive toxicity (EMBRACE). The sigmoid can loop over the tandem tip."
+  "extra": "A PET-positive pelvic node gets a boost. A 3-month post-treatment PET showing complete response predicts excellent outcomes. PET-positive pelvic nodes also get a boost. KEYNOTE-A18: pembrolizumab with and after chemoRT improved survival in high-risk locally advanced disease."
  },
  {
   "id": "gynx-56",
@@ -179,7 +144,7 @@
   "category": "Workup & Staging",
   "front": "In endometrial cancer (FIGO 2009), what separates IA, IB, and II?",
   "back": "IA <50% myometrial invasion; IB ≥50%; II = cervical stroma involved",
-  "extra": "Tumor in the cervical glands alone does not make it stage II."
+  "extra": "Tumor in the cervical glands alone does not make it stage II. Pelvic MRI estimates myometrial depth and cervical stromal invasion, mainly to guide surgery or stage medically inoperable patients."
  },
  {
   "id": "gynx-33",
@@ -189,17 +154,10 @@
   "extra": "The other two are MMR-deficient and no specific profile. FIGO 2023 downstages POLE-mutated and upstages p53-abnormal early tumors."
  },
  {
-  "id": "gynx-58",
-  "category": "Workup & Staging",
-  "front": "Before staging a vaginal cancer, what must be confirmed?",
-  "back": "That it is a true vaginal primary: a tumor involving the cervix is staged as cervical, one involving the vulva as vulvar, and many vaginal lesions are metastases or recurrences.",
-  "extra": "Vaginal staging then walks outward: wall → paravaginal tissue → side wall or node → bladder/rectum."
- },
- {
   "id": "gynx-59",
   "category": "Treatment Paradigms",
   "front": "Why does GYN oncology try to choose either surgery or chemoradiation, not both?",
-  "back": "Combining them roughly doubles the side effects without improving cure.",
+  "back": "Surgery followed by chemoradiation adds the toxicity of both without a clear cure benefit over picking the right single approach.",
   "extra": "Small confined tumors go to surgery; locally advanced or node-positive disease goes to chemoradiation."
  },
  {
@@ -207,14 +165,14 @@
   "category": "Treatment Paradigms",
   "front": "What is the standard treatment for locally advanced cervical cancer (IB3-IVA)?",
   "back": "Pelvic EBRT (about 45 Gy in 25 fractions) with weekly cisplatin, followed by brachytherapy",
-  "extra": "The 1999 cisplatin trials showed chemoradiation beats RT alone for survival. No routine hysterectomy afterward."
+  "extra": "The 1999 cisplatin trials showed chemoradiation beats RT alone for survival. No routine hysterectomy afterward. Simulation is often done with full and empty bladder scans because the uterus moves with bladder filling."
  },
  {
   "id": "gynx-60",
   "category": "Treatment Paradigms",
   "front": "Why can't brachytherapy be replaced by IMRT or SBRT in cervical cancer?",
   "back": "Brachytherapy is what delivers the curative dose to the cervix while sparing the bladder and rectum; leaving it out lowers cure rates.",
-  "extra": "Bulky or parametrial residual tumor gets interstitial needles added."
+  "extra": "Bulky or parametrial residual tumor gets interstitial needles added. Brachy is planned on MRI (or CT) with the applicator in place; the common goal is HR-CTV D90 ≥85 Gy EQD2 (EBRT + brachy), with bladder, rectum, and sigmoid D2cc limits (EMBRACE)."
  },
  {
   "id": "gynx-61",
@@ -243,13 +201,6 @@
   "front": "What are the Peters criteria after radical hysterectomy, and what do they trigger?",
   "back": "Positive nodes, positive margins, or parametrial invasion. They trigger adjuvant chemoradiation.",
   "extra": "GOG 109: adding chemo to pelvic RT improved overall survival."
- },
- {
-  "id": "gynx-42",
-  "category": "Treatment Paradigms",
-  "front": "How does radiation change for node-positive cervical cancer?",
-  "back": "Involved nodes get a boost, and para-aortic (or high common iliac) disease gets an extended field up to the renal vessels.",
-  "extra": "KEYNOTE-A18: pembrolizumab with and after chemoRT improved survival in high-risk locally advanced disease."
  },
  {
   "id": "gynx-43",
@@ -298,7 +249,7 @@
   "category": "Treatment Paradigms",
   "front": "How is a superficial stage I vaginal cancer treated?",
   "back": "Brachytherapy alone (vaginal cylinder)",
-  "extra": "Thicker or more advanced tumors borrow from cervix: EBRT ± cisplatin plus a brachy boost, adding the groins for lower-third tumors."
+  "extra": "Thicker or more advanced tumors borrow from cervix: EBRT ± cisplatin plus a brachy boost, adding the groins for lower-third tumors. Before staging, confirm a true vaginal primary: a tumor touching the cervix is staged as cervical, one touching the vulva as vulvar, and many vaginal lesions are metastases or recurrences."
  },
  {
   "id": "gynx-51",

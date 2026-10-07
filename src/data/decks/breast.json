@@ -4,7 +4,7 @@
   "category": "Epidemiology & Risk Factors",
   "front": "Which two biomarkers are checked on every breast cancer, and why do they matter?",
   "back": "Hormone receptor status (ER/PR) and HER2. Together they define the subtype, which picks the systemic therapy and shapes prognosis.",
-  "extra": "With Ki-67 they define Luminal A, Luminal B, HER2-enriched, and basal-like (mostly triple-negative)."
+  "extra": "With Ki-67 they define Luminal A, Luminal B, HER2-enriched, and basal-like (mostly triple-negative). BRCA1 cancers are usually triple-negative; BRCA2 cancers look more like sporadic HR+ disease. BRCA status alone is not a reason to avoid RT. AJCC 8 prognostic staging uses this biology: favorable markers lower the anatomic stage; triple-negative or high grade raise it."
  },
  {
   "id": "br-5",
@@ -19,13 +19,6 @@
   "front": "Which breast cancer subtypes respond best to neoadjuvant chemotherapy?",
   "back": "HER2-positive and triple-negative (the more aggressive subtypes)",
   "extra": "The paradox: a high pathologic complete response rate does not mean the best long-term prognosis. HR+/HER2- tumors respond least."
- },
- {
-  "id": "br-3",
-  "category": "Epidemiology & Risk Factors",
-  "front": "Which BRCA gene is most associated with triple-negative breast cancer?",
-  "back": "BRCA1",
-  "extra": "BRCA2 cancers behave more like sporadic hormone-positive disease and raise male breast cancer risk."
  },
  {
   "id": "br-4",
@@ -63,18 +56,11 @@
   "extra": "The brachial plexus sits behind the supraclavicular and level III targets, so high nodal doses risk plexopathy."
  },
  {
-  "id": "br-47",
-  "category": "Anatomy & Lymphatics",
-  "front": "Why do whole-breast tangent fields already treat part of the axilla?",
-  "back": "The tangents cover the breast and part of level I automatically (more of levels I-II with \"high tangents\").",
-  "extra": "This incidental axillary dose is part of why skipping axillary dissection worked in ACOSOG Z0011."
- },
- {
   "id": "br-31",
   "category": "Anatomy & Lymphatics",
-  "front": "What protein is lost in invasive lobular carcinoma, and how does that change how it looks and is imaged?",
-  "back": "E-cadherin. Cells grow in single-file lines without a discrete mass, so ILC is often missed on mammogram and is more often multicentric or bilateral, and MRI is used to define its extent.",
-  "extra": "ILC is almost always ER+/HER2-, lower grade, and less FDG-avid."
+  "front": "What protein is lost in invasive lobular carcinoma, and why is ILC hard to see on a mammogram?",
+  "back": "E-cadherin. Without it, cells spread in single-file lines instead of forming a mass, so mammography underestimates ILC and MRI is often used to define its extent.",
+  "extra": "ILC is more often multicentric or bilateral, almost always ER+/HER2-, lower grade, and less FDG-avid."
  },
  {
   "id": "br-32",
@@ -88,14 +74,7 @@
   "category": "Imaging",
   "front": "Which BI-RADS categories mean the lesion should be biopsied?",
   "back": "BI-RADS 4 (suspicious) and 5 (highly suggestive of cancer)",
-  "extra": "BI-RADS 3 (probably benign) gets short-interval follow-up; BI-RADS 6 is already biopsy-proven cancer."
- },
- {
-  "id": "br-18",
-  "category": "Imaging",
-  "front": "What three mammographic findings are suspicious for breast cancer?",
-  "back": "A spiculated mass, pleomorphic or linear-branching calcifications, and architectural distortion",
-  "extra": "DCIS often shows up as calcifications alone, and its true extent is usually larger than the calcifications."
+  "extra": "BI-RADS 3 (probably benign) gets short-interval follow-up; BI-RADS 6 is already biopsy-proven cancer. Suspicious mammogram findings: spiculated mass, pleomorphic or linear-branching calcifications, architectural distortion."
  },
  {
   "id": "br-48",
@@ -103,13 +82,6 @@
   "front": "When is breast MRI used?",
   "back": "High-risk screening, defining extent of disease (especially lobular cancer), and judging response to neoadjuvant chemo",
   "extra": "It is the most sensitive breast test but only moderately specific, so routine MRI adds biopsies and mastectomies without improving survival."
- },
- {
-  "id": "br-39",
-  "category": "Imaging",
-  "front": "Should an asymptomatic stage I-II breast cancer patient get PET/CT or other body staging scans?",
-  "back": "No. Body imaging is for stage III disease (or symptoms); in early-stage disease it finds more false positives than metastases.",
-  "extra": "When used, PET is good at finding hidden internal mammary, infraclavicular, and supraclavicular nodes. Lobular and low-grade cancers are often faintly FDG-avid."
  },
  {
   "id": "br-49",
@@ -137,7 +109,7 @@
   "category": "Workup & Staging",
   "front": "Which breast cancer patients need systemic staging imaging (CT chest/abdomen/pelvis + bone scan, or PET/CT)?",
   "back": "Stage III disease (T3N1, T4, or N2-3), or anyone with symptoms or labs suggesting metastasis",
-  "extra": "Echocardiogram before anthracyclines or trastuzumab; brain MRI only for symptoms."
+  "extra": "Echocardiogram before anthracyclines or trastuzumab; brain MRI only for symptoms. In early-stage disease, body imaging finds more false positives than metastases. When used, PET is good at finding hidden internal mammary, infraclavicular, and supraclavicular nodes."
  },
  {
   "id": "br-13",
@@ -172,14 +144,7 @@
   "category": "Workup & Staging",
   "front": "What separates clinical N1, N2, and N3 in breast cancer?",
   "back": "N1 = movable level I/II axillary nodes. N2 = fixed/matted axillary nodes, or internal mammary nodes alone. N3 = infraclavicular, internal mammary plus axillary, or supraclavicular nodes.",
-  "extra": "Breast N stage depends on which basin is involved as much as how many nodes."
- },
- {
-  "id": "br-34",
-  "category": "Workup & Staging",
-  "front": "Is an ipsilateral supraclavicular node in breast cancer regional or metastatic?",
-  "back": "Regional: cN3c, stage IIIC, still treated for cure",
-  "extra": "By contrast, a contralateral axillary or supraclavicular node counts as M1."
+  "extra": "Breast N stage depends on which basin is involved as much as how many nodes. An ipsilateral supraclavicular node is regional (cN3c, stage IIIC) and still treated for cure; a contralateral axillary or supraclavicular node is M1."
  },
  {
   "id": "br-36",
@@ -187,13 +152,6 @@
   "front": "Which pathologic axillary node counts separate pN1, pN2, and pN3?",
   "back": "1-3 nodes = pN1, 4-9 = pN2, 10 or more = pN3",
   "extra": "These are the counts that drive post-mastectomy radiation decisions."
- },
- {
-  "id": "br-38",
-  "category": "Workup & Staging",
-  "front": "In the AJCC 8 prognostic stage, which way does tumor biology push the anatomic stage?",
-  "back": "Favorable biology (ER+/PR+, HER2+, low grade) lowers it; triple-negative or high-grade disease raises it.",
-  "extra": "You don't need the full table. Example: T1-2 N0 ER+/HER2- with Oncotype score <11 is stage IA."
  },
  {
   "id": "br-51",
@@ -205,8 +163,8 @@
  {
   "id": "br-54",
   "category": "Treatment Paradigms",
-  "front": "Which patient factors make lumpectomy a poor choice because radiation can't safely be given?",
-  "back": "Prior chest radiation, pregnancy, active scleroderma or lupus, and Li-Fraumeni syndrome",
+  "front": "Which patient factors can make breast radiation (and so lumpectomy) unsafe?",
+  "back": "Pregnancy (RT can't be given during it) and prior radiation to the breast/chest; relative ones are active scleroderma or lupus and Li-Fraumeni syndrome.",
   "extra": "Tumor factors against lumpectomy: inflammatory cancer, diffuse suspicious calcifications, persistently positive margins."
  },
  {
@@ -227,7 +185,7 @@
   "id": "br-30",
   "category": "Treatment Paradigms",
   "front": "Which features call for a tumor bed boost after whole-breast RT?",
-  "back": "Age ≤50, high grade, or a positive margin",
+  "back": "Younger age (about ≤50), high grade, or a close/positive margin that can't be re-excised",
   "extra": "Typical boost: 10 Gy in 4 fractions, or a simultaneous boost."
  },
  {
@@ -242,7 +200,7 @@
   "category": "Treatment Paradigms",
   "front": "What did ACOSOG Z0011 show?",
   "back": "For cT1-2 cN0 patients with 1-2 positive sentinel nodes treated with lumpectomy and whole-breast RT, skipping axillary dissection did not change survival.",
-  "extra": "AMAROS: for a positive sentinel node, axillary RT instead of dissection gave the same control with about half the lymphedema."
+  "extra": "AMAROS: for a positive sentinel node, axillary RT instead of dissection gave the same control with about half the lymphedema. Tangent fields already dose part of axillary level I (more with \"high tangents\"), part of why skipping dissection worked."
  },
  {
   "id": "br-26",
@@ -269,8 +227,8 @@
   "id": "br-25",
   "category": "Treatment Paradigms",
   "front": "What are the clear indications for post-mastectomy radiation (PMRT)?",
-  "back": "T3-T4 tumor, 4 or more positive nodes, or a positive margin",
-  "extra": "Strongly consider for 1-3 positive nodes. PMRT treats the chest wall plus regional nodes, with bolus when the skin is at risk."
+  "back": "4 or more positive nodes, T4 disease (or T3 with positive nodes), or a positive margin",
+  "extra": "Strongly considered for 1-3 positive nodes; T3N0 is individualized. PMRT treats the chest wall plus regional nodes, with bolus when the skin is at risk."
  },
  {
   "id": "br-41",
@@ -283,8 +241,8 @@
   "id": "br-53",
   "category": "Treatment Paradigms",
   "front": "How is chemotherapy sequenced with breast radiation?",
-  "back": "Never at the same time: chemo comes before surgery or after surgery but before RT.",
-  "extra": "Anti-HER2 drugs and endocrine therapy can continue during RT; endocrine therapy then runs for years."
+  "back": "Generally not at the same time: cytotoxic chemo is given before surgery or after surgery but before RT.",
+  "extra": "Concurrent chemo with breast RT adds skin and other toxicity. Anti-HER2 drugs and endocrine therapy can continue during RT; endocrine therapy then runs for years."
  },
  {
   "id": "br-27",
@@ -292,5 +250,19 @@
   "front": "Which adjuvant endocrine therapy is used before vs after menopause?",
   "back": "Premenopausal: tamoxifen. Postmenopausal: an aromatase inhibitor.",
   "extra": "Given for 5-10 years. Tamoxifen: clots and endometrial cancer; aromatase inhibitors: bone loss and arthralgias."
+ },
+ {
+  "id": "br-55",
+  "category": "Treatment Paradigms",
+  "front": "What is the most common acute side effect of breast radiation, and where is it usually worst?",
+  "back": "Radiation dermatitis (redness, itching, peeling), worst in skin folds such as the inframammary fold and axilla",
+  "extra": "Builds over the course and peaks around the end of treatment; fatigue is also common. Bolus and large breasts make it worse. Moist desquamation is a more severe grade."
+ },
+ {
+  "id": "br-56",
+  "category": "Treatment Paradigms",
+  "front": "What are the main organs at risk in breast and regional nodal radiation?",
+  "back": "The heart (especially the LAD on the left) and the ipsilateral lung; with nodal fields, also the brachial plexus.",
+  "extra": "Medial tumors and internal mammary coverage raise heart and lung dose. Late effects: cardiac events, pneumonitis, plexopathy (rare), and lymphedema when the axilla is treated after dissection."
  }
 ]

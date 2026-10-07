@@ -7,6 +7,13 @@
   "extra": "Systemic therapy treats cancer cells (including micrometastases) anywhere in the body. Most patients are planned at a multidisciplinary tumor board."
  },
  {
+  "id": "ov-102",
+  "category": "Acronyms & Terminology",
+  "front": "What happens at a CT simulation, and why is it done before planning?",
+  "back": "The patient is CT-scanned in the exact treatment position with immobilization; that scan is used to contour targets and organs and build the plan, and marks/tattoos let the team reproduce the setup daily.",
+  "extra": "An isocenter is set at sim as the fixed point the machine targets every day. 4D-CT, contrast, or bladder/rectal preparation are added when motion or anatomy calls for it."
+ },
+ {
   "id": "ov-2",
   "category": "General Principles",
   "front": "What is the difference between neoadjuvant and adjuvant therapy?",
@@ -44,9 +51,9 @@
  {
   "id": "ov-6",
   "category": "General Principles",
-  "front": "What \"don't forget\" items should be addressed for essentially every new radiation oncology patient?",
-  "back": "Smoking cessation, fertility counseling (before treatment that can affect the gonads), a pregnancy test when relevant, and genetic counseling when a hereditary syndrome is suspected",
-  "extra": "Performance status is also assessed throughout, because it shapes how aggressively a patient can be treated."
+  "front": "Why is smoking cessation addressed with essentially every radiation patient?",
+  "back": "Smoking during radiation lowers tumor control and worsens side effects (tissue hypoxia makes tumors more radioresistant and slows healing).",
+  "extra": "Other \"don't forget\" items for a new patient: fertility counseling before gonadal exposure, a pregnancy test when relevant, genetic counseling when a hereditary syndrome is suspected, and performance status."
  },
  {
   "id": "ov-9",
@@ -56,46 +63,18 @@
   "extra": "The beam is then flattened and shaped by jaws and multileaf collimators. Removing the target lets the LINAC treat with electrons instead."
  },
  {
-  "id": "ov-87",
-  "category": "Radiation Delivery & Technique",
-  "front": "What does craniospinal irradiation treat, and which tumors need it?",
-  "back": "The entire brain and spinal CSF space, for tumors that spread through the CSF (e.g., medulloblastoma, some germ cell tumors, leptomeningeal disease)",
-  "extra": "It needs two to three matched fields (brain plus one or more spine fields)."
- },
- {
-  "id": "ov-22",
-  "category": "Radiation Delivery & Technique",
-  "front": "In craniospinal irradiation, why is the field junction \"feathered\"?",
-  "back": "Matching diverging fields creates hot and cold spots at the junction; shifting the match line every few fractions spreads them out so no single spot is badly over- or underdosed.",
-  "extra": "Typically shifted about once a week."
- },
- {
   "id": "ov-16",
   "category": "Radiation Physics",
   "front": "Which photon interaction dominates at therapeutic energies, and what does it depend on?",
   "back": "Compton scattering, which depends on electron density and is nearly independent of atomic number (Z)",
-  "extra": "That is why photon dose is fairly predictable across soft tissues."
- },
- {
-  "id": "ov-15",
-  "category": "Radiation Physics",
-  "front": "Which photon interaction creates contrast in diagnostic imaging, and why?",
-  "back": "The photoelectric effect, because its probability rises steeply with atomic number (∝ Z³/E³) at low energies",
-  "extra": "So bone and contrast agents stand out on diagnostic X-rays, but not on MV treatment images."
+  "extra": "That is why photon dose is fairly predictable across soft tissues. By contrast, the photoelectric effect (∝ Z³) dominates at diagnostic kV energies, which is why bone and contrast stand out on diagnostic X-rays but not on MV treatment images."
  },
  {
   "id": "ov-88",
   "category": "Radiation Physics",
   "front": "Why does a megavoltage photon beam spare the skin?",
   "back": "Dose builds up over the first part of tissue and peaks below the surface (at Dmax), so the skin gets less than the peak dose.",
-  "extra": "Higher-energy photons push Dmax deeper (about 1.5 cm for 6 MV). Bolus is added when the skin itself is the target."
- },
- {
-  "id": "ov-20",
-  "category": "Radiation Physics",
-  "front": "How does surface dose change with higher beam energy for photons vs electrons?",
-  "back": "Photons: higher energy means LOWER surface dose. Electrons: higher energy means HIGHER surface dose. (Dmax gets deeper for both.)",
-  "extra": "A common exam trap."
+  "extra": "Higher-energy photons push Dmax deeper (about 1.5 cm for 6 MV). Bolus is added when the skin itself is the target. Trap: higher-energy photons lower the surface dose, but higher-energy electrons raise it."
  },
  {
   "id": "ov-19",
@@ -105,13 +84,6 @@
   "extra": "The practical range is about E/2 cm, beyond which dose falls to almost nothing. Pick the energy whose 90% line covers the lesion."
  },
  {
-  "id": "ov-21",
-  "category": "Radiation Physics",
-  "front": "What is a spread-out Bragg peak (SOBP)?",
-  "back": "Proton beams of several energies combined so their Bragg peaks cover the full thickness of the tumor",
-  "extra": "A single energy makes only a narrow (pristine) peak. Protons are assigned an RBE of 1.1 relative to photons."
- },
- {
   "id": "ov-90",
   "category": "Radiation Physics",
   "front": "When do protons offer a real advantage over photons, and what is their main drawback?",
@@ -119,39 +91,11 @@
   "extra": ""
  },
  {
-  "id": "ov-25",
-  "category": "Radiation Biology",
-  "front": "Why are DNA double-strand breaks far more lethal than single-strand breaks?",
-  "back": "Single-strand breaks are easily repaired using the intact opposite strand; double-strand breaks are hard to repair accurately and lead to lethal chromosome aberrations when the cell divides.",
-  "extra": "1 Gy causes about 1,000 single-strand breaks but only about 40 double-strand breaks."
- },
- {
-  "id": "ov-27",
-  "category": "Radiation Biology",
-  "front": "How do non-homologous end joining (NHEJ) and homologous recombination (HR) differ?",
-  "back": "NHEJ works in any phase (including G1), is fast, and is error-prone. HR needs a sister chromatid template, so it works only in late S/G2, and is slower but accurate.",
-  "extra": "BRCA1 promotes HR; 53BP1 promotes NHEJ."
- },
- {
   "id": "ov-26",
   "category": "Radiation Biology",
   "front": "Which cell cycle phase is most radiosensitive, and which is most radioresistant?",
   "back": "Most sensitive: M (mitosis). Most resistant: late S, because a replicated copy of DNA is available for accurate repair.",
   "extra": "Redistribution between fractions catches more cells in sensitive phases."
- },
- {
-  "id": "ov-91",
-  "category": "Radiation Biology",
-  "front": "Why do PARP inhibitors work well in BRCA-mutant cancers?",
-  "back": "They block another DNA repair pathway, so cells that already lack homologous recombination (BRCA) can't repair their DNA and die (synthetic lethality).",
-  "extra": ""
- },
- {
-  "id": "ov-30",
-  "category": "Radiation Biology",
-  "front": "How does the oxygen enhancement ratio (OER) change as LET increases, and why?",
-  "back": "It falls (toward 1). Densely ionizing, high-LET radiation damages DNA directly, so it doesn't need oxygen to \"fix\" free-radical damage.",
-  "extra": "OER is about 2.5-3 for X-rays, ~1.6 for neutrons, and ~1 for alpha particles."
  },
  {
   "id": "ov-31",
@@ -203,13 +147,6 @@
   "extra": "Exceeding these risks brainstem necrosis or blindness."
  },
  {
-  "id": "ov-36",
-  "category": "Common Dose Constraints",
-  "front": "What is the classic lung constraint for conventional fractionation, and what toxicity does it protect against?",
-  "back": "Lung V20 ≤ 30% (mean lung dose under ~20 Gy), to limit radiation pneumonitis",
-  "extra": ""
- },
- {
   "id": "ov-95",
   "category": "Common Dose Constraints",
   "front": "What parotid dose goal helps preserve salivary function?",
@@ -228,27 +165,6 @@
   "category": "Acronyms & Terminology",
   "front": "What is the difference between a sequential boost and a simultaneous integrated boost (SIB)?",
   "back": "Sequential (\"cone down\"): treat the large volume first, then a separate phase treats only the boost volume. SIB: both volumes are treated every day in one phase, at different doses per fraction.",
-  "extra": ""
- },
- {
-  "id": "ov-39",
-  "category": "Acronyms & Terminology",
-  "front": "What is a PRV?",
-  "back": "Planning risk volume: an organ at risk plus a safety margin, the OAR version of a PTV",
-  "extra": "Used around critical serial structures like the spinal cord."
- },
- {
-  "id": "ov-40",
-  "category": "Acronyms & Terminology",
-  "front": "What does DIBH stand for, and why is it used?",
-  "back": "Deep inspiration breath hold: holding a deep breath during treatment pulls the heart away from the field to lower cardiac dose.",
-  "extra": "Most common in left-sided breast RT. Other motion management: abdominal compression and gating."
- },
- {
-  "id": "ov-41",
-  "category": "Acronyms & Terminology",
-  "front": "How does a cone-beam CT (CBCT) differ from a diagnostic fan-beam CT, and what is it used for?",
-  "back": "CBCT is faster and lower-dose but has poorer image quality; it is used on the treatment machine for daily setup verification (IGRT).",
   "extra": ""
  },
  {
@@ -277,7 +193,7 @@
   "category": "How Radiation Works",
   "front": "What is the main way radiation kills cancer cells?",
   "back": "DNA damage, especially double-strand breaks, which kill the cell when it tries to divide",
-  "extra": ""
+  "extra": "Single-strand breaks are easily repaired off the intact opposite strand; double-strand breaks are what lead to lethal chromosome damage."
  },
  {
   "id": "ov-55",
@@ -298,7 +214,7 @@
   "category": "How Radiation Works",
   "front": "How does hypoxia affect a tumor's response to radiation, and how does fractionation help?",
   "back": "Hypoxic cells are more radioresistant. As fractions kill oxygenated cells and the tumor shrinks, hypoxic areas reoxygenate and become more sensitive.",
-  "extra": "Bulky or necrotic tumors are harder to control partly for this reason."
+  "extra": "Bulky or necrotic tumors are harder to control partly for this reason. High-LET radiation (neutrons, alpha particles) damages DNA directly and depends much less on oxygen, so its oxygen enhancement ratio falls toward 1."
  },
  {
   "id": "ov-48",
@@ -306,20 +222,6 @@
   "front": "Why can treatment breaks make radiation less effective?",
   "back": "Surviving tumor cells keep dividing (repopulation) during gaps in treatment.",
   "extra": "Especially important for fast-growing tumors like head and neck squamous cell carcinoma."
- },
- {
-  "id": "ov-53",
-  "category": "How Radiation Works",
-  "front": "Which tissues are most affected by changing the dose per fraction: low or high α/β?",
-  "back": "Low α/β tissues, such as late-responding normal tissues like the spinal cord. Bigger fractions raise their risk of late damage.",
-  "extra": "Most tumors and early-responding tissues have a high α/β (~10)."
- },
- {
-  "id": "ov-52",
-  "category": "How Radiation Works",
-  "front": "Why is prostate cancer a good fit for hypofractionated radiation?",
-  "back": "It has an unusually low α/β ratio, so larger doses per fraction hurt the tumor relatively more.",
-  "extra": ""
  },
  {
   "id": "ov-97",
@@ -347,7 +249,7 @@
   "category": "How Radiation Works",
   "front": "What lets protons put most of their dose at a specific depth?",
   "back": "The Bragg peak: protons release most of their energy where they stop, with almost no dose beyond.",
-  "extra": "The depth is set by the beam energy."
+  "extra": "The depth is set by the beam energy. Several energies are combined into a spread-out Bragg peak (SOBP) to cover the full tumor thickness. Protons are assigned an RBE of 1.1."
  },
  {
   "id": "ov-67",
@@ -382,7 +284,7 @@
   "category": "Radiation Modalities",
   "front": "What is IGRT, and what is the most common way it's done?",
   "back": "Image-guided RT: imaging the patient on the machine before each treatment to confirm position. Usually a cone-beam CT compared with the planning CT.",
-  "extra": "The tighter the margins, the more IGRT matters. Fiducial markers help for prostate."
+  "extra": "The tighter the margins, the more IGRT matters. Fiducial markers help for prostate. Cone-beam CT is faster and lower-dose than a diagnostic CT, with poorer image quality, which is enough for alignment."
  },
  {
   "id": "ov-65",
@@ -403,7 +305,7 @@
   "category": "Treatment Planning",
   "front": "What do the nested target volumes GTV, CTV, ITV, and PTV each add?",
   "back": "GTV = visible tumor. CTV adds microscopic spread. ITV adds internal motion (e.g., breathing). PTV adds daily setup uncertainty.",
-  "extra": "The PTV is usually the volume that gets the prescription. Not every case uses every layer."
+  "extra": "The PTV is usually the volume that gets the prescription. Not every case uses every layer. A PRV (planning risk volume) is the OAR version of a PTV: an organ at risk plus a margin, used around serial structures like the spinal cord."
  },
  {
   "id": "ov-74",
