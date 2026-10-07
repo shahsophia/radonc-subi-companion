@@ -2455,8 +2455,12 @@ const QUIZ_SETS = {
   ],
   "gyn-epi": [
     {
-      q: "Which two HPV types cause about 70% of cervical cancers?",
-      a: "<strong>HPV 16 and 18.</strong> HPV is found in over 95% of cervical cancers. Other high-risk types: 31, 33, 45, 52, 58 (all covered by the 9-valent vaccine).",
+      q: "A 34-year-old who was vaccinated against HPV asks whether she still needs cervical screening. What do you tell her?",
+      a: "<strong>Yes.</strong> The vaccine prevents <strong>new</strong> infections with the types it covers but doesn't clear existing ones or cover every high-risk type, so screening (cytology and/or HPV testing) still matters.",
+    },
+    {
+      q: "Is every endometrial cancer driven by unopposed estrogen?",
+      a: "<strong>No.</strong> Obesity and unopposed estrogen explain most <strong>endometrioid</strong> tumors, but <strong>serous and p53-abnormal</strong> tumors are not estrogen-driven, occur in older and often thinner women, and behave aggressively even when they look confined.",
     },
     {
       q: "What single mechanism links obesity, nulliparity, PCOS, tamoxifen, and early menarche to endometrial cancer?",
@@ -2512,7 +2516,7 @@ const QUIZ_SETS = {
     },
     {
       q: "Positive para-aortic nodes in cervical cancer: what FIGO stage, and what changes in the RT field?",
-      a: "<strong>IIIC2</strong> (r if found on imaging, p if on pathology). Use an <strong>extended field</strong> covering the para-aortic nodes up to about the <strong>renal vessels (T12&ndash;L1)</strong>.",
+      a: "<strong>IIIC2</strong> (r if found on imaging, p if on pathology). The field becomes an <strong>extended field</strong> that adds the para-aortic chain, which brings the kidneys and duodenum into the plan.",
     },
   ],
   "gyn-imaging": [
@@ -2562,19 +2566,19 @@ const QUIZ_SETS = {
   "gyn-treatment-cervix": [
     {
       q: "Cervical cancer IB3 or IIB: what is the standard treatment?",
-      a: "<strong>Definitive chemoradiation</strong>: pelvic EBRT 45 Gy/25 with <strong>weekly cisplatin 40 mg/m&sup2;</strong>, then <strong>brachytherapy</strong> (e.g., HDR 28 Gy/4), finished within <strong>8 weeks</strong>. Consider pembrolizumab (KEYNOTE-A18) for node-positive or stage III&ndash;IVA.",
+      a: "<strong>Definitive chemoradiation</strong>: pelvic EBRT with <strong>concurrent weekly cisplatin</strong>, then <strong>brachytherapy</strong>, with the whole course kept compact (about <strong>8 weeks</strong>).",
     },
     {
-      q: "What is the brachytherapy dose goal for the HR-CTV in cervical cancer?",
-      a: "<strong>D90 &ge;85 Gy EQD2</strong> (EBRT + brachy combined). OAR D2cc goals: bladder &lt;80&ndash;90, rectum &lt;65&ndash;75, sigmoid &lt;70&ndash;75 Gy EQD2.",
+      q: "Why is brachytherapy so effective for an intact cervix?",
+      a: "The applicator sits <strong>inside the cervix and vaginal fornices</strong>, so it puts a very high dose into the cervix and residual tumor with <strong>rapid dose falloff</strong> before the bladder, rectum, and sigmoid.",
     },
     {
-      q: "Where is point A?",
-      a: "<strong>2 cm above the cervical os along the tandem and 2 cm lateral</strong>: roughly where the uterine artery crosses the ureter. <strong>Point B</strong> is 3 cm further lateral (pelvic side wall).",
+      q: "Can an IMRT or SBRT boost replace brachytherapy for cervical cancer?",
+      a: "<strong>No.</strong> External beam alone is not an equivalent substitute; omitting brachytherapy is associated with worse local control and survival.",
     },
     {
-      q: "Can IMRT or SBRT boost replace brachytherapy for cervical cancer?",
-      a: "<strong>No.</strong> Omitting brachytherapy is associated with worse local control and survival. Brachy is essential for definitive treatment.",
+      q: "A patient with node-negative IB2 cervical cancer asks for a radical hysterectomy and then radiation \"to be safe.\" How do you frame it?",
+      a: "Choose <strong>one definitive strategy</strong> (surgery or definitive RT) to avoid unnecessary multimodality toxicity. Adjuvant RT or chemoRT is added after surgery only if the <strong>pathology</strong> shows features that warrant it (Sedlis or Peters).",
     },
   ],
   "gyn-treatment": [
@@ -2588,7 +2592,7 @@ const QUIZ_SETS = {
     },
     {
       q: "Endometrial cancer, stage IB grade 2, age 64, no LVSI. What adjuvant therapy is typical?",
-      a: "<strong>Vaginal brachytherapy</strong> (e.g., 7 Gy &times; 3 at 0.5 cm). PORTEC-2: as good as pelvic EBRT for vaginal control, with less GI toxicity.",
+      a: "Usually <strong>vaginal brachytherapy</strong>, because her main recurrence risk is at the vaginal cuff. PORTEC-2: as good as pelvic EBRT for vaginal control, with less GI toxicity.",
     },
     {
       q: "Stage IIIC1 endometrial cancer: what's the adjuvant plan?",

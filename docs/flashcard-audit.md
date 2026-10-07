@@ -342,3 +342,23 @@ abiraterone as intensification for selected patients), prx-63 ("generally" no AD
 prx-42 (α/β wording). prx-59 now contrasts AJCC stage with NCCN risk group. Retired
 prx-20 (Roach formula, now a historical pearl). Added prx-69 (life expectancy
 first), prx-70 (LDR vs HDR), prx-71 (negative PSMA PET does not delay salvage RT).
+
+**GYN reading revision (October 7, 2026), 334 cards (no change in count).** The GYN
+reading was reorganized around "a woman with a GYN cancer walks into clinic": cause,
+patient, presentation, and why it matters for treatment (no incidence or genotype
+percentages); drainage turned into fields with exact nodal boundaries in a planning
+box; imaging as MRI = where locally, PET = where spread (PET changes the radiation
+map), CT sim = how to treat safely, with brachytherapy numbers in a reference box;
+staging as organ → local → nodes → distant → site FIGO (the "four shells" kept only
+as a loose orientation), and modern FIGO 2023 endometrial staging presented as built
+on the 2009 anatomic backbone; treatment as four tracks (cervix, endometrium, vulva,
+vagina) with Sedlis/Peters, regimens, and dose constraints in expandable boxes, an
+OAR-to-toxicity table, toxicity by timing with survivorship counseling, and six core
+trial cards plus a recent-updates box. Softened absolutes: gynx-52/gynx-5 (estrogen
+explains endometrioid, not all, endometrial cancer), gynx-59 ("surgery or chemoRT,
+not both" replaced by avoiding unnecessary multimodality toxicity, with adjuvant
+therapy when pathology warrants it), gynx-32 (2009 stages as the backbone, not the
+full system), gynx-33 (molecular class as a modifier of adjuvant therapy, not just
+best vs worst), gynx-43 (adjuvant ladder by recurrence risk). Dose numbers moved to
+Extra (gynx-37) or removed (gynx-25, gynx-61). Retired gynx-56 (four shells); added
+gynx-64 (organ, local, nodes, distant, then FIGO).

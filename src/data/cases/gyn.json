@@ -1,6 +1,6 @@
 {
  "category": "Case-Based Practice",
- "intro": "<p>Eight cases that get harder as you go, across the endometrium, cervix, and vulva. Each starts with a one-liner, then gives you more information step by step: the <strong>exam, MRI, PET, and pathology</strong>, the <strong>FIGO stage</strong>, the <strong>surgery or chemoradiation decision</strong>, the <strong>brachytherapy, doses, and targets</strong>, the <strong>landmark trials</strong>, and the <strong>side effects</strong> to counsel on. Some steps are multiple choice, some are fill-in-the-blank. Cervix uses <strong>FIGO 2018</strong>, endometrium <strong>FIGO 2009</strong> (with molecular classification), and vulva <strong>FIGO 2021</strong>.</p>",
+ "intro": "<p>Eight cases that get harder as you go, across the endometrium, cervix, and vulva. Each starts with a one-liner, then gives you more information step by step: the <strong>exam, MRI, PET, and pathology</strong>, the <strong>FIGO stage</strong>, the <strong>surgery or chemoradiation decision</strong>, the <strong>brachytherapy, doses, and targets</strong>, the <strong>landmark trials</strong>, and the <strong>side effects</strong> to counsel on. Some steps are multiple choice, some are fill-in-the-blank. Cervix uses <strong>FIGO 2018</strong>, endometrium <strong>FIGO 2023</strong> (built on the 2009 anatomic stages, with molecular classification), and vulva <strong>FIGO 2021</strong>.</p>",
  "cases": [
   {
    "id": "gyn-case-5",
@@ -35,9 +35,9 @@
     {
      "label": "Stage",
      "context": "<p><strong>Pathology:</strong> grade 2 endometrioid, <strong>60% myometrial invasion</strong>, no cervical stromal invasion, no LVSI, sentinel nodes negative. <strong>Molecular:</strong> no specific molecular profile (NSMP).</p>",
-     "prompt": "What is her FIGO 2009 stage?",
+     "prompt": "What is her FIGO stage?",
      "answer": "Stage IB",
-     "explanation": "Myometrial invasion of 50% or more is IB; under 50% is IA. Cervical stromal invasion would be stage II."
+     "explanation": "Myometrial invasion of 50% or more is IB; under 50% is IA. Cervical stromal invasion would be stage II. For a low-grade endometrioid tumor without substantial LVSI, FIGO 2023 gives the same stage as the 2009 anatomic system."
     },
     {
      "label": "Adjuvant",
@@ -49,7 +49,7 @@
       "Whole-abdomen RT"
      ],
      "correctIndex": 1,
-     "explanation": "IB grade 1-2 is intermediate risk. Most recurrences happen at the vaginal cuff, so vaginal brachytherapy (or observation) is the usual choice."
+     "explanation": "Deep invasion makes her recurrence risk intermediate, and most of that risk is at the vaginal cuff, so vaginal brachytherapy (or observation) is the usual choice. Her NSMP molecular group doesn't move her up or down."
     },
     {
      "label": "Trial",
@@ -195,7 +195,7 @@
       "Pelvic RT without chemo or brachy"
      ],
      "correctIndex": 1,
-     "explanation": "Locally advanced cervical cancer gets definitive chemoRT plus brachytherapy, not surgery. Surgery and chemoRT together double the side effects without improving cure."
+     "explanation": "Locally advanced cervical cancer gets definitive chemoRT plus brachytherapy, not surgery. Adding a radical hysterectomy would stack the toxicity of both treatments without a clear gain in cure."
     },
     {
      "label": "Trial",
@@ -217,7 +217,7 @@
      "prompt": "Her colleague suggests replacing brachytherapy with an IMRT or SBRT boost to save time. Is that acceptable?",
      "choices": [
       "Yes, they are equivalent",
-      "No: brachytherapy delivers the curative dose to the cervix (HR-CTV D90 of 85 Gy EQD2 or more) and can't be replaced",
+      "No: brachytherapy puts a very high dose into the cervix with rapid falloff to the bladder and rectum, and external beam is not an equivalent substitute",
       "Only if she is over 70",
       "Only for squamous cell cancers"
      ],
@@ -342,9 +342,9 @@
     {
      "label": "Stage",
      "context": "<p><strong>Pathology:</strong> grade 3, 70% myometrial invasion, substantial LVSI, 1 positive pelvic sentinel node. <strong>Molecular:</strong> p53 wild-type, <strong>MMR-deficient</strong>. <strong>CT chest, abdomen, pelvis:</strong> no para-aortic or distant disease.</p>",
-     "prompt": "What is her FIGO 2009 stage?",
-     "answer": "IIIC1",
-     "explanation": "Pelvic node involvement is IIIC1; para-aortic nodes would be IIIC2."
+     "prompt": "What is her FIGO stage?",
+     "answer": "IIIC1 (IIIC1ii in FIGO 2023, because it is a macrometastasis)",
+     "explanation": "Pelvic node involvement is IIIC1; para-aortic nodes would be IIIC2. FIGO 2023 splits nodal disease into micrometastases (i) and macrometastases (ii)."
     },
     {
      "label": "MMR",
@@ -583,7 +583,7 @@
     {
      "label": "Trial",
      "tag": "Landmark trial",
-     "prompt": "Which trial showed that 57.6 Gy with weekly cisplatin gave a 64% complete clinical response in locally advanced vulvar cancer?",
+     "prompt": "Which trial established definitive chemoradiation with weekly cisplatin for locally advanced vulvar cancer, with high complete response rates?",
      "choices": [
       "GOG 205",
       "GOG 37",
@@ -591,7 +591,7 @@
       "PORTEC-3"
      ],
      "correctIndex": 0,
-     "explanation": "Most of the complete clinical responses in GOG 205 were confirmed pathologically."
+     "explanation": "GOG 205 gave 57.6 Gy with weekly cisplatin, and most complete clinical responses were confirmed pathologically, sparing many patients an exenteration."
     },
     {
      "label": "Doses",

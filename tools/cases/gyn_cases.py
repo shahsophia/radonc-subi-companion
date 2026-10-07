@@ -18,15 +18,15 @@ CASES = [
         1,
         "The molecular class (POLE-mutated, MMR-deficient, p53-abnormal, or no specific molecular profile) now shapes adjuvant treatment. MMR deficiency also prompts Lynch syndrome screening."),
       fill("Stage",
-        "What is her FIGO 2009 stage?",
+        "What is her FIGO stage?",
         "Stage IB",
-        "Myometrial invasion of 50% or more is IB; under 50% is IA. Cervical stromal invasion would be stage II.",
+        "Myometrial invasion of 50% or more is IB; under 50% is IA. Cervical stromal invasion would be stage II. For a low-grade endometrioid tumor without substantial LVSI, FIGO 2023 gives the same stage as the 2009 anatomic system.",
         context="<p><strong>Pathology:</strong> grade 2 endometrioid, <strong>60% myometrial invasion</strong>, no cervical stromal invasion, no LVSI, sentinel nodes negative. <strong>Molecular:</strong> no specific molecular profile (NSMP).</p>"),
       mcq("Adjuvant",
         "What adjuvant treatment fits best?",
         ["Observation only", "Vaginal brachytherapy", "Pelvic EBRT plus chemo", "Whole-abdomen RT"],
         1,
-        "IB grade 1-2 is intermediate risk. Most recurrences happen at the vaginal cuff, so vaginal brachytherapy (or observation) is the usual choice."),
+        "Deep invasion makes her recurrence risk intermediate, and most of that risk is at the vaginal cuff, so vaginal brachytherapy (or observation) is the usual choice. Her NSMP molecular group doesn't move her up or down."),
       mcq("Trial",
         "Which trial showed vaginal brachytherapy controlled vaginal recurrence as well as pelvic EBRT, with far less GI toxicity?",
         ["PORTEC-2", "PORTEC-3", "GOG 258", "LACC"],
@@ -106,7 +106,7 @@ CASES = [
         "What is the standard treatment?",
         ["Radical hysterectomy", "Definitive chemoradiation with weekly cisplatin, plus brachytherapy", "Chemotherapy alone", "Pelvic RT without chemo or brachy"],
         1,
-        "Locally advanced cervical cancer gets definitive chemoRT plus brachytherapy, not surgery. Surgery and chemoRT together double the side effects without improving cure."),
+        "Locally advanced cervical cancer gets definitive chemoRT plus brachytherapy, not surgery. Adding a radical hysterectomy would stack the toxicity of both treatments without a clear gain in cure."),
       mcq("Trial",
         "Which set of trials established concurrent cisplatin with radiation as the standard for locally advanced cervical cancer?",
         ["The 1999 cisplatin trials (GOG 85, 120, 123, RTOG 9001, SWOG 8797)", "PORTEC-1 and -2", "GOG 37 and GOG 205", "LACC and SHAPE"],
@@ -115,7 +115,7 @@ CASES = [
         tag=TRIAL),
       mcq("Brachytherapy",
         "Her colleague suggests replacing brachytherapy with an IMRT or SBRT boost to save time. Is that acceptable?",
-        ["Yes, they are equivalent", "No: brachytherapy delivers the curative dose to the cervix (HR-CTV D90 of 85 Gy EQD2 or more) and can't be replaced", "Only if she is over 70", "Only for squamous cell cancers"],
+        ["Yes, they are equivalent", "No: brachytherapy puts a very high dose into the cervix with rapid falloff to the bladder and rectum, and external beam is not an equivalent substitute", "Only if she is over 70", "Only for squamous cell cancers"],
         1,
         "Leaving out brachytherapy is linked to worse survival. EMBRACE-I showed about 92% local control with MRI-guided brachytherapy, and HR-CTV D90 of 85 Gy or more predicted control.",
         image="images/gyn/gyn-c-igabt.jpg",
@@ -186,9 +186,9 @@ CASES = [
     "oneLiner": "A 61-year-old woman has grade 3 endometrioid endometrial cancer. At surgery, one of three sentinel nodes (left external iliac) has a 6 mm metastasis.",
     "steps": [
       fill("Stage",
-        "What is her FIGO 2009 stage?",
-        "IIIC1",
-        "Pelvic node involvement is IIIC1; para-aortic nodes would be IIIC2.",
+        "What is her FIGO stage?",
+        "IIIC1 (IIIC1ii in FIGO 2023, because it is a macrometastasis)",
+        "Pelvic node involvement is IIIC1; para-aortic nodes would be IIIC2. FIGO 2023 splits nodal disease into micrometastases (i) and macrometastases (ii).",
         context="<p><strong>Pathology:</strong> grade 3, 70% myometrial invasion, substantial LVSI, 1 positive pelvic sentinel node. <strong>Molecular:</strong> p53 wild-type, <strong>MMR-deficient</strong>. <strong>CT chest, abdomen, pelvis:</strong> no para-aortic or distant disease.</p>"),
       mcq("MMR",
         "What does the MMR-deficient result mean for her and her family?",
@@ -317,10 +317,10 @@ CASES = [
         "Definitive chemoRT to the vulva, both groins, and the pelvic nodes with weekly cisplatin; biopsy any residual disease afterward and resect it if feasible.",
         ""),
       mcq("Trial",
-        "Which trial showed that 57.6 Gy with weekly cisplatin gave a 64% complete clinical response in locally advanced vulvar cancer?",
+        "Which trial established definitive chemoradiation with weekly cisplatin for locally advanced vulvar cancer, with high complete response rates?",
         ["GOG 205", "GOG 37", "KEYNOTE-A18", "PORTEC-3"],
         0,
-        "Most of the complete clinical responses in GOG 205 were confirmed pathologically.",
+        "GOG 205 gave 57.6 Gy with weekly cisplatin, and most complete clinical responses were confirmed pathologically, sparing many patients an exenteration.",
         tag=TRIAL),
       fill("Doses",
         "Give doses for the primary, the gross nodes, and the elective nodes, and two setup details.",
@@ -335,7 +335,7 @@ CASES = [
   },
 ]
 
-INTRO = "<p>Eight cases that get harder as you go, across the endometrium, cervix, and vulva. Each starts with a one-liner, then gives you more information step by step: the <strong>exam, MRI, PET, and pathology</strong>, the <strong>FIGO stage</strong>, the <strong>surgery or chemoradiation decision</strong>, the <strong>brachytherapy, doses, and targets</strong>, the <strong>landmark trials</strong>, and the <strong>side effects</strong> to counsel on. Some steps are multiple choice, some are fill-in-the-blank. Cervix uses <strong>FIGO 2018</strong>, endometrium <strong>FIGO 2009</strong> (with molecular classification), and vulva <strong>FIGO 2021</strong>.</p>"
+INTRO = "<p>Eight cases that get harder as you go, across the endometrium, cervix, and vulva. Each starts with a one-liner, then gives you more information step by step: the <strong>exam, MRI, PET, and pathology</strong>, the <strong>FIGO stage</strong>, the <strong>surgery or chemoradiation decision</strong>, the <strong>brachytherapy, doses, and targets</strong>, the <strong>landmark trials</strong>, and the <strong>side effects</strong> to counsel on. Some steps are multiple choice, some are fill-in-the-blank. Cervix uses <strong>FIGO 2018</strong>, endometrium <strong>FIGO 2023</strong> (built on the 2009 anatomic stages, with molecular classification), and vulva <strong>FIGO 2021</strong>.</p>"
 
 if __name__ == "__main__":
     write("gyn", INTRO, CASES)

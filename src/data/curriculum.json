@@ -520,21 +520,21 @@
   },
   "gyn": {
    "title": "Gynecologic Cancer",
-   "summary": "Cervical, endometrial, vulvar, and vaginal cancer: FIGO staging, pelvic and groin nodes, postoperative criteria, and brachytherapy.",
+   "summary": "Cervical, endometrial, vulvar, and vaginal cancer, taught the way a radiation oncologist works up a patient: biology, drainage, imaging, stage and risk, then what radiation does.",
    "topics": [
     "Cervix",
     "Endometrium",
-    "FIGO Staging",
+    "PET-Guided Fields",
     "Sedlis & Peters",
     "Brachytherapy"
    ],
    "objectives": [
-    "Compare cervical, endometrial, vulvar, and vaginal cancer at a glance",
-    "Map pelvic and groin lymph drainage by organ",
-    "Read cervical and endometrial MRI, and know the role of PET/CT and brachytherapy imaging",
-    "Stage with FIGO 2018 for the cervix and FIGO 2023 for the endometrium",
-    "Apply the Sedlis and Peters criteria after radical hysterectomy",
-    "Follow the cervical and endometrial paradigms from early to metastatic disease"
+    "Explain what drives each GYN cancer and how that shapes its treatment",
+    "Map pelvic, para-aortic, and groin drainage by organ",
+    "Use MRI, PET/CT, and simulation to answer where the tumor is and how to treat it",
+    "Stage by organ, local extent, nodes, and distant disease, then apply the site's FIGO system",
+    "Decide when cervical cancer gets surgery, adjuvant RT, or definitive chemoradiation with brachytherapy",
+    "Explain why an endometrial cancer patient needs radiation after surgery, and which kind"
    ],
    "guideline": "NCCN Cervical, Uterine, Vulvar, and Vaginal Cancer Guidelines",
    "staging": [
@@ -553,28 +553,32 @@
     "PORTEC-2",
     "PORTEC-3",
     "GOG 258",
+    "RUBY",
     "NRG-GY018",
     "RTOG 1203",
     "LACC",
+    "SHAPE",
+    "EMBRACE",
     "INTERLACE",
     "KEYNOTE-A18",
     "KEYNOTE-826",
     "GOG 37",
-    "GOG 205"
+    "GOG 205",
+    "GROINSS-V"
    ],
    "modules": {
     "Epidemiology & Risk Factors": {
-     "lede": "Learn what drives cervical, endometrial, vulvar, and vaginal cancer, and the molecular classification of endometrial cancer.",
+     "lede": "Learn what causes each GYN cancer, who gets it, how it presents, and why that matters for treatment.",
      "essentials": [
-      "HPV and cervical cancer",
-      "Unopposed estrogen and Lynch syndrome",
-      "Endometrial molecular groups",
+      "HPV below, estrogen above, genes for ovary",
+      "Endometrial cancer is heterogeneous",
+      "Why the molecular groups matter",
       "Two pathways to vulvar cancer"
      ],
      "objectives": [
-      "Identify the risk factors for cervical cancer",
-      "Explain what drives endometrial cancer and when to biopsy",
-      "Name the endometrial molecular groups and their prognosis",
+      "Connect the cause of each GYN cancer to its presentation and treatment",
+      "Explain why not every endometrial cancer is estrogen-driven",
+      "Describe how endometrial molecular groups change adjuvant decisions",
       "Describe the two pathways to vulvar cancer"
      ]
     },
@@ -582,63 +586,64 @@
      "lede": "Learn the uterus, cervix, vagina, and vulva, and the nodal drainage of each organ that decides staging and fields.",
      "essentials": [
       "Parametrial spread and the ureter",
-      "Myometrial invasion and stage IA versus IB",
+      "The vaginal cuff",
       "Vaginal drainage by thirds",
       "Pelvic versus groin nodes by organ"
      ],
      "objectives": [
       "Describe how cervical cancer spreads into the parametria",
-      "Relate anatomic extent to FIGO stage",
+      "Name the organs at risk around the uterus and cervix",
       "Trace nodal drainage of the cervix, uterus, vagina, and vulva",
-      "Know how nodal spread maps to stage for each site"
+      "Explain how drainage turns into pelvic, extended, and groin fields"
      ]
     },
     "Imaging": {
-     "lede": "Use MRI for local extent, PET/CT for nodes and distant disease, CT simulation for pelvic and groin RT, and MRI-guided brachytherapy planning.",
+     "lede": "MRI shows where the tumor is locally, PET/CT shows where it has spread, CT simulation shows how to treat it safely, and applicator imaging shapes brachytherapy.",
      "essentials": [
       "MRI for local extent",
       "The dark stromal ring",
-      "PET-positive nodes change the field",
-      "Brachytherapy dose goals"
+      "PET changes the radiation map",
+      "Applicator-in-place brachytherapy planning"
      ],
      "objectives": [
-      "Read cervical and endometrial MRI for local extent",
+      "Match each imaging test to the clinical question it answers",
       "Use the stromal ring to assess parametrial invasion",
-      "Explain how PET/CT findings change the radiation plan",
-      "Describe CT simulation for pelvic and groin RT",
-      "Describe imaging-guided brachytherapy planning"
+      "Explain how PET/CT findings change the radiation field and intent",
+      "Describe how pelvic motion is handled at simulation",
+      "Describe the steps of image-guided brachytherapy planning"
      ]
     },
     "Workup & Staging": {
-     "lede": "Cover the workup and FIGO staging for cervical, endometrial, vulvar, and vaginal cancer, with the NCCN workup and FIGO tables at the end.",
+     "lede": "Stage any GYN cancer by organ, local extent, nodes, and distant disease, then apply the site's FIGO system, with the NCCN workup and FIGO tables at the end.",
      "essentials": [
+      "Organ, local, nodes, distant, then FIGO",
       "Clinical versus surgical staging",
-      "Cervical cancer workup",
       "Key cervix stage cutoffs",
-      "Vulvar stage IA"
+      "FIGO 2023 for the endometrium"
      ],
      "objectives": [
-      "Know which gynecologic cancers are staged clinically and which surgically",
-      "List the workup for cervical cancer",
-      "Stage cervical cancer with FIGO",
-      "Know what drives endometrial adjuvant treatment",
+      "Know what must be determined to stage each GYN cancer",
+      "Know which GYN cancers are staged clinically and which surgically",
+      "Stage cervical cancer with FIGO 2018",
+      "Explain how FIGO 2023 builds on the anatomic endometrial stages",
       "Stage vulvar and vaginal cancer"
      ]
     },
     "Treatment Paradigms": {
-     "lede": "Follow the paradigms for cervix, endometrium, vulva, and vagina, from early disease and postoperative criteria to definitive chemoradiation and brachytherapy.",
+     "lede": "Four disease tracks (cervix, endometrium, vulva, vagina) built around one question: what does radiation do for this patient?",
      "essentials": [
-      "Surgery or chemoradiation, not both",
-      "Brachytherapy can't be skipped",
-      "Sedlis and Peters criteria",
-      "Endometrial adjuvant therapy by risk"
+      "Avoid unnecessary multimodality toxicity",
+      "Brachytherapy is essential for the intact cervix",
+      "Why radiation after endometrial surgery",
+      "Organs at risk and survivorship"
      ],
      "objectives": [
-      "Describe treatment of early and locally advanced cervical cancer",
+      "Choose between surgery and definitive RT for early cervical cancer",
       "Apply Sedlis and Peters criteria after radical hysterectomy",
-      "Choose adjuvant treatment for endometrial cancer by risk",
+      "Describe chemoradiation plus brachytherapy for locally advanced cervical cancer",
+      "Choose endometrial adjuvant therapy by recurrence risk and molecular group",
       "Outline treatment of vulvar and vaginal cancer",
-      "Recall key dose constraints, toxicities, and supporting trials"
+      "Link each organ at risk to the toxicity it causes"
      ]
     }
    }

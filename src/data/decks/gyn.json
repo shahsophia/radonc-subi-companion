@@ -3,8 +3,8 @@
   "id": "gynx-52",
   "category": "Epidemiology & Risk Factors",
   "front": "Which GYN cancers are driven by HPV, and which is driven by estrogen?",
-  "back": "HPV: cervical, vaginal, and many vulvar cancers. Estrogen: endometrial cancer.",
-  "extra": "Ovarian cancer is the genetic one (BRCA, Lynch) and is treated mainly with surgery and chemo, not radiation."
+  "back": "HPV: cervical, vaginal, and many vulvar cancers. Estrogen: endometrioid endometrial cancer.",
+  "extra": "Endometrial cancer is heterogeneous: serous and p53-abnormal tumors are not estrogen-driven. Ovarian cancer is the genetic one (BRCA, Lynch) and is treated mainly with surgery and chemo, not radiation."
  },
  {
   "id": "gynx-3",
@@ -16,9 +16,9 @@
  {
   "id": "gynx-5",
   "category": "Epidemiology & Risk Factors",
-  "front": "What single mechanism explains most endometrial cancer risk factors?",
+  "front": "What single mechanism explains most risk factors for endometrioid endometrial cancer?",
   "back": "Unopposed estrogen (estrogen stimulating the lining without progesterone)",
-  "extra": "Obesity, nulliparity, PCOS, unopposed HRT, and tamoxifen. Endometrial is the most common GYN cancer in the US."
+  "extra": "Obesity, nulliparity, PCOS, unopposed HRT, and tamoxifen. Serous and p53-abnormal tumors are the exception: not estrogen-driven."
  },
  {
   "id": "gynx-6",
@@ -87,15 +87,15 @@
   "id": "gynx-25",
   "category": "Imaging",
   "front": "In cervical cancer, what PET/CT finding usually extends the radiation field above the pelvis?",
-  "back": "Para-aortic (or common iliac) nodal uptake, which leads to an extended field up to the renal vessels",
-  "extra": "A PET-positive pelvic node gets a boost. A 3-month post-treatment PET showing complete response predicts excellent outcomes. PET-positive pelvic nodes also get a boost. KEYNOTE-A18: pembrolizumab with and after chemoRT improved survival in high-risk locally advanced disease."
+  "back": "Para-aortic (or high-risk common iliac) nodal uptake, which leads to an extended field covering the para-aortic chain",
+  "extra": "PET changes the radiation map: a PET-positive pelvic node gets a boost, and distant disease can change the treatment intent."
  },
  {
-  "id": "gynx-56",
+  "id": "gynx-64",
   "category": "Workup & Staging",
-  "front": "What are the four \"shells\" that every FIGO GYN staging system follows?",
-  "back": "I = confined to the organ; II = next door (the adjacent structure); III = pelvic side wall or nodes; IV = bladder/rectal mucosa or distant",
-  "extra": "Place a finding in a shell first; the substage letter just adds a size or depth cutoff."
+  "front": "Before applying a site's FIGO system, what do you determine for any GYN cancer?",
+  "back": "The organ, then the local extent, nodal disease, and distant disease",
+  "extra": "FIGO stages loosely move outward (organ, adjacent structure, side wall or nodes, mucosa or distant), but each site defines them differently, so always apply the site's own system."
  },
  {
   "id": "gynx-57",
@@ -142,30 +142,30 @@
  {
   "id": "gynx-32",
   "category": "Workup & Staging",
-  "front": "In endometrial cancer (FIGO 2009), what separates IA, IB, and II?",
+  "front": "On the anatomic (FIGO 2009) backbone, what separates endometrial stage IA, IB, and II?",
   "back": "IA <50% myometrial invasion; IB ≥50%; II = cervical stroma involved",
-  "extra": "Tumor in the cervical glands alone does not make it stage II. Pelvic MRI estimates myometrial depth and cervical stromal invasion, mainly to guide surgery or stage medically inoperable patients."
+  "extra": "Tumor in the cervical glands alone does not make it stage II. FIGO 2023 builds on these stages by adding histology, LVSI, and molecular group in selected stages."
  },
  {
   "id": "gynx-33",
   "category": "Workup & Staging",
-  "front": "Which endometrial cancer molecular class has the best prognosis, and which has the worst?",
-  "back": "Best: POLE-mutated. Worst: p53-abnormal.",
-  "extra": "The other two are MMR-deficient and no specific profile. FIGO 2023 downstages POLE-mutated and upstages p53-abnormal early tumors."
+  "front": "Why does endometrial cancer molecular class matter for adjuvant therapy?",
+  "back": "It modifies the recurrence risk: POLE-mutated tumors are candidates for de-escalation, and p53-abnormal tumors for escalation.",
+  "extra": "The other two groups are MMR-deficient (Lynch screening, immunotherapy-responsive) and no specific profile. FIGO 2023 downstages POLE-mutated and upstages p53-abnormal early tumors."
  },
  {
   "id": "gynx-59",
   "category": "Treatment Paradigms",
-  "front": "Why does GYN oncology try to choose either surgery or chemoradiation, not both?",
-  "back": "Surgery followed by chemoradiation adds the toxicity of both without a clear cure benefit over picking the right single approach.",
-  "extra": "Small confined tumors go to surgery; locally advanced or node-positive disease goes to chemoradiation."
+  "front": "What principle guides the choice between surgery and definitive chemoradiation for cervical cancer?",
+  "back": "Choose the definitive local treatment that avoids unnecessary multimodality toxicity; add adjuvant RT or chemoRT after surgery only when the pathology warrants it.",
+  "extra": "Small confined tumors: surgery or definitive RT. Locally advanced or known node-positive disease: definitive chemoradiation plus brachytherapy."
  },
  {
   "id": "gynx-37",
   "category": "Treatment Paradigms",
   "front": "What is the standard treatment for locally advanced cervical cancer (IB3-IVA)?",
-  "back": "Pelvic EBRT (about 45 Gy in 25 fractions) with weekly cisplatin, followed by brachytherapy",
-  "extra": "The 1999 cisplatin trials showed chemoradiation beats RT alone for survival. No routine hysterectomy afterward. Simulation is often done with full and empty bladder scans because the uterus moves with bladder filling."
+  "back": "Pelvic EBRT with concurrent weekly cisplatin, followed by brachytherapy",
+  "extra": "Pelvic EBRT is typically about 45 Gy in 25 fractions. The 1999 cisplatin trials showed chemoradiation beats RT alone for survival. No routine hysterectomy afterward."
  },
  {
   "id": "gynx-60",
@@ -178,7 +178,7 @@
   "id": "gynx-61",
   "category": "Treatment Paradigms",
   "front": "Within what time should cervical chemoradiation plus brachytherapy be completed, and why?",
-  "back": "About 8 weeks (56 days), because each extra day lowers local control",
+  "back": "Promptly, in about 8 weeks, because prolonged overall treatment time lowers local control",
   "extra": "Treatment breaks let the tumor repopulate."
  },
  {
@@ -205,9 +205,9 @@
  {
   "id": "gynx-43",
   "category": "Treatment Paradigms",
-  "front": "After hysterectomy for stage I-II endometrioid endometrial cancer, how does adjuvant treatment scale with risk?",
-  "back": "Low risk: observation. Intermediate/high-intermediate risk: vaginal brachytherapy. High risk: pelvic EBRT ± chemo.",
-  "extra": "Risk rises with deep invasion, grade 3, substantial LVSI, older age, and stage II. POLE-mutated tumors can be observed."
+  "front": "After hysterectomy for endometrial cancer, how does adjuvant treatment scale with recurrence risk?",
+  "back": "Low: observation. Intermediate (mostly vaginal cuff risk): vaginal brachytherapy. Higher pelvic risk: pelvic EBRT. High-risk biology or stage III or higher: systemic therapy ± RT.",
+  "extra": "Risk rises with deep invasion, high grade, substantial LVSI, cervical stromal invasion, and older age. Molecular group adjusts it: POLE-mutated tumors can often be observed; p53-abnormal tumors are escalated."
  },
  {
   "id": "gynx-44",
