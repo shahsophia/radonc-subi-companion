@@ -1,260 +1,450 @@
 [
-  {
-    "id": "ov-1",
-    "category": "General Principles",
-    "front": "What are the three specialties integrated in multidisciplinary cancer care, and what does each contribute?",
-    "back": "Medical Oncology - systemic therapy (chemo, immunotherapy, targeted therapy, hormone therapy)\n• Surgical Oncology - local therapy (resection, lymph node sampling, palliative debulking)\n• Radiation Oncology - local therapy (curative, palliative, or oligometastatic-directed)"
-  },
-  {
-    "id": "ov-2",
-    "category": "General Principles",
-    "front": "Define these cancer treatment-intent terms: curative, palliative, definitive, neoadjuvant, adjuvant, concurrent.",
-    "back": "• Curative: intent is to cure\n• Palliative: intent is to relieve symptoms\n• Definitive: no further treatment is intended\n• Neoadjuvant: given as a first step (before another therapy)\n• Adjuvant: additional treatment after primary treatment, usually to lower recurrence risk\n• Concurrent: given at the same time as another therapy (e.g., concurrent chemoradiation)"
-  },
-  {
-    "id": "ov-3",
-    "category": "General Principles",
-    "front": "What is the general 4-step approach to a new cancer patient?",
-    "back": "Diagnosis (H&P, imaging, biopsy for tissue diagnosis) → Staging (TNM and group stage I-IV, additional imaging/surgery as needed) → Treatment (define curative vs. palliative goal, multidisciplinary consultation) → Follow-up (manage toxicity, periodic exam and restaging). Performance status is also assessed throughout."
-  },
-  {
-    "id": "ov-4",
-    "category": "General Principles",
-    "front": "What is the standard treatment paradigm for glioblastoma (GBM)?",
-    "back": "Upfront maximal safe resection → concurrent chemoradiation for up to 6 weeks (daily PO temozolomide during RT) → adjuvant chemotherapy for 6-12 months (PO temozolomide days 1-5 every 4 weeks)."
-  },
-  {
-    "id": "ov-5",
-    "category": "General Principles",
-    "front": "What is the standard treatment paradigm for stage III non-small cell lung cancer (NSCLC)?",
-    "back": "Concurrent chemoradiation (carboplatin + paclitaxel, or carboplatin + pemetrexed) → adjuvant immunotherapy with durvalumab."
-  },
-  {
-    "id": "ov-6",
-    "category": "General Principles",
-    "front": "What are the \"don't forget\" pearls to address for essentially every new radiation oncology patient?",
-    "back": "• Smoking cessation counseling\n• Fertility counseling (before gonadal-affecting treatment)\n• Pregnancy test (patients of childbearing potential)\n• Genetic counseling (when indicated)"
-  },
-  {
-    "id": "ov-7",
-    "category": "Radiation Delivery & Technique",
-    "front": "What is the fundamental difference between EBRT and brachytherapy?",
-    "back": "EBRT (external beam radiation therapy): radiation source is outside the body (LINAC delivers photons, electrons, or particle beams). Brachytherapy: radioactive source is placed inside or adjacent to the tumor (intracavitary/interstitial)."
-  },
-  {
-    "id": "ov-8",
-    "category": "Radiation Delivery & Technique",
-    "front": "Contrast LDR and HDR brachytherapy, with an example of each.",
-    "back": "LDR (low-dose rate): permanently implanted radioactive seeds in one procedure, e.g., prostate seed implants. HDR (high-dose rate): an applicator is placed in the patient and connected to a radioactive source on a wire (contained in an \"afterloader\") for a few minutes at a time, e.g., intracavitary tandem-based brachytherapy for cervical cancer."
-  },
-  {
-    "id": "ov-9",
-    "category": "Radiation Delivery & Technique",
-    "front": "How does a LINAC generate the photon beam used for EBRT?",
-    "back": "Electrons are accelerated toward a tungsten target in the head of the gantry; this interaction produces Bremsstrahlung (\"braking\") X-rays."
-  },
-  {
-    "id": "ov-10",
-    "category": "Radiation Delivery & Technique",
-    "front": "What is the key difference in beam delivery between IMRT and VMAT?",
-    "back": "IMRT: non-uniform beam intensity delivered at fixed gantry angles/fields (segmental \"step and shoot\" or dynamic continuous MLC motion). VMAT: radiation delivered continuously as the gantry rotates around the patient, with MLCs dynamically modulating intensity throughout the arc."
-  },
-  {
-    "id": "ov-11",
-    "category": "Radiation Delivery & Technique",
-    "front": "Distinguish SRS from SBRT.",
-    "back": "Both are highly targeted, ultra-hypofractionated techniques (typically 1-5 fractions with very high dose per fraction). SRS conventionally refers to intracranial (brain) targets (e.g., GammaKnife, CyberKnife). SBRT refers to the same stereotactic approach applied to extracranial body sites."
-  },
-  {
-    "id": "ov-12",
-    "category": "Radiation Delivery & Technique",
-    "front": "What is the difference between a sequential boost and a simultaneous integrated boost (SIB)?",
-    "back": "Sequential boost (\"cone down\"): treat a larger volume to an initial dose, then deliver additional fractions to a smaller boost volume afterward (e.g., 2 Gy/fx x 25 fx to 50 Gy, then 2 Gy/fx x 5 more fx to reach 60 Gy). SIB: different dose-per-fraction levels are delivered to different target volumes simultaneously within the same treatment course (e.g., 2 Gy/fx to 50 Gy and 2.4 Gy/fx to 60 Gy, both over 25 fractions)."
-  },
-  {
-    "id": "ov-13",
-    "category": "Radiation Delivery & Technique",
-    "front": "What imaging modalities can be used for IGRT (image-guided radiotherapy)?",
-    "back": "MV imaging, kV imaging, CBCT (cone-beam CT), MRI, fluoroscopy, +/- implanted fiducial markers."
-  },
-  {
-    "id": "ov-14",
-    "category": "Radiation Physics",
-    "front": "What are the 4 main types of photon interactions with matter?",
-    "back": "1. Coherent (Rayleigh) scattering\n2. Photoelectric effect\n3. Compton effect\n4. Pair production\n\nProbability of each depends on photon energy and the atomic number (Z) of the absorbing material."
-  },
-  {
-    "id": "ov-15",
-    "category": "Radiation Physics",
-    "front": "Describe the photoelectric effect and what its probability depends on.",
-    "back": "A photon transfers all of its energy to an inner-shell electron, ejecting it; an outer-shell electron then fills the vacancy, releasing a characteristic X-ray and/or Auger electron. Probability is proportional to Z3/E3 - favored at low photon energies and high-Z materials. This is the basis of contrast in diagnostic imaging."
-  },
-  {
-    "id": "ov-16",
-    "category": "Radiation Physics",
-    "front": "What is the Compton effect, and why is it the dominant interaction at therapeutic radiation energies?",
-    "back": "A photon transfers only part of its energy to an outer-shell electron, ejecting it, while the photon scatters onward with reduced energy. It predominates at ~25 keV to 25 MeV (spans therapeutic range) and its probability depends on electron density of the material, nearly independent of atomic number Z."
-  },
-  {
-    "id": "ov-17",
-    "category": "Radiation Physics",
-    "front": "What is pair production, what is its minimum energy threshold, and is it clinically relevant in typical EBRT?",
-    "back": "A photon interacts with an atomic nucleus and converts into an electron-positron pair (each 0.511 MeV rest mass), requiring at least 1.022 MeV. Probability is proportional to Z x ln(E). Not a significant clinical concern for beams under 10 MV."
-  },
-  {
-    "id": "ov-18",
-    "category": "Radiation Physics",
-    "front": "What is Bremsstrahlung radiation, and how efficient is its production in a LINAC?",
-    "back": "\"Braking radiation\" produced when a charged particle (electron) decelerates and scatters while interacting with a heavy atomic nucleus (e.g., tungsten target), emitting X-rays. The process is highly inefficient (~33%); the average energy of the resulting X-ray beam is about 1/3 to 1/2 the max energy of the incoming electrons."
-  },
-  {
-    "id": "ov-19",
-    "category": "Radiation Physics",
-    "front": "What is the electron beam \"5-4-3-2\" rule of thumb, for a beam of energy E (MeV)?",
-    "back": "• Dmax = E/5\n• 90% isodose line ≈ E/3.2-4\n• 80% isodose line ≈ E/2.8-3\n• Practical range = E/2\n\nExample: a 9 MeV beam has Dmax ≈4.5 cm, 90% IDL ≈2.8 cm, practical range ≈4.5 cm."
-  },
-  {
-    "id": "ov-20",
-    "category": "Radiation Physics",
-    "front": "How do surface dose and depth of Dmax trend with increasing beam energy for photons vs. electrons?",
-    "back": "Photons: surface dose is LOWER at higher energies; Dmax is DEEPER at higher energies.\nElectrons: surface dose is HIGHER at higher energies; Dmax is also DEEPER at higher energies."
-  },
-  {
-    "id": "ov-21",
-    "category": "Radiation Physics",
-    "front": "What is the Bragg peak, and what is the accepted RBE used for proton therapy dosing?",
-    "back": "As a proton traverses tissue it loses energy gradually, then deposits most of its energy right at the point it stops (the Bragg peak), with minimal exit dose beyond that depth - higher proton energy gives deeper penetration. Proton RBE = 1.1 (multiply photon-equivalent dose by 1.1); dose may be reported in cobalt Gray equivalent (CGE), though ICRU recommends reporting as DRBE."
-  },
-  {
-    "id": "ov-22",
-    "category": "Radiation Physics",
-    "front": "In craniospinal irradiation (CSI), why is \"feathering the junction\" performed, and how often?",
-    "back": "Adjacent field junctions (e.g., between spine fields) create a hot spot at the point of overlap and a cold spot behind it. Shifting the match line superiorly by 0.5-1 cm periodically - typically every 5 fractions (~9 Gy), about once a week - spreads out the cold spot over a larger area to reduce the risk of underdosing."
-  },
-  {
-    "id": "ov-23",
-    "category": "Radiation Biology",
-    "front": "What are the \"4 R's of Radiobiology,\" and why do they justify fractionating treatment?",
-    "back": "Repair, Repopulation, Redistribution, Reoxygenation. Fractionation exploits differences in how normal tissue and tumor cells repair damage and repopulate, allows radioresistant cells to redistribute into more sensitive cell-cycle phases between fractions, and allows hypoxic tumor cells time to reoxygenate and become more radiosensitive."
-  },
-  {
-    "id": "ov-24",
-    "category": "Radiation Biology",
-    "front": "Contrast direct and indirect action of ionizing radiation.",
-    "back": "Direct: charged particles (electrons, protons, alpha particles) directly ionize DNA and produce chemical/biologic damage as they pass through tissue.\nIndirect: photons (X-rays, gamma rays) and neutrons are not directly ionizing - they transfer energy to produce fast-moving charged particles or free radicals (e.g., from water) that in turn cause the DNA damage. Most photon-induced DNA damage is indirect, via free radicals."
-  },
-  {
-    "id": "ov-25",
-    "category": "Radiation Biology",
-    "front": "How many single-strand breaks (SSBs) and double-strand breaks (DSBs) occur per 1 Gy of radiation, and which is more clinically important?",
-    "back": "~1000 SSBs per Gy: generally easily repaired and not lethal. ~40 DSBs per Gy: the primary driver of radiation-induced cell kill, via lethal chromosome/chromatid aberrations (dicentrics, rings, anaphase bridges) if left unrepaired."
-  },
-  {
-    "id": "ov-26",
-    "category": "Radiation Biology",
-    "front": "Which cell cycle phase is most radiosensitive, and which is most radioresistant? Why?",
-    "back": "M phase is most radiosensitive. Late S/G2 is most radioresistant, because DNA has already been replicated - if damage occurs, the cell has a homologous template available to accurately repair it (homologous recombination)."
-  },
-  {
-    "id": "ov-27",
-    "category": "Radiation Biology",
-    "front": "Compare non-homologous end joining (NHEJ) and homologous recombination (HR) for double-strand break repair.",
-    "back": "NHEJ: does not require sequence homology, can occur in G1 (before DNA replication), repairs quickly but is error-prone.\nHR: requires sequence homology and an undamaged sister chromatid as template (occurs in late S/G2), is slower but much more accurate."
-  },
-  {
-    "id": "ov-28",
-    "category": "Radiation Biology",
-    "front": "What roles do 53BP1 and BRCA1 play at a DNA double-strand break?",
-    "back": "Both are recruited downstream of ATM-mediated phosphorylation of H2AX (gamma-H2AX). 53BP1 binds and promotes non-homologous end joining (NHEJ). BRCA1 binds and promotes homologous recombination (HR)."
-  },
-  {
-    "id": "ov-29",
-    "category": "Radiation Biology",
-    "front": "Name several genetic syndromes caused by defective DNA repair proteins and their key clinical features.",
-    "back": "• Ataxia telangiectasia (ATM mutation): telangiectasias, neurologic symptoms, radiosensitivity, cancer risk (lymphoma/leukemia/breast)\n• Xeroderma pigmentosum (nucleotide excision repair): UV photosensitivity, high skin cancer risk\n• Lynch syndrome (mismatch repair - MLH1/MSH2/MSH6/PMS2): increased colorectal, endometrial, gastric, ovarian cancer risk\n• SCID / LIG4 deficiency (NHEJ defects): immunodeficiency and radiosensitivity\n• Fanconi anemia (crosslink repair): pancytopenia, growth delay, leukemia risk"
-  },
-  {
-    "id": "ov-30",
-    "category": "Radiation Biology",
-    "front": "Define OER and LET, and describe how they relate to each other as radiation becomes more densely ionizing.",
-    "back": "OER (oxygen enhancement ratio) = dose needed under hypoxic conditions divided by dose needed under aerobic conditions to achieve the same biologic effect (oxygen \"fixes\" free-radical DNA damage). LET (linear energy transfer) = energy deposited per unit track length (keV/µm).\nAs LET increases (more densely ionizing radiation, e.g., alpha particles > neutrons > x-rays), OER decreases: OER is ~2.5-3 for x-/gamma-rays and protons, ~1.6 for neutrons, and ~1 (none) for alpha particles."
-  },
-  {
-    "id": "ov-31",
-    "category": "Radiation Biology",
-    "front": "What is the alpha/beta ratio, and how does it differ between early- and late-responding tissue?",
-    "back": "The alpha/beta ratio is the dose at which the linear (single-hit, alpha) and quadratic (double-hit, beta) components of cell killing are equal. Early-responding tissues (most tumors, skin, GI mucosa, bone marrow) have a HIGH alpha/beta (~10). Late-responding tissues (prostate, breast, spinal cord, lung, kidney, liver, bladder) have a LOW alpha/beta (~3; spinal cord ~2) and are more sensitive to dose per fraction."
-  },
-  {
-    "id": "ov-32",
-    "category": "Radiation Biology",
-    "front": "Give the formulas for Biologically Effective Dose (BED) and EQD2, and state what drives acute vs. late radiation toxicity.",
-    "back": "BED = n x d x [1 + d/(alpha/beta)] (n = number of fractions, d = dose per fraction)\nEQD2 = D x [(d + alpha/beta)/(2 + alpha/beta)] (D = total dose)\nAcute toxicity is characterized by inflammation and is a function of total dose. Late toxicity is characterized by fibrosis/sclerosis and is a function of dose per fraction (best assessed with BED)."
-  },
-  {
-    "id": "ov-33",
-    "category": "Common Dose Constraints",
-    "front": "How does toxicity risk differ between \"series\" and \"parallel\" organs at risk?",
-    "back": "Series organs (e.g., spinal cord, brainstem, optic nerves, bowel): toxicity depends on maximum/point dose - \"if you poke a hole in it, the whole thing breaks.\"\nParallel organs (e.g., lung, liver, kidney, parotid gland): toxicity depends on volumetric or mean dose - \"if you damage enough of it, it breaks.\""
-  },
-  {
-    "id": "ov-34",
-    "category": "Common Dose Constraints",
-    "front": "Per QUANTEC, what is the conventional-fractionation spinal cord max dose constraint, and how does myelopathy risk rise above it?",
-    "back": "Max dose <50 Gy (2 Gy/fx) → <0.3% risk of myelopathy. Risk rises steeply beyond that: 50 Gy ≈0.2%, 60 Gy ≈6%, 69 Gy ≈50%."
-  },
-  {
-    "id": "ov-35",
-    "category": "Common Dose Constraints",
-    "front": "What are the QUANTEC conventional-fractionation max dose constraints for brain, brainstem, and optic nerves/chiasm?",
-    "back": "Brain: max <60 Gy (<3% symptomatic necrosis). Brainstem: max <54 Gy (<5% neuropathy or necrosis). Optic nerves/chiasm: max <55 Gy (<3% optic neuropathy)."
-  },
-  {
-    "id": "ov-36",
-    "category": "Common Dose Constraints",
-    "front": "What is the classic QUANTEC lung dose constraint, and what toxicity does it predict?",
-    "back": "V20 ≤30% (volume of lung receiving ≥20 Gy) → predicts <20% risk of symptomatic pneumonitis."
-  },
-  {
-    "id": "ov-37",
-    "category": "Common Dose Constraints",
-    "front": "Per HYTEC, what are the approximate spinal cord Dmax constraints for SRS/SBRT to keep myelopathy risk at 1-5%?",
-    "back": "1 fraction: 12.4 Gy • 2 fractions: 17 Gy • 3 fractions: 20.3 Gy • 4 fractions: 23 Gy • 5 fractions: 25.3 Gy (Sahgal et al., 2013)."
-  },
-  {
-    "id": "ov-38",
-    "category": "Acronyms & Terminology",
-    "front": "Define GTV, CTV, ITV, and PTV.",
-    "back": "GTV = gross tumor volume (visible/palpable tumor)\nCTV = clinical target volume (GTV + margin for suspected microscopic disease)\nITV = internal target volume (CTV + margin for internal organ motion)\nPTV = planning target volume (adds margin for daily setup uncertainty)"
-  },
-  {
-    "id": "ov-39",
-    "category": "Acronyms & Terminology",
-    "front": "Define OAR and PRV.",
-    "back": "OAR = organ at risk (normal structure that could be damaged by radiation). PRV = planning risk volume (margin added around an OAR to account for setup/motion uncertainty, analogous to how PTV relates to CTV)."
-  },
-  {
-    "id": "ov-40",
-    "category": "Acronyms & Terminology",
-    "front": "What does DIBH stand for, and why is it used?",
-    "back": "Deep inspiratory breath hold - a motion-management technique (commonly used for left-sided breast radiation) in which the patient holds a deep breath during treatment, expanding lung volume and pulling the heart away from the treatment field to reduce cardiac dose."
-  },
-  {
-    "id": "ov-41",
-    "category": "Acronyms & Terminology",
-    "front": "Compare FBCT (fan-beam/helical CT) and CBCT (cone-beam CT), and what each is used for.",
-    "back": "FBCT: diagnostic-quality imaging, higher radiation dose, better soft-tissue resolution, takes longer - used for simulation/diagnostic imaging.\nCBCT: lower radiation dose, faster, can focus on smaller areas - used for daily IGRT setup verification."
-  },
-  {
-    "id": "ov-42",
-    "category": "Acronyms & Terminology",
-    "front": "What do the oncologic outcome acronyms OS, PFS, DFS, EFS, and DMFS stand for?",
-    "back": "OS = overall survival\nPFS = progression-free survival\nDFS = disease-free survival\nEFS = event-free survival\nDMFS = distant metastasis-free survival"
-  },
-  {
-    "id": "ov-43",
-    "category": "Acronyms & Terminology",
-    "front": "What is the difference between Dose (Gy) and MU (monitor units)?",
-    "back": "Dose (measured in Gray, Gy) is what is prescribed and represents the biologic dose delivered to the patient. MU (monitor unit) is the unit the LINAC machine actually measures and delivers to produce that prescribed dose."
-  }
+ {
+  "id": "ov-1",
+  "category": "General Principles",
+  "front": "Of the three cancer treatment specialties, which give local therapy and which gives systemic therapy?",
+  "back": "Local: surgical oncology and radiation oncology. Systemic: medical oncology (chemo, immunotherapy, targeted and hormone therapy).",
+  "extra": "Systemic therapy treats cancer cells (including micrometastases) anywhere in the body. Most patients are planned at a multidisciplinary tumor board."
+ },
+ {
+  "id": "ov-2",
+  "category": "General Principles",
+  "front": "What is the difference between neoadjuvant and adjuvant therapy?",
+  "back": "Neoadjuvant is given before the main treatment (e.g., to shrink a tumor before surgery); adjuvant is given after it to lower the risk of recurrence.",
+  "extra": "Always ask what the intent of this specific treatment is; one patient's plan can include both."
+ },
+ {
+  "id": "ov-79",
+  "category": "General Principles",
+  "front": "What does it mean when radiation is called \"definitive\"?",
+  "back": "It is intended to be the complete, final treatment, with no further therapy planned to finish the job (e.g., definitive chemoradiation instead of surgery).",
+  "extra": "Curative describes the goal (cure); definitive describes the role of the treatment."
+ },
+ {
+  "id": "ov-80",
+  "category": "General Principles",
+  "front": "Why is chemotherapy often given concurrently with radiation?",
+  "back": "It sensitizes the tumor to radiation (and treats disease outside the field).",
+  "extra": "Classic examples: cisplatin with head and neck or cervical RT."
+ },
+ {
+  "id": "ov-81",
+  "category": "General Principles",
+  "front": "What is the goal of palliative radiation, and what are classic reasons to give it?",
+  "back": "Symptom relief in incurable disease, e.g., painful bone metastases, spinal cord compression, bleeding, airway obstruction, or SVC syndrome",
+  "extra": "Palliative courses are usually short, chosen by prognosis and goals of care."
+ },
+ {
+  "id": "ov-82",
+  "category": "General Principles",
+  "front": "What is the role of radiation in oligometastatic disease?",
+  "back": "Focused high-dose RT (usually SBRT/SRS) to the few sites of metastatic disease to control them, often alongside systemic therapy",
+  "extra": "It can delay progression or the need to change systemic therapy."
+ },
+ {
+  "id": "ov-6",
+  "category": "General Principles",
+  "front": "What \"don't forget\" items should be addressed for essentially every new radiation oncology patient?",
+  "back": "Smoking cessation, fertility counseling (before treatment that can affect the gonads), a pregnancy test when relevant, and genetic counseling when a hereditary syndrome is suspected",
+  "extra": "Performance status is also assessed throughout, because it shapes how aggressively a patient can be treated."
+ },
+ {
+  "id": "ov-9",
+  "category": "Radiation Delivery & Technique",
+  "front": "How does a LINAC produce its photon beam?",
+  "back": "It accelerates electrons into a tungsten target; as they decelerate near the nuclei they emit X-rays (Bremsstrahlung, \"braking radiation\").",
+  "extra": "The beam is then flattened and shaped by jaws and multileaf collimators. Removing the target lets the LINAC treat with electrons instead."
+ },
+ {
+  "id": "ov-87",
+  "category": "Radiation Delivery & Technique",
+  "front": "What does craniospinal irradiation treat, and which tumors need it?",
+  "back": "The entire brain and spinal CSF space, for tumors that spread through the CSF (e.g., medulloblastoma, some germ cell tumors, leptomeningeal disease)",
+  "extra": "It needs two to three matched fields (brain plus one or more spine fields)."
+ },
+ {
+  "id": "ov-22",
+  "category": "Radiation Delivery & Technique",
+  "front": "In craniospinal irradiation, why is the field junction \"feathered\"?",
+  "back": "Matching diverging fields creates hot and cold spots at the junction; shifting the match line every few fractions spreads them out so no single spot is badly over- or underdosed.",
+  "extra": "Typically shifted about once a week."
+ },
+ {
+  "id": "ov-16",
+  "category": "Radiation Physics",
+  "front": "Which photon interaction dominates at therapeutic energies, and what does it depend on?",
+  "back": "Compton scattering, which depends on electron density and is nearly independent of atomic number (Z)",
+  "extra": "That is why photon dose is fairly predictable across soft tissues."
+ },
+ {
+  "id": "ov-15",
+  "category": "Radiation Physics",
+  "front": "Which photon interaction creates contrast in diagnostic imaging, and why?",
+  "back": "The photoelectric effect, because its probability rises steeply with atomic number (∝ Z³/E³) at low energies",
+  "extra": "So bone and contrast agents stand out on diagnostic X-rays, but not on MV treatment images."
+ },
+ {
+  "id": "ov-88",
+  "category": "Radiation Physics",
+  "front": "Why does a megavoltage photon beam spare the skin?",
+  "back": "Dose builds up over the first part of tissue and peaks below the surface (at Dmax), so the skin gets less than the peak dose.",
+  "extra": "Higher-energy photons push Dmax deeper (about 1.5 cm for 6 MV). Bolus is added when the skin itself is the target."
+ },
+ {
+  "id": "ov-20",
+  "category": "Radiation Physics",
+  "front": "How does surface dose change with higher beam energy for photons vs electrons?",
+  "back": "Photons: higher energy means LOWER surface dose. Electrons: higher energy means HIGHER surface dose. (Dmax gets deeper for both.)",
+  "extra": "A common exam trap."
+ },
+ {
+  "id": "ov-19",
+  "category": "Radiation Physics",
+  "front": "Rule of thumb: about how deep does the 90% isodose line of an E MeV electron beam reach?",
+  "back": "About E/3 cm",
+  "extra": "The practical range is about E/2 cm, beyond which dose falls to almost nothing. Pick the energy whose 90% line covers the lesion."
+ },
+ {
+  "id": "ov-21",
+  "category": "Radiation Physics",
+  "front": "What is a spread-out Bragg peak (SOBP)?",
+  "back": "Proton beams of several energies combined so their Bragg peaks cover the full thickness of the tumor",
+  "extra": "A single energy makes only a narrow (pristine) peak. Protons are assigned an RBE of 1.1 relative to photons."
+ },
+ {
+  "id": "ov-90",
+  "category": "Radiation Physics",
+  "front": "When do protons offer a real advantage over photons, and what is their main drawback?",
+  "back": "When sparing tissue beyond the target matters most (e.g., children, tumors next to critical structures), because there is no exit dose. Drawback: they are more sensitive to setup and anatomic changes.",
+  "extra": ""
+ },
+ {
+  "id": "ov-25",
+  "category": "Radiation Biology",
+  "front": "Why are DNA double-strand breaks far more lethal than single-strand breaks?",
+  "back": "Single-strand breaks are easily repaired using the intact opposite strand; double-strand breaks are hard to repair accurately and lead to lethal chromosome aberrations when the cell divides.",
+  "extra": "1 Gy causes about 1,000 single-strand breaks but only about 40 double-strand breaks."
+ },
+ {
+  "id": "ov-27",
+  "category": "Radiation Biology",
+  "front": "How do non-homologous end joining (NHEJ) and homologous recombination (HR) differ?",
+  "back": "NHEJ works in any phase (including G1), is fast, and is error-prone. HR needs a sister chromatid template, so it works only in late S/G2, and is slower but accurate.",
+  "extra": "BRCA1 promotes HR; 53BP1 promotes NHEJ."
+ },
+ {
+  "id": "ov-26",
+  "category": "Radiation Biology",
+  "front": "Which cell cycle phase is most radiosensitive, and which is most radioresistant?",
+  "back": "Most sensitive: M (mitosis). Most resistant: late S, because a replicated copy of DNA is available for accurate repair.",
+  "extra": "Redistribution between fractions catches more cells in sensitive phases."
+ },
+ {
+  "id": "ov-91",
+  "category": "Radiation Biology",
+  "front": "Why do PARP inhibitors work well in BRCA-mutant cancers?",
+  "back": "They block another DNA repair pathway, so cells that already lack homologous recombination (BRCA) can't repair their DNA and die (synthetic lethality).",
+  "extra": ""
+ },
+ {
+  "id": "ov-30",
+  "category": "Radiation Biology",
+  "front": "How does the oxygen enhancement ratio (OER) change as LET increases, and why?",
+  "back": "It falls (toward 1). Densely ionizing, high-LET radiation damages DNA directly, so it doesn't need oxygen to \"fix\" free-radical damage.",
+  "extra": "OER is about 2.5-3 for X-rays, ~1.6 for neutrons, and ~1 for alpha particles."
+ },
+ {
+  "id": "ov-31",
+  "category": "Radiation Biology",
+  "front": "Which tissues have a high α/β ratio and which have a low one?",
+  "back": "High (~10): early-responding tissues (skin, mucosa, marrow) and most tumors. Low (~3): late-responding tissues (spinal cord, lung, kidney, liver, bladder).",
+  "extra": "Prostate and breast cancers are exceptions with low α/β."
+ },
+ {
+  "id": "ov-92",
+  "category": "Radiation Biology",
+  "front": "What are BED and EQD2 used for?",
+  "back": "Comparing radiation regimens with different fraction sizes on one scale (EQD2 = the equivalent dose if given in 2 Gy fractions)",
+  "extra": "BED = nd[1 + d/(α/β)]. Published normal-tissue limits usually assume 2 Gy fractions, so EQD2 lets you compare hypofractionated plans against them."
+ },
+ {
+  "id": "ov-32",
+  "category": "Radiation Biology",
+  "front": "What drives acute vs late radiation toxicity?",
+  "back": "Acute (inflammation, in fast-dividing tissues) depends mainly on total dose over time. Late (fibrosis, months to years later) depends mainly on dose per fraction.",
+  "extra": "That's why large fractions near late-responding organs demand caution."
+ },
+ {
+  "id": "ov-33",
+  "category": "Common Dose Constraints",
+  "front": "How do toxicity limits differ for \"series\" vs \"parallel\" organs?",
+  "back": "Series organs (spinal cord, brainstem, optic nerves, bowel) fail from a hot spot, so the maximum dose matters. Parallel organs (lung, liver, kidney, parotid) fail when enough volume is damaged, so mean or volume dose matters.",
+  "extra": "The single most useful idea for reading any constraint table."
+ },
+ {
+  "id": "ov-94",
+  "category": "Common Dose Constraints",
+  "front": "What does a constraint like \"lung V20 < 30%\" mean?",
+  "back": "Less than 30% of the lung volume should receive 20 Gy or more.",
+  "extra": "Dmax (or D0.03cc) is the maximum dose; D90 is the dose that 90% of a volume receives."
+ },
+ {
+  "id": "ov-34",
+  "category": "Common Dose Constraints",
+  "front": "What is the standard spinal cord maximum dose with conventional fractionation?",
+  "back": "About 50 Gy",
+  "extra": "Myelopathy risk is tiny at 50 Gy but rises steeply above it."
+ },
+ {
+  "id": "ov-35",
+  "category": "Common Dose Constraints",
+  "front": "With conventional fractionation, what maximum dose is used for the brainstem and optic nerves/chiasm?",
+  "back": "About 54-55 Gy",
+  "extra": "Exceeding these risks brainstem necrosis or blindness."
+ },
+ {
+  "id": "ov-36",
+  "category": "Common Dose Constraints",
+  "front": "What is the classic lung constraint for conventional fractionation, and what toxicity does it protect against?",
+  "back": "Lung V20 ≤ 30% (mean lung dose under ~20 Gy), to limit radiation pneumonitis",
+  "extra": ""
+ },
+ {
+  "id": "ov-95",
+  "category": "Common Dose Constraints",
+  "front": "What parotid dose goal helps preserve salivary function?",
+  "back": "Mean dose under about 26 Gy",
+  "extra": "A parallel organ, so the mean dose matters. Sparing the parotids reduces xerostomia."
+ },
+ {
+  "id": "ov-37",
+  "category": "Common Dose Constraints",
+  "front": "Can conventional (QUANTEC) dose limits be applied directly to an SBRT or SRS plan?",
+  "back": "No. They assume about 2 Gy fractions; stereotactic plans use their own limits (HYTEC) or doses converted with BED/EQD2.",
+  "extra": "Applying 2 Gy-based limits to a 1-5 fraction course gives a badly wrong answer."
+ },
+ {
+  "id": "ov-12",
+  "category": "Acronyms & Terminology",
+  "front": "What is the difference between a sequential boost and a simultaneous integrated boost (SIB)?",
+  "back": "Sequential (\"cone down\"): treat the large volume first, then a separate phase treats only the boost volume. SIB: both volumes are treated every day in one phase, at different doses per fraction.",
+  "extra": ""
+ },
+ {
+  "id": "ov-39",
+  "category": "Acronyms & Terminology",
+  "front": "What is a PRV?",
+  "back": "Planning risk volume: an organ at risk plus a safety margin, the OAR version of a PTV",
+  "extra": "Used around critical serial structures like the spinal cord."
+ },
+ {
+  "id": "ov-40",
+  "category": "Acronyms & Terminology",
+  "front": "What does DIBH stand for, and why is it used?",
+  "back": "Deep inspiration breath hold: holding a deep breath during treatment pulls the heart away from the field to lower cardiac dose.",
+  "extra": "Most common in left-sided breast RT. Other motion management: abdominal compression and gating."
+ },
+ {
+  "id": "ov-41",
+  "category": "Acronyms & Terminology",
+  "front": "How does a cone-beam CT (CBCT) differ from a diagnostic fan-beam CT, and what is it used for?",
+  "back": "CBCT is faster and lower-dose but has poorer image quality; it is used on the treatment machine for daily setup verification (IGRT).",
+  "extra": ""
+ },
+ {
+  "id": "ov-42",
+  "category": "Acronyms & Terminology",
+  "front": "What is the difference between overall survival (OS) and progression-free survival (PFS)?",
+  "back": "OS counts only death; PFS counts either disease progression or death as an event.",
+  "extra": "Also DFS (disease-free survival), EFS (event-free), DMFS (distant metastasis-free). Always check which endpoint a study reports."
+ },
+ {
+  "id": "ov-43",
+  "category": "Acronyms & Terminology",
+  "front": "What is the difference between Gy and monitor units (MU)?",
+  "back": "Gray (Gy) is the absorbed dose that is prescribed; MU is the machine's internal unit for delivering that dose.",
+  "extra": ""
+ },
+ {
+  "id": "ov-96",
+  "category": "Acronyms & Terminology",
+  "front": "What system is the current standard for grading treatment side effects?",
+  "back": "CTCAE (Common Terminology Criteria for Adverse Events)",
+  "extra": "The older RTOG scale is radiation-specific."
+ },
+ {
+  "id": "ov-54",
+  "category": "How Radiation Works",
+  "front": "What is the main way radiation kills cancer cells?",
+  "back": "DNA damage, especially double-strand breaks, which kill the cell when it tries to divide",
+  "extra": ""
+ },
+ {
+  "id": "ov-55",
+  "category": "How Radiation Works",
+  "front": "How does photon radiation mostly damage DNA?",
+  "back": "Indirectly: it ionizes water to create free radicals, which then damage DNA.",
+  "extra": "Oxygen \"fixes\" this free-radical damage, which is why oxygen matters."
+ },
+ {
+  "id": "ov-45",
+  "category": "How Radiation Works",
+  "front": "What are the four R's of radiobiology that explain why we fractionate?",
+  "back": "Repair, reoxygenation, repopulation, and redistribution",
+  "extra": "A fifth R, intrinsic radiosensitivity, is sometimes added."
+ },
+ {
+  "id": "ov-47",
+  "category": "How Radiation Works",
+  "front": "How does hypoxia affect a tumor's response to radiation, and how does fractionation help?",
+  "back": "Hypoxic cells are more radioresistant. As fractions kill oxygenated cells and the tumor shrinks, hypoxic areas reoxygenate and become more sensitive.",
+  "extra": "Bulky or necrotic tumors are harder to control partly for this reason."
+ },
+ {
+  "id": "ov-48",
+  "category": "How Radiation Works",
+  "front": "Why can treatment breaks make radiation less effective?",
+  "back": "Surviving tumor cells keep dividing (repopulation) during gaps in treatment.",
+  "extra": "Especially important for fast-growing tumors like head and neck squamous cell carcinoma."
+ },
+ {
+  "id": "ov-53",
+  "category": "How Radiation Works",
+  "front": "Which tissues are most affected by changing the dose per fraction: low or high α/β?",
+  "back": "Low α/β tissues, such as late-responding normal tissues like the spinal cord. Bigger fractions raise their risk of late damage.",
+  "extra": "Most tumors and early-responding tissues have a high α/β (~10)."
+ },
+ {
+  "id": "ov-52",
+  "category": "How Radiation Works",
+  "front": "Why is prostate cancer a good fit for hypofractionated radiation?",
+  "back": "It has an unusually low α/β ratio, so larger doses per fraction hurt the tumor relatively more.",
+  "extra": ""
+ },
+ {
+  "id": "ov-97",
+  "category": "How Radiation Works",
+  "front": "What dose per fraction counts as conventional fractionation, and what is hypofractionation?",
+  "back": "Conventional: about 1.8-2 Gy per fraction. Hypofractionation: fewer fractions with a larger dose per fraction.",
+  "extra": "Example: 70 Gy in 35 fractions is 2 Gy per fraction; 40 Gy in 15 fractions for breast is hypofractionated."
+ },
+ {
+  "id": "ov-56",
+  "category": "How Radiation Works",
+  "front": "Why are deep tumors treated with several photon beams or arcs instead of one?",
+  "back": "Photons pass through the tumor and keep going (exit dose), so overlapping beams build the highest dose at the tumor while spreading the lower dose across normal tissue.",
+  "extra": ""
+ },
+ {
+  "id": "ov-58",
+  "category": "How Radiation Works",
+  "front": "Why might electrons be used instead of photons for a superficial skin lesion?",
+  "back": "Electrons deposit dose at shallow depth and then fall off quickly, sparing the tissue underneath.",
+  "extra": "Also used for scar boosts and some shallow nodal targets."
+ },
+ {
+  "id": "ov-59",
+  "category": "How Radiation Works",
+  "front": "What lets protons put most of their dose at a specific depth?",
+  "back": "The Bragg peak: protons release most of their energy where they stop, with almost no dose beyond.",
+  "extra": "The depth is set by the beam energy."
+ },
+ {
+  "id": "ov-67",
+  "category": "Radiation Modalities",
+  "front": "What is the main difference between external beam radiation and brachytherapy?",
+  "back": "External beam delivers radiation from a machine outside the patient; brachytherapy places the radioactive source inside or right next to the tumor.",
+  "extra": "Brachytherapy dose falls off steeply with distance, giving a very high tumor dose while sparing nearby tissue."
+ },
+ {
+  "id": "ov-61",
+  "category": "Radiation Modalities",
+  "front": "What do the multileaf collimators (MLCs) in a LINAC do?",
+  "back": "Their thin metal leaves move to shape the beam to the target and block normal tissue.",
+  "extra": "Almost every modern technique (3D-CRT, IMRT, VMAT) is a different way of using the MLC."
+ },
+ {
+  "id": "ov-62",
+  "category": "Radiation Modalities",
+  "front": "What does IMRT add over 3D-conformal RT, and when is it especially useful?",
+  "back": "It varies the intensity within each beam so dose can wrap around the target and carve away from nearby organs; useful when the target hugs critical structures (e.g., head and neck).",
+  "extra": "3D-CRT uses a few fixed beams with uniform intensity, fine for simple targets and palliation."
+ },
+ {
+  "id": "ov-63",
+  "category": "Radiation Modalities",
+  "front": "What is the main difference between IMRT and VMAT?",
+  "back": "VMAT delivers intensity-modulated treatment while the gantry rotates around the patient.",
+  "extra": "It is faster to deliver and now one of the most common techniques."
+ },
+ {
+  "id": "ov-64",
+  "category": "Radiation Modalities",
+  "front": "What is IGRT, and what is the most common way it's done?",
+  "back": "Image-guided RT: imaging the patient on the machine before each treatment to confirm position. Usually a cone-beam CT compared with the planning CT.",
+  "extra": "The tighter the margins, the more IGRT matters. Fiducial markers help for prostate."
+ },
+ {
+  "id": "ov-65",
+  "category": "Radiation Modalities",
+  "front": "What is the difference between SRS and SBRT?",
+  "back": "Both deliver very high, precise doses in 1-5 fractions; SRS treats targets in the brain, SBRT targets elsewhere in the body.",
+  "extra": "Small margins and steep dose falloff mean a few millimeters of error can miss the tumor, so immobilization and image guidance are critical."
+ },
+ {
+  "id": "ov-68",
+  "category": "Radiation Modalities",
+  "front": "What is the difference between LDR and HDR brachytherapy, with a classic example of each?",
+  "back": "LDR delivers dose slowly over a long time (permanent prostate seeds). HDR sends a high-activity source through an applicator for a few minutes and then removes it (cervical cancer).",
+  "extra": ""
+ },
+ {
+  "id": "ov-70",
+  "category": "Treatment Planning",
+  "front": "What do the nested target volumes GTV, CTV, ITV, and PTV each add?",
+  "back": "GTV = visible tumor. CTV adds microscopic spread. ITV adds internal motion (e.g., breathing). PTV adds daily setup uncertainty.",
+  "extra": "The PTV is usually the volume that gets the prescription. Not every case uses every layer."
+ },
+ {
+  "id": "ov-74",
+  "category": "Treatment Planning",
+  "front": "Why is a CTV usually skipped for a brain metastasis or vestibular schwannoma?",
+  "back": "These lesions are well defined and don't infiltrate microscopically, so the GTV goes straight to a PTV.",
+  "extra": ""
+ },
+ {
+  "id": "ov-100",
+  "category": "Treatment Planning",
+  "front": "Why is there usually no separate GTV for prostate cancer?",
+  "back": "The cancer is usually microscopic or multifocal and not reliably seen, so the whole prostate (± seminal vesicles) is contoured as the CTV.",
+  "extra": ""
+ },
+ {
+  "id": "ov-76",
+  "category": "Treatment Planning",
+  "front": "In plan review, what is the difference between coverage and conformity?",
+  "back": "Coverage asks whether the whole target (including its edges) gets the prescribed dose; conformity asks how tightly the high-dose region hugs the target.",
+  "extra": "A good plan covers the target while sparing everything else."
+ },
+ {
+  "id": "ov-101",
+  "category": "Treatment Planning",
+  "front": "When is a hotspot in a radiation plan acceptable, and when is it a problem?",
+  "back": "A small hotspot inside the tumor is usually fine; one inside an organ at risk (e.g., the spinal cord) is not.",
+  "extra": ""
+ },
+ {
+  "id": "ov-77",
+  "category": "Treatment Planning",
+  "front": "What does a dose-volume histogram (DVH) show?",
+  "back": "What percentage of a structure's volume receives at least each dose",
+  "extra": "It lets you check every target and organ at risk against its limits without scrolling through every slice."
+ },
+ {
+  "id": "ov-78",
+  "category": "Treatment Planning",
+  "front": "What does the plan-review checklist CB-CHOP stand for?",
+  "back": "Contours, Beams, Coverage, Hotspots, OARs, Prescription",
+  "extra": "It's the order an attending runs through a plan on the screen."
+ }
 ]

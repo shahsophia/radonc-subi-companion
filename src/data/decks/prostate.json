@@ -1,266 +1,324 @@
 [
-  {
-    "id": "pr-1",
-    "category": "Epidemiology & Risk Factors",
-    "front": "What is the incidence rank and lifetime risk of prostate cancer among US men?",
-    "back": "Most common malignancy in US men other than non-melanoma skin cancers; lifetime risk is about 1 in 8."
-  },
-  {
-    "id": "pr-2",
-    "category": "Epidemiology & Risk Factors",
-    "front": "Prostate cancer is the ___ most common cause of cancer death in men, what ranks #1?",
-    "back": "2nd most common cause of cancer death in men; lung cancer is #1."
-  },
-  {
-    "id": "pr-3",
-    "category": "Epidemiology & Risk Factors",
-    "front": "What do randomized trials/meta-analyses show about PSA screening and prostate cancer mortality?",
-    "back": "No apparent decrease in overall mortality with screening. Screening does appear to reduce incidence of distant-stage prostate cancer (ERSPC trial)."
-  },
-  {
-    "id": "pr-4",
-    "category": "Epidemiology & Risk Factors",
-    "front": "Summarize AUA prostate cancer screening recommendations by age.",
-    "back": "Age <40: against routine screening.\nAge 40-54: screen higher-risk patients (Black race, family history).\nAge 55-69: shared decision-making.\nAge >70 with life expectancy <10-15 years: do not screen."
-  },
-  {
-    "id": "pr-5",
-    "category": "Epidemiology & Risk Factors",
-    "front": "What PSA value raises suspicion for cancer, and what are common causes of a false-positive PSA elevation?",
-    "back": "PSA >2.5-4 ng/mL indicates higher risk (normal value depends on age/ethnicity). False positives: prostate manipulation/biopsy, BPH, prostatitis, urinary retention, trauma, ejaculation."
-  },
-  {
-    "id": "pr-6",
-    "category": "Risk Stratification & Staging",
-    "front": "What 3 factors determine NCCN prostate cancer risk group?",
-    "back": "Clinical T-stage, PSA, and Grade Group (Gleason score)."
-  },
-  {
-    "id": "pr-7",
-    "category": "Risk Stratification & Staging",
-    "front": "Gleason Grade Group 1 corresponds to what Gleason score, and what risk group(s)?",
-    "back": "Gleason ≤6 (Grade Group 1); classifies as very low or low risk."
-  },
-  {
-    "id": "pr-8",
-    "category": "Risk Stratification & Staging",
-    "front": "How do Grade Group 2 and Grade Group 3 differ, and what intermediate-risk subgroup does each define?",
-    "back": "GG2 = Gleason 3+4=7 → favorable intermediate risk. GG3 = Gleason 4+3=7 → unfavorable intermediate risk. The dominant (primary) Gleason pattern determines favorability even though the sum is the same."
-  },
-  {
-    "id": "pr-9",
-    "category": "Risk Stratification & Staging",
-    "front": "Define very low, low, favorable intermediate, and unfavorable intermediate risk prostate cancer.",
-    "back": "Very low: T1c, GG1, PSA <10, <3 positive cores (<50% each).\nLow: T2a, GG1, PSA <10.\nFavorable intermediate: ONE intermediate factor (T2b-T2c, GG2, or PSA 10-20) AND <50% of cores positive.\nUnfavorable intermediate: GG3 or more than one intermediate risk factor."
-  },
-  {
-    "id": "pr-10",
-    "category": "Risk Stratification & Staging",
-    "front": "Define high risk and very high risk prostate cancer.",
-    "back": "High risk: T3a, GG4 (4+4=8) or GG5 (4+5=9), or PSA >20.\nVery high risk: T3b-T4, primary Gleason pattern 5 (5+4 or 5+5), >4 cores with GG4-5, or more than 1 high-risk factor."
-  },
-  {
-    "id": "pr-11",
-    "category": "Risk Stratification & Staging",
-    "front": "What defines N1 disease and the M substages in prostate cancer, and how does nodal involvement affect overall stage?",
-    "back": "N1 = regional nodal metastases (internal/external iliac, obturator, presacral). M1a = nonregional lymph node(s), M1b = bone metastases, M1c = other sites. Presence of regional nodal metastases = Stage IVA prostate cancer."
-  },
-  {
-    "id": "pr-12",
-    "category": "Risk Stratification & Staging",
-    "front": "What is the Decipher genomic classifier and what do its risk score cutoffs mean?",
-    "back": "A 22-gene genomic signature scored 0-1 that prognosticates outcomes (e.g., distant metastasis risk). Roughly: low <0.45, intermediate 0.45-0.6, high >0.6. Validated as prognostic; ongoing NRG trials (GU006, GU009, GU010) are testing its use to escalate/de-escalate ADT."
-  },
-  {
-    "id": "pr-13",
-    "category": "Imaging",
-    "front": "On mpMRI, which sequence dominates PI-RADS scoring for peripheral zone lesions vs. transition zone lesions?",
-    "back": "Peripheral zone: DWI/ADC (cancer shows diffusion restriction, high DWI signal, low ADC). Transition zone: T2W morphology, with DWI as a secondary consideration."
-  },
-  {
-    "id": "pr-14",
-    "category": "Imaging",
-    "front": "What is the role of dynamic contrast enhancement (DCE) in prostate mpMRI?",
-    "back": "Adjunct/tie-breaker only, can upgrade a peripheral zone PI-RADS 3 lesion to 4 if there is focal early enhancement. DCE is most useful in the post-prostatectomy setting, where an enhancing focus suggests recurrent cancer."
-  },
-  {
-    "id": "pr-15",
-    "category": "Imaging",
-    "front": "Describe the classic MRI appearance of peripheral zone vs. transition zone prostate cancer.",
-    "back": "Peripheral zone (~70-80% of cancers): round/ill-defined low-T2 focus with restricted diffusion, classically near the capsule (relevant to ECE risk).\nTransition zone (~20-30%): homogeneous, lenticular \"erased charcoal\" low-T2 lesion, distinguished from a benign BPH nodule by lack of a well-defined capsule plus diffusion restriction."
-  },
-  {
-    "id": "pr-16",
-    "category": "Imaging",
-    "front": "What MRI findings suggest extraprostatic extension (ECE)?",
-    "back": "Capsular bulge or irregularity, obliteration of the rectoprostatic angle, direct tumor-capsule contact >1.5 cm, and neurovascular bundle asymmetry."
-  },
-  {
-    "id": "pr-17",
-    "category": "Imaging",
-    "front": "What MRI findings suggest seminal vesicle invasion (SVI)?",
-    "back": "Low-T2 signal replacing the normal high-T2 seminal vesicle architecture, direct tumor extension from the prostate base, and restricted diffusion within the vesicle."
-  },
-  {
-    "id": "pr-18",
-    "category": "Imaging",
-    "front": "What is a bone scan \"superscan\" and why is it a diagnostic pitfall?",
-    "back": "Diffusely increased skeletal tracer uptake with faint or absent renal excretion, which can mimic a normal/exceptionally clean scan. It's a classic pitfall for missing diffuse osseous metastatic burden, and is classically caused by prostate cancer."
-  },
-  {
-    "id": "pr-19",
-    "category": "Imaging",
-    "front": "How does PSMA PET/CT accuracy compare to conventional CT for detecting nodal or distant metastases, per the proPSMA study?",
-    "back": "PSMA PET was 27% more accurate than CT for detecting nodal or distant metastases (92% vs 65%, p<0.0001). PSMA PET is also superior to conventional imaging at low PSA (biochemical recurrence workup), often changing management."
-  },
-  {
-    "id": "pr-20",
-    "category": "Treatment Paradigms: Localized Disease",
-    "front": "Summarize risk-stratified therapy for localized prostate cancer (simplified NCCN-style scheme).",
-    "back": "Low risk: active surveillance or monotherapy (surgery or RT).\nFavorable intermediate: monotherapy.\nUnfavorable intermediate: surgery or prostate RT + short-term ADT (4-6 months).\nHigh risk: pelvic RT + long-term ADT (18-36 months) or surgery.\nVery high risk or node-positive: pelvic RT + long-term ADT + abiraterone/prednisone."
-  },
-  {
-    "id": "pr-21",
-    "category": "Treatment Paradigms: Localized Disease",
-    "front": "In ProtecT, how did active monitoring, surgery, and RT+ADT compare for prostate cancer-specific mortality and disease progression?",
-    "back": "Prostate cancer-specific mortality was low (~1%) and not significantly different across all three arms (most patients were low risk). Active monitoring had more disease progression and distant metastasis than surgery or RT, and by 10 years 55% of the active monitoring group had received radical therapy."
-  },
-  {
-    "id": "pr-22",
-    "category": "Treatment Paradigms: Localized Disease",
-    "front": "What moderately hypofractionated regimens for definitive prostate RT are supported by randomized trials?",
-    "back": "70 Gy/28 Fx (RTOG 0415, low risk) and 60 Gy/20 Fx (PROFIT, CHHiP, intermediate risk), both shown non-inferior to conventional fractionation (~74-78 Gy/37-39 Fx) in biochemical control."
-  },
-  {
-    "id": "pr-23",
-    "category": "Treatment Paradigms: Localized Disease",
-    "front": "What SBRT/ultra-hypofractionated regimens are supported by randomized data, and what were the toxicity trade-offs?",
-    "back": "36.25 Gy/5 Fx (PACE-B) and 42.7 Gy/7 Fx (HYPO-RT-PC) were non-inferior for biochemical/failure-free survival vs conventional fractionation, but had worse acute GU/GI toxicity; toxicity largely equalized with longer follow-up."
-  },
-  {
-    "id": "pr-24",
-    "category": "Treatment Paradigms: Localized Disease",
-    "front": "What did ASCENDE-RT show about adding an LDR brachytherapy boost to EBRT?",
-    "back": "LDR brachytherapy boost (115 Gy I-125, after 46 Gy/23 Fx pelvic EBRT) improved 15-year biochemical PFS vs dose-escalated EBRT alone (80% vs 53%), but caused significantly more grade 3+ GU toxicity (18% vs 5%), including urethral stricture. No difference in OS."
-  },
-  {
-    "id": "pr-25",
-    "category": "Treatment Paradigms: Localized Disease",
-    "front": "Can brachytherapy be used as monotherapy, and in whom, per RTOG 0232?",
-    "back": "Yes, LDR brachytherapy alone was non-inferior to EBRT + LDR boost for favorable intermediate-risk disease (5-year PFS 83% vs 86%) with significantly less toxicity, so LDR monotherapy is standard for this group."
-  },
-  {
-    "id": "pr-26",
-    "category": "Treatment Paradigms: Localized Disease",
-    "front": "When should elective pelvic nodal RT be considered, and what did POP-RT and RTOG 9413 show?",
-    "back": "Consider in high-risk disease with elevated nodal risk by the Roach formula. POP-RT (≥20% LN risk) showed improved bFFS/DFS/DMFS (not OS) with whole-pelvis RT vs prostate-only RT, at the cost of more late G2+ GU toxicity. RTOG 9413 showed an early PFS benefit to whole-pelvis RT that was lost with longer follow-up."
-  },
-  {
-    "id": "pr-27",
-    "category": "Treatment Paradigms: Localized Disease",
-    "front": "What ADT duration is used for unfavorable intermediate, high, and very high-risk localized prostate cancer?",
-    "back": "Unfavorable intermediate risk: short-term ADT, 4-6 months.\nHigh risk: long-term ADT, 18-24 (up to 36) months.\nVery high risk or node-positive: long-term ADT plus abiraterone/prednisone for 2 years."
-  },
-  {
-    "id": "pr-28",
-    "category": "Treatment Paradigms: Localized Disease",
-    "front": "Why is prostate cancer relatively resistant to conventional 2 Gy/fraction dosing, radiobiologically?",
-    "back": "Prostate cancer has a low estimated α/β ratio (~1.5-3), similar to or lower than surrounding normal tissue (~3), making it relatively insensitive to standard fractionation. This is the rationale for dose escalation and hypofractionation to exploit the therapeutic ratio."
-  },
-  {
-    "id": "pr-29",
-    "category": "Treatment Paradigms: Post-op & Metastatic",
-    "front": "How is biochemical recurrence defined post-prostatectomy vs. post-radiotherapy?",
-    "back": "Post-prostatectomy (AUA definition): PSA >0.2 ng/mL on 2 consecutive readings.\nPost-RT (Phoenix criteria): PSA rise ≥2 ng/mL above nadir."
-  },
-  {
-    "id": "pr-30",
-    "category": "Treatment Paradigms: Post-op & Metastatic",
-    "front": "Adjuvant vs. salvage RT after prostatectomy, what did RAVES, RADICALS-RT, and GETUG-AFU 17 show?",
-    "back": "Early salvage RT (given at biochemical recurrence) was non-inferior to adjuvant RT for bPFS/EFS across all three trials, and spared roughly 50% of men from ever needing postoperative RT. Salvage RT is now the preferred default approach."
-  },
-  {
-    "id": "pr-31",
-    "category": "Treatment Paradigms: Post-op & Metastatic",
-    "front": "In what setting is adjuvant (rather than salvage) RT still favored post-prostatectomy?",
-    "back": "Select cases of pathologic node-positive (pN1) disease. Retrospective data (Tilki et al.) shows an all-cause mortality benefit to adjuvant RT over salvage RT in pN1 disease, particularly with ≥4 positive nodes."
-  },
-  {
-    "id": "pr-32",
-    "category": "Treatment Paradigms: Post-op & Metastatic",
-    "front": "What did RTOG 9601 show about adding ADT to salvage RT?",
-    "back": "Adding 2 years of bicalutamide to salvage RT significantly improved 12-year overall survival (76% vs 71%), prostate cancer-specific mortality, and distant metastasis. A secondary analysis showed the OS benefit was concentrated in patients with pre-salvage PSA >0.6 ng/mL; no benefit (and increased other-cause mortality) at PSA ≤0.6."
-  },
-  {
-    "id": "pr-33",
-    "category": "Treatment Paradigms: Post-op & Metastatic",
-    "front": "What did RADICALS-HD show regarding ADT duration alongside postoperative RT?",
-    "back": "For predominantly intermediate-risk patients, adding 6 months of ADT to postop RT did not improve distant metastasis-free survival (primary endpoint). For predominantly high-risk patients, 24 months of ADT improved 10-year DMFS vs 6 months (78% vs 72%), at the cost of longer treatment-related side effects."
-  },
-  {
-    "id": "pr-34",
-    "category": "Treatment Paradigms: Post-op & Metastatic",
-    "front": "What did SPPORT (RTOG 0534) show about adding pelvic lymph node RT to salvage prostate bed RT?",
-    "back": "Adding pelvic lymph node RT plus short-term ADT to prostate bed RT improved 5-year bPFS (87% vs 71%) and distant metastasis compared to prostate bed RT alone, at the cost of more acute/late blood and bone marrow toxicity; benefit appeared greatest for pre-treatment PSA >0.35."
-  },
-  {
-    "id": "pr-35",
-    "category": "Treatment Paradigms: Post-op & Metastatic",
-    "front": "Does dose escalation help in the post-prostatectomy salvage RT setting?",
-    "back": "No, SAKK 09/10 showed no bPFS benefit to dose-escalated salvage RT (70 Gy) vs standard dose (64 Gy) to the prostate fossa, with worse late GI toxicity at the higher dose. 64 Gy is sufficient unless there is gross residual/recurrent disease (then consider boosting toward ~74 Gy)."
-  },
-  {
-    "id": "pr-36",
-    "category": "Treatment Paradigms: Post-op & Metastatic",
-    "front": "How is low-volume vs. high-volume metastatic castration-sensitive prostate cancer (mCSPC) defined (CHAARTED)?",
-    "back": "Low-volume: ≤3 bone metastases confined to vertebral bodies/pelvis, no visceral metastases (any number of pelvic nodal mets also counts as low-volume per revised STAMPEDE criteria).\nHigh-volume: ≥4 bone lesions with at least one outside the vertebral bodies/pelvis, or any visceral metastases."
-  },
-  {
-    "id": "pr-37",
-    "category": "Treatment Paradigms: Post-op & Metastatic",
-    "front": "What is the systemic therapy backbone for low-volume vs. high-volume mCSPC?",
-    "back": "Low-volume: doublet therapy (ADT + abiraterone, apalutamide, or enzalutamide), plus consideration of prostate-directed RT (OS benefit) and metastasis-directed therapy for up to 5 mets.\nHigh-volume: triplet therapy (ADT + docetaxel + abiraterone or darolutamide)."
-  },
-  {
-    "id": "pr-38",
-    "category": "Treatment Paradigms: Post-op & Metastatic",
-    "front": "What phase II data supports metastasis-directed SBRT for oligometastatic recurrent prostate cancer?",
-    "back": "STOMP and ORIOLE (pooled analysis) showed SBRT/surgery to ≤3 oligometastatic sites roughly doubled median PFS (~12 months with metastasis-directed therapy vs ~6 months with observation) and improved ADT-free survival, supporting metastasis-directed therapy for up to 5 metastases."
-  },
-  {
-    "id": "pr-39",
-    "category": "High-Yield Literature",
-    "front": "FLAME trial, one-line takeaway?",
-    "back": "A focal simultaneous integrated boost (up to 95 Gy) to the intraprostatic MRI-visible tumor, on top of 77 Gy/35 Fx, improved 5-year biochemical DFS (92% vs 85%) with no increase in late GU/GI toxicity."
-  },
-  {
-    "id": "pr-40",
-    "category": "High-Yield Literature",
-    "front": "STAMPEDE (abiraterone arm), one-line takeaway?",
-    "back": "Adding 2 years of abiraterone/prednisolone to RT + long-term ADT improved DMFS, OS, and PFS in high-risk/very high-risk localized disease (node-positive or ≥2 of: T3-4, GS≥8, PSA≥40); adding enzalutamide on top gave no further benefit."
-  },
-  {
-    "id": "pr-41",
-    "category": "High-Yield Literature",
-    "front": "STAMPEDE / STOPCAP (prostate-directed RT in mCSPC), one-line takeaway?",
-    "back": "Prostate-directed RT (55 Gy/20 Fx or 36 Gy/6 Fx) improves overall survival in men with newly diagnosed metastatic prostate cancer who have low-volume/low metastatic burden disease, but not in high-volume disease."
-  },
-  {
-    "id": "pr-42",
-    "category": "High-Yield Literature",
-    "front": "PEACE-1, one-line takeaway?",
-    "back": "In de novo mCSPC, adding prostate RT to ADT + abiraterone improved radiographic PFS in low-volume disease and improved time to castration resistance across the whole population, though no OS benefit was shown (abstract data)."
-  },
-  {
-    "id": "pr-43",
-    "category": "High-Yield Literature",
-    "front": "ALSYMPCA trial, one-line takeaway?",
-    "back": "Radium-223 (Xofigo) improved overall survival (14.9 vs 11.3 months) in mCRPC with symptomatic bone-only metastases, with minimal added toxicity."
-  },
-  {
-    "id": "pr-44",
-    "category": "High-Yield Literature",
-    "front": "VISION trial, one-line takeaway?",
-    "back": "Lutetium-177-PSMA-617 (Pluvicto) improved overall survival (15.3 vs 11.3 months) and PFS in PSMA-PET-positive mCRPC (including bone and/or visceral metastases) when added to standard of care."
-  }
+ {
+  "id": "prx-56",
+  "category": "Epidemiology & Risk Factors",
+  "front": "How is most localized prostate cancer found today?",
+  "back": "By a raised PSA in a man with no symptoms",
+  "extra": "Localized disease is usually silent. Urinary symptoms are usually BPH; bone or back pain suggests metastases."
+ },
+ {
+  "id": "prx-2",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Which group of US men has the highest prostate cancer incidence and mortality, and how does that change screening?",
+  "back": "Black men (about twice the mortality of White men). Screening discussions start earlier, at 40-45.",
+  "extra": "Same earlier start for a strong family history or a known germline mutation."
+ },
+ {
+  "id": "prx-3",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Which germline mutation is most associated with aggressive prostate cancer?",
+  "back": "BRCA2",
+  "extra": "Germline testing is recommended for high/very high-risk, node-positive, or metastatic disease. BRCA2 or ATM mutations can open the door to PARP inhibitors."
+ },
+ {
+  "id": "prx-5",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Why is PSA screening a shared decision rather than a routine test?",
+  "back": "It modestly lowers prostate cancer deaths but has no clear overall survival benefit, and it causes overdiagnosis and overtreatment of indolent cancers.",
+  "extra": "Active surveillance for low-risk cancers has reduced the harm of screening."
+ },
+ {
+  "id": "prx-4",
+  "category": "Epidemiology & Risk Factors",
+  "front": "What age group is the core population for PSA screening?",
+  "back": "Men 55-69, through shared decision-making",
+  "extra": "Don't routinely screen at 70+ or with a life expectancy under 10-15 years."
+ },
+ {
+  "id": "prx-7",
+  "category": "Epidemiology & Risk Factors",
+  "front": "How should you interpret the PSA of a man taking finasteride or dutasteride?",
+  "back": "Double it: 5-alpha reductase inhibitors lower PSA by about half.",
+  "extra": "PSA also rises for benign reasons (BPH, prostatitis, UTI, recent instrumentation), so repeat a high value before acting."
+ },
+ {
+  "id": "prx-9",
+  "category": "Anatomy & Lymphatics",
+  "front": "Which prostate zone gives rise to most cancers, and why can a DRE feel them?",
+  "back": "The peripheral zone (about 70%), which sits posteriorly against the rectum",
+  "extra": "BPH grows in the transition zone around the urethra. Anterior tumors are missed by DRE but seen on MRI."
+ },
+ {
+  "id": "prx-10",
+  "category": "Anatomy & Lymphatics",
+  "front": "Which organ is the main dose-limiting structure in prostate radiation, and what can be placed to protect it?",
+  "back": "The rectum, which sits directly behind the prostate. A hydrogel spacer can push it away.",
+  "extra": "Rectal toxicity shows up as proctitis, urgency, and bleeding."
+ },
+ {
+  "id": "prx-11",
+  "category": "Anatomy & Lymphatics",
+  "front": "Where do the neurovascular bundles run, and why do they matter?",
+  "back": "Posterolaterally (about 5 and 7 o'clock). They carry the nerves for erections.",
+  "extra": "Tumor bulging out here is a common route for extraprostatic extension (T3a). The penile bulb below the apex is the other erectile-function structure in RT plans."
+ },
+ {
+  "id": "prx-16",
+  "category": "Anatomy & Lymphatics",
+  "front": "What are the first-echelon lymph nodes for the prostate?",
+  "back": "Obturator and internal iliac nodes",
+  "extra": "Then external iliac and presacral, then common iliac, then para-aortic."
+ },
+ {
+  "id": "prx-17",
+  "category": "Anatomy & Lymphatics",
+  "front": "Which prostate cancer nodes are regional (N1), and which count as distant (M1a)?",
+  "back": "Nodes in the true pelvis (obturator, internal and external iliac, sacral) are N1. Common iliac and above, or inguinal, are M1a.",
+  "extra": "N1 M0 is stage IVA but still treated for cure."
+ },
+ {
+  "id": "prx-20",
+  "category": "Anatomy & Lymphatics",
+  "front": "What is the Roach formula, and what is it used for?",
+  "back": "(2/3 × PSA) + [(Gleason - 6) × 10]: an estimate of pelvic nodal risk that helps decide whether to treat the pelvic nodes",
+  "extra": "Estimated risk above roughly 15-20% supports pelvic nodal RT."
+ },
+ {
+  "id": "prx-57",
+  "category": "Imaging",
+  "front": "What question does prostate MRI answer, compared with PSMA PET or bone scan?",
+  "back": "MRI looks inside the gland (find, target, and locally stage the tumor). PSMA PET or CT + bone scan looks outside the gland (nodes and bone metastases).",
+  "extra": "The planning CT is then fused with MRI because the prostate edge, especially the apex, is hard to see on CT."
+ },
+ {
+  "id": "prx-21",
+  "category": "Imaging",
+  "front": "What does prostate cancer look like on T2 and ADC MRI?",
+  "back": "Dark on T2 and dark on the ADC map (restricted diffusion)",
+  "extra": "Diffusion (DWI/ADC) drives the score in the peripheral zone; T2 drives it in the transition zone."
+ },
+ {
+  "id": "prx-23",
+  "category": "Imaging",
+  "front": "Which PI-RADS scores get a targeted biopsy?",
+  "back": "PI-RADS 4 and 5",
+  "extra": "PI-RADS 3 is equivocal: biopsy if PSA density is >0.15 or other risk factors are present."
+ },
+ {
+  "id": "prx-26",
+  "category": "Imaging",
+  "front": "What is the main advantage of PSMA PET over CT plus bone scan?",
+  "back": "It is much more accurate for nodal and distant disease, and it finds recurrences at low PSA levels.",
+  "extra": "proPSMA: 92% vs 65% accuracy. Caution: the trials that set treatment standards used conventional imaging."
+ },
+ {
+  "id": "prx-25",
+  "category": "Imaging",
+  "front": "What is a bone scan \"superscan,\" and what does it mean?",
+  "back": "Diffuse, intense skeletal uptake with faint or absent kidneys. It means extensive bone metastases, even though it can look deceptively clean.",
+  "extra": "Classically prostate cancer in a man with a very high PSA."
+ },
+ {
+  "id": "prx-28",
+  "category": "Imaging",
+  "front": "Why are gold fiducial markers placed before prostate radiation?",
+  "back": "The prostate moves day to day, so fiducials let the team align to the gland itself instead of the bones, allowing tighter margins.",
+  "extra": "Patients also follow a full-bladder, empty-rectum protocol to keep bowel out and the prostate position consistent."
+ },
+ {
+  "id": "prx-15",
+  "category": "Imaging",
+  "front": "What makes a patient a poor candidate for prostate brachytherapy?",
+  "back": "A large gland (over ~60 cc, pubic arch interference), a prior TURP defect, or bad baseline urinary symptoms",
+  "extra": "Seeds near the urethra cause retention and urinary toxicity, so baseline urinary function matters."
+ },
+ {
+  "id": "prx-59",
+  "category": "Workup & Staging",
+  "front": "Of the Grade Group, TNM stage, and NCCN risk group, which one drives prostate cancer treatment?",
+  "back": "The NCCN risk group, which combines clinical T stage, Grade Group, and PSA",
+  "extra": "The AJCC stage group appears in notes but is the least useful day to day."
+ },
+ {
+  "id": "prx-32",
+  "category": "Workup & Staging",
+  "front": "How is a Gleason score built?",
+  "back": "The most common (primary) pattern plus the next most common (secondary) pattern, each graded 3-5 by how well the glands are formed",
+  "extra": "3 = well-formed glands, 4 = fused or poorly formed (including cribriform), 5 = no glands. So scores run from 6 to 10."
+ },
+ {
+  "id": "prx-30",
+  "category": "Workup & Staging",
+  "front": "What Grade Groups are Gleason 3+3, 3+4, and 4+3?",
+  "back": "3+3 = GG1, 3+4 = GG2, 4+3 = GG3",
+  "extra": "For a 7, the first (primary) number decides. GG3 makes intermediate risk unfavorable."
+ },
+ {
+  "id": "prx-31",
+  "category": "Workup & Staging",
+  "front": "What Grade Groups are Gleason 8 and Gleason 9-10?",
+  "back": "Gleason 8 = GG4; Gleason 9-10 = GG5",
+  "extra": "Both are high-risk features."
+ },
+ {
+  "id": "prx-33",
+  "category": "Workup & Staging",
+  "front": "What sets clinical T stage in prostate cancer, and what does cT1c mean?",
+  "back": "The DRE. cT1c is cancer found on biopsy for a raised PSA that can't be felt, even if MRI shows a visible lesion.",
+  "extra": "T1c is the most common T stage today. Palpable confined tumors are T2."
+ },
+ {
+  "id": "prx-12",
+  "category": "Workup & Staging",
+  "front": "What are T3a and T3b in prostate cancer?",
+  "back": "T3a = extraprostatic extension; T3b = seminal vesicle invasion",
+  "extra": "T3a is a high-risk feature; T3b alone makes it very high risk. The seminal vesicles attach at the base."
+ },
+ {
+  "id": "prx-35",
+  "category": "Workup & Staging",
+  "front": "What are the NCCN intermediate risk factors?",
+  "back": "T2b-T2c, Grade Group 2-3, or PSA 10-20",
+  "extra": "Count them: the number of intermediate factors decides favorable vs unfavorable."
+ },
+ {
+  "id": "prx-60",
+  "category": "Workup & Staging",
+  "front": "What separates favorable from unfavorable intermediate-risk prostate cancer?",
+  "back": "Favorable has exactly one intermediate risk factor, GG1-2, and <50% of cores positive. Unfavorable has 2-3 factors, GG3, or ≥50% of cores positive.",
+  "extra": "The distinction decides whether ADT is added to radiation."
+ },
+ {
+  "id": "prx-36",
+  "category": "Workup & Staging",
+  "front": "What are the NCCN high-risk features, and what makes a patient very high risk instead?",
+  "back": "T3a, Grade Group 4-5, or PSA >20. One feature = high risk; two or more (or T3b-T4, or primary pattern 5) = very high risk.",
+  "extra": "More than 4 cores with GG4-5 is also very high risk."
+ },
+ {
+  "id": "prx-38",
+  "category": "Workup & Staging",
+  "front": "Which prostate cancer patients need staging imaging (PSMA PET, or CT/MRI + bone scan)?",
+  "back": "Unfavorable intermediate risk and higher",
+  "extra": "Very low, low, and favorable intermediate risk have a tiny chance of metastases, so scans would mostly find false positives."
+ },
+ {
+  "id": "prx-41",
+  "category": "Treatment Paradigms",
+  "front": "What is the preferred management of very low and low-risk prostate cancer?",
+  "back": "Active surveillance",
+  "extra": "PSA, DRE, repeat MRI, and repeat biopsy, with curative treatment if it upgrades. About half are eventually treated, with no survival cost."
+ },
+ {
+  "id": "prx-61",
+  "category": "Treatment Paradigms",
+  "front": "How is active surveillance different from watchful waiting?",
+  "back": "Active surveillance monitors closely with a plan to treat for cure if the cancer progresses. Watchful waiting is symptom-driven, for men with short life expectancy, with no curative plan.",
+  "extra": ""
+ },
+ {
+  "id": "prx-62",
+  "category": "Treatment Paradigms",
+  "front": "What did ProtecT show about surgery, radiation, and active monitoring for localized prostate cancer?",
+  "back": "The same prostate cancer survival (~97% at 15 years); the options differ in side effects, not survival.",
+  "extra": "Monitoring had more progression. Surgery causes more incontinence and erectile dysfunction early; RT causes more bowel effects."
+ },
+ {
+  "id": "prx-63",
+  "category": "Treatment Paradigms",
+  "front": "How is favorable intermediate-risk prostate cancer treated?",
+  "back": "One treatment with no ADT: radiation alone (EBRT, SBRT, or brachytherapy) or prostatectomy",
+  "extra": "Select men with low-volume GG2 disease can be on active surveillance."
+ },
+ {
+  "id": "prx-44",
+  "category": "Treatment Paradigms",
+  "front": "What is added to radiation for unfavorable intermediate-risk prostate cancer?",
+  "back": "4-6 months of ADT",
+  "extra": "RTOG 9408. A brachytherapy boost is an alternative way to intensify (ASCENDE-RT: better PSA control, more urinary toxicity, same survival)."
+ },
+ {
+  "id": "prx-45",
+  "category": "Treatment Paradigms",
+  "front": "What is the radiation-based treatment for high and very high-risk node-negative prostate cancer?",
+  "back": "RT to the prostate and seminal vesicles, usually with the pelvic nodes, plus long-term ADT (18-36 months)",
+  "extra": "POP-RT supports pelvic nodal RT. Very high risk adds abiraterone for 2 years (STAMPEDE)."
+ },
+ {
+  "id": "prx-48",
+  "category": "Treatment Paradigms",
+  "front": "How is node-positive (cN1, M0) prostate cancer treated with radiation?",
+  "back": "RT to the prostate and pelvic nodes with a boost to the involved nodes, plus 2-3 years of ADT and abiraterone",
+  "extra": "Still treated for cure (stage IVA)."
+ },
+ {
+  "id": "prx-42",
+  "category": "Treatment Paradigms",
+  "front": "Why do short, hypofractionated courses work well for prostate cancer?",
+  "back": "Prostate cancer has a low α/β ratio (~1.5), lower than the rectum (~3), so bigger fractions hurt the tumor more than the normal tissue.",
+  "extra": "CHHiP and PACE-B showed shorter courses were noninferior."
+ },
+ {
+  "id": "prx-43",
+  "category": "Treatment Paradigms",
+  "front": "What are the standard moderately hypofractionated and SBRT regimens for the prostate?",
+  "back": "Moderate: 60 Gy in 20 fractions (or 70 Gy in 28). SBRT: 36.25 Gy in 5 fractions.",
+  "extra": "Conventional dose-escalated courses (78-79.2 Gy in 39-44 fractions) are now used less."
+ },
+ {
+  "id": "prx-64",
+  "category": "Treatment Paradigms",
+  "front": "What are the main side effects of ADT?",
+  "back": "Hot flashes, fatigue, low libido/erectile dysfunction, bone loss, weight gain, and metabolic and cardiovascular risk",
+  "extra": "It usually starts 2-3 months before RT to shrink the gland. GnRH agonists cause a testosterone flare (block with an antiandrogen first); antagonists don't."
+ },
+ {
+  "id": "prx-50",
+  "category": "Treatment Paradigms",
+  "front": "How is biochemical recurrence defined after prostatectomy vs after radiation?",
+  "back": "After surgery: PSA >0.2 (confirmed). After RT: PSA nadir + 2 (Phoenix).",
+  "extra": "After surgery the PSA should be undetectable; after RT it falls slowly and never reaches zero."
+ },
+ {
+  "id": "prx-49",
+  "category": "Treatment Paradigms",
+  "front": "After prostatectomy with adverse pathology but an undetectable PSA, is adjuvant RT or early salvage RT preferred?",
+  "back": "Observe and give early salvage RT if the PSA rises.",
+  "extra": "RAVES, RADICALS-RT, GETUG-AFU 17: routine adjuvant RT added nothing, and about half the men never needed RT. Exception: pN1 or very adverse pathology."
+ },
+ {
+  "id": "prx-51",
+  "category": "Treatment Paradigms",
+  "front": "What does salvage radiation after prostatectomy treat, and what is often added?",
+  "back": "The prostate bed (about 64-66 Gy), often with ADT and, for higher risk, the pelvic nodes",
+  "extra": "Treat early, at a low PSA, after a PSMA PET. RTOG 9601 (ADT) and SPPORT (pelvic nodes + ADT)."
+ },
+ {
+  "id": "prx-52",
+  "category": "Treatment Paradigms",
+  "front": "Which metastatic prostate cancer patients benefit from radiation to the prostate?",
+  "back": "Low-volume, hormone-sensitive metastatic disease, alongside systemic therapy",
+  "extra": "STAMPEDE arm H. High volume (CHAARTED) = ≥4 bone mets with ≥1 outside the spine/pelvis, or any visceral met."
+ },
+ {
+  "id": "prx-66",
+  "category": "Treatment Paradigms",
+  "front": "What radiation course is enough for a painful bone metastasis?",
+  "back": "A single 8 Gy fraction relieves pain as well as longer courses.",
+  "extra": "It has a slightly higher retreatment rate. 20 Gy/5 or 30 Gy/10 are also used."
+ },
+ {
+  "id": "prx-67",
+  "category": "Treatment Paradigms",
+  "front": "What are the typical acute side effects during prostate radiation?",
+  "back": "Urinary frequency, urgency, and weak stream, plus loose stools and fatigue",
+  "extra": "They peak near the end of treatment and are managed with tamsulosin and antidiarrheals."
+ },
+ {
+  "id": "prx-68",
+  "category": "Treatment Paradigms",
+  "front": "What are the main late side effects of prostate radiation?",
+  "back": "Rectal bleeding, urethral stricture or hematuria, and erectile dysfunction",
+  "extra": "Driven by rectal, bladder/urethral, and penile bulb dose. There is also a small risk of second bladder or rectal cancers."
+ }
 ]
