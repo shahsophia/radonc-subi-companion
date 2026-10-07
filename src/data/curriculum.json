@@ -134,20 +134,22 @@
   },
   "breast": {
    "title": "Breast Cancer",
-   "summary": "DCIS through locally advanced disease: receptor subtypes, regional nodes, and who gets what radiation after lumpectomy or mastectomy.",
+   "summary": "DCIS through locally advanced disease: receptor biology, regional nodes, the planning CT, staging before and after neoadjuvant therapy, and who gets what radiation after lumpectomy or mastectomy.",
    "topics": [
     "Receptor Subtypes",
     "Regional Nodes",
-    "DCIS",
+    "Planning CT and DIBH",
+    "Neoadjuvant Staging",
     "Breast Conservation",
     "PMRT"
    ],
    "objectives": [
-    "Classify breast cancer by hormone receptor and HER2 status and by histologic subtype",
-    "Identify the regions of the breast and the regional lymph node levels",
-    "Know what mammography, ultrasound, MRI, and CT simulation each contribute",
-    "Stage with the AJCC 8th edition anatomic and prognostic stage",
-    "Decide who gets what radiation: DCIS, after lumpectomy, node-positive, locally advanced, and after mastectomy",
+    "Classify breast cancer as HR+/HER2−, HER2+, or triple-negative and by histology",
+    "Map the regional lymph nodes to the radiation volumes that cover them",
+    "Know what mammography, ultrasound, MRI, and the planning CT each contribute",
+    "Stage with AJCC 8th edition, separating anatomic from prognostic stage and clinical from post-neoadjuvant stage",
+    "Decide who gets what radiation: DCIS, after lumpectomy, node-positive, after mastectomy, and after neoadjuvant therapy",
+    "Connect radiation targets to organs at risk and toxicity",
     "Connect each treatment paradigm to the trials behind it"
    ],
    "guideline": "NCCN Breast Cancer Guidelines",
@@ -165,6 +167,7 @@
     "RTOG 9804",
     "START B",
     "FAST-Forward",
+    "EORTC 22881",
     "CALGB 9343",
     "PRIME II",
     "MA.20",
@@ -174,81 +177,86 @@
    ],
    "modules": {
     "Epidemiology & Risk Factors": {
-     "lede": "Classify breast cancer by receptor status and histology, and learn the risk factors and hereditary syndromes that change management.",
+     "lede": "Answer the first question: what kind of breast cancer is this? Receptor groups, histology, risk factors, and the hereditary syndromes that change radiation decisions.",
      "essentials": [
-      "ER/PR and HER2 subtypes",
-      "Ductal versus lobular",
-      "Estrogen exposure and other risk factors",
-      "BRCA and Li-Fraumeni"
+      "HR+/HER2−, HER2+, and triple-negative",
+      "Ductal versus lobular, DCIS versus LCIS",
+      "The five risk factor groups",
+      "BRCA, TP53, and ATM"
      ],
      "objectives": [
-      "Classify breast cancer by hormone receptor and HER2 status",
-      "Explain how subtype affects prognosis and response to neoadjuvant chemo",
-      "Distinguish the main histologic subtypes",
-      "Identify the major risk factors",
-      "Recognize hereditary syndromes that change radiation decisions"
+      "Classify breast cancer into the three practical receptor groups",
+      "Explain why aggressive subtypes respond best to neoadjuvant therapy",
+      "Distinguish IDC from ILC and DCIS from LCIS",
+      "Identify the high-value risk factors",
+      "Know which germline results change a radiation recommendation and which don't"
      ]
     },
     "Anatomy & Lymphatics": {
-     "lede": "Learn the regions of the breast and the regional lymph nodes, including the axillary levels and the nodes that define N3.",
+     "lede": "Learn where breast cancer can spread, from the breast and chest wall to the axilla, supraclavicular fossa, and internal mammary chain, and which radiation volume covers each.",
      "essentials": [
       "Quadrants and internal mammary drainage",
       "Axillary levels I to III",
       "N3a, N3b, and N3c",
-      "What counts as T4"
+      "Which nodal basin each radiation volume covers"
      ],
      "objectives": [
       "Identify the regions of the breast and the most common tumor location",
       "Define axillary levels I to III by the pectoralis minor",
       "Map infraclavicular, internal mammary, and supraclavicular nodes to N stage",
-      "Know what does and doesn't count as T4"
+      "Match each nodal basin to the radiation volume that treats it and the organ at risk it brings"
      ]
     },
     "Imaging": {
-     "lede": "Know what mammography, ultrasound, MRI, CT simulation, and PET/CT each contribute, and when each one is used.",
+     "lede": "Know where the cancer is and what you need to plan treatment: mammography, ultrasound, MRI, systemic staging, and the planning CT.",
      "essentials": [
       "Suspicious mammogram findings and BI-RADS",
-      "Ultrasound for dense breasts",
+      "Ultrasound for the mass and the axilla",
       "When MRI is used",
-      "PET/CT for stage III only"
+      "The planning CT and breath hold"
      ],
      "objectives": [
       "Recognize suspicious mammographic findings and what BI-RADS 4 or 5 means",
       "Explain when ultrasound and MRI are used",
-      "Find the lumpectomy cavity and assess heart position on the planning CT",
-      "Know when systemic staging with PET/CT is indicated"
+      "Walk through a planning CT: cavity, breast or chest wall, nodes, heart, lung, and setup",
+      "Explain how deep inspiration breath hold lowers heart dose",
+      "Know when systemic staging is indicated"
      ]
     },
     "Workup & Staging": {
-     "lede": "Cover the core workup and the AJCC 8th edition T, N, and M framework, with the full staging tables at the end.",
+     "lede": "Work out what the patient actually has: biopsy and receptors, clinical TNM, systemic staging when needed, the post-neoadjuvant stage, and anatomic versus prognostic stage.",
      "essentials": [
       "The core workup",
-      "Who needs body imaging",
-      "T stage cutoffs and T4 subtypes",
-      "Clinical N stage"
+      "Who needs systemic staging",
+      "T and N stage",
+      "cT/cN versus ypT/ypN",
+      "Anatomic versus prognostic stage"
      ],
      "objectives": [
       "List the core workup for a new breast cancer",
-      "Know when body imaging is indicated",
-      "Assign T stage, including the T4 subtypes",
-      "Assign clinical N stage",
-      "Recognize what is stage IIIC versus M1"
+      "Know when systemic staging imaging is indicated",
+      "Assign T and clinical N stage",
+      "Explain why the pre-treatment clinical stage still matters after neoadjuvant therapy",
+      "Explain why radiation decisions aren't made from prognostic stage alone"
      ]
     },
     "Treatment Paradigms": {
-     "lede": "Decide who gets what radiation: DCIS, node-negative and node-positive disease after lumpectomy, locally advanced disease, and after mastectomy.",
+     "lede": "Decide whether a patient needs radiation, where, and why: DCIS, after lumpectomy, node-positive, after mastectomy, and after neoadjuvant therapy, then the plan and its toxicity.",
      "essentials": [
-      "Breast conservation equals mastectomy",
-      "Whole-breast RT and boost indications",
-      "Regional nodal RT and Z0011",
-      "PMRT indications"
+      "What operation, what residual risk",
+      "Whole breast, boost, and fractionation",
+      "Z0011 versus regional nodal RT",
+      "PMRT indications",
+      "Neoadjuvant therapy and B-51"
      ],
      "objectives": [
       "Explain the roles of surgery and systemic therapy",
-      "Describe radiation for DCIS",
-      "Choose whole-breast RT fractionation and boost indications",
-      "Decide when to add regional nodal RT",
-      "State the indications for postmastectomy radiation"
+      "Describe why RT is given for DCIS and when it can be omitted",
+      "Choose whole-breast fractionation and explain why a boost is given",
+      "Separate the axillary surgery question (Z0011) from the regional nodal RT question",
+      "State the indications for postmastectomy radiation",
+      "Plan around both the initial stage and the response after neoadjuvant therapy",
+      "Connect targets to organs at risk and toxicity"
      ]
     }
    }

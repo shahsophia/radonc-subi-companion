@@ -299,3 +299,14 @@ nodal risk by site, imaging by question, a seven-step workup, four treatment
 questions, and a new toxicity section). Two cards were added for concepts the
 reading now teaches: hn-59 (involved vs elective nodes) and hn-60 (pharyngeal
 constrictors and dysphagia). Existing card ids were kept.
+
+**Breast reading revision (October 7, 2026), 330 → 332 cards.** The breast reading
+was reorganized around the radiation decision (three practical receptor groups,
+radiation volumes by nodal basin, an expanded planning CT with DIBH, clinical vs
+post-neoadjuvant stage, anatomic vs prognostic stage, and treatment organized by
+operation and residual risk with new planning and toxicity sections). br-5 now
+teaches the three receptor groups instead of Luminal A/Ki-67; br-4 adds that BRCA
+alone does not contraindicate RT and that ATM risk is the homozygous state; br-12
+and br-42 dropped rigid stage rules; br-32 moved to Epidemiology with the DCIS/LCIS
+material. Added br-57 (Z0011 is not an RNI decision) and br-58 (anatomic vs
+prognostic stage). Existing card ids were kept.

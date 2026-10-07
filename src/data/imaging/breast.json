@@ -147,14 +147,14 @@
       "label": "Contralateral Breast",
       "x": 75,
       "y": 48,
-      "blurb": "MRI finds a hidden cancer in the other breast in about 5% of patients."
+      "blurb": "MRI can find a hidden cancer in the other breast, so always look at both sides."
      },
      {
       "id": "mri-satellite",
       "label": "Rest of the Same Breast",
       "x": 18,
       "y": 50,
-      "blurb": "Always scan the rest of the involved breast: MRI finds additional disease in the same breast in about 15–25% of cases, which can change a lumpectomy to a mastectomy."
+      "blurb": "Always scan the rest of the involved breast: extra disease found here can change a lumpectomy to a mastectomy."
      },
      {
       "id": "mri-chest",

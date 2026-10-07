@@ -9,9 +9,9 @@
  {
   "id": "br-5",
   "category": "Epidemiology & Risk Factors",
-  "front": "Which breast cancer subtype has the best prognosis, and which has the worst?",
-  "back": "Best: Luminal A (HR+, HER2-, low Ki-67). Worst: basal-like / triple-negative.",
-  "extra": "Luminal A is slow-growing and responds to endocrine therapy; triple-negative has no endocrine or HER2 target."
+  "front": "What are the three practical breast cancer groups by receptor status, and what is the systemic backbone of each?",
+  "back": "HR+/HER2-: endocrine therapy. HER2+: HER2-directed therapy (trastuzumab ± pertuzumab) with chemo. Triple-negative: chemo, often with immunotherapy.",
+  "extra": "HR+/HER2- is the most common and often relatively indolent; triple-negative is often more aggressive and more common in younger patients and BRCA1 carriers. The luminal/basal-like names map roughly onto these groups."
  },
  {
   "id": "br-28",
@@ -23,9 +23,9 @@
  {
   "id": "br-4",
   "category": "Epidemiology & Risk Factors",
-  "front": "Which two hereditary syndromes should make a radiation oncologist pause before treating, and why?",
-  "back": "Li-Fraumeni (TP53), because of radiation-induced second cancers, and ataxia-telangiectasia (ATM), because of severe radiosensitivity",
-  "extra": "In Li-Fraumeni, mastectomy is often chosen so radiation can be avoided."
+  "front": "Which germline findings should make a radiation oncologist pause before treating, and which one should not?",
+  "back": "Pause: Li-Fraumeni (TP53), because of radiation-induced second cancers, and homozygous ATM (ataxia-telangiectasia), because of severe radiosensitivity. BRCA1/2 alone does not contraindicate RT.",
+  "extra": "In Li-Fraumeni, mastectomy is often chosen so radiation can be avoided when a reasonable alternative exists. Heterozygous ATM carriers are not automatically unsafe to treat. A BRCA result feeds into the lumpectomy vs mastectomy discussion with genetic counseling."
  },
  {
   "id": "br-46",
@@ -33,6 +33,13 @@
   "front": "What common thread links most breast cancer risk factors?",
   "back": "More lifetime estrogen exposure (early menarche, late menopause, nulliparity or late first birth, HRT, postmenopausal obesity)",
   "extra": "Other risks: prior DCIS, LCIS, or atypia; dense breasts; family history; and chest radiation at a young age (e.g., Hodgkin mantle field)."
+ },
+ {
+  "id": "br-32",
+  "category": "Epidemiology & Risk Factors",
+  "front": "How do DCIS and LCIS differ in what they mean and how they are treated?",
+  "back": "DCIS is a true precursor and is treated (surgery ± RT). LCIS is mainly a risk marker and is not treated with RT.",
+  "extra": "LCIS is no longer staged as Tis. Both ductal and lobular cancers start in the terminal duct lobular unit."
  },
  {
   "id": "br-10",
@@ -61,13 +68,6 @@
   "front": "What protein is lost in invasive lobular carcinoma, and why is ILC hard to see on a mammogram?",
   "back": "E-cadherin. Without it, cells spread in single-file lines instead of forming a mass, so mammography underestimates ILC and MRI is often used to define its extent.",
   "extra": "ILC is more often multicentric or bilateral, almost always ER+/HER2-, lower grade, and less FDG-avid."
- },
- {
-  "id": "br-32",
-  "category": "Anatomy & Lymphatics",
-  "front": "How do DCIS and LCIS differ in what they mean and how they are treated?",
-  "back": "DCIS is a true precursor and is treated (surgery ± RT). LCIS is mainly a risk marker and is not treated with RT.",
-  "extra": "LCIS is no longer staged as Tis. Both ductal and lobular cancers start in the terminal duct lobular unit."
  },
  {
   "id": "br-17",
@@ -108,8 +108,8 @@
   "id": "br-12",
   "category": "Workup & Staging",
   "front": "Which breast cancer patients need systemic staging imaging (CT chest/abdomen/pelvis + bone scan, or PET/CT)?",
-  "back": "Stage III disease (T3N1, T4, or N2-3), or anyone with symptoms or labs suggesting metastasis",
-  "extra": "Echocardiogram before anthracyclines or trastuzumab; brain MRI only for symptoms. In early-stage disease, body imaging finds more false positives than metastases. When used, PET is good at finding hidden internal mammary, infraclavicular, and supraclavicular nodes."
+  "back": "Higher-risk or locally advanced disease (e.g., clinical stage III: T4, N2-3, inflammatory), or anyone whose symptoms, exam, or labs suggest metastasis",
+  "extra": "Often considered for some stage II patients going to neoadjuvant therapy; it is not a strict stage-number rule. Brain MRI only for symptoms. In asymptomatic early-stage disease, body imaging finds more false positives than metastases. PET is good at finding hidden internal mammary, infraclavicular, and supraclavicular nodes."
  },
  {
   "id": "br-13",
@@ -152,6 +152,13 @@
   "front": "Which pathologic axillary node counts separate pN1, pN2, and pN3?",
   "back": "1-3 nodes = pN1, 4-9 = pN2, 10 or more = pN3",
   "extra": "These are the counts that drive post-mastectomy radiation decisions."
+ },
+ {
+  "id": "br-58",
+  "category": "Workup & Staging",
+  "front": "What is the difference between anatomic and prognostic stage in breast cancer, and which one do radiation fields follow?",
+  "back": "Anatomic = T + N + M (where the cancer is). Prognostic = anatomic plus grade, ER, PR, HER2 ± genomic score (how biology changes outlook). Fields follow the anatomic extent, not prognostic stage alone.",
+  "extra": "Favorable biology can lower the prognostic stage and triple-negative disease often raises it, but a node-positive patient downstaged by biology still has node-positive disease for RT planning."
  },
  {
   "id": "br-51",
@@ -219,9 +226,9 @@
  {
   "id": "br-42",
   "category": "Treatment Paradigms",
-  "front": "After neoadjuvant chemo, which stage drives the radiation decision?",
-  "back": "The worse of the pre-chemo clinical stage and the post-surgery pathologic stage, so RT is given even after a complete response.",
-  "extra": "Example: a cN3c patient with a pCR still gets comprehensive nodal RT including the supraclavicular fossa. Always record the pre-chemo cT and cN."
+  "front": "After neoadjuvant therapy, which stage do you use for the radiation decision?",
+  "back": "Both: the pre-treatment clinical stage (cT/cN) and the post-surgery response (ypT/ypN), plus the biology. A complete response doesn't erase the original stage.",
+  "extra": "Locally advanced disease (e.g., cN3c) still gets comprehensive nodal RT after a pCR. For cN1 that converts to ypN0, NSABP B-51 found no significant benefit from adding regional nodal RT, so omission can be discussed. Always record the pre-treatment cT and cN."
  },
  {
   "id": "br-25",
@@ -264,5 +271,12 @@
   "front": "What are the main organs at risk in breast and regional nodal radiation?",
   "back": "The heart (especially the LAD on the left) and the ipsilateral lung; with nodal fields, also the brachial plexus.",
   "extra": "Medial tumors and internal mammary coverage raise heart and lung dose. Late effects: cardiac events, pneumonitis, plexopathy (rare), and lymphedema when the axilla is treated after dissection."
+ },
+ {
+  "id": "br-57",
+  "category": "Treatment Paradigms",
+  "front": "Does meeting Z0011 criteria (1-2 positive sentinel nodes, no axillary dissection) mean the patient gets no regional nodal RT?",
+  "back": "No. Z0011 answers the surgical question (skip ALND). Whether to treat the regional nodes is a separate decision based on nodal burden, biology, location, and other risk features.",
+  "extra": "Z0011 patients were treated with whole-breast tangents, often high tangents. MA.20 and EORTC 22922 are the trials behind adding regional nodal RT."
  }
 ]

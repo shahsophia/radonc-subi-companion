@@ -1945,8 +1945,8 @@ const QUIZ_SETS = {
       a: "<strong>BRCA1.</strong> BRCA1 carriers disproportionately develop triple-negative (basal-like) cancer. She should be referred for genetic testing, which can also affect surgery and radiation choices.",
     },
     {
-      q: "Which molecular subtype has the best prognosis, and what is its receptor profile?",
-      a: "<strong>Luminal A</strong>: ER/PR positive, HER2 negative, low Ki-67 (&lt;14%). About 70% of breast cancers.",
+      q: "A tumor is ER 90%, PR 70%, HER2 negative. Which practical group is it, and what is the backbone of its systemic therapy?",
+      a: "<strong>HR+/HER2&minus;</strong>, the most common group. <strong>Endocrine therapy</strong> is central (tamoxifen or an aromatase inhibitor), with chemo added only for higher-risk disease, often guided by a genomic score.",
     },
     {
       q: "A patient treated with mantle-field radiation for Hodgkin lymphoma at age 16 asks about her breast cancer risk. What should you tell her?",
@@ -1959,8 +1959,8 @@ const QUIZ_SETS = {
   ],
   "breast-anatomy": [
     {
-      q: "A pathologist describes a tumor as E-cadherin negative with cells in single-file lines. Which histology is this, and why does it matter for imaging?",
-      a: "<strong>Invasive lobular carcinoma.</strong> ILC often doesn't form a mass and can be <strong>missed on mammogram</strong>; it's more often multicentric or bilateral, so <strong>MRI</strong> is commonly used to define extent.",
+      q: "A patient with 1 positive sentinel node skips axillary dissection (Z0011). How can the whole-breast fields be adjusted to cover more of the low axilla?",
+      a: "<strong>High tangents</strong>: the top edge of the tangent fields is raised to cover more of <strong>levels I&ndash;II</strong>. Adding level III, supraclavicular, or internal mammary fields would be regional nodal irradiation, a separate decision.",
     },
     {
       q: "A node lies directly behind the pectoralis minor. Which axillary level is it?",
@@ -1981,16 +1981,16 @@ const QUIZ_SETS = {
       a: "<strong>High-grade (comedo) DCIS.</strong> Linear/casting calcifications follow a duct filled with necrotic tumor. Next step: diagnostic views and <strong>stereotactic core biopsy</strong>.",
     },
     {
-      q: "On ultrasound, a mass is taller than wide with posterior shadowing. Benign or suspicious?",
-      a: "<strong>Suspicious.</strong> Taller-than-wide orientation, irregular margins, and posterior acoustic shadowing favor cancer. A benign cyst is wider than tall with posterior enhancement.",
+      q: "A suspicious axillary node is found on ultrasound in a patient who will get neoadjuvant chemo. What should happen to it before chemo starts?",
+      a: "<strong>Ultrasound-guided biopsy and a clip.</strong> If chemo works, the node may no longer be visible, and the clip lets the surgeon find and remove that exact node later.",
     },
     {
-      q: "Which breast MRI kinetic curve is most suspicious for malignancy?",
-      a: "<strong>Type III (washout)</strong>: fast uptake, then a drop. Type II (plateau) is intermediate; Type I (persistent rise) favors benign.",
+      q: "Why does deep inspiration breath hold lower heart dose for a left-sided breast plan?",
+      a: "A deep breath <strong>expands the lungs</strong> and pushes the <strong>heart down and away from the chest wall</strong>, out of the tangent fields. How much it helps depends on the anatomy on the simulation CT.",
     },
     {
       q: "A 55-year-old has a 1.2 cm ER+ cancer and no palpable nodes. Should she get a PET/CT?",
-      a: "<strong>No.</strong> Systemic staging imaging isn't recommended for asymptomatic stage I&ndash;II disease; it finds more false positives than metastases. PET/CT is for <strong>stage III</strong> (and select stage IIB).",
+      a: "<strong>No.</strong> Systemic staging imaging isn't recommended for asymptomatic early-stage disease; it finds more false positives than metastases. It's for <strong>higher-risk or locally advanced</strong> disease, or symptoms or findings that suggest metastases.",
     },
   ],
   "breast-staging": [
@@ -2010,6 +2010,10 @@ const QUIZ_SETS = {
       q: "A patient has a positive contralateral axillary node. What does that do to the stage?",
       a: "It's <strong>M1 (Stage IV)</strong>. Contralateral nodes count as distant disease, unlike <strong>ipsilateral</strong> supraclavicular nodes, which are cN3c (Stage IIIC).",
     },
+    {
+      q: "A cT2 cN1 HER2+ cancer has a complete response to neoadjuvant therapy (ypT0 ypN0). Which stage do you use when planning radiation?",
+      a: "<strong>Both.</strong> The <strong>initial cT2 cN1</strong> still matters, and the <strong>ypT0 ypN0</strong> response adds information. A complete response doesn't erase the original stage, which is why the pre-treatment cT and cN must always be recorded.",
+    },
   ],
   "breast-treatment": [
     {
@@ -2027,6 +2031,10 @@ const QUIZ_SETS = {
     {
       q: "Why isn't chemotherapy given at the same time as breast radiation?",
       a: "Concurrent cytotoxic chemo adds <strong>toxicity</strong> (skin, lung, blood counts) without a clear benefit, so RT follows chemo. <strong>Trastuzumab</strong> and <strong>endocrine therapy</strong> can be given during RT.",
+    },
+    {
+      q: "A patient met Z0011 criteria and skipped axillary dissection. Does that mean she shouldn't get regional nodal RT?",
+      a: "<strong>No.</strong> Z0011 answers a <strong>surgical</strong> question (can she avoid ALND?). Whether to treat the regional nodes is a <strong>separate</strong> decision based on nodal burden, biology, tumor location, and other risk features.",
     },
   ],
   "hn-epi": [
