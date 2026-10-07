@@ -1,0 +1,390 @@
+{
+ "anat-th-lung": {
+  "intro": "<p>Start with the lung itself: the <strong>lobes and fissures</strong>, the <strong>central vs peripheral</strong> zones that decide SBRT fractionation, and the <strong>hilum</strong>. Explore each view, then switch to Quiz mode.</p>",
+  "plates": [
+   {
+    "id": "th-lobes",
+    "title": "Lobes & Fissures (Frontal)",
+    "style": "schematic",
+    "caption": "Frontal view of both lungs (patient's right on your left). The lower lobes sit mostly behind the upper lobes, so from the front you see them only at the bases and edges.",
+    "hotspots": [
+     {
+      "id": "rul",
+      "label": "Right Upper Lobe (RUL)",
+      "x": 33.0,
+      "y": 39.4,
+      "blurb": "Most common lobe for lung cancer (upper lobes see more smoke and carcinogen). Drains to 4R and 2R first."
+     },
+     {
+      "id": "rml",
+      "label": "Right Middle Lobe (RML)",
+      "x": 36.7,
+      "y": 74.9,
+      "blurb": "Only on the right, between the horizontal and oblique fissures. Sits against the right heart border (silhouette sign on CXR)."
+     },
+     {
+      "id": "rll",
+      "label": "Right Lower Lobe (RLL)",
+      "x": 35.2,
+      "y": 90.6,
+      "blurb": "Lower lobes move the most with breathing, so they need careful 4D-CT motion assessment. Drain to 7, 8, and 9."
+     },
+     {
+      "id": "lul",
+      "label": "Left Upper Lobe (LUL)",
+      "x": 67.7,
+      "y": 32.5,
+      "blurb": "Drains preferentially to the AP window (station 5) and para-aortic (station 6) nodes."
+     },
+     {
+      "id": "lingula",
+      "label": "Lingula",
+      "x": 73.7,
+      "y": 76.8,
+      "blurb": "Part of the left upper lobe; the left lung's equivalent of the right middle lobe. Borders the left heart."
+     },
+     {
+      "id": "lll",
+      "label": "Left Lower Lobe (LLL)",
+      "x": 60.3,
+      "y": 88.7,
+      "blurb": "Behind the heart on a frontal film. Lower lobe tumors (both sides) drain to the subcarinal node (7) and can cross to the right side."
+     },
+     {
+      "id": "horiz",
+      "label": "Horizontal (Minor) Fissure",
+      "x": 33.0,
+      "y": 64.7,
+      "blurb": "Right lung only, at about the 4th rib anteriorly. Separates the RUL from the RML."
+     },
+     {
+      "id": "r-oblique",
+      "label": "Right Oblique (Major) Fissure",
+      "x": 36.7,
+      "y": 80.6,
+      "blurb": "Separates the RLL from the RUL and RML. A tumor crossing a fissure into another lobe can change the surgery (bilobectomy or pneumonectomy)."
+     },
+     {
+      "id": "l-oblique",
+      "label": "Left Oblique (Major) Fissure",
+      "x": 66.3,
+      "y": 76.8,
+      "blurb": "The only fissure on the left, separating the LUL (with lingula) from the LLL."
+     },
+     {
+      "id": "apex",
+      "label": "Lung Apex",
+      "x": 38.2,
+      "y": 20.7,
+      "blurb": "Rises above the clavicle into the base of the neck. Superior sulcus (Pancoast) tumors start here."
+     },
+     {
+      "id": "cp-angle",
+      "label": "Costophrenic Angle",
+      "x": 16.4,
+      "y": 94.6,
+      "blurb": "Blunting on CXR or CT suggests a pleural effusion. A malignant effusion is M1a."
+     }
+    ],
+    "image": "images/thoracic/th-lobes.jpg"
+   },
+   {
+    "id": "th-central",
+    "title": "Central vs Peripheral (SBRT Zones)",
+    "style": "schematic",
+    "caption": "Frontal drawing of the trachea, main and lobar bronchi, pleura, chest wall, and diaphragm. The proximal bronchial tree is the airway from the trachea to the lobar bronchi; the 2 cm zone around it defines a central tumor.",
+    "hotspots": [
+     {
+      "id": "trachea",
+      "label": "Trachea",
+      "x": 49.5,
+      "y": 15.9,
+      "blurb": "Part of the proximal bronchial tree. Tumor abutting it is ultracentral. Tracheal invasion = T4."
+     },
+     {
+      "id": "carina",
+      "label": "Carina",
+      "x": 49.5,
+      "y": 36.6,
+      "blurb": "Tracheal bifurcation at the sternal angle (T4–T5). Carinal invasion = T4."
+     },
+     {
+      "id": "rmb",
+      "label": "Right Main Bronchus",
+      "x": 43.4,
+      "y": 41.7,
+      "blurb": "Shorter, wider, and more vertical than the left. Main bronchus involvement (sparing the carina) = T2."
+     },
+     {
+      "id": "lmb",
+      "label": "Left Main Bronchus",
+      "x": 56.3,
+      "y": 41.7,
+      "blurb": "Longer and more horizontal, passing under the aortic arch."
+     },
+     {
+      "id": "lobar",
+      "label": "Lobar Bronchi",
+      "x": 39.5,
+      "y": 48.6,
+      "blurb": "The last generation of the proximal bronchial tree (RTOG definition). Beyond these, airways become segmental."
+     },
+     {
+      "id": "nofly",
+      "label": "2 cm Zone Around the PBT (Central)",
+      "x": 41.6,
+      "y": 57.2,
+      "blurb": "The 'no-fly zone': within 2 cm in any direction of the proximal bronchial tree. Tumors here are central: avoid 3-fraction SBRT, use 5 or more fractions."
+     },
+     {
+      "id": "mediastinal-pleura",
+      "label": "Mediastinal Pleura",
+      "x": 44.8,
+      "y": 62.4,
+      "blurb": "Tumors abutting the mediastinal or pericardial pleura are also considered central (RTOG 0813)."
+     },
+     {
+      "id": "peripheral",
+      "label": "Peripheral Lung",
+      "x": 28.7,
+      "y": 62.4,
+      "blurb": "More than 2 cm from the PBT and away from the mediastinum. The easiest SBRT target: 54 Gy/3 or 48 Gy/4."
+     },
+     {
+      "id": "chestwall",
+      "label": "Chest Wall / Parietal Pleura",
+      "x": 17.7,
+      "y": 74.5,
+      "blurb": "Peripheral tumors can still abut the chest wall: rib fracture and chest wall pain risk. Chest wall invasion = T3."
+     },
+     {
+      "id": "pleural-space",
+      "label": "Pleural Space",
+      "x": 20.9,
+      "y": 65.9,
+      "blurb": "The thin space between the visceral pleura (on the lung) and the parietal pleura (on the chest wall). Visceral pleural invasion upstages a small tumor to T2a; a malignant pleural effusion is M1a."
+     },
+     {
+      "id": "diaphragm",
+      "label": "Diaphragm",
+      "x": 50.2,
+      "y": 84.1,
+      "blurb": "Tumor invading the diaphragm is T4. Phrenic nerve involvement (which paralyzes the hemidiaphragm) is T3."
+     }
+    ],
+    "image": "images/thoracic/th-pbt.jpg"
+   },
+   {
+    "id": "th-hilum",
+    "title": "Right Hilum (Medial View)",
+    "style": "schematic",
+    "caption": "Mediastinal (medial) surface of the right lung, showing the hilum. Gray's Anatomy (1918), Fig. 972, public domain; labels and pointer lines removed.",
+    "hotspots": [
+     {
+      "id": "rpa",
+      "label": "Right Pulmonary Artery",
+      "x": 48,
+      "y": 42,
+      "blurb": "On the right, the artery sits anterior to the main bronchus (RALS: Right Anterior, Left Superior)."
+     },
+     {
+      "id": "ruv",
+      "label": "Right Upper Lobe (Eparterial) Bronchus",
+      "x": 55,
+      "y": 39,
+      "blurb": "The RUL bronchus arises above the pulmonary artery, which is why it's called eparterial. Unique to the right."
+     },
+     {
+      "id": "rb",
+      "label": "Right Main / Intermediate Bronchus",
+      "x": 54,
+      "y": 45,
+      "blurb": "Posterior to the artery at the hilum."
+     },
+     {
+      "id": "spv",
+      "label": "Superior Pulmonary Vein",
+      "x": 51,
+      "y": 50,
+      "blurb": "Anterior and inferior at the hilum. The pulmonary veins are the most anterior and inferior hilar structures."
+     },
+     {
+      "id": "ipv",
+      "label": "Inferior Pulmonary Vein",
+      "x": 56,
+      "y": 55,
+      "blurb": "Lowest hilar structure. Station 9 (pulmonary ligament) nodes start just below it."
+     },
+     {
+      "id": "hilar-nodes",
+      "label": "Hilar Nodes (Station 10R)",
+      "x": 52,
+      "y": 35,
+      "blurb": "Nodes around the main bronchus and hilar vessels. Ipsilateral station 10 = N1."
+     },
+     {
+      "id": "pulm-lig",
+      "label": "Pulmonary Ligament",
+      "x": 60,
+      "y": 74,
+      "blurb": "Pleural fold below the hilum. Station 9 nodes live here; drains the lower lobes."
+     },
+     {
+      "id": "azygos-groove",
+      "label": "Azygos Arch (Groove)",
+      "x": 57,
+      "y": 30,
+      "blurb": "Arches over the right main bronchus into the SVC at T4. Marks the lower edge of station 4R."
+     }
+    ],
+    "image": "images/thoracic/th-hilum.jpg"
+   }
+  ],
+  "gallery": [
+   {
+    "title": "Bronchopulmonary segments",
+    "caption": "Segments of the right lung (left panel, 10) and left lung (right panel, 8). Right: AP apical, P posterior, AN anterior (upper lobe); L lateral, M medial (middle lobe); S superior, MB medial basal, AB anterior basal, LB lateral basal, PB posterior basal (lower lobe). Left: APP apicoposterior, AN anterior, SL and IL superior and inferior lingular (upper lobe); S superior, AMB anteromedial basal, LB lateral basal, PB posterior basal (lower lobe). Segmentectomy removes one of these.",
+    "style": "schematic",
+    "image": "images/thoracic/th-g-segments.jpg"
+   },
+   {
+    "title": "Chest wall and pleura",
+    "style": "schematic",
+    "image": "images/thoracic/th-g-chestwall.jpg",
+    "caption": "The chest wall (ribs, sternum, vertebrae, intercostal muscles), the pleura lining the lung, and the diaphragm. Invasion of the parietal pleura or chest wall is T3; a peripheral SBRT target against the chest wall risks rib fracture and chest wall pain."
+   },
+   {
+    "title": "CXR: right middle lobe collapse",
+    "caption": "Right middle lobe collapse (arrow) silhouetting the right heart border. Sultan S et al., Cureus 2026 (PMC13170401), CC BY 4.0.",
+    "style": "ct",
+    "image": "images/thoracic/th-g-rml.jpg"
+   }
+  ]
+ },
+ "anat-th-nodes": {
+  "intro": "<p>This is the map that stages lung cancer: the <strong>IASLC lymph node map</strong>. Learn each station on the frontal map, then switch to Quiz mode and name it from the marker. You'll find the same stations on axial CT in the Imaging section.</p>",
+  "plates": [
+   {
+    "id": "th-iaslc",
+    "title": "IASLC Map (Frontal View)",
+    "style": "schematic",
+    "caption": "Frontal drawing of the trachea, esophagus, aortic arch, left pulmonary artery, and bronchi with the main IASLC stations marked. Stations 3a (in front of the great vessels) and 3p (behind the trachea) overlap the trachea in this view, so they are not marked; find them on the CT slices in Imaging.",
+    "hotspots": [
+     {
+      "id": "s1",
+      "label": "Station 1R/1L: Low Cervical / Supraclavicular",
+      "x": 45.6,
+      "y": 21.8,
+      "blurb": "From the lower cricoid down to the clavicles and top of the manubrium; split at the trachea's midline. Always N3."
+     },
+     {
+      "id": "s2r",
+      "label": "Station 2R: Right Upper Paratracheal",
+      "x": 37.6,
+      "y": 32.3,
+      "blurb": "From the top of the manubrium down to where the left brachiocephalic vein crosses the trachea. Ipsilateral = N2."
+     },
+     {
+      "id": "s2l",
+      "label": "Station 2L: Left Upper Paratracheal",
+      "x": 52.7,
+      "y": 31.5,
+      "blurb": "From the top of the manubrium down to the top of the aortic arch. The R/L border is the LEFT lateral wall of the trachea."
+     },
+     {
+      "id": "s4r",
+      "label": "Station 4R: Right Lower Paratracheal",
+      "x": 40.3,
+      "y": 50.3,
+      "blurb": "From the brachiocephalic vein crossing down to the lower border of the azygos vein. Most common mediastinal site for right upper lobe tumors."
+     },
+     {
+      "id": "s4l",
+      "label": "Station 4L: Left Lower Paratracheal",
+      "x": 51.0,
+      "y": 49.1,
+      "blurb": "From the top of the arch down to the top of the left main pulmonary artery, medial to the ligamentum arteriosum."
+     },
+     {
+      "id": "s5",
+      "label": "Station 5: Subaortic (AP Window)",
+      "x": 56.6,
+      "y": 51.5,
+      "blurb": "Lateral to the ligamentum arteriosum, between the arch and the left PA. Left-sided only. Drains the LUL."
+     },
+     {
+      "id": "s6",
+      "label": "Station 6: Para-aortic",
+      "x": 70.5,
+      "y": 38.5,
+      "blurb": "Anterior and lateral to the ascending aorta and arch. Left-sided only."
+     },
+     {
+      "id": "s7",
+      "label": "Station 7: Subcarinal",
+      "x": 47.1,
+      "y": 64.1,
+      "blurb": "Below the carina. Drains both lungs. Always ipsilateral N2."
+     },
+     {
+      "id": "s8",
+      "label": "Station 8: Paraesophageal",
+      "x": 46.6,
+      "y": 79.4,
+      "blurb": "Beside the esophagus, below station 7. Lower lobe drainage."
+     },
+     {
+      "id": "s9",
+      "label": "Station 9: Pulmonary Ligament",
+      "x": 35.0,
+      "y": 92.6,
+      "blurb": "Within the pulmonary ligament, from the inferior pulmonary vein down. Lower lobe drainage."
+     },
+     {
+      "id": "s10r",
+      "label": "Station 10R: Right Hilar",
+      "x": 38.5,
+      "y": 58.1,
+      "blurb": "Around the right main bronchus and hilar vessels. Ipsilateral = N1."
+     },
+     {
+      "id": "s10l",
+      "label": "Station 10L: Left Hilar",
+      "x": 55.3,
+      "y": 59.0,
+      "blurb": "Around the left main bronchus and hilar vessels."
+     },
+     {
+      "id": "s11",
+      "label": "Station 11: Interlobar",
+      "x": 33.1,
+      "y": 66.8,
+      "blurb": "Between the lobar bronchi. N1."
+     },
+     {
+      "id": "s12-14",
+      "label": "Stations 12–14: Lobar, Segmental, Subsegmental",
+      "x": 70.8,
+      "y": 84.8,
+      "blurb": "Intrapulmonary nodes along the lobar (12), segmental (13), and subsegmental (14) bronchi. N1; usually found by the pathologist, not on imaging."
+     }
+    ],
+    "image": "images/thoracic/th-iaslc.jpg"
+   }
+  ],
+  "gallery": [
+   {
+    "title": "EBUS reach",
+    "caption": "Stations reachable by EBUS only (blue), EUS-B only (light blue), or both (green). The clot and tumor labels come from the authors' case. Biondini D et al., Diagnostics 2023 (PMC10417616), CC BY 4.0.",
+    "style": "schematic",
+    "image": "images/thoracic/th-g-ebus.jpg"
+   },
+   {
+    "title": "PET/CT: subcarinal node",
+    "caption": "FDG-avid subcarinal (station 7) node on fused PET/CT. Khosa J, Cho RJ, Diagnostics 2026 (PMC13206069), CC BY 4.0.",
+    "style": "pet",
+    "image": "images/thoracic/th-g-pet7.jpg"
+   }
+  ]
+ }
+}

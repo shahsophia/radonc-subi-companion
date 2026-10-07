@@ -1,0 +1,542 @@
+{
+ "category": "Case-Based Practice",
+ "intro": "<p>Eight cases that get harder as you go: <strong>benign tumors</strong> (vestibular schwannoma, meningioma), <strong>brain metastases</strong>, <strong>gliomas</strong>, and <strong>spinal cord compression</strong>. Each starts with a one-liner, then gives you more information step by step: the <strong>MRI and pathology</strong>, the <strong>diagnosis or grade</strong>, the <strong>treatment</strong>, the <strong>dose and targets</strong>, the <strong>landmark trials</strong>, and the <strong>side effects and follow-up</strong>. Some steps are multiple choice, some are fill-in-the-blank.</p>",
+ "cases": [
+  {
+   "id": "cns-case-7",
+   "level": "Foundational",
+   "title": "Case 1: Ringing in One Ear",
+   "oneLiner": "A 49-year-old man has a year of gradual hearing loss and ringing in his right ear. His audiogram shows asymmetric sensorineural hearing loss on the right.",
+   "steps": [
+    {
+     "label": "Workup",
+     "prompt": "What is the best test for asymmetric sensorineural hearing loss?",
+     "choices": [
+      "CT of the sinuses",
+      "MRI of the internal auditory canals with contrast",
+      "Repeat audiogram in 5 years",
+      "Lumbar puncture"
+     ],
+     "correctIndex": 1,
+     "explanation": "One-sided sensorineural hearing loss or tinnitus needs a contrast MRI of the internal auditory canals to look for a vestibular schwannoma."
+    },
+    {
+     "label": "Origin",
+     "image": "images/cns/cns-vs.jpg",
+     "caption": "Axial T1 post-contrast MRI: right vestibular schwannoma at the cerebellopontine angle (patient's right on your left). Hellerhoff, Wikimedia Commons, CC BY-SA 3.0.",
+     "prompt": "MRI shows a 1.6 cm enhancing mass widening the right internal auditory canal and extending into the cerebellopontine angle. Which nerve does it arise from?",
+     "choices": [
+      "Facial nerve (CN VII)",
+      "Vestibular division of CN VIII",
+      "Trigeminal nerve (CN V)",
+      "Glossopharyngeal nerve (CN IX)"
+     ],
+     "correctIndex": 1,
+     "explanation": "Vestibular schwannomas (acoustic neuromas) arise from the Schwann cells of the vestibular nerve. The 'ice cream cone' shape comes from the canal portion plus the CPA portion. Hearing loss is from pressure on the neighboring cochlear nerve."
+    },
+    {
+     "label": "Grade",
+     "prompt": "It grew 3 mm in a year, touches the brainstem, but doesn't compress it. What is the Koos grade?",
+     "answer": "Koos III",
+     "explanation": "Koos I is in the canal only, II reaches into the CPA, III fills the CPA and touches the brainstem, and IV compresses the brainstem."
+    },
+    {
+     "label": "Treatment",
+     "prompt": "He wants to avoid surgery and his hearing is still serviceable. What is the best option?",
+     "choices": [
+      "Observation forever, since it grew",
+      "Stereotactic radiosurgery",
+      "Whole-brain RT",
+      "Craniospinal RT"
+     ],
+     "correctIndex": 1,
+     "explanation": "Growing small to medium schwannomas are treated with SRS (about 95% control). Large Koos IV tumors with brainstem compression or hydrocephalus go to surgery."
+    },
+    {
+     "label": "Dose",
+     "prompt": "Give the SRS dose and the key hearing constraint.",
+     "answer": "12-13 Gy to the tumor margin, keeping the cochlea mean dose at about 4 Gy or less.",
+     "explanation": "Facial nerve injury is rare at these doses. Hearing still tends to decline slowly over years."
+    },
+    {
+     "label": "Nine months later",
+     "prompt": "Nine months after SRS, MRI shows the tumor is slightly larger with a darker center. He feels fine. What is the most likely explanation?",
+     "choices": [
+      "Treatment failure; operate now",
+      "Pseudoprogression: temporary swelling that is expected at about 6-18 months after SRS",
+      "Malignant transformation",
+      "A new metastasis"
+     ],
+     "correctIndex": 1,
+     "explanation": "Transient enlargement with central loss of enhancement is common after SRS for schwannomas and usually settles. Keep watching with serial MRI before calling it failure."
+    }
+   ]
+  },
+  {
+   "id": "cns-case-6",
+   "level": "Foundational",
+   "title": "Case 2: Double Vision",
+   "oneLiner": "A 55-year-old woman has 6 months of double vision when she looks to the left.",
+   "steps": [
+    {
+     "label": "Diagnosis",
+     "image": "images/cns/cns-mening.jpg",
+     "caption": "Coronal T1 post-contrast MRI of a different meningioma: a homogeneously enhancing parasagittal mass. James Heilman, MD, Wikimedia Commons, CC BY-SA 4.0.",
+     "prompt": "MRI shows a 2.5 cm homogeneously enhancing mass in the left cavernous sinus with a dural tail, 4 mm from the optic chiasm. What is the most likely diagnosis?",
+     "choices": [
+      "Glioblastoma",
+      "Meningioma",
+      "Brain metastasis",
+      "Vestibular schwannoma"
+     ],
+     "correctIndex": 1,
+     "explanation": "A homogeneously enhancing, dura-based mass with a dural tail is a meningioma until proven otherwise; many are diagnosed on imaging without a biopsy. Her diplopia is from cranial nerve VI (or III/IV) in the cavernous sinus."
+    },
+    {
+     "label": "Surgery?",
+     "prompt": "It grew from 2.0 to 2.5 cm over 18 months and encases the cavernous carotid. Why not simply remove it?",
+     "choices": [
+      "Meningiomas never respond to surgery",
+      "Cavernous sinus tumors encase the carotid and cranial nerves, so resection risks stroke and new nerve deficits and is usually incomplete",
+      "It is malignant",
+      "Surgery is only for children"
+     ],
+     "correctIndex": 1,
+     "explanation": "Accessible, symptomatic meningiomas go to surgery. Inaccessible ones, like this, are treated with radiation."
+    },
+    {
+     "label": "Options",
+     "prompt": "Which radiation approaches fit a growing cavernous sinus meningioma?",
+     "choices": [
+      "Whole-brain RT",
+      "SRS 12-14 Gy, or fractionated RT 50.4-54 Gy",
+      "Craniospinal RT",
+      "Observation only"
+     ],
+     "correctIndex": 1,
+     "explanation": "Both give about 90-95% control at 5 years. The choice depends on size and distance from the optic apparatus."
+    },
+    {
+     "label": "Choice",
+     "prompt": "With only 4 mm to the chiasm, which do you prefer, and why?",
+     "answer": "Fractionated RT (for example 50.4-54 Gy in 28-30 fractions) or hypofractionated SRT, because single-fraction SRS may not keep the chiasm at 8-10 Gy or less.",
+     "explanation": "SRS works best when the tumor is a few millimeters away from the optic nerves and chiasm."
+    },
+    {
+     "label": "Side effects",
+     "prompt": "What side effects will you counsel her about?",
+     "answer": "Fatigue, hair thinning where the beams enter, headache, and rarely injury to nearby nerves (vision loss from optic nerve or chiasm injury) or the pituitary (hormone deficiency over years).",
+     "explanation": "Her double vision may improve, stay the same, or rarely worsen; tumor control means stopping growth, not making it disappear."
+    }
+   ]
+  },
+  {
+   "id": "cns-case-4",
+   "level": "Intermediate",
+   "title": "Case 3: New Headaches",
+   "oneLiner": "A 58-year-old woman with EGFR-negative lung adenocarcinoma, controlled in the chest on chemo-immunotherapy, has two weeks of new headaches.",
+   "steps": [
+    {
+     "label": "Approach",
+     "prompt": "Thin-slice MRI shows three enhancing lesions: 1.5 cm, 1.2 cm, and 2.6 cm, with mild edema. KPS 90. What is the best approach?",
+     "choices": [
+      "Whole-brain RT",
+      "SRS alone to all three",
+      "Surgery for all three",
+      "Best supportive care"
+     ],
+     "correctIndex": 1,
+     "explanation": "SRS alone is standard for limited brain metastases (about 1-4, and up to 10 small ones in selected patients). Surgery is for a large lesion, major mass effect, or when tissue is needed."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Why not add whole-brain RT to the SRS? Which trial showed more cognitive decline with no survival gain?",
+     "choices": [
+      "NCCTG N0574",
+      "NRG CC001",
+      "Stupp",
+      "Patchell"
+     ],
+     "correctIndex": 0,
+     "explanation": "N0574: adding WBRT improved intracranial control but caused more cognitive decline and did not improve survival."
+    },
+    {
+     "label": "Prognosis",
+     "prompt": "Estimate her GPA (2008): age 58, KPS 90, 3 metastases, extracranial disease present.",
+     "answer": "0.5 (age 50-60) + 1 (KPS 90-100) + 0.5 (2-3 mets) + 0 (extracranial disease) = 2.0",
+     "explanation": "The GPA helps match treatment intensity to prognosis."
+    },
+    {
+     "label": "Doses",
+     "image": "images/cns/cns-srs-plan.jpg",
+     "caption": "SRS plan for a resection cavity and an intact metastasis: prescription isodose in green, low-dose spill in blue. Lewis J et al., Cureus 2025 (PMC12414254), CC BY 4.0.",
+     "prompt": "What single-fraction doses for the 2.6 cm lesion and the two smaller ones?",
+     "answer": "18 Gy for the 2.6 cm lesion; 24 Gy for each lesion 2 cm or smaller.",
+     "explanation": "RTOG 90-05: 2 cm or less 24 Gy, 2-3 cm 18 Gy, 3-4 cm 15 Gy. Larger lesions or cavities use 27 Gy in 3 or 30 Gy in 5."
+    },
+    {
+     "label": "Follow-up",
+     "prompt": "What follow-up does she need after SRS alone?",
+     "answer": "MRI every 2-3 months, with SRS for any new lesions.",
+     "explanation": "Radionecrosis (about 5-10%) is the main late risk, higher with larger lesions and with immunotherapy."
+    },
+    {
+     "label": "What if",
+     "image": "images/cns/cns-g-hawbrt.jpg",
+     "caption": "Hippocampal-avoidance whole-brain plan: the two cool spots in the middle are the spared hippocampi. Yang X et al., Eur J Med Res 2023 (PMC9841677), CC BY 4.0.",
+     "prompt": "Change one detail: the MRI shows 15 metastases and her systemic disease is controlled. Which approach protects memory best if you treat the whole brain?",
+     "choices": [
+      "WBRT 30 Gy in 10 alone",
+      "Hippocampal-avoidance WBRT plus memantine",
+      "SRS to the largest lesion only",
+      "Craniospinal RT"
+     ],
+     "correctIndex": 1,
+     "explanation": "NRG CC001: HA-WBRT plus memantine caused less cognitive failure than WBRT plus memantine."
+    }
+   ]
+  },
+  {
+   "id": "cns-case-1",
+   "level": "Intermediate",
+   "title": "Case 4: Lost Words",
+   "oneLiner": "A 61-year-old man has a new seizure and 3 weeks of trouble finding words and headaches.",
+   "steps": [
+    {
+     "label": "Next step",
+     "image": "images/cns/cns-gbm-t1c.jpg",
+     "caption": "Axial T1 post-contrast MRI: left temporal mass with a thick, irregular enhancing rim around a necrotic center. Armed Forces Institute of Pathology, Wikimedia Commons, public domain.",
+     "prompt": "MRI shows a 4 cm left temporal mass with thick, irregular ring enhancement around a necrotic center and surrounding FLAIR signal. What is the best next step?",
+     "choices": [
+      "Whole-brain RT",
+      "Maximal safe resection",
+      "SRS",
+      "Start temozolomide now"
+     ],
+     "correctIndex": 1,
+     "explanation": "For a presumed high-grade glioma, maximal safe resection gives the diagnosis and molecular markers, relieves mass effect, and improves survival. Near language areas, awake mapping helps. Start dexamethasone and an antiseizure drug."
+    },
+    {
+     "label": "Diagnosis",
+     "context": "<p><strong>Post-op MRI (48 h):</strong> gross total resection of the enhancing tumor. <strong>Pathology:</strong> IDH-wildtype glioma with necrosis and microvascular proliferation; <strong>MGMT promoter methylated</strong>. KPS 90.</p>",
+     "prompt": "What is the integrated WHO 2021 diagnosis?",
+     "answer": "Glioblastoma, IDH-wildtype, WHO grade 4 (MGMT promoter methylated)",
+     "explanation": "IDH-wildtype plus necrosis and/or microvascular proliferation is glioblastoma. MGMT methylation predicts more benefit from temozolomide."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial established 60 Gy in 30 fractions with daily temozolomide, then adjuvant temozolomide?",
+     "choices": [
+      "Stupp (EORTC/NCIC)",
+      "Perry",
+      "RTOG 9802",
+      "EF-14"
+     ],
+     "correctIndex": 0,
+     "explanation": "Stupp improved median survival (14.6 vs 12.1 months) and 5-year survival (about 10% vs 2%). EF-14 added tumor treating fields to adjuvant TMZ."
+    },
+    {
+     "label": "Targets",
+     "prompt": "Describe the target volumes.",
+     "answer": "GTV = resection cavity plus any residual enhancement (± FLAIR); CTV = GTV + about 1.5-2 cm, trimmed at bone, falx, and tentorium; PTV + 3-5 mm. 60 Gy in 30 fractions (or FLAIR to 46 Gy, then a boost to 60 Gy).",
+     "explanation": "Respect the optic chiasm, optic nerves, and brainstem (about 54 Gy)."
+    },
+    {
+     "label": "Counseling",
+     "prompt": "What side effects do you counsel him on?",
+     "answer": "Fatigue, hair loss in the treated area, scalp irritation, headache or worsening symptoms from swelling (steroids), and temozolomide effects such as nausea, constipation, and low counts (low platelets in particular). Long term: memory and thinking changes.",
+     "explanation": "Patients on concurrent TMZ also get PCP prophylaxis because of lymphopenia."
+    },
+    {
+     "label": "Eight months later",
+     "image": "images/cns/cns-post-tx.jpg",
+     "caption": "Treated glioblastoma with a new enhancing lesion (left) proven to be radiation necrosis; the perfusion map (right) shows it is not hyperperfused. Mohamedbaqer Easa A et al., Cureus 2025 (PMC12393895), CC BY 4.0.",
+     "prompt": "Eight months after RT, MRI shows a new enhancing area in the treated region. Perfusion imaging is low. He feels well. What is most likely?",
+     "choices": [
+      "Definite tumor progression",
+      "Treatment effect (radiation necrosis or pseudoprogression)",
+      "A new primary tumor",
+      "Stroke"
+     ],
+     "correctIndex": 1,
+     "explanation": "Enhancement inside the high-dose field months after RT can be treatment effect. Low perfusion favors necrosis over tumor, which is usually hyperperfused. Short-interval follow-up, advanced imaging, or tissue sort it out."
+    }
+   ]
+  },
+  {
+   "id": "cns-case-2",
+   "level": "Intermediate",
+   "title": "Case 5: She Lives Alone",
+   "oneLiner": "A 78-year-old woman with a biopsy-proven IDH-wildtype, MGMT-methylated glioblastoma in the left temporal lobe has a KPS of 60. She lives alone and wants to minimize trips to the hospital.",
+   "steps": [
+    {
+     "label": "Approach",
+     "image": "images/cns/cns-gbm-flair.jpg",
+     "caption": "Axial FLAIR MRI of a left temporal glioblastoma with extensive surrounding FLAIR signal and mass effect. Tiwari S, Gyawali I, Cureus 2024 (PMC10944577), CC BY 4.0.",
+     "prompt": "Which approach is best supported by evidence for her?",
+     "choices": [
+      "60 Gy in 30 fractions with TMZ",
+      "40 Gy in 15 fractions with TMZ",
+      "SRS 20 Gy",
+      "No treatment is ever appropriate"
+     ],
+     "correctIndex": 1,
+     "explanation": "Shorter courses respect her goals and her frailty while keeping the benefit of TMZ."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial showed that adding TMZ to 40 Gy in 15 fractions improved survival in patients 65 and older, especially with MGMT methylation?",
+     "choices": [
+      "Perry (CCTG CE.6 / EORTC)",
+      "Roa",
+      "Stupp",
+      "QUARTZ"
+     ],
+     "correctIndex": 0,
+     "explanation": "Perry established short-course RT plus TMZ for older patients. Roa showed 25 Gy in 5 matched 40 Gy in 15 in older or frail patients."
+    },
+    {
+     "label": "If frailer",
+     "prompt": "What is reasonable if she becomes too frail for chemoRT?",
+     "choices": [
+      "25 Gy in 5 fractions alone, or TMZ alone (because she is MGMT methylated)",
+      "Craniospinal RT",
+      "Whole-brain RT with hippocampal avoidance",
+      "Prophylactic cranial irradiation"
+     ],
+     "correctIndex": 0,
+     "explanation": "Very frail patients can get 25 Gy in 5 (Roa), TMZ alone if MGMT-methylated (Nordic, NOA-08), or supportive care."
+    },
+    {
+     "label": "Late toxicity",
+     "prompt": "Which late toxicity is she at risk for with a left temporal target?",
+     "answer": "Memory and language decline (left temporal lobe and hippocampus), fatigue, and steroid side effects.",
+     "explanation": "Discuss goals of care alongside treatment."
+    },
+    {
+     "label": "Steroids",
+     "prompt": "She is on dexamethasone for edema. Which steroid side effects should you watch for?",
+     "answer": "High blood sugar, insomnia and mood changes, weight gain, thrush, proximal muscle weakness, GI upset or ulcers, infections, and bone loss.",
+     "explanation": "Taper to the lowest dose that controls symptoms."
+    }
+   ]
+  },
+  {
+   "id": "cns-case-3",
+   "level": "Advanced",
+   "title": "Case 6: The First Seizure",
+   "oneLiner": "A 38-year-old man has his first seizure. MRI shows a 5 cm non-enhancing, FLAIR-bright left frontal mass, and CT shows calcification in it.",
+   "steps": [
+    {
+     "label": "Diagnosis",
+     "image": "images/cns/cns-lgg-flair.jpg",
+     "caption": "Axial FLAIR MRI of a non-enhancing low-grade glioma in the left frontal and insular region (another patient). Vail M et al., Cureus 2026 (PMC12947947), CC BY 4.0.",
+     "prompt": "Which diagnosis fits best?",
+     "choices": [
+      "Glioblastoma",
+      "Oligodendroglioma",
+      "Meningioma",
+      "Brain metastasis"
+     ],
+     "correctIndex": 1,
+     "explanation": "A young adult with a seizure and a frontal, cortical, non-enhancing, calcified tumor is an oligodendroglioma until proven otherwise."
+    },
+    {
+     "label": "Pathology",
+     "context": "<p><strong>Subtotal resection</strong> (residual non-enhancing tumor near the motor strip). <strong>Pathology:</strong> <strong>IDH-mutant, 1p/19q codeleted</strong>, WHO grade 2.</p>",
+     "prompt": "What is the integrated diagnosis?",
+     "answer": "Oligodendroglioma, IDH-mutant and 1p/19q-codeleted, WHO grade 2",
+     "explanation": "IDH mutation plus 1p/19q codeletion defines oligodendroglioma. IDH-mutant without codeletion is astrocytoma."
+    },
+    {
+     "label": "Options",
+     "prompt": "Name two reasonable next steps given his residual tumor.",
+     "answer": "Vorasidenib to delay RT and chemo, or RT 50.4-54 Gy followed by PCV; close MRI surveillance with either approach.",
+     "explanation": "Residual tumor makes him higher risk. Vorasidenib is for residual or recurrent non-enhancing grade 2 IDH-mutant tumors."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial showed that RT plus PCV nearly doubled median overall survival (13.3 vs 7.8 years) in high-risk grade 2 gliomas?",
+     "choices": [
+      "RTOG 9802",
+      "INDIGO",
+      "CATNON",
+      "Stupp"
+     ],
+     "correctIndex": 0,
+     "explanation": "RTOG 9802 is the RT plus PCV trial. INDIGO showed vorasidenib delayed progression (PFS about 28 vs 11 months); CATNON is the grade 3 non-codeleted astrocytoma trial."
+    },
+    {
+     "label": "Dose",
+     "prompt": "If RT is given, what dose and chemo?",
+     "answer": "About 54 Gy in 30 fractions (50.4-54 Gy), followed by PCV (procarbazine, lomustine, vincristine).",
+     "explanation": "Grade 3 oligodendroglioma would get 59.4 Gy plus PCV."
+    },
+    {
+     "label": "Survivorship",
+     "prompt": "Why do late effects matter more for him than for a GBM patient, and what can reduce them?",
+     "choices": [
+      "They don't matter",
+      "He may live decades, so memory, fatigue, and endocrine effects matter; hippocampal sparing and protons are often considered",
+      "He needs whole-brain RT instead",
+      "Late effects only happen in children"
+     ],
+     "correctIndex": 1,
+     "explanation": "Lower-grade glioma patients live years to decades, so the plan weighs long-term cognition and quality of life."
+    }
+   ]
+  },
+  {
+   "id": "cns-case-5",
+   "level": "Advanced",
+   "title": "Case 7: Vomiting and Unsteady",
+   "oneLiner": "A 64-year-old man with metastatic melanoma on immunotherapy has 4 days of vomiting, headache, and unsteadiness.",
+   "steps": [
+    {
+     "label": "Next step",
+     "prompt": "MRI shows a single 4 cm right cerebellar metastasis compressing the 4th ventricle, with early hydrocephalus. What is the next step?",
+     "choices": [
+      "SRS alone",
+      "Surgical resection",
+      "Whole-brain RT",
+      "Observation on immunotherapy"
+     ],
+     "correctIndex": 1,
+     "explanation": "A large lesion with mass effect and hydrocephalus needs surgery to relieve pressure quickly. SRS alone is for smaller lesions without dangerous mass effect."
+    },
+    {
+     "label": "Adjuvant",
+     "prompt": "Gross total resection leaves a 3.5 cm cavity, with no other brain lesions. What adjuvant treatment is standard?",
+     "choices": [
+      "Observation",
+      "SRS/SRT to the resection cavity",
+      "Whole-brain RT",
+      "Craniospinal RT"
+     ],
+     "correctIndex": 1,
+     "explanation": "Cavity SRS lowers the local recurrence risk after resection while sparing cognition."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trials support cavity SRS: better local control than observation, and better cognition than whole-brain RT?",
+     "choices": [
+      "Mahajan and NCCTG N107C",
+      "JLGK0901",
+      "NRG CC001",
+      "Patchell"
+     ],
+     "correctIndex": 0,
+     "explanation": "Mahajan compared cavity SRS with observation; N107C compared it with WBRT."
+    },
+    {
+     "label": "Regimen",
+     "image": "images/cns/cns-srs-plan.jpg",
+     "caption": "Fractionated SRS plan for a resection cavity (24 Gy in 3 fractions) and a separate intact metastasis, in another patient: prescription isodose in green. Lewis J et al., Cureus 2025 (PMC12414254), CC BY 4.0.",
+     "prompt": "Give a common regimen for a 3.5 cm cavity.",
+     "answer": "Fractionated SRT, for example 27 Gy in 3 or 30 Gy in 5 fractions, to the cavity plus 1-2 mm (including the surgical tract and adjacent dura).",
+     "explanation": "Large cavities are fractionated to lower the risk of radionecrosis."
+    },
+    {
+     "label": "Risk",
+     "prompt": "Which part of his treatment raises the risk of radionecrosis with SRS?",
+     "choices": [
+      "Antiemetics",
+      "Checkpoint inhibitor immunotherapy given around the time of SRS",
+      "Antiseizure medicine",
+      "Physical therapy"
+     ],
+     "correctIndex": 1,
+     "explanation": "Immunotherapy and larger target volumes both raise the radionecrosis risk."
+    },
+    {
+     "label": "Eight months later",
+     "prompt": "Eight months later he has new headaches and MRI shows growing enhancement with a lot of edema at the cavity edge. How do you approach it?",
+     "answer": "Consider radionecrosis vs recurrence: advanced imaging (perfusion MRI, PET) or tissue to tell them apart. Treat symptomatic necrosis with steroids, then bevacizumab or laser ablation if needed; recurrence may need surgery or re-irradiation.",
+     "explanation": ""
+    }
+   ]
+  },
+  {
+   "id": "cns-case-8",
+   "level": "Advanced",
+   "title": "Case 8: Back Pain and Weak Legs",
+   "oneLiner": "A 67-year-old man with metastatic prostate cancer has 2 weeks of worsening mid-back pain and 1 day of leg weakness and trouble walking.",
+   "steps": [
+    {
+     "label": "First move",
+     "prompt": "What is the first thing to do?",
+     "choices": [
+      "Order outpatient X-rays",
+      "Give dexamethasone and get an urgent MRI of the whole spine",
+      "Start physical therapy",
+      "Schedule palliative RT next week"
+     ],
+     "correctIndex": 1,
+     "explanation": "New neurologic deficits with back pain in a cancer patient are cord compression until proven otherwise. Steroids now, and MRI of the whole spine because other levels are often involved."
+    },
+    {
+     "label": "Grade",
+     "image": "images/cns/cns-spine-mri.jpg",
+     "caption": "Sagittal T2 MRI of the thoracic spine in another patient: a pathologic fracture with epidural tumor compressing the cord. Kuah T et al., Cancers 2022 (PMC9265325), CC BY 4.0.",
+     "prompt": "MRI shows a T10 metastasis with epidural tumor compressing the cord and no CSF visible around it at that level. What is the Bilsky grade?",
+     "choices": [
+      "Bilsky 0",
+      "Bilsky 1b",
+      "Bilsky 2",
+      "Bilsky 3"
+     ],
+     "correctIndex": 3,
+     "explanation": "Bilsky 3 is cord compression with no CSF visible around the cord; 2 is compression with some CSF remaining; 1 is epidural disease without cord deformity. 2-3 is high-grade compression."
+    },
+    {
+     "label": "Plan",
+     "prompt": "He is medically fit, has one level of compression, and the spine is stable. What's the plan?",
+     "choices": [
+      "RT alone",
+      "Urgent surgical decompression (stabilization if needed), then postoperative RT, with steroids",
+      "Steroids alone",
+      "Hospice"
+     ],
+     "correctIndex": 1,
+     "explanation": "For fit patients with a single level of high-grade compression, surgery plus RT keeps more patients walking."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial showed more patients kept or regained the ability to walk with surgery plus RT than with RT alone?",
+     "choices": [
+      "Patchell (2005)",
+      "QUARTZ",
+      "JLGK0901",
+      "RTOG 9802"
+     ],
+     "correctIndex": 0,
+     "explanation": "Patchell is why fit patients with cord compression get a surgical consult."
+    },
+    {
+     "label": "Regimens",
+     "prompt": "Give RT regimens used for cord compression.",
+     "answer": "8 Gy in 1, 20 Gy in 5, or 30 Gy in 10 fractions (after surgery, often 20-30 Gy); SBRT (for example 24 Gy in 2) for selected radioresistant or oligometastatic disease.",
+     "explanation": "Choose by prognosis, histology, and whether surgery was done."
+    },
+    {
+     "label": "Prognosis",
+     "prompt": "What is the strongest predictor of whether he walks after treatment?",
+     "choices": [
+      "His PSA",
+      "Whether he can walk before treatment",
+      "The RT machine used",
+      "His age"
+     ],
+     "correctIndex": 1,
+     "explanation": "Ambulatory status at the start of treatment is the strongest predictor, which is why cord compression is treated as an emergency."
+    }
+   ]
+  }
+ ]
+}

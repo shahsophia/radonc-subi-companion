@@ -1,0 +1,747 @@
+{
+  "anat-oral-cavity": {
+    "intro": "<p>The oral cavity has seven subsites, and the single most testable boundary in all of head and neck anatomy sits right in the middle of the tongue. Work this plate in <strong>Explore mode</strong> first, then switch to <strong>Quiz mode</strong> and see if you can place each subsite cold.</p>",
+    "plates": [
+      {
+        "id": "hn-oral-cavity",
+        "title": "Oral Cavity Subsites",
+        "style": "photo",
+        "caption": "Midsagittal view of the head (face on the left). Buccal mucosa and retromolar trigone sit laterally, so they aren't visible on a midline cut.",
+        "hotspots": [
+          {
+            "id": "lip",
+            "label": "Lip",
+            "x": 12,
+            "y": 49,
+            "blurb": "Anterior-most oral cavity subsite. Lower lip drains to level Ib (and Ia if very medial); upper lip drains primarily to facial/submandibular nodes rather than a single cervical level."
+          },
+          {
+            "id": "oral-tongue",
+            "label": "Oral Tongue (anterior 2/3)",
+            "x": 40,
+            "y": 56,
+            "blurb": "Anterior to the circumvallate papillae - the boundary with the base of tongue (oropharynx). Anterior tongue drains to Ia; lateral tongue to Ib; medial/deep tongue can skip directly to II-IV."
+          },
+          {
+            "id": "floor-of-mouth",
+            "label": "Floor of Mouth",
+            "x": 33,
+            "y": 74,
+            "blurb": "Horseshoe-shaped space under the tongue, overlying the mylohyoid muscle. Anterior floor drains to Ia; the rest drains to Ib and II-IV."
+          },
+          {
+            "id": "gingiva",
+            "label": "Gingiva / Alveolar Ridge",
+            "x": 24,
+            "y": 71,
+            "blurb": "The gum overlying the mandible or maxilla. Drains to Ib and II-IV; sits directly on bone, so early cortical invasion is common."
+          },
+          {
+            "id": "hard-palate",
+            "label": "Hard Palate",
+            "x": 42,
+            "y": 33,
+            "blurb": "Bony roof of the mouth. Drains to II-IV - it does not follow the level I pattern of the rest of the oral cavity."
+          }
+        ],
+        "image": "images/headneck/hn-oral-cavity.jpg"
+      }
+    ],
+    "gallery": [
+      {
+        "title": "Clinical photo: oral tongue",
+        "caption": "Dorsal oral tongue with a red mucosal patch. Any persistent red (erythroplakia) or white (leukoplakia) patch needs a biopsy; the lateral tongue is the most common site of oral cavity cancer.",
+        "style": "photo",
+        "image": "images/headneck/hn-g-oc-photo.jpg"
+      },
+      {
+        "title": "Axial / coronal MRI",
+        "caption": "How depth of invasion (DOI) is measured, the number that drives T-stage.",
+        "style": "mri",
+        "image": "images/headneck/hn-g-oc-mri.jpg"
+      },
+      {
+        "title": "Nerve illustration",
+        "caption": "Mandibular nerve branches: the lingual nerve with the submandibular ganglion in the floor of mouth, and the inferior alveolar nerve entering the mandible to exit as the mental nerve. Gray's Anatomy (1918), Fig. 778, public domain.",
+        "style": "schematic",
+        "image": "images/headneck/hn-g-oc-nerves.jpg"
+      }
+    ]
+  },
+  "anat-oropharynx": {
+    "intro": "<p>The oropharynx sits directly posterior to the oral cavity. Two of its four subsites, the tonsil and base of tongue, are where the HPV story of the last twenty years has played out.</p>",
+    "plates": [
+      {
+        "id": "hn-oropharynx",
+        "title": "Oropharynx Subsites",
+        "style": "schematic",
+        "caption": "Midline sagittal diagram (face on the left). The oropharynx is shaded pink: soft palate above, vallecula below, base of tongue in front, posterior pharyngeal wall behind. Diagram: Cancer Research UK, CC BY-SA 4.0 (labels removed).",
+        "hotspots": [
+          {
+            "id": "soft-palate",
+            "label": "Soft Palate",
+            "x": 60,
+            "y": 39,
+            "blurb": "The roof (superior boundary) of the oropharynx. A midline structure, so soft palate cancers get both sides of the neck treated."
+          },
+          {
+            "id": "palatine-tonsil",
+            "label": "Palatine Tonsil",
+            "x": 64,
+            "y": 50,
+            "blurb": "Sits in the lateral wall between the tonsillar pillars. The most common site of HPV-positive oropharyngeal cancer. A well-lateralized tonsil cancer is the classic case for treating only one side of the neck."
+          },
+          {
+            "id": "base-of-tongue",
+            "label": "Base of Tongue",
+            "x": 61,
+            "y": 60,
+            "blurb": "The posterior 1/3 of the tongue, behind the circumvallate papillae. Second classic HPV site. Tumors can be small and hidden in the lymphoid tissue yet present with a large neck node."
+          },
+          {
+            "id": "posterior-pharyngeal-wall",
+            "label": "Posterior Pharyngeal Wall",
+            "x": 77,
+            "y": 56,
+            "blurb": "The back wall, in front of the prevertebral muscles and cervical spine. Drains to the retropharyngeal (level VII) nodes."
+          },
+          {
+            "id": "vallecula",
+            "label": "Vallecula",
+            "x": 65,
+            "y": 65,
+            "blurb": "The pocket between the base of tongue and the epiglottis: the inferior boundary of the oropharynx. Below it is the larynx and hypopharynx."
+          },
+          {
+            "id": "op-nasopharynx",
+            "label": "Nasopharynx (Above)",
+            "x": 68,
+            "y": 34,
+            "blurb": "Not oropharynx. The nasopharynx sits above the level of the soft palate, behind the nasal cavity."
+          },
+          {
+            "id": "op-oral-tongue",
+            "label": "Oral Tongue (In Front)",
+            "x": 43,
+            "y": 52,
+            "blurb": "Not oropharynx. The anterior 2/3 of the tongue belongs to the oral cavity and is treated with surgery first."
+          }
+        ],
+        "image": "images/headneck/hn-oropharynx.jpg"
+      }
+    ],
+    "gallery": [
+      {
+        "title": "Clinical photo: transoral view",
+        "caption": "Tonsil and soft palate with the tonsillar pillars visible.",
+        "style": "photo",
+        "image": "images/headneck/hn-g-op-photo.jpg"
+      },
+      {
+        "title": "Axial MRI at the tonsil level",
+        "caption": "Tonsil, base of tongue, parapharyngeal fat, and the medial pterygoid; note the asymmetric mass on one side.",
+        "style": "mri",
+        "image": "images/headneck/hn-g-op-mri.jpg"
+      },
+      {
+        "title": "Endoscopic view of base of tongue",
+        "caption": "Base of tongue and vallecula, the inferior boundary of the oropharynx.",
+        "style": "endoscopic"
+      }
+    ]
+  },
+  "anat-nasopharynx": {
+    "intro": "<p>The nasopharynx is the hidden box at the top of the throat, right under the skull base. Start with <strong>Step 1</strong> to see where it sits in the whole head, then switch to <strong>Step 2</strong> for the zoomed-in view of its walls. Its location explains almost everything about nasopharyngeal cancer: <strong>it presents late, reaches the skull base and cranial nerves early, and is treated without surgery.</strong></p>",
+    "plates": [
+      {
+        "id": "hn-nasopharynx-wide",
+        "title": "Step 1: Where Is It?",
+        "style": "photo",
+        "caption": "Sagittal anatomy model of the whole head and neck (face on the right). The dashed box is the area shown zoomed in on Step 2.",
+        "image": "images/headneck/hn-nasopharynx-wide.jpg",
+        "hotspots": [
+          {
+            "id": "npw-np",
+            "label": "Nasopharynx",
+            "x": 44,
+            "y": 38,
+            "blurb": "The airway box behind the nose and above the soft palate, directly under the skull base. Zoom in on Step 2 to see its walls."
+          },
+          {
+            "id": "npw-sphenoid",
+            "label": "Sphenoid Sinus / Skull Base",
+            "x": 42,
+            "y": 30,
+            "blurb": "Sits right on top of the nasopharynx. Tumor that erodes this bone is T3; through the foramina into the skull it reaches the cranial nerves (T4)."
+          },
+          {
+            "id": "npw-nasal",
+            "label": "Nasal Cavity (Turbinates)",
+            "x": 61,
+            "y": 28,
+            "blurb": "In front of the nasopharynx. Tumor growing forward causes nasal obstruction and bloody discharge, but nasal cavity extension alone is still T1."
+          },
+          {
+            "id": "npw-hardpalate",
+            "label": "Hard Palate",
+            "x": 62,
+            "y": 42,
+            "blurb": "The bony floor of the nasal cavity and roof of the mouth (an oral cavity subsite)."
+          },
+          {
+            "id": "npw-softpalate",
+            "label": "Soft Palate",
+            "x": 48,
+            "y": 46,
+            "blurb": "Floor of the nasopharynx and roof of the oropharynx. Everything above it, behind the nose, is nasopharynx."
+          },
+          {
+            "id": "npw-oropharynx",
+            "label": "Oropharynx",
+            "x": 43,
+            "y": 53,
+            "blurb": "Directly below the nasopharynx. NPC that spreads down into the oropharynx is still T1."
+          },
+          {
+            "id": "npw-tongue",
+            "label": "Oral Tongue",
+            "x": 59,
+            "y": 55,
+            "blurb": "Part of the oral cavity, well in front of and below the nasopharynx."
+          },
+          {
+            "id": "npw-larynx",
+            "label": "Larynx (Thyroid Cartilage)",
+            "x": 47,
+            "y": 87,
+            "blurb": "Far below the nasopharynx. Included here so you can see how high up the nasopharynx really sits."
+          }
+        ]
+      },
+      {
+        "id": "hn-nasopharynx",
+        "title": "Step 2: Zoomed In",
+        "style": "photo",
+        "caption": "Close-up of the dashed box from Step 1 (face on the right): nasal cavity and turbinates in front, the nasopharynx behind the choanae, skull base above, soft palate below.",
+        "hotspots": [
+          {
+            "id": "npx-for",
+            "label": "Fossa of Rosenmüller",
+            "x": 49,
+            "y": 59,
+            "blurb": "Lateral recess behind the torus tubarius. The single most common site of origin of nasopharyngeal carcinoma, and the first place to look on MRI."
+          },
+          {
+            "id": "npx-torus",
+            "label": "Torus Tubarius",
+            "x": 58,
+            "y": 52,
+            "blurb": "Cartilage bump around the eustachian tube opening. Tumor here blocks the tube, causing unilateral serous otitis media in an adult: a classic NPC red flag."
+          },
+          {
+            "id": "npx-et",
+            "label": "Eustachian Tube Orifice",
+            "x": 65,
+            "y": 61,
+            "blurb": "Opening just in front of the torus. Obstruction causes ear fullness and conductive hearing loss on one side."
+          },
+          {
+            "id": "npx-choanae",
+            "label": "Posterior Choanae",
+            "x": 74,
+            "y": 50,
+            "blurb": "Back of the nasal cavity, the anterior boundary of the nasopharynx. Tumor extending forward into the nasal cavity is still T1."
+          },
+          {
+            "id": "npx-adenoid",
+            "label": "Posterosuperior Wall (Adenoids)",
+            "x": 42,
+            "y": 46,
+            "blurb": "Roof and back wall, lying against the sphenoid and clivus. Upward spread here reaches the skull base (T3)."
+          },
+          {
+            "id": "npx-clivus",
+            "label": "Clivus / Skull Base",
+            "x": 30,
+            "y": 32,
+            "blurb": "Superior boundary. Bone invasion is T3; spread through the foramina to the cavernous sinus can affect CN III, IV, V, and VI (T4)."
+          },
+          {
+            "id": "npx-softpalate",
+            "label": "Soft Palate (Inferior Boundary)",
+            "x": 56,
+            "y": 85,
+            "blurb": "Floor of the nasopharynx and roof of the oropharynx. Extension below it into the oropharynx is still T1 in AJCC 8."
+          },
+          {
+            "id": "npx-c1",
+            "label": "C1-C2 / Prevertebral Muscles",
+            "x": 24,
+            "y": 81,
+            "blurb": "Posterior boundary. Prevertebral muscle involvement is T2; bone (vertebra) invasion is T3."
+          }
+        ],
+        "image": "images/headneck/hn-nasopharynx.jpg"
+      }
+    ],
+    "gallery": [
+      {
+        "title": "Endoscopic view",
+        "caption": "PT = pharyngeal tubercle, TT = torus tubarius, OS = eustachian tube opening. The fossa of Rosenmüller is the recess just behind the torus. Zucca B et al., Neurosurg Rev 2026 (PMC12783318), CC BY 4.0.",
+        "style": "endoscopic",
+        "image": "images/headneck/hn-g-np-endo.jpg"
+      },
+      {
+        "title": "Axial MRI at the nasopharynx",
+        "caption": "Fossa effacement, parapharyngeal space, and a retropharyngeal node.",
+        "style": "mri",
+        "image": "images/headneck/hn-g-np-mri.jpg"
+      },
+      {
+        "title": "Skull base foramina diagram",
+        "caption": "Foramen ovale, foramen lacerum, and the cavernous sinus: the routes to cranial nerve palsies.",
+        "style": "schematic",
+        "image": "images/headneck/hn-g-np-skullbase.jpg"
+      },
+      {
+        "title": "PET/CT: nasopharyngeal primary",
+        "caption": "FDG-avid tumor filling the nasopharynx on axial, sagittal, and coronal fused views.",
+        "style": "pet",
+        "image": "images/headneck/hn-g-np-pet.jpg"
+      }
+    ]
+  },
+  "anat-larynx": {
+    "intro": "<p>The larynx is stacked into three compartments, and each one behaves like a different disease: in lymphatic drainage, in how it presents, and in how the neck is treated. Use the <strong>Laryngoscopic View</strong> to see what the scope shows, then the <strong>Coronal View</strong> to see the compartments stacked top to bottom. Both work in Quiz mode.</p>",
+    "plates": [
+      {
+        "id": "hn-larynx",
+        "title": "Laryngoscopic View",
+        "style": "schematic",
+        "caption": "Laryngoscopic (mirror) view: anterior is at the top (epiglottis), posterior at the bottom (arytenoids). Gray's Anatomy illustration.",
+        "hotspots": [
+          {
+            "id": "epiglottis",
+            "label": "Epiglottis (Supraglottis)",
+            "x": 50,
+            "y": 15,
+            "blurb": "Superior-most supraglottic structure. Supraglottic subsites have rich lymphatics and drain bilaterally to levels II-IV."
+          },
+          {
+            "id": "false-cord",
+            "label": "False Vocal Cord (Supraglottis)",
+            "x": 67,
+            "y": 52,
+            "blurb": "Supraglottic structure just above the true cords. About one-third of laryngeal cancers arise in the supraglottis."
+          },
+          {
+            "id": "true-cord",
+            "label": "True Vocal Cord (Glottis)",
+            "x": 60,
+            "y": 44,
+            "blurb": "About two-thirds of laryngeal cancers arise here. Sparse lymphatics mean early glottic cancers rarely have nodal spread (~2% for T1) - the anatomic reason elective neck treatment can often be skipped."
+          },
+          {
+            "id": "anterior-commissure",
+            "label": "Anterior Commissure",
+            "x": 52,
+            "y": 33,
+            "blurb": "Where the true cords meet anteriorly, with almost no perichondrium protecting the thyroid cartilage beneath it. Soft tissue thickness >1mm here is abnormal and suggests tumor extension - a classic pimp point."
+          },
+          {
+            "id": "subglottis",
+            "label": "Subglottis",
+            "x": 51,
+            "y": 62,
+            "blurb": "Only 1-2% of laryngeal cancers arise here, but it has extensive lymphatics draining to II-IV plus level VI (pretracheal/Delphian nodes)."
+          },
+          {
+            "id": "arytenoid",
+            "label": "Arytenoid Cartilage",
+            "x": 43,
+            "y": 82,
+            "blurb": "Paired cartilages at the posterior glottis that anchor the vocal cords via the cricoarytenoid joint. Vocal cord fixation (at least T3 disease) often reflects invasion here or of the thyroarytenoid muscle, or recurrent laryngeal nerve involvement."
+          }
+        ],
+        "image": "images/headneck/hn-larynx.jpg"
+      },
+      {
+        "id": "hn-larynx-coronal",
+        "title": "Coronal View",
+        "style": "schematic",
+        "caption": "Coronal cut through the larynx, viewed from behind: supraglottis on top, then the ventricle, the true cords (glottis), and the subglottis down to the trachea.",
+        "image": "images/headneck/hn-larynx-coronal.jpg",
+        "hotspots": [
+          {
+            "id": "lxc-epiglottis",
+            "label": "Epiglottis",
+            "x": 53,
+            "y": 23,
+            "blurb": "Top of the supraglottis. Supraglottic cancer has rich, bilateral lymphatics, so the neck is treated on both sides."
+          },
+          {
+            "id": "lxc-false",
+            "label": "False Vocal Cord (Supraglottis)",
+            "x": 45.5,
+            "y": 43,
+            "blurb": "The upper fold, above the ventricle. Still supraglottis. About 1/3 of laryngeal cancers start in the supraglottis."
+          },
+          {
+            "id": "lxc-ventricle",
+            "label": "Ventricle",
+            "x": 60,
+            "y": 47,
+            "blurb": "The slit between the false and true cords. It marks the border between the supraglottis (above) and the glottis (below)."
+          },
+          {
+            "id": "lxc-true",
+            "label": "True Vocal Cord (Glottis)",
+            "x": 51,
+            "y": 57,
+            "blurb": "About 2/3 of laryngeal cancers start here. Almost no lymphatics, so early glottic cancer is treated without the neck. Early hoarseness means it is often caught early."
+          },
+          {
+            "id": "lxc-paraglottic",
+            "label": "Paraglottic Space",
+            "x": 43,
+            "y": 57,
+            "blurb": "The fat and muscle lateral to the cords, deep to the thyroid cartilage. Invasion here is T3, and it is a route for tumor to spread up and down without being seen on scope."
+          },
+          {
+            "id": "lxc-subglottis",
+            "label": "Subglottis",
+            "x": 52.5,
+            "y": 67,
+            "blurb": "From under the true cords to the bottom of the cricoid. Only 1-2% of cancers start here, but it drains to level VI, so subglottic extension adds level VI to the field."
+          },
+          {
+            "id": "lxc-thyroid",
+            "label": "Thyroid Cartilage",
+            "x": 38.5,
+            "y": 63,
+            "blurb": "The shield around the larynx. Inner cortex invasion is T3; through the outer cortex is T4a. CT is the best test for this."
+          },
+          {
+            "id": "lxc-cricoid",
+            "label": "Cricoid Cartilage",
+            "x": 62,
+            "y": 82,
+            "blurb": "The only complete ring in the airway and the lower border of the larynx. Cricoid invasion is T4a. Its lower edge is also the N3 cutoff for nasopharynx nodes."
+          },
+          {
+            "id": "lxc-hyoid",
+            "label": "Hyoid Bone",
+            "x": 74.5,
+            "y": 13,
+            "blurb": "Above the larynx. A key nodal landmark: the bottom of the hyoid separates level II from level III."
+          },
+          {
+            "id": "lxc-trachea",
+            "label": "Trachea",
+            "x": 53,
+            "y": 93,
+            "blurb": "Below the larynx. Tracheal invasion is extralaryngeal spread (T4a)."
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "title": "Axial anatomy at the glottis",
+        "caption": "Thyroid and arytenoid cartilages, vocalis muscle, and cricoid lamina at the level of the true vocal folds. Montoya S et al., Insights Imaging 2019 (PMC6861408), CC BY 4.0.",
+        "style": "ct",
+        "image": "images/headneck/hn-g-lx-axial.jpg"
+      },
+      {
+        "title": "Laryngoscopy: vocal cord lesion",
+        "caption": "Glottic cancer of the left vocal cord with impaired cord motion. Crosetti E et al., Curr Oncol Rep 2024 (PMC11168980), CC BY 4.0.",
+        "style": "endoscopic",
+        "image": "images/headneck/hn-g-lx-scope.jpg"
+      }
+    ]
+  },
+  "anat-lymph-overview": {
+    "intro": "<p>Every level below is drawn on the same neck, so you can see how the levels relate to each other in space before drilling into any one subsite's drainage pattern.</p>",
+    "plates": [
+      {
+        "id": "hn-neck-levels",
+        "title": "Neck Levels I-VII (Overview)",
+        "style": "schematic",
+        "caption": "Lateral view of the head and neck lymph nodes (face on the right). Levels are approximate on a surface drawing; level VII (retropharyngeal) lies deep to what is shown.",
+        "hotspots": [
+          {
+            "id": "level-1a",
+            "label": "Level Ia (Submental)",
+            "x": 81,
+            "y": 48,
+            "blurb": "Midline, between the anterior bellies of the digastric muscles. Drains lower lip, anterior floor of mouth, anterior oral tongue."
+          },
+          {
+            "id": "level-1b",
+            "label": "Level Ib (Submandibular)",
+            "x": 71,
+            "y": 45,
+            "blurb": "Beneath the body of the mandible. Drains most oral cavity subsites."
+          },
+          {
+            "id": "level-2",
+            "label": "Level II (Upper Jugular)",
+            "x": 47,
+            "y": 47,
+            "blurb": "Skull base to hyoid, split into IIa (anterior to IJV) and IIb (posterior). The most commonly involved level in almost every H&N subsite."
+          },
+          {
+            "id": "level-3",
+            "label": "Level III (Mid Jugular)",
+            "x": 44,
+            "y": 63,
+            "blurb": "Hyoid to inferior border of cricoid cartilage."
+          },
+          {
+            "id": "level-4",
+            "label": "Level IV (Lower Jugular)",
+            "x": 44,
+            "y": 82,
+            "blurb": "Cricoid to clavicle."
+          },
+          {
+            "id": "level-5",
+            "label": "Level V (Posterior Triangle)",
+            "x": 34,
+            "y": 75,
+            "blurb": "Posterior to the sternocleidomastoid muscle, skull base to clavicle. Electively covered in nasopharyngeal carcinoma."
+          },
+          {
+            "id": "level-6",
+            "label": "Level VI (Central / Pretracheal)",
+            "x": 68,
+            "y": 75,
+            "blurb": "Hyoid to suprasternal notch; includes the prelaryngeal (Delphian) node. Covered when there is subglottic extension."
+          },
+          {
+            "id": "level-7",
+            "label": "Level VII (Retropharyngeal)",
+            "x": 51,
+            "y": 36,
+            "blurb": "Posterior to the pharynx (Rouvière nodes), a cranial extension of level II. Covered for any pharyngeal primary; the classic first echelon for nasopharyngeal carcinoma."
+          }
+        ],
+        "image": "images/headneck/hn-neck-levels.jpg"
+      }
+    ],
+    "gallery": [
+      {
+        "title": "Lateral neck diagram",
+        "caption": "Levels I-VI with their bony and muscular landmarks.",
+        "style": "schematic",
+        "image": "images/headneck/hn-g-ln-lateral.jpg"
+      },
+      {
+        "title": "Axial CT at the hyoid",
+        "caption": "Level II vs III boundary and the IIa/IIb split at the jugular vein.",
+        "style": "ct"
+      },
+      {
+        "title": "Contouring atlas slice",
+        "caption": "How the levels look as treatment-planning contours.",
+        "style": "ct"
+      },
+      {
+        "title": "PET: FDG-avid neck node",
+        "caption": "Coronal PET with an intensely avid node low in the jugular chain, just above the clavicle.",
+        "style": "pet",
+        "image": "images/headneck/hn-g-ln-pet.jpg"
+      }
+    ]
+  },
+  "anat-lymph-by-site": {
+    "intro": "<p>Click between subsites to see how the levels actually covered change with where the primary tumor sits - this is the logic an attending is running every time they draw an elective nodal volume.</p>",
+    "plates": [
+      {
+        "id": "hn-lymph-oral-cavity",
+        "title": "Oral Cavity Drainage",
+        "style": "schematic",
+        "caption": "Oral cavity primaries drain predictably to levels I-IV (same lateral neck drawing as above, face on the right).",
+        "hotspots": [
+          {
+            "id": "oc-1a",
+            "label": "Level Ia",
+            "x": 81,
+            "y": 48,
+            "blurb": "At risk from the lower lip, anterior oral tongue, and anterior floor of mouth. The upper lip is the exception - it drains to facial lymphatics instead."
+          },
+          {
+            "id": "oc-1b",
+            "label": "Level Ib",
+            "x": 71,
+            "y": 45,
+            "blurb": "The workhorse level for oral cavity disease - at risk from nearly every subsite (tongue, floor of mouth, gingiva, buccal mucosa, retromolar trigone, hard palate)."
+          },
+          {
+            "id": "oc-2",
+            "label": "Level II",
+            "x": 47,
+            "y": 47,
+            "blurb": "First echelon nodal group for oral tongue and most other oral cavity subsites; covered essentially always."
+          },
+          {
+            "id": "oc-3-4",
+            "label": "Levels III-IV",
+            "x": 44,
+            "y": 72,
+            "blurb": "Covered electively for oral tongue and floor of mouth primaries, following the same jugular chain as level II."
+          }
+        ],
+        "gallery": [
+          {
+            "title": "Axial CT: level I node",
+            "caption": "Enlarged necrotic right level I (submandibular) node. Sumawe JA, SAGE Open Med Case Rep 2026 (PMC13305278), CC BY-NC 4.0.",
+            "style": "ct",
+            "image": "images/headneck/hn-g-ln-oc-ct.jpg"
+          },
+          {
+            "title": "Clinical photo",
+            "caption": "Ulcerative cancer of the anterior floor of mouth and mandibular gingiva (level Ia/Ib risk). Yang JY et al., J Korean Assoc Oral Maxillofac Surg 2021 (PMC8249190), CC BY-NC 4.0.",
+            "style": "photo",
+            "image": "images/headneck/hn-g-ln-oc-photo.jpg"
+          }
+        ],
+        "image": "images/headneck/hn-neck-levels.jpg"
+      },
+      {
+        "id": "hn-lymph-oropharynx",
+        "title": "Oropharynx Drainage",
+        "style": "schematic",
+        "caption": "Oropharynx primaries add retropharyngeal coverage. The Unilateral Exception marker sits at the tonsil region, deep to the mandible.",
+        "hotspots": [
+          {
+            "id": "op-2",
+            "label": "Level II",
+            "x": 47,
+            "y": 47,
+            "blurb": "The dominant first-echelon level for tonsil and base-of-tongue primaries; base-of-tongue and soft palate tumors are often covered bilaterally given their midline proximity."
+          },
+          {
+            "id": "op-3-4",
+            "label": "Levels III-IV",
+            "x": 44,
+            "y": 72,
+            "blurb": "Covered electively along the jugular chain below level II."
+          },
+          {
+            "id": "op-7",
+            "label": "Level VII (Retropharyngeal)",
+            "x": 51,
+            "y": 36,
+            "blurb": "Covered for any pharyngeal primary - oropharynx included. Easy to forget because these nodes are deep and not palpable on exam."
+          },
+          {
+            "id": "op-unilateral",
+            "label": "Unilateral Exception",
+            "x": 58,
+            "y": 40,
+            "blurb": "A well-lateralized tonsil tumor without base-of-tongue or soft palate extension is one of the few oropharynx scenarios that can be treated with unilateral neck coverage alone."
+          }
+        ],
+        "gallery": [
+          {
+            "title": "Axial CT: cystic level II node",
+            "caption": "Cystic metastatic level II node (arrows) deep to the sternocleidomastoid, next to the internal jugular vein. Chengazi HU, Bhatt AA, Insights Imaging 2019 (PMC6377693), CC BY 4.0.",
+            "style": "ct",
+            "image": "images/headneck/hn-g-ln-op-cystic.jpg"
+          },
+          {
+            "title": "Axial CT: retropharyngeal node",
+            "caption": "Level VII node medial to the carotid.",
+            "style": "ct"
+          }
+        ],
+        "image": "images/headneck/hn-neck-levels.jpg"
+      },
+      {
+        "id": "hn-lymph-larynx",
+        "title": "Larynx Drainage",
+        "style": "schematic",
+        "caption": "Larynx drainage depends on the compartment. The glottis marker sits at the larynx in the front of the neck.",
+        "hotspots": [
+          {
+            "id": "lx-glottis",
+            "label": "Glottis → Minimal Drainage",
+            "x": 68,
+            "y": 60,
+            "blurb": "The true cords have almost no lymphatics. Early glottic cancer (T1-T2) so rarely spreads to nodes (~2-5%) that elective neck treatment is often skipped entirely."
+          },
+          {
+            "id": "lx-2-4",
+            "label": "Levels II-IV (Supra/Subglottic)",
+            "x": 45,
+            "y": 62,
+            "blurb": "Supraglottic and subglottic tumors are assumed to be at meaningful occult nodal risk from the outset and get elective bilateral coverage of II-IV even with a clinically negative neck."
+          },
+          {
+            "id": "lx-6",
+            "label": "Level VI",
+            "x": 68,
+            "y": 75,
+            "blurb": "Added when there is subglottic extension - the pretracheal (Delphian) and paratracheal nodes sit right in the path of subglottic spread."
+          }
+        ],
+        "gallery": [
+          {
+            "title": "Axial CT: level VI",
+            "caption": "Delphian / paratracheal nodes at risk with subglottic spread.",
+            "style": "ct"
+          },
+          {
+            "title": "Laryngoscopy",
+            "caption": "Supraglottic vs glottic primary.",
+            "style": "endoscopic"
+          }
+        ],
+        "image": "images/headneck/hn-neck-levels.jpg"
+      },
+      {
+        "id": "hn-lymph-nasopharynx",
+        "title": "Nasopharynx Drainage",
+        "style": "schematic",
+        "caption": "Nasopharynx is the one subsite that routinely adds level V (posterior triangle).",
+        "hotspots": [
+          {
+            "id": "np-7",
+            "label": "Level VII (Retropharyngeal)",
+            "x": 51,
+            "y": 36,
+            "blurb": "The classic first echelon for NPC - nearly all patients have retropharyngeal nodal involvement at diagnosis, even when the neck exam is unremarkable."
+          },
+          {
+            "id": "np-2-4",
+            "label": "Levels II-IV",
+            "x": 45,
+            "y": 62,
+            "blurb": "Covered bilaterally, following the same jugular chain pattern as other pharyngeal sites."
+          },
+          {
+            "id": "np-5",
+            "label": "Level V",
+            "x": 34,
+            "y": 75,
+            "blurb": "Nasopharynx is unique among H&N subsites in routinely requiring elective coverage of level V (posterior triangle) as well."
+          }
+        ],
+        "gallery": [
+          {
+            "title": "Axial MRI: retropharyngeal node",
+            "caption": "First-echelon node for NPC.",
+            "style": "mri"
+          },
+          {
+            "title": "Axial CT: level V node",
+            "caption": "Posterior triangle involvement.",
+            "style": "ct"
+          }
+        ],
+        "image": "images/headneck/hn-neck-levels.jpg"
+      }
+    ]
+  }
+}

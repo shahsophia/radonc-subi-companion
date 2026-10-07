@@ -1,0 +1,286 @@
+{
+ "anat-pr-gland": {
+  "intro": "<p>Start with the gland itself: its <strong>zones</strong> (where cancer starts), its <strong>neighbors</strong> (the organs at risk in every plan), and its <strong>levels</strong> from base to apex. Explore each drawing, then switch to Quiz mode. You will see the same structures on MRI and CT in the Imaging section.</p>",
+  "plates": [
+   {
+    "id": "pr-anat-zones",
+    "title": "The Zones (McNeal)",
+    "style": "schematic",
+    "caption": "3D drawing of the prostate cut open to show its zones, with the seminal vesicles behind it. Posterior is toward the upper left, anterior toward the lower right. Häggström M, Prostate zones (Wikimedia Commons), CC0; labels removed.",
+    "hotspots": [
+     {
+      "id": "z-0",
+      "label": "Peripheral Zone (PZ)",
+      "x": 56,
+      "y": 68,
+      "blurb": "The posterior and lateral gland (green), right against the rectum. About 70% of the glandular tissue and about 70% of cancers, which is why a DRE can feel them."
+     },
+     {
+      "id": "z-1",
+      "label": "Central Zone (CZ)",
+      "x": 58,
+      "y": 53,
+      "blurb": "A cone around the ejaculatory ducts at the base (teal). Few cancers start here, but they tend to be aggressive, and it sits next to the seminal vesicles."
+     },
+     {
+      "id": "z-2",
+      "label": "Transition Zone (TZ)",
+      "x": 71,
+      "y": 58,
+      "blurb": "Wraps around the urethra (yellow). Where BPH grows as men age, and where about 20% of cancers start."
+     },
+     {
+      "id": "z-3",
+      "label": "Anterior Fibromuscular Stroma",
+      "x": 82,
+      "y": 62,
+      "blurb": "The front of the gland (orange). Muscle, not glands, so cancer rarely starts here, but anterior tumors are missed by a DRE."
+     },
+     {
+      "id": "z-4",
+      "label": "Prostatic Urethra",
+      "x": 67,
+      "y": 50,
+      "blurb": "Runs straight through the gland from the bladder neck to the apex. Urethral dose drives urinary side effects."
+     },
+     {
+      "id": "z-5",
+      "label": "Ejaculatory Duct",
+      "x": 64,
+      "y": 61,
+      "blurb": "Formed where the vas and seminal vesicle join; runs through the central zone to the urethra."
+     },
+     {
+      "id": "z-6",
+      "label": "Seminal Vesicles",
+      "x": 64,
+      "y": 18,
+      "blurb": "Paired glands behind the bladder, attached at the base. Tumor growing into them is a high-risk feature."
+     },
+     {
+      "id": "z-7",
+      "label": "Vas Deferens (Ampulla)",
+      "x": 47,
+      "y": 32,
+      "blurb": "Joins the seminal vesicle duct to form the ejaculatory duct."
+     },
+     {
+      "id": "z-8",
+      "label": "Membranous Urethra",
+      "x": 69,
+      "y": 88,
+      "blurb": "Leaves the apex and passes through the external sphincter."
+     }
+    ],
+    "image": "images/prostate/pr-anat-zones.jpg"
+   },
+   {
+    "id": "pr-anat-sagittal",
+    "title": "Sagittal View: Neighbors",
+    "style": "schematic",
+    "caption": "Midline side view of the male pelvis, anterior on the left. The prostate sits under the bladder, in front of the rectum. Cancer Research UK diagram 358 (Wikimedia Commons), CC BY-SA 4.0; labels removed.",
+    "hotspots": [
+     {
+      "id": "s-0",
+      "label": "Prostate",
+      "x": 54,
+      "y": 57,
+      "blurb": "About the size of a walnut, wrapped around the urethra just below the bladder."
+     },
+     {
+      "id": "s-1",
+      "label": "Bladder",
+      "x": 50,
+      "y": 28,
+      "blurb": "Sits on top of the prostate base. Treated comfortably full to push bowel out of the field and spread bladder dose."
+     },
+     {
+      "id": "s-2",
+      "label": "Bladder Neck",
+      "x": 55,
+      "y": 45,
+      "blurb": "Where the bladder empties into the prostatic urethra, at the base of the gland."
+     },
+     {
+      "id": "s-3",
+      "label": "Seminal Vesicles",
+      "x": 73,
+      "y": 30,
+      "blurb": "Behind the bladder and above the prostate. Proximal seminal vesicles are often included in the target."
+     },
+     {
+      "id": "s-4",
+      "label": "Denonvilliers' Fascia",
+      "x": 66,
+      "y": 58,
+      "blurb": "The thin layer between the prostate and the rectum. A hydrogel spacer is injected just behind it to push the rectum away."
+     },
+     {
+      "id": "s-5",
+      "label": "Rectum",
+      "x": 78,
+      "y": 62,
+      "blurb": "Directly behind the prostate. The organ that limits dose: proctitis and bleeding. It is also why a DRE can feel the gland."
+     },
+     {
+      "id": "s-6",
+      "label": "Membranous Urethra / Sphincter",
+      "x": 51,
+      "y": 74,
+      "blurb": "Just below the apex. The external sphincter here controls continence; the penile bulb sits just below it."
+     },
+     {
+      "id": "s-7",
+      "label": "Vas Deferens",
+      "x": 27,
+      "y": 50,
+      "blurb": "Runs up from the testis, over the bladder, and down to join the seminal vesicle behind it."
+     },
+     {
+      "id": "s-8",
+      "label": "Ureter",
+      "x": 71,
+      "y": 5,
+      "blurb": "Enters the back of the bladder near the seminal vesicles."
+     }
+    ],
+    "image": "images/prostate/pr-anat-sagittal.jpg"
+   },
+   {
+    "id": "pr-anat-levels",
+    "title": "Base, Mid-Gland, Apex",
+    "style": "schematic",
+    "caption": "Close-up of the same sagittal drawing: the gland from the base under the bladder down to the apex. Cancer Research UK diagram 358 (Wikimedia Commons), CC BY-SA 4.0; labels removed.",
+    "hotspots": [
+     {
+      "id": "l-0",
+      "label": "Base",
+      "x": 35,
+      "y": 31,
+      "blurb": "The top of the gland, pressed against the bladder neck. The seminal vesicles attach here, so tumor at the base is the route into them."
+     },
+     {
+      "id": "l-1",
+      "label": "Mid-Gland",
+      "x": 32,
+      "y": 45,
+      "blurb": "The bulk of the gland and most of the peripheral zone. Biopsies sample the base, mid-gland, and apex on each side."
+     },
+     {
+      "id": "l-2",
+      "label": "Apex",
+      "x": 38,
+      "y": 66,
+      "blurb": "The narrow bottom tip, just above the sphincter. Hard to see on CT, and the most common place for a positive surgical margin."
+     },
+     {
+      "id": "l-3",
+      "label": "Bladder Neck",
+      "x": 43,
+      "y": 22,
+      "blurb": "The outlet of the bladder, sitting on the base."
+     },
+     {
+      "id": "l-4",
+      "label": "Prostatic Urethra",
+      "x": 41,
+      "y": 48,
+      "blurb": "Runs from the bladder neck down through the gland to the apex."
+     },
+     {
+      "id": "l-5",
+      "label": "Ejaculatory Duct",
+      "x": 51,
+      "y": 38,
+      "blurb": "Enters from the seminal vesicles at the back of the base and angles down to the urethra."
+     },
+     {
+      "id": "l-6",
+      "label": "Seminal Vesicle",
+      "x": 75,
+      "y": 10,
+      "blurb": "Behind the bladder, attached to the base."
+     },
+     {
+      "id": "l-7",
+      "label": "Membranous Urethra",
+      "x": 36,
+      "y": 80,
+      "blurb": "Below the apex, through the external sphincter."
+     },
+     {
+      "id": "l-8",
+      "label": "Rectum",
+      "x": 85,
+      "y": 60,
+      "blurb": "Behind the whole length of the gland, closest at the mid-gland and apex."
+     }
+    ],
+    "image": "images/prostate/pr-anat-levels.jpg"
+   }
+  ]
+ },
+ "anat-pr-nodes": {
+  "intro": "<p>Prostate lymph drains in a predictable order: <strong>obturator and internal iliac &rarr; external iliac and presacral &rarr; common iliac &rarr; para-aortic</strong>. Learn the chains on the map; you will find the same nodes on CT in the Imaging section.</p>",
+  "plates": [
+   {
+    "id": "pr-nodes-map",
+    "title": "Pelvic Nodal Map (Frontal)",
+    "style": "schematic",
+    "caption": "Pelvic and para-aortic lymph nodes (green) along the aorta, IVC, and iliac vessels. Obturator and presacral nodes are shown on axial CT in the Imaging section. Cancer Research UK diagram (Wikimedia Commons), CC BY-SA 4.0; labels removed.",
+    "hotspots": [
+     {
+      "id": "pa",
+      "label": "Para-aortic Nodes",
+      "x": 46.3,
+      "y": 32.3,
+      "blurb": "Along the aorta and IVC. M1a. Not in standard elective fields."
+     },
+     {
+      "id": "ci",
+      "label": "Common Iliac Nodes",
+      "x": 42.4,
+      "y": 57.3,
+      "blurb": "Above the iliac bifurcation. M1a by AJCC, but the distal common iliac (up to L5/S1) is covered in elective pelvic RT."
+     },
+     {
+      "id": "ext",
+      "label": "External Iliac Nodes",
+      "x": 40.4,
+      "y": 64.6,
+      "blurb": "Along the external iliac vessels at the pelvic brim. N1."
+     },
+     {
+      "id": "int",
+      "label": "Internal Iliac (Hypogastric) Nodes",
+      "x": 42.8,
+      "y": 69.4,
+      "blurb": "Along the internal iliac vessels, deep in the pelvis. First echelon. N1."
+     },
+     {
+      "id": "ing",
+      "label": "Inguinal Nodes",
+      "x": 38.7,
+      "y": 83.2,
+      "blurb": "Groin. M1a for prostate cancer (they drain the skin, anus, and vulva/penis)."
+     },
+     {
+      "id": "prostate-map",
+      "label": "Prostate",
+      "x": 49.9,
+      "y": 71.5,
+      "blurb": "The primary. Periprostatic nodes drain laterally to the obturator and internal iliac groups."
+     },
+     {
+      "id": "bladder-map",
+      "label": "Bladder",
+      "x": 49.9,
+      "y": 63.6,
+      "blurb": "Sits in front of the prostate. The pelvic nodal chains run along the vessels on either side of it."
+     }
+    ],
+    "image": "images/prostate/pr-nodes-map.jpg"
+   }
+  ]
+ }
+}

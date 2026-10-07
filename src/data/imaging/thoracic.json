@@ -1,0 +1,850 @@
+{
+ "img-th-ct-levels": {
+  "intro": "<p>Learn the normal mediastinum before reading abnormal scans. Four axial slices go from just above the aortic arch down to the heart, followed by one coronal view. Explore each slice, then switch to Quiz mode and label it.</p>",
+  "plates": [
+   {
+    "id": "th-ax-inlet",
+    "title": "Axial: Great Vessels (T2–T3)",
+    "style": "ct",
+    "caption": "Contrast-enhanced axial CT just above the aortic arch, patient's right on your left. The five vessels in front of the trachea are the arch branches and the two brachiocephalic veins. Source: Hashmi R, Sectional Anatomy Quiz III, Asia Ocean J Nucl Med Biol (PMC6352052), CC BY 3.0; letter labels removed.",
+    "hotspots": [
+     {
+      "id": "r-bcv",
+      "label": "Right Brachiocephalic Vein",
+      "x": 38.2,
+      "y": 29.2,
+      "blurb": "Brightest vessel here because contrast was injected in the right arm. Joins the left brachiocephalic vein to form the SVC just below this level."
+     },
+     {
+      "id": "bca",
+      "label": "Brachiocephalic Trunk",
+      "x": 48.3,
+      "y": 28.8,
+      "blurb": "First branch of the arch, directly in front of the trachea. Splits into the right subclavian and right common carotid arteries behind the right sternoclavicular joint."
+     },
+     {
+      "id": "lcca",
+      "label": "Left Common Carotid Artery",
+      "x": 54.0,
+      "y": 28.8,
+      "blurb": "Second arch branch, just left of the brachiocephalic trunk."
+     },
+     {
+      "id": "l-bcv",
+      "label": "Left Brachiocephalic Vein",
+      "x": 58.3,
+      "y": 24.2,
+      "blurb": "Crosses from left to right in front of the arch branches. Its upper border is where station 2R ends and 4R begins."
+     },
+     {
+      "id": "lsca",
+      "label": "Left Subclavian Artery",
+      "x": 61.3,
+      "y": 41.0,
+      "blurb": "Third arch branch, the most posterior, against the left lung apex. Can be encased by a left apical (Pancoast) tumor."
+     },
+     {
+      "id": "trachea",
+      "label": "Trachea",
+      "x": 48.5,
+      "y": 36.5,
+      "blurb": "Midline air column. Nodes beside it here are station 2 (upper paratracheal); the R/L line is the left lateral wall of the trachea, not the midline."
+     },
+     {
+      "id": "esoph",
+      "label": "Esophagus",
+      "x": 54.6,
+      "y": 40.4,
+      "blurb": "Behind and slightly left of the trachea. Nodes behind the trachea here are station 3p (retrotracheal)."
+     },
+     {
+      "id": "apex",
+      "label": "Right Lung Apex",
+      "x": 25.0,
+      "y": 45.0,
+      "blurb": "Lung apex at the top of the chest. Superior sulcus tumors start here and involve the brachial plexus and subclavian vessels."
+     },
+     {
+      "id": "rib1",
+      "label": "First Rib",
+      "x": 26.5,
+      "y": 26.8,
+      "blurb": "Forms the thoracic inlet with T1 and the manubrium. Invasion of the first rib or plexus by a Pancoast tumor is T3 or T4."
+     }
+    ],
+    "image": "images/thoracic/th-ct-greatvessels.jpg"
+   },
+   {
+    "id": "th-ax-arch",
+    "title": "Axial: Aortic Arch (T4)",
+    "style": "ct",
+    "caption": "Contrast-enhanced axial CT at the aortic arch: the arch sweeps from front right to back left beside the trachea. Source: Hashmi R, Sectional Anatomy Quiz II, Asia Ocean J Nucl Med Biol (PMC5765337), CC BY 3.0; letter labels removed.",
+    "hotspots": [
+     {
+      "id": "arch",
+      "label": "Aortic Arch",
+      "x": 54.1,
+      "y": 43.0,
+      "blurb": "Runs front to back along the left side of the trachea. Nodes beside the arch are station 6 (para-aortic, left side only)."
+     },
+     {
+      "id": "svc",
+      "label": "Superior Vena Cava (SVC)",
+      "x": 43.4,
+      "y": 38.3,
+      "blurb": "Right of the arch, in front of the trachea's right side. Tumor or bulky 4R nodes can compress it (SVC syndrome), an urgent indication for RT."
+     },
+     {
+      "id": "trachea",
+      "label": "Trachea",
+      "x": 48.0,
+      "y": 46.9,
+      "blurb": "Station 4R nodes sit on its right side between the SVC and trachea; station 4L on its left side, medial to the arch."
+     },
+     {
+      "id": "esoph",
+      "label": "Esophagus",
+      "x": 50.9,
+      "y": 53.2,
+      "blurb": "Behind the trachea, left of midline. An esophagus organ at risk runs through every thoracic plan."
+     },
+     {
+      "id": "prevasc",
+      "label": "Prevascular Fat (Station 3a)",
+      "x": 48.3,
+      "y": 22.5,
+      "blurb": "Fat in front of the great vessels, behind the sternum. Holds the thymus remnant and station 3a nodes."
+     },
+     {
+      "id": "manubrium",
+      "label": "Sternum (Manubrium)",
+      "x": 46.5,
+      "y": 15.0,
+      "blurb": "The manubrium joins the sternal body at the sternal angle (T4–T5), the level of the carina and the bottom of the arch."
+     },
+     {
+      "id": "vb",
+      "label": "Vertebral Body",
+      "x": 50.0,
+      "y": 64.5,
+      "blurb": "Tumor invading a vertebral body is T4. The spinal cord inside the canal behind it is a dose-limiting organ at risk."
+     }
+    ],
+    "image": "images/thoracic/th-ct-arch.jpg"
+   },
+   {
+    "id": "th-ax-apwindow",
+    "title": "Axial: Pulmonary Arteries & Main Bronchi (T5–T6)",
+    "style": "ct",
+    "caption": "Contrast-enhanced axial CT just below the carina: the main pulmonary artery divides and the two main bronchi have separated. The SVC looks bright and streaky from undiluted contrast.",
+    "hotspots": [
+     {
+      "id": "asc-ao",
+      "label": "Ascending Aorta",
+      "x": 47.8,
+      "y": 27.0,
+      "blurb": "Front of the mediastinum, right of the pulmonary trunk. Nodes beside it are station 6."
+     },
+     {
+      "id": "svc",
+      "label": "Superior Vena Cava (SVC)",
+      "x": 39.0,
+      "y": 39.5,
+      "blurb": "Right of the ascending aorta. Dense contrast arriving from an arm injection makes it look bright and mottled; don't mistake it for a mass."
+     },
+     {
+      "id": "mpa",
+      "label": "Main Pulmonary Artery",
+      "x": 58.0,
+      "y": 33.0,
+      "blurb": "The pulmonary trunk, left of the ascending aorta. It divides into right and left pulmonary arteries at this level."
+     },
+     {
+      "id": "rpa",
+      "label": "Right Pulmonary Artery",
+      "x": 44.0,
+      "y": 47.0,
+      "blurb": "Crosses right, behind the ascending aorta and SVC, to the right hilum (station 10R)."
+     },
+     {
+      "id": "lpa",
+      "label": "Left Pulmonary Artery",
+      "x": 64.5,
+      "y": 55.5,
+      "blurb": "Arches over the left main bronchus to the left hilum. The AP window (station 5) sits just above it, below the arch."
+     },
+     {
+      "id": "rmb",
+      "label": "Right Main Bronchus",
+      "x": 37.0,
+      "y": 54.5,
+      "blurb": "Shorter, wider, and more vertical than the left. Hilar nodes around it are station 10R (N1 for a right tumor)."
+     },
+     {
+      "id": "lmb",
+      "label": "Left Main Bronchus",
+      "x": 54.5,
+      "y": 55.0,
+      "blurb": "Longer than the right, passing under the arch and left pulmonary artery."
+     },
+     {
+      "id": "sub",
+      "label": "Subcarinal Space (Station 7)",
+      "x": 45.5,
+      "y": 58.0,
+      "blurb": "Between the two main bronchi. Station 7 drains both lungs and is N2 for a tumor on either side."
+     },
+     {
+      "id": "desc-ao",
+      "label": "Descending Aorta",
+      "x": 59.0,
+      "y": 67.0,
+      "blurb": "Left of the spine. Stations 8 (paraesophageal) and 9 (pulmonary ligament) are below and beside it."
+     },
+     {
+      "id": "esoph",
+      "label": "Esophagus",
+      "x": 52.0,
+      "y": 62.5,
+      "blurb": "Between the left main bronchus and the descending aorta, usually with a bit of air inside."
+     }
+    ],
+    "image": "images/thoracic/th-ct-pa.jpg"
+   },
+   {
+    "id": "th-ax-heart",
+    "title": "Axial: Heart (T7–T8)",
+    "style": "ct",
+    "caption": "Contrast-enhanced axial CT through the four cardiac chambers. Source: Hashmi R, Sectional Anatomy Quiz IV, Asia Ocean J Nucl Med Biol (PMC6661304), CC BY 3.0; letter labels and arrows removed.",
+    "hotspots": [
+     {
+      "id": "ra",
+      "label": "Right Atrium",
+      "x": 41.7,
+      "y": 30.7,
+      "blurb": "Forms the right heart border. The IVC and SVC drain into it."
+     },
+     {
+      "id": "rv",
+      "label": "Right Ventricle",
+      "x": 55.8,
+      "y": 21.7,
+      "blurb": "The most anterior chamber, right behind the sternum."
+     },
+     {
+      "id": "la",
+      "label": "Left Atrium",
+      "x": 48.9,
+      "y": 43.5,
+      "blurb": "The most posterior chamber, directly in front of the esophagus. Subcarinal (7) nodes sit just above it; enlarged ones push on it."
+     },
+     {
+      "id": "lv",
+      "label": "Left Ventricle",
+      "x": 63.7,
+      "y": 34.3,
+      "blurb": "Thick-walled chamber on the left. Heart dose (and left ventricle dose) was linked to worse survival after lung chemoRT (RTOG 0617)."
+     },
+     {
+      "id": "ivs",
+      "label": "Interventricular Septum",
+      "x": 63.1,
+      "y": 25.3,
+      "blurb": "The wall between the ventricles, running diagonally from front right to back left."
+     },
+     {
+      "id": "peri",
+      "label": "Pericardium",
+      "x": 78.9,
+      "y": 38.6,
+      "blurb": "Thin line around the heart with a little fat. Tumor invading the parietal pericardium is T3; into the heart itself is T4. A malignant pericardial effusion is M1a."
+     },
+     {
+      "id": "desc-ao",
+      "label": "Descending Aorta",
+      "x": 51.8,
+      "y": 60.1,
+      "blurb": "In front of the left side of the spine."
+     },
+     {
+      "id": "esoph",
+      "label": "Esophagus (Station 8)",
+      "x": 47.8,
+      "y": 54.2,
+      "blurb": "Between the left atrium and the aorta. Nodes beside it here are station 8 (paraesophageal). Esophagitis is the main acute toxicity of chemoRT."
+     },
+     {
+      "id": "rll",
+      "label": "Right Lower Lobe",
+      "x": 25.0,
+      "y": 62.0,
+      "blurb": "Lower lobes fill the back of the chest at this level. They move the most with breathing, so 4D-CT matters most here."
+     }
+    ],
+    "image": "images/thoracic/th-ct-heart.jpg"
+   },
+   {
+    "id": "th-coronal",
+    "title": "Coronal: Subcarinal Plane (IASLC Stations)",
+    "style": "ct",
+    "caption": "Coronal CT through the subcarinal space, with the IASLC nodal stations drawn in color by the atlas authors. Source: Itazawa T et al., JLCS–JASTRO CT atlas for lymph node stations, J Radiat Res 2017 (PMC5321185), CC BY-NC 4.0.",
+    "hotspots": [
+     {
+      "id": "arch",
+      "label": "Aortic Arch",
+      "x": 56.0,
+      "y": 31.0,
+      "blurb": "Cut in cross-section, so it looks round. Station 4L hugs its underside, 5 (AP window) sits below it laterally, and 6 lies beside it."
+     },
+     {
+      "id": "lmb",
+      "label": "Left Main Bronchus",
+      "x": 54.5,
+      "y": 37.8,
+      "blurb": "The air under the arch, inside the 4L outline. The left main bronchus runs under the arch and the left pulmonary artery."
+     },
+     {
+      "id": "lpa",
+      "label": "Left Pulmonary Artery",
+      "x": 61.0,
+      "y": 43.0,
+      "blurb": "Runs left toward the hilum below the arch. Nodes along the left main bronchus here are 10L (hilar, N1)."
+     },
+     {
+      "id": "sub",
+      "label": "Subcarinal Space (Station 7)",
+      "x": 48.0,
+      "y": 48.5,
+      "blurb": "The cyan triangle below the carina. N2 for a tumor on either side; reached by EBUS or mediastinoscopy."
+     },
+     {
+      "id": "la",
+      "label": "Left Atrium",
+      "x": 52.0,
+      "y": 60.0,
+      "blurb": "Directly below the subcarinal space. Big station 7 nodes press on it."
+     },
+     {
+      "id": "esoph",
+      "label": "Esophagus (Station 8)",
+      "x": 52.5,
+      "y": 76.0,
+      "blurb": "Runs down behind the heart to the diaphragm; the yellow outline around it is station 8 (paraesophageal)."
+     },
+     {
+      "id": "r-hilum",
+      "label": "Right Hilar Vessels",
+      "x": 37.0,
+      "y": 64.0,
+      "blurb": "Pulmonary arteries and veins fanning into the right lung. Station 11 (interlobar) nodes sit between the lobar bronchi here."
+     },
+     {
+      "id": "st4r",
+      "label": "Station 4R",
+      "x": 44.5,
+      "y": 34.5,
+      "blurb": "Right lower paratracheal: from the brachiocephalic vein down to the lower border of the azygos vein. N2 for a right tumor, N3 for a left tumor."
+     },
+     {
+      "id": "diaphragm",
+      "label": "Right Hemidiaphragm / Liver",
+      "x": 28.0,
+      "y": 92.0,
+      "blurb": "The dome of the right hemidiaphragm with the liver below. Tumor invading the diaphragm is T4."
+     }
+    ],
+    "image": "images/thoracic/th-ct-coronal.jpg"
+   }
+  ]
+ },
+ "img-th-compartments": {
+  "plates": [],
+  "gallery": [
+   {
+    "title": "Mediastinal compartments (lateral drawing)",
+    "style": "schematic",
+    "image": "images/thoracic/th-compartments.jpg",
+    "caption": "Side view of the chest: prevascular (pink), visceral (blue), and paravertebral (yellow) compartments. Zhao M et al., Front Oncol 2026 (PMC13056659), Fig. 1, CC BY 4.0."
+   },
+   {
+    "title": "Sagittal CT: the same three compartments",
+    "style": "ct",
+    "image": "images/thoracic/th-g-sagittal-ct.jpg",
+    "caption": "Prevascular (orange), visceral (green), and paravertebral (purple) compartments on a real CT. Ahuja J et al., Diagnostics 2023 (PMC10606219), CC BY 4.0."
+   }
+  ]
+ },
+ "img-th-ct-nodes": {
+  "intro": "<p>The same IASLC stations, now on the axial CT slices you'll contour on. Each slice shows the stations at that level in color. Explore each one, then quiz yourself. The frontal map is below to jog your memory, along with a real CT showing enlarged nodes.</p>",
+  "plates": [
+   {
+    "id": "th-nodes-ax-arch",
+    "title": "Axial CT: Above the Arch",
+    "style": "ct",
+    "caption": "Upper mediastinal CT (above the arch) with station contours. Source: JLCS–JASTRO CT atlas of regional lymph node stations, J Radiat Res 2017 (PMC5321185), Fig. 3, CC BY-NC 4.0; station labels removed. The dashed blue line (Line A) separates 3a from 2R/2L.",
+    "hotspots": [
+     {
+      "id": "a3a",
+      "label": "Station 3a",
+      "x": 43,
+      "y": 39,
+      "blurb": "Prevascular, behind the sternum."
+     },
+     {
+      "id": "a2r",
+      "label": "Station 2R",
+      "x": 39,
+      "y": 51,
+      "blurb": "Right of the trachea, above the brachiocephalic vein crossing."
+     },
+     {
+      "id": "a2l",
+      "label": "Station 2L",
+      "x": 54,
+      "y": 59,
+      "blurb": "Left of the trachea, above the top of the arch."
+     },
+     {
+      "id": "a3p",
+      "label": "Station 3p",
+      "x": 45,
+      "y": 63,
+      "blurb": "Behind the trachea, beside the esophagus."
+     }
+    ],
+    "image": "images/thoracic/th-nodes-ax-upper.jpg"
+   },
+   {
+    "id": "th-nodes-ax-ap",
+    "title": "Axial CT: Azygos Arch / AP Window",
+    "style": "ct",
+    "caption": "CT at the azygos arch / AP window with station contours. Source: JLCS–JASTRO CT atlas, J Radiat Res 2017 (PMC5321185), Fig. 5, CC BY-NC 4.0; station labels removed. The dashed red and blue lines (Lines B and C) are the atlas's boundaries for station 5.",
+    "hotspots": [
+     {
+      "id": "b3a",
+      "label": "Station 3a",
+      "x": 50,
+      "y": 25,
+      "blurb": "Prevascular, behind the sternum and in front of the great vessels."
+     },
+     {
+      "id": "b6",
+      "label": "Station 6",
+      "x": 59,
+      "y": 38,
+      "blurb": "Beside the ascending aorta / arch."
+     },
+     {
+      "id": "b4r",
+      "label": "Station 4R",
+      "x": 43,
+      "y": 53,
+      "blurb": "Right paratracheal, above the azygos arch."
+     },
+     {
+      "id": "b4l",
+      "label": "Station 4L",
+      "x": 55,
+      "y": 56,
+      "blurb": "Left of the trachea, medial to the ligamentum arteriosum."
+     },
+     {
+      "id": "b5",
+      "label": "Station 5",
+      "x": 63,
+      "y": 58,
+      "blurb": "AP window, lateral to the ligamentum, under the arch."
+     },
+     {
+      "id": "b3p",
+      "label": "Station 3p",
+      "x": 54,
+      "y": 71,
+      "blurb": "Behind the trachea, beside the esophagus."
+     }
+    ],
+    "image": "images/thoracic/th-nodes-ax-ap.jpg"
+   },
+   {
+    "id": "th-nodes-ax-sub",
+    "title": "Axial CT: At & Below the Carina",
+    "style": "ct",
+    "caption": "CT at the subcarinal level with station contours. Source: JLCS–JASTRO CT atlas, J Radiat Res 2017 (PMC5321185), CC BY-NC 4.0; station labels removed.",
+    "hotspots": [
+     {
+      "id": "c7",
+      "label": "Station 7",
+      "x": 47,
+      "y": 60,
+      "blurb": "Between the main bronchi, above the left atrium. Short axis over 1 cm is suspicious."
+     },
+     {
+      "id": "c8",
+      "label": "Station 8",
+      "x": 54,
+      "y": 71,
+      "blurb": "Beside the esophagus, below the subcarinal space."
+     },
+     {
+      "id": "c11r",
+      "label": "Station 11R",
+      "x": 28,
+      "y": 54,
+      "blurb": "Between the right lobar bronchi (upper lobe and bronchus intermedius; or middle and lower)."
+     },
+     {
+      "id": "c10r",
+      "label": "Station 10R",
+      "x": 39,
+      "y": 64,
+      "blurb": "Right hilar nodes along the right main bronchus. Ipsilateral station 10 = N1."
+     },
+     {
+      "id": "c10l",
+      "label": "Station 10L",
+      "x": 62,
+      "y": 63,
+      "blurb": "Left hilar nodes along the left main bronchus. Ipsilateral = N1; for a right-sided tumor, contralateral hilar = N3."
+     }
+    ],
+    "image": "images/thoracic/th-nodes-ax-carina.jpg"
+   }
+  ],
+  "gallery": [
+   {
+    "title": "IASLC map (frontal view)",
+    "style": "schematic",
+    "image": "images/thoracic/th-iaslc.jpg",
+    "caption": "Frontal drawing of the trachea, esophagus, aortic arch, left pulmonary artery, and bronchi with the main IASLC stations marked. Stations 3a (in front of the great vessels) and 3p (behind the trachea) overlap the trachea in this view, so they are not marked; find them on the CT slices in Imaging."
+   },
+   {
+    "title": "Enlarged nodes on CT (stations 4L, 5, 6)",
+    "style": "ct",
+    "image": "images/thoracic/th-img-nodes.jpg",
+    "caption": "Axial contrast CT at the level of stations 4L, 5, and 6. Source: Arias S et al., Can Respir J 2016 (PMC5183797), Fig. 5, CC BY 4.0; arrows and labels removed."
+   }
+  ]
+ },
+ "img-th-ct-lung": {
+  "plates": [],
+  "gallery": [
+   {
+    "title": "Lung window: a spiculated nodule",
+    "style": "ct",
+    "image": "images/thoracic/th-nodule.jpg",
+    "caption": "Axial CT, lung window, at the level of the main bronchi: a spiculated nodule in the left lower lobe against the posterior pleura (patient's left is on your right)."
+   },
+   {
+    "title": "MIP of the same nodule",
+    "style": "ct",
+    "image": "images/thoracic/th-g-mip.jpg",
+    "caption": "Maximum intensity projection (MIP) of the same patient: stacking slices makes vessels look like branching lines, so a round nodule stands out. Used to find small nodules."
+   }
+  ]
+ },
+ "img-th-pet": {
+  "intro": "<p><strong>FDG PET/CT</strong> stages the nodes and distant sites in one study and changes management in roughly a quarter of patients. Hot means glucose-hungry, not necessarily cancer.</p>",
+  "plates": [
+   {
+    "id": "th-img-pet-chestwall",
+    "title": "PET/CT: Tumor Against the Chest Wall",
+    "style": "pet",
+    "image": "images/thoracic/th-pet-chestwall.jpg",
+    "caption": "Fused axial PET/CT at the level of the heart: an FDG-avid tumor in the anterior right lung, pressed against the chest wall.",
+    "hotspots": [
+     {
+      "id": "primary",
+      "label": "FDG-Avid Primary",
+      "x": 24.5,
+      "y": 24.0,
+      "blurb": "Intense uptake in the tumor. Most NSCLC is FDG-avid; PET is mainly for finding nodes and metastases, not for proving the primary is cancer."
+     },
+     {
+      "id": "cw",
+      "label": "Chest Wall Contact",
+      "x": 21.5,
+      "y": 28.5,
+      "blurb": "Broad contact with the chest wall. Rib destruction or tumor in the chest wall muscles is T3; contact alone isn't. For SBRT: rib fracture and chest wall pain risk, so many use 4 to 5 fractions."
+     },
+     {
+      "id": "heart",
+      "label": "Myocardium (Physiologic)",
+      "x": 55.0,
+      "y": 33.0,
+      "blurb": "Normal, variable heart uptake. Not disease."
+     },
+     {
+      "id": "aorta",
+      "label": "Descending Aorta (Blood Pool)",
+      "x": 55.0,
+      "y": 58.0,
+      "blurb": "Mild uptake in blood, the background that nodes are compared against. A node hotter than the blood pool (or the liver) is suspicious."
+     },
+     {
+      "id": "lung",
+      "label": "Normal Lung",
+      "x": 30.0,
+      "y": 62.0,
+      "blurb": "Air has almost no uptake, so even small hot lung nodules stand out (though tiny ones under about 8 mm can be falsely negative)."
+     }
+    ]
+   },
+   {
+    "id": "th-img-pet-pancoast",
+    "title": "PET/CT: Superior Sulcus (Pancoast) Tumor",
+    "style": "pet",
+    "image": "images/thoracic/th-pet-pancoast.jpg",
+    "caption": "Fused axial PET/CT at the thoracic inlet: an FDG-avid mass at the left lung apex.",
+    "hotspots": [
+     {
+      "id": "primary",
+      "label": "Left Apical (Superior Sulcus) Tumor",
+      "x": 63.0,
+      "y": 37.0,
+      "blurb": "A Pancoast tumor sits against the first rib, subclavian vessels, and lower brachial plexus (C8 to T1). Arm pain, hand weakness, and Horner syndrome follow. MRI shows plexus, vessel, and spine invasion; standard care is chemoRT then surgery."
+     },
+     {
+      "id": "apex",
+      "label": "Left Lung Apex",
+      "x": 60.0,
+      "y": 50.0,
+      "blurb": "Aerated lung below the tumor. The tumor grows up and out of the apex into the chest wall."
+     },
+     {
+      "id": "trachea",
+      "label": "Trachea",
+      "x": 48.5,
+      "y": 40.0,
+      "blurb": "Midline air column at the thoracic inlet."
+     },
+     {
+      "id": "node",
+      "label": "Faint Uptake Right of the Trachea",
+      "x": 43.0,
+      "y": 39.0,
+      "blurb": "Low-grade uptake near the right paratracheal (station 2R) region. Too faint to call on its own; if it would change the stage (contralateral = N3), sample it with EBUS."
+     },
+     {
+      "id": "vb",
+      "label": "Vertebral Body",
+      "x": 47.0,
+      "y": 53.0,
+      "blurb": "Vertebral body invasion is T4 and makes surgery much harder. Look for it on MRI."
+     },
+     {
+      "id": "r-apex",
+      "label": "Right Lung Apex",
+      "x": 35.0,
+      "y": 45.0,
+      "blurb": "The normal side for comparison."
+     },
+     {
+      "id": "humerus",
+      "label": "Left Humeral Head",
+      "x": 85.0,
+      "y": 43.0,
+      "blurb": "Shoulder joint. Mild uptake around joints is usually arthritis, not tumor."
+     }
+    ]
+   }
+  ]
+ },
+ "img-th-mri": {
+  "intro": "<p><strong>MRI</strong> answers two thoracic questions: <strong>is there brain metastasis?</strong> (contrast brain MRI for stage II and higher) and <strong>what does a superior sulcus tumor invade?</strong> (plexus, vessels, spine).</p>",
+  "plates": [
+   {
+    "id": "th-img-mri-brain",
+    "title": "MRI Brain: Metastases (T1 Post-Contrast)",
+    "style": "mri",
+    "caption": "Axial T1 post-contrast MRI: brain metastases from squamous cell lung cancer. Source: Jeon J et al., Cancers 2026 (PMC13163019), Fig. 2A, CC BY 4.0; label removed.",
+    "hotspots": [
+     {
+      "id": "met-ring",
+      "label": "Ring-Enhancing Metastasis",
+      "x": 55,
+      "y": 22,
+      "blurb": "A 3.5 cm left frontal metastasis with an enhancing rim and necrotic center. Brain mets = M1b (single) or M1c; large ones like this are resected or treated with SRS."
+     },
+     {
+      "id": "edema",
+      "label": "Vasogenic Edema",
+      "x": 54,
+      "y": 43,
+      "blurb": "Finger-like white matter swelling (bright on FLAIR). Causes symptoms; treated with dexamethasone."
+     },
+     {
+      "id": "small-met",
+      "label": "Second Metastasis",
+      "x": 62,
+      "y": 63,
+      "blurb": "A smaller ring-enhancing lesion. Contrast MRI finds lesions that CT and PET miss, and the number of lesions guides SRS vs whole-brain RT."
+     },
+     {
+      "id": "midline",
+      "label": "Mass Effect / Midline Shift",
+      "x": 44,
+      "y": 50,
+      "blurb": "Mass effect. Needs steroids and urgent treatment planning."
+     }
+    ],
+    "image": "images/thoracic/th-mri-brain.jpg"
+   },
+   {
+    "id": "th-img-mri-pancoast",
+    "title": "MRI: Superior Sulcus (Pancoast)",
+    "style": "mri",
+    "caption": "Coronal T2 MRI of a right superior sulcus tumor with the superior sulcus structures intact. Source: Manenti G et al., Case Rep Radiol 2013 (PMC3626318), Fig. 4, CC BY 3.0; arrow removed.",
+    "hotspots": [
+     {
+      "id": "apical-mass",
+      "label": "Apical Mass",
+      "x": 33,
+      "y": 76,
+      "blurb": "Superior sulcus tumor. Easy to miss as pleural thickening on CXR."
+     },
+     {
+      "id": "plexus",
+      "label": "Brachial Plexus / Superior Sulcus",
+      "x": 35,
+      "y": 53,
+      "blurb": "The thoracic inlet above the tumor, where the lower trunk (C8–T1) crosses the first rib. Here the fat plane is preserved: MRI is the best test for plexus invasion (T4)."
+     },
+     {
+      "id": "canal",
+      "label": "Spinal Canal",
+      "x": 48,
+      "y": 63,
+      "blurb": "Bright CSF around the cord on T2. Tumor tracking through the neural foramina toward the canal threatens the cord."
+     },
+     {
+      "id": "vb",
+      "label": "Vertebral Body",
+      "x": 48,
+      "y": 80,
+      "blurb": "Invasion = T4."
+     }
+    ],
+    "image": "images/thoracic/th-mri-pancoast.jpg"
+   }
+  ]
+ },
+ "img-th-sim": {
+  "intro": "<p>The scans radiation oncologists make themselves: the <strong>4D-CT simulation</strong> used to plan, and the <strong>follow-up CT after SBRT</strong>, where you need to tell expected fibrosis from recurrence.</p>",
+  "plates": [
+   {
+    "id": "th-img-4dct",
+    "title": "4D-CT Planning: Targets & OARs",
+    "style": "ct",
+    "caption": "Placeholder CT-style slice (axial planning CT with target volumes and OARs). Swap in a real de-identified CT image here.",
+    "hotspots": [
+     {
+      "id": "gtv",
+      "label": "GTV",
+      "x": 30,
+      "y": 40,
+      "blurb": "Visible tumor on the lung window (plus PET-positive nodes for stage III)."
+     },
+     {
+      "id": "itv",
+      "label": "ITV (Motion Envelope)",
+      "x": 30,
+      "y": 46,
+      "blurb": "GTV across all breathing phases of the 4D-CT (often drawn on the MIP). Covers where the tumor goes when the patient breathes."
+     },
+     {
+      "id": "ptv",
+      "label": "PTV",
+      "x": 30,
+      "y": 52,
+      "blurb": "ITV plus a setup margin (about 5 mm for SBRT). For stage III, a CTV (about 5–8 mm) comes first."
+     },
+     {
+      "id": "pbt",
+      "label": "Proximal Bronchial Tree",
+      "x": 48,
+      "y": 36,
+      "blurb": "Contoured for every lung SBRT. Defines central and ultracentral."
+     },
+     {
+      "id": "esoph",
+      "label": "Esophagus",
+      "x": 53,
+      "y": 62,
+      "blurb": "Mean dose drives esophagitis in chemoradiation."
+     },
+     {
+      "id": "heart",
+      "label": "Heart",
+      "x": 62,
+      "y": 64,
+      "blurb": "Keep mean heart dose low; heart dose predicted survival in RTOG 0617."
+     },
+     {
+      "id": "cord",
+      "label": "Spinal Cord",
+      "x": 50,
+      "y": 84,
+      "blurb": "Max about 45–50 Gy conventional."
+     },
+     {
+      "id": "lungs",
+      "label": "Lungs Minus GTV",
+      "x": 76,
+      "y": 40,
+      "blurb": "V20 under about 30–35% and mean lung dose under about 20 Gy limit pneumonitis."
+     }
+    ]
+   },
+   {
+    "id": "th-img-postsbrt",
+    "title": "Follow-Up CT After SBRT",
+    "style": "ct",
+    "caption": "Placeholder CT-style slice (axial CT 18 months after lung SBRT). Swap in a real de-identified CT image here.",
+    "hotspots": [
+     {
+      "id": "fibrosis",
+      "label": "Linear / Mass-Like Fibrosis",
+      "x": 30,
+      "y": 40,
+      "blurb": "Expected. Consolidation and scarring conforming to the high-dose region, stable or shrinking over time."
+     },
+     {
+      "id": "air-bronch-keep",
+      "label": "Preserved Air Bronchograms",
+      "x": 34,
+      "y": 36,
+      "blurb": "Reassuring. Fibrosis usually keeps its air bronchograms."
+     },
+     {
+      "id": "bulging",
+      "label": "Bulging Margin",
+      "x": 24,
+      "y": 44,
+      "blurb": "High-risk feature. A convex, bulging edge suggests tumor regrowth."
+     },
+     {
+      "id": "growth",
+      "label": "Enlargement After 12 Months",
+      "x": 36,
+      "y": 50,
+      "blurb": "The strongest warning sign. Fibrosis should stabilize after the first year."
+     },
+     {
+      "id": "cc-growth",
+      "label": "Craniocaudal Growth",
+      "x": 30,
+      "y": 30,
+      "blurb": "Growth over 5 mm (and 20%) in the head-to-foot direction is a high-risk feature."
+     },
+     {
+      "id": "rib-fx",
+      "label": "Rib Fracture",
+      "x": 12,
+      "y": 50,
+      "blurb": "Late SBRT toxicity for chest wall-adjacent tumors."
+     }
+    ]
+   }
+  ]
+ }
+}

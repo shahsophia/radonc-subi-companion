@@ -1,0 +1,490 @@
+{
+ "img-gyn-cervix": {
+  "intro": "<p><strong>Pelvic MRI</strong> is the best test for the cervix: tumor size, <strong>parametrial invasion</strong>, and vaginal, bladder, or rectal spread. Cervical cancer is <strong>intermediate (gray) on T2</strong> against the <strong>dark</strong> cervical stroma.</p>",
+  "plates": [
+   {
+    "id": "gyn-mri-cx-sag",
+    "title": "Cervix MRI: Sagittal T2",
+    "style": "mri",
+    "caption": "Sagittal T2, anterior on the left: a bulky cervical cancer invading the posterior bladder wall (FIGO IVA), with a catheter in the bladder. Source: Otero-García et al., Insights Imaging 2019 (PMC6375059), fig. 17a, CC BY 4.0; arrows removed.",
+    "hotspots": [
+     {
+      "id": "cx-tumor",
+      "label": "Cervical Tumor (Intermediate T2)",
+      "x": 50,
+      "y": 60,
+      "blurb": "Brighter than the dark cervical stroma. Measure the largest dimension: ≤2 cm IB1, 2–4 cm IB2, >4 cm IB3."
+     },
+     {
+      "id": "cx-uterus",
+      "label": "Uterine Body",
+      "x": 33,
+      "y": 33,
+      "blurb": "Tumor can extend up into the lower uterine segment (doesn't change FIGO stage, but changes the target)."
+     },
+     {
+      "id": "cx-fornix",
+      "label": "Vaginal Fornix / Upper Vagina",
+      "x": 57,
+      "y": 80,
+      "blurb": "Tumor in the upper two-thirds of the vagina = IIA; lower third = IIIA. Vaginal gel helps see it."
+     },
+     {
+      "id": "cx-bladder",
+      "label": "Bladder Wall",
+      "x": 39,
+      "y": 66,
+      "blurb": "Loss of the fat plane or mucosal involvement suggests IVA (confirm with cystoscopy and biopsy)."
+     },
+     {
+      "id": "cx-rectum",
+      "label": "Rectum",
+      "x": 71,
+      "y": 55,
+      "blurb": "Rectal mucosal invasion = IVA (confirm with proctoscopy)."
+     }
+    ],
+    "image": "images/gyn/gyn-mri-cx-sag.jpg"
+   },
+   {
+    "id": "gyn-mri-cx-ax",
+    "title": "Cervix MRI: Axial T2 (Parametria)",
+    "style": "mri",
+    "caption": "Placeholder MRI-style slice (axial oblique T2 perpendicular to the cervical canal). Swap in a real de-identified MRI image here.",
+    "hotspots": [
+     {
+      "id": "ring-intact",
+      "label": "Intact Dark Stromal Ring",
+      "x": 62,
+      "y": 50,
+      "blurb": "A preserved low-T2 ring on one side essentially excludes parametrial invasion there."
+     },
+     {
+      "id": "ring-broken",
+      "label": "Disrupted Ring / Parametrial Invasion",
+      "x": 34,
+      "y": 50,
+      "blurb": "Tumor breaking through the ring with spiculation into the fat = IIB."
+     },
+     {
+      "id": "hydro",
+      "label": "Dilated Ureter",
+      "x": 22,
+      "y": 40,
+      "blurb": "Tumor encasing the ureter causes hydroureter/hydronephrosis = IIIB."
+     },
+     {
+      "id": "sidewall-m",
+      "label": "Pelvic Side Wall",
+      "x": 8,
+      "y": 52,
+      "blurb": "Tumor reaching the side wall muscles/vessels = IIIB."
+     },
+     {
+      "id": "node-m",
+      "label": "Enlarged Obturator Node",
+      "x": 16,
+      "y": 64,
+      "blurb": "Short axis >1 cm or round/necrotic: suspicious (IIIC1 if confirmed by imaging/pathology)."
+     }
+    ]
+   }
+  ]
+ },
+ "img-gyn-endo": {
+  "intro": "<p>For endometrial cancer, MRI answers two questions before or after surgery: <strong>how deep into the myometrium</strong> (IA vs IB) and <strong>is the cervical stroma involved</strong> (stage II).</p>",
+  "plates": [
+   {
+    "id": "gyn-mri-endo",
+    "title": "Endometrial MRI: Sagittal T2 + DWI",
+    "style": "mri",
+    "caption": "Placeholder MRI-style slice (sagittal T2 of the uterus with an endometrial tumor). Swap in a real de-identified MRI image here.",
+    "hotspots": [
+     {
+      "id": "en-tumor",
+      "label": "Endometrial Tumor",
+      "x": 50,
+      "y": 32,
+      "blurb": "Intermediate on T2, restricts on DWI, enhances less than the myometrium."
+     },
+     {
+      "id": "en-jz",
+      "label": "Junctional Zone",
+      "x": 38,
+      "y": 30,
+      "blurb": "Inner dark band of the myometrium. An intact junctional zone suggests no deep invasion."
+     },
+     {
+      "id": "en-deep",
+      "label": "Deep Myometrial Invasion (≥50%)",
+      "x": 64,
+      "y": 28,
+      "blurb": "Tumor reaching the outer half of the myometrium = IB."
+     },
+     {
+      "id": "en-serosa",
+      "label": "Serosa",
+      "x": 74,
+      "y": 22,
+      "blurb": "Breach = IIIA."
+     },
+     {
+      "id": "en-cx",
+      "label": "Cervical Stroma",
+      "x": 54,
+      "y": 60,
+      "blurb": "Invasion of the cervical stroma (not just the glands) = stage II."
+     },
+     {
+      "id": "en-ovary",
+      "label": "Adnexa",
+      "x": 82,
+      "y": 40,
+      "blurb": "Adnexal involvement = IIIA."
+     }
+    ]
+   }
+  ]
+ },
+ "img-gyn-nodes": {
+  "intro": "<p>On CT, nodes are found by following the <strong>vessels</strong>: every pelvic node group is named for the vessel it hugs. Step down from the para-aortic region to the pelvis, then see what involved nodes look like on <strong>PET/CT</strong> and in the groin.</p>",
+  "plates": [
+   {
+    "id": "gyn-nodes-ax-upper",
+    "title": "Axial CT: Para-aortic & Common Iliac (L3–L5)",
+    "style": "ct",
+    "caption": "Contrast CT at L4, near the aortic bifurcation, patient's right on your left (normal study; the patient is male, but the retroperitoneal anatomy is the same). Source: Mikael Häggström, via Wikimedia Commons, CC0.",
+    "hotspots": [
+     {
+      "id": "u-aorta",
+      "label": "Aorta / Left Para-aortic Nodes",
+      "x": 51,
+      "y": 33,
+      "blurb": "Left para-aortic nodes sit beside the aorta."
+     },
+     {
+      "id": "u-ivc",
+      "label": "IVC / Paracaval Nodes",
+      "x": 42,
+      "y": 34,
+      "blurb": "Right-sided (paracaval and interaortocaval) nodes."
+     },
+     {
+      "id": "u-kidney",
+      "label": "Kidney",
+      "x": 25,
+      "y": 40,
+      "blurb": "Key OAR for an extended field. The top of the field is usually the renal vessels (T12–L1)."
+     },
+     {
+      "id": "u-bowel",
+      "label": "Small Bowel",
+      "x": 68,
+      "y": 33,
+      "blurb": "Dose-limiting for extended-field RT."
+     }
+    ],
+    "image": "images/gyn/gyn-nodes-ax-upper.jpg"
+   },
+   {
+    "id": "gyn-nodes-ax-lower",
+    "title": "Axial CT: Pelvic Nodes (Acetabulum)",
+    "style": "ct",
+    "caption": "Planning CT at the acetabular roof, patient's right on your left. Red = nodal CTV along the pelvic side walls; blue = cervix CTV. Source: Cancers (Basel) 2026 (PMC13465101), fig. 2B, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "l-ei",
+      "label": "External Iliac Nodes",
+      "x": 31,
+      "y": 31,
+      "blurb": "Anterolateral along the vessels."
+     },
+     {
+      "id": "l-ii",
+      "label": "Internal Iliac Nodes",
+      "x": 35,
+      "y": 60,
+      "blurb": "Posterior toward the sacrum."
+     },
+     {
+      "id": "l-obt",
+      "label": "Obturator Nodes",
+      "x": 33,
+      "y": 47,
+      "blurb": "Medial to the obturator internus."
+     },
+     {
+      "id": "l-cervix",
+      "label": "Cervix / Parametria",
+      "x": 50,
+      "y": 56,
+      "blurb": "Central target."
+     },
+     {
+      "id": "l-marrow",
+      "label": "Pelvic Bone Marrow",
+      "x": 24,
+      "y": 40,
+      "blurb": "Marrow-sparing IMRT lowers blood count drops during chemoRT."
+     }
+    ],
+    "image": "images/gyn/gyn-nodes-ax-lower.jpg"
+   }
+  ],
+  "gallery": [
+   {
+    "title": "PET/CT: para-aortic node",
+    "caption": "FDG-avid para-aortic node on fused PET/CT: IIIC2 disease extends the field. Source: J Imaging 2025 (PMC11856187), CC BY 4.0.",
+    "style": "pet",
+    "image": "images/gyn/gyn-g-pet-paraaortic.jpg"
+   },
+   {
+    "title": "Groin CT",
+    "caption": "Enlarged inguinal nodes (arrows) around the femoral vessels. Source: Cancers (Basel) 2024 (PMC10813817), CC BY 4.0.",
+    "style": "ct",
+    "image": "images/gyn/gyn-g-groin-ct.jpg"
+   }
+  ]
+ },
+ "img-gyn-pet": {
+  "intro": "<p><strong>FDG PET/CT</strong> is standard for locally advanced cervical cancer (and advanced/high-grade uterine cancer). It maps the <strong>nodes</strong>, which decide the RT field and the boosts.</p>",
+  "plates": [
+   {
+    "id": "gyn-pet",
+    "title": "PET/CT: Nodal and Distant Staging",
+    "style": "pet",
+    "caption": "FDG PET/CT staging of stage IVB cervical cancer. Left: MIP. Middle and right columns: fused PET/CT and CT at the pelvis, the para-aortic region, and the supraclavicular fossa. Source: J Imaging 2025 (PMC11856187), fig. 4, CC BY 4.0; letters and arrows removed.",
+    "hotspots": [
+     {
+      "id": "pet-cx",
+      "label": "Cervical Primary",
+      "x": 55,
+      "y": 26,
+      "blurb": "Intensely avid. PET response at 3 months after chemoRT predicts outcome."
+     },
+     {
+      "id": "pet-pelvic",
+      "label": "Pelvic Node (IIIC1)",
+      "x": 61,
+      "y": 28,
+      "blurb": "Avid external iliac or obturator node: boost it (e.g., to 55–60 Gy total)."
+     },
+     {
+      "id": "pet-pa",
+      "label": "Para-aortic Node (IIIC2)",
+      "x": 48.5,
+      "y": 58,
+      "blurb": "Extended field up to the renal vessels."
+     },
+     {
+      "id": "pet-scv",
+      "label": "Supraclavicular Node (IVB)",
+      "x": 59,
+      "y": 76,
+      "blurb": "Distant disease; changes intent toward systemic therapy."
+     },
+     {
+      "id": "pet-bladder",
+      "label": "Bladder (Physiologic)",
+      "x": 18,
+      "y": 83,
+      "blurb": "Excreted FDG. Look carefully around it."
+     },
+     {
+      "id": "pet-kidney",
+      "label": "Kidneys (Physiologic)",
+      "x": 22,
+      "y": 56,
+      "blurb": "Normal excretion; also check for hydronephrosis."
+     }
+    ],
+    "image": "images/gyn/gyn-pet.jpg"
+   }
+  ]
+ },
+ "img-gyn-ct": {
+  "intro": "<p><strong>CT</strong> is used for body staging (lungs, liver, nodes, hydronephrosis) and is the planning scan. The vulva is planned on CT too, with attention to the <strong>groins</strong>.</p>",
+  "plates": [
+   {
+    "id": "gyn-ct-staging",
+    "title": "CT Abdomen/Pelvis: Staging Findings",
+    "style": "ct",
+    "caption": "Staging CT findings, patient's right on your left. Top: right hydronephrosis and a pelvic mass obstructing the ureter (Cureus 2025, PMC12329160, CC BY 4.0). Bottom: omental caking and large-volume ascites (Cureus 2026, PMC13105303, CC BY 4.0).",
+    "hotspots": [
+     {
+      "id": "ct-hydro",
+      "label": "Hydronephrosis",
+      "x": 14,
+      "y": 32,
+      "blurb": "In cervical cancer = IIIB unless another cause."
+     },
+     {
+      "id": "ct-ascites",
+      "label": "Ascites",
+      "x": 82,
+      "y": 66,
+      "blurb": "Suggests peritoneal disease (ovarian, serous endometrial)."
+     },
+     {
+      "id": "ct-omental",
+      "label": "Omental Caking",
+      "x": 30,
+      "y": 64,
+      "blurb": "Classic for ovarian / serous cancers."
+     },
+     {
+      "id": "ct-mass",
+      "label": "Pelvic Mass",
+      "x": 72,
+      "y": 33,
+      "blurb": "Primary tumor."
+     }
+    ],
+    "image": "images/gyn/gyn-ct-staging.jpg"
+   },
+   {
+    "id": "gyn-ct-sim",
+    "title": "CT Simulation: Pelvic IMRT",
+    "style": "ct",
+    "caption": "Axial planning CT for cervical cancer IMRT, patient's right on your left. Yellow = uterine/primary CTV, red = nodal CTV, pink = involved node. Source: Cancers (Basel) 2026 (PMC13465101), fig. 2A, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "sim-ctv-t",
+      "label": "Primary CTV (Cervix, Uterus, Parametria, Upper Vagina)",
+      "x": 50,
+      "y": 50,
+      "blurb": "The whole uterus and cervix, parametria, and upper vagina (more if the vagina is involved)."
+     },
+     {
+      "id": "sim-ctv-n",
+      "label": "Nodal CTV",
+      "x": 33,
+      "y": 45,
+      "blurb": "Obturator, internal/external iliac, presacral, common iliac (± para-aortic) around the vessels."
+     },
+     {
+      "id": "sim-rectum-g",
+      "label": "Rectum",
+      "x": 49,
+      "y": 72,
+      "blurb": "OAR."
+     },
+     {
+      "id": "sim-marrow",
+      "label": "Pelvic Bone Marrow",
+      "x": 24,
+      "y": 42,
+      "blurb": "Sparing lowers hematologic toxicity with cisplatin."
+     }
+    ],
+    "image": "images/gyn/gyn-ct-sim.jpg"
+   },
+   {
+    "id": "gyn-ct-groin",
+    "title": "CT Simulation: Vulva & Groins",
+    "style": "ct",
+    "caption": "Axial CT at the femoral heads with inguinal node CTVs (purple). From an anal cancer atlas, but the groin volume is the same one used for vulvar cancer. Source: Cancers (Basel) 2023 (PMC10741760), fig. 2, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "gr-ing-r",
+      "label": "Right Inguinofemoral Nodes",
+      "x": 32,
+      "y": 29,
+      "blurb": "Contour around the femoral vessels; depth varies a lot with body habitus (why CT planning matters)."
+     },
+     {
+      "id": "gr-ing-l",
+      "label": "Left Inguinofemoral Nodes",
+      "x": 66,
+      "y": 29,
+      "blurb": "Treat bilaterally for midline tumors."
+     },
+     {
+      "id": "gr-fh",
+      "label": "Femoral Head / Neck",
+      "x": 19,
+      "y": 50,
+      "blurb": "Keep dose down (fracture risk)."
+     },
+     {
+      "id": "gr-anus",
+      "label": "Anus / Rectum",
+      "x": 48,
+      "y": 57,
+      "blurb": "OAR; may be target if involved."
+     }
+    ],
+    "image": "images/gyn/gyn-ct-groin.jpg"
+   }
+  ]
+ },
+ "img-gyn-brachy": {
+  "intro": "<p>Image-guided brachytherapy: the applicator is placed in the OR, then an <strong>MRI (or CT)</strong> is taken with it in place to contour the <strong>HR-CTV</strong> and organs at risk before each fraction.</p>",
+  "plates": [
+   {
+    "id": "gyn-brachy-mri",
+    "title": "Brachytherapy: Tandem & Ring on MRI (Sagittal)",
+    "style": "mri",
+    "caption": "Placeholder MRI-style slice (sagittal T2 with a tandem and ring applicator in place). Swap in a real de-identified MRI image here.",
+    "hotspots": [
+     {
+      "id": "tandem",
+      "label": "Tandem",
+      "x": 50,
+      "y": 34,
+      "blurb": "Goes through the cervical os into the uterus. Dose falls off steeply around it."
+     },
+     {
+      "id": "ring",
+      "label": "Ring (or Ovoids)",
+      "x": 56,
+      "y": 60,
+      "blurb": "Sits in the vaginal fornices against the cervix."
+     },
+     {
+      "id": "hrctv",
+      "label": "HR-CTV",
+      "x": 52,
+      "y": 50,
+      "blurb": "Whole cervix plus residual tumor at brachy. Goal D90 ≥85 Gy EQD2 (EBRT + brachy)."
+     },
+     {
+      "id": "pointa",
+      "label": "Point A",
+      "x": 40,
+      "y": 46,
+      "blurb": "2 cm above the os along the tandem, 2 cm lateral. The historical prescription point."
+     },
+     {
+      "id": "bladder-b",
+      "label": "Bladder",
+      "x": 28,
+      "y": 48,
+      "blurb": "D2cc <80–90 Gy EQD2."
+     },
+     {
+      "id": "rectum-b",
+      "label": "Rectum",
+      "x": 76,
+      "y": 62,
+      "blurb": "D2cc <65–75 Gy EQD2. Vaginal packing or a rectal retractor pushes it away."
+     },
+     {
+      "id": "sigmoid-b",
+      "label": "Sigmoid",
+      "x": 66,
+      "y": 18,
+      "blurb": "D2cc <70–75 Gy EQD2. Can drape over the tandem tip."
+     },
+     {
+      "id": "needles",
+      "label": "Interstitial Needles",
+      "x": 30,
+      "y": 58,
+      "blurb": "Added for bulky or parametrial residual disease that the tandem can't cover."
+     }
+    ]
+   }
+  ]
+ }
+}

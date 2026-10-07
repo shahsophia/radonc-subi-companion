@@ -10,7 +10,7 @@ The finished app is a single self-contained HTML file (`dist/index.html`) so it 
 
 ```
 RadOnc-SubI-Companion/
-├── build.js                 Assembles src/ into dist/index.html. Run: node build.js
+├── build.js                 Assembles src/ into dist/index.html. Run: node build.js (or python3 build.py)
 ├── dist/
 │   └── index.html           The finished, shareable app. Open this file in a browser to use it.
 ├── src/
@@ -20,8 +20,11 @@ RadOnc-SubI-Companion/
 │   └── data/
 │       ├── services.json         The 8 disease-site tiles (id, name, icon, color, blurb).
 │       ├── background.json       The 10 "Before You Start" sections (title, question, html).
-│       ├── decks/<service>.json  Flashcards for one disease site (e.g. decks/breast.json).
-│       └── docs/<service>.json   Reading docs for one disease site, keyed by category.
+│       ├── decks/<service>.json    Flashcards for one disease site (e.g. decks/breast.json).
+│       │                           Card fields: id, category, front, back, and optional "extra" (shown under the answer).
+│       ├── docs/<service>.json     Reading docs for one disease site, keyed by category.
+│       ├── anatomy/<service>.json  Interactive anatomy plates (explore + arrow/MCQ quiz) for one site.
+│       └── imaging/<service>.json  Interactive CT/MRI plates (same explore + quiz engine) for one site.
 └── docs/
     ├── build-notes.md                    Running history of how this app was built (Parts 1-5).
     └── cns-imaging-pearls-radiopaedia.md  Source research notes for CNS imaging pearls.
@@ -60,6 +63,33 @@ RadOnc-SubI-Companion/
 ```json
 { "id": "rad-onc-101", "num": 1, "title": "Radiation Oncology 101", "question": "What is radiation oncology...?", "html": "<p>...</p>" }
 ```
+
+**`src/data/curriculum.json`**: module metadata for the home-page disease-site cards, the module landing pages, and Resources (Sources & References). Per site: `title`, `summary`, `topics` (shown on cards), `objectives` ("What you'll learn"), `guideline`, `staging`, and `trials` (only references the site's docs actually name), plus an optional `reviewed` (e.g. `"2026-10"`). A "Content review" date is shown only when `reviewed` is set; no dates are shown otherwise.
+
+**`src/data/anatomy/<service>.json`** and **`src/data/imaging/<service>.json`** — one interactive module per site, rendered above the doc's prose whenever its `category` matches the currently open doc category:
+```json
+{
+  "category": "Anatomy & Lymphatics",
+  "intro": "<p>optional intro HTML shown above the plates</p>",
+  "plates": [
+    {
+      "id": "hn-larynx", "title": "Larynx — Laryngoscopic View",
+      "style": "schematic",
+      "caption": "Placeholder schematic — swap in a real image here.",
+      "hotspots": [
+        { "id": "epiglottis", "label": "Epiglottis", "x": 50, "y": 20, "blurb": "..." }
+      ]
+    }
+  ]
+}
+```
+`x`/`y` are percentages within the image box. `style` picks a placeholder background look (`schematic`, `endoscopic`, `ct`, `mri`) until a real image is swapped in (a future `image` field pointing at a real asset can replace the placeholder rendering). Each plate powers two modes: **Explore** (click any numbered marker or legend chip to read its label/blurb) and **Quiz** (an arrow points at one hotspot at a time; pick it from 4 MCQ choices). A service only gets the module if a file exists for it in `anatomy/` or `imaging/` (currently head & neck, breast, and thoracic). Newer files use the keyed format: an object of plate groups (`{ "anat-th-nodes": { intro, plates, gallery } }`), each mounted wherever a doc contains `<div class='plate-group-inline' data-plate-group='anat-th-nodes'></div>`.
+
+Docs can also embed a few self-mounting widgets: `<div class='quiz-carousel' data-quiz-set='th-staging'></div>` (question sets live in `QUIZ_SETS` in `app.js`), `<div class='tab-carousel'>` with `<section class='tc-slide' data-title='...'>` slides (staging and NCCN tables), `<div class='stage-builder'></div>` (AJCC 9th edition lung stage builder/quiz), and `<div class='nstage-drill'></div>` (IASLC station to N-stage drill).
+
+**`src/data/cases/<service>.json`** powers Case-Based Practice (Vignette, Imaging, Stage, Treatment, Dose/Fx). Each case's `scene` holds the ellipse coordinates for the primary (and optional node) drawn on the schematic image (`"kind"` can be `"pelvis"`, `"brain"`, `"spine"`, or `"abdomen"`; default is the chest; an optional `edema` ellipse is drawn under the lesion). The `stage`, `treatmentPlan`, and `radDose` steps are fill-in (`prompt`/`answer`/`explanation`) or multiple choice (`prompt`/`choices`/`correctIndex`/`explanation`). An optional top-level `stepLabels` renames steps (prostate uses "Risk Group").
+
+More embeddable widgets: `<div class='choice-drill' data-drill-set='pr-risk'></div>` (sets in `DRILL_SETS`), `<div class='gleason-builder'></div>`, `<div class='risk-builder'></div>` (NCCN prostate risk group + AJCC stage), `<div class='sedlis-builder'></div>` (cervix post-hysterectomy Sedlis/Peters checker), `<div class='glioma-builder'></div>` (WHO 2021 glioma classifier), `<div class='gpa-builder'></div>` (brain metastasis GPA), `<div class='rectal-builder'></div>` (rectal MRI features to plan), `<div class='pancreas-builder'></div>` (pancreas resectability).
 
 The `html` fields in both `docs` and `background` support the same set of content classes already styled in `styles.css`: `<p>`, `<h3>`, `<h4>`, `<ul>`/`<ol>`, `<strong>`, `<div class="pearl">` (a callout box, used for "High-Yield Summary" and clinical pearls), `<div class="worked-example">` with `<h5>` sub-headers (used for the consult-note/presentation examples), `<div class="flow-diagram">` with `.flow-step`/`.flow-arrow`/`.flow-connector` (step-by-step process visuals), `<figure>`/`<figcaption>` (images), and `<table>`.
 

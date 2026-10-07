@@ -1,3 +1,13 @@
 .DS_Store
 *.log
 node_modules/
+
+# Raw source images (processed copies live in src/images/ and are embedded in dist/)
+/Breast cancer/
+/Gynecology/
+/Head and neck/
+/Thoracic/
+/New Folder With Items/
+/*.png
+/*.jpg
+/*.jpeg

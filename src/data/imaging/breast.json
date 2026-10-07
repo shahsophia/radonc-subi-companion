@@ -1,0 +1,271 @@
+{
+ "img-breast-mammo": {
+  "intro": "<p>Mammography and ultrasound find and characterize the lesion. Explore each view, then quiz yourself on the features that make a finding suspicious.</p>",
+  "plates": [
+   {
+    "id": "br-mammo-mlo",
+    "title": "Mammogram: Small Cancer",
+    "style": "mammo",
+    "image": "images/breast/br-mammo-mlo.jpg",
+    "caption": "Mammogram showing a small cancer (upper edge of the image) and calcium deposits in the veins; the original arrow pointing to the cancer has been removed. National Cancer Institute (image 2553), public domain.",
+    "hotspots": [
+     {
+      "id": "mass",
+      "label": "Irregular Mass (Cancer)",
+      "x": 5,
+      "y": 13,
+      "blurb": "A dense mass with irregular, ill-defined margins. Irregular or spiculated margins are the classic sign of invasive cancer and are BI-RADS 4 or 5 (biopsy)."
+     },
+     {
+      "id": "vessel",
+      "label": "Calcified Blood Vessel",
+      "x": 21,
+      "y": 17,
+      "blurb": "A thin, winding, tubular line of calcium along a vein or artery wall. Vascular calcifications are benign (BI-RADS 2) and should not be confused with the fine, clustered calcifications of DCIS."
+     },
+     {
+      "id": "fg",
+      "label": "Fibroglandular Tissue",
+      "x": 38,
+      "y": 50,
+      "blurb": "The white, wispy tissue is glands and connective tissue. The more of it there is (denser breasts), the easier it is for a cancer to hide."
+     },
+     {
+      "id": "fat",
+      "label": "Fat (Dark Areas)",
+      "x": 46,
+      "y": 36,
+      "blurb": "Fat is gray to dark on a mammogram. A white cancer stands out best against a fatty background, which is why mammograms work better in older women."
+     },
+     {
+      "id": "nipple",
+      "label": "Nipple",
+      "x": 72,
+      "y": 42,
+      "blurb": "The reference point for describing a lesion: clock face position and distance from the nipple (for example, 'left breast 2:00, 4 cm from the nipple')."
+     },
+     {
+      "id": "skin",
+      "label": "Skin Line",
+      "x": 64,
+      "y": 80,
+      "blurb": "Thin, even skin edge. Diffuse skin thickening suggests inflammatory cancer (T4d) or post-radiation change."
+     },
+     {
+      "id": "benign-calc",
+      "label": "Coarse Benign Calcification",
+      "x": 5,
+      "y": 83,
+      "blurb": "Large, smooth, rim-shaped calcification. Big, round, or rim calcifications are benign (BI-RADS 2); fine pleomorphic or linear branching calcifications are the suspicious ones."
+     }
+    ]
+   },
+   {
+    "id": "br-us",
+    "title": "Breast Ultrasound",
+    "style": "us",
+    "caption": "Breast ultrasound: an irregular, hypoechoic mass that is taller than wide, reaches the skin, and casts a posterior acoustic shadow.",
+    "hotspots": [
+     {
+      "id": "us-mass",
+      "label": "Taller-Than-Wide Hypoechoic Mass",
+      "x": 57,
+      "y": 30,
+      "blurb": "Dark mass that grows through tissue planes (taller than wide). Suspicious for cancer."
+     },
+     {
+      "id": "us-shadow",
+      "label": "Posterior Acoustic Shadowing",
+      "x": 58,
+      "y": 88,
+      "blurb": "Dark shadow behind a dense, fibrotic cancer. Benign cysts do the opposite (posterior enhancement)."
+     },
+     {
+      "id": "us-halo",
+      "label": "Irregular, Angular Margins",
+      "x": 41,
+      "y": 55,
+      "blurb": "Margins that are angular or spiculated rather than smooth and circumscribed are suspicious for cancer (BI-RADS 4–5)."
+     },
+     {
+      "id": "us-skin",
+      "label": "Skin Line (Tumor Reaching Skin)",
+      "x": 63,
+      "y": 5,
+      "blurb": "This mass extends up to the skin. For staging, skin involvement only counts as T4b if there is ulceration, satellite skin nodules, or skin edema (peau d'orange); dermal invasion alone does not make it T4."
+     }
+    ],
+    "image": "images/breast/br-us.jpg"
+   }
+  ],
+  "gallery": [
+   {
+    "title": "Breast density (BI-RADS A to D)",
+    "wide": true,
+    "style": "mammo",
+    "image": "images/breast/br-density.jpg",
+    "caption": "Left to right: A, almost entirely fatty; B, scattered fibroglandular tissue; C, heterogeneously dense; D, extremely dense. Glandular tissue and cancer are both white on a mammogram, so as density rises, sensitivity falls (from about 80% in fatty breasts to under 50% in extremely dense breasts). Younger women have denser breasts and density falls with age as glands are replaced by fat. That is why a palpable lump in a woman under 30 is worked up with ultrasound first, while women 30 and older get a diagnostic mammogram (plus ultrasound). Dense breasts (C and D) are also an independent risk factor for breast cancer and may need supplemental screening with ultrasound or MRI. Pawlak ME et al., Front Oncol 2024 (doi:10.3389/fonc.2024.1398196), CC BY 4.0; cropped and labels removed."
+   },
+   {
+    "title": "Mammogram: CC view",
+    "caption": "Irregular, spiculated high-density mass in the upper inner left breast. Razdan S et al., Cureus 2025 (PMC12791182), CC BY 4.0.",
+    "style": "mammo",
+    "image": "images/breast/br-g-mammo-cc.jpg"
+   },
+   {
+    "title": "Magnification view of calcifications",
+    "caption": "Fine linear and branching (casting) calcifications of DCIS on a magnified CC view.",
+    "style": "mammo",
+    "image": "images/breast/br-g-calcs.jpg"
+   },
+   {
+    "title": "Ultrasound of an axillary node",
+    "caption": "Axillary lymph node on ultrasound. Look at cortical thickness and the fatty hilum: a thickened cortex (over 3 mm) or a lost hilum is suspicious.",
+    "style": "us",
+    "image": "images/breast/br-g-us-node.jpg"
+   }
+  ]
+ },
+ "img-breast-mri": {
+  "intro": "<p>Breast MRI is the most sensitive test. Contrast shows where tumors pull in blood, and the pattern of enhancement tells you what you're looking at.</p>",
+  "plates": [
+   {
+    "id": "br-mri-dce",
+    "title": "Breast MRI — Contrast-Enhanced Axial",
+    "style": "mri",
+    "caption": "Axial contrast-enhanced (DCE) breast MRI of both breasts; the patient's right breast is on your left. The bright structure below is the heart.",
+    "hotspots": [
+     {
+      "id": "mri-mass",
+      "label": "Enhancing Lesion (Biopsy: DCIS)",
+      "x": 29,
+      "y": 57,
+      "blurb": "Small enhancing focus in the right breast that proved to be DCIS. DCIS usually shows non-mass enhancement in a segmental or linear (ductal) pattern; an irregular, spiculated enhancing mass is the strongest MRI sign of invasive cancer."
+     },
+     {
+      "id": "mri-contra",
+      "label": "Contralateral Breast",
+      "x": 75,
+      "y": 48,
+      "blurb": "MRI finds a hidden cancer in the other breast in about 5% of patients."
+     },
+     {
+      "id": "mri-satellite",
+      "label": "Rest of the Same Breast",
+      "x": 18,
+      "y": 50,
+      "blurb": "Always scan the rest of the involved breast: MRI finds additional disease in the same breast in about 15–25% of cases, which can change a lumpectomy to a mastectomy."
+     },
+     {
+      "id": "mri-chest",
+      "label": "Pectoralis / Chest Wall",
+      "x": 45,
+      "y": 63,
+      "blurb": "Enhancement into the chest wall (not just the pectoralis) suggests T4a."
+     }
+    ],
+    "image": "images/breast/br-mri-dce.jpg"
+   }
+  ],
+  "gallery": [
+   {
+    "title": "MRI before and after neoadjuvant chemo",
+    "caption": "Dynamic contrast MRI before (left) and after (right) neoadjuvant therapy for ER-positive, HER2-negative cancer. Matsubayashi RN, Iwakuma N, Jpn J Radiol 2026 (PMC13038685), CC BY 4.0.",
+    "style": "mri",
+    "image": "images/breast/br-g-mri-nact.jpg"
+   },
+   {
+    "title": "Sagittal contrast-enhanced MRI",
+    "caption": "A large enhancing breast cancer on a sagittal post-contrast MRI. Image: Mitchell D. Schnall, MD, PhD, University of Pennsylvania.",
+    "style": "mri",
+    "image": "images/breast/br-g-mri-sag.jpg"
+   }
+  ]
+ },
+ "img-breast-ct": {
+  "intro": "<p>The planning (simulation) CT is the scan radiation oncologists look at every day. Learn what's on it before you sit down with a resident to contour.</p>",
+  "plates": [
+   {
+    "id": "br-ct-sim",
+    "title": "CT Simulation — Axial",
+    "style": "ct",
+    "caption": "Placeholder CT-style axial slice through the treated breast — swap in a real labeled image here.",
+    "hotspots": [
+     {
+      "id": "ct-cavity",
+      "label": "Lumpectomy Cavity / Seroma",
+      "x": 34,
+      "y": 40,
+      "blurb": "Fluid-filled cavity after surgery. It defines the tumor bed for a boost or partial breast RT."
+     },
+     {
+      "id": "ct-clips",
+      "label": "Surgical Clips",
+      "x": 30,
+      "y": 46,
+      "blurb": "Placed by the surgeon to mark the cavity walls. Ask the surgeon to place them; they make the boost far more accurate."
+     },
+     {
+      "id": "ct-breast",
+      "label": "Whole Breast CTV",
+      "x": 40,
+      "y": 34,
+      "blurb": "All glandular tissue from the sternal edge to the midaxillary line, stopping above the pectoralis and a few mm below the skin."
+     },
+     {
+      "id": "ct-heart",
+      "label": "Heart / LAD Region",
+      "x": 62,
+      "y": 68,
+      "blurb": "The left anterior descending artery lies right under the left breast. Heart dose increases cardiac events by about 7% per Gy of mean heart dose (Darby)."
+     },
+     {
+      "id": "ct-lung",
+      "label": "Ipsilateral Lung",
+      "x": 26,
+      "y": 68,
+      "blurb": "Tangent fields clip a slice of lung. Keeping that slice thin limits pneumonitis."
+     },
+     {
+      "id": "ct-imn",
+      "label": "Internal Mammary Region",
+      "x": 56,
+      "y": 40,
+      "blurb": "Covering the IMNs pushes the field deeper, raising heart and lung dose."
+     }
+    ]
+   }
+  ],
+  "gallery": [
+   {
+    "title": "Free breathing vs deep inspiration breath hold (DIBH)",
+    "caption": "Same patient: free breathing (left, heart 3.1 cm from the chest wall) vs voluntary DIBH (right, 4.1 cm). M A et al., Cureus 2025 (PMC12579725), CC BY 4.0.",
+    "style": "ct",
+    "image": "images/breast/br-g-dibh.jpg"
+   },
+   {
+    "title": "Tangent beam's-eye view (DRR)",
+    "caption": "Beam's-eye view of a medial tangent: breast target (orange), heart (brown), left ventricle (yellow), LAD (blue), lung (green). Park S et al., Radiat Oncol 2021 (PMC8056628), CC BY 4.0.",
+    "style": "ct",
+    "image": "images/breast/br-g-drr.jpg"
+   }
+  ]
+ },
+ "img-breast-pet": {
+  "plates": [],
+  "gallery": [
+   {
+    "title": "Coronal PET MIP",
+    "caption": "Right breast primary (arrow) with axillary and internal mammary nodal disease. Nyamieri D et al., Front Nucl Med 2025 (PMC12868128), CC BY 4.0.",
+    "style": "pet",
+    "image": "images/breast/br-g-pet-mip.jpg"
+   },
+   {
+    "title": "Bone scan",
+    "caption": "A pitfall: bone scan uptake in the left clavicle (a) that CT and SPECT/CT (b, c) show is a fracture, not a metastasis. Suppiah S et al., Indian J Nucl Med 2023 (PMC10348494), CC BY-NC-SA 4.0.",
+    "style": "schematic",
+    "image": "images/breast/br-g-bone.jpg"
+   }
+  ]
+ }
+}

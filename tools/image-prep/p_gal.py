@@ -1,0 +1,12 @@
+from imgtool import *
+def up(img, f): return cv2.resize(img, None, fx=f, fy=f, interpolation=cv2.INTER_CUBIC)
+im=load('Lateral_oral_tongue.jpg');             save(im[40:760, :], 'hn-g-oc-photo.jpg', maxw=900)
+im=load('oral_cacity_mri.png');                 save(pad43(up(im,3),(0,0,0)), 'hn-g-oc-mri.jpg', maxw=900)
+im=load('clinical_oropharyngeal_cancer.jpg');   save(im[500:1240, 0:960], 'hn-g-op-photo.jpg', maxw=900)
+im=load('orophayngeal_cancer_imaging.png');     save(pad43(im[20:1180, :],(0,0,0)), 'hn-g-op-mri.jpg', maxw=1000)
+im=load('nasopharynx_mri.png');                 save(pad43(im,(0,0,0)), 'hn-g-np-mri.jpg', maxw=1000)
+im=load('skull_base_foramina.jpg');             save(pad43(im,(255,255,255)), 'hn-g-np-skullbase.jpg', maxw=1000)
+im=load('larynx_anatomy.jpg');                  save(pad43(im,(255,255,255)), 'hn-g-lx-coronal.jpg', maxw=1000)
+im=load('lateral_neck_diagram.png');            save(pad43(im[40:840, 0:960],(255,255,255)), 'hn-g-ln-lateral.jpg', maxw=1000)
+im=load('nasopharyngeal_petct.jpg');            save(pad43(im,(0,0,0)), 'hn-g-np-pet.jpg', maxw=1000)
+im=load('internal_jugular_lymphnode.jpg');      save(pad43(im,(0,0,0)), 'hn-g-ln-pet.jpg', maxw=1000)

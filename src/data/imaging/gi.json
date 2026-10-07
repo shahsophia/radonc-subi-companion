@@ -1,0 +1,648 @@
+{
+ "img-gi-esoph": {
+  "intro": "<p>Start with the normal esophagus on two axial CT levels, then the staging studies: <strong>EUS</strong> for T (and local nodes) and <strong>PET/CT</strong> for nodes and metastases.</p>",
+  "plates": [
+   {
+    "id": "ax-arch",
+    "title": "Normal CT: Upper Chest (Aortic Arch)",
+    "style": "ct",
+    "caption": "Contrast-enhanced axial CT at the aortic arch. Hashmi R, Sectional Anatomy Quiz II, Asia Ocean J Nucl Med Biol (PMC5765337), CC BY 3.0; letter labels removed.",
+    "hotspots": [
+     {
+      "id": "e1-esoph",
+      "label": "Esophagus",
+      "x": 50.5,
+      "y": 55.0,
+      "blurb": "Behind the trachea, slightly left. Upper thoracic tumors are here."
+     },
+     {
+      "id": "e1-trachea",
+      "label": "Trachea",
+      "x": 48.0,
+      "y": 47.0,
+      "blurb": "Invasion = T4b; fistula risk."
+     },
+     {
+      "id": "e1-arch",
+      "label": "Aortic Arch",
+      "x": 55.5,
+      "y": 42.0,
+      "blurb": "T4b if invaded."
+     },
+     {
+      "id": "e1-cord",
+      "label": "Spinal Cord",
+      "x": 51.0,
+      "y": 71.5,
+      "blurb": "Keep Dmax ~45 Gy."
+     },
+     {
+      "id": "e1-lungs",
+      "label": "Lungs",
+      "x": 27.0,
+      "y": 45.0,
+      "blurb": "Lung V20 <20% (esp. before esophagectomy) lowers pulmonary complications."
+     }
+    ],
+    "image": "images/gi/gi-ax-arch.jpg"
+   },
+   {
+    "id": "ax-heart",
+    "title": "Normal CT: Mid Chest (Left Atrium)",
+    "style": "ct",
+    "caption": "Contrast-enhanced axial CT through the left atrium, where the esophagus lies right behind it. Hashmi R, Sectional Anatomy Quiz IV, Asia Ocean J Nucl Med Biol (PMC6661304), CC BY 3.0; letter labels removed.",
+    "hotspots": [
+     {
+      "id": "e2-esoph",
+      "label": "Mid Esophagus",
+      "x": 47.8,
+      "y": 54.5,
+      "blurb": "Directly behind the left atrium."
+     },
+     {
+      "id": "e2-la",
+      "label": "Left Atrium",
+      "x": 49.0,
+      "y": 43.5,
+      "blurb": "Heart is a key OAR: lower heart dose lowers cardiac toxicity."
+     },
+     {
+      "id": "e2-aorta",
+      "label": "Descending Aorta",
+      "x": 52.5,
+      "y": 59.5,
+      "blurb": "Left of the esophagus."
+     },
+     {
+      "id": "e2-azygos",
+      "label": "Azygos Vein",
+      "x": 45.5,
+      "y": 60.5,
+      "blurb": "Right of the esophagus."
+     },
+     {
+      "id": "e2-subcar",
+      "label": "Subcarinal Nodes",
+      "x": 46.0,
+      "y": 50.0,
+      "blurb": "Common site of esophageal nodal spread."
+     }
+    ],
+    "image": "images/gi/gi-ax-heart.jpg"
+   },
+   {
+    "id": "eus",
+    "title": "EUS: Esophageal Wall Layers",
+    "style": "schematic",
+    "caption": "High-frequency EUS of a normal esophageal wall (left, red box) with a schematic of its nine echo layers (right). Standard EUS shows these as five layers. Yun SM et al., J Korean Soc Radiol 2024 (PMC11473974), Fig. 2, CC BY-NC 4.0.",
+    "hotspots": [
+     {
+      "id": "eus-muc",
+      "label": "Mucosa (Layers 1–4)",
+      "x": 88.0,
+      "y": 30.1,
+      "blurb": "Tumor limited here = T1a: may be treated with endoscopic resection."
+     },
+     {
+      "id": "eus-sub",
+      "label": "Submucosa (Layer 5, Bright)",
+      "x": 88.0,
+      "y": 25.3,
+      "blurb": "Invasion = T1b: nodal risk rises, so surgery or chemoRT."
+     },
+     {
+      "id": "eus-mp",
+      "label": "Muscularis Propria (Layers 6–8)",
+      "x": 88.0,
+      "y": 20.4,
+      "blurb": "Invasion = T2."
+     },
+     {
+      "id": "eus-adv",
+      "label": "Adventitia (Layer 9)",
+      "x": 88.0,
+      "y": 15.9,
+      "blurb": "Through the wall = T3 (no serosa in the esophagus, so tumors spread early)."
+     }
+    ],
+    "image": "images/gi/gi-eus.jpg"
+   },
+   {
+    "id": "epet",
+    "title": "PET/CT: Esophageal Cancer Staging",
+    "style": "pet",
+    "caption": "(A) Coronal CT and (B) FDG PET/CT of a mid-esophageal cancer (white arrows) with avid lesser-curvature nodes (yellow arrows) and a para-aortic node (arrowheads). Tashiro H et al., Surg Case Rep 2025 (PMC12702577), Fig. 1, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "ep-primary",
+      "label": "Mid-Esophageal Primary",
+      "x": 24.5,
+      "y": 27.7,
+      "blurb": "Avid tumor. Contour with CT, endoscopy, and PET together (PET helps define the length)."
+     },
+     {
+      "id": "ep-pet",
+      "label": "Primary on PET",
+      "x": 77.5,
+      "y": 25.4,
+      "blurb": "The FDG-avid primary. PET/CT defines the length of the tumor for the GTV and screens for distant disease."
+     },
+     {
+      "id": "ep-node",
+      "label": "Lesser Curvature (Perigastric) Nodes",
+      "x": 31.0,
+      "y": 62.9,
+      "blurb": "Regional node."
+     },
+     {
+      "id": "ep-celiac",
+      "label": "Para-aortic Node",
+      "x": 30.0,
+      "y": 81.9,
+      "blurb": "An avid node near the aorta below the diaphragm. Para-aortic nodes are distant (M1) for esophageal cancer."
+     }
+    ],
+    "image": "images/gi/gi-epet.jpg"
+   }
+  ]
+ },
+ "img-gi-stomach": {
+  "intro": "<p>The <strong>GEJ and cardia</strong> at T11&ndash;T12, with the celiac axis and crura. This is the level for distal esophageal, GEJ, and proximal gastric tumors.</p>",
+  "plates": [
+   {
+    "id": "ax-gej",
+    "title": "Normal CT: GEJ / Upper Abdomen (T11–T12)",
+    "style": "ct",
+    "caption": "Contrast-enhanced axial CT at the gastroesophageal junction in a healthy adult. Häggström M, CT of a normal abdomen and pelvis (Wikimedia Commons), CC0.",
+    "hotspots": [
+     {
+      "id": "e3-gej",
+      "label": "GEJ / Cardia",
+      "x": 61.0,
+      "y": 39.3,
+      "blurb": "Distal esophageal and GEJ adenocarcinomas."
+     },
+     {
+      "id": "e3-liver",
+      "label": "Liver",
+      "x": 28.0,
+      "y": 45.5,
+      "blurb": "Mean liver dose limits matter for distal esophagus and gastric fields."
+     },
+     {
+      "id": "e3-spleen",
+      "label": "Spleen",
+      "x": 80.0,
+      "y": 51.7,
+      "blurb": "Near the gastric fundus and pancreatic tail."
+     },
+     {
+      "id": "e3-crus",
+      "label": "Diaphragmatic Crura",
+      "x": 47.5,
+      "y": 50.8,
+      "blurb": "Wrap the esophagus at the hiatus."
+     },
+     {
+      "id": "e3-celiac",
+      "label": "Celiac Axis / Nodes",
+      "x": 53.0,
+      "y": 39.7,
+      "blurb": "Celiac nodes are regional for esophagus and stomach."
+     },
+     {
+      "id": "e3-aorta",
+      "label": "Aorta",
+      "x": 54.0,
+      "y": 47.3,
+      "blurb": "Retroperitoneal landmark."
+     }
+    ],
+    "image": "images/gi/gi-ax-gej.jpg"
+   }
+  ]
+ },
+ "img-gi-pancreas": {
+  "intro": "<p>The normal pancreatic head and its vessels first, then a <strong>pancreatic-protocol CT</strong> (thin-slice, arterial and portal venous phases), which decides <strong>resectability</strong>.</p>",
+  "plates": [
+   {
+    "id": "ax-pancreas",
+    "title": "Normal CT: Pancreatic Head (L1–L2)",
+    "style": "ct",
+    "caption": "Contrast-enhanced axial CT through the pancreatic head in a healthy adult. Häggström M, CT of a normal abdomen and pelvis (Wikimedia Commons), CC0.",
+    "hotspots": [
+     {
+      "id": "e4-head",
+      "label": "Pancreatic Head",
+      "x": 45.0,
+      "y": 35.7,
+      "blurb": "Tumor here causes the double duct sign."
+     },
+     {
+      "id": "e4-sma",
+      "label": "SMA",
+      "x": 55.0,
+      "y": 37.1,
+      "blurb": "Surrounded by a fat collar; loss of the fat plane suggests encasement."
+     },
+     {
+      "id": "e4-smv",
+      "label": "SMV",
+      "x": 51.0,
+      "y": 33.5,
+      "blurb": "To the right of the SMA."
+     },
+     {
+      "id": "e4-duod",
+      "label": "Duodenum",
+      "x": 40.0,
+      "y": 39.3,
+      "blurb": "SBRT OAR: limit hot spots to avoid bleeding/ulcer."
+     },
+     {
+      "id": "e4-kidneys",
+      "label": "Kidneys",
+      "x": 34.0,
+      "y": 58.8,
+      "blurb": "Keep both kidneys' dose low (e.g., V20 <30%)."
+     },
+     {
+      "id": "e4-bowel",
+      "label": "Stomach / Bowel",
+      "x": 68.0,
+      "y": 36.6,
+      "blurb": "Nearby hollow organs limit pancreatic doses."
+     },
+     {
+      "id": "e4-aorta",
+      "label": "Aorta",
+      "x": 54.0,
+      "y": 44.2,
+      "blurb": "The SMA leaves the front of the aorta about 1 cm below the celiac axis and runs down behind the pancreatic neck."
+     }
+    ],
+    "image": "images/gi/gi-ax-pancreas.jpg"
+   },
+   {
+    "id": "pct",
+    "title": "Pancreatic-Protocol CT (Portal Venous Phase)",
+    "style": "ct",
+    "caption": "Portal venous phase CT of a hypoenhancing pancreatic head mass (red arrow) abutting, but not deforming, the SMV. A stent is in the common bile duct. Louis M et al., Cureus 2025 (PMC11981547), Fig. 2, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "p-mass",
+      "label": "Hypoenhancing Head Mass",
+      "x": 41.0,
+      "y": 41.5,
+      "blurb": "Pancreatic adenocarcinoma is dark (hypoattenuating) relative to normal pancreas."
+     },
+     {
+      "id": "p-smv",
+      "label": "SMV Contact",
+      "x": 45.9,
+      "y": 37.5,
+      "blurb": "Venous contact with contour irregularity = borderline (if reconstructable)."
+     },
+     {
+      "id": "p-sma",
+      "label": "SMA with Fat Collar",
+      "x": 49.2,
+      "y": 43.5,
+      "blurb": "Preserved fat around the SMA = no arterial contact. Soft tissue >180° = locally advanced."
+     },
+     {
+      "id": "p-cbd",
+      "label": "CBD Stent",
+      "x": 38.0,
+      "y": 48.0,
+      "blurb": "Double duct sign with the dilated pancreatic duct."
+     },
+     {
+      "id": "p-aorta",
+      "label": "Aorta",
+      "x": 52.4,
+      "y": 55.0,
+      "blurb": "The SMA arises from the front of the aorta; follow it forward to judge arterial contact."
+     }
+    ],
+    "image": "images/gi/gi-pct.jpg"
+   }
+  ]
+ },
+ "img-gi-liver": {
+  "intro": "<p><strong>HCC</strong> can be diagnosed on imaging alone in a cirrhotic liver. Know the enhancement pattern and the <strong>LI-RADS</strong> categories.</p>",
+  "plates": [
+   {
+    "id": "hcc",
+    "title": "Multiphase CT: Hepatocellular Carcinoma",
+    "style": "mri",
+    "caption": "Multiphase CT of HCC in segment 6: (A) arterial phase hyperenhancement, (B) washout on the delayed phase, with tumor extending into the right portal vein (second arrow). Han JE et al., J Liver Cancer 2021 (PMC10035689), Fig. 1A–B, CC BY-NC 4.0.",
+    "hotspots": [
+     {
+      "id": "h-ape",
+      "label": "Arterial Phase Hyperenhancement",
+      "x": 13.6,
+      "y": 52.0,
+      "blurb": "HCC is fed by the hepatic artery, so it lights up early."
+     },
+     {
+      "id": "h-washout",
+      "label": "Washout (Delayed Phase)",
+      "x": 62.4,
+      "y": 53.5,
+      "blurb": "Becomes darker than liver later."
+     },
+     {
+      "id": "h-pvtt",
+      "label": "Portal Vein Tumor Thrombus",
+      "x": 67.9,
+      "y": 45.0,
+      "blurb": "Enhancing thrombus expanding the vein: advanced HCC; SBRT can treat it."
+     },
+     {
+      "id": "h-spleen",
+      "label": "Spleen",
+      "x": 91.6,
+      "y": 60.0,
+      "blurb": "Portal hypertension."
+     }
+    ],
+    "image": "images/gi/gi-hcc.jpg"
+   }
+  ]
+ },
+ "img-gi-rectal": {
+  "intro": "<p><strong>High-resolution pelvic MRI</strong> is the single most important rectal cancer study: it decides T stage, the margin, and who needs neoadjuvant therapy.</p>",
+  "plates": [
+   {
+    "id": "ax-rectum",
+    "title": "Axial T2 MRI: Mid Rectum",
+    "style": "mri",
+    "caption": "Axial T2 MRI of a T3 mid-rectal cancer reaching the left mesorectal fascia (a threatened margin). Pikūnienė I et al., Cureus 2023 (PMC10493462), Fig. 1a, CC BY 4.0; arrow removed.",
+    "hotspots": [
+     {
+      "id": "e5-tumor",
+      "label": "Rectal Tumor",
+      "x": 52.1,
+      "y": 78.9,
+      "blurb": "Note depth into the mesorectal fat (T3 substage)."
+     },
+     {
+      "id": "e5-meso",
+      "label": "Mesorectal Fat",
+      "x": 38.7,
+      "y": 75.2,
+      "blurb": "Contains the mesorectal nodes."
+     },
+     {
+      "id": "e5-mrf",
+      "label": "Mesorectal Fascia (Involved)",
+      "x": 63.5,
+      "y": 73.3,
+      "blurb": "Distance tumor-to-MRF: ≤1 mm = threatened."
+     },
+     {
+      "id": "e5-ant",
+      "label": "Anterior Organs (Seminal Vesicles / Vagina)",
+      "x": 51.1,
+      "y": 60.5,
+      "blurb": "Invasion = T4b."
+     },
+     {
+      "id": "e5-bladder",
+      "label": "Bladder",
+      "x": 51.1,
+      "y": 39.3,
+      "blurb": "Bright on T2 because it is full of urine. Anterior to the seminal vesicles in men."
+     }
+    ],
+    "image": "images/gi/gi-ax-rectum.jpg"
+   },
+   {
+    "id": "rmri-ax",
+    "title": "Rectal MRI: Axial T2 (Perpendicular to the Tumor)",
+    "style": "mri",
+    "caption": "Axial T2 MRI of two rectal cancers, with the mesorectal fascia traced as a dotted line. (a) T3ab tumor with short extramural spread (arrows), MRF clear. (b) T3cd tumor reaching the MRF (arrowheads). Bogveradze N et al., Insights Imaging 2023 (PMC9849549), Fig. 1, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "r-tumor",
+      "label": "Tumor (Intermediate T2)",
+      "x": 45.6,
+      "y": 24.6,
+      "blurb": "Intermediate signal, brighter than muscle, darker than fat."
+     },
+     {
+      "id": "r-fat",
+      "label": "Extramural Spread into Mesorectal Fat",
+      "x": 55.1,
+      "y": 16.3,
+      "blurb": "Depth beyond the muscularis: T3a <1 mm, T3b 1–5, T3c 5–15, T3d >15 mm."
+     },
+     {
+      "id": "r-mrf",
+      "label": "Mesorectal Fascia",
+      "x": 62.9,
+      "y": 27.1,
+      "blurb": "Thin dark line. Tumor, node, or EMVI ≤1 mm from it = threatened CRM."
+     },
+     {
+      "id": "r-mrfplus",
+      "label": "Tumor Reaching the MRF (MRF+)",
+      "x": 49.8,
+      "y": 89.7,
+      "blurb": "Tumor within 1 mm of the mesorectal fascia means a threatened margin: this pushes the patient toward TNT and makes a negative TME margin harder."
+     }
+    ],
+    "image": "images/gi/gi-rmri-ax.jpg"
+   },
+   {
+    "id": "rmri-emvi",
+    "title": "Rectal MRI: EMVI, Tumor Deposits, and Nodes",
+    "style": "mri",
+    "hotspots": [
+     {
+      "id": "r-emvi",
+      "label": "EMVI (Tumor in a Vein)",
+      "x": 55.5,
+      "y": 56.3,
+      "blurb": "Tumor signal expanding an extramural vein: higher risk of distant metastasis."
+     },
+     {
+      "id": "r-emvi-cor",
+      "label": "EMVI (Coronal View)",
+      "x": 22.0,
+      "y": 43.9,
+      "blurb": "On the coronal image the tumor signal grows along an enlarged mesorectal vein that stays attached to the primary."
+     },
+     {
+      "id": "r-td",
+      "label": "Tumor Deposit",
+      "x": 82.0,
+      "y": 28.0,
+      "blurb": "Irregular tumor nodule that follows the course of a vein but is separate from the primary. Counted as N1c and a high-risk feature."
+     },
+     {
+      "id": "r-node",
+      "label": "Suspicious Mesorectal Node",
+      "x": 72.5,
+      "y": 26.5,
+      "blurb": "Irregular border, heterogeneous signal, or round shape (size alone is unreliable)."
+     }
+    ],
+    "caption": "T2 MRI of a low rectal cancer in three planes: (A) coronal and (B) axial EMVI (red arrows), (C) tumor deposits (green) versus a malignant node (blue). Curcean S et al., Cancers 2024 (PMC11394290), Fig. 2, CC BY 4.0.",
+    "image": "images/gi/gi-rmri-emvi.jpg"
+   },
+   {
+    "id": "rmri-sag",
+    "title": "Rectal MRI: Sagittal T2",
+    "style": "mri",
+    "caption": "Sagittal T2 MRI of a high rectal cancer (m, bracket) 10 cm from the anal verge (*), touching the anterior peritoneal reflection (red arrowhead). Natout M et al., Diagnostics 2025 (PMC11989207), Fig. 3a, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "s-lower",
+      "label": "Lower Tumor Edge",
+      "x": 58.8,
+      "y": 38.6,
+      "blurb": "Measure the distance to the anal verge: low tumors (<5 cm) are candidates for organ preservation strategies."
+     },
+     {
+      "id": "s-arj",
+      "label": "Anorectal Junction",
+      "x": 52.9,
+      "y": 77.7,
+      "blurb": "Tumor reaching the sphincters or puborectalis may need an APR."
+     },
+     {
+      "id": "s-pr",
+      "label": "Peritoneal Reflection",
+      "x": 46.5,
+      "y": 37.6,
+      "blurb": "Tumors above it invading peritoneum = T4a."
+     },
+     {
+      "id": "s-prost",
+      "label": "Prostate / Seminal Vesicles (or Vagina)",
+      "x": 36.7,
+      "y": 59.4,
+      "blurb": "Invasion = T4b."
+     },
+     {
+      "id": "s-sacrum",
+      "label": "Sacrum / Presacral Space",
+      "x": 69.6,
+      "y": 31.0,
+      "blurb": "Presacral nodes; tumor here complicates resection."
+     }
+    ],
+    "image": "images/gi/gi-rmri-sag.jpg"
+   }
+  ]
+ },
+ "img-gi-anal": {
+  "intro": "<p>The normal anal canal and groins on CT, then <strong>PET/CT</strong>, which is especially good at finding inguinal and pelvic nodes.</p>",
+  "plates": [
+   {
+    "id": "ax-anus",
+    "title": "Normal CT: Anal Canal & Groins",
+    "style": "ct",
+    "caption": "Contrast-enhanced axial CT at the top of the anal canal in a healthy adult male. Häggström M, CT of a normal abdomen and pelvis (Wikimedia Commons), CC0.",
+    "hotspots": [
+     {
+      "id": "e6-anal",
+      "label": "Anal Canal",
+      "x": 52.0,
+      "y": 65.9,
+      "blurb": "Anal SCC target."
+     },
+     {
+      "id": "e6-sphinct",
+      "label": "Sphincter Complex",
+      "x": 52.0,
+      "y": 70.8,
+      "blurb": "Internal and external sphincters."
+     },
+     {
+      "id": "e6-ischio",
+      "label": "Ischioanal Fossa",
+      "x": 44.5,
+      "y": 66.8,
+      "blurb": "Fat lateral to the sphincters; tumor can spread here."
+     },
+     {
+      "id": "e6-ing",
+      "label": "Inguinal Nodes / Femoral Vessels",
+      "x": 31.5,
+      "y": 39.3,
+      "blurb": "Always in the anal cancer field (and for low rectal tumors invading the anal canal)."
+     },
+     {
+      "id": "e6-fh",
+      "label": "Femoral Heads",
+      "x": 26.0,
+      "y": 59.7,
+      "blurb": "OAR in groin fields."
+     },
+     {
+      "id": "e6-genital",
+      "label": "External Genitalia",
+      "x": 52.0,
+      "y": 29.5,
+      "blurb": "OAR in anal cancer IMRT (skin reaction)."
+     }
+    ],
+    "image": "images/gi/gi-ax-anus.jpg"
+   },
+   {
+    "id": "apet",
+    "title": "PET/CT: Anal Cancer",
+    "style": "pet",
+    "caption": "Axial fused FDG PET/CT of anal cancer: (a) small primary in the anal canal, (b) avid right inguinal node, (c) right distal external iliac node. Koppula BR et al., Cancers 2022 (PMC9179927), Fig. 39, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "a-primary",
+      "label": "Anal Canal Primary",
+      "x": 26.8,
+      "y": 31.4,
+      "blurb": "Size sets T stage (2 cm and 5 cm cutoffs)."
+     },
+     {
+      "id": "a-ing",
+      "label": "Inguinal Node",
+      "x": 64.0,
+      "y": 12.7,
+      "blurb": "Regional (N1a). Gets a higher dose (50.4–54 Gy) when involved."
+     },
+     {
+      "id": "a-ei",
+      "label": "External Iliac Node",
+      "x": 43.8,
+      "y": 70.6,
+      "blurb": "Regional (N1b)."
+     },
+     {
+      "id": "a-bladder",
+      "label": "Bladder (Physiologic)",
+      "x": 73.7,
+      "y": 27.0,
+      "blurb": "Excreted FDG."
+     }
+    ],
+    "image": "images/gi/gi-apet.jpg"
+   }
+  ],
+  "gallery": [
+   {
+    "title": "PET/CT: inguinal node",
+    "caption": "FDG-avid inguinal (yellow), external iliac (red), and lateral pelvic (dotted) nodes in anal cancer. Park IJ, Chang G, Ann Coloproctol 2020 (PMC7837391), Fig. 2A–B, CC BY-NC 4.0.",
+    "style": "pet",
+    "image": "images/gi/gi-g-pet-inguinal.jpg"
+   },
+   {
+    "title": "RTOG anorectal atlas",
+    "caption": "Elective nodal CTV (yellow) per RTOG guidance on axial CT slices for anal cancer, from L5 down to the inguinal nodes. Dapper H et al., BMC Cancer 2019 (PMC6664500), Fig. 1, CC BY 4.0.",
+    "style": "ct",
+    "image": "images/gi/gi-g-rtog-atlas.jpg"
+   }
+  ]
+ }
+}

@@ -1,0 +1,521 @@
+{
+ "anat-cns-overview": {
+  "intro": "<p>Start with the big picture from three sides: the <strong>lobes</strong> from the side, the <strong>midline structures</strong> from the middle, and the <strong>underside</strong> where the cranial nerves come off. Explore each drawing, then switch to Quiz mode.</p>",
+  "plates": [
+   {
+    "id": "cns-lobes",
+    "title": "Lobes & Functional Areas (Lateral)",
+    "style": "schematic",
+    "caption": "Lateral view of the left hemisphere, anterior on the left: frontal lobe (red), parietal lobe (gray), temporal lobe (blue), occipital lobe (green), cerebellum and brainstem (tan). Source: OpenStax Anatomy and Physiology (Wikimedia Commons, 1306 Lobes of Cerebral Cortex), CC BY 4.0; labels and leader lines removed.",
+    "hotspots": [
+     {
+      "id": "frontal",
+      "label": "Frontal Lobe",
+      "x": 28.0,
+      "y": 35.0,
+      "blurb": "Executive function, personality, judgment. Frontal tumors present with personality change or seizures."
+     },
+     {
+      "id": "motor",
+      "label": "Precentral Gyrus (Motor Cortex)",
+      "x": 51.0,
+      "y": 12.0,
+      "blurb": "Primary motor strip: contralateral weakness. Arranged as a homunculus (leg medial, face lateral)."
+     },
+     {
+      "id": "broca",
+      "label": "Broca's Area",
+      "x": 31.0,
+      "y": 48.0,
+      "blurb": "Inferior frontal gyrus, dominant hemisphere: expressive (non-fluent) aphasia."
+     },
+     {
+      "id": "sensory",
+      "label": "Postcentral Gyrus (Sensory Cortex)",
+      "x": 60.0,
+      "y": 16.0,
+      "blurb": "Primary somatosensory cortex: contralateral numbness."
+     },
+     {
+      "id": "parietal",
+      "label": "Parietal Lobe",
+      "x": 66.0,
+      "y": 25.0,
+      "blurb": "Sensory integration; non-dominant lesions cause neglect; dominant lesions cause Gerstmann syndrome."
+     },
+     {
+      "id": "wernicke",
+      "label": "Wernicke's Area",
+      "x": 63.0,
+      "y": 40.0,
+      "blurb": "Posterior superior temporal gyrus, dominant hemisphere: receptive (fluent) aphasia."
+     },
+     {
+      "id": "temporal",
+      "label": "Temporal Lobe",
+      "x": 50.0,
+      "y": 52.0,
+      "blurb": "Hearing, language, memory (medial temporal/hippocampus). Temporal tumors cause seizures, often with auras."
+     },
+     {
+      "id": "occipital",
+      "label": "Occipital Lobe",
+      "x": 76.0,
+      "y": 40.0,
+      "blurb": "Visual cortex: contralateral homonymous hemianopia."
+     },
+     {
+      "id": "sylvian",
+      "label": "Sylvian (Lateral) Fissure",
+      "x": 46.0,
+      "y": 40.0,
+      "blurb": "Separates the frontal/parietal lobes from the temporal lobe. The MCA runs in it."
+     },
+     {
+      "id": "cerebellum",
+      "label": "Cerebellum",
+      "x": 70.0,
+      "y": 61.0,
+      "blurb": "Coordination: ipsilateral ataxia and dysmetria."
+     },
+     {
+      "id": "brainstem-l",
+      "label": "Brainstem",
+      "x": 63.0,
+      "y": 78.0,
+      "blurb": "Cranial nerve nuclei and long tracts. A key OAR (Dmax ~54 Gy)."
+     }
+    ],
+    "image": "images/cns/cns-lobes.jpg"
+   },
+   {
+    "id": "cns-anat-midline",
+    "title": "Midline Structures (Sagittal)",
+    "style": "schematic",
+    "caption": "The brain cut down the middle, anterior on the left: corpus callosum, thalamus, hypothalamus, pituitary, the three parts of the brainstem, and the cerebellum. Patrick J. Lynch, medical illustrator (Wikimedia Commons), CC BY 2.5.",
+    "image": "images/cns/cns-anat-midline.jpg",
+    "hotspots": [
+     {
+      "id": "cns-anat-midline-0",
+      "label": "Corpus Callosum",
+      "x": 49,
+      "y": 24,
+      "blurb": "The thick bundle of white matter that connects the two hemispheres. Tumor crossing it to the other side ('butterfly' pattern) suggests glioblastoma or lymphoma."
+     },
+     {
+      "id": "cns-anat-midline-1",
+      "label": "Cingulate Gyrus",
+      "x": 41,
+      "y": 19,
+      "blurb": "The gyrus wrapped around the corpus callosum. Part of the limbic system: emotion, motivation, and attention."
+     },
+     {
+      "id": "cns-anat-midline-2",
+      "label": "Fornix",
+      "x": 55,
+      "y": 32,
+      "blurb": "An arched tract that carries output from the hippocampus forward to the hypothalamus. Part of the memory circuit."
+     },
+     {
+      "id": "cns-anat-midline-3",
+      "label": "Thalamus",
+      "x": 53,
+      "y": 38,
+      "blurb": "The relay station: almost every sensory signal (except smell) passes through it on the way to the cortex. Deep tumors here are usually biopsied, not resected."
+     },
+     {
+      "id": "cns-anat-midline-4",
+      "label": "Hypothalamus",
+      "x": 46,
+      "y": 46,
+      "blurb": "Sits below the thalamus and controls the pituitary, temperature, thirst, and appetite. Dose here can cause hormone deficits."
+     },
+     {
+      "id": "cns-anat-midline-5",
+      "label": "Pituitary Gland",
+      "x": 41,
+      "y": 56,
+      "blurb": "Hangs from the hypothalamus by the stalk and sits in the sella turcica, just below the optic chiasm. Its tumors press up on the chiasm."
+     },
+     {
+      "id": "cns-anat-midline-6",
+      "label": "Midbrain",
+      "x": 51,
+      "y": 47,
+      "blurb": "Top of the brainstem. Holds the nuclei for CN III and IV (eye movements) and the cerebral aqueduct."
+     },
+     {
+      "id": "cns-anat-midline-7",
+      "label": "Pons",
+      "x": 50,
+      "y": 57,
+      "blurb": "The bulge in the middle of the brainstem. Holds the nuclei for CN V to VIII and relays signals to the cerebellum. A key organ at risk."
+     },
+     {
+      "id": "cns-anat-midline-8",
+      "label": "Medulla",
+      "x": 53,
+      "y": 70,
+      "blurb": "Bottom of the brainstem. Controls breathing, heart rate, and swallowing (CN IX to XII). Continues into the spinal cord at the foramen magnum."
+     },
+     {
+      "id": "cns-anat-midline-9",
+      "label": "Spinal Cord",
+      "x": 52,
+      "y": 86,
+      "blurb": "Leaves the skull through the foramen magnum and runs down to about L1 to L2."
+     },
+     {
+      "id": "cns-anat-midline-10",
+      "label": "Fourth Ventricle",
+      "x": 58,
+      "y": 55,
+      "blurb": "The CSF space between the brainstem and the cerebellum. A posterior fossa tumor that blocks it causes hydrocephalus."
+     },
+     {
+      "id": "cns-anat-midline-11",
+      "label": "Cerebellum",
+      "x": 68,
+      "y": 57,
+      "blurb": "Coordination and balance. A lesion causes ataxia on the same side of the body."
+     },
+     {
+      "id": "cns-anat-midline-12",
+      "label": "Occipital Lobe",
+      "x": 78,
+      "y": 45,
+      "blurb": "Vision. The calcarine sulcus on this medial surface is the primary visual cortex."
+     }
+    ]
+   },
+   {
+    "id": "cns-anat-inferior",
+    "title": "The Underside: Cranial Nerves",
+    "style": "schematic",
+    "caption": "The brain from below, anterior at the top, with the cranial nerves cut where they leave the brain. Patrick J. Lynch, medical illustrator (Wikimedia Commons), CC BY 2.5.",
+    "image": "images/cns/cns-anat-inferior.jpg",
+    "hotspots": [
+     {
+      "id": "cns-anat-inferior-0",
+      "label": "Olfactory Tract (CN I)",
+      "x": 47,
+      "y": 24,
+      "blurb": "Smell. Runs along the floor of the frontal lobe. Olfactory groove meningiomas sit here."
+     },
+     {
+      "id": "cns-anat-inferior-1",
+      "label": "Optic Nerve (CN II)",
+      "x": 45,
+      "y": 41,
+      "blurb": "Vision. Runs back from each eye through the optic canal. Dose limit about 54 Gy."
+     },
+     {
+      "id": "cns-anat-inferior-2",
+      "label": "Optic Chiasm",
+      "x": 50,
+      "y": 44,
+      "blurb": "Where the nasal fibers from each eye cross. Sits right above the pituitary, so a pituitary tumor causes bitemporal hemianopia."
+     },
+     {
+      "id": "cns-anat-inferior-3",
+      "label": "Pituitary Stalk",
+      "x": 50,
+      "y": 50,
+      "blurb": "Connects the hypothalamus to the pituitary gland in the sella (cut here)."
+     },
+     {
+      "id": "cns-anat-inferior-4",
+      "label": "Oculomotor Nerve (CN III)",
+      "x": 45,
+      "y": 52,
+      "blurb": "Moves most of the eye muscles and the eyelid; constricts the pupil. Runs through the cavernous sinus."
+     },
+     {
+      "id": "cns-anat-inferior-5",
+      "label": "Trochlear Nerve (CN IV)",
+      "x": 43,
+      "y": 57,
+      "blurb": "Superior oblique muscle (looking down and in). Thinnest cranial nerve; also passes through the cavernous sinus."
+     },
+     {
+      "id": "cns-anat-inferior-6",
+      "label": "Trigeminal Nerve (CN V)",
+      "x": 36,
+      "y": 54,
+      "blurb": "Facial sensation and chewing. Its V1 and V2 branches run in the cavernous sinus; trigeminal neuralgia can be treated with SRS."
+     },
+     {
+      "id": "cns-anat-inferior-7",
+      "label": "Abducens Nerve (CN VI)",
+      "x": 45,
+      "y": 66,
+      "blurb": "Lateral rectus (looking out). Palsy causes horizontal double vision."
+     },
+     {
+      "id": "cns-anat-inferior-8",
+      "label": "Facial & Vestibulocochlear Nerves (CN VII, VIII)",
+      "x": 39,
+      "y": 70,
+      "blurb": "Leave the brainstem together at the cerebellopontine angle and enter the internal auditory canal. Vestibular schwannomas grow here."
+     },
+     {
+      "id": "cns-anat-inferior-9",
+      "label": "Lower Cranial Nerves (CN IX to XII)",
+      "x": 41,
+      "y": 78,
+      "blurb": "Swallowing, voice, and tongue movement. Exit near the jugular foramen and hypoglossal canal."
+     },
+     {
+      "id": "cns-anat-inferior-10",
+      "label": "Pons",
+      "x": 50,
+      "y": 60,
+      "blurb": "The bulge of the brainstem seen from below."
+     },
+     {
+      "id": "cns-anat-inferior-11",
+      "label": "Medulla",
+      "x": 50,
+      "y": 82,
+      "blurb": "Continues into the spinal cord."
+     },
+     {
+      "id": "cns-anat-inferior-12",
+      "label": "Cerebellum",
+      "x": 28,
+      "y": 86,
+      "blurb": "Fills the posterior fossa under the occipital lobes."
+     },
+     {
+      "id": "cns-anat-inferior-13",
+      "label": "Temporal Lobe",
+      "x": 24,
+      "y": 48,
+      "blurb": "Its inner (medial) surface holds the hippocampus. It sits right next to the cavernous sinus and the pituitary."
+     }
+    ]
+   }
+  ],
+  "gallery": [
+   {
+    "title": "Vascular territories",
+    "caption": "ACA (yellow: medial frontal/parietal), MCA (red: most of the lateral hemisphere), PCA (blue: occipital, inferior temporal). Source: Frank Gaillard, derivative work (Wikimedia Commons, Cerebral vascular territories), CC BY 2.5.",
+    "style": "schematic",
+    "image": "images/cns/cns-g-territories.jpg"
+   },
+   {
+    "title": "Homunculus",
+    "caption": "Sensory homunculus on the postcentral gyrus; the motor strip just in front follows the same map: leg medial, arm and face lateral. Source: OpenStax College (Wikimedia Commons, 1421 Sensory Homunculus), CC BY 3.0.",
+    "style": "schematic",
+    "image": "images/cns/cns-g-homunculus.jpg"
+   }
+  ]
+ },
+ "anat-cns-deep": {
+  "intro": "<p>Now look inside and around the brain: the <strong>deep gray matter</strong> on a coronal cut, the <strong>ventricles</strong> that carry CSF, and the <strong>tentorium</strong> that splits the skull into two compartments.</p>",
+  "plates": [
+   {
+    "id": "cns-anat-coronal",
+    "title": "Deep Structures (Coronal)",
+    "style": "schematic",
+    "caption": "Coronal cut through the thalami, viewed from the front. Gray matter is the darker tan; white matter is the paler tan. Patrick J. Lynch, medical illustrator (Wikimedia Commons), CC BY 2.5.",
+    "image": "images/cns/cns-anat-coronal.jpg",
+    "hotspots": [
+     {
+      "id": "cns-anat-coronal-0",
+      "label": "Cerebral Cortex (Gray Matter)",
+      "x": 27,
+      "y": 22,
+      "blurb": "The outer layer of nerve cell bodies, folded into gyri and sulci. This is where thinking, movement, and sensation are processed."
+     },
+     {
+      "id": "cns-anat-coronal-1",
+      "label": "White Matter",
+      "x": 33,
+      "y": 32,
+      "blurb": "Myelinated axons connecting regions of the cortex. Often the site of radiation leukoencephalopathy after whole-brain RT."
+     },
+     {
+      "id": "cns-anat-coronal-2",
+      "label": "Longitudinal Fissure",
+      "x": 50,
+      "y": 9,
+      "blurb": "Separates the two hemispheres. The falx cerebri dips down into it; parasagittal meningiomas grow along it."
+     },
+     {
+      "id": "cns-anat-coronal-3",
+      "label": "Corpus Callosum",
+      "x": 45,
+      "y": 22,
+      "blurb": "The white matter bridge between the hemispheres, forming the roof of the lateral ventricles."
+     },
+     {
+      "id": "cns-anat-coronal-4",
+      "label": "Lateral Ventricle",
+      "x": 47,
+      "y": 28,
+      "blurb": "Paired CSF spaces in each hemisphere. The choroid plexus here makes most of the CSF."
+     },
+     {
+      "id": "cns-anat-coronal-5",
+      "label": "Thalamus",
+      "x": 43,
+      "y": 34,
+      "blurb": "Deep gray matter on either side of the third ventricle. The relay station for sensation."
+     },
+     {
+      "id": "cns-anat-coronal-6",
+      "label": "Third Ventricle",
+      "x": 50,
+      "y": 41,
+      "blurb": "The thin midline CSF space between the two thalami. It drains through the cerebral aqueduct to the fourth ventricle."
+     },
+     {
+      "id": "cns-anat-coronal-7",
+      "label": "Basal Ganglia (Putamen)",
+      "x": 35,
+      "y": 37,
+      "blurb": "Deep gray matter lateral to the internal capsule. Controls movement (it is what fails in Parkinson's disease)."
+     },
+     {
+      "id": "cns-anat-coronal-8",
+      "label": "Insula",
+      "x": 30,
+      "y": 43,
+      "blurb": "Cortex hidden deep in the lateral (Sylvian) fissure. Gliomas here are hard to resect."
+     },
+     {
+      "id": "cns-anat-coronal-9",
+      "label": "Temporal Lobe",
+      "x": 30,
+      "y": 52,
+      "blurb": "Hearing, language comprehension (dominant side), and memory through the hippocampus on its inner surface."
+     },
+     {
+      "id": "cns-anat-coronal-10",
+      "label": "Brainstem",
+      "x": 50,
+      "y": 63,
+      "blurb": "Connects the brain to the spinal cord. Its dose limit is one of the most important constraints in brain RT."
+     },
+     {
+      "id": "cns-anat-coronal-11",
+      "label": "Cerebellum",
+      "x": 34,
+      "y": 70,
+      "blurb": "Below the tentorium, behind the brainstem: the infratentorial compartment."
+     }
+    ]
+   },
+   {
+    "id": "cns-ventricles",
+    "title": "Ventricles & CSF Flow",
+    "style": "schematic",
+    "caption": "Midsagittal diagram of CSF flow (arrows): made by the choroid plexus in the ventricles, CSF passes through the 3rd ventricle, aqueduct, and 4th ventricle into the subarachnoid space and is absorbed at the arachnoid granulations. Source: OpenStax Anatomy and Physiology (Wikimedia Commons, 1317 CFS Circulation), CC BY 4.0; labels and leader lines removed.",
+    "hotspots": [
+     {
+      "id": "lat-v",
+      "label": "Lateral Ventricles",
+      "x": 62.3,
+      "y": 40.3,
+      "blurb": "Where CSF is mostly made (choroid plexus). Enlarged with hydrocephalus."
+     },
+     {
+      "id": "monro",
+      "label": "Foramen of Monro",
+      "x": 41.9,
+      "y": 45.7,
+      "blurb": "Connects each lateral ventricle to the 3rd. Colloid cysts here cause sudden hydrocephalus."
+     },
+     {
+      "id": "third",
+      "label": "3rd Ventricle",
+      "x": 44.6,
+      "y": 50.8,
+      "blurb": "Midline, between the thalami."
+     },
+     {
+      "id": "aqueduct",
+      "label": "Cerebral Aqueduct (of Sylvius)",
+      "x": 56.3,
+      "y": 55.9,
+      "blurb": "Narrow channel through the midbrain; aqueductal stenosis or pineal tumors cause obstructive hydrocephalus."
+     },
+     {
+      "id": "fourth-v",
+      "label": "4th Ventricle",
+      "x": 62.1,
+      "y": 65.9,
+      "blurb": "Drains via the foramina of Luschka (lateral) and Magendie (midline)."
+     },
+     {
+      "id": "subarach",
+      "label": "Subarachnoid Space",
+      "x": 75.6,
+      "y": 24.7,
+      "blurb": "CSF bathes the brain and spinal cord. Leptomeningeal disease spreads here; medulloblastoma needs craniospinal RT."
+     }
+    ],
+    "image": "images/cns/cns-ventricles.jpg"
+   },
+   {
+    "id": "cns-anat-tentorium",
+    "title": "Compartments: Above and Below the Tentorium",
+    "style": "schematic",
+    "caption": "Coronal schematic of the coverings: dura (yellow), CSF (blue), cerebrum (pink), and cerebellum (purple). Cancer Research UK diagram 386 (Wikimedia Commons), CC BY-SA 4.0; labels removed.",
+    "image": "images/cns/cns-anat-tentorium.jpg",
+    "hotspots": [
+     {
+      "id": "cns-anat-tentorium-0",
+      "label": "Cerebrum (Supratentorial)",
+      "x": 40,
+      "y": 30,
+      "blurb": "Everything above the tentorium: the two hemispheres. Most adult brain tumors (gliomas, metastases, meningiomas) are supratentorial."
+     },
+     {
+      "id": "cns-anat-tentorium-1",
+      "label": "Cerebellum (Infratentorial)",
+      "x": 42,
+      "y": 49,
+      "blurb": "Below the tentorium in the posterior fossa, with the brainstem. Most childhood brain tumors (medulloblastoma, pilocytic astrocytoma, ependymoma) are here."
+     },
+     {
+      "id": "cns-anat-tentorium-2",
+      "label": "Tentorium Cerebelli",
+      "x": 58,
+      "y": 43,
+      "blurb": "A tent of dura between the cerebrum and cerebellum. It divides the skull into two compartments that behave very differently."
+     },
+     {
+      "id": "cns-anat-tentorium-3",
+      "label": "Falx Cerebri",
+      "x": 50,
+      "y": 12,
+      "blurb": "A sheet of dura in the midline separating the two hemispheres."
+     },
+     {
+      "id": "cns-anat-tentorium-4",
+      "label": "Dura Mater",
+      "x": 66,
+      "y": 20,
+      "blurb": "The tough outer covering of the brain (yellow). Meningiomas grow from the coverings."
+     },
+     {
+      "id": "cns-anat-tentorium-5",
+      "label": "CSF Spaces",
+      "x": 50,
+      "y": 30,
+      "blurb": "CSF (blue) fills the ventricles and surrounds the brain and cord. Tumors that spread through it need the whole space treated (craniospinal RT)."
+     },
+     {
+      "id": "cns-anat-tentorium-6",
+      "label": "Spinal Cord & Canal",
+      "x": 50,
+      "y": 62,
+      "blurb": "The CSF space continues down around the spinal cord to the bottom of the thecal sac at about S2."
+     }
+    ]
+   }
+  ]
+ }
+}

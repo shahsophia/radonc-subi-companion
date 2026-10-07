@@ -1,0 +1,222 @@
+{
+  "img-oral-cavity": {
+    "intro": "<p>For the oral cavity, three modalities each answer a different question. Work through MRI, then CT, then PET/CT below - in Explore mode first, then Quiz mode.</p>",
+    "plates": [
+      {
+        "id": "hn-oc-mri",
+        "title": "Oral Cavity - MRI",
+        "style": "mri",
+        "caption": "Axial contrast-enhanced T1 MRI of a clinical T2 left oral tongue cancer. Source: Radiologic evaluation of AJCC 8 oral cavity staging, J Korean Soc Radiol 2026 (PMC12883927), Fig. 2C, CC BY-NC 4.0; arrow and labels removed.",
+        "hotspots": [
+          {
+            "id": "oc-mri-primary",
+            "label": "Primary Tumor (Enhancing)",
+            "x": 56,
+            "y": 32,
+            "blurb": "The enhancing mass in the left anterior oral tongue. MRI is the workhorse for the oral cavity primary because soft-tissue contrast is unmatched, which is essential for measuring depth of invasion, the biggest T-stage driver here."
+          },
+          {
+            "id": "oc-mri-doi",
+            "label": "Depth of Invasion Plane",
+            "x": 53,
+            "y": 38,
+            "blurb": "Measured perpendicular to the basement membrane, from the level of the adjacent normal mucosa down to the deepest point of invasion. DOI >5mm upgrades a ≤2cm tumor from T1 to T2; DOI >10mm pushes a tumor to at least T3."
+          },
+          {
+            "id": "oc-mri-muscle",
+            "label": "Extrinsic Tongue Musculature",
+            "x": 49,
+            "y": 54,
+            "blurb": "Genioglossus fibers fan out from the midline of the tongue. Invasion of the extrinsic muscles signals a deeply infiltrative tumor and often changes the surgical approach (partial vs. total glossectomy)."
+          },
+          {
+            "id": "oc-mri-mandible",
+            "label": "Mandible",
+            "x": 31,
+            "y": 22,
+            "blurb": "The dark cortex and marrow of the mandible wrap around the tongue. MRI is more sensitive than CT for early marrow invasion (T1 marrow signal loss), even before cortical breakthrough is visible."
+          },
+          {
+            "id": "oc-mri-pni",
+            "label": "Floor of Mouth / Lingual Nerve Region",
+            "x": 65,
+            "y": 50,
+            "blurb": "The lingual nerve runs along the floor of mouth beside the tongue. Perineural spread travels along CN V3 branches: look for nerve thickening, loss of perineural fat, and abnormal enhancement."
+          }
+        ],
+        "image": "images/headneck/hn-oc-mri.jpg"
+      },
+      {
+        "id": "hn-oc-ct",
+        "title": "Oral Cavity - CT",
+        "style": "ct",
+        "caption": "Axial contrast CT: retromolar trigone cancer eroding the right mandible. Source: Jones W et al., Oral Oncol Rep 2025 (PMC12199806), Fig. 1A, CC BY-NC 4.0; arrow and panel letter removed.",
+        "hotspots": [
+          {
+            "id": "oc-ct-cortex",
+            "label": "Mandibular Cortex Erosion",
+            "x": 34,
+            "y": 39,
+            "blurb": "The inner cortex of the right mandible is eroded next to the tumor. CT beats MRI for cortical bone, and frank cortical erosion defines T4a."
+          },
+          {
+            "id": "oc-ct-primary",
+            "label": "Primary Tumor (Retromolar Trigone)",
+            "x": 39,
+            "y": 44,
+            "blurb": "CT still shows the primary, but with less soft-tissue contrast than MRI - useful when MRI isn't tolerated or available."
+          },
+          {
+            "id": "oc-ct-normal",
+            "label": "Intact Mandible (Other Side)",
+            "x": 65,
+            "y": 43,
+            "blurb": "Compare with the normal contralateral mandible: a smooth, continuous white cortex. Side-to-side comparison is the easiest way to spot subtle erosion."
+          },
+          {
+            "id": "oc-ct-artifact",
+            "label": "Teeth / Dental Hardware",
+            "x": 48,
+            "y": 14,
+            "blurb": "Dense teeth and fillings sit right next to the oral cavity. Dental hardware creates streak artifact that can hide the primary on CT and MRI, so check whether artifact limits your read before calling a study negative."
+          }
+        ],
+        "image": "images/headneck/hn-oc-ct.jpg"
+      },
+      {
+        "id": "hn-oc-pet",
+        "title": "Oral Cavity - PET/CT",
+        "style": "pet",
+        "caption": "Placeholder PET/CT-style axial slice - swap in a real de-identified PET/CT image here.",
+        "hotspots": [
+          {
+            "id": "oc-pet-primary",
+            "label": "Primary Tumor - FDG-Avid Focus",
+            "x": 45,
+            "y": 55,
+            "blurb": "Confirms metabolic activity and helps define gross tumor extent, though spatial resolution is lower than MRI/CT."
+          },
+          {
+            "id": "oc-pet-physiologic",
+            "label": "Physiologic Muscle Uptake",
+            "x": 40,
+            "y": 45,
+            "blurb": "Tongue and pharyngeal musculature normally take up FDG, especially with swallowing or talking during the uptake period. Symmetric uptake is reassuring; asymmetric focal uptake is not - knowing this pitfall prevents false-positive reads."
+          },
+          {
+            "id": "oc-pet-nodes",
+            "label": "Nodal FDG Uptake",
+            "x": 30,
+            "y": 32,
+            "blurb": "PET/CT is more sensitive than CT alone for detecting nodal metastases, particularly useful for an unknown primary workup."
+          },
+          {
+            "id": "oc-pet-distant",
+            "label": "Distant Mets / Second Primary Screening",
+            "x": 65,
+            "y": 70,
+            "blurb": "H&N cancer patients (especially with a heavy smoking history) are at real risk for a synchronous second aerodigestive primary or distant mets - lung is the classic site to scrutinize."
+          }
+        ]
+      }
+    ]
+  },
+  "img-nasopharynx": {
+    "intro": "<p>MRI is the imaging modality of choice for nasopharyngeal carcinoma - it sees the skull base and perineural spread far better than CT.</p>",
+    "plates": [
+      {
+        "id": "hn-mri-skull-base",
+        "title": "Nasopharynx & Retropharyngeal Nodes: MRI",
+        "style": "mri",
+        "caption": "Axial T2 MRI of a normal nasopharynx. Source: Recent AJCC version 9 staging of nasopharyngeal cancer, J Korean Soc Radiol 2026 (PMC12883944), Fig. 1 (T2 panel), CC BY-NC 4.0.",
+        "hotspots": [
+          {
+            "id": "fossa-rosenmuller-mri",
+            "label": "Fossa of Rosenmüller",
+            "x": 44,
+            "y": 66,
+            "blurb": "Most common site of origin for nasopharyngeal carcinoma; MRI is preferred over CT here for soft-tissue and skull-base detail."
+          },
+          {
+            "id": "torus",
+            "label": "Torus Tubarius",
+            "x": 41,
+            "y": 62,
+            "blurb": "The cartilage bump around the eustachian tube opening. The fossa of Rosenmüller sits just behind and above it."
+          },
+          {
+            "id": "retropharyngeal-node",
+            "label": "Lateral Retropharyngeal (Rouvière) Node Region",
+            "x": 38,
+            "y": 73,
+            "blurb": "First echelon of spread for NPC, though skip metastasis directly to level II occurs in up to 35% of cases."
+          },
+          {
+            "id": "parapharyngeal",
+            "label": "Parapharyngeal Space",
+            "x": 32,
+            "y": 69,
+            "blurb": "Fat-filled space lateral to the nasopharynx. Tumor extension into it is T2 for nasopharyngeal cancer."
+          },
+          {
+            "id": "prevertebral",
+            "label": "Prevertebral (Longus) Muscles",
+            "x": 49,
+            "y": 77,
+            "blurb": "Just behind the nasopharynx and in front of the skull base. Involvement is T2 in the AJCC 9th edition."
+          }
+        ],
+        "image": "images/headneck/hn-np-mri.jpg"
+      }
+    ]
+  },
+  "img-larynx": {
+    "intro": "<p>CT is the primary modality for laryngeal cancer, because the question that matters most, cartilage invasion, is a CT question.</p>",
+    "plates": [
+      {
+        "id": "hn-ct-laryngeal-invasion",
+        "title": "Laryngeal Cartilage Invasion - Axial CT",
+        "style": "ct",
+        "caption": "Axial contrast CT through the subglottis: advanced subglottic cancer destroying the cricoid and thyroid cartilages. Source: Joshi VM et al., Imaging in laryngeal cancers, Indian J Radiol Imaging 2012 (PMC3624744), Fig. 16, CC BY-NC-SA 3.0; arrows removed.",
+        "hotspots": [
+          {
+            "id": "thyroid-cartilage-outer",
+            "label": "Thyroid Cartilage: Destroyed (Right)",
+            "x": 43,
+            "y": 23,
+            "blurb": "Tumor has broken through the thyroid cartilage on the right. Breakthrough of the outer cortex means extralaryngeal spread: T4a."
+          },
+          {
+            "id": "thyroid-cartilage-inner",
+            "label": "Thyroid Cartilage: Intact Left Lamina",
+            "x": 68,
+            "y": 41,
+            "blurb": "The normal left thyroid lamina: a continuous ossified plate. Compare both sides; inner-cortex erosion or sclerosis alone correlates with T3."
+          },
+          {
+            "id": "cricoid-cartilage",
+            "label": "Cricoid Cartilage",
+            "x": 56,
+            "y": 55,
+            "blurb": "Invasion here is also a T4a criterion."
+          },
+          {
+            "id": "extralaryngeal",
+            "label": "Extralaryngeal Spread",
+            "x": 27,
+            "y": 33,
+            "blurb": "Tumor in the soft tissues and strap muscles outside the larynx. Any spread through cartilage into the neck is T4a."
+          },
+          {
+            "id": "subglottis",
+            "label": "Subglottic Airway",
+            "x": 52,
+            "y": 42,
+            "blurb": "The airway below the true cords. Subglottic extension raises the risk of level VI (paratracheal) nodes."
+          }
+        ],
+        "image": "images/headneck/hn-lx-invasion.jpg"
+      }
+    ]
+  }
+}

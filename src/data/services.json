@@ -1,12 +1,5 @@
 [
   {
-    "id": "overview",
-    "name": "Overview",
-    "icon": "◎",
-    "color": "var(--svc-overview)",
-    "blurb": "Radiation basics, physics, biology & terminology"
-  },
-  {
     "id": "headneck",
     "name": "Head & Neck",
     "icon": "⬡",

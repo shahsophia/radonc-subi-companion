@@ -1,0 +1,54 @@
+{
+ "headneck": {
+  "image": "images/cards/headneck.jpg",
+  "credit": "Axial T2 MRI of the nasopharynx. J Korean Soc Radiol 2026 (PMC12883944), CC BY-NC 4.0."
+ },
+ "breast": {
+  "image": "images/cards/breast.jpg",
+  "credit": "Mammogram of a spiculated breast mass. Razdan S et al., Cureus 2025 (PMC12791182), CC BY 4.0."
+ },
+ "thoracic": {
+  "image": "images/cards/thoracic.jpg",
+  "credit": "PET/CT of a subcarinal node. Khosa J, Cho RJ, Diagnostics 2026 (PMC13206069), CC BY 4.0."
+ },
+ "prostate": {
+  "image": "images/cards/prostate.jpg",
+  "credit": "Pelvic radiotherapy on a linac. Jakembradford (Wikimedia Commons), CC BY-SA 4.0."
+ },
+ "gyn": {
+  "image": "images/cards/gyn.jpg",
+  "credit": "Sagittal T2 MRI of cervical cancer. Otero-García et al., Insights Imaging 2019 (PMC6375059), CC BY 4.0."
+ },
+ "cns": {
+  "image": "images/cards/cns.jpg",
+  "credit": "T1 post-contrast MRI of glioblastoma. Armed Forces Institute of Pathology (Wikimedia Commons), public domain."
+ },
+ "gi": {
+  "image": "images/cards/gi.jpg",
+  "credit": "Pancreatic-protocol CT. Louis M et al., Cureus 2025 (PMC11981547), CC BY 4.0."
+ },
+ "rad-onc-101": {
+  "image": "images/cards/rad-onc-101.jpg",
+  "credit": "External beam radiotherapy. National Cancer Institute (Wikimedia Commons), public domain."
+ },
+ "how-rt-works": {
+  "image": "images/cards/how-rt-works.jpg",
+  "credit": "Patient on a linac. Dina Wakulchik (Wikimedia Commons), CC BY 2.0."
+ },
+ "machines-modalities": {
+  "image": "images/cards/machines-modalities.jpg",
+  "credit": "TomoTherapy unit. Rhoda Baer, National Cancer Institute (Wikimedia Commons), public domain."
+ },
+ "presenting-patients": {
+  "image": "images/cards/presenting-patients.jpg",
+  "credit": "Clinicians reviewing a chart. U.S. Navy photo by Jonas Womack (Wikimedia Commons), public domain."
+ },
+ "the-consult": {
+  "image": "images/cards/the-consult.jpg",
+  "credit": "A patient consultation. U.S. Navy photo by Jonas Womack (Wikimedia Commons), public domain."
+ },
+ "treatment-planning": {
+  "image": "images/cards/treatment-planning.jpg",
+  "credit": "Radiosurgery plan with isodose lines. Lewis J et al., Cureus 2025 (PMC12414254), CC BY 4.0."
+ }
+}

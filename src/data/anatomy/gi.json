@@ -1,0 +1,525 @@
+{
+ "anat-gi-organs": {
+  "intro": "<p>Walk down the GI tract the way you'll treat it: <strong>esophagus &rarr; GEJ and stomach &rarr; pancreas &rarr; liver &rarr; rectum &rarr; anal canal</strong>. For each organ, know its <strong>regions</strong> and the <strong>landmarks</strong> that change staging and surgery. Explore each view, then switch to Quiz mode.</p>",
+  "plates": [
+   {
+    "id": "gi-esoph",
+    "title": "Esophagus: Segments by Distance",
+    "style": "schematic",
+    "caption": "The esophagus from the cricopharyngeus to the stomach. The pale bands mark the upper, middle, and lower thirds. Cancer Research UK diagram (Wikimedia Commons), CC BY-SA 4.0; labels removed.",
+    "hotspots": [
+     {
+      "id": "cric",
+      "label": "Cricopharyngeus (~15 cm)",
+      "x": 39.0,
+      "y": 11.5,
+      "blurb": "Upper esophageal sphincter: the start of the esophagus. Cervical esophagus runs from here to the thoracic inlet (~20 cm). Cervical tumors are treated like head and neck (definitive chemoRT)."
+     },
+     {
+      "id": "upper-t",
+      "label": "Upper Thoracic (20–25 cm)",
+      "x": 36.9,
+      "y": 24.3,
+      "blurb": "Thoracic inlet to the azygos vein. Behind the trachea. Mostly squamous cell."
+     },
+     {
+      "id": "carina-e",
+      "label": "Carina Level (~25 cm)",
+      "x": 36.9,
+      "y": 30.5,
+      "blurb": "Tumors here can invade the airway (fistula risk); bronchoscopy for upper/mid tumors."
+     },
+     {
+      "id": "mid-t",
+      "label": "Middle Thoracic (25–30 cm)",
+      "x": 36.9,
+      "y": 39.5,
+      "blurb": "Behind the left atrium. SCC more common."
+     },
+     {
+      "id": "lower-t",
+      "label": "Lower Thoracic (30–40 cm)",
+      "x": 37.5,
+      "y": 53.4,
+      "blurb": "Where adenocarcinoma (Barrett's) arises."
+     },
+     {
+      "id": "diaphragm-e",
+      "label": "Diaphragmatic Hiatus",
+      "x": 37.1,
+      "y": 59.9,
+      "blurb": "Where the esophagus passes into the abdomen."
+     },
+     {
+      "id": "gej",
+      "label": "Gastroesophageal Junction (~40 cm)",
+      "x": 39.8,
+      "y": 64.9,
+      "blurb": "Siewert I (1–5 cm above), II (at the junction), III (2–5 cm below). I and II are treated like esophageal cancer."
+     }
+    ],
+    "image": "images/gi/gi-esoph.jpg"
+   },
+   {
+    "id": "gi-stomach",
+    "title": "Stomach & GEJ Regions",
+    "style": "schematic",
+    "caption": "The stomach and first part of the duodenum, front view. Cancer Research UK diagram (Wikimedia Commons), CC BY-SA 4.0; labels removed.",
+    "hotspots": [
+     {
+      "id": "cardia",
+      "label": "Cardia",
+      "x": 54.2,
+      "y": 29.7,
+      "blurb": "Just below the GEJ. Tumors near here behave like GEJ cancers."
+     },
+     {
+      "id": "fundus",
+      "label": "Fundus",
+      "x": 62.7,
+      "y": 19.6,
+      "blurb": "Top of the stomach under the left diaphragm."
+     },
+     {
+      "id": "body",
+      "label": "Body",
+      "x": 64.5,
+      "y": 45.3,
+      "blurb": "Largest part."
+     },
+     {
+      "id": "antrum",
+      "label": "Antrum",
+      "x": 42.1,
+      "y": 65.0,
+      "blurb": "Lower stomach. Distal gastric cancers are the classic intestinal-type, H. pylori-related tumors."
+     },
+     {
+      "id": "pylorus",
+      "label": "Pylorus",
+      "x": 33.1,
+      "y": 59.1,
+      "blurb": "Outlet into the duodenum; tumors here cause gastric outlet obstruction."
+     },
+     {
+      "id": "lesser",
+      "label": "Lesser Curvature",
+      "x": 48.8,
+      "y": 45.3,
+      "blurb": "Left gastric nodes run along it."
+     },
+     {
+      "id": "greater",
+      "label": "Greater Curvature",
+      "x": 74.6,
+      "y": 50.1,
+      "blurb": "Gastroepiploic nodes; attaches to the omentum."
+     }
+    ],
+    "image": "images/gi/gi-stomach.jpg"
+   },
+   {
+    "id": "gi-pancreas",
+    "title": "Pancreas & Its Vessels (Posterior View)",
+    "style": "schematic",
+    "caption": "The pancreas and duodenum seen from BEHIND, so the head sits on the right of the picture and the tail on the left. Gray H, Anatomy of the Human Body (1918), Fig. 1099 (Wikimedia Commons), public domain.",
+    "hotspots": [
+     {
+      "id": "head",
+      "label": "Pancreatic Head",
+      "x": 71.0,
+      "y": 54.6,
+      "blurb": "~70% of pancreatic cancers. Blocks the bile duct early: painless jaundice (and the 'double duct' sign)."
+     },
+     {
+      "id": "uncinate",
+      "label": "Uncinate Process",
+      "x": 58.0,
+      "y": 63.1,
+      "blurb": "Hooks behind the SMV; tumors here often contact the SMA/SMV."
+     },
+     {
+      "id": "neck",
+      "label": "Neck",
+      "x": 54.0,
+      "y": 42.4,
+      "blurb": "Sits directly over the SMV/portal vein confluence."
+     },
+     {
+      "id": "body-p",
+      "label": "Body",
+      "x": 35.0,
+      "y": 45.2,
+      "blurb": "Body/tail tumors present later (pain, weight loss) and are often unresectable."
+     },
+     {
+      "id": "tail",
+      "label": "Tail",
+      "x": 12.0,
+      "y": 42.4,
+      "blurb": "Near the splenic hilum."
+     },
+     {
+      "id": "sma",
+      "label": "Superior Mesenteric Artery (SMA)",
+      "x": 61.3,
+      "y": 44.3,
+      "blurb": "Encasement >180° = locally advanced."
+     },
+     {
+      "id": "smv",
+      "label": "SMV / Portal Vein",
+      "x": 66.0,
+      "y": 24.0,
+      "blurb": "Venous involvement can be reconstructed at surgery (borderline)."
+     },
+     {
+      "id": "celiac",
+      "label": "Celiac Axis",
+      "x": 58.5,
+      "y": 21.7,
+      "blurb": "Encasement = locally advanced; celiac plexus pain from tumor invasion."
+     },
+     {
+      "id": "cbd",
+      "label": "Common Bile Duct",
+      "x": 74.5,
+      "y": 36.7,
+      "blurb": "Runs through the head; stented for jaundice."
+     },
+     {
+      "id": "duodenum",
+      "label": "Duodenum (C-loop)",
+      "x": 62.0,
+      "y": 80.0,
+      "blurb": "Wraps the head. Key SBRT OAR (bleeding/ulcer)."
+     }
+    ],
+    "image": "images/gi/gi-pancreas.jpg"
+   },
+   {
+    "id": "gi-liver",
+    "title": "Liver: Lobes & Vessels",
+    "style": "schematic",
+    "caption": "The liver's right and left lobes with the portal vein (dark blue), hepatic artery (red), hepatic veins (light blue), and bile ducts (green). The caudate lobe (segment I) is not visible from this angle; see the Couinaud model below. Cancer Research UK diagram (Wikimedia Commons), CC BY-SA 4.0; labels removed.",
+    "hotspots": [
+     {
+      "id": "right-lobe",
+      "label": "Right Lobe (Segments V–VIII)",
+      "x": 14.3,
+      "y": 47.3,
+      "blurb": "The larger lobe; resections are planned by segment."
+     },
+     {
+      "id": "left-lobe",
+      "label": "Left Lobe (Segments II–IV)",
+      "x": 81.0,
+      "y": 31.0,
+      "blurb": "Segment IV is the medial left lobe."
+     },
+     {
+      "id": "pv",
+      "label": "Portal Vein",
+      "x": 43.0,
+      "y": 84.3,
+      "blurb": "Tumor thrombus in the portal vein is common in HCC and changes treatment (SBRT can treat it)."
+     },
+     {
+      "id": "hv",
+      "label": "Hepatic Veins / IVC",
+      "x": 55.4,
+      "y": 2.9,
+      "blurb": "Divide the liver into sectors; drain to the IVC."
+     },
+     {
+      "id": "gb",
+      "label": "Gallbladder",
+      "x": 27.6,
+      "y": 85.8,
+      "blurb": "Marks the division between right and left lobes (Cantlie's line with the IVC)."
+     },
+     {
+      "id": "dome",
+      "label": "Liver Dome",
+      "x": 34.3,
+      "y": 6.6,
+      "blurb": "Right under the diaphragm: moves a lot with breathing (motion management for SBRT)."
+     },
+     {
+      "id": "ha",
+      "label": "Hepatic Artery",
+      "x": 47.1,
+      "y": 81.4,
+      "blurb": "Runs beside the portal vein. HCC gets most of its blood supply from the hepatic artery, which is why it lights up in the arterial phase and why TACE works."
+     },
+     {
+      "id": "cbd-l",
+      "label": "Common Bile Duct",
+      "x": 34.3,
+      "y": 93.2,
+      "blurb": "Drains bile from the liver and gallbladder down to the duodenum. Central liver tumors near the hilum risk biliary stricture after SBRT."
+     }
+    ],
+    "image": "images/gi/gi-liver.jpg"
+   },
+   {
+    "id": "gi-rectum",
+    "title": "Rectum & Anal Canal",
+    "style": "mri",
+    "caption": "Left: sagittal drawing of the rectum with the mesorectal fascia (thick line), peritoneum (double line), and the high/mid/low levels. Right: coronal drawing of the anal canal. Bogveradze N et al., Insights Imaging 2023 (PMC9849549), Figs. 8 and 4, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "upper-r",
+      "label": "Upper Rectum (10–15 cm)",
+      "x": 24.8,
+      "y": 33.1,
+      "blurb": "Above the peritoneal reflection anteriorly; behaves more like sigmoid colon (RT less often needed)."
+     },
+     {
+      "id": "pr",
+      "label": "Anterior Peritoneal Reflection",
+      "x": 20.1,
+      "y": 47.9,
+      "blurb": "Tumor above it that breaches the peritoneum = T4a."
+     },
+     {
+      "id": "mid-r",
+      "label": "Mid Rectum (5–10 cm)",
+      "x": 26.3,
+      "y": 47.2,
+      "blurb": "Surrounded by mesorectal fat."
+     },
+     {
+      "id": "low-r",
+      "label": "Low Rectum (0–5 cm)",
+      "x": 23.9,
+      "y": 58.0,
+      "blurb": "Thin mesorectum: higher risk of positive margins and APR."
+     },
+     {
+      "id": "mesorectum",
+      "label": "Mesorectum",
+      "x": 30.3,
+      "y": 40.5,
+      "blurb": "Fat, vessels, and nodes around the rectum: removed en bloc in a TME."
+     },
+     {
+      "id": "mrf",
+      "label": "Mesorectal Fascia (MRF)",
+      "x": 33.0,
+      "y": 36.4,
+      "blurb": "The surgical margin. Tumor ≤1 mm from it = threatened CRM."
+     },
+     {
+      "id": "arj",
+      "label": "Anorectal Ring / Puborectalis",
+      "x": 58.9,
+      "y": 54.8,
+      "blurb": "Top of the anal canal; the levators are here."
+     },
+     {
+      "id": "dentate",
+      "label": "Dentate Line",
+      "x": 70.3,
+      "y": 63.3,
+      "blurb": "Above: mesorectal/internal iliac drainage. Below: inguinal drainage."
+     },
+     {
+      "id": "sphincters",
+      "label": "Internal & External Sphincters",
+      "x": 59.4,
+      "y": 68.2,
+      "blurb": "Invasion doesn't make anal cancer T4; it affects whether a rectal tumor can be sphincter-sparing."
+     },
+     {
+      "id": "verge",
+      "label": "Anal Verge",
+      "x": 70.8,
+      "y": 75.2,
+      "blurb": "The zero point for measuring rectal tumor height."
+     }
+    ],
+    "image": "images/gi/gi-rectum.jpg"
+   }
+  ],
+  "gallery": [
+   {
+    "title": "Endoscopy: Barrett's",
+    "caption": "Salmon-colored columnar mucosa extending above the EGJ (arrows mark the top of the gastric folds). Japan Esophageal Society, Esophagus 2017 (PMC5222925), Fig. 2-1d, CC BY 4.0.",
+    "style": "endoscopic",
+    "image": "images/gi/gi-g-barrett.jpg"
+   },
+   {
+    "title": "Couinaud segments",
+    "caption": "The liver from below with its functional segments numbered; segment 1 (caudate) sits next to the IVC. BodyParts3D/DBCLS (Wikimedia Commons), CC BY-SA 2.1 JP.",
+    "style": "schematic",
+    "image": "images/gi/gi-g-couinaud.jpg"
+   }
+  ]
+ },
+ "anat-gi-nodes": {
+  "intro": "<p>Each GI organ drains along its <strong>blood supply</strong>. Learn the nodal basins for the three sites you'll treat most: the <strong>esophagus/stomach</strong>, the <strong>pancreas</strong>, and the <strong>rectum/anus</strong>.</p>",
+  "plates": [
+   {
+    "id": "gi-nodes-esoph",
+    "title": "Esophagus & Stomach Nodes",
+    "style": "schematic",
+    "caption": "Japanese Esophageal Society node stations along the esophagus and stomach (numbers are the JES/JGCA station names; colors show nodal grouping for GEJ cancers in the source, legend removed). Liang R et al., Front Oncol 2022 (PMC9743047), Fig. 1A, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "n-scv",
+      "label": "Supraclavicular Nodes (104)",
+      "x": 40.9,
+      "y": 13.1,
+      "blurb": "Distant (M1) for esophageal cancer; included electively for some cervical/upper tumors."
+     },
+     {
+      "id": "n-paratr",
+      "label": "Paratracheal Nodes (106rec)",
+      "x": 42.1,
+      "y": 17.5,
+      "blurb": "Upper thoracic drainage."
+     },
+     {
+      "id": "n-subcar",
+      "label": "Subcarinal Nodes (107)",
+      "x": 47.4,
+      "y": 32.0,
+      "blurb": "Mid esophagus."
+     },
+     {
+      "id": "n-paraesoph",
+      "label": "Paraesophageal Nodes (108 / 110)",
+      "x": 44.4,
+      "y": 39.5,
+      "blurb": "Along the whole esophagus; skip spread is common."
+     },
+     {
+      "id": "n-leftgastric",
+      "label": "Left Gastric Nodes (7)",
+      "x": 47.4,
+      "y": 72.0,
+      "blurb": "Along the lesser curvature; first echelon for distal esophagus/GEJ."
+     },
+     {
+      "id": "n-celiac",
+      "label": "Celiac Nodes (9)",
+      "x": 44.0,
+      "y": 73.5,
+      "blurb": "Regional for distal esophagus and stomach; included in GEJ fields."
+     },
+     {
+      "id": "n-perigastric",
+      "label": "Perigastric Nodes (1–6)",
+      "x": 49.3,
+      "y": 77.5,
+      "blurb": "Along both curvatures."
+     }
+    ],
+    "image": "images/gi/gi-nodes-esoph.jpg"
+   },
+   {
+    "id": "gi-nodes-pancreas",
+    "title": "Pancreas Nodes",
+    "style": "schematic",
+    "caption": "Schematic of the pancreatic node groups around the celiac axis, SMA, and splenic artery. Cho HS, Ahn JH, J Korean Soc Radiol 2022 (PMC9748447), Fig. 22A, CC BY-NC 4.0.",
+    "hotspots": [
+     {
+      "id": "np-peri",
+      "label": "Peripancreatic (Pancreaticoduodenal) Nodes",
+      "x": 36.5,
+      "y": 61.9,
+      "blurb": "Regional (N1 = 1–3 nodes, N2 = ≥4)."
+     },
+     {
+      "id": "np-hep",
+      "label": "Hepatic Artery Nodes",
+      "x": 28.8,
+      "y": 40.0,
+      "blurb": "Regional."
+     },
+     {
+      "id": "np-celiac",
+      "label": "Celiac Nodes",
+      "x": 41.6,
+      "y": 34.5,
+      "blurb": "Regional for the pancreas."
+     },
+     {
+      "id": "np-sma",
+      "label": "SMA Nodes",
+      "x": 42.6,
+      "y": 46.8,
+      "blurb": "Regional; around the SMA root."
+     },
+     {
+      "id": "np-pa",
+      "label": "Para-aortic Nodes",
+      "x": 43.6,
+      "y": 71.5,
+      "blurb": "Distant (M1)."
+     },
+     {
+      "id": "np-splenic",
+      "label": "Splenic Hilar Nodes",
+      "x": 77.6,
+      "y": 31.1,
+      "blurb": "Body/tail tumors."
+     }
+    ],
+    "image": "images/gi/gi-nodes-pancreas.jpg"
+   },
+   {
+    "id": "gi-nodes-pelvis",
+    "title": "Rectal & Anal Nodes",
+    "style": "schematic",
+    "caption": "Rectal cancer node stations drawn on a 3D reconstruction (a) and axial T2 MRI at three levels (b to d): mesorectal (orange), obturator (green), internal iliac (yellow), external iliac (blue). Inguinal nodes sit below this field. Bogveradze N et al., Insights Imaging 2023 (PMC9849549), Fig. 12, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "nr-meso",
+      "label": "Mesorectal Nodes (Mes)",
+      "x": 26.1,
+      "y": 82.0,
+      "blurb": "First echelon for the rectum; removed with TME."
+     },
+     {
+      "id": "nr-sup",
+      "label": "Superior Rectal / IMA Nodes",
+      "x": 32.4,
+      "y": 9.0,
+      "blurb": "Along the superior rectal and inferior mesenteric vessels (upper rectum)."
+     },
+     {
+      "id": "nr-ii",
+      "label": "Internal Iliac Nodes (II)",
+      "x": 61.8,
+      "y": 73.0,
+      "blurb": "Lateral drainage of the mid/low rectum; regional."
+     },
+     {
+      "id": "nr-obt",
+      "label": "Obturator Nodes (O)",
+      "x": 62.5,
+      "y": 25.0,
+      "blurb": "Lateral; regional for rectum (lateral node group)."
+     },
+     {
+      "id": "nr-presac",
+      "label": "Presacral Nodes",
+      "x": 68.0,
+      "y": 91.5,
+      "blurb": "Regional; included in rectal fields."
+     },
+     {
+      "id": "nr-ei",
+      "label": "External Iliac Nodes (EI)",
+      "x": 19.0,
+      "y": 64.5,
+      "blurb": "Regional for anal cancer; distant for rectal cancer unless an anterior organ is invaded."
+     }
+    ],
+    "image": "images/gi/gi-nodes-pelvis.jpg"
+   }
+  ]
+ }
+}

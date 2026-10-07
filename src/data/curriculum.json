@@ -1,0 +1,866 @@
+{
+ "_note": "Module metadata for disease-site cards and landing pages. Everything here describes content that already exists in docs/ (topics, objectives) or is named in it (guideline, staging, trials). 'reviewed' is optional (e.g. \"2026-10\"); the UI only shows a review date when one is recorded here. 'modules' holds per-reading metadata (lede, essentials, objectives), each written from that reading's own sections and High-Yield Summary.",
+ "sites": {
+  "headneck": {
+   "title": "Head & Neck Cancer",
+   "summary": "Subsite by subsite: oral cavity, oropharynx, nasopharynx, and larynx, with the neck node levels that drive what gets treated.",
+   "topics": [
+    "HPV & Oropharynx",
+    "Nasopharynx",
+    "Larynx",
+    "Neck Node Levels",
+    "Staging by Subsite"
+   ],
+   "objectives": [
+    "Explain why HPV-positive and HPV-negative oropharynx cancer behave as two different diseases",
+    "Identify the oral cavity, oropharynx, nasopharynx, and larynx subsites and the nerves at risk in the neck",
+    "Map the cervical lymph node levels and how drainage predicts what gets treated",
+    "Match the imaging modality to the clinical question, including perineural spread",
+    "Work through the core workup and the staging differences that matter by subsite",
+    "Apply a four-question framework to head and neck treatment decisions"
+   ],
+   "guideline": "NCCN Head and Neck Cancers Guidelines",
+   "staging": [
+    "AJCC 8th edition"
+   ],
+   "trials": [
+    "RTOG 91-11",
+    "RTOG 9501",
+    "EORTC 22931",
+    "RTOG 1016",
+    "De-ESCALaTE"
+   ],
+   "modules": {
+    "Epidemiology & Risk Factors": {
+     "lede": "See how common each head and neck subsite is and what drives it: tobacco and alcohol, HPV, and EBV.",
+     "essentials": [
+      "Risk factors by subsite",
+      "HPV-positive versus HPV-negative oropharynx",
+      "p16 as a stand-in for HPV",
+      "EBV and nasopharyngeal carcinoma"
+     ],
+     "objectives": [
+      "Identify the main risk factors for each subsite",
+      "Explain why HPV-positive and HPV-negative oropharynx cancer are different diseases",
+      "Explain why p16 is used as a surrogate for HPV",
+      "Describe the drivers of nasopharyngeal carcinoma"
+     ]
+    },
+    "Anatomy": {
+     "lede": "Learn the boundaries of the oral cavity, oropharynx, nasopharynx, and larynx, and the nerves at risk in the neck.",
+     "essentials": [
+      "Oral tongue versus base of tongue",
+      "Oropharynx boundaries",
+      "Nasopharynx red flags",
+      "Larynx compartments and T3/T4a"
+     ],
+     "objectives": [
+      "Define the boundaries of the oral cavity and oropharynx",
+      "Locate the nasopharynx and the fossa of Rosenmuller",
+      "Describe the three laryngeal compartments and why early glottic cancer skips the neck",
+      "Recognize the anatomic features that make laryngeal cancer T3 or T4a",
+      "Identify the nerves at risk in the neck"
+     ]
+    },
+    "Lymph Nodes": {
+     "lede": "Learn the cervical lymph node levels I to VII and how predictable drainage decides which levels get treated.",
+     "essentials": [
+      "The level system I to VII",
+      "The hyoid, cricoid, and clavicle landmarks",
+      "Coverage rules by subsite",
+      "Bilateral versus unilateral neck"
+     ],
+     "objectives": [
+      "Name the cervical node levels and their boundaries",
+      "Match classic primaries to the levels they drain to",
+      "Apply the coverage rules by subsite",
+      "Decide when the neck is treated on both sides or one"
+     ]
+    },
+    "Imaging": {
+     "lede": "Match the modality to the question, then read the oral cavity, nasopharynx, larynx, lymph nodes, and perineural spread on imaging.",
+     "essentials": [
+      "MRI versus CT versus PET-CT",
+      "Features of a suspicious node",
+      "The cystic level II node",
+      "Thyroid cartilage invasion"
+     ],
+     "objectives": [
+      "Choose MRI, CT, or PET-CT for the clinical question",
+      "Recognize the imaging features of a suspicious lymph node",
+      "Know the typical nodal spread of nasopharyngeal carcinoma",
+      "Stage laryngeal cartilage invasion on CT",
+      "Recognize perineural spread"
+     ]
+    },
+    "Workup & Staging": {
+     "lede": "Cover the core workup every patient gets, the T, N, and M framework, and the staging differences that matter by subsite.",
+     "essentials": [
+      "The core workup",
+      "N stage for non-HPV sites",
+      "Depth of invasion in the oral cavity",
+      "p16-positive oropharynx staging"
+     ],
+     "objectives": [
+      "List the core workup for a head and neck cancer patient",
+      "Assign N stage for non-HPV sites",
+      "Use depth of invasion to stage the oral cavity",
+      "Explain why p16 status is checked first in the oropharynx",
+      "Recognize the staging rules unique to the nasopharynx"
+     ]
+    },
+    "Treatment Paradigms": {
+     "lede": "Carry one four-question framework for head and neck treatment decisions, then add each site's unique twist.",
+     "essentials": [
+      "Surgery first when resectable",
+      "Adjuvant RT triggers",
+      "When chemo is added",
+      "The two big dose numbers"
+     ],
+     "objectives": [
+      "Apply the four-question framework to a new patient",
+      "Identify the pathology features that trigger adjuvant radiation",
+      "Know the two features that add concurrent chemo",
+      "Recall the standard definitive and postoperative doses",
+      "Describe what makes each subsite unique"
+     ]
+    }
+   }
+  },
+  "breast": {
+   "title": "Breast Cancer",
+   "summary": "DCIS through locally advanced disease: receptor subtypes, regional nodes, and who gets what radiation after lumpectomy or mastectomy.",
+   "topics": [
+    "Receptor Subtypes",
+    "Regional Nodes",
+    "DCIS",
+    "Breast Conservation",
+    "PMRT"
+   ],
+   "objectives": [
+    "Classify breast cancer by hormone receptor and HER2 status and by histologic subtype",
+    "Identify the regions of the breast and the regional lymph node levels",
+    "Know what mammography, ultrasound, MRI, and CT simulation each contribute",
+    "Stage with the AJCC 8th edition anatomic and prognostic stage",
+    "Decide who gets what radiation: DCIS, after lumpectomy, node-positive, locally advanced, and after mastectomy",
+    "Connect each treatment paradigm to the trials behind it"
+   ],
+   "guideline": "NCCN Breast Cancer Guidelines",
+   "staging": [
+    "AJCC 8th edition (anatomic and prognostic stage)"
+   ],
+   "trials": [
+    "NSABP B-06",
+    "Milan",
+    "EBCTCG meta-analysis",
+    "ACOSOG Z0011",
+    "AMAROS",
+    "NSABP B-17",
+    "EORTC 10853",
+    "RTOG 9804",
+    "START B",
+    "FAST-Forward",
+    "CALGB 9343",
+    "PRIME II",
+    "MA.20",
+    "EORTC 22922",
+    "NSABP B-51",
+    "KEYNOTE-522"
+   ],
+   "modules": {
+    "Epidemiology & Risk Factors": {
+     "lede": "Classify breast cancer by receptor status and histology, and learn the risk factors and hereditary syndromes that change management.",
+     "essentials": [
+      "ER/PR and HER2 subtypes",
+      "Ductal versus lobular",
+      "Estrogen exposure and other risk factors",
+      "BRCA and Li-Fraumeni"
+     ],
+     "objectives": [
+      "Classify breast cancer by hormone receptor and HER2 status",
+      "Explain how subtype affects prognosis and response to neoadjuvant chemo",
+      "Distinguish the main histologic subtypes",
+      "Identify the major risk factors",
+      "Recognize hereditary syndromes that change radiation decisions"
+     ]
+    },
+    "Anatomy & Lymphatics": {
+     "lede": "Learn the regions of the breast and the regional lymph nodes, including the axillary levels and the nodes that define N3.",
+     "essentials": [
+      "Quadrants and internal mammary drainage",
+      "Axillary levels I to III",
+      "N3a, N3b, and N3c",
+      "What counts as T4"
+     ],
+     "objectives": [
+      "Identify the regions of the breast and the most common tumor location",
+      "Define axillary levels I to III by the pectoralis minor",
+      "Map infraclavicular, internal mammary, and supraclavicular nodes to N stage",
+      "Know what does and doesn't count as T4"
+     ]
+    },
+    "Imaging": {
+     "lede": "Know what mammography, ultrasound, MRI, CT simulation, and PET/CT each contribute, and when each one is used.",
+     "essentials": [
+      "Suspicious mammogram findings and BI-RADS",
+      "Ultrasound for dense breasts",
+      "When MRI is used",
+      "PET/CT for stage III only"
+     ],
+     "objectives": [
+      "Recognize suspicious mammographic findings and what BI-RADS 4 or 5 means",
+      "Explain when ultrasound and MRI are used",
+      "Find the lumpectomy cavity and assess heart position on the planning CT",
+      "Know when systemic staging with PET/CT is indicated"
+     ]
+    },
+    "Workup & Staging": {
+     "lede": "Cover the core workup and the AJCC 8th edition T, N, and M framework, with the full staging tables at the end.",
+     "essentials": [
+      "The core workup",
+      "Who needs body imaging",
+      "T stage cutoffs and T4 subtypes",
+      "Clinical N stage"
+     ],
+     "objectives": [
+      "List the core workup for a new breast cancer",
+      "Know when body imaging is indicated",
+      "Assign T stage, including the T4 subtypes",
+      "Assign clinical N stage",
+      "Recognize what is stage IIIC versus M1"
+     ]
+    },
+    "Treatment Paradigms": {
+     "lede": "Decide who gets what radiation: DCIS, node-negative and node-positive disease after lumpectomy, locally advanced disease, and after mastectomy.",
+     "essentials": [
+      "Breast conservation equals mastectomy",
+      "Whole-breast RT and boost indications",
+      "Regional nodal RT and Z0011",
+      "PMRT indications"
+     ],
+     "objectives": [
+      "Explain the roles of surgery and systemic therapy",
+      "Describe radiation for DCIS",
+      "Choose whole-breast RT fractionation and boost indications",
+      "Decide when to add regional nodal RT",
+      "State the indications for postmastectomy radiation"
+     ]
+    }
+   }
+  },
+  "thoracic": {
+   "title": "Thoracic Cancer",
+   "summary": "NSCLC and SCLC at every stage: nodal stations, AJCC 9th edition staging, and when to choose SBRT, surgery, or chemoradiation.",
+   "topics": [
+    "NSCLC vs SCLC",
+    "Nodal Stations",
+    "AJCC 9 Staging",
+    "SBRT",
+    "Stage III ChemoRT"
+   ],
+   "objectives": [
+    "Distinguish NSCLC from SCLC and explain why every adenocarcinoma gets driver mutation testing",
+    "Locate the thoracic lymph node stations on anatomy and CT, and assign the N stage",
+    "Read the mediastinum level by level on CT and know what PET/CT and 4D-CT add",
+    "Stage NSCLC with the AJCC 9th edition, and SCLC as limited or extensive",
+    "Choose between SBRT, surgery, and chemoradiation for peripheral, chest wall, central, and ultracentral tumors",
+    "Work through node-positive, stage III, and metastatic paradigms"
+   ],
+   "guideline": "NCCN Non-Small Cell and Small Cell Lung Cancer Guidelines",
+   "staging": [
+    "AJCC 9th edition (2024)"
+   ],
+   "trials": [
+    "RTOG 0236",
+    "Indiana phase II (Timmerman)",
+    "RTOG 0813",
+    "HILUS",
+    "JCOG0802",
+    "SWOG 9416 / INT 0160",
+    "RTOG 0617",
+    "PACIFIC",
+    "LAURA",
+    "CheckMate 816",
+    "KEYNOTE-671",
+    "LungART",
+    "SABR-COMET",
+    "Turrisi",
+    "CONVERT",
+    "ADRIATIC"
+   ],
+   "modules": {
+    "Epidemiology & Risk Factors": {
+     "lede": "Separate NSCLC from SCLC, learn the risk factors and driver mutations, and know who qualifies for low-dose CT screening.",
+     "essentials": [
+      "NSCLC versus SCLC",
+      "Smoking and radon",
+      "Biomarker testing in nonsquamous NSCLC",
+      "Low-dose CT screening eligibility"
+     ],
+     "objectives": [
+      "Distinguish NSCLC histologies from small cell lung cancer",
+      "Identify the main risk factors, including in never-smokers",
+      "Explain why every nonsquamous NSCLC gets driver mutation and PD-L1 testing",
+      "State who is eligible for low-dose CT screening",
+      "Recognize how lung cancer presents"
+     ]
+    },
+    "Anatomy & Lymphatics": {
+     "lede": "Learn the lobes and airways that define central and ultracentral tumors, and the mediastinal nodal stations that decide N1, N2, and N3.",
+     "essentials": [
+      "Lobes, fissures, and motion",
+      "Central versus ultracentral",
+      "Station numbers and N stage",
+      "What EBUS can reach"
+     ],
+     "objectives": [
+      "Identify the lobes and fissures of each lung",
+      "Define central and ultracentral tumors and why location changes SBRT dose",
+      "Map the thoracic nodal stations to N1, N2, and N3",
+      "Know which stations EBUS reaches and which need surgical sampling"
+     ]
+    },
+    "Imaging": {
+     "lede": "Read CT chest level by level, find the nodal stations, use PET/CT and brain MRI for staging, and understand 4D-CT planning and post-SBRT follow-up.",
+     "essentials": [
+      "CT for the primary, PET/CT for nodes and metastases",
+      "Features of a suspicious nodule",
+      "Why PET-positive nodes need tissue",
+      "4D-CT and the ITV"
+     ],
+     "objectives": [
+      "Follow the mediastinum and nodal stations level by level on CT",
+      "Describe the features of a suspicious nodule",
+      "Explain the role and limits of PET/CT and when brain MRI is needed",
+      "Describe 4D-CT planning and the ITV",
+      "Tell expected post-SBRT fibrosis from recurrence"
+     ]
+    },
+    "Workup & Staging": {
+     "lede": "Work through the core workup and AJCC 9th edition TNM, then limited versus extensive small cell lung cancer.",
+     "essentials": [
+      "The core workup",
+      "T stage size cutoffs and invasion",
+      "N1, N2a, N2b, and N3",
+      "Limited versus extensive SCLC"
+     ],
+     "objectives": [
+      "List the core workup every lung cancer patient gets",
+      "Assign T stage by size and invasion",
+      "Assign N stage by station",
+      "Recognize what makes disease M1",
+      "Stage small cell lung cancer as limited or extensive"
+     ]
+    },
+    "Treatment Paradigms": {
+     "lede": "Follow the paradigms from node-negative SBRT by tumor location, through stage III chemoradiation, to metastatic disease and small cell lung cancer.",
+     "essentials": [
+      "Lobectomy versus SBRT",
+      "SBRT dose by location",
+      "Stage III chemoradiation and consolidation",
+      "Limited-stage SCLC"
+     ],
+     "objectives": [
+      "Explain the roles of surgery, chemotherapy, and systemic therapy",
+      "Choose SBRT dose by tumor location",
+      "Describe the standard for unresectable stage III NSCLC",
+      "Outline treatment of metastatic disease",
+      "Describe treatment of limited-stage and extensive-stage small cell lung cancer"
+     ]
+    }
+   }
+  },
+  "prostate": {
+   "title": "Prostate Cancer",
+   "summary": "From an elevated PSA to a risk-adapted plan: MRI, Gleason and Grade Group, NCCN risk groups, and how EBRT, brachytherapy, and ADT fit together.",
+   "topics": [
+    "PSA & MRI",
+    "Gleason & Grade Group",
+    "NCCN Risk Groups",
+    "EBRT & Brachytherapy",
+    "ADT"
+   ],
+   "objectives": [
+    "Interpret an elevated PSA and the multiparametric MRI",
+    "Build a Gleason score and Grade Group",
+    "Assign an NCCN risk group, and know where the AJCC stage fits",
+    "Match each risk group to treatment, including when ADT is added and for how long",
+    "Recognize the transrectal ultrasound view you will see in the brachytherapy suite",
+    "Know which patients need staging imaging with PSMA PET/CT or bone scan"
+   ],
+   "guideline": "NCCN Prostate Cancer Guidelines",
+   "staging": [
+    "AJCC 8th edition",
+    "NCCN risk groups"
+   ],
+   "trials": [
+    "ProtecT",
+    "RTOG 9408",
+    "RTOG 9202",
+    "EORTC 22961",
+    "RTOG 9413",
+    "RTOG 0415",
+    "CHHiP",
+    "HYPO-RT-PC",
+    "PACE-B",
+    "ASCENDE-RT",
+    "RTOG 0232",
+    "RTOG 9601",
+    "GETUG-AFU 16",
+    "GETUG-AFU 17",
+    "RADICALS",
+    "RAVES",
+    "SPPORT",
+    "STAMPEDE"
+   ],
+   "modules": {
+    "Epidemiology & Risk Factors": {
+     "lede": "Understand incidence, risk factors, presentation, and the clinical significance of PSA before moving into anatomy, workup, and treatment.",
+     "essentials": [
+      "How common prostate cancer is, and why most men don't die of it",
+      "The major risk factors, including BRCA2",
+      "Why PSA screening is a shared decision",
+      "How to interpret an elevated PSA"
+     ],
+     "objectives": [
+      "Explain the basic epidemiology of prostate cancer and why it is often indolent",
+      "Identify the major risk factors and who needs germline testing",
+      "Recognize the typical (usually silent) clinical presentation",
+      "Explain the benefits and harms of PSA screening and who is offered it",
+      "Refine an elevated PSA with density, free PSA, and velocity, and adjust for 5-alpha reductase inhibitors"
+     ]
+    },
+    "Anatomy & Lymphatics": {
+     "lede": "Learn the zones of the prostate, the transrectal ultrasound view from the brachytherapy suite, and the nodal drainage that defines N1 versus M1a.",
+     "essentials": [
+      "The peripheral zone and why it matters",
+      "The rectum as the dose-limiting organ",
+      "The order of pelvic nodal drainage",
+      "Which nodes are N1 and which are M1a"
+     ],
+     "objectives": [
+      "Identify the main regions of the prostate and where most cancers arise",
+      "Recognize the key structures on the transrectal ultrasound view",
+      "Trace lymphatic drainage from the obturator and internal iliac nodes outward",
+      "Distinguish regional (N1) from distant (M1a) nodes",
+      "Describe the boundaries of the elective pelvic nodal field"
+     ]
+    },
+    "Imaging": {
+     "lede": "Match each scan to its job: multiparametric MRI inside the gland, CT simulation for planning, and PSMA PET or bone scan outside it.",
+     "essentials": [
+      "T2, DWI, and ADC appearance of prostate cancer",
+      "PI-RADS and who gets a targeted biopsy",
+      "EPE and seminal vesicle invasion on MRI",
+      "When PSMA PET beats CT and bone scan"
+     ],
+     "objectives": [
+      "Read the core multiparametric MRI sequences and the PI-RADS score",
+      "Recognize extraprostatic extension and seminal vesicle invasion on MRI",
+      "Know what the CT simulation scan is used for",
+      "Explain when PSMA PET/CT and bone scan are used for staging"
+     ]
+    },
+    "Workup & Staging": {
+     "lede": "Walk the workup step by step, from a high PSA to a biopsy, Gleason score, clinical T stage, and the NCCN risk group that drives treatment.",
+     "essentials": [
+      "The order of the workup",
+      "Gleason score to Grade Group",
+      "NCCN risk group features",
+      "Who needs staging imaging"
+     ],
+     "objectives": [
+      "Lay out the workup from PSA and DRE through MRI and biopsy",
+      "Build a Gleason score and convert it to a Grade Group",
+      "Assign clinical T stage from the DRE",
+      "Assign an NCCN risk group",
+      "Decide who needs staging imaging, and where the AJCC stage group fits"
+     ]
+    },
+    "Treatment Paradigms": {
+     "lede": "Connect each NCCN risk group to its treatment: surveillance, radiation or surgery, how long to add ADT, and what changes after prostatectomy or with metastases.",
+     "essentials": [
+      "Risk group to treatment",
+      "When ADT is added, and for how long",
+      "Adjuvant versus early salvage RT",
+      "Why hypofractionation works in prostate cancer"
+     ],
+     "objectives": [
+      "Match each risk group to its standard treatment options",
+      "Explain when ADT is added and for how long",
+      "Describe node-positive and post-prostatectomy treatment",
+      "Outline the approach to metastatic disease",
+      "Recall key dose constraints, toxicities, and the trials behind each paradigm"
+     ]
+    }
+   }
+  },
+  "gyn": {
+   "title": "Gynecologic Cancer",
+   "summary": "Cervical, endometrial, vulvar, and vaginal cancer: FIGO staging, pelvic and groin nodes, postoperative criteria, and brachytherapy.",
+   "topics": [
+    "Cervix",
+    "Endometrium",
+    "FIGO Staging",
+    "Sedlis & Peters",
+    "Brachytherapy"
+   ],
+   "objectives": [
+    "Compare cervical, endometrial, vulvar, and vaginal cancer at a glance",
+    "Map pelvic and groin lymph drainage by organ",
+    "Read cervical and endometrial MRI, and know the role of PET/CT and brachytherapy imaging",
+    "Stage with FIGO 2018 for the cervix and FIGO 2023 for the endometrium",
+    "Apply the Sedlis and Peters criteria after radical hysterectomy",
+    "Follow the cervical and endometrial paradigms from early to metastatic disease"
+   ],
+   "guideline": "NCCN Cervical, Uterine, Vulvar, and Vaginal Cancer Guidelines",
+   "staging": [
+    "FIGO 2018 (cervix)",
+    "FIGO 2023 (endometrium)",
+    "FIGO 2021 (vulva)"
+   ],
+   "trials": [
+    "GOG 85",
+    "GOG 92",
+    "GOG 109",
+    "SWOG 8797",
+    "RTOG 9001",
+    "GOG 99",
+    "PORTEC-1",
+    "PORTEC-2",
+    "PORTEC-3",
+    "GOG 258",
+    "NRG-GY018",
+    "RTOG 1203",
+    "LACC",
+    "INTERLACE",
+    "KEYNOTE-A18",
+    "KEYNOTE-826",
+    "GOG 37",
+    "GOG 205"
+   ],
+   "modules": {
+    "Epidemiology & Risk Factors": {
+     "lede": "Learn what drives cervical, endometrial, vulvar, and vaginal cancer, and the molecular classification of endometrial cancer.",
+     "essentials": [
+      "HPV and cervical cancer",
+      "Unopposed estrogen and Lynch syndrome",
+      "Endometrial molecular groups",
+      "Two pathways to vulvar cancer"
+     ],
+     "objectives": [
+      "Identify the risk factors for cervical cancer",
+      "Explain what drives endometrial cancer and when to biopsy",
+      "Name the endometrial molecular groups and their prognosis",
+      "Describe the two pathways to vulvar cancer"
+     ]
+    },
+    "Anatomy & Lymphatics": {
+     "lede": "Learn the uterus, cervix, vagina, and vulva, and the nodal drainage of each organ that decides staging and fields.",
+     "essentials": [
+      "Parametrial spread and the ureter",
+      "Myometrial invasion and stage IA versus IB",
+      "Vaginal drainage by thirds",
+      "Pelvic versus groin nodes by organ"
+     ],
+     "objectives": [
+      "Describe how cervical cancer spreads into the parametria",
+      "Relate anatomic extent to FIGO stage",
+      "Trace nodal drainage of the cervix, uterus, vagina, and vulva",
+      "Know how nodal spread maps to stage for each site"
+     ]
+    },
+    "Imaging": {
+     "lede": "Use MRI for local extent, PET/CT for nodes and distant disease, CT simulation for pelvic and groin RT, and MRI-guided brachytherapy planning.",
+     "essentials": [
+      "MRI for local extent",
+      "The dark stromal ring",
+      "PET-positive nodes change the field",
+      "Brachytherapy dose goals"
+     ],
+     "objectives": [
+      "Read cervical and endometrial MRI for local extent",
+      "Use the stromal ring to assess parametrial invasion",
+      "Explain how PET/CT findings change the radiation plan",
+      "Describe CT simulation for pelvic and groin RT",
+      "Describe imaging-guided brachytherapy planning"
+     ]
+    },
+    "Workup & Staging": {
+     "lede": "Cover the workup and FIGO staging for cervical, endometrial, vulvar, and vaginal cancer, with the NCCN workup and FIGO tables at the end.",
+     "essentials": [
+      "Clinical versus surgical staging",
+      "Cervical cancer workup",
+      "Key cervix stage cutoffs",
+      "Vulvar stage IA"
+     ],
+     "objectives": [
+      "Know which gynecologic cancers are staged clinically and which surgically",
+      "List the workup for cervical cancer",
+      "Stage cervical cancer with FIGO",
+      "Know what drives endometrial adjuvant treatment",
+      "Stage vulvar and vaginal cancer"
+     ]
+    },
+    "Treatment Paradigms": {
+     "lede": "Follow the paradigms for cervix, endometrium, vulva, and vagina, from early disease and postoperative criteria to definitive chemoradiation and brachytherapy.",
+     "essentials": [
+      "Surgery or chemoradiation, not both",
+      "Brachytherapy can't be skipped",
+      "Sedlis and Peters criteria",
+      "Endometrial adjuvant therapy by risk"
+     ],
+     "objectives": [
+      "Describe treatment of early and locally advanced cervical cancer",
+      "Apply Sedlis and Peters criteria after radical hysterectomy",
+      "Choose adjuvant treatment for endometrial cancer by risk",
+      "Outline treatment of vulvar and vaginal cancer",
+      "Recall key dose constraints, toxicities, and supporting trials"
+     ]
+    }
+   }
+  },
+  "cns": {
+   "title": "CNS Tumors",
+   "summary": "Gliomas, brain metastases, and the benign tumors radiation treats: WHO 2021 classification, MRI sequences, SRS, and prognosis.",
+   "topics": [
+    "WHO 2021 Gliomas",
+    "Brain Metastases",
+    "SRS",
+    "GPA",
+    "Benign Tumors"
+   ],
+   "objectives": [
+    "Classify gliomas with the WHO 2021 integrated diagnosis",
+    "Navigate neuroanatomy across six axial levels, plus the sella, orbits, and spine",
+    "Know what each MRI sequence shows and how brain metastases are planned for SRS",
+    "Estimate brain metastasis prognosis with the GPA",
+    "Follow treatment paradigms from limited brain metastases to glioblastoma, meningioma, and vestibular schwannoma"
+   ],
+   "guideline": "NCCN Central Nervous System Cancers Guidelines",
+   "staging": [
+    "WHO 2021 CNS classification"
+   ],
+   "trials": [
+    "Stupp (EORTC/NCIC)",
+    "EORTC 26951",
+    "RTOG 9402",
+    "RTOG 9802",
+    "RTOG 0614",
+    "NRG CC001",
+    "NRG BN003",
+    "N0574",
+    "N107C",
+    "JLGK0901",
+    "QUARTZ",
+    "Patchell",
+    "RTOG 90-05"
+   ],
+   "modules": {
+    "Epidemiology & Risk Factors": {
+     "lede": "Learn which brain tumors are most common, the few established risk factors, and why brain tumors are classified rather than staged.",
+     "essentials": [
+      "The most common brain tumors",
+      "IDH-mutant versus IDH-wildtype",
+      "Radiation as the established risk factor",
+      "Classification instead of TNM"
+     ],
+     "objectives": [
+      "Name the most common brain tumors overall, primary, and malignant",
+      "Contrast IDH-mutant gliomas with IDH-wildtype glioblastoma",
+      "Identify the established risk factors and hereditary syndromes",
+      "Explain why brain tumors are classified instead of staged",
+      "Recognize how brain tumors present"
+     ]
+    },
+    "Neuroanatomy": {
+     "lede": "Localize symptoms by lobe, follow CSF flow, and learn six axial levels plus the sella, orbits, and spine that radiation plans are built around.",
+     "essentials": [
+      "Localizing symptoms by region",
+      "CSF flow and hydrocephalus",
+      "Cavernous sinus contents",
+      "Optic and spinal cord dose limits"
+     ],
+     "objectives": [
+      "Localize symptoms to a lobe or the cerebellum",
+      "Trace CSF flow and explain posterior fossa hydrocephalus",
+      "Identify key structures on six axial levels",
+      "Name the contents of the cavernous sinus and internal auditory canal",
+      "Recall dose limits for the optic apparatus, brainstem, and spinal cord"
+     ]
+    },
+    "Imaging": {
+     "lede": "Know what each MRI sequence shows, the classic appearance of gliomas, metastases, and benign tumors, and how treatment effect mimics progression.",
+     "essentials": [
+      "T1 post-contrast versus T2/FLAIR",
+      "Glioblastoma versus metastasis",
+      "Classic benign tumor signs",
+      "Pseudoprogression and necrosis"
+     ],
+     "objectives": [
+      "Explain what each core MRI sequence shows",
+      "Distinguish glioblastoma from a metastasis",
+      "Recognize meningioma, vestibular schwannoma, and pituitary adenoma",
+      "Describe SRS planning imaging",
+      "Tell treatment effect from tumor progression"
+     ]
+    },
+    "Workup & Classification": {
+     "lede": "Cover the core workup, WHO 2021 glioma classification and grading, brain metastasis assessment, and the other tumors radiation treats.",
+     "essentials": [
+      "The three questions instead of TNM",
+      "WHO 2021 glioma types",
+      "MGMT methylation",
+      "The GPA for brain metastases"
+     ],
+     "objectives": [
+      "Lay out the core workup for a brain tumor",
+      "Classify gliomas with IDH and 1p/19q status",
+      "Explain the significance of MGMT promoter methylation",
+      "Assess brain metastases by count, size, and GPA",
+      "Recognize the other CNS tumors radiation treats"
+     ]
+    },
+    "Treatment Paradigms": {
+     "lede": "Follow the paradigms from limited and extensive brain metastases to glioblastoma, lower-grade gliomas, benign tumors, and spine emergencies.",
+     "essentials": [
+      "SRS for limited brain metastases",
+      "Hippocampal-avoidant WBRT",
+      "The Stupp regimen",
+      "Benign tumor options"
+     ],
+     "objectives": [
+      "Choose between SRS and whole-brain RT for brain metastases",
+      "Describe the standard treatment of glioblastoma",
+      "Outline treatment of lower-grade gliomas",
+      "Describe options for meningioma, vestibular schwannoma, and pituitary tumors",
+      "Recall the evidence behind each paradigm"
+     ]
+    }
+   }
+  },
+  "gi": {
+   "title": "GI Cancer",
+   "summary": "Esophagus to anus: rectal MRI staging, pancreas resectability, anal cancer chemoradiation, and the paradigms for each organ.",
+   "topics": [
+    "Rectal MRI",
+    "Anal ChemoRT",
+    "Esophagus",
+    "Pancreas Resectability",
+    "Liver (HCC)"
+   ],
+   "objectives": [
+    "Compare esophageal, gastric, pancreatic, liver, rectal, and anal cancer at a glance",
+    "Map the GI tract and its lymph drainage by organ",
+    "Stage rectal cancer on MRI and use the MRI features to choose a plan",
+    "Classify pancreatic cancer resectability on pancreatic-protocol CT",
+    "Explain why chemoradiation is the curative treatment for anal cancer",
+    "Follow the paradigms for rectal, esophageal, gastric, pancreatic, and liver cancer"
+   ],
+   "guideline": "NCCN Esophageal/Gastric, Pancreatic, Hepatobiliary, Rectal, and Anal Carcinoma Guidelines",
+   "staging": [
+    "AJCC TNM",
+    "BCLC (HCC)"
+   ],
+   "trials": [
+    "RTOG 8501",
+    "CROSS",
+    "CheckMate 577",
+    "RTOG 9811",
+    "ACT II",
+    "RTOG 0529",
+    "CAO/ARO/AIO-94",
+    "RAPIDO",
+    "PRODIGE 23",
+    "OPRA",
+    "PROSPECT",
+    "PREOPANC",
+    "LAP07",
+    "PRODIGE 24",
+    "RTOG 1112"
+   ],
+   "modules": {
+    "Epidemiology & Risk Factors": {
+     "lede": "Learn the risk factors and presentation of esophageal, stomach, liver, pancreatic, rectal, and anal cancer.",
+     "essentials": [
+      "Squamous versus adenocarcinoma of the esophagus",
+      "Pancreatic cancer presentation",
+      "Lynch syndrome in rectal cancer",
+      "HPV and anal cancer"
+     ],
+     "objectives": [
+      "Contrast esophageal squamous cell carcinoma with adenocarcinoma",
+      "Recognize how pancreatic cancer presents",
+      "Identify the risk factors for rectal and anal cancer",
+      "Know who is screened for hepatocellular carcinoma"
+     ]
+    },
+    "Anatomy & Lymphatics": {
+     "lede": "Follow the GI tract top to bottom, and learn the nodal drainage by organ that decides regional versus distant disease.",
+     "essentials": [
+      "Esophagus by distance from the incisors",
+      "Rectal height and the mesorectal fascia",
+      "The dentate line",
+      "Pancreatic vessels"
+     ],
+     "objectives": [
+      "Describe esophageal and rectal tumor location by distance",
+      "Identify the mesorectal fascia and its surgical importance",
+      "Explain how the dentate line splits anal drainage",
+      "Know which nodes are regional for anal versus rectal cancer",
+      "Locate the vessels that decide pancreatic resectability"
+     ]
+    },
+    "Imaging": {
+     "lede": "Work through each primary from the esophagus to the anus: normal axial anatomy, then the key staging scan, from EUS and PET/CT to rectal MRI.",
+     "essentials": [
+      "Rectal MRI and the mesorectal fascia",
+      "Pancreatic-protocol CT",
+      "EUS for esophageal depth",
+      "LI-RADS 5"
+     ],
+     "objectives": [
+      "Read the key findings on rectal MRI",
+      "Use pancreatic-protocol CT to judge vessel contact",
+      "Know how esophageal cancer is staged with EUS and PET/CT",
+      "Know when to judge anal cancer response",
+      "Diagnose HCC on imaging without a biopsy"
+     ]
+    },
+    "Workup & Staging": {
+     "lede": "Learn the T, N, and M pattern that repeats across GI sites, the two exceptions (pancreas and liver), and the one or two features that decide treatment at each site.",
+     "essentials": [
+      "The repeating T, N, and M pattern",
+      "Pancreatic resectability",
+      "BCLC for HCC",
+      "Rectal MRI risk features"
+     ],
+     "objectives": [
+      "Apply the shared TNM logic across GI sites",
+      "List the core GI workup",
+      "Classify pancreatic cancer by resectability",
+      "Stage HCC with BCLC and Child-Pugh",
+      "Identify high-risk rectal cancer on MRI",
+      "Stage anal cancer by size and node location"
+     ]
+    },
+    "Treatment Paradigms": {
+     "lede": "Follow the paradigms site by site: anal chemoradiation, early and locally advanced rectal cancer, esophagus, stomach, pancreas, liver, and palliation.",
+     "essentials": [
+      "Anal cancer chemoradiation",
+      "Total neoadjuvant therapy for rectal cancer",
+      "CROSS versus definitive chemoradiation",
+      "Selective RT in pancreatic cancer"
+     ],
+     "objectives": [
+      "Describe definitive chemoradiation for anal cancer",
+      "Choose treatment for early and locally advanced rectal cancer",
+      "Outline treatment of esophageal and gastric cancer",
+      "Explain the selective role of RT in pancreatic cancer and SBRT for HCC",
+      "Recall the trials behind each paradigm"
+     ]
+    }
+   }
+  }
+ }
+}

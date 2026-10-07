@@ -1,0 +1,626 @@
+{
+ "category": "Case-Based Practice",
+ "intro": "<p>Eight cases that get harder as you go, from a screening PSA to node-positive, recurrent, and metastatic disease. Each starts with a one-liner, then gives you more information step by step: the <strong>MRI, biopsy, and PSMA PET</strong>, the <strong>Grade Group and NCCN risk group</strong>, the <strong>treatment and ADT</strong>, the <strong>dose and targets</strong>, the <strong>landmark trials</strong>, and the <strong>side effects</strong> to watch for. Some steps are multiple choice, some are fill-in-the-blank.</p>",
+ "cases": [
+  {
+   "id": "pr-case-1",
+   "level": "Foundational",
+   "title": "Case 1: The Annual Physical",
+   "oneLiner": "A healthy 62-year-old man's screening PSA is 5.1 ng/mL; a repeat is 5.3. His DRE is normal, and his life expectancy is well over 15 years.",
+   "steps": [
+    {
+     "label": "Next step",
+     "prompt": "What is the best next step?",
+     "choices": [
+      "Repeat PSA in 5 years",
+      "Multiparametric prostate MRI",
+      "PSMA PET/CT",
+      "Start ADT"
+     ],
+     "correctIndex": 1,
+     "explanation": "A confirmed elevated PSA leads to an MRI before biopsy. MRI finds the lesions worth targeting and helps avoid finding insignificant cancers. Staging imaging (PSMA PET, bone scan) is for higher-risk disease."
+    },
+    {
+     "label": "Biopsy",
+     "context": "<p><strong>MRI:</strong> 45 cc gland (PSA density 0.12). One 0.8 cm PI-RADS 3 lesion in the right peripheral zone, no extraprostatic extension. <strong>Targeted + systematic biopsy:</strong> Gleason 3+3=6 in 2 of 14 cores (10% and 15%), including the target.</p>",
+     "image": "images/prostate/pr-mri-t2b.jpg",
+     "caption": "Axial T2 MRI at the mid-gland: a dark lesion in the right peripheral zone (image left) against the bright normal peripheral zone. Calderone CE et al., Diagnostics 2023 (PMC10252565), CC BY 4.0.",
+     "prompt": "What is the Grade Group?",
+     "answer": "Grade Group 1 (Gleason 3+3=6)",
+     "explanation": "Gleason 3+3 is GG1, 3+4 is GG2, 4+3 is GG3, 8 is GG4, and 9-10 is GG5. The first number is the most common pattern, which is why 3+4 and 4+3 behave differently."
+    },
+    {
+     "label": "Risk group",
+     "prompt": "What is his NCCN risk group?",
+     "answer": "Very low risk",
+     "explanation": "Very low risk is cT1c, GG1, PSA under 10, fewer than 3 positive cores with 50% or less in each, and PSA density under 0.15. He meets all of them."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "He asks whether watching it is really safe. Which trial found the same ~97% prostate cancer survival at 15 years with active monitoring, surgery, or RT plus short ADT?",
+     "choices": [
+      "ProtecT",
+      "PACE-B",
+      "STAMPEDE",
+      "RTOG 9408"
+     ],
+     "correctIndex": 0,
+     "explanation": "ProtecT (mostly low and intermediate risk) found no survival difference between the three approaches; they differed in side effects, and monitoring had more progression."
+    },
+    {
+     "label": "Surveillance",
+     "prompt": "How is active surveillance different from watchful waiting?",
+     "choices": [
+      "They are the same thing",
+      "Active surveillance has scheduled PSA, DRE, MRI, and repeat biopsy with a plan to cure if it progresses; watchful waiting is symptom-driven, for short life expectancy, with no curative plan",
+      "Active surveillance includes ADT",
+      "Watchful waiting is for younger men"
+     ],
+     "correctIndex": 1,
+     "explanation": "Active surveillance is a curative strategy that delays treatment; about half of men on it are eventually treated, without a survival cost."
+    },
+    {
+     "label": "Triggers",
+     "prompt": "Which findings would move him off surveillance to treatment?",
+     "answer": "Upgrade to Grade Group 2 or higher (especially GG3), more or larger-volume cancer, a new PI-RADS 4-5 lesion, a rising PSA density, or his own preference.",
+     "explanation": ""
+    }
+   ]
+  },
+  {
+   "id": "pr-case-2",
+   "level": "Foundational",
+   "title": "Case 2: The Shortest Course",
+   "oneLiner": "A 70-year-old retired teacher with PSA 7.2 and a normal DRE has a biopsy showing Gleason 3+4=7 adenocarcinoma. He wants to finish treatment before his grandson's wedding.",
+   "steps": [
+    {
+     "label": "Pathology",
+     "prompt": "Before you can decide favorable vs unfavorable intermediate risk, which detail from the pathology report do you need?",
+     "choices": [
+      "The tumor's PSMA expression",
+      "The percentage of positive biopsy cores",
+      "The patient's testosterone",
+      "The Ki-67"
+     ],
+     "correctIndex": 1,
+     "explanation": "Favorable intermediate risk means one intermediate risk factor, GG1-2, and under 50% of biopsy cores positive. GG3, 2-3 intermediate factors, or 50% or more positive cores make it unfavorable."
+    },
+    {
+     "label": "Risk group",
+     "context": "<p><strong>MRI:</strong> 1.1 cm PI-RADS 4 left peripheral zone lesion, capsule intact, seminal vesicles normal. <strong>Biopsy:</strong> Gleason 3+4 in 3 of 12 cores.</p>",
+     "prompt": "Assign the Grade Group, clinical T stage, and NCCN risk group.",
+     "answer": "GG2, cT1c, favorable intermediate risk",
+     "explanation": "Normal DRE with cancer found by biopsy is cT1c. One intermediate factor (GG2), and 3 of 12 cores is under 50%. No staging imaging is needed at this risk level."
+    },
+    {
+     "label": "Treatment",
+     "prompt": "He wants radiation and the shortest course possible. What do you offer?",
+     "choices": [
+      "SBRT alone, no ADT",
+      "EBRT plus 6 months of ADT",
+      "Pelvic nodal RT plus 2 years of ADT",
+      "Brachy boost plus EBRT plus ADT"
+     ],
+     "correctIndex": 0,
+     "explanation": "Favorable intermediate risk is one treatment, no ADT: EBRT, SBRT, brachytherapy alone, or prostatectomy."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial showed that 36.25 Gy in 5 fractions was noninferior to conventional or moderately hypofractionated RT?",
+     "choices": [
+      "PACE-B",
+      "CHHiP",
+      "ASCENDE-RT",
+      "POP-RT"
+     ],
+     "correctIndex": 0,
+     "explanation": "PACE-B supports prostate SBRT for low and intermediate risk; CHHiP established 60 Gy in 20 fractions. Both work because prostate cancer has a low α/β (~1.5), so bigger fractions hurt the tumor more than the rectum."
+    },
+    {
+     "label": "Simulation",
+     "image": "images/prostate/pr-ct-sim.jpg",
+     "caption": "Planning CT with a gold fiducial (green) in the prostate (red) and a hydrogel spacer (pink) pushing the rectum (brown) back. Icht O et al., Front Oncol 2024 (PMC11217322), CC BY 4.0.",
+     "prompt": "On his planning CT, what is the pink structure between the prostate and rectum for?",
+     "choices": [
+      "It is a tumor nodule",
+      "A hydrogel spacer that pushes the rectum away to lower rectal dose",
+      "A gold fiducial for tracking",
+      "A urinary catheter balloon"
+     ],
+     "correctIndex": 1,
+     "explanation": "Before SBRT, gold fiducials are placed so the prostate can be tracked each day, and a hydrogel spacer is often added to move the rectum back. Bladder and bowel prep keep the setup reproducible."
+    },
+    {
+     "label": "Dose",
+     "prompt": "Give the SBRT dose.",
+     "answer": "36.25 Gy in 5 fractions to the prostate (some programs take the CTV to 40 Gy).",
+     "explanation": ""
+    },
+    {
+     "label": "Side effects",
+     "prompt": "What side effects will you counsel him about?",
+     "answer": "Acute (peaking near the end of treatment): urinary frequency, urgency, weak stream, burning, loose stools, and fatigue. Late (months to years): rectal bleeding, urethral stricture, blood in the urine, and erectile dysfunction.",
+     "explanation": "Acute urinary symptoms are treated with tamsulosin; bowel symptoms with diet changes and antidiarrheals."
+    }
+   ]
+  },
+  {
+   "id": "pr-case-3",
+   "level": "Intermediate",
+   "title": "Case 3: The Firm Nodule",
+   "oneLiner": "A 66-year-old man has PSA 11. On DRE there is a firm nodule filling more than half of the right lobe. Biopsy shows Gleason 4+3=7 in 5 of 12 cores.",
+   "steps": [
+    {
+     "label": "Grade",
+     "prompt": "What is the Grade Group?",
+     "choices": [
+      "GG1",
+      "GG2",
+      "GG3",
+      "GG4"
+     ],
+     "correctIndex": 2,
+     "explanation": "4+3 is GG3; 3+4 is GG2. The primary pattern drives behavior, and GG3 by itself makes intermediate risk unfavorable."
+    },
+    {
+     "label": "T stage",
+     "prompt": "What is the clinical T stage from the DRE?",
+     "answer": "cT2b",
+     "explanation": "A palpable tumor in more than half of one lobe is cT2b. Half a lobe or less is cT2a, both lobes cT2c, extraprostatic extension cT3a, and seminal vesicle invasion cT3b."
+    },
+    {
+     "label": "Risk group",
+     "context": "<p><strong>MRI:</strong> 1.9 cm right peripheral zone lesion with capsular contact but no definite extraprostatic extension; seminal vesicles clear. <strong>PSMA PET:</strong> uptake in the prostate only.</p>",
+     "image": "images/prostate/pr-mri-t2b.jpg",
+     "caption": "Axial T2 MRI: a dark lesion in the right peripheral zone (image left). Calderone CE et al., Diagnostics 2023 (PMC10252565), CC BY 4.0.",
+     "prompt": "What is his NCCN risk group?",
+     "answer": "Unfavorable intermediate risk",
+     "explanation": "He has three intermediate factors (cT2b, GG3, PSA 10-20). GG3 or 2-3 intermediate factors make it unfavorable."
+    },
+    {
+     "label": "Treatment",
+     "prompt": "What is the radiation-based plan?",
+     "choices": [
+      "SBRT alone, no ADT",
+      "EBRT to the prostate and proximal seminal vesicles with 4-6 months of ADT",
+      "Pelvic nodal RT plus 2 years of ADT and abiraterone",
+      "ADT alone"
+     ],
+     "correctIndex": 1,
+     "explanation": "Unfavorable intermediate risk is RT plus short-term ADT. Alternatives: EBRT plus a brachytherapy boost (± ADT) or prostatectomy with pelvic node dissection. Pelvic nodes are generally not needed at this level."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial showed that adding short-term ADT to RT helped intermediate-risk patients?",
+     "choices": [
+      "RTOG 9408",
+      "RTOG 9202",
+      "PACE-B",
+      "SPPORT"
+     ],
+     "correctIndex": 0,
+     "explanation": "RTOG 9408 (and D'Amico's trial) support short ADT for intermediate risk; RTOG 9202 showed long ADT beat short ADT for high risk. Together they are the ADT duration ladder."
+    },
+    {
+     "label": "ADT counseling",
+     "prompt": "What side effects of ADT do you counsel him on, and what do you give with a GnRH agonist like leuprolide?",
+     "answer": "Hot flashes, fatigue, low libido and erectile dysfunction, bone loss, weight gain and metabolic and cardiovascular risk, and mood changes. With an agonist, give an antiandrogen first to block the testosterone flare.",
+     "explanation": "GnRH antagonists (degarelix, oral relugolix) cause no flare."
+    },
+    {
+     "label": "Dose",
+     "prompt": "Give a dose and fractionation, and when the ADT starts.",
+     "answer": "70 Gy in 28 fractions (or 60 Gy in 20, or 78 Gy in 39). Start ADT about 2-3 months before RT and continue for a total of 4-6 months.",
+     "explanation": "Starting ADT first shrinks the gland before treatment."
+    }
+   ]
+  },
+  {
+   "id": "pr-case-4",
+   "level": "Intermediate",
+   "title": "Case 4: Nodules on Both Sides",
+   "oneLiner": "A 71-year-old man has PSA 14, a palpable nodule in each lobe, and Gleason 4+4=8 in 6 of 12 cores.",
+   "steps": [
+    {
+     "label": "Nodal risk",
+     "prompt": "Using the Roach formula, what is his estimated risk of lymph node involvement?",
+     "choices": [
+      "~5%",
+      "~15%",
+      "~29%",
+      "~60%"
+     ],
+     "correctIndex": 2,
+     "explanation": "Roach: LN risk = 2/3 x PSA + (Gleason - 6) x 10 = 2/3 x 14 + 2 x 10 ≈ 29%. A nodal risk of about 15-20% or more is a common threshold for treating the pelvic nodes."
+    },
+    {
+     "label": "Risk group",
+     "context": "<p><strong>MRI:</strong> bilateral peripheral zone disease, no extraprostatic extension, seminal vesicles clear. <strong>PSMA PET:</strong> no nodal or distant disease. Gland 38 cc, mild urinary symptoms.</p>",
+     "prompt": "Assign the T stage, Grade Group, and NCCN risk group.",
+     "answer": "cT2c, GG4, high risk",
+     "explanation": "Both lobes is cT2c. Gleason 8 is GG4, which alone makes it high risk (as would cT3a or PSA over 20)."
+    },
+    {
+     "label": "Treatment",
+     "prompt": "Which plan fits best?",
+     "choices": [
+      "SBRT alone",
+      "RT to the prostate and pelvic nodes with 18-36 months of ADT (± brachy boost)",
+      "Prostate-only RT with 4-6 months of ADT",
+      "Active surveillance"
+     ],
+     "correctIndex": 1,
+     "explanation": "High risk means long ADT (usually 24 months) plus RT, with the pelvic nodes commonly treated. RT plus ADT beats ADT alone for survival (SPCG-7)."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial showed that whole-pelvis RT improved biochemical, disease-free, and metastasis-free survival in high-risk patients with nodal risk of 20% or more?",
+     "choices": [
+      "POP-RT",
+      "RTOG 9413",
+      "ProtecT",
+      "CHHiP"
+     ],
+     "correctIndex": 0,
+     "explanation": "POP-RT is the modern pelvic nodal trial. The earlier RTOG 9413 was mixed."
+    },
+    {
+     "label": "Nodal CTV",
+     "image": "images/prostate/pr-g-nodal-ctv.jpg",
+     "caption": "Pelvic nodal CTV drawn around the iliac vessels on axial planning CT. Lyons CA et al., Radiat Oncol 2017 (PMC5543558), CC BY 4.0.",
+     "prompt": "The pelvic nodal CTV is drawn around which structures?",
+     "choices": [
+      "The femoral heads",
+      "The iliac vessels (common, external, internal), obturator, and presacral nodes",
+      "The para-aortic nodes up to the kidneys",
+      "The inguinal nodes"
+     ],
+     "correctIndex": 1,
+     "explanation": "The elective pelvis follows the vessels: distal common iliac, external and internal iliac, obturator, and presacral (S1-S3) nodes, to about 45-50.4 Gy."
+    },
+    {
+     "label": "Brachy boost",
+     "prompt": "The plan is 45 Gy in 25 fractions to the pelvis, then an HDR boost of 15 Gy in 1 fraction. What did ASCENDE-RT show for a brachytherapy boost vs dose-escalated EBRT?",
+     "choices": [
+      "Better survival",
+      "Better biochemical control, more urinary toxicity, no survival difference",
+      "Worse control",
+      "Less toxicity"
+     ],
+     "correctIndex": 1,
+     "explanation": "The boost is a good option for unfavorable intermediate and high risk in men with a reasonable gland size and urinary function."
+    },
+    {
+     "label": "Brachy suite",
+     "image": "images/prostate/pr-trus-ax.jpg",
+     "caption": "Transverse TRUS of the prostate with the brachytherapy template grid overlaid and needles placed through the perineum. van den Bos W et al., BMJ Open 2014 (PMC4216863), CC BY-NC 4.0.",
+     "prompt": "On this transverse TRUS image in the brachy suite, what is the grid overlaid on the gland for?",
+     "choices": [
+      "It shows the rectal wall thickness",
+      "It is the template: letters and numbers tell you which hole each needle goes through",
+      "It marks the seminal vesicles",
+      "It measures PSA density"
+     ],
+     "correctIndex": 1,
+     "explanation": "Needles pass through a perineal template; its grid coordinates are overlaid on the TRUS image so each needle's position can be planned and checked. The urethra (with the Foley) is the organ at risk in the middle."
+    }
+   ]
+  },
+  {
+   "id": "pr-case-5",
+   "level": "Advanced",
+   "title": "Case 5: A Hard Gland and a Family History",
+   "oneLiner": "A 64-year-old man with urinary frequency has PSA 45. His prostate is hard and irregular on DRE. Biopsy: Gleason 4+5=9 in 9 of 12 cores. His brother died of pancreatic cancer.",
+   "steps": [
+    {
+     "label": "Staging",
+     "prompt": "Which staging study is most appropriate next?",
+     "choices": [
+      "No imaging needed",
+      "PSMA PET/CT",
+      "Chest X-ray",
+      "Repeat biopsy"
+     ],
+     "correctIndex": 1,
+     "explanation": "High and very high risk disease gets staging imaging. PSMA PET is more sensitive than CT and bone scan for nodes and bone."
+    },
+    {
+     "label": "T stage",
+     "context": "<p><strong>MRI:</strong> large right-sided tumor with extraprostatic extension, and dark tissue filling the right seminal vesicle. <strong>PSMA PET:</strong> prostate and right seminal vesicle uptake; no nodal or distant disease.</p>",
+     "image": "images/prostate/pr-mri-sag.jpg",
+     "caption": "Seminal vesicle invasion on axial (left) and coronal (right) T2 MRI: dark tumor replaces the normally bright tubules. Chakrabarti D et al., CA Cancer J Clin 2025 (PMC12593286), CC BY 4.0.",
+     "prompt": "MRI and PSMA PET are shown below. What is his clinical T stage?",
+     "answer": "cT3b (seminal vesicle invasion)",
+     "explanation": "Extraprostatic extension alone is T3a; seminal vesicle invasion is T3b; invasion of the rectum, bladder, or pelvic wall is T4."
+    },
+    {
+     "label": "Risk group",
+     "prompt": "What is his NCCN risk group?",
+     "answer": "Very high risk",
+     "explanation": "Very high risk is 2 or more of: T3-4, Gleason 8-10, PSA 40 or more. He has all three."
+    },
+    {
+     "label": "Genetics",
+     "prompt": "What should his brother's history prompt?",
+     "choices": [
+      "Nothing",
+      "Germline genetic testing (e.g. BRCA2 and other DNA repair genes)",
+      "A colonoscopy only",
+      "A brain MRI"
+     ],
+     "correctIndex": 1,
+     "explanation": "High-risk prostate cancer with a family history of pancreatic cancer warrants germline testing. BRCA2 and other repair mutations matter for prognosis, family members, and later treatment (PARP inhibitors)."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial supports adding 2 years of abiraterone to RT and long-term ADT for very high-risk, node-negative or node-positive disease?",
+     "choices": [
+      "STAMPEDE",
+      "RTOG 9408",
+      "PACE-B",
+      "RAVES"
+     ],
+     "correctIndex": 0,
+     "explanation": "STAMPEDE showed better metastasis-free and overall survival with abiraterone plus prednisone in very high-risk M0 and N1 disease."
+    },
+    {
+     "label": "Plan and dose",
+     "prompt": "Outline the full plan with doses.",
+     "answer": "ADT for 2-3 years plus abiraterone and prednisone for 2 years; EBRT to the prostate and seminal vesicles to about 78 Gy (or 70 Gy in 28), with the pelvic nodes to about 45-50.4 Gy (± a brachytherapy boost).",
+     "explanation": "ADT usually starts 2-3 months before RT."
+    },
+    {
+     "label": "Long-term ADT",
+     "prompt": "With 2-3 years of ADT, which monitoring should be built into his follow-up?",
+     "choices": [
+      "Bone density, plus calcium and vitamin D (and bone-protecting therapy if needed), along with weight, glucose, and lipid checks",
+      "Annual brain MRI",
+      "Hearing tests",
+      "Thyroid ultrasound"
+     ],
+     "correctIndex": 0,
+     "explanation": "Long-term ADT causes bone loss and raises metabolic and cardiovascular risk, so these are screened for and managed."
+    }
+   ]
+  },
+  {
+   "id": "pr-case-6",
+   "level": "Advanced",
+   "title": "Case 6: Lit Up on PSMA",
+   "oneLiner": "A 59-year-old man with PSA 18, cT2b, Gleason 4+4=8. PSMA PET shows two left obturator nodes and one left external iliac node. There is no other disease.",
+   "steps": [
+    {
+     "label": "Nodes",
+     "image": "images/prostate/pr-g-psma-node.jpg",
+     "caption": "Fused PSMA PET/CT with avid pelvic side-wall nodes. Chakrabarti D et al., CA Cancer J Clin 2025 (PMC12593286), CC BY 4.0.",
+     "prompt": "How are these nodes staged?",
+     "choices": [
+      "M1a: distant",
+      "N1: regional, still curable",
+      "N0: too small to count",
+      "M1b"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pelvic nodes below the common iliac bifurcation are regional (N1). Nodes outside the true pelvis, such as para-aortic nodes, are M1a."
+    },
+    {
+     "label": "Stage",
+     "prompt": "Give the full TNM and stage.",
+     "answer": "cT2b N1 M0, Stage IVA",
+     "explanation": "Any N1 is stage IVA in prostate cancer, but it is regional disease and still treated for cure."
+    },
+    {
+     "label": "Treatment",
+     "prompt": "What is the standard radiation-based plan?",
+     "choices": [
+      "Prostate-only SBRT",
+      "RT to the prostate and pelvic nodes with a nodal boost, plus 2-3 years of ADT and abiraterone",
+      "ADT alone for life",
+      "Prostatectomy with no further treatment"
+     ],
+     "correctIndex": 1,
+     "explanation": "cN1 follows the very high-risk playbook with a nodal boost: treat the pelvis, treat it long. STAMPEDE included N1 patients."
+    },
+    {
+     "label": "Dose",
+     "prompt": "Outline the doses to the elective pelvis, the involved nodes, and the prostate.",
+     "answer": "Elective pelvis about 45-50.4 Gy; involved nodes boosted to about 60-66 Gy equivalent while respecting bowel; prostate about 70-78 Gy equivalent.",
+     "explanation": ""
+    },
+    {
+     "label": "Toxicity",
+     "prompt": "Adding the pelvic nodes mainly raises the risk of which side effect compared with prostate-only RT?",
+     "choices": [
+      "Hearing loss",
+      "Bowel toxicity (diarrhea, cramping; rarely obstruction)",
+      "Pneumonitis",
+      "Hair loss on the scalp"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pelvic fields bring small bowel into the treated volume. Rectum (proctitis), bladder (cystitis), femoral heads, and penile bulb (erectile dysfunction) are the other organs at risk."
+    },
+    {
+     "label": "What if",
+     "image": "images/prostate/pr-psma-mip.jpg",
+     "caption": "PSMA PET projections. Left: avid nodes from the pelvis up to the mediastinum (M1a). Esperto F et al., Cancers 2026 (PMC13359636), CC BY 4.0. Right: bone-only recurrence. Wang Y et al., PLoS One 2026 (PMC13175320), CC BY 4.0.",
+     "prompt": "Change one detail: PSMA also shows an avid para-aortic node at L3. What does that change?",
+     "choices": [
+      "Nothing; still N1",
+      "It is M1a (non-regional nodes), so systemic therapy leads",
+      "It is N2",
+      "It is T4"
+     ],
+     "correctIndex": 1,
+     "explanation": "Nodes outside the true pelvis are distant (M1a). The plan becomes metastatic: ADT plus an ARPI (± docetaxel), with radiation selectively."
+    }
+   ]
+  },
+  {
+   "id": "pr-case-7",
+   "level": "Advanced",
+   "title": "Case 7: The Number Creeps Up",
+   "oneLiner": "A 63-year-old man had a robotic prostatectomy 3 years ago: pT3a N0, Gleason 4+3, negative margins. His PSA was undetectable but has risen from 0.08 to 0.18 to 0.32 over 9 months.",
+   "steps": [
+    {
+     "label": "Definition",
+     "prompt": "What defines biochemical recurrence after prostatectomy, and after radiation?",
+     "choices": [
+      "PSA over 4 after either",
+      "After surgery: PSA over 0.2, confirmed; after RT: nadir + 2 (Phoenix)",
+      "Any detectable PSA after either",
+      "PSA doubling after either"
+     ],
+     "correctIndex": 1,
+     "explanation": "After surgery the PSA should be undetectable, so a confirmed level over 0.2 is recurrence. After RT, the prostate is still there, so the Phoenix definition uses nadir + 2."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "At the time of surgery, why wasn't he given adjuvant RT for pT3a disease?",
+     "choices": [
+      "Because RT is never used after prostatectomy",
+      "RAVES, RADICALS-RT, and GETUG-AFU 17 showed early salvage RT works as well as adjuvant RT, and about half of men never need RT",
+      "Because his margins were positive",
+      "Because STAMPEDE showed no benefit"
+     ],
+     "correctIndex": 1,
+     "explanation": "The ARTISTIC meta-analysis of these trials made observation with early salvage the default. Adjuvant RT plus ADT is favored for pN1 or very high-risk pathology."
+    },
+    {
+     "label": "Next step",
+     "prompt": "What is the best next step now?",
+     "choices": [
+      "Wait until the PSA reaches 2",
+      "PSMA PET/CT, then early salvage RT",
+      "Lifelong ADT now",
+      "Repeat prostatectomy"
+     ],
+     "correctIndex": 1,
+     "explanation": "Treat early: salvage works better at lower PSA. A PSMA PET first can find disease outside the bed, but a negative scan is not a reason to wait."
+    },
+    {
+     "label": "Plan",
+     "image": "images/prostate/pr-ct-postop.jpg",
+     "caption": "Salvage RT planning CT after prostatectomy: prostate bed CTV (red), PTV (dark blue), bladder (yellow), rectum (orange), and a boost to a local recurrence (green). Sardaro A et al., Front Oncol 2021 (PMC7874055), CC BY 4.0.",
+     "prompt": "PSMA shows a faint focus near the vesicourethral anastomosis only. What is the salvage plan?",
+     "answer": "Salvage RT to the prostate bed, boosting the PSMA-avid focus if feasible, with short-term ADT (about 6 months); consider pelvic nodal RT given GG3 and pT3a.",
+     "explanation": "SPPORT: adding pelvic nodes and short ADT improved freedom from progression. RTOG 9601: 2 years of bicalutamide improved survival mostly when the PSA was over 0.6."
+    },
+    {
+     "label": "Dose",
+     "prompt": "What dose to the prostate bed?",
+     "choices": [
+      "36.25 Gy in 5",
+      "About 64-66 Gy in 32-33 fractions",
+      "78 Gy in 39",
+      "8 Gy in 1"
+     ],
+     "correctIndex": 1,
+     "explanation": "SAKK 09/10 found 70 Gy no better than 64 Gy. A focal boost toward about 70 Gy to a PSMA-avid focus is sometimes added."
+    },
+    {
+     "label": "A year and a half later",
+     "image": "images/prostate/pr-c-proctitis.jpg",
+     "caption": "Endoscopic view of radiation proctitis with bleeding telangiectasias. Samir, Wikimedia Commons, CC BY-SA 3.0.",
+     "prompt": "Eighteen months after salvage RT he notices painless bright red blood on the toilet paper a few times a week. Colonoscopy shows this. What is it, and what is the usual approach?",
+     "choices": [
+      "Recurrent cancer; start chemo",
+      "Radiation proctitis (fragile new blood vessels in the anterior rectal wall); most cases are mild and settle, treated with stool softeners, sucralfate or steroid enemas, or argon plasma coagulation if bleeding persists",
+      "Hemorrhoids; no further follow-up",
+      "Crohn disease"
+     ],
+     "correctIndex": 1,
+     "explanation": "Late rectal bleeding from telangiectasias typically appears 6 months to a few years after pelvic RT. Endoscopy rules out other causes. Avoid random biopsies of the irradiated anterior rectal wall, which can cause a fistula."
+    }
+   ]
+  },
+  {
+   "id": "pr-case-8",
+   "level": "Advanced",
+   "title": "Case 8: Back Pain and a High PSA",
+   "oneLiner": "A 68-year-old man has PSA 60 and mild low back pain. Biopsy: Gleason 4+4. Bone scan shows two pelvic lesions and one L4 lesion. CT shows no visceral disease, and spine MRI shows no cord compression.",
+   "steps": [
+    {
+     "label": "Bone scan",
+     "image": "images/prostate/pr-bone-scan.jpg",
+     "caption": "Whole-body Tc-99m bone scans: normal (left), multiple metastases (middle), and a superscan (right). Qureshi AM et al., World J Nucl Med 2017 (PMC5314659), CC BY-NC-SA.",
+     "prompt": "On this set of bone scans, which pattern is a superscan, and why does it matter?",
+     "choices": [
+      "The left one; it is normal",
+      "The right one: diffuse uptake so intense that the kidneys and soft tissue fade, meaning widespread bone disease",
+      "The middle one; it is a fracture",
+      "None; superscans are only seen on PET"
+     ],
+     "correctIndex": 1,
+     "explanation": "A superscan can be mistaken for normal at a glance. His scan, with three focal lesions, looks more like the middle panel."
+    },
+    {
+     "label": "Volume",
+     "prompt": "How do you classify his metastatic burden?",
+     "choices": [
+      "High volume",
+      "Low volume",
+      "Oligoprogressive",
+      "Castration resistant"
+     ],
+     "correctIndex": 1,
+     "explanation": "High volume (CHAARTED) means visceral metastases, or 4 or more bone metastases with at least one outside the spine and pelvis. He has 3 bone lesions and no visceral disease: low volume."
+    },
+    {
+     "label": "Stage",
+     "prompt": "Stage him.",
+     "answer": "M1b (bone), Stage IVB: low-volume metastatic hormone-sensitive prostate cancer",
+     "explanation": ""
+    },
+    {
+     "label": "Systemic",
+     "prompt": "What is the systemic backbone?",
+     "choices": [
+      "ADT alone",
+      "ADT plus an ARPI (abiraterone, enzalutamide, apalutamide, or darolutamide), ± docetaxel",
+      "Radium-223",
+      "Observation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Metastatic hormone-sensitive disease gets ADT intensified with an ARPI (± docetaxel). Radium-223 is for castration-resistant, bone-only, symptomatic disease."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial showed better overall survival from adding RT to the prostate in low-volume metastatic disease?",
+     "choices": [
+      "STAMPEDE (arm H)",
+      "ProtecT",
+      "SPPORT",
+      "ALSYMPCA"
+     ],
+     "correctIndex": 0,
+     "explanation": "STAMPEDE arm H found the benefit limited to low-volume disease; PEACE-1 also showed better local control."
+    },
+    {
+     "label": "Doses",
+     "prompt": "Give a prostate RT regimen from STAMPEDE, and a regimen if the L4 lesion becomes painful.",
+     "answer": "Prostate: 36 Gy in 6 weekly fractions or 55 Gy in 20 daily fractions. Painful bone metastasis: 8 Gy in 1 fraction (or 20 Gy in 5).",
+     "explanation": "A single 8 Gy fraction relieves pain as well as longer courses, with a somewhat higher retreatment rate."
+    },
+    {
+     "label": "Two years later",
+     "prompt": "Two years later his PSA rises despite castrate testosterone, with painful bone-only disease and no visceral metastases. Which radiopharmaceutical fits?",
+     "choices": [
+      "Radium-223",
+      "I-131",
+      "Lu-177 DOTATATE",
+      "Y-90 microspheres"
+     ],
+     "correctIndex": 0,
+     "explanation": "Radium-223 is for symptomatic, bone-only castration-resistant disease without visceral metastases (ALSYMPCA). Lu-177 PSMA-617 is for PSMA-positive disease after other therapies (VISION)."
+    }
+   ]
+  }
+ ]
+}

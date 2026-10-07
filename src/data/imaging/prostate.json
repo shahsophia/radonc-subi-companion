@@ -1,0 +1,781 @@
+{
+ "img-pr-mri": {
+  "intro": "<p><strong>Multiparametric MRI (mpMRI)</strong> finds the tumor inside the gland, guides the biopsy, and shows whether it has broken out (T3). Start with the axial T2, then see the same anatomy you learned on the drawings in the sagittal and coronal planes.</p>",
+  "plates": [
+   {
+    "id": "pr-mri-t2",
+    "title": "MRI: Axial T2",
+    "style": "mri",
+    "caption": "Axial T2 MRI at the mid-gland: an ill-defined dark lesion in the right posterolateral peripheral zone (image left), against the bright normal PZ on the other side. Calderone CE et al., Diagnostics 2023 (PMC10252565), Fig. 2A, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "t2-pz",
+      "label": "Normal Peripheral Zone (Bright)",
+      "x": 62,
+      "y": 52,
+      "blurb": "Healthy PZ is bright on T2 because its glands are full of fluid. Cancer shows up as a dark area against it."
+     },
+     {
+      "id": "t2-lesion",
+      "label": "Dark PZ Lesion",
+      "x": 40,
+      "y": 50,
+      "blurb": "Focal, ill-defined dark (low T2) area in the right PZ: suspicious. In the PZ, the DWI/ADC sequences decide the PI-RADS score."
+     },
+     {
+      "id": "t2-tz",
+      "label": "Transition Zone (BPH Nodules)",
+      "x": 52,
+      "y": 28,
+      "blurb": "Round BPH nodules in front of the PZ. A TZ cancer looks like an 'erased charcoal' dark smudge without a capsule."
+     },
+     {
+      "id": "t2-nvb",
+      "label": "Neurovascular Bundle Region",
+      "x": 34,
+      "y": 62,
+      "blurb": "Posterolateral corner of the gland (about 7 o'clock here). Asymmetry or tumor reaching it suggests extraprostatic extension (T3a)."
+     },
+     {
+      "id": "t2-rectum",
+      "label": "Rectum",
+      "x": 51,
+      "y": 72,
+      "blurb": "Directly behind the gland. Loss of the fat plane between tumor and rectum is a worrying sign."
+     }
+    ],
+    "image": "images/prostate/pr-mri-t2b.jpg"
+   },
+   {
+    "id": "pr-sagittal",
+    "title": "MRI: Sagittal T2 (Neighbors)",
+    "style": "mri",
+    "caption": "Midline sagittal T2 MRI of the male pelvis (anterior on the left). Lim TJ et al., Korean J Urol 2012 (PMC3427835), Fig. 1A, CC BY-NC; measurement marks not shown.",
+    "hotspots": [
+     {
+      "id": "bladder",
+      "label": "Bladder",
+      "x": 46.2,
+      "y": 30.0,
+      "blurb": "Sits on the base of the prostate. Treated full for RT to push bowel up and out of the field. Tumor invading the bladder is T4."
+     },
+     {
+      "id": "base",
+      "label": "Prostate Base",
+      "x": 46.9,
+      "y": 46.0,
+      "blurb": "Top of the gland, against the bladder neck. The seminal vesicles attach here."
+     },
+     {
+      "id": "apex",
+      "label": "Prostate Apex",
+      "x": 49.9,
+      "y": 63.0,
+      "blurb": "Bottom of the gland, pointing down toward the urogenital diaphragm. Hardest to see on CT; MRI helps."
+     },
+     {
+      "id": "sv",
+      "label": "Seminal Vesicles",
+      "x": 55.2,
+      "y": 38.0,
+      "blurb": "Paired glands behind the bladder, above the prostate. Invasion = T3b (very high risk). Proximal SVs are in the CTV for intermediate and high risk."
+     },
+     {
+      "id": "denon",
+      "label": "Denonvilliers' Fascia",
+      "x": 54.5,
+      "y": 54.0,
+      "blurb": "Between the prostate and rectum. Hydrogel spacer goes just behind it."
+     },
+     {
+      "id": "rectum-s",
+      "label": "Rectum / Anterior Rectal Wall",
+      "x": 59.0,
+      "y": 58.0,
+      "blurb": "The main OAR: rectal bleeding and proctitis. Limit V70 and keep the anterior wall dose down."
+     },
+     {
+      "id": "pubis",
+      "label": "Pubic Symphysis",
+      "x": 32.5,
+      "y": 57.0,
+      "blurb": "Anterior bony landmark. Pubic arch interference can block brachytherapy needles in large glands."
+     },
+     {
+      "id": "sphincter",
+      "label": "External Urethral Sphincter",
+      "x": 51.5,
+      "y": 68.0,
+      "blurb": "Below the apex. Injury (mostly surgical) causes incontinence."
+     },
+     {
+      "id": "bulb",
+      "label": "Penile Bulb",
+      "x": 52.2,
+      "y": 76.0,
+      "blurb": "Below the urogenital diaphragm. Keep mean dose low (under ~50 Gy) to lower erectile dysfunction risk."
+     }
+    ],
+    "image": "images/prostate/pr-sagittal.jpg"
+   },
+   {
+    "id": "pr-levels",
+    "title": "MRI: Coronal T2 (Base, Mid-Gland, Apex)",
+    "style": "mri",
+    "caption": "Coronal T2 MRI through the prostate, with the bladder on top and the penile bulb below the apex. Patient's right is on the image left. Lim TJ et al., Korean J Urol 2012 (PMC3427835), Fig. 1B, CC BY-NC; measurement marks not shown.",
+    "hotspots": [
+     {
+      "id": "c-base",
+      "label": "Base",
+      "x": 49.9,
+      "y": 41.0,
+      "blurb": "Widest part, under the bladder neck. SVI and bladder neck involvement start here."
+     },
+     {
+      "id": "c-mid",
+      "label": "Mid-Gland",
+      "x": 49.9,
+      "y": 52.0,
+      "blurb": "Most of the peripheral zone. The standard 12-core biopsy samples base, mid, and apex on each side."
+     },
+     {
+      "id": "c-apex",
+      "label": "Apex",
+      "x": 49.9,
+      "y": 64.0,
+      "blurb": "Narrow tip. Apical margins are the most common positive margin after prostatectomy."
+     },
+     {
+      "id": "c-right",
+      "label": "Right Lobe",
+      "x": 44.6,
+      "y": 50.0,
+      "blurb": "T2a: one-half of one lobe or less. T2b: more than half of one lobe. T2c: both lobes."
+     },
+     {
+      "id": "c-left",
+      "label": "Left Lobe",
+      "x": 56.0,
+      "y": 50.0,
+      "blurb": "Laterality matters for nerve-sparing and for focal therapy."
+     },
+     {
+      "id": "c-lev",
+      "label": "Levator Ani",
+      "x": 37.8,
+      "y": 56.0,
+      "blurb": "Pelvic floor muscle along the lateral gland."
+     }
+    ],
+    "image": "images/prostate/pr-levels.jpg"
+   },
+   {
+    "id": "pr-mri-sag",
+    "title": "MRI: Seminal Vesicle Invasion (Axial & Coronal T2)",
+    "style": "mri",
+    "caption": "Seminal vesicle invasion (T3b) on axial (left) and coronal (right) T2 MRI: dark tumor replaces the normally bright seminal vesicle tubules. Chakrabarti D et al., CA Cancer J Clin 2025 (PMC12593286), Fig. 2C–D, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "sag-sv",
+      "label": "Normal Seminal Vesicle (Bright)",
+      "x": 71.6,
+      "y": 40.9,
+      "blurb": "Fluid-filled tubules are bright on T2."
+     },
+     {
+      "id": "sag-svi",
+      "label": "Seminal Vesicle Invasion (Dark)",
+      "x": 76.6,
+      "y": 41.6,
+      "blurb": "Dark tissue filling the SV, in continuity with a base tumor = T3b (very high risk)."
+     },
+     {
+      "id": "sag-base",
+      "label": "Prostate Base",
+      "x": 78.8,
+      "y": 50.7,
+      "blurb": "Tumor at the base is the usual route into the SVs."
+     },
+     {
+      "id": "sag-apex",
+      "label": "Apex",
+      "x": 78.8,
+      "y": 69.1,
+      "blurb": "MRI defines the apex better than CT for contouring."
+     },
+     {
+      "id": "sag-bladder",
+      "label": "Bladder",
+      "x": 29.2,
+      "y": 33.0,
+      "blurb": "Bladder neck invasion can be seen here."
+     },
+     {
+      "id": "sag-rectum",
+      "label": "Rectum",
+      "x": 27.6,
+      "y": 61.2,
+      "blurb": "Loss of the fat plane between tumor and rectum raises concern for T4."
+     }
+    ],
+    "image": "images/prostate/pr-mri-sag.jpg"
+   }
+  ]
+ },
+ "img-pr-nodes": {
+  "intro": "<p>The pelvic nodes are found on CT by <strong>following the vessels</strong>. Step down three levels, from the top of the elective pelvic field at L5&ndash;S1 to the obturator nodes at the femoral heads, then see what involved nodes and a nodal target look like.</p>",
+  "plates": [
+   {
+    "id": "pr-nodes-ax-high",
+    "title": "Axial CT: L5–S1 (Top of Pelvic Field)",
+    "style": "ct",
+    "caption": "Contrast-enhanced axial CT at L5 in a healthy adult male, where the common iliac vessels sit in front of the spine. Häggström M, CT of a normal abdomen and pelvis (Wikimedia Commons), CC0.",
+    "hotspots": [
+     {
+      "id": "h-ci-r",
+      "label": "Right Common Iliac Node",
+      "x": 45.0,
+      "y": 43.8,
+      "blurb": "Beside the common iliac artery. Distant (M1a) if involved, but the distal nodes are inside the elective field."
+     },
+     {
+      "id": "h-ci-l",
+      "label": "Left Common Iliac Node",
+      "x": 63.3,
+      "y": 47.2,
+      "blurb": "Same on the left."
+     },
+     {
+      "id": "h-presacral",
+      "label": "Presacral Nodes (S1)",
+      "x": 52.5,
+      "y": 46.5,
+      "blurb": "In front of the sacral promontory. N1."
+     },
+     {
+      "id": "h-bowel",
+      "label": "Small Bowel",
+      "x": 55.8,
+      "y": 37.2,
+      "blurb": "The dose-limiting OAR for pelvic nodal RT: keep bowel dose low (V45 ~195 cc bowel bag)."
+     },
+     {
+      "id": "h-psoas",
+      "label": "Psoas Muscle",
+      "x": 40.0,
+      "y": 53.2,
+      "blurb": "Lateral landmark for the nodal CTV at this level."
+     }
+    ],
+    "image": "images/prostate/pr-nodes-ax-high.jpg"
+   },
+   {
+    "id": "pr-nodes-ax-mid",
+    "title": "Axial CT: Mid-Pelvis (Iliac Vessels)",
+    "style": "ct",
+    "caption": "Contrast-enhanced axial CT through the upper sacrum in a healthy adult male: external iliac vessels in front, internal iliac vessels along the sidewall. Häggström M, CT of a normal abdomen and pelvis (Wikimedia Commons), CC0.",
+    "hotspots": [
+     {
+      "id": "m-ext-r",
+      "label": "Right External Iliac Nodes",
+      "x": 38.3,
+      "y": 45.1,
+      "blurb": "Anterolateral, along the external iliac artery and vein. N1."
+     },
+     {
+      "id": "m-int-r",
+      "label": "Right Internal Iliac Nodes",
+      "x": 39.2,
+      "y": 59.1,
+      "blurb": "Posterior, toward the sacrum. N1."
+     },
+     {
+      "id": "m-ext-l",
+      "label": "Left External Iliac Nodes",
+      "x": 67.5,
+      "y": 48.6,
+      "blurb": "N1."
+     },
+     {
+      "id": "m-int-l",
+      "label": "Left Internal Iliac Nodes",
+      "x": 64.2,
+      "y": 58.4,
+      "blurb": "N1."
+     },
+     {
+      "id": "m-presacral",
+      "label": "Presacral Nodes (S2–S3)",
+      "x": 51.7,
+      "y": 72.4,
+      "blurb": "The elective field covers presacral nodes down to about S3."
+     },
+     {
+      "id": "m-bowel",
+      "label": "Sigmoid / Bowel",
+      "x": 49.2,
+      "y": 44.4,
+      "blurb": "Avoid in the nodal CTV."
+     }
+    ],
+    "image": "images/prostate/pr-nodes-ax-mid.jpg"
+   },
+   {
+    "id": "pr-nodes-ax-low",
+    "title": "Axial CT: Femoral Heads (Obturator Level)",
+    "style": "ct",
+    "caption": "Contrast-enhanced axial CT at the femoral heads in a healthy adult male, with the full bladder in the middle of the pelvis. Häggström M, CT of a normal abdomen and pelvis (Wikimedia Commons), CC0.",
+    "hotspots": [
+     {
+      "id": "l-obt-r",
+      "label": "Right Obturator Nodes",
+      "x": 38.3,
+      "y": 54.2,
+      "blurb": "Medial to the obturator internus, along the side wall. Elective coverage ends at the top of the pubic symphysis. N1."
+     },
+     {
+      "id": "l-obt-l",
+      "label": "Left Obturator Nodes",
+      "x": 66.7,
+      "y": 55.6,
+      "blurb": "N1."
+     },
+     {
+      "id": "l-ext",
+      "label": "Distal External Iliac",
+      "x": 35.0,
+      "y": 33.9,
+      "blurb": "Stops at the femoral head / inguinal ligament (the top of the femoral heads marks the lower edge)."
+     },
+     {
+      "id": "l-bladder",
+      "label": "Bladder",
+      "x": 50.0,
+      "y": 50.7,
+      "blurb": "Midline, anterior."
+     },
+     {
+      "id": "l-rectum",
+      "label": "Rectum",
+      "x": 54.2,
+      "y": 77.3,
+      "blurb": "Posterior."
+     },
+     {
+      "id": "l-fem",
+      "label": "Femoral Head",
+      "x": 26.7,
+      "y": 52.1,
+      "blurb": "OAR: keep V50 under ~5%."
+     }
+    ],
+    "image": "images/prostate/pr-nodes-ax-low.jpg"
+   }
+  ],
+  "gallery": [
+   {
+    "title": "PSMA PET: pelvic nodes",
+    "caption": "Fused PSMA PET/CT showing avid bilateral pelvic side-wall nodes (N1). Chakrabarti D et al., CA Cancer J Clin 2025 (PMC12593286), Fig. 2I, CC BY 4.0.",
+    "style": "pet",
+    "image": "images/prostate/pr-g-psma-node.jpg"
+   },
+   {
+    "title": "Elective pelvic nodal CTV",
+    "caption": "Pelvic lymph node CTV drawn around the iliac vessels on axial planning CT (red: planning CT contour; cyan: contours from five daily cone-beam CTs; blue: their composite). Lyons CA et al., Radiat Oncol 2017 (PMC5543558), Fig. 1a, CC BY 4.0.",
+    "style": "ct",
+    "image": "images/prostate/pr-g-nodal-ctv.jpg"
+   }
+  ]
+ },
+ "img-pr-ct": {
+  "intro": "<p>The <strong>CT simulation</strong> is the scan you'll contour on. Prostate edges are hard to see on CT, so it's usually fused with MRI.</p>",
+  "plates": [
+   {
+    "id": "pr-ct-sim",
+    "title": "CT Simulation: Targets & OARs",
+    "style": "ct",
+    "caption": "Planning CT with a gold fiducial (green) in the prostate (red) and a hydrogel spacer (pink) pushing the rectum (brown) back. Icht O et al., Front Oncol 2024 (PMC11217322), Fig. 1A, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "sim-prostate",
+      "label": "Prostate (CTV)",
+      "x": 50.6,
+      "y": 36.2,
+      "blurb": "The whole gland is the CTV for definitive RT. Add proximal SVs for intermediate and high risk."
+     },
+     {
+      "id": "sim-fid",
+      "label": "Gold Fiducial Marker",
+      "x": 40.4,
+      "y": 51.5,
+      "blurb": "Bright dots placed in the gland before sim. Matched on daily imaging for accurate alignment."
+     },
+     {
+      "id": "sim-spacer",
+      "label": "Hydrogel Spacer",
+      "x": 47.1,
+      "y": 61.7,
+      "blurb": "Low-density gel between prostate and rectum. Lowers rectal dose; lasts about 3 months."
+     },
+     {
+      "id": "sim-rectum",
+      "label": "Rectum",
+      "x": 47.8,
+      "y": 81.9,
+      "blurb": "Treated empty (bowel prep, enema, or gas release). Rectum V70 <20%."
+     },
+     {
+      "id": "sim-pubis",
+      "label": "Pubic Symphysis",
+      "x": 41.4,
+      "y": 5.3,
+      "blurb": "Anterior bony landmark. The prostate sits just behind and below it."
+     }
+    ],
+    "image": "images/prostate/pr-ct-sim.jpg"
+   },
+   {
+    "id": "pr-ct-postop",
+    "title": "CT: Prostate Bed (After Prostatectomy)",
+    "style": "ct",
+    "caption": "Salvage RT planning CT after prostatectomy: prostate bed CTV (red), PTV (dark blue), bladder (yellow), rectum (orange), and a local recurrence boost target (green). Sardaro A et al., Front Oncol 2021 (PMC7874055), Fig. 1B, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "bed",
+      "label": "Prostate Bed (Fossa)",
+      "x": 45.6,
+      "y": 58.5,
+      "blurb": "Target for salvage RT: from below the vesicourethral anastomosis up behind the bladder (RTOG/NRG consensus)."
+     },
+     {
+      "id": "clips",
+      "label": "Surgical Clip",
+      "x": 43.1,
+      "y": 39.9,
+      "blurb": "Mark the old SV and node dissection beds."
+     },
+     {
+      "id": "pb-bladder",
+      "label": "Bladder",
+      "x": 54.3,
+      "y": 42.1,
+      "blurb": "Posterior bladder wall is part of the upper bed."
+     },
+     {
+      "id": "pb-rectum",
+      "label": "Rectum",
+      "x": 55.7,
+      "y": 69.0,
+      "blurb": "Posterior border of the bed."
+     },
+     {
+      "id": "pb-recur",
+      "label": "Local Recurrence (Boost Target)",
+      "x": 61.7,
+      "y": 52.0,
+      "blurb": "A nodule in the fossa seen on MRI, contoured as a GTV (green) for a boost on top of the prostate bed dose."
+     }
+    ],
+    "image": "images/prostate/pr-ct-postop.jpg"
+   }
+  ]
+ },
+ "img-pr-trus": {
+  "intro": "<p>This is what you'll see on the monitor in the <strong>brachytherapy suite</strong>: a <strong>transrectal ultrasound (TRUS)</strong> with a grid overlay. The probe is in the rectum, so the <strong>rectum is at the bottom</strong> of the screen and anterior is at the top.</p>",
+  "plates": [
+   {
+    "id": "pr-trus-ax",
+    "title": "TRUS: Transverse (Axial) View",
+    "style": "us",
+    "caption": "Transverse TRUS of the prostate with the brachytherapy template grid overlaid (letters across, depth in cm down the sides) and needles placed through the perineum. van den Bos W et al., BMJ Open 2014 (PMC4216863), Fig. 4, CC BY-NC 4.0.",
+    "hotspots": [
+     {
+      "id": "probe",
+      "label": "Probe / Rectal Wall",
+      "x": 50.0,
+      "y": 66.2,
+      "blurb": "Bottom of the image. The anterior rectal wall sits right on the probe: keep seeds and needles off it (rectal dose, fistula)."
+     },
+     {
+      "id": "gland-edge",
+      "label": "Prostate Capsule (Edge)",
+      "x": 36.1,
+      "y": 31.6,
+      "blurb": "The bright rim you contour as the target. Brachy PTV is usually the gland plus a small margin."
+     },
+     {
+      "id": "pz-us",
+      "label": "Peripheral Zone",
+      "x": 45.6,
+      "y": 59.3,
+      "blurb": "Posterior gland next to the probe, where most cancers are. Often slightly hypoechoic lesions here."
+     },
+     {
+      "id": "tz-us",
+      "label": "Transition Zone",
+      "x": 50.0,
+      "y": 35.6,
+      "blurb": "Central gland; BPH nodules. A large TZ means a large gland (harder implant)."
+     },
+     {
+      "id": "foley",
+      "label": "Urethra with Foley Catheter",
+      "x": 50.9,
+      "y": 47.4,
+      "blurb": "Bright ring or dot with shadowing (or aerated gel) near the center. Keep urethral dose under about 150% (LDR) to limit urinary toxicity."
+     },
+     {
+      "id": "grid",
+      "label": "Template Grid Coordinates",
+      "x": 50.9,
+      "y": 7.9,
+      "blurb": "Dots show where needles can go through the perineal template (letters across, numbers up). 'Needle at C3' refers to this grid."
+     },
+     {
+      "id": "needle",
+      "label": "Needle / Seed Artifact",
+      "x": 38.7,
+      "y": 56.3,
+      "blurb": "Bright echo of a needle tip. Each needle goes through a template hole, so its position on screen matches a grid letter and number."
+     },
+     {
+      "id": "nvb-us",
+      "label": "Neurovascular Bundle Area",
+      "x": 63.9,
+      "y": 59.3,
+      "blurb": "Posterolateral. Color Doppler can show the vessels."
+     }
+    ],
+    "image": "images/prostate/pr-trus-ax.jpg"
+   },
+   {
+    "id": "pr-trus-sag",
+    "title": "TRUS: Sagittal (Longitudinal) View",
+    "style": "us",
+    "caption": "Sagittal TRUS during HDR planning, base on the left and apex on the right: prostate (red), urethra (yellow), bladder (light blue), rectum (dark blue), with a hyaluronic acid spacer behind the gland. Ng SK et al., J Appl Clin Med Phys 2026 (PMC13344289), Fig. 3b, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "bladder-us",
+      "label": "Bladder",
+      "x": 10.1,
+      "y": 44.5,
+      "blurb": "Sits at the base end of the gland (left on this view). Outlined in light blue here. The Foley balloon at the bladder neck is the landmark for the base."
+     },
+     {
+      "id": "base-us",
+      "label": "Prostate Base",
+      "x": 33.2,
+      "y": 50.9,
+      "blurb": "The base plane is set here; needle depths and seed positions are measured from it."
+     },
+     {
+      "id": "apex-us",
+      "label": "Prostate Apex",
+      "x": 68.8,
+      "y": 61.2,
+      "blurb": "The last plane of the implant. Missing the apex underdoses a common site of cancer."
+     },
+     {
+      "id": "urethra-us",
+      "label": "Urethra",
+      "x": 53.4,
+      "y": 54.8,
+      "blurb": "Runs along the top of the gland in this view."
+     },
+     {
+      "id": "spacer-us",
+      "label": "Rectal Spacer (Hypoechoic)",
+      "x": 41.8,
+      "y": 77.8,
+      "blurb": "Dark gel injected between the prostate and the rectum. It pushes the rectal wall away from the high-dose region."
+     },
+     {
+      "id": "rect-us",
+      "label": "Rectum / Probe",
+      "x": 24.5,
+      "y": 80.0,
+      "blurb": "Bottom of the image."
+     }
+    ],
+    "image": "images/prostate/pr-trus-sag.jpg"
+   }
+  ],
+  "gallery": [
+   {
+    "title": "Post-implant CT",
+    "caption": "Day 0 CT after LDR seed implant: seeds are the bright dots, with the prostate and dose lines contoured for post-implant dosimetry. Choi H et al., Radiat Oncol J 2026 (PMC13054528), Fig. 1B, CC BY-NC 4.0.",
+    "style": "ct",
+    "image": "images/prostate/pr-g-postimplant.jpg"
+   },
+   {
+    "title": "Perineal template",
+    "caption": "Seed implant setup: the TRUS probe in the rectum images the gland while needles pass through the perineal template and release seeds into the prostate. Cancer Research UK diagram (Wikimedia Commons), CC BY-SA 4.0.",
+    "style": "schematic",
+    "image": "images/prostate/pr-g-template.jpg"
+   }
+  ]
+ },
+ "img-pr-psma": {
+  "intro": "<p><strong>PSMA PET/CT</strong> (Ga-68 or F-18 tracers) sees small nodes and bone metastases that CT and bone scan miss. It's used for staging unfavorable-intermediate and higher disease and for <strong>biochemical recurrence</strong>.</p>",
+  "plates": [
+   {
+    "id": "pr-psma-mip",
+    "title": "PSMA PET: Whole-Body MIP",
+    "style": "pet",
+    "caption": "PSMA PET maximum intensity projections. Left: 68Ga-PSMA-11 in high-risk disease showing avid nodes from the pelvis to the mediastinum (M1a) despite a negative CT and bone scan. Esperto F et al., Cancers 2026 (PMC13359636), Fig. 2B, CC BY 4.0. Right: 18F-PSMA-1007 with bone-only recurrence after prostatectomy. Wang Y et al., PLoS One 2026 (PMC13175320), Fig. 1A, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "psma-node",
+      "label": "Pelvic Node (N1)",
+      "x": 28.8,
+      "y": 77.7,
+      "blurb": "Small avid obturator or iliac node: regional N1 (stage IVA)."
+     },
+     {
+      "id": "psma-ci",
+      "label": "Para-aortic Nodes (M1a)",
+      "x": 27.9,
+      "y": 64.1,
+      "blurb": "Above the pelvis = distant nodal disease."
+     },
+     {
+      "id": "psma-sc",
+      "label": "Supraclavicular / Mediastinal Nodes (M1a)",
+      "x": 29.0,
+      "y": 35.9,
+      "blurb": "Avid nodes above the diaphragm. Any node outside the true pelvis is M1a."
+     },
+     {
+      "id": "psma-bone",
+      "label": "Bone Metastasis (M1b)",
+      "x": 61.2,
+      "y": 76.8,
+      "blurb": "Avid spine or rib lesion."
+     },
+     {
+      "id": "psma-salivary",
+      "label": "Salivary / Lacrimal Glands (Physiologic)",
+      "x": 64.8,
+      "y": 10.8,
+      "blurb": "Normal PSMA uptake. Not disease."
+     },
+     {
+      "id": "psma-kidney",
+      "label": "Kidneys (Physiologic)",
+      "x": 23.8,
+      "y": 58.7,
+      "blurb": "Intense normal uptake and excretion."
+     },
+     {
+      "id": "psma-bladder",
+      "label": "Bladder (Excreted Tracer)",
+      "x": 27.8,
+      "y": 84.4,
+      "blurb": "Normal. Can hide small lesions near the bladder base."
+     }
+    ],
+    "image": "images/prostate/pr-psma-mip.jpg"
+   },
+   {
+    "id": "pr-psma-bcr",
+    "title": "PSMA PET/CT: Recurrence After Prostatectomy",
+    "style": "pet",
+    "caption": "Fused axial PSMA PET/CT 40 months after prostatectomy (PSA 8.7): recurrence in the prostate bed plus bone metastases in the pubic bones and right ischium. Wang Y et al., PLoS One 2026 (PMC13175320), Fig. 2D, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "bcr-fossa",
+      "label": "Fossa Recurrence",
+      "x": 53.8,
+      "y": 48.5,
+      "blurb": "Avid focus in the prostate bed near the anastomosis: include and consider a boost in salvage RT."
+     },
+     {
+      "id": "bcr-bone",
+      "label": "Pubic Bone Metastases",
+      "x": 55.5,
+      "y": 30.9,
+      "blurb": "Oligometastatic recurrence: consider SBRT to the site (metastasis-directed therapy)."
+     },
+     {
+      "id": "bcr-isch",
+      "label": "Ischial Bone Metastasis",
+      "x": 26.2,
+      "y": 51.7,
+      "blurb": "A second bone lesion in the right ischium. More than a few bone lesions means this is no longer a salvage-RT-alone situation."
+     },
+     {
+      "id": "bcr-rectum",
+      "label": "Rectum",
+      "x": 50.0,
+      "y": 62.3,
+      "blurb": "Directly behind the fossa. Rectal dose limits how hard you can push a fossa boost."
+     }
+    ],
+    "image": "images/prostate/pr-psma-bcr.jpg"
+   }
+  ]
+ },
+ "img-pr-bone": {
+  "intro": "<p>The <strong>Tc-99m bone scan</strong> is the classic test for bone metastases. Prostate mets are <strong>blastic (bone-forming)</strong>, so they light up.</p>",
+  "plates": [
+   {
+    "id": "pr-bone-scan",
+    "title": "Bone Scan: Normal, Metastases, Superscan",
+    "style": "schematic",
+    "caption": "Whole-body Tc-99m bone scans: normal (left), multiple metastases (middle), and a superscan (right). Qureshi AM et al., World J Nucl Med 2017 (PMC5314659), Fig. 1, CC BY-NC-SA.",
+    "hotspots": [
+     {
+      "id": "bs-spine",
+      "label": "Vertebral Metastasis",
+      "x": 49.5,
+      "y": 32.5,
+      "blurb": "Focal hot spot in the spine. Axial skeleton (spine, pelvis, ribs) is the most common site."
+     },
+     {
+      "id": "bs-pelvis",
+      "label": "Pelvic Metastasis",
+      "x": 52.3,
+      "y": 44.0,
+      "blurb": "Pelvic bone lesions. Low-volume disease = ≤3 bone mets, all in the spine/pelvis, no visceral mets."
+     },
+     {
+      "id": "bs-rib",
+      "label": "Rib Lesion",
+      "x": 53.9,
+      "y": 30.5,
+      "blurb": "A single rib hot spot can be trauma; linear uptake along the rib is more often metastasis."
+     },
+     {
+      "id": "bs-super",
+      "label": "Superscan (Diffuse Uptake)",
+      "x": 68.4,
+      "y": 25.0,
+      "blurb": "Diffuse, intense uptake through the axial skeleton. Looks deceptively 'clean' because there are no discrete spots."
+     },
+     {
+      "id": "bs-kidneys",
+      "label": "Kidneys (Faint = Superscan)",
+      "x": 69.9,
+      "y": 39.0,
+      "blurb": "On a superscan, diffuse skeletal uptake is so intense that the kidneys and bladder barely show."
+     },
+     {
+      "id": "bs-bladder",
+      "label": "Bladder",
+      "x": 32.2,
+      "y": 43.7,
+      "blurb": "Normal excreted tracer."
+     },
+     {
+      "id": "bs-arthritis",
+      "label": "Degenerative Joint Uptake",
+      "x": 29.5,
+      "y": 68.0,
+      "blurb": "Knees, shoulders, and facet joints light up from arthritis: a common false positive."
+     }
+    ],
+    "image": "images/prostate/pr-bone-scan.jpg"
+   }
+  ]
+ }
+}

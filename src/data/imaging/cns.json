@@ -1,0 +1,625 @@
+{
+ "img-cns-normal": {
+  "intro": "<p>This is how you'll actually see the brain: a <strong>midline sagittal</strong> view for orientation, then <strong>axial slices</strong> scrolling from the top of the head down to the foramen magnum. Find the structures you learned on the drawings in Neuroanatomy; many are organs at risk.</p>",
+  "plates": [
+   {
+    "id": "cns-sagittal",
+    "title": "Midline Sagittal",
+    "style": "mri",
+    "caption": "Midline sagittal T1 MRI of a normal adult brain (anterior on the left). Source: OpenNeuro ds003653 (Manelis A et al.), 3T MRI of a healthy adult volunteer, CC0 public domain.",
+    "hotspots": [
+     {
+      "id": "cc",
+      "label": "Corpus Callosum",
+      "x": 46.0,
+      "y": 47.0,
+      "blurb": "Connects the hemispheres. GBM and lymphoma can cross it ('butterfly' lesion)."
+     },
+     {
+      "id": "thalamus",
+      "label": "Thalamus",
+      "x": 47.0,
+      "y": 53.0,
+      "blurb": "Sensory relay. Deep, unresectable location: often biopsy then chemoRT."
+     },
+     {
+      "id": "pituitary",
+      "label": "Pituitary Gland (Sella Turcica)",
+      "x": 37.0,
+      "y": 72.0,
+      "blurb": "In the sella below the optic chiasm. Pituitary dose causes late hypopituitarism."
+     },
+     {
+      "id": "chiasm",
+      "label": "Optic Chiasm",
+      "x": 35.5,
+      "y": 66.0,
+      "blurb": "Just above the pituitary. OAR: ~54 Gy conventional; ≤8–10 Gy single-fraction SRS."
+     },
+     {
+      "id": "pineal",
+      "label": "Pineal Gland",
+      "x": 56.0,
+      "y": 58.5,
+      "blurb": "Pineal tumors (germ cell tumors) compress the tectum: Parinaud syndrome (upgaze palsy) and hydrocephalus."
+     },
+     {
+      "id": "midbrain",
+      "label": "Midbrain",
+      "x": 51.0,
+      "y": 63.0,
+      "blurb": "Top of the brainstem; contains the cerebral aqueduct."
+     },
+     {
+      "id": "pons",
+      "label": "Pons",
+      "x": 50.0,
+      "y": 75.0,
+      "blurb": "Diffuse midline glioma (DIPG) in children lives here: RT 54 Gy is the main treatment."
+     },
+     {
+      "id": "medulla",
+      "label": "Medulla",
+      "x": 55.0,
+      "y": 88.0,
+      "blurb": "Continues into the spinal cord at the foramen magnum."
+     },
+     {
+      "id": "fourth",
+      "label": "4th Ventricle",
+      "x": 61.0,
+      "y": 71.0,
+      "blurb": "Behind the pons. Posterior fossa tumors (medulloblastoma, ependymoma) block it → hydrocephalus."
+     },
+     {
+      "id": "cerebellum-s",
+      "label": "Cerebellum (Vermis)",
+      "x": 71.0,
+      "y": 76.0,
+      "blurb": "Midline vermis lesions cause truncal ataxia."
+     }
+    ],
+    "image": "images/cns/cns-sagittal.jpg"
+   },
+   {
+    "id": "ax-vertex",
+    "title": "Level 1: Centrum Semiovale (High Convexity)",
+    "style": "mri",
+    "caption": "Axial T1 MRI above the lateral ventricles (patient's right on your left). Source: OpenNeuro ds003653 (Manelis A et al.), 3T MRI of a healthy adult volunteer, CC0 public domain.",
+    "hotspots": [
+     {
+      "id": "v-csv",
+      "label": "Centrum Semiovale (White Matter)",
+      "x": 38.0,
+      "y": 45.0,
+      "blurb": "Big sheet of white matter above the ventricles. Radiation leukoencephalopathy shows up here as bright FLAIR signal."
+     },
+     {
+      "id": "v-falx",
+      "label": "Falx Cerebri",
+      "x": 50.0,
+      "y": 32.0,
+      "blurb": "Dural fold between the hemispheres. Parafalcine meningiomas arise here; midline shift is measured against it."
+     },
+     {
+      "id": "v-sss",
+      "label": "Superior Sagittal Sinus",
+      "x": 48.8,
+      "y": 87.5,
+      "blurb": "Venous sinus at the top of the falx. Parasagittal meningiomas can invade it (limits resection)."
+     },
+     {
+      "id": "v-cortex",
+      "label": "Cortex (Gray Matter)",
+      "x": 29.0,
+      "y": 28.0,
+      "blurb": "Metastases favor the gray-white junction."
+     }
+    ],
+    "image": "images/cns/cns-ax-vertex.jpg"
+   },
+   {
+    "id": "ax-ventricles",
+    "title": "Level 2: Bodies of the Lateral Ventricles",
+    "style": "mri",
+    "caption": "Axial T2 MRI through the bodies of the lateral ventricles (CSF is bright). Source: OpenNeuro ds003653 (Manelis A et al.), 3T MRI of a healthy adult volunteer, CC0 public domain.",
+    "hotspots": [
+     {
+      "id": "lv-body",
+      "label": "Lateral Ventricle (Body)",
+      "x": 54.0,
+      "y": 50.0,
+      "blurb": "CSF-filled. Periventricular enhancement suggests lymphoma or ependymal spread."
+     },
+     {
+      "id": "lv-cc",
+      "label": "Corpus Callosum (Body)",
+      "x": 49.5,
+      "y": 35.5,
+      "blurb": "Crossing tumor = GBM or lymphoma until proven otherwise."
+     },
+     {
+      "id": "lv-caudate",
+      "label": "Caudate Nucleus (Body)",
+      "x": 41.8,
+      "y": 44.0,
+      "blurb": "Lines the lateral wall of the lateral ventricle."
+     },
+     {
+      "id": "lv-cr",
+      "label": "Corona Radiata",
+      "x": 33.0,
+      "y": 45.0,
+      "blurb": "White matter fanning out toward the cortex."
+     },
+     {
+      "id": "lv-septum",
+      "label": "Septum Pellucidum",
+      "x": 49.5,
+      "y": 46.0,
+      "blurb": "Thin midline membrane between the lateral ventricles."
+     }
+    ],
+    "image": "images/cns/cns-ax-ventricles.jpg"
+   },
+   {
+    "id": "ax-bg",
+    "title": "Level 3: Basal Ganglia & Thalamus",
+    "style": "mri",
+    "caption": "Axial T1 MRI at the level of the basal ganglia and thalami (CSF is dark). Source: OpenNeuro ds003653 (Manelis A et al.), 3T MRI of a healthy adult volunteer, CC0 public domain.",
+    "hotspots": [
+     {
+      "id": "bg-frontal-horn",
+      "label": "Frontal Horn",
+      "x": 52.5,
+      "y": 33.0,
+      "blurb": "Front of the lateral ventricle."
+     },
+     {
+      "id": "bg-caudate",
+      "label": "Head of Caudate",
+      "x": 44.5,
+      "y": 37.0,
+      "blurb": "Bulges into the frontal horn."
+     },
+     {
+      "id": "bg-ic",
+      "label": "Internal Capsule",
+      "x": 44.5,
+      "y": 44.0,
+      "blurb": "Motor and sensory fibers in a tight bundle. A small lesion here causes dense contralateral weakness."
+     },
+     {
+      "id": "bg-lent",
+      "label": "Lentiform Nucleus (Putamen + Globus Pallidus)",
+      "x": 41.0,
+      "y": 47.0,
+      "blurb": "Lateral to the internal capsule."
+     },
+     {
+      "id": "bg-thal",
+      "label": "Thalamus",
+      "x": 47.0,
+      "y": 51.0,
+      "blurb": "Behind the internal capsule, beside the 3rd ventricle."
+     },
+     {
+      "id": "bg-third",
+      "label": "3rd Ventricle",
+      "x": 49.6,
+      "y": 53.0,
+      "blurb": "Midline slit."
+     },
+     {
+      "id": "bg-insula",
+      "label": "Insula",
+      "x": 34.0,
+      "y": 47.0,
+      "blurb": "Deep cortex under the Sylvian fissure; insular gliomas are hard to resect (MCA branches)."
+     },
+     {
+      "id": "bg-occ-horn",
+      "label": "Occipital Horn",
+      "x": 57.0,
+      "y": 62.0,
+      "blurb": "Back of the lateral ventricle."
+     }
+    ],
+    "image": "images/cns/cns-ax-bg.jpg"
+   },
+   {
+    "id": "ax-midbrain",
+    "title": "Level 4: Midbrain & Suprasellar Cistern",
+    "style": "mri",
+    "caption": "Axial T1 MRI through the midbrain and suprasellar cistern. Source: OpenNeuro ds003653 (Manelis A et al.), 3T MRI of a healthy adult volunteer, CC0 public domain.",
+    "hotspots": [
+     {
+      "id": "mb-peduncle",
+      "label": "Cerebral Peduncles",
+      "x": 45.0,
+      "y": 48.0,
+      "blurb": "Front of the midbrain: descending motor fibers."
+     },
+     {
+      "id": "mb-aqueduct",
+      "label": "Cerebral Aqueduct",
+      "x": 49.8,
+      "y": 55.5,
+      "blurb": "Tiny CSF channel at the back of the midbrain."
+     },
+     {
+      "id": "mb-chiasm",
+      "label": "Optic Chiasm / Suprasellar Cistern",
+      "x": 51.0,
+      "y": 37.0,
+      "blurb": "Star-shaped CSF space in front of the midbrain; the chiasm sits in it. Pituitary macroadenomas push up into it."
+     },
+     {
+      "id": "mb-hippo",
+      "label": "Hippocampus (Temporal Horn)",
+      "x": 40.5,
+      "y": 52.0,
+      "blurb": "Medial temporal lobe. Spared in HA-WBRT (D100% ≤9 Gy, Dmax ≤16 Gy in 10 fx)."
+     },
+     {
+      "id": "mb-temporal",
+      "label": "Temporal Lobe",
+      "x": 32.0,
+      "y": 50.0,
+      "blurb": "Temporal lobe necrosis is a late risk with skull base/nasopharynx RT."
+     },
+     {
+      "id": "mb-mca",
+      "label": "Middle Cerebral Artery",
+      "x": 37.0,
+      "y": 32.5,
+      "blurb": "In the Sylvian fissure."
+     }
+    ],
+    "image": "images/cns/cns-ax-midbrain.jpg"
+   },
+   {
+    "id": "ax-pons",
+    "title": "Level 5: Pons & Cerebellopontine Angle",
+    "style": "mri",
+    "caption": "Axial T2 MRI through the pons and inner ears (CSF and inner-ear fluid are bright). Source: OpenNeuro ds003653 (Manelis A et al.), 3T MRI of a healthy adult volunteer, CC0 public domain.",
+    "hotspots": [
+     {
+      "id": "p-pons",
+      "label": "Pons",
+      "x": 50.0,
+      "y": 52.0,
+      "blurb": "Brainstem OAR. DIPG arises here."
+     },
+     {
+      "id": "p-cpa",
+      "label": "Cerebellopontine Angle",
+      "x": 43.0,
+      "y": 55.0,
+      "blurb": "Space between pons and cerebellum. Vestibular schwannomas (~80% of CPA masses) and meningiomas."
+     },
+     {
+      "id": "p-iac",
+      "label": "Internal Auditory Canal (CN VII/VIII)",
+      "x": 40.0,
+      "y": 51.5,
+      "blurb": "Facial and vestibulocochlear nerves. Vestibular schwannomas start here and widen the canal."
+     },
+     {
+      "id": "p-cochlea",
+      "label": "Cochlea",
+      "x": 35.5,
+      "y": 48.5,
+      "blurb": "Hearing OAR: mean ≤35–45 Gy conventional; ≤4 Gy for vestibular schwannoma SRS."
+     },
+     {
+      "id": "p-fourth",
+      "label": "4th Ventricle",
+      "x": 49.0,
+      "y": 61.0,
+      "blurb": "Behind the pons."
+     },
+     {
+      "id": "p-cereb",
+      "label": "Cerebellar Hemisphere",
+      "x": 33.0,
+      "y": 66.0,
+      "blurb": "Posterior fossa mets often need surgery (hydrocephalus risk)."
+     },
+     {
+      "id": "p-basilar",
+      "label": "Basilar Artery",
+      "x": 50.5,
+      "y": 44.5,
+      "blurb": "In front of the pons."
+     }
+    ],
+    "image": "images/cns/cns-ax-pons.jpg"
+   },
+   {
+    "id": "ax-medulla",
+    "title": "Level 6: Medulla & Foramen Magnum",
+    "style": "mri",
+    "caption": "Axial T1 MRI at the foramen magnum: medulla with the cerebellar tonsils behind it. Source: OpenNeuro ds003653 (Manelis A et al.), 3T MRI of a healthy adult volunteer, CC0 public domain.",
+    "hotspots": [
+     {
+      "id": "m-medulla",
+      "label": "Medulla",
+      "x": 49.5,
+      "y": 57.0,
+      "blurb": "Lowest brainstem; CN IX–XII nuclei."
+     },
+     {
+      "id": "m-tonsils",
+      "label": "Cerebellar Tonsils",
+      "x": 46.5,
+      "y": 65.5,
+      "blurb": "Herniation through the foramen magnum is fatal; large posterior fossa masses risk it."
+     },
+     {
+      "id": "m-fm",
+      "label": "Foramen Magnum",
+      "x": 44.3,
+      "y": 57.0,
+      "blurb": "Brainstem becomes spinal cord."
+     }
+    ],
+    "image": "images/cns/cns-ax-medulla.jpg"
+   }
+  ]
+ },
+ "img-cns-special": {
+  "intro": "<p>Three regions you'll plan around constantly: the <strong>sella and cavernous sinus</strong>, the <strong>orbits and optic pathway</strong>, and the <strong>spinal cord</strong>. Each holds organs at risk with strict dose limits.</p>",
+  "plates": [
+   {
+    "id": "cor-sella",
+    "title": "Coronal: Sella & Cavernous Sinus",
+    "style": "mri",
+    "caption": "Coronal T1 MRI of a normal pituitary gland (patient's right on your left). Source: Mannion P, Jude E, Endocrinol Diabetes Metab Case Rep 2026 (PMC13454250), Fig. 1B, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "s-pit",
+      "label": "Pituitary Gland",
+      "x": 47.1,
+      "y": 40.5,
+      "blurb": "Sits in the sella. Adenomas: nonfunctioning or hormone-secreting (prolactin, GH, ACTH)."
+     },
+     {
+      "id": "s-cav",
+      "label": "Cavernous Sinus",
+      "x": 38.2,
+      "y": 45.7,
+      "blurb": "Beside the sella. Contains CN III, IV, V1, V2, VI and the internal carotid. Invasion makes surgery incomplete (RT or SRS for residual)."
+     },
+     {
+      "id": "s-ica",
+      "label": "Internal Carotid Artery (Cavernous)",
+      "x": 53.5,
+      "y": 41.6,
+      "blurb": "Runs through the cavernous sinus; meningiomas can encase it."
+     },
+     {
+      "id": "s-sphenoid",
+      "label": "Sphenoid Sinus",
+      "x": 47.9,
+      "y": 48.0,
+      "blurb": "The transsphenoidal surgical route to the pituitary."
+     },
+     {
+      "id": "s-temporal",
+      "label": "Temporal Lobe",
+      "x": 23.4,
+      "y": 46.5,
+      "blurb": "Lateral to the cavernous sinus."
+     }
+    ],
+    "image": "images/cns/cns-cor-sella.jpg"
+   },
+   {
+    "id": "ax-orbit",
+    "title": "Axial: Orbits & Optic Pathway",
+    "style": "mri",
+    "caption": "Axial T2 MRI through the mid-orbits (vitreous is bright, lens is dark). Source: Nagesh CP et al., Indian J Ophthalmol 2021 (PMC8597479), Fig. 11a, CC BY-NC-SA 4.0; labels and arrows removed.",
+    "hotspots": [
+     {
+      "id": "o-lens",
+      "label": "Lens",
+      "x": 19.4,
+      "y": 21.0,
+      "blurb": "Very radiosensitive: cataract with just a few Gy (keep Dmax <7 Gy when possible)."
+     },
+     {
+      "id": "o-globe",
+      "label": "Globe / Retina",
+      "x": 22.4,
+      "y": 28.6,
+      "blurb": "Retina Dmax <45–50 Gy (retinopathy)."
+     },
+     {
+      "id": "o-lacrimal",
+      "label": "Lacrimal Gland",
+      "x": 10.0,
+      "y": 29.4,
+      "blurb": "Upper outer orbit. Mean <26–30 Gy to avoid dry eye."
+     },
+     {
+      "id": "o-nerve",
+      "label": "Optic Nerve",
+      "x": 26.1,
+      "y": 50.4,
+      "blurb": "Dmax ~54 Gy conventional; blindness risk above ~55–60 Gy."
+     },
+     {
+      "id": "o-chiasm",
+      "label": "Optic Chiasm",
+      "x": 49.4,
+      "y": 85.5,
+      "blurb": "Where nasal fibers cross."
+     }
+    ],
+    "image": "images/cns/cns-ax-orbit.jpg"
+   },
+   {
+    "id": "sag-spine",
+    "title": "Sagittal Spine: Cord & Cauda Equina",
+    "style": "mri",
+    "caption": "Placeholder MRI-style slice (sagittal T2 of the thoracolumbar spine). Swap in a real de-identified MRI image here.",
+    "hotspots": [
+     {
+      "id": "sp-cord",
+      "label": "Spinal Cord",
+      "x": 56,
+      "y": 30,
+      "blurb": "Dmax ~45–50 Gy conventional; SBRT limits are much lower per fraction."
+     },
+     {
+      "id": "sp-conus",
+      "label": "Conus Medullaris (L1–L2)",
+      "x": 56,
+      "y": 56,
+      "blurb": "Where the cord ends in adults. Compression here causes bowel/bladder dysfunction and saddle anesthesia."
+     },
+     {
+      "id": "sp-cauda",
+      "label": "Cauda Equina",
+      "x": 56,
+      "y": 72,
+      "blurb": "Nerve roots below the conus. More tolerant than cord."
+     },
+     {
+      "id": "sp-thecal",
+      "label": "Thecal Sac End (S2)",
+      "x": 56,
+      "y": 88,
+      "blurb": "The bottom of CSF: the inferior border for craniospinal irradiation."
+     },
+     {
+      "id": "sp-vb",
+      "label": "Vertebral Body",
+      "x": 36,
+      "y": 40,
+      "blurb": "Most spine metastases start here and grow back into the canal."
+     },
+     {
+      "id": "sp-epi",
+      "label": "Epidural Space",
+      "x": 48,
+      "y": 40,
+      "blurb": "Tumor here compresses the cord: metastatic epidural spinal cord compression (Bilsky grade)."
+     },
+     {
+      "id": "sp-post",
+      "label": "Posterior Elements",
+      "x": 72,
+      "y": 40,
+      "blurb": "Pedicles, lamina, spinous process."
+     }
+    ]
+   }
+  ],
+  "gallery": [
+   {
+    "title": "HA-WBRT dose",
+    "caption": "Hippocampal-avoidance whole-brain plan: the two cool spots in the middle are the spared hippocampi. Source: Yang X et al., Eur J Med Res 2023 (PMC9841677), Fig. 1B, CC BY 4.0.",
+    "style": "mri",
+    "image": "images/cns/cns-g-hawbrt.jpg"
+   },
+   {
+    "title": "Craniospinal field",
+    "caption": "VMAT craniospinal plan (sagittal): the whole brain and spinal canal down to the thecal sac are treated. Source: Agdi B et al., Cureus 2026 (PMC13354313), Fig. 3, CC BY 4.0.",
+    "style": "schematic",
+    "image": "images/cns/cns-g-csi.jpg"
+   }
+  ]
+ },
+ "img-cns-glioma": {
+  "intro": "<p>Gliomas are read on two sequences side by side: <strong>T1 post-contrast</strong> (enhancing tumor) and <strong>T2/FLAIR</strong> (edema and infiltrative tumor). High-grade gliomas enhance; most low-grade gliomas don't.</p>",
+  "plates": [],
+  "gallery": [
+   {
+    "title": "Glioblastoma: T1 Post-Contrast",
+    "caption": "Axial T1 post-contrast MRI: left temporal glioblastoma with a thick, irregular enhancing rim around a necrotic center. Source: Armed Forces Institute of Pathology (Wikimedia Commons, AFIP-00405558), public domain. Look for: Thick Irregular Ring Enhancement; Central Necrosis; Compressed Ventricle.",
+    "style": "mri",
+    "image": "images/cns/cns-gbm-t1c.jpg"
+   },
+   {
+    "title": "Glioblastoma: FLAIR",
+    "caption": "Axial FLAIR MRI of a different patient: left temporal glioblastoma with extensive surrounding FLAIR signal and mass effect. Source: Tiwari S, Gyawali I, Cureus 2024 (PMC10944577), Fig. 5B, CC BY 4.0. Look for: FLAIR Hyperintensity (Edema + Infiltrating Tumor); Tumor Core; Effaced Sulci; Normal Contralateral Hemisphere.",
+    "style": "mri",
+    "image": "images/cns/cns-gbm-flair.jpg"
+   },
+   {
+    "title": "Low-Grade Glioma: FLAIR (Non-Enhancing)",
+    "caption": "Axial FLAIR MRI: grade 2 astrocytoma in the left anterior insula and frontal white matter, non-enhancing. Source: Vail M et al., Cureus 2026 (PMC12947947), Fig. 3, CC BY 4.0; arrow removed. Look for: Homogeneous FLAIR-Bright Mass; Cortical Involvement; Mild Mass Effect.",
+    "style": "mri",
+    "image": "images/cns/cns-lgg-flair.jpg"
+   }
+  ]
+ },
+ "img-cns-mets": {
+  "intro": "<p>Brain metastases are the most common tumors you'll treat with radiation. Contrast MRI (thin slices) finds them and plans them.</p>",
+  "plates": [],
+  "gallery": [
+   {
+    "title": "Brain Metastases: T1 Post-Contrast",
+    "caption": "Axial T1 post-contrast MRI: many small enhancing brain metastases from lung cancer. Source: Hellerhoff (Wikimedia Commons, BC - Hirnmetastasen MRT T1KM ax), CC BY-SA 3.0. Look for: Met at the Gray-White Junction; Punctate Met.",
+    "style": "mri",
+    "image": "images/cns/cns-mets-mri.jpg"
+   },
+   {
+    "title": "SRS Plan: Targets & Dose",
+    "caption": "Fractionated SRS plan: left frontal resection cavity (24 Gy in 3 fractions) and a right-sided intact metastasis, axial (left) and coronal (right); prescription isodose in green, low-dose spill in blue, optic structures in orange. Source: Lewis J et al., Cureus 2025 (PMC12414254), Fig. 2A, CC BY 4.0; orientation letters removed. Look for: GTV = Enhancing Lesion (±1 mm PTV); Prescription Isodose Line; 12 Gy Volume (V12); Optic Nerves / Chiasm; Resection Cavity.",
+    "style": "mri",
+    "image": "images/cns/cns-srs-plan.jpg"
+   }
+  ]
+ },
+ "img-cns-benign": {
+  "intro": "<p>Benign tumors are a big part of CNS radiation: <strong>meningiomas</strong>, <strong>vestibular schwannomas</strong>, and <strong>pituitary adenomas</strong>. Each has a signature look.</p>",
+  "plates": [],
+  "gallery": [
+   {
+    "title": "Meningioma: T1 Post-Contrast",
+    "caption": "Coronal T1 post-contrast MRI: homogeneously enhancing parasagittal meningioma. Source: James Heilman, MD (Wikimedia Commons, MRIMeningioma), CC BY-SA 4.0; arrow removed. Look for: Homogeneously Enhancing Extra-axial Mass; CSF Cleft.",
+    "style": "mri",
+    "image": "images/cns/cns-mening.jpg"
+   },
+   {
+    "title": "Vestibular Schwannoma: T1 Post-Contrast",
+    "caption": "Axial T1 post-contrast MRI: right vestibular schwannoma at the cerebellopontine angle (patient's right on your left). Source: Hellerhoff (Wikimedia Commons, Akustikus-Schwannom rechts MRT T1KM axial 001), CC BY-SA 3.0. Look for: Intracanalicular Part (Cone); Cisternal Part (Scoop); Brainstem / Pons; 4th Ventricle.",
+    "style": "mri",
+    "image": "images/cns/cns-vs.jpg"
+   },
+   {
+    "title": "Pituitary Macroadenoma: Coronal T1",
+    "caption": "Coronal T1 post-contrast MRI: pituitary macroadenoma expanding the sella and rising into the suprasellar cistern to abut the optic chiasm. Source: Iyer C et al., JCEM Case Rep 2026 (PMC13198944), Fig. 1A, CC BY 4.0; arrow removed. Look for: Macroadenoma (≥1 cm); Optic Chiasm (Compressed); Internal Carotid Artery; Sphenoid Sinus.",
+    "style": "mri",
+    "image": "images/cns/cns-pit.jpg"
+   }
+  ]
+ },
+ "img-cns-advanced": {
+  "intro": "<p><strong>CT</strong> is the first scan in the ER and the planning scan; <strong>advanced MRI and PET</strong> help separate tumor from treatment effect after RT.</p>",
+  "plates": [],
+  "gallery": [
+   {
+    "title": "CT Head: What to Look For",
+    "caption": "Non-contrast axial CT: acute left basal ganglia hemorrhage (bright) with surrounding hypodense edema. Source: Elsherif Y et al., Radiol Case Rep 2025 (PMC12098020), Fig. 6, CC BY 4.0. Look for: Acute Hemorrhage (Bright); Hypodense Edema.",
+    "style": "ct",
+    "image": "images/cns/cns-ct-head.jpg"
+   },
+   {
+    "title": "After Treatment: Progression or Treatment Effect?",
+    "caption": "Treated glioblastoma with a new enhancing lesion (left: T1 post-contrast) that was pathology-proven radiation necrosis; perfusion map (right) shows the lesion is not hyperperfused. Source: Mohamedbaqer Easa A et al., Cureus 2025 (PMC12393895), Fig. 2A-B, CC BY 4.0; circles and panel letters removed. Look for: New/Growing Enhancement; Perfusion (rCBV).",
+    "style": "mri",
+    "image": "images/cns/cns-post-tx.jpg"
+   },
+   {
+    "title": "MRI Spine: Cord Compression",
+    "caption": "Sagittal T2 MRI of the thoracic spine: pathologic T5 fracture from metastatic rectal cancer with epidural extension compressing the cord. Source: Kuah T et al., Cancers 2022 (PMC9265325), Fig. 10a, CC BY 4.0. Look for: Vertebral Body Metastasis; Epidural Tumor; Compressed Spinal Cord; CSF Around the Cord.",
+    "style": "mri",
+    "image": "images/cns/cns-spine-mri.jpg"
+   }
+  ]
+ }
+}

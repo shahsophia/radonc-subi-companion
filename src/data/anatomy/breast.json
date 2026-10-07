@@ -1,0 +1,305 @@
+{
+ "anat-breast-regions": {
+  "intro": "<p>Two views of the breast itself: a <strong>side view</strong> of what lies under the skin, and a close-up of the <strong>duct and lobule</strong>, which is where the difference between ductal and lobular cancer comes from. Explore each view, then switch to Quiz mode.</p>",
+  "plates": [
+   {
+    "id": "br-sagittal",
+    "title": "Breast Side View (Sagittal)",
+    "style": "photo",
+    "caption": "Sagittal section of the breast: nipple on the left, chest wall on the right. Illustration by Patrick J. Lynch.",
+    "hotspots": [
+     {
+      "id": "skin",
+      "label": "Skin",
+      "x": 36,
+      "y": 30,
+      "blurb": "Skin changes stage the tumor: ulceration, satellite nodules, or peau d'orange edema = T4b; inflammatory cancer = T4d."
+     },
+     {
+      "id": "cooper",
+      "label": "Cooper's Ligaments",
+      "x": 51,
+      "y": 26,
+      "blurb": "Fibrous bands from the skin to the chest wall. Tumor pulling on them causes skin dimpling and retraction."
+     },
+     {
+      "id": "gland",
+      "label": "Glandular Tissue (Lobes)",
+      "x": 55,
+      "y": 42,
+      "blurb": "15–20 lobes, each draining through its own duct to the nipple. Dense glandular tissue lowers mammogram sensitivity."
+     },
+     {
+      "id": "ducts",
+      "label": "Lactiferous Ducts",
+      "x": 28,
+      "y": 61,
+      "blurb": "Main ducts converging on the nipple. Nipple retraction or bloody discharge can come from a tumor involving these ducts."
+     },
+     {
+      "id": "retromammary",
+      "label": "Retromammary Fat",
+      "x": 59,
+      "y": 77,
+      "blurb": "Fat plane between the breast and the pectoralis fascia. Its preservation on imaging suggests no deep invasion."
+     },
+     {
+      "id": "pecmajor",
+      "label": "Pectoralis Major",
+      "x": 65,
+      "y": 40,
+      "blurb": "Tumor invading only the pectoralis muscle is NOT T4a. Chest wall (T4a) means ribs, intercostal muscles, or serratus anterior."
+     },
+     {
+      "id": "chestwall",
+      "label": "Chest Wall (Ribs / Intercostals)",
+      "x": 69,
+      "y": 58,
+      "blurb": "True chest wall invasion = T4a. The chest wall is the target after mastectomy (PMRT)."
+     }
+    ],
+    "image": "images/breast/br-sagittal.jpg"
+   },
+   {
+    "id": "br-tdlu",
+    "title": "Duct & Lobule (TDLU)",
+    "style": "schematic",
+    "caption": "Schematic of a breast lobe from the nipple (top) down to the terminal duct lobular units (circled). Source: Banik U et al., J Exp Clin Cancer Res 2017 (PMC5517797), Fig. 1, CC BY 4.0; labels and pointer lines removed.",
+    "hotspots": [
+     {
+      "id": "lobule",
+      "label": "Lobule (Acini)",
+      "x": 60,
+      "y": 84,
+      "blurb": "Milk-producing acini. Lobular carcinoma cells look like lobule cells: small, uniform, and they lose E-cadherin."
+     },
+     {
+      "id": "tdlu",
+      "label": "Terminal Duct Lobular Unit",
+      "x": 77,
+      "y": 76,
+      "blurb": "Where almost all breast cancers start, both ductal and lobular. 'Ductal' vs 'lobular' describes how the cells look, not exactly where they start."
+     },
+     {
+      "id": "terminal-duct",
+      "label": "Terminal Duct",
+      "x": 69,
+      "y": 68,
+      "blurb": "Small duct leading out of the lobule into the larger duct system."
+     },
+     {
+      "id": "duct",
+      "label": "Segmental (Major) Duct",
+      "x": 41,
+      "y": 33,
+      "blurb": "Larger ducts leading to the nipple. DCIS fills and spreads along ducts, which is why it often shows up as linear or branching calcifications."
+     },
+     {
+      "id": "sinus",
+      "label": "Lactiferous Sinus",
+      "x": 41,
+      "y": 10,
+      "blurb": "Dilated segment just under the nipple where milk collects."
+     },
+     {
+      "id": "stroma",
+      "label": "Intralobular Stroma",
+      "x": 84,
+      "y": 84,
+      "blurb": "Loose connective tissue inside and around the lobule. Invasive cancer grows into the stroma: IDC forms a firm, spiculated mass; ILC infiltrates in single-file lines without a clear mass."
+     }
+    ],
+    "image": "images/breast/br-tdlu.jpg"
+   }
+  ],
+  "gallery": [
+   {
+    "title": "Clinical photo: peau d'orange",
+    "caption": "Right inflammatory breast cancer: diffuse erythema and peau d'orange skin edema (T4d). Levine PH et al., Cancers 2010 (PMC3827596), CC BY 3.0.",
+    "style": "photo",
+    "image": "images/breast/br-g-peau.jpg"
+   },
+   {
+    "title": "Histology: IDC",
+    "caption": "Cohesive nests and glands forming a mass.",
+    "style": "photo",
+    "image": "images/breast/br-g-idc.jpg"
+   },
+   {
+    "title": "Histology: ILC",
+    "caption": "Single-file 'Indian file' cells, E-cadherin negative.",
+    "style": "photo",
+    "image": "images/breast/br-g-ilc.jpg"
+   }
+  ]
+ },
+ "anat-breast-nodes": {
+  "intro": "<p>The regional nodes of the breast are defined by <strong>one muscle: the pectoralis minor</strong>. Work through the nodal basins first, then the three axillary levels, and make sure you can place each boundary cold.</p>",
+  "plates": [
+   {
+    "id": "br-nodal-basins",
+    "title": "Regional Nodal Basins",
+    "style": "schematic",
+    "caption": "Front view of the chest showing lymphatic drainage of the right breast (on your left): toward the axilla, up to the clavicle, and medially along the sternum.",
+    "hotspots": [
+     {
+      "id": "ax",
+      "label": "Axillary Nodes (Levels I–III)",
+      "x": 26,
+      "y": 38,
+      "blurb": "The main drainage for every part of the breast (~75% of lymph). Divided into levels I, II, III by the pectoralis minor."
+     },
+     {
+      "id": "scv",
+      "label": "Supraclavicular Nodes",
+      "x": 42,
+      "y": 20,
+      "blurb": "Above the clavicle, from the cricoid down to the clavicular head, between the SCM and scalene muscles. Involved SCV nodes = cN3c (Stage IIIC), still curable."
+     },
+     {
+      "id": "imn",
+      "label": "Internal Mammary Nodes",
+      "x": 53,
+      "y": 40,
+      "blurb": "Along the internal mammary vessels, just lateral to the sternum in intercostal spaces 1–3. Medial and central tumors drain here."
+     },
+     {
+      "id": "icv",
+      "label": "Infraclavicular Nodes (Level III)",
+      "x": 28,
+      "y": 28,
+      "blurb": "The highest axillary level, just below the clavicle and medial to the pectoralis minor. Involvement = cN3a."
+     },
+     {
+      "id": "rotter",
+      "label": "Rotter's (Interpectoral) Nodes",
+      "x": 33,
+      "y": 34,
+      "blurb": "Between the pectoralis major and minor, counted with level II."
+     },
+     {
+      "id": "sln",
+      "label": "Sentinel Node",
+      "x": 30,
+      "y": 49,
+      "blurb": "The first node that drains the tumor, almost always in level I. Sentinel node biopsy replaced routine axillary dissection for a clinically negative axilla."
+     }
+    ],
+    "image": "images/breast/br-nodal-basins.jpg"
+   },
+   {
+    "id": "br-axillary-levels",
+    "title": "Axillary Levels I–III",
+    "style": "schematic",
+    "caption": "Drawing of the right axilla: level I nodes (red) lateral to the pectoralis minor, level II (purple) behind it, level III (blue) medial to it. Source: Lu Q et al., PLoS One 2013 (PMC3702586), Fig. 1, CC BY 4.0; labels and legend removed.",
+    "hotspots": [
+     {
+      "id": "l1",
+      "label": "Level I (Lateral to Pec Minor)",
+      "x": 25,
+      "y": 61,
+      "blurb": "Lateral to the lateral border of the pectoralis minor, down to about the 4th–5th rib. The sentinel node is usually here. Standard 'high tangents' cover much of it."
+     },
+     {
+      "id": "l2",
+      "label": "Level II (Behind Pec Minor)",
+      "x": 38,
+      "y": 47,
+      "blurb": "Directly behind (deep to) the pectoralis minor, including Rotter's nodes. A standard ALND removes levels I and II."
+     },
+     {
+      "id": "l3",
+      "label": "Level III (Medial to Pec Minor)",
+      "x": 48,
+      "y": 41,
+      "blurb": "Medial to the medial border of the pectoralis minor, up to the clavicle. Also called infraclavicular. Not routinely dissected, but covered in regional nodal RT."
+     },
+     {
+      "id": "pecminor",
+      "label": "Pectoralis Minor",
+      "x": 37,
+      "y": 76,
+      "blurb": "THE landmark: level I is lateral, level II is behind, level III is medial. It runs from ribs 3–5 up to the coracoid process."
+     },
+     {
+      "id": "axv",
+      "label": "Axillary Vein",
+      "x": 20,
+      "y": 42,
+      "blurb": "Runs through the axilla toward the clavicle. The upper limit of an axillary dissection."
+     }
+    ],
+    "image": "images/breast/br-axillary-levels.jpg"
+   },
+   {
+    "id": "br-nodes-ct",
+    "title": "Nodal Contours on Axial CT",
+    "style": "ct",
+    "caption": "Placeholder CT-style axial slice through the upper chest — swap in a real planning CT with nodal contours — swap in a real labeled image here.",
+    "hotspots": [
+     {
+      "id": "ct-l1",
+      "label": "Level I Contour",
+      "x": 22,
+      "y": 52,
+      "blurb": "Lateral to the pectoralis minor, anterior to the latissimus and subscapularis."
+     },
+     {
+      "id": "ct-l2",
+      "label": "Level II Contour",
+      "x": 36,
+      "y": 46,
+      "blurb": "Deep to the pectoralis minor, around the axillary vessels."
+     },
+     {
+      "id": "ct-l3",
+      "label": "Level III Contour",
+      "x": 48,
+      "y": 38,
+      "blurb": "Medial to the pectoralis minor, just below the clavicle."
+     },
+     {
+      "id": "ct-scv",
+      "label": "Supraclavicular Contour",
+      "x": 54,
+      "y": 22,
+      "blurb": "Above the clavicular head, lateral to the jugular vein and anterior to the scalenes. The brachial plexus runs just behind it."
+     },
+     {
+      "id": "ct-imn",
+      "label": "Internal Mammary Vessels",
+      "x": 66,
+      "y": 55,
+      "blurb": "The IMN target follows the internal mammary artery and vein in the first 3 intercostal spaces."
+     },
+     {
+      "id": "ct-heart",
+      "label": "Heart",
+      "x": 64,
+      "y": 75,
+      "blurb": "The key organ at risk for left-sided treatment, especially when the IMNs are treated."
+     }
+    ]
+   }
+  ],
+  "gallery": [
+   {
+    "title": "RTOG / ESTRO contouring atlas slice",
+    "caption": "The official nodal boundaries as treatment-planning contours.",
+    "style": "ct"
+   },
+   {
+    "title": "Cadaveric dissection: the axilla",
+    "caption": "Pectoralis major (P Maj) cut and reflected to show the pectoralis minor (P Min) and the axillary fat and nodes (arrowheads). Cocco G et al., Insights Imaging 2023 (PMC10175532), CC BY 4.0.",
+    "style": "photo",
+    "image": "images/breast/br-g-axilla-dissection.jpg"
+   },
+   {
+    "title": "Lymphoscintigraphy",
+    "caption": "Planar lymphoscintigraphy and SPECT/CT sentinel node mapping for a left breast cancer, showing drainage to the axilla and beyond. Israel O et al., Eur J Nucl Med Mol Imaging 2019 (PMC6667427), CC BY 4.0.",
+    "style": "schematic",
+    "image": "images/breast/br-g-lsg.jpg"
+   }
+  ]
+ }
+}

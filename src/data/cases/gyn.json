@@ -1,0 +1,617 @@
+{
+ "category": "Case-Based Practice",
+ "intro": "<p>Eight cases that get harder as you go, across the endometrium, cervix, and vulva. Each starts with a one-liner, then gives you more information step by step: the <strong>exam, MRI, PET, and pathology</strong>, the <strong>FIGO stage</strong>, the <strong>surgery or chemoradiation decision</strong>, the <strong>brachytherapy, doses, and targets</strong>, the <strong>landmark trials</strong>, and the <strong>side effects</strong> to counsel on. Some steps are multiple choice, some are fill-in-the-blank. Cervix uses <strong>FIGO 2018</strong>, endometrium <strong>FIGO 2009</strong> (with molecular classification), and vulva <strong>FIGO 2021</strong>.</p>",
+ "cases": [
+  {
+   "id": "gyn-case-5",
+   "level": "Foundational",
+   "title": "Case 1: Bleeding After Menopause",
+   "oneLiner": "A 66-year-old woman who went through menopause 14 years ago has had three episodes of vaginal spotting. She has obesity and type 2 diabetes.",
+   "steps": [
+    {
+     "label": "Workup",
+     "prompt": "What is the best first workup for postmenopausal bleeding?",
+     "choices": [
+      "CT of the abdomen and pelvis",
+      "Transvaginal ultrasound and/or endometrial biopsy",
+      "Pap smear only",
+      "Reassurance"
+     ],
+     "correctIndex": 1,
+     "explanation": "Postmenopausal bleeding is endometrial cancer until proven otherwise. A thickened endometrial stripe on transvaginal ultrasound or an endometrial biopsy gives the answer. Obesity and diabetes (excess estrogen) are classic risk factors."
+    },
+    {
+     "label": "Molecular",
+     "prompt": "Biopsy shows endometrioid adenocarcinoma, and she has a hysterectomy, BSO, and sentinel node biopsy. Which tests are now done on every endometrial cancer?",
+     "choices": [
+      "HER2 and ER",
+      "MMR/MSI, p53, and POLE",
+      "p16 and HPV",
+      "PD-L1 only"
+     ],
+     "correctIndex": 1,
+     "explanation": "The molecular class (POLE-mutated, MMR-deficient, p53-abnormal, or no specific molecular profile) now shapes adjuvant treatment. MMR deficiency also prompts Lynch syndrome screening."
+    },
+    {
+     "label": "Stage",
+     "context": "<p><strong>Pathology:</strong> grade 2 endometrioid, <strong>60% myometrial invasion</strong>, no cervical stromal invasion, no LVSI, sentinel nodes negative. <strong>Molecular:</strong> no specific molecular profile (NSMP).</p>",
+     "prompt": "What is her FIGO 2009 stage?",
+     "answer": "Stage IB",
+     "explanation": "Myometrial invasion of 50% or more is IB; under 50% is IA. Cervical stromal invasion would be stage II."
+    },
+    {
+     "label": "Adjuvant",
+     "prompt": "What adjuvant treatment fits best?",
+     "choices": [
+      "Observation only",
+      "Vaginal brachytherapy",
+      "Pelvic EBRT plus chemo",
+      "Whole-abdomen RT"
+     ],
+     "correctIndex": 1,
+     "explanation": "IB grade 1-2 is intermediate risk. Most recurrences happen at the vaginal cuff, so vaginal brachytherapy (or observation) is the usual choice."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial showed vaginal brachytherapy controlled vaginal recurrence as well as pelvic EBRT, with far less GI toxicity?",
+     "choices": [
+      "PORTEC-2",
+      "PORTEC-3",
+      "GOG 258",
+      "LACC"
+     ],
+     "correctIndex": 0,
+     "explanation": "PORTEC-1 and GOG 99 showed pelvic RT cut (mostly vaginal) recurrence without improving survival; PORTEC-2 then showed the cylinder was enough for intermediate-risk patients."
+    },
+    {
+     "label": "Dose",
+     "prompt": "Give a typical vaginal brachytherapy prescription.",
+     "answer": "HDR 7 Gy in 3 fractions prescribed to 0.5 cm depth, treating the upper vagina (about 3-5 cm).",
+     "explanation": "When given after pelvic EBRT, the cylinder dose is lower, for example 5-6 Gy in 2-3 fractions."
+    },
+    {
+     "label": "Counseling",
+     "image": "images/gyn/gyn-c-dilator.jpg",
+     "caption": "A vaginal dilator. Moon H, Korean J Women Health Nurs 2023 (PMC10788390), CC BY 4.0.",
+     "prompt": "Which long-term side effect will you counsel her about, and what is this device for?",
+     "choices": [
+      "Hearing loss; it is an earplug",
+      "Vaginal dryness and narrowing (stenosis); a dilator used regularly keeps the vagina open for exams and comfort",
+      "Bladder stones; it is a catheter",
+      "Lymphedema; it is a compression sleeve"
+     ],
+     "correctIndex": 1,
+     "explanation": "Vaginal brachytherapy has few side effects; dryness and stenosis are the main ones. Regular dilator use and lubricants help."
+    }
+   ]
+  },
+  {
+   "id": "gyn-case-1",
+   "level": "Foundational",
+   "title": "Case 2: After the Surgery",
+   "oneLiner": "A 41-year-old woman has a 3 cm squamous cell carcinoma of the cervix, confined to the cervix, with no nodes on PET. She wants surgery.",
+   "steps": [
+    {
+     "label": "Stage",
+     "prompt": "What is her FIGO 2018 stage before surgery?",
+     "choices": [
+      "IB1",
+      "IB2",
+      "IB3",
+      "IIB"
+     ],
+     "correctIndex": 1,
+     "explanation": "Confined to the cervix: IB1 is 2 cm or less, IB2 over 2 and up to 4 cm, IB3 over 4 cm. Parametrial invasion would be IIB."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Her surgeon plans a radical hysterectomy. Which trial showed that the minimally invasive (laparoscopic/robotic) approach had worse disease-free and overall survival than open surgery?",
+     "choices": [
+      "LACC",
+      "SHAPE",
+      "GOG 92",
+      "KEYNOTE-A18"
+     ],
+     "correctIndex": 0,
+     "explanation": "After LACC, radical hysterectomy for cervical cancer is done open. SHAPE showed low-risk tumors (2 cm or less, shallow) do fine with a simple hysterectomy."
+    },
+    {
+     "label": "Pathology",
+     "context": "<p><strong>Open radical hysterectomy and sentinel nodes:</strong> 3.2 cm squamous cell carcinoma, <strong>LVSI present</strong>, invasion into the <strong>middle third</strong> of the cervical stroma. Margins, parametria, and 0 of 14 nodes negative.</p>",
+     "prompt": "Which criteria does her pathology meet?",
+     "choices": [
+      "None; observe",
+      "Sedlis (intermediate risk)",
+      "Peters (high risk)",
+      "Both"
+     ],
+     "correctIndex": 1,
+     "explanation": "LVSI-positive with middle-third invasion and a tumor 2 cm or larger meets Sedlis. Peters features (positive nodes, positive margins, parametrial invasion) are absent."
+    },
+    {
+     "label": "Adjuvant",
+     "prompt": "What adjuvant therapy do you recommend?",
+     "choices": [
+      "Observation",
+      "Pelvic RT (IMRT), about 45-50.4 Gy",
+      "Pelvic chemoRT with cisplatin",
+      "Vaginal brachytherapy alone"
+     ],
+     "correctIndex": 1,
+     "explanation": "Sedlis criteria lead to pelvic RT: GOG 92 cut recurrence roughly in half. Chemo is added for Peters features (GOG 109)."
+    },
+    {
+     "label": "Target",
+     "image": "images/gyn/gyn-ct-sim.jpg",
+     "caption": "Axial planning CT for cervical cancer IMRT: primary CTV (yellow), nodal CTV (red), and an involved node (pink). Cancers (Basel) 2026 (PMC13465101), CC BY 4.0.",
+     "prompt": "What does the target include, and how do you account for motion at simulation?",
+     "answer": "The vaginal cuff and upper vagina, parametria, and pelvic nodes (common, external, and internal iliac, obturator, and presacral). Simulate with a full and an empty bladder to capture how much the cuff moves (an ITV).",
+     "explanation": ""
+    },
+    {
+     "label": "Side effects",
+     "prompt": "What side effects of pelvic RT do you counsel her about?",
+     "answer": "Acute: diarrhea and cramping, urinary frequency and burning, fatigue, and mild skin irritation. Late: vaginal dryness and stenosis (dilators), leg lymphedema (higher after node dissection plus RT), bowel or bladder injury, insufficiency fractures of the pelvis, and early menopause if the ovaries are in the field.",
+     "explanation": "For a young patient who still has her ovaries, ovarian transposition at surgery can move them out of the field."
+    }
+   ]
+  },
+  {
+   "id": "gyn-case-2",
+   "level": "Intermediate",
+   "title": "Case 3: Bleeding After Intercourse",
+   "oneLiner": "A 52-year-old woman who hasn't had a Pap smear in 15 years has bleeding after intercourse. Speculum exam shows a friable mass on the cervix, and the rectovaginal exam suggests thickening on the right.",
+   "steps": [
+    {
+     "label": "Imaging",
+     "image": "images/gyn/gyn-c-cervix-exam.jpg",
+     "caption": "Speculum view of a stage IIB cervical cancer before treatment. Moon H, Korean J Women Health Nurs 2023 (PMC10788390), CC BY 4.0.",
+     "prompt": "Biopsy shows squamous cell carcinoma. Which imaging best defines the parametria?",
+     "choices": [
+      "CT",
+      "Pelvic MRI",
+      "Ultrasound",
+      "Bone scan"
+     ],
+     "correctIndex": 1,
+     "explanation": "MRI shows the cervical stromal ring and whether tumor breaks through it into the parametrial fat. PET/CT then checks nodes and distant disease. FIGO 2018 lets imaging and pathology modify the stage."
+    },
+    {
+     "label": "Stage",
+     "context": "<p><strong>MRI:</strong> 5.2 cm cervical tumor that breaks through the right stromal ring into the parametrial fat; it does not reach the side wall; no hydronephrosis. <strong>PET/CT:</strong> no nodal or distant disease.</p>",
+     "prompt": "What is her FIGO 2018 stage?",
+     "answer": "IIB",
+     "explanation": "Parametrial invasion not reaching the pelvic side wall is IIB. Side wall involvement or hydronephrosis would be IIIB; pelvic nodes IIIC1; bladder or rectal mucosa IVA."
+    },
+    {
+     "label": "Treatment",
+     "prompt": "What is the standard treatment?",
+     "choices": [
+      "Radical hysterectomy",
+      "Definitive chemoradiation with weekly cisplatin, plus brachytherapy",
+      "Chemotherapy alone",
+      "Pelvic RT without chemo or brachy"
+     ],
+     "correctIndex": 1,
+     "explanation": "Locally advanced cervical cancer gets definitive chemoRT plus brachytherapy, not surgery. Surgery and chemoRT together double the side effects without improving cure."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which set of trials established concurrent cisplatin with radiation as the standard for locally advanced cervical cancer?",
+     "choices": [
+      "The 1999 cisplatin trials (GOG 85, 120, 123, RTOG 9001, SWOG 8797)",
+      "PORTEC-1 and -2",
+      "GOG 37 and GOG 205",
+      "LACC and SHAPE"
+     ],
+     "correctIndex": 0,
+     "explanation": "Five trials published around 1999 showed about a 30-50% lower risk of death with concurrent cisplatin. Weekly cisplatin 40 mg/m2 is standard."
+    },
+    {
+     "label": "Brachytherapy",
+     "image": "images/gyn/gyn-c-igabt.jpg",
+     "caption": "CT-based brachytherapy planning with a tandem-and-ovoid applicator: axial (left) and sagittal (right) views with the target and dose lines. Chen YC, Yeh CY, Cancers (Basel) 2026 (PMC12939052), CC BY 4.0.",
+     "prompt": "Her colleague suggests replacing brachytherapy with an IMRT or SBRT boost to save time. Is that acceptable?",
+     "choices": [
+      "Yes, they are equivalent",
+      "No: brachytherapy delivers the curative dose to the cervix (HR-CTV D90 of 85 Gy EQD2 or more) and can't be replaced",
+      "Only if she is over 70",
+      "Only for squamous cell cancers"
+     ],
+     "correctIndex": 1,
+     "explanation": "Leaving out brachytherapy is linked to worse survival. EMBRACE-I showed about 92% local control with MRI-guided brachytherapy, and HR-CTV D90 of 85 Gy or more predicted control."
+    },
+    {
+     "label": "Prescription",
+     "image": "images/gyn/gyn-c-tandem.jpg",
+     "caption": "AP planning X-ray of a tandem-and-ovoid applicator (left) and its typical dose distribution (right). Moon H, Korean J Women Health Nurs 2023 (PMC10788390), CC BY 4.0.",
+     "prompt": "Give the EBRT, chemo, and brachytherapy prescription, and the time limit.",
+     "answer": "Pelvic IMRT 45 Gy in 25 fractions with weekly cisplatin 40 mg/m2; HDR brachytherapy, for example 7 Gy x 4 (or 6 Gy x 5), aiming for HR-CTV D90 of 85 Gy EQD2 or more; finish everything within 56 days.",
+     "explanation": "Each extra day beyond 8 weeks costs roughly 0.5-1% local control."
+    },
+    {
+     "label": "Response",
+     "image": "images/gyn/gyn-c-cervix-response.jpg",
+     "caption": "The same stage IIB cervix before (A) and 5 months after (B) 50.4 Gy EBRT plus HDR brachytherapy. Moon H, Korean J Women Health Nurs 2023 (PMC10788390), CC BY 4.0.",
+     "prompt": "Five months after treatment her cervix looks like the right-hand photo. What follow-up imaging is standard about 3 months after chemoRT?",
+     "choices": [
+      "None",
+      "PET/CT",
+      "Bone scan",
+      "Mammogram"
+     ],
+     "correctIndex": 1,
+     "explanation": "A PET/CT about 3 months after chemoRT shows whether the response is complete. A complete metabolic response is a strong sign of good outcome."
+    },
+    {
+     "label": "What if",
+     "image": "images/gyn/gyn-mri-cx-sag.jpg",
+     "caption": "Sagittal T2 MRI, anterior on the left: a bulky cervical cancer invading the posterior bladder wall (FIGO IVA). Otero-García et al., Insights Imaging 2019 (PMC6375059), CC BY 4.0.",
+     "prompt": "Change one detail: MRI shows tumor invading the bladder mucosa. What is the stage, and does the plan change?",
+     "choices": [
+      "IIIB; surgery instead",
+      "IVA; still definitive chemoRT plus brachytherapy",
+      "IVB; palliative care only",
+      "IIA; no change in stage"
+     ],
+     "correctIndex": 1,
+     "explanation": "Bladder or rectal mucosal invasion is IVA, still treated for cure with chemoRT and brachytherapy. Watch for fistula."
+    }
+   ]
+  },
+  {
+   "id": "gyn-case-3",
+   "level": "Intermediate",
+   "title": "Case 4: A Node on PET",
+   "oneLiner": "A 45-year-old with a 3.5 cm cervical adenocarcinoma confined to the cervix on MRI has a PET/CT showing an avid 1.6 cm left external iliac node.",
+   "steps": [
+    {
+     "label": "Stage",
+     "prompt": "What is her FIGO 2018 stage?",
+     "choices": [
+      "IB2",
+      "IIB",
+      "IIIC1r",
+      "IVB"
+     ],
+     "correctIndex": 2,
+     "explanation": "Any pelvic node makes it IIIC1, whatever the size of the primary. The 'r' means radiology found it; 'p' means pathology. Para-aortic nodes would be IIIC2."
+    },
+    {
+     "label": "Surgery?",
+     "prompt": "Is radical hysterectomy still a good option?",
+     "choices": [
+      "Yes, with a node dissection",
+      "No: known node-positive disease is treated with definitive chemoRT",
+      "Only if she wants fertility preserved",
+      "Only after induction chemo"
+     ],
+     "correctIndex": 1,
+     "explanation": "Node-positive patients would need adjuvant chemoRT after surgery anyway (Peters), so they go straight to definitive chemoRT. If nodes are found during surgery, the hysterectomy is often abandoned in favor of chemoRT."
+    },
+    {
+     "label": "Plan",
+     "prompt": "What is the treatment plan?",
+     "answer": "Definitive pelvic chemoRT with weekly cisplatin, a boost to the involved node, and brachytherapy.",
+     "explanation": "Many add the para-aortic nodes when common iliac or multiple pelvic nodes are involved."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial showed better progression-free and overall survival from adding pembrolizumab during and after chemoRT for high-risk locally advanced cervical cancer?",
+     "choices": [
+      "KEYNOTE-A18",
+      "KEYNOTE-826",
+      "INTERLACE",
+      "RUBY"
+     ],
+     "correctIndex": 0,
+     "explanation": "KEYNOTE-A18 covered node-positive or stage III-IVA disease. INTERLACE added induction carboplatin and paclitaxel; KEYNOTE-826 is for metastatic or recurrent disease."
+    },
+    {
+     "label": "Node boost",
+     "image": "images/gyn/gyn-ct-sim.jpg",
+     "caption": "Planning CT: primary CTV (yellow), elective nodal CTV (red), and the involved node (pink) that gets a boost. Cancers (Basel) 2026 (PMC13465101), CC BY 4.0.",
+     "prompt": "What dose does the involved node get, and when would you add the para-aortic nodes?",
+     "answer": "About 55-60 Gy, usually as a simultaneous integrated boost, with the pelvis at 45 Gy in 25. Add para-aortic coverage for common iliac, multiple pelvic, or para-aortic nodes.",
+     "explanation": ""
+    },
+    {
+     "label": "Late effect",
+     "prompt": "She is 45 and still menstruating. Which effect of pelvic chemoRT should she expect, and plan for?",
+     "choices": [
+      "No change in her periods",
+      "Permanent menopause from ovarian failure, with hot flashes and bone health to manage",
+      "Temporary hair loss only",
+      "Hearing loss from the radiation"
+     ],
+     "correctIndex": 1,
+     "explanation": "The ovaries receive a sterilizing dose in pelvic chemoRT. In patients treated with surgery, ovarian transposition can preserve function; here it is too late, so plan for menopausal symptoms and bone health."
+    }
+   ]
+  },
+  {
+   "id": "gyn-case-6",
+   "level": "Intermediate",
+   "title": "Case 5: One Sentinel Node",
+   "oneLiner": "A 61-year-old woman has grade 3 endometrioid endometrial cancer. At surgery, one of three sentinel nodes (left external iliac) has a 6 mm metastasis.",
+   "steps": [
+    {
+     "label": "Stage",
+     "context": "<p><strong>Pathology:</strong> grade 3, 70% myometrial invasion, substantial LVSI, 1 positive pelvic sentinel node. <strong>Molecular:</strong> p53 wild-type, <strong>MMR-deficient</strong>. <strong>CT chest, abdomen, pelvis:</strong> no para-aortic or distant disease.</p>",
+     "prompt": "What is her FIGO 2009 stage?",
+     "answer": "IIIC1",
+     "explanation": "Pelvic node involvement is IIIC1; para-aortic nodes would be IIIC2."
+    },
+    {
+     "label": "MMR",
+     "prompt": "What does the MMR-deficient result mean for her and her family?",
+     "choices": [
+      "Nothing",
+      "Screen for Lynch syndrome with germline testing; MMR-deficient tumors also respond well to immunotherapy",
+      "She needs a mastectomy",
+      "She should avoid radiation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Lynch syndrome raises the risk of colorectal, endometrial, and other cancers in her relatives. MMR deficiency predicts benefit from checkpoint inhibitors."
+    },
+    {
+     "label": "Adjuvant",
+     "prompt": "Which adjuvant plan fits best?",
+     "choices": [
+      "Vaginal brachytherapy alone",
+      "Chemotherapy ± pelvic EBRT (± immunotherapy)",
+      "Observation",
+      "Whole-abdomen RT"
+     ],
+     "correctIndex": 1,
+     "explanation": "Node-positive endometrial cancer is chemo-led, with pelvic EBRT often added for pelvic and vaginal control."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial showed that chemoRT beat RT alone for survival in high-risk endometrial cancer, mainly in stage III and serous tumors?",
+     "choices": [
+      "PORTEC-3",
+      "PORTEC-2",
+      "GOG 258",
+      "GOG 92"
+     ],
+     "correctIndex": 0,
+     "explanation": "PORTEC-3 favored chemoRT over RT alone. GOG 258 found chemo alone and chemoRT had similar relapse-free survival, but RT reduced vaginal and pelvic/para-aortic recurrences, which is why many combine them."
+    },
+    {
+     "label": "Immunotherapy",
+     "prompt": "Which systemic addition is especially helpful for her MMR-deficient tumor?",
+     "choices": [
+      "Trastuzumab",
+      "A checkpoint inhibitor (dostarlimab or pembrolizumab) added to chemo",
+      "Tamoxifen",
+      "Bevacizumab"
+     ],
+     "correctIndex": 1,
+     "explanation": "RUBY (dostarlimab) and NRG-GY018 (pembrolizumab) showed the biggest benefit in MMR-deficient advanced endometrial cancer."
+    },
+    {
+     "label": "Dose",
+     "image": "images/gyn/gyn-nodes-map.jpg",
+     "caption": "Pelvic, para-aortic, and groin nodes around the uterus. The endometrium drains to the pelvic nodes and also directly from the fundus to the para-aortics. Cancer Research UK, Wikimedia Commons, CC BY-SA 4.0; labels removed.",
+     "prompt": "If pelvic EBRT is given, what dose and target?",
+     "answer": "45-50.4 Gy in 25-28 fractions to the vaginal cuff and pelvic nodes (IMRT), ± a vaginal brachytherapy boost.",
+     "explanation": "IIIC2 disease would extend the field up the para-aortic chain."
+    }
+   ]
+  },
+  {
+   "id": "gyn-case-4",
+   "level": "Advanced",
+   "title": "Case 6: The Node at L3",
+   "oneLiner": "A 58-year-old with a 6 cm cervical squamous cell carcinoma and invasion of both parametria has PET-avid pelvic nodes and two para-aortic nodes at L3. Her kidneys are normal.",
+   "steps": [
+    {
+     "label": "Stage",
+     "image": "images/gyn/gyn-g-pet-paraaortic.jpg",
+     "caption": "An FDG-avid para-aortic node on fused PET/CT. J Imaging 2025 (PMC11856187), CC BY 4.0.",
+     "prompt": "What is her FIGO 2018 stage?",
+     "choices": [
+      "IIB",
+      "IIIC1r",
+      "IIIC2r",
+      "IVB"
+     ],
+     "correctIndex": 2,
+     "explanation": "Para-aortic nodes are IIIC2, still regional and treated for cure. Supraclavicular nodes or organ metastases would be IVB."
+    },
+    {
+     "label": "Field",
+     "prompt": "Where should the top of the radiation field be?",
+     "answer": "At about the renal vessels (T12-L1), above the highest involved para-aortic node.",
+     "explanation": "This is extended-field RT, covering the pelvis and the para-aortic chain."
+    },
+    {
+     "label": "Plan",
+     "prompt": "Which plan fits?",
+     "choices": [
+      "Pelvic RT only",
+      "Extended-field chemoRT with boosts to the involved nodes, plus brachytherapy (± pembrolizumab)",
+      "Chemo alone",
+      "Radical hysterectomy with para-aortic dissection"
+     ],
+     "correctIndex": 1,
+     "explanation": "IIIC2 disease gets extended-field chemoRT with nodal boosts and brachytherapy; KEYNOTE-A18 supports adding pembrolizumab for this high-risk group."
+    },
+    {
+     "label": "Organs at risk",
+     "prompt": "Which organs at risk become important with an extended field?",
+     "answer": "Kidneys (mean under about 15-18 Gy), small bowel and duodenum, spinal cord, and bone marrow.",
+     "explanation": ""
+    },
+    {
+     "label": "Toxicity",
+     "prompt": "Halfway through, her counts drop and cisplatin has to be held. Which planning goal tries to prevent this?",
+     "choices": [
+      "Femoral head V30",
+      "Bone marrow sparing (pelvic bone V10 and V20 limits)",
+      "Bowel bag V45",
+      "Kidney mean dose"
+     ],
+     "correctIndex": 1,
+     "explanation": "The pelvic bones and lumbar spine hold much of the adult marrow. Sparing it with IMRT reduces low counts and chemo interruptions."
+    },
+    {
+     "label": "Timing",
+     "prompt": "Because of the delays, she finishes brachytherapy on day 63. Why does that matter?",
+     "choices": [
+      "It doesn't",
+      "Treatment longer than 56 days lowers local control by roughly 0.5-1% per extra day",
+      "It only affects side effects",
+      "It means she needs surgery"
+     ],
+     "correctIndex": 1,
+     "explanation": "Tumor repopulation during prolonged treatment costs local control, which is why breaks are avoided and brachytherapy is scheduled tightly."
+    }
+   ]
+  },
+  {
+   "id": "gyn-case-7",
+   "level": "Advanced",
+   "title": "Case 7: An Itch That Became a Sore",
+   "oneLiner": "A 72-year-old woman with years of vulvar itching from lichen sclerosus has a 3.5 cm sore on the right labium. Biopsy shows squamous cell carcinoma, 5 mm deep, 3 cm from the midline. Her groins feel normal.",
+   "steps": [
+    {
+     "label": "Groins",
+     "prompt": "How should her groins be evaluated?",
+     "choices": [
+      "No groin evaluation needed",
+      "Right sentinel node biopsy",
+      "Bilateral full groin dissection",
+      "Groin RT without surgery"
+     ],
+     "correctIndex": 1,
+     "explanation": "Unifocal tumors under 4 cm with clinically negative groins get sentinel node biopsy (GROINSS-V). A lateral tumor needs only the same side; midline tumors (within 2 cm) need both sides. Only IA tumors (1 mm deep or less) skip groin evaluation."
+    },
+    {
+     "label": "Stage",
+     "context": "<p><strong>Radical local excision:</strong> 3.5 cm SCC, closest margin 9 mm. <strong>Right sentinel node:</strong> positive, 8 mm metastasis with <strong>extracapsular extension</strong>. Completion dissection: 1 more positive node (2 of 9).</p>",
+     "prompt": "What is her FIGO 2021 stage?",
+     "answer": "IIIC (regional node with extracapsular spread)",
+     "explanation": "In FIGO 2021, nodes with extracapsular spread are IIIC. Fixed or ulcerated groin nodes are IVA."
+    },
+    {
+     "label": "Adjuvant",
+     "prompt": "What adjuvant therapy does she need?",
+     "choices": [
+      "Observation",
+      "RT to the groins and pelvis ± weekly cisplatin",
+      "Vulvar RT only",
+      "Chemo alone"
+     ],
+     "correctIndex": 1,
+     "explanation": "Two or more positive nodes, extracapsular extension, or a sentinel node metastasis over 2 mm call for groin and pelvic RT. A sentinel micrometastasis (2 mm or less) needs groin RT alone (GROINSS-V II)."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial showed that groin and pelvic RT beat pelvic node dissection for survival in node-positive vulvar cancer?",
+     "choices": [
+      "GOG 37",
+      "GOG 205",
+      "GOG 92",
+      "PORTEC-1"
+     ],
+     "correctIndex": 0,
+     "explanation": "GOG 37 established adjuvant groin and pelvic RT. GOG 205 is the definitive chemoRT trial for locally advanced disease."
+    },
+    {
+     "label": "Doses",
+     "image": "images/gyn/gyn-ct-groin.jpg",
+     "caption": "Axial CT at the femoral heads with inguinal node CTVs (purple). Cancers (Basel) 2023 (PMC10741760), CC BY 4.0.",
+     "prompt": "Give doses for the groins and pelvis, and for the area with extracapsular extension.",
+     "answer": "Groins and pelvis 45-50.4 Gy; boost the groin with ECE to about 54-64 Gy.",
+     "explanation": ""
+    },
+    {
+     "label": "Late effects",
+     "prompt": "Which late effects are most specific to treating her groins after a dissection?",
+     "choices": [
+      "Leg lymphedema and femoral neck fracture",
+      "Hearing loss",
+      "Pneumonitis",
+      "Dry mouth"
+     ],
+     "correctIndex": 0,
+     "explanation": "Dissection plus groin RT raises lymphedema risk, and the femoral necks sit right next to the inguinal targets (keep femoral head doses low)."
+    }
+   ]
+  },
+  {
+   "id": "gyn-case-8",
+   "level": "Advanced",
+   "title": "Case 8: A Surgery Too Big",
+   "oneLiner": "A 68-year-old woman has a 7 cm vulvar squamous cell carcinoma involving the clitoris, distal urethra, and anterior vaginal wall, with a fixed 3 cm left groin node.",
+   "steps": [
+    {
+     "label": "Surgery?",
+     "image": "images/gyn/gyn-c-vulva.jpg",
+     "caption": "A large ulcerated vulvar squamous cell carcinoma (another patient). Muraoka J et al., Cureus 2024 (PMC11179657), CC BY 4.0.",
+     "prompt": "Why not proceed with surgery first?",
+     "choices": [
+      "The tumor is too small",
+      "Clear margins would require removing the urethra (or an exenteration), with major functional loss",
+      "Vulvar cancer never responds to surgery",
+      "She is too young"
+     ],
+     "correctIndex": 1,
+     "explanation": "When surgery would sacrifice the urethra, anus, or clitoris or require exenteration, definitive chemoRT is used instead, with surgery saved for residual disease."
+    },
+    {
+     "label": "Stage",
+     "context": "<p><strong>MRI:</strong> 7 cm midline tumor involving the clitoris, distal urethra, and anterior vaginal wall. <strong>PET/CT:</strong> avid fixed 3 cm left groin node and a right groin node; no pelvic or distant nodes.</p>",
+     "prompt": "What FIGO 2021 stage does the fixed groin node indicate?",
+     "answer": "IVA",
+     "explanation": "Fixed or ulcerated groin nodes are IVA; upper urethral or bladder/rectal mucosa invasion is also IVA. Pelvic nodes or distant spread would be IVB."
+    },
+    {
+     "label": "Plan",
+     "prompt": "What is the treatment plan?",
+     "answer": "Definitive chemoRT to the vulva, both groins, and the pelvic nodes with weekly cisplatin; biopsy any residual disease afterward and resect it if feasible.",
+     "explanation": ""
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial showed that 57.6 Gy with weekly cisplatin gave a 64% complete clinical response in locally advanced vulvar cancer?",
+     "choices": [
+      "GOG 205",
+      "GOG 37",
+      "KEYNOTE-A18",
+      "PORTEC-3"
+     ],
+     "correctIndex": 0,
+     "explanation": "Most of the complete clinical responses in GOG 205 were confirmed pathologically."
+    },
+    {
+     "label": "Doses",
+     "prompt": "Give doses for the primary, the gross nodes, and the elective nodes, and two setup details.",
+     "answer": "Primary about 57.6-64 Gy; gross nodes about 60-70 Gy; elective nodes about 45-50 Gy. Treat in a frog-leg position to reduce skin folds, with bolus on the vulva.",
+     "explanation": ""
+    },
+    {
+     "label": "Side effects",
+     "prompt": "What acute side effect will be the hardest part of her treatment?",
+     "choices": [
+      "Hair loss on the scalp",
+      "A severe but temporary skin reaction of the vulva and groins (moist desquamation)",
+      "Pneumonitis",
+      "Hearing loss"
+     ],
+     "correctIndex": 1,
+     "explanation": "Vulvar skin breaks down during treatment. Sitz baths, barrier creams, pain control, and keeping the area clean and dry help; it heals within weeks after RT. Later effects include fibrosis, stenosis, and lymphedema."
+    }
+   ]
+  }
+ ]
+}

@@ -1,155 +1,659 @@
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>RadOnc Sub-I Companion</title>
+<meta name="description" content="An independent, structured curriculum for medical students and junior residents on a radiation oncology rotation: clinical workflow, disease-site management, treatment planning, clinical cases, and spaced-repetition flashcards.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap">
 <style>
 /*__STYLES__*/
 </style>
+<a class="skip-link" href="#main-content">Skip to content</a>
 <div class="bg-mesh" aria-hidden="true"><span></span><span></span><span></span></div>
+
+<div id="scrim" class="scrim"></div>
+
+<div class="shell">
+  <aside id="sidebar" class="sidebar" aria-label="Menu and contents">
+    <div class="sidebar-head">
+      <span class="sidebar-title">Menu</span>
+      <button id="sidebar-close" class="sidebar-close" aria-label="Close menu">✕</button>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav" aria-label="Browse all content"></nav>
+  </aside>
+
+  <div class="main-col">
 <div id="app">
-  <div class="topbar">
-    <div class="brand">
-      <div class="brand-mark">R₂</div>
-      <div class="brand-text">
-        <h1>RadOnc Sub-I Companion</h1>
-        <p>Active-recall flashcards for your radiation oncology rotation</p>
+  <header class="topbar">
+    <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Open menu and contents" aria-expanded="false" aria-controls="sidebar" title="Menu and contents">
+      <span class="edge-toggle-bars"><span></span><span></span><span></span></span>
+    </button>
+    <button class="brand" id="brand-home" aria-label="RadOnc Sub-I Companion, home">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span class="brand-name">RadOnc Sub-I Companion</span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <div class="pn-item has-mega" data-mega="learn">
+        <button class="pn-link pn-trigger" data-nav-key="learn" aria-expanded="false" aria-controls="mega-learn">Learn<svg class="pn-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="mega" id="mega-learn" role="region" aria-label="Learn" hidden></div>
       </div>
-    </div>
-    <div class="theme-toggle" role="group" aria-label="Theme">
-      <button id="theme-light" title="Light">☀︎</button>
-      <button id="theme-system" title="System">◐</button>
-      <button id="theme-dark" title="Dark">☾</button>
-    </div>
-  </div>
-
-  <!-- DASHBOARD VIEW -->
-  <div id="view-dashboard" class="view active">
-    <div class="stats-strip">
-      <div class="stat-cell">
-        <div class="stat-label">Overall Mastery</div>
-        <div class="stat-value accent tabular" id="stat-mastery">0%</div>
-        <div class="stat-sub" id="stat-mastery-sub">0 of 0 cards mastered</div>
+      <div class="pn-item has-mega" data-mega="sites">
+        <button class="pn-link pn-trigger" data-nav-key="sites" aria-expanded="false" aria-controls="mega-sites">Disease Sites<svg class="pn-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="mega" id="mega-sites" role="region" aria-label="Disease Sites" hidden></div>
       </div>
-      <div class="stat-cell">
-        <div class="stat-label">Due Today</div>
-        <div class="stat-value warm tabular" id="stat-due">0</div>
-        <div class="stat-sub">across all services</div>
+      <div class="pn-item has-mega" data-mega="cases">
+        <button class="pn-link pn-trigger" data-nav-key="cases" id="nav-cases" aria-expanded="false" aria-controls="mega-cases">Cases<svg class="pn-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="mega" id="mega-cases" role="region" aria-label="Cases" hidden></div>
       </div>
-      <div class="stat-cell">
-        <div class="stat-label">Modules Reviewed</div>
-        <div class="stat-value tabular" id="stat-reviewed">0</div>
-        <div class="stat-sub">of 8 total</div>
-      </div>
-      <div class="stat-cell">
-        <div class="stat-label">Total Cards Seen</div>
-        <div class="stat-value tabular" id="stat-seen">0</div>
-        <div class="stat-sub" id="stat-seen-sub">of 0 in deck</div>
-      </div>
-    </div>
-
-    <div class="cta-row">
-      <button class="btn-primary" id="btn-study-all">
-        Study all due cards <span class="count-pill" id="study-all-count">0</span>
+      <button class="pn-link" id="nav-cards" data-go="flashcards" data-nav-key="flashcards">Flashcards<span class="tn-count zero" id="nav-due" title="Flashcards due today">0</span></button>
+      <button class="pn-link" data-go="resources" data-nav-key="resources">Resources</button>
+      <button class="pn-link" data-go="about" data-nav-key="about">About</button>
+    </nav>
+    <div class="topbar-actions">
+      <button class="icon-search-btn" id="nav-search-btn" aria-label="Search the curriculum" title="Search the curriculum (press /)">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       </button>
-      <button class="btn-secondary" id="btn-reset-progress">Reset progress</button>
+      <button class="tn-signin" id="nav-signin" title="Sign in to track your progress">
+        <span id="nav-signin-label">Sign In</span>
+      </button>
     </div>
+  </header>
 
-    <div class="section-heading"><h2>Before You Start</h2></div>
-    <div class="grid bg-grid" id="background-grid"></div>
+  <main id="main-content" tabindex="-1">
 
-    <div class="section-heading"><h2>Disease Sites</h2></div>
-    <div class="grid" id="service-grid"></div>
+  <!-- GUEST BAR: shown on flashcard/case views when not signed in -->
+  <div class="guest-bar" id="guest-bar" hidden role="note">
+    <span><strong>Studying as a guest.</strong> Your flashcard and case progress is only kept until you close this tab.</span>
+    <button class="btn-yellow guest-bar-btn" id="guest-bar-btn">Create an account to save progress</button>
   </div>
 
-  <!-- SERVICE DETAIL VIEW -->
-  <div id="view-service" class="view">
-    <button class="back-link" id="btn-back-dashboard">← All services</button>
-    <div class="svc-header">
-      <div class="tile-icon" id="svc-detail-icon"></div>
+  <!-- HOME VIEW (curriculum first, learning dashboard second) -->
+  <div id="view-dashboard" class="view active">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">RadOnc Sub-I Companion</p>
+        <h1 class="hero-title" id="hero-title">The practical guide to succeeding on a radiation oncology rotation.</h1>
+        <p class="hero-sub">A structured curriculum covering clinical workflow, disease-site management, treatment planning, and case-based learning.</p>
+        <p class="hero-audience">For medical students on a radiation oncology sub-internship and junior residents.</p>
+        <div class="hero-ctas">
+          <button class="btn-cta" data-go="start">Start the curriculum <span aria-hidden="true">&rarr;</span></button>
+          <button class="btn-cta-secondary" data-go="sites">Explore disease sites</button>
+        </div>
+      </div>
+      <aside class="hero-glance" aria-label="What's inside">
+        <div class="glance-label">What's inside</div>
+        <dl class="glance-list" id="glance-list"></dl>
+        <p class="glance-foot">Independent educational resource. <button class="link-btn" data-go="about">About this site</button></p>
+      </aside>
+    </section>
+
+    <!-- SEARCH -->
+    <section class="curriculum-search" aria-labelledby="cs-label">
+      <label class="cs-label" id="cs-label" for="hero-search">Search the curriculum</label>
+      <div class="site-search hero-search" role="search">
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="hero-search" type="search" placeholder='Try "Gleason 4+3", "central lung tumor", "rectal MRI", or "SBRT"...' autocomplete="off" aria-controls="hero-search-results" aria-describedby="cs-hint">
+        <div class="search-results" id="hero-search-results" role="listbox" aria-label="Search results" hidden></div>
+      </div>
+      <p class="cs-hint" id="cs-hint">Searches every reading, disease-site module, flashcard deck, and clinical case.</p>
+    </section>
+
+    <!-- BUILT FOR THE ROTATION -->
+    <section class="home-section" aria-labelledby="built-title">
+      <div class="section-head split">
+        <div>
+          <p class="eyebrow">Built for the radiation oncology rotation</p>
+          <h2 class="section-title" id="built-title">A new specialty, learned with structure.</h2>
+        </div>
+        <p class="section-lede">Radiation oncology has a steep learning curve. Students are expected to understand disease-site management, staging, imaging, treatment planning, radiation physics, and clinical workflow, often while learning how to present patients in a completely new specialty.</p>
+      </div>
+      <div class="pillar-grid" id="pillar-grid"></div>
+    </section>
+
+    <!-- LEARNING PATH -->
+    <section class="home-section" id="learning-path" aria-labelledby="lp-title">
+      <div class="section-head">
+        <p class="eyebrow">Your learning path</p>
+        <h2 class="section-title" id="lp-title">Six steps, in the order you'll need them.</h2>
+      </div>
+      <ol class="learning-path" id="learning-path-list"></ol>
+    </section>
+
+    <!-- DISEASE SITES -->
+    <section class="home-section" id="disease-sites" aria-labelledby="ds-title">
+      <div class="section-head split">
+        <div>
+          <p class="eyebrow">Disease sites</p>
+          <h2 class="section-title" id="ds-title">Seven modules, one consistent structure.</h2>
+        </div>
+        <p class="section-lede">Each site moves from epidemiology and anatomy to imaging, workup and staging, and treatment paradigms, with interactive anatomy and imaging, practice questions, and a high-yield summary in every section.</p>
+      </div>
+
+      <div class="home-toolbar">
+        <span class="home-count" id="home-count"></span>
+        <div class="toolbar-right">
+          <details class="filter-pop" id="home-filters">
+            <summary class="filter-pop-btn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16l-6 7.5V19l-4-2v-4.5z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg>Filter<span class="filter-pop-count" id="filter-count" hidden></span></summary>
+            <div class="filter-pop-body">
+              <fieldset class="filter-group">
+                <legend>Progress</legend>
+                <label class="filter-opt"><input type="checkbox" id="f-due" value="due"><span>Cards due today</span></label>
+                <label class="filter-opt"><input type="checkbox" id="f-cases" value="cases"><span>Cases left to do</span></label>
+                <label class="filter-opt"><input type="checkbox" id="f-new" value="new"><span>Not started</span></label>
+                <label class="filter-opt"><input type="checkbox" id="f-mastered" value="mastered"><span>Mostly mastered</span></label>
+              </fieldset>
+              <fieldset class="filter-group">
+                <legend>Includes</legend>
+                <label class="filter-opt"><input type="checkbox" id="f-has-cards" value="has-cards"><span>Flashcards</span></label>
+                <label class="filter-opt"><input type="checkbox" id="f-has-cases" value="has-cases"><span>Clinical cases</span></label>
+              </fieldset>
+              <button class="link-btn" id="filters-clear">Clear filters</button>
+            </div>
+          </details>
+          <label class="sort-wrap"><span class="visually-hidden">Sort disease sites</span>
+            <select id="home-sort">
+              <option value="course">Course order</option>
+              <option value="due">Most cards due</option>
+              <option value="progress">Least progress first</option>
+              <option value="az">A to Z</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="sec-grid" id="section-grid"></div>
+      <p class="home-empty" id="home-empty" hidden>No disease sites match these filters. <button class="link-btn" id="home-empty-clear">Clear filters</button></p>
+    </section>
+
+    <!-- CLINICAL CASES -->
+    <section class="home-section cases-feature" id="clinical-cases" aria-labelledby="cf-title">
+      <div class="cf-intro">
+        <p class="eyebrow on-dark">Clinical cases</p>
+        <h2 class="section-title" id="cf-title">Practice approaching real-world radiation oncology consults and treatment decisions.</h2>
+        <div class="cf-count"><span class="cf-big tabular" id="stat-cases-total">0</span><span class="cf-big-label">cases across <span id="cf-site-count">0</span> disease sites</span></div>
+        <p class="cf-desc" id="cf-desc">Each case starts with a one-liner, then reveals the imaging and asks you to commit: stage, treatment, and dose, with explanations after each step.</p>
+        <div class="cf-progress">
+          <div class="cf-progress-head"><span><b class="tabular" id="stat-cases-done">0</b> completed</span></div>
+          <div class="seg-bar" id="cases-seg" role="img" aria-label="Cases completed by disease site"></div>
+          <ul class="seg-legend" id="cases-legend"></ul>
+        </div>
+        <div class="cf-ctas">
+          <button class="btn-yellow btn-square" id="btn-start-case">Start a case <span aria-hidden="true">&rarr;</span></button>
+          <button class="btn-ghost-dark" id="btn-open-cases">Browse all cases</button>
+        </div>
+      </div>
+      <div class="cf-side">
+        <div class="cf-next" id="cf-next"></div>
+        <ul class="cf-sites" id="cf-sites" aria-label="Cases by disease site"></ul>
+      </div>
+    </section>
+
+    <!-- FLASHCARDS -->
+    <section class="home-section" id="flashcards-section" aria-labelledby="fc-title">
+      <div class="section-head split">
+        <div>
+          <p class="eyebrow">Reinforce what you learn</p>
+          <h2 class="section-title" id="fc-title">Spaced repetition, built into the curriculum.</h2>
+        </div>
+        <p class="section-lede">Use focused spaced-repetition review to retain high-yield radiation oncology concepts. Every deck mirrors the reading it belongs to, so you can read a section and then drill exactly what it covered.</p>
+      </div>
+      <article class="trk-card fc-tracker" id="trk-cards">
+        <div class="trk-head">
+          <div>
+            <div class="trk-label">Your flashcards</div>
+            <div class="trk-big"><span class="tabular" id="stat-due">0</span> <span class="trk-big-sub">due today</span></div>
+          </div>
+          <div class="trk-actions">
+            <button class="btn-secondary btn-square" id="btn-manage-decks">Choose decks</button>
+            <button class="btn-primary btn-square trk-btn" id="btn-study-all">Study due cards <span class="count-pill" id="study-all-count">0</span></button>
+          </div>
+        </div>
+        <div class="seg-bar" id="cards-seg" role="img" aria-label="Flashcard progress"></div>
+        <ul class="seg-legend" id="cards-legend"></ul>
+        <div class="trk-foot">
+          <span id="stat-due-sub"></span>
+          <span class="trk-foot-note">Rate each card Again, Hard, Good, or Easy; intervals grow from 1 day up to 60.</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- WHY -->
+    <section class="home-section" aria-labelledby="why-title">
+      <div class="section-head">
+        <p class="eyebrow">Why RadOnc Sub-I Companion?</p>
+        <h2 class="section-title" id="why-title">Learn the framework. See it applied. Practice. Reinforce.</h2>
+      </div>
+      <ol class="method" id="method-list"></ol>
+    </section>
+
+    <!-- SOURCES -->
+    <section class="home-section" aria-labelledby="src-title">
+      <div class="section-head split">
+        <div>
+          <p class="eyebrow">Sources &amp; references</p>
+          <h2 class="section-title" id="src-title">Grounded in the references the team uses.</h2>
+        </div>
+        <p class="section-lede">Each disease-site module names the clinical practice guidelines, staging systems, and trials it discusses, and figures from the literature carry their source and license.</p>
+      </div>
+      <div class="src-teaser" id="src-teaser"></div>
+      <p class="section-foot"><button class="link-btn" data-go="resources">View all sources &amp; references &rarr;</button></p>
+    </section>
+
+    <!-- ABOUT TEASER -->
+    <section class="home-section about-teaser" aria-labelledby="abt-title">
       <div>
-        <h2 id="svc-detail-name"></h2>
-        <div class="svc-stats" id="svc-detail-stats"></div>
+        <p class="eyebrow">About</p>
+        <h2 class="section-title" id="abt-title">An independent educational resource.</h2>
       </div>
-      <div style="margin-left:auto;display:flex;gap:10px;">
-        <button class="btn-primary" id="btn-study-service">Study due cards <span class="count-pill" id="svc-due-count">0</span></button>
+      <div>
+        <p>RadOnc Sub-I Companion was created to make the radiation oncology rotation more structured, approachable, and clinically useful for medical students and junior trainees.</p>
+        <button class="btn-secondary btn-square" data-go="about">About the project</button>
       </div>
-    </div>
-    <div class="cat-list" id="cat-list"></div>
+    </section>
+
+    <details class="card-credits">
+      <summary>Image credits</summary>
+      <ul id="card-credits-list"></ul>
+    </details>
   </div>
 
-  <!-- DOC VIEW -->
+  <!-- DISEASE-SITE MODULE LANDING VIEW -->
+  <div id="view-service" class="view">
+    <button class="back-link" id="btn-back-dashboard">← All disease sites</button>
+    <section class="mod-hero" id="mod-hero">
+      <div class="mod-hero-copy">
+        <p class="eyebrow"><span class="tile-icon mod-icon" id="svc-detail-icon" aria-hidden="true"></span>Disease-site module</p>
+        <h1 class="mod-title" id="svc-detail-name"></h1>
+        <p class="mod-summary" id="mod-summary"></p>
+        <p class="mod-topics" id="mod-topics"></p>
+        <div class="mod-ctas">
+          <button class="btn-cta" id="btn-start-module">Start module <span aria-hidden="true">&rarr;</span></button>
+          <button class="btn-secondary btn-square" id="btn-study-service">Study due cards <span class="count-pill" id="svc-due-count">0</span></button>
+          <button class="btn-secondary btn-square" id="btn-module-cases" hidden>Practice cases</button>
+        </div>
+      </div>
+      <figure class="mod-hero-media" id="mod-hero-media"></figure>
+    </section>
+    <dl class="mod-stats" id="svc-detail-stats"></dl>
+    <div class="content-meta" id="mod-meta"></div>
+
+    <div class="mod-grid">
+      <section class="mod-learn" aria-labelledby="mod-learn-title">
+        <h2 class="mod-h2" id="mod-learn-title">What you'll learn</h2>
+        <ul class="check-list" id="mod-objectives"></ul>
+      </section>
+      <aside class="mod-essential" id="mod-essential"></aside>
+    </div>
+
+    <section aria-labelledby="mod-contents-title">
+      <h2 class="mod-h2" id="mod-contents-title">Module contents</h2>
+      <div class="cat-list" id="cat-list"></div>
+    </section>
+
+    <section class="mod-sources" id="mod-sources" aria-labelledby="mod-sources-title"></section>
+
+    <section class="mod-related" aria-labelledby="mod-related-title">
+      <h2 class="mod-h2" id="mod-related-title">Related modules</h2>
+      <div class="related-row" id="mod-related"></div>
+    </section>
+  </div>
+
+  <!-- DOC VIEW: a curriculum module (disease-site reading or Before You Start page) -->
   <div id="view-doc" class="view">
-    <button class="back-link" id="btn-back-from-doc">← Back</button>
+    <div class="read-progress" id="read-progress" aria-hidden="true"><span></span></div>
+    <button class="back-link" id="btn-back-from-doc" hidden>&larr; Back</button>
     <div class="doc-wrap">
-      <div class="doc-header">
-        <div class="doc-eyebrow"><span class="dot"></span><span id="doc-svc-name"></span></div>
-        <h2 class="doc-title" id="doc-title"></h2>
-      </div>
-      <div class="doc-toolbar" id="disease-doc-toolbar">
-        <button class="doc-study-link" id="btn-study-from-doc">Study these flashcards <span id="doc-study-count" class="count-pill" style="background:var(--surface);border:1px solid var(--line);"></span></button>
-      </div>
-      <div class="doc-body" id="doc-body"></div>
-      <div class="doc-footer-cta" id="disease-doc-footer">
-        <p>Ready to test your recall? Jump into active-recall flashcards for this exact topic.</p>
-        <button class="btn-primary" id="btn-study-from-doc-2">Study flashcards</button>
-      </div>
-      <div class="doc-footer-cta bg-footer-nav" id="bg-footer-nav" hidden>
-        <button class="btn-secondary" id="btn-bg-prev">&larr; Previous section</button>
-        <div style="font-size:12.5px;color:var(--ink-faint);font-family:var(--font-mono);">Section <span id="bg-nav-current"></span> of 10</div>
-        <button class="btn-primary" id="btn-bg-next">Next section &rarr;</button>
+      <nav class="crumbs" id="doc-crumbs" aria-label="Breadcrumb"></nav>
+      <header class="doc-header">
+        <div class="doc-eyebrow"><span class="dot"></span><span id="doc-svc-name"></span><span class="doc-eyebrow-mod" id="doc-mod-pos"></span></div>
+        <h1 class="doc-title" id="doc-title"></h1>
+        <p class="doc-lede" id="doc-lede" hidden></p>
+        <div class="doc-actions">
+          <div class="doc-toolbar" id="disease-doc-toolbar">
+            <button class="doc-cta-study" id="btn-study-from-doc"><span class="doc-cta-ico" aria-hidden="true"></span><span>Study <span id="doc-study-count"></span> flashcards</span></button>
+          </div>
+          <button class="doc-cta-next" id="btn-doc-next-top" hidden></button>
+        </div>
+        <dl class="doc-facts" id="doc-facts"></dl>
+      </header>
+      <div class="doc-layout">
+        <aside class="doc-rail" aria-label="On this page">
+          <nav class="rail-toc" id="rail-toc"></nav>
+        </aside>
+        <div class="doc-main">
+          <details class="toc-mobile" id="toc-mobile"></details>
+          <div class="doc-interactive" id="doc-interactive" hidden></div>
+          <article class="doc-body" id="doc-body"></article>
+
+          <div class="doc-end">
+            <div class="loop-row" id="loop-row">
+              <section class="loop-card loop-reinforce" id="disease-doc-footer" aria-labelledby="loop-r-title">
+                <span class="loop-step">Reinforce</span>
+                <h2 class="loop-title" id="loop-r-title">Reinforce this module</h2>
+                <p class="loop-sub" id="loop-r-sub"></p>
+                <button class="btn-cta" id="btn-study-from-doc-2">Study flashcards <span aria-hidden="true">&rarr;</span></button>
+              </section>
+              <section class="loop-card loop-apply" id="doc-apply" hidden aria-labelledby="loop-a-title">
+                <span class="loop-step">Apply</span>
+                <h2 class="loop-title" id="loop-a-title">Put it into practice</h2>
+                <p class="loop-sub" id="loop-a-sub"></p>
+                <button class="btn-cta-secondary" id="btn-doc-case"></button>
+              </section>
+            </div>
+
+            <section class="doc-know" id="doc-know" hidden aria-labelledby="doc-know-title">
+              <h2 class="end-h" id="doc-know-title">What you should know</h2>
+              <p class="end-sub">By the end of this module, you should be able to:</p>
+              <ul class="check-list" id="doc-know-list"></ul>
+            </section>
+
+            <section class="doc-refs" id="doc-refs" hidden aria-labelledby="doc-refs-title">
+              <h2 class="end-h" id="doc-refs-title">Sources &amp; references</h2>
+              <div id="doc-refs-body"></div>
+            </section>
+            <div class="content-meta doc-meta" id="doc-meta" hidden></div>
+            <p class="doc-sources-line" id="doc-sources-line" hidden></p>
+
+            <nav class="doc-path" id="doc-path" aria-label="Modules in this curriculum"></nav>
+
+            <div class="doc-footer-cta bg-footer-nav" id="bg-footer-nav" hidden>
+              <button class="pn-btn pn-prev" id="btn-bg-prev"><span class="pn-dir">&larr; <span id="bg-nav-prev-label">Previous</span></span><span class="pn-name" id="bg-nav-prev-name"></span></button>
+              <div class="pn-pos" id="bg-nav-label"></div>
+              <button class="pn-btn pn-next" id="btn-bg-next"><span class="pn-dir"><span id="bg-nav-next-label">Next</span> &rarr;</span><span class="pn-name" id="bg-nav-next-name"></span></button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+
+  <!-- CASE-BASED PRACTICE VIEW -->
+  <div id="view-cases" class="view">
+    <button class="back-link" id="btn-back-from-cases">← Back</button>
+    <div class="doc-wrap" id="cases-wrap"></div>
+  </div>
+
+  <!-- FLASHCARD DECKS VIEW (suspend / unsuspend by section) -->
+  <div id="view-decks" class="view">
+    <button class="back-link" id="btn-back-from-decks">← Home</button>
+    <div id="decks-wrap"></div>
+  </div>
+
+  <!-- CASES HUB VIEW -->
+  <div id="view-cases-hub" class="view">
+    <button class="back-link" id="btn-back-from-cases-hub">← Home</button>
+    <div id="cases-hub-wrap"></div>
   </div>
 
   <!-- STUDY VIEW -->
   <div id="view-study" class="view">
     <div class="study-wrap">
       <div class="study-progress-row">
-        <button class="study-exit" id="btn-exit-study" title="Exit study session">✕</button>
+        <button class="study-exit" id="btn-exit-study" title="Exit study session">← Exit</button>
         <div class="study-progress-track"><div class="study-progress-fill" id="study-progress-fill"></div></div>
         <div class="study-count tabular" id="study-count">0 / 0</div>
       </div>
 
       <div id="study-active">
         <div class="card-stage">
-          <div class="flashcard" id="flashcard">
-            <div class="card-face front">
-              <div class="card-cat-tag" id="card-cat-front"></div>
-              <div class="card-prompt-label">Prompt</div>
-              <div class="card-text" id="card-front-text"></div>
-              <div class="card-hint">Tap card to reveal answer</div>
-            </div>
-            <div class="card-face back">
-              <div class="card-cat-tag" id="card-cat-back"></div>
-              <div class="card-prompt-label">Answer</div>
-              <div class="card-text" id="card-back-text"></div>
-            </div>
-          </div>
+          <div class="flashcard" id="flashcard" role="button" tabindex="0" aria-label="Flashcard: click to reveal the answer"></div>
         </div>
 
-        <div id="reveal-prompt" class="reveal-hint">Tap the card above to reveal the answer, then rate your recall</div>
+        <div class="study-tools"><button class="suspend-card-btn" id="btn-suspend-card" title="Remove this card from your reviews (unsuspend it again from the Flashcards page)">Suspend card</button></div>
+        <div id="reveal-prompt" class="reveal-hint">Click the card (or press Space) to reveal the answer, then rate with keys 1&ndash;4</div>
         <div id="rate-row" class="rate-row" style="display:none;">
-          <button class="rate-btn again" data-rating="again"><span class="rate-label">Again</span><span class="rate-sub">&lt;1 day</span></button>
-          <button class="rate-btn hard" data-rating="hard"><span class="rate-label">Hard</span><span class="rate-sub">2 days</span></button>
-          <button class="rate-btn good" data-rating="good"><span class="rate-label">Good</span><span class="rate-sub">4 days</span></button>
-          <button class="rate-btn easy" data-rating="easy"><span class="rate-label">Easy</span><span class="rate-sub">9 days</span></button>
+          <button class="rate-btn again" data-rating="again"><span class="rate-key">1</span><span class="rate-label">Again</span><span class="rate-sub">&lt;1 day</span></button>
+          <button class="rate-btn hard" data-rating="hard"><span class="rate-key">2</span><span class="rate-label">Hard</span><span class="rate-sub">2 days</span></button>
+          <button class="rate-btn good" data-rating="good"><span class="rate-key">3</span><span class="rate-label">Good</span><span class="rate-sub">4 days</span></button>
+          <button class="rate-btn easy" data-rating="easy"><span class="rate-key">4</span><span class="rate-label">Easy</span><span class="rate-sub">9 days</span></button>
         </div>
       </div>
 
       <div id="study-complete" class="complete-wrap" style="display:none;">
-        <div class="complete-icon">✓</div>
-        <h2>Session complete</h2>
+        <div class="complete-icon" id="complete-icon">✓</div>
+        <h2 id="complete-title">Session complete</h2>
         <p id="complete-msg">You've reviewed every due card in this set.</p>
-        <div class="complete-stats">
+        <div class="complete-stats" id="complete-stats">
           <div class="complete-stat"><div class="n tabular" id="complete-reviewed">0</div><div class="l">Reviewed</div></div>
           <div class="complete-stat"><div class="n tabular" id="complete-again">0</div><div class="l">Missed</div></div>
         </div>
-        <button class="btn-primary" id="btn-complete-done">Back to dashboard</button>
+        <div class="complete-actions" id="complete-actions"></div>
+        <button class="btn-primary" id="btn-complete-done">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESOURCES: SOURCES & REFERENCES -->
+  <div id="view-resources" class="view">
+    <button class="back-link" data-go="home">← Home</button>
+    <div class="page-wrap">
+      <header class="page-head">
+        <p class="eyebrow">Resources</p>
+        <h1 class="page-title">Sources &amp; References</h1>
+        <p class="page-lede">The content on this site is organized around the references a radiation oncology team relies on: clinical practice guidelines, standard staging systems, landmark clinical trials, and peer-reviewed literature. This page lists what each module names. It is a map of where the teaching points come from, not a substitute for reading the current versions yourself.</p>
+      </header>
+
+      <section class="page-section" aria-labelledby="rs-cat-title">
+        <h2 class="page-h2" id="rs-cat-title">Reference categories used in the modules</h2>
+        <div class="ref-cats" id="ref-cats"></div>
+      </section>
+
+      <section class="page-section" aria-labelledby="rs-site-title">
+        <h2 class="page-h2" id="rs-site-title">By disease site</h2>
+        <p class="page-text">Guidelines and staging systems are named as they appear in each module. Trials are the ones discussed in that module's readings.</p>
+        <div class="ref-sites" id="ref-sites"></div>
+      </section>
+
+      <section class="page-section" aria-labelledby="rs-primary-title">
+        <h2 class="page-h2" id="rs-primary-title">Primary references for further reading</h2>
+        <p class="page-text">Always check the current version of these before applying anything clinically. ASTRO and ACR resources are listed as recommended reading; they are not cited as the basis of specific content on this site.</p>
+        <ul class="primary-refs">
+          <li><a href="https://www.nccn.org/guidelines" target="_blank" rel="noopener noreferrer">NCCN Clinical Practice Guidelines in Oncology</a><span>Disease-site treatment guidelines, updated several times a year. Each module's guideline tables are simplified from these for learning.</span></li>
+          <li><a href="https://www.astro.org" target="_blank" rel="noopener noreferrer">ASTRO Clinical Practice Guidelines</a><span>Evidence-based guidelines and statements from the American Society for Radiation Oncology.</span></li>
+          <li><a href="https://www.acr.org" target="_blank" rel="noopener noreferrer">ACR Appropriateness Criteria</a><span>American College of Radiology criteria for imaging and radiation oncology decisions.</span></li>
+          <li><a href="https://www.nrgoncology.org" target="_blank" rel="noopener noreferrer">NRG Oncology</a><span>The NCI cooperative group that carries forward the RTOG, NSABP, and GOG trials discussed throughout the modules.</span></li>
+        </ul>
+      </section>
+
+      <section class="page-section" id="disclaimer" aria-labelledby="rs-disc-title">
+        <h2 class="page-h2" id="rs-disc-title">Educational disclaimer</h2>
+        <div class="notice">
+          <p>Educational use only. This resource is intended for medical education and should not be used as a substitute for clinical judgment, institutional protocols, or current professional guidelines.</p>
+          <p>Guideline tables are simplified for learning, doses and regimens vary by institution and protocol, and guidelines change. Clinical cases are teaching scenarios for practice, not recommendations for any individual patient.</p>
+        </div>
+      </section>
+
+      <section class="page-section" aria-labelledby="rs-img-title">
+        <h2 class="page-h2" id="rs-img-title">Images</h2>
+        <p class="page-text">Most radiographic images and figures come from open-access, peer-reviewed articles (mostly via PubMed Central) and public-domain or openly licensed collections such as Wikimedia Commons and OpenNeuro. Where a source is recorded, it appears with its license in the figure caption. The photographs on the disease-site cards are credited below.</p>
+        <ul class="credit-list" id="resources-credits"></ul>
+      </section>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div id="view-about" class="view">
+    <button class="back-link" data-go="home">← Home</button>
+    <div class="page-wrap">
+      <header class="page-head">
+        <p class="eyebrow">About</p>
+        <h1 class="page-title">About RadOnc Sub-I Companion</h1>
+        <p class="page-lede">RadOnc Sub-I Companion was created as an independent educational resource to make the radiation oncology rotation more structured, approachable, and clinically useful for medical students and junior trainees.</p>
+      </header>
+
+      <section class="page-section" aria-labelledby="ab-why-title">
+        <h2 class="page-h2" id="ab-why-title">Why it exists</h2>
+        <p class="page-text">Radiation oncology has a steep learning curve. Students are expected to understand disease-site management, staging, imaging, treatment planning, radiation physics, and clinical workflow, often while learning how to present patients in a completely new specialty. That knowledge is usually scattered across guidelines, textbooks, lectures, and conversations in clinic. This site brings it together in the order a sub-intern tends to need it.</p>
+      </section>
+
+      <section class="page-section" aria-labelledby="ab-phil-title">
+        <h2 class="page-h2" id="ab-phil-title">Educational philosophy</h2>
+        <ol class="philosophy">
+          <li><span class="ph-num">1</span><div><b>Learn the framework</b><p>Short, structured readings: how the workflow runs, how to present, and how each disease site is staged and treated.</p></div></li>
+          <li><span class="ph-num">2</span><div><b>See it applied</b><p>Interactive anatomy and imaging plates, worked examples, and staging tools put the framework onto real images.</p></div></li>
+          <li><span class="ph-num">3</span><div><b>Practice clinical reasoning</b><p>Step-by-step cases ask you to commit to a stage, a treatment, and a dose before you see the answer.</p></div></li>
+          <li><span class="ph-num">4</span><div><b>Reinforce with spaced repetition</b><p>Flashcards that mirror each reading bring high-yield facts back right before you'd forget them.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="page-section" aria-labelledby="ab-inside-title">
+        <h2 class="page-h2" id="ab-inside-title">What's inside</h2>
+        <dl class="glance-list about-glance" id="about-glance"></dl>
+      </section>
+
+      <section class="page-section" id="independence" aria-labelledby="ab-ind-title">
+        <h2 class="page-h2" id="ab-ind-title">Independence</h2>
+        <div class="notice">
+          <p>RadOnc Sub-I Companion is an independent educational resource and is not affiliated with or endorsed by Jefferson Health, Sidney Kimmel Medical College, ASTRO, NCCN, or any other institution unless otherwise stated.</p>
+          <p>Educational use only. This resource is intended for medical education and should not be used as a substitute for clinical judgment, institutional protocols, or current professional guidelines.</p>
+        </div>
+      </section>
+
+      <section class="page-section" id="your-data" aria-labelledby="ab-data-title">
+        <h2 class="page-h2" id="ab-data-title">Your data</h2>
+        <p class="page-text">There is no server. An account is a name stored in your own browser, and your flashcard and case progress stays on this device (as a guest, only until you close the tab). To move progress to another device, copy your progress code from the account panel and paste it there.</p>
+      </section>
+    </div>
+  </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="sf-top">
+      <div class="sf-brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <div>
+          <div class="sf-name">RadOnc Sub-I Companion</div>
+          <p class="sf-tag">Independent medical education resource.</p>
+        </div>
+      </div>
+      <nav class="sf-nav" aria-label="Footer">
+        <div>
+          <div class="sf-head">Curriculum</div>
+          <button data-go="learn">Learn</button>
+          <button data-go="sites">Disease Sites</button>
+          <button data-go="cases">Cases</button>
+          <button data-go="flashcards">Flashcards</button>
+        </div>
+        <div>
+          <div class="sf-head">Project</div>
+          <button data-go="resources">Resources</button>
+          <button data-go="about">About</button>
+        </div>
+        <div>
+          <div class="sf-head">Information</div>
+          <button data-go="resources">Sources &amp; References</button>
+          <button data-go="resources#disclaimer">Educational Disclaimer</button>
+          <button data-go="about#your-data">Your Data</button>
+        </div>
+      </nav>
+    </div>
+    <p class="sf-disclaimer">Educational use only. This resource is intended for medical education and should not be used as a substitute for clinical judgment, institutional protocols, or current professional guidelines. Not affiliated with or endorsed by any institution.</p>
+  </footer>
+</div>
+  </div>
+
+  <aside id="flash-panel" class="flash-panel">
+    <div class="flash-panel-drag" id="flash-panel-drag" title="Drag to resize"></div>
+    <div class="flash-panel-head">
+      <span class="flash-panel-title">Quick Flashcards</span>
+      <button id="flash-panel-close" class="sidebar-close" aria-label="Close quick flashcards">✕</button>
+    </div>
+    <div class="flash-panel-body" id="flash-panel-body"></div>
+  </aside>
+</div>
+
+<button id="flash-ball" class="flash-ball" aria-label="Open quick flashcards" aria-expanded="false" title="Quick flashcards: click to open, drag to resize">
+  <span class="flash-ball-icon"></span>
+</button>
+
+<div id="search-dialog" class="modal search-modal" hidden role="dialog" aria-modal="true" aria-labelledby="search-dialog-label">
+  <div class="search-card">
+    <label class="cs-label" id="search-dialog-label" for="site-search">Search the curriculum</label>
+    <div class="site-search" role="search">
+      <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="site-search" type="search" placeholder='Try "Gleason 4+3", "central lung tumor", "rectal MRI", or "SBRT"...' autocomplete="off" aria-controls="search-results">
+      <div class="search-results inline" id="search-results" role="listbox" aria-label="Search results" hidden></div>
+    </div>
+    <p class="cs-hint">Enter opens the top result &middot; arrow keys to move &middot; Esc to close</p>
+  </div>
+</div>
+
+<div id="account" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="account-title">
+  <div class="modal-card">
+    <button class="modal-close" id="account-close" aria-label="Close">✕</button>
+    <div id="account-signin">
+      <h2 class="modal-title" id="account-title">Save your progress</h2>
+      <p class="modal-text" id="account-reason">Everything is open without an account. Create one to save your flashcard and case progress in this browser.</p>
+      <p class="modal-note" id="account-guest-note" hidden>The cards and cases you've done as a guest will be saved to your account.</p>
+      <form id="signin-form" class="modal-form">
+        <label for="signin-name">Your name</label>
+        <input id="signin-name" type="text" autocomplete="name" placeholder="e.g. Sophia" required maxlength="40">
+        <label for="signin-school">School or program <span class="opt">(optional)</span></label>
+        <input id="signin-school" type="text" placeholder="e.g. MS4, visiting sub-I" maxlength="60">
+        <button class="btn-yellow modal-submit" type="submit">Create account / Sign in</button>
+      </form>
+      <p class="modal-fine">Already made an account in this browser? Enter the same name to pick up where you left off. To keep progress on another device, use "Move my progress" after you sign in.</p>
+      <details class="modal-more">
+        <summary>Already have a progress code?</summary>
+        <label for="import-code-a" class="visually-hidden">Progress code</label>
+        <textarea id="import-code-a" rows="3" placeholder="Paste your progress code"></textarea>
+        <button class="btn-secondary" id="import-btn-a">Restore progress</button>
+        <p class="modal-msg" id="import-msg-a" aria-live="polite"></p>
+      </details>
+    </div>
+    <div id="account-profile" hidden>
+      <div class="profile-head">
+        <span class="avatar" id="profile-avatar"></span>
+        <div><h2 class="modal-title" id="profile-name"></h2><p class="modal-text" id="profile-school"></p></div>
+      </div>
+      <div class="profile-stats" id="profile-stats"></div>
+      <div class="modal-section">
+        <h3>Theme</h3>
+        <div class="theme-toggle" role="group" aria-label="Theme">
+          <button id="theme-light" title="Light">Light</button>
+          <button id="theme-system" title="Match system">Auto</button>
+          <button id="theme-dark" title="Dark">Dark</button>
+        </div>
+      </div>
+      <div class="modal-section">
+        <h3>Move my progress</h3>
+        <p class="modal-fine">Copy this code, then paste it into "Restore progress" on another device or browser.</p>
+        <label for="export-code" class="visually-hidden">Your progress code</label>
+        <textarea id="export-code" rows="3" readonly></textarea>
+        <div class="modal-actions"><button class="btn-secondary" id="export-copy">Copy code</button></div>
+        <details class="modal-more">
+          <summary>Restore progress from a code</summary>
+          <label for="import-code-b" class="visually-hidden">Progress code</label>
+          <textarea id="import-code-b" rows="3" placeholder="Paste a progress code"></textarea>
+          <button class="btn-secondary" id="import-btn-b">Restore progress</button>
+        </details>
+        <p class="modal-msg" id="account-msg" aria-live="polite"></p>
+      </div>
+      <div class="modal-section modal-danger">
+        <div class="modal-actions">
+          <button class="btn-secondary" id="btn-reset-progress">Reset flashcard progress</button>
+          <button class="btn-secondary" id="btn-signout">Sign out</button>
+        </div>
+        <div class="confirm-row" id="reset-confirm" hidden>
+          <span>Clear mastery and due dates for every card?</span>
+          <button class="btn-danger" id="reset-yes">Yes, reset</button>
+          <button class="link-btn" id="reset-no">Cancel</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+<div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Enlarged image">
+  <figure class="lightbox-figure">
+    <button class="lightbox-close" aria-label="Close">✕</button>
+    <img alt="">
+    <figcaption><div class="lightbox-title"></div><div class="lightbox-caption" hidden></div></figcaption>
+  </figure>
+</div>
+
 <script>
 /*__DATA__*/
 /*__APP_JS__*/

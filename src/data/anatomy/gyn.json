@@ -1,0 +1,632 @@
+{
+ "anat-gyn-organs": {
+  "intro": "<p>The uterus, cervix, and vagina sit in the middle of the pelvis between the <strong>bladder</strong> in front and the <strong>rectum</strong> behind. Learn the organs, their parts, and their neighbors from four views. Explore each view, then switch to Quiz mode.</p>",
+  "plates": [
+   {
+    "id": "gyn-sagittal",
+    "title": "Female Pelvis (Sagittal)",
+    "style": "schematic",
+    "caption": "Midline sagittal female pelvis, anterior on the left. The uterus is anteverted, tipped forward over the bladder. Source: Cancer Research UK, via Wikimedia Commons, CC BY-SA 4.0; labels removed. (Diagram CRUK 477)",
+    "hotspots": [
+     {
+      "id": "fundus",
+      "label": "Uterine Fundus",
+      "x": 40,
+      "y": 39,
+      "blurb": "Top of the uterus. Fundal endometrial cancers can drain directly to para-aortic nodes via the ovarian vessels."
+     },
+     {
+      "id": "corpus",
+      "label": "Uterine Body (Corpus)",
+      "x": 47,
+      "y": 41,
+      "blurb": "Endometrial cancer starts in its lining. Usually anteverted (tipped forward over the bladder)."
+     },
+     {
+      "id": "cervix",
+      "label": "Cervix",
+      "x": 56,
+      "y": 47,
+      "blurb": "Lower, narrow part of the uterus projecting into the vagina. Cervical cancer starts at its transformation zone."
+     },
+     {
+      "id": "vagina",
+      "label": "Vagina",
+      "x": 50,
+      "y": 58,
+      "blurb": "Runs down and forward from the cervix. The upper vagina around the cervix forms the fornices."
+     },
+     {
+      "id": "bladder",
+      "label": "Bladder",
+      "x": 40,
+      "y": 53,
+      "blurb": "In front of the cervix and upper vagina, separated from them by a thin septum. An organ at risk for both pelvic RT and brachytherapy."
+     },
+     {
+      "id": "rectum",
+      "label": "Rectum",
+      "x": 64,
+      "y": 56,
+      "blurb": "Behind the cervix and vagina, across the pouch of Douglas. The organ at risk that most often limits brachytherapy dose."
+     },
+     {
+      "id": "sigmoid",
+      "label": "Sigmoid Colon",
+      "x": 58,
+      "y": 30,
+      "blurb": "Loops above the uterus; it can drape over the tandem during brachy (sigmoid D2cc)."
+     },
+     {
+      "id": "douglas",
+      "label": "Pouch of Douglas (Rectouterine Pouch)",
+      "x": 60,
+      "y": 43,
+      "blurb": "Lowest point of the peritoneal cavity, between the uterus and rectum. Where ascites and peritoneal implants collect."
+     },
+     {
+      "id": "vesicouterine",
+      "label": "Vesicouterine Pouch",
+      "x": 41,
+      "y": 46,
+      "blurb": "Peritoneal recess between the bladder and uterus."
+     },
+     {
+      "id": "pubis-g",
+      "label": "Pubic Symphysis",
+      "x": 33,
+      "y": 51,
+      "blurb": "Anterior landmark."
+     },
+     {
+      "id": "sacrum-g",
+      "label": "Sacrum",
+      "x": 66,
+      "y": 24,
+      "blurb": "Posterior landmark; the uterosacral ligaments run toward it (presacral node spread)."
+     }
+    ],
+    "image": "images/gyn/gyn-sagittal.jpg"
+   },
+   {
+    "id": "gyn-uterus",
+    "title": "Uterus, Cervix & Adnexa (Coronal)",
+    "style": "schematic",
+    "caption": "Coronal uterus, cervix, tubes, and ovaries. Source: Cancer Research UK, via Wikimedia Commons, CC BY-SA 4.0; labels removed. and tumor removed (Diagram CRUK 196)",
+    "hotspots": [
+     {
+      "id": "endometrium",
+      "label": "Endometrium",
+      "x": 44,
+      "y": 38,
+      "blurb": "Inner lining: where endometrial cancer starts. Tumors grow outward from here into the muscle wall."
+     },
+     {
+      "id": "myometrium",
+      "label": "Myometrium",
+      "x": 34,
+      "y": 46,
+      "blurb": "Muscle wall. Sarcomas arise here. The junctional zone is its inner dark band on MRI."
+     },
+     {
+      "id": "serosa",
+      "label": "Serosa",
+      "x": 38,
+      "y": 15,
+      "blurb": "Thin peritoneal covering on the outside of the uterus. Beyond it lie the adnexa, bowel, and peritoneal cavity."
+     },
+     {
+      "id": "int-os",
+      "label": "Internal Os",
+      "x": 50,
+      "y": 56,
+      "blurb": "Top of the cervical canal, where the cervix meets the uterine body (the lower uterine segment)."
+     },
+     {
+      "id": "ext-os",
+      "label": "External Os / Transformation Zone",
+      "x": 50,
+      "y": 78,
+      "blurb": "Where the squamocolumnar junction sits: the origin of most cervical cancers. The tandem enters here."
+     },
+     {
+      "id": "tube",
+      "label": "Fallopian Tube",
+      "x": 22,
+      "y": 10,
+      "blurb": "Many high-grade serous 'ovarian' cancers actually start in the fimbriated end of the tube."
+     },
+     {
+      "id": "ovary",
+      "label": "Ovary",
+      "x": 17,
+      "y": 40,
+      "blurb": "Attached to the side wall by the infundibulopelvic ligament, which carries the ovarian vessels and lymphatics up to the para-aortic nodes."
+     }
+    ],
+    "image": "images/gyn/gyn-uterus.jpg"
+   },
+   {
+    "id": "gyn-vagina",
+    "title": "The Vagina: Thirds & Walls",
+    "style": "schematic",
+    "caption": "Close-up of the sagittal pelvis, anterior on the left: the vagina runs down and forward from the cervix to the introitus, with the bladder and urethra in front and the rectum behind. Source: Cancer Research UK, via Wikimedia Commons, CC BY-SA 4.0; labels removed. (Diagram CRUK 477)",
+    "hotspots": [
+     {
+      "id": "fornix",
+      "label": "Vaginal Fornices",
+      "x": 62,
+      "y": 33,
+      "blurb": "Recesses around the cervix. The ovoids or ring of the brachy applicator sit here."
+     },
+     {
+      "id": "upper3",
+      "label": "Upper Third",
+      "x": 54,
+      "y": 43,
+      "blurb": "Surrounds the cervix (the fornices). Drains to the pelvic nodes. After hysterectomy this becomes the vaginal cuff, the target of vaginal brachytherapy."
+     },
+     {
+      "id": "mid3",
+      "label": "Middle Third",
+      "x": 47,
+      "y": 52,
+      "blurb": "Drains to pelvic nodes."
+     },
+     {
+      "id": "lower3",
+      "label": "Lower Third",
+      "x": 41,
+      "y": 61,
+      "blurb": "Ends at the introitus, next to the urethra and anus. Drains to the groin (inguinofemoral) nodes, like the vulva."
+     },
+     {
+      "id": "introitus",
+      "label": "Introitus",
+      "x": 36,
+      "y": 70,
+      "blurb": "Opening of the vagina."
+     },
+     {
+      "id": "ant-wall",
+      "label": "Anterior Wall (Bladder / Urethra)",
+      "x": 40,
+      "y": 48,
+      "blurb": "Faces the bladder and urethra."
+     },
+     {
+      "id": "post-wall",
+      "label": "Posterior Wall (Rectum)",
+      "x": 56,
+      "y": 56,
+      "blurb": "Faces the rectum. Also drains to presacral/perirectal nodes. Rectovaginal septum dose matters in brachy."
+     }
+    ],
+    "image": "images/gyn/gyn-vagina.jpg"
+   },
+   {
+    "id": "gyn-vulva",
+    "title": "Vulva & Perineum",
+    "style": "schematic",
+    "caption": "External vulva. Source: Cancer Research UK, via Wikimedia Commons, CC BY-SA 4.0; labels removed. (Diagram CRUK 285)",
+    "hotspots": [
+     {
+      "id": "mons",
+      "label": "Mons Pubis",
+      "x": 50,
+      "y": 5,
+      "blurb": "Fatty tissue over the pubic bone."
+     },
+     {
+      "id": "clitoris",
+      "label": "Clitoris",
+      "x": 50,
+      "y": 23,
+      "blurb": "Midline. Lymph from midline structures crosses to both groins."
+     },
+     {
+      "id": "lab-maj",
+      "label": "Labia Majora",
+      "x": 35,
+      "y": 45,
+      "blurb": "Outer hair-bearing folds and the most common site of vulvar cancer. A lesion here, away from the midline, drains mainly to the groin on the same side."
+     },
+     {
+      "id": "lab-min",
+      "label": "Labia Minora",
+      "x": 45,
+      "y": 42,
+      "blurb": "Inner folds."
+     },
+     {
+      "id": "urethra-v",
+      "label": "Urethral Meatus",
+      "x": 50,
+      "y": 31,
+      "blurb": "Sits just above the introitus, close to most vulvar tumors."
+     },
+     {
+      "id": "introitus-v",
+      "label": "Vaginal Introitus",
+      "x": 50,
+      "y": 50,
+      "blurb": "The vaginal opening, just behind the urethra."
+     },
+     {
+      "id": "bartholin",
+      "label": "Bartholin Gland Area",
+      "x": 46,
+      "y": 58,
+      "blurb": "Posterolateral. A solid mass here in an older woman needs a biopsy."
+     },
+     {
+      "id": "perineal-body",
+      "label": "Perineal Body / Fourchette",
+      "x": 50,
+      "y": 70,
+      "blurb": "Between vagina and anus. Midline."
+     },
+     {
+      "id": "anus",
+      "label": "Anus",
+      "x": 50,
+      "y": 80,
+      "blurb": "Just behind the perineal body, a few centimeters from the posterior vulva."
+     }
+    ],
+    "image": "images/gyn/gyn-vulva.jpg"
+   }
+  ]
+ },
+ "anat-gyn-nodes": {
+  "intro": "<p>Each GYN organ drains in its own direction. The cervix and uterus drain to the <strong>pelvic</strong> and then <strong>para-aortic</strong> nodes; the vulva and lower vagina drain to the <strong>groins</strong>. Start with the overall map, then the groin.</p>",
+  "plates": [
+   {
+    "id": "gyn-nodes-map",
+    "title": "Pelvic & Para-aortic Nodal Map",
+    "style": "schematic",
+    "caption": "Simplified frontal map of the pelvic, para-aortic, and groin nodes around the uterus. Chains are drawn schematically: the obturator nodes sit deep, between the external and internal iliac chains. Source: Cancer Research UK, via Wikimedia Commons, CC BY-SA 4.0; labels removed. (Diagram CRUK 040)",
+    "hotspots": [
+     {
+      "id": "pa",
+      "label": "Para-aortic Nodes",
+      "x": 50,
+      "y": 8,
+      "blurb": "Along the aorta and IVC up to the renal vessels. Reached from the pelvic chain or directly from the uterine fundus and ovaries via the ovarian vessels."
+     },
+     {
+      "id": "ci",
+      "label": "Common Iliac Nodes",
+      "x": 45,
+      "y": 22,
+      "blurb": "Above the iliac bifurcation. Regional for cervix and endometrium. Positive common iliac nodes usually prompt para-aortic coverage."
+     },
+     {
+      "id": "ei",
+      "label": "External Iliac Nodes",
+      "x": 39,
+      "y": 50,
+      "blurb": "Along the external iliac vessels at the pelvic brim. One of the main pelvic node groups."
+     },
+     {
+      "id": "ii",
+      "label": "Internal Iliac (Hypogastric) Nodes",
+      "x": 46,
+      "y": 50,
+      "blurb": "Deep pelvis. First echelon for the cervix."
+     },
+     {
+      "id": "obt-g",
+      "label": "Obturator Nodes",
+      "x": 41,
+      "y": 58,
+      "blurb": "Pelvic side wall. First echelon; the most commonly involved node in cervical cancer."
+     },
+     {
+      "id": "presac",
+      "label": "Presacral Nodes",
+      "x": 50,
+      "y": 40,
+      "blurb": "Reached via the uterosacral ligaments. Included down to about S3 in pelvic fields."
+     },
+     {
+      "id": "param-n",
+      "label": "Parametrial Nodes",
+      "x": 47,
+      "y": 64,
+      "blurb": "Right beside the cervix and uterus."
+     },
+     {
+      "id": "ing-g",
+      "label": "Inguinofemoral Nodes",
+      "x": 40,
+      "y": 78,
+      "blurb": "Regional for the vulva and lower vagina; distant for cervix and uterus."
+     },
+     {
+      "id": "uterus-map",
+      "label": "Uterus / Cervix",
+      "x": 53,
+      "y": 58,
+      "blurb": "The primary."
+     }
+    ],
+    "image": "images/gyn/gyn-nodes-map.jpg"
+   },
+   {
+    "id": "gyn-groin",
+    "title": "Inguinofemoral (Groin) Nodes",
+    "style": "schematic",
+    "caption": "Right femoral triangle from the front (lateral on the left), superficial layer: inguinal ligament, femoral vessels, great saphenous vein, and inguinal nodes (green). Source: Fischerova et al., Ultrasound Obstet Gynecol 2025 (PMC12133214), fig. 19b, CC BY 4.0.",
+    "hotspots": [
+     {
+      "id": "inguinal-lig",
+      "label": "Inguinal Ligament",
+      "x": 47,
+      "y": 14,
+      "blurb": "Roof of the femoral canal. Superficial nodes run along below it."
+     },
+     {
+      "id": "sup-horiz",
+      "label": "Superficial Inguinal Nodes (Horizontal Group)",
+      "x": 42,
+      "y": 22,
+      "blurb": "Just below and parallel to the inguinal ligament. First echelon for the vulva."
+     },
+     {
+      "id": "sup-vert",
+      "label": "Superficial Inguinal Nodes (Vertical Group)",
+      "x": 54,
+      "y": 31,
+      "blurb": "Along the great saphenous vein."
+     },
+     {
+      "id": "sfj",
+      "label": "Saphenofemoral Junction",
+      "x": 52,
+      "y": 37,
+      "blurb": "Where the great saphenous vein joins the femoral vein; the center of the superficial nodes."
+     },
+     {
+      "id": "fem-v",
+      "label": "Femoral Vein",
+      "x": 56,
+      "y": 24,
+      "blurb": "Nodes lie medial to it. Groin RT fields and dissections center on the femoral vessels."
+     },
+     {
+      "id": "fem-a",
+      "label": "Femoral Artery",
+      "x": 49.5,
+      "y": 25,
+      "blurb": "Lateral to the vein (NAVEL: nerve, artery, vein, empty space, lymphatics)."
+     }
+    ],
+    "image": "images/gyn/gyn-groin.jpg"
+   }
+  ]
+ },
+ "anat-gyn-drainage": {
+  "intro": "<p>Same map, four different primaries. Click through each site and follow the numbers in order: they trace the path lymph takes from the tumor outward. This is the logic behind every GYN nodal field.</p>",
+  "plates": [
+   {
+    "id": "gyn-dr-cervix",
+    "title": "Cervix",
+    "style": "schematic",
+    "caption": "Cervix: lateral first (parametria and side wall), then up the iliac chain to the para-aortics. Same Cancer Research UK nodal map (Wikimedia Commons, CC BY-SA 4.0).",
+    "image": "images/gyn/gyn-nodes-map.jpg",
+    "hotspots": [
+     {
+      "id": "gyn-dr-cervix-0",
+      "label": "Primary: Cervix",
+      "x": 50,
+      "y": 73,
+      "blurb": "Tumor starts at the transformation zone and spreads sideways into the parametria."
+     },
+     {
+      "id": "gyn-dr-cervix-1",
+      "label": "Parametrial Nodes",
+      "x": 47,
+      "y": 64,
+      "blurb": "Small nodes right beside the cervix. The first stop."
+     },
+     {
+      "id": "gyn-dr-cervix-2",
+      "label": "Obturator Nodes",
+      "x": 41,
+      "y": 58,
+      "blurb": "Pelvic side wall. The most commonly involved node group in cervical cancer."
+     },
+     {
+      "id": "gyn-dr-cervix-3",
+      "label": "Internal Iliac Nodes",
+      "x": 46,
+      "y": 50,
+      "blurb": "Deep pelvis along the internal iliac vessels. First echelon with the obturator nodes."
+     },
+     {
+      "id": "gyn-dr-cervix-4",
+      "label": "External Iliac Nodes",
+      "x": 39,
+      "y": 50,
+      "blurb": "Along the external iliac vessels at the pelvic brim."
+     },
+     {
+      "id": "gyn-dr-cervix-5",
+      "label": "Presacral Nodes",
+      "x": 50,
+      "y": 40,
+      "blurb": "Reached along the uterosacral ligaments, which run back from the cervix to the sacrum."
+     },
+     {
+      "id": "gyn-dr-cervix-6",
+      "label": "Common Iliac Nodes",
+      "x": 45,
+      "y": 22,
+      "blurb": "The next step up, above the iliac bifurcation."
+     },
+     {
+      "id": "gyn-dr-cervix-7",
+      "label": "Para-aortic Nodes",
+      "x": 50,
+      "y": 8,
+      "blurb": "The top of the chain. If these are involved, the RT field extends up to the renal vessels."
+     }
+    ]
+   },
+   {
+    "id": "gyn-dr-endo",
+    "title": "Endometrium",
+    "style": "schematic",
+    "caption": "Endometrium: pelvic nodes like the cervix, plus a direct route from the fundus to the para-aortics. Same Cancer Research UK nodal map (Wikimedia Commons, CC BY-SA 4.0).",
+    "image": "images/gyn/gyn-nodes-map.jpg",
+    "hotspots": [
+     {
+      "id": "gyn-dr-endo-0",
+      "label": "Primary: Uterine Body",
+      "x": 50,
+      "y": 62,
+      "blurb": "Endometrial cancer starts in the lining of the uterine body."
+     },
+     {
+      "id": "gyn-dr-endo-1",
+      "label": "Obturator & Internal Iliac Nodes",
+      "x": 43,
+      "y": 56,
+      "blurb": "Lower uterine tumors drain like the cervix, out to the side wall."
+     },
+     {
+      "id": "gyn-dr-endo-2",
+      "label": "External Iliac Nodes",
+      "x": 39,
+      "y": 50,
+      "blurb": "Also part of the pelvic chain."
+     },
+     {
+      "id": "gyn-dr-endo-3",
+      "label": "Common Iliac Nodes",
+      "x": 45,
+      "y": 22,
+      "blurb": "Above the bifurcation, on the way to the para-aortics."
+     },
+     {
+      "id": "gyn-dr-endo-4",
+      "label": "Ovarian Vessel Route",
+      "x": 57,
+      "y": 56,
+      "blurb": "Lymphatics from the fundus travel with the ovarian vessels in the infundibulopelvic ligament."
+     },
+     {
+      "id": "gyn-dr-endo-5",
+      "label": "Para-aortic Nodes",
+      "x": 50,
+      "y": 8,
+      "blurb": "Reached directly through the ovarian vessel route, so para-aortic nodes can be positive even when pelvic nodes are negative."
+     },
+     {
+      "id": "gyn-dr-endo-6",
+      "label": "Inguinal Nodes (Rare)",
+      "x": 40,
+      "y": 78,
+      "blurb": "A rare path along the round ligament, which runs from the uterine horn through the inguinal canal."
+     }
+    ]
+   },
+   {
+    "id": "gyn-dr-vagina",
+    "title": "Vagina",
+    "style": "schematic",
+    "caption": "Vagina: the drainage depends on which part of the tube the tumor is in. Same Cancer Research UK nodal map (Wikimedia Commons, CC BY-SA 4.0).",
+    "image": "images/gyn/gyn-nodes-map.jpg",
+    "hotspots": [
+     {
+      "id": "gyn-dr-vagina-0",
+      "label": "Primary: Vagina",
+      "x": 51,
+      "y": 79,
+      "blurb": "The vagina is a tube, and each part drains to a different place."
+     },
+     {
+      "id": "gyn-dr-vagina-1",
+      "label": "Upper Vagina to Pelvic Nodes",
+      "x": 41,
+      "y": 58,
+      "blurb": "The upper two-thirds drain like the cervix: obturator and internal and external iliac nodes."
+     },
+     {
+      "id": "gyn-dr-vagina-2",
+      "label": "External Iliac Nodes",
+      "x": 39,
+      "y": 50,
+      "blurb": "Part of the pelvic chain for upper vaginal tumors."
+     },
+     {
+      "id": "gyn-dr-vagina-3",
+      "label": "Posterior Wall to Presacral Nodes",
+      "x": 50,
+      "y": 40,
+      "blurb": "The posterior wall, next to the rectum, also drains to the presacral and perirectal nodes."
+     },
+     {
+      "id": "gyn-dr-vagina-4",
+      "label": "Lower Vagina to Inguinofemoral Nodes",
+      "x": 40,
+      "y": 78,
+      "blurb": "The lower third drains like the vulva, to the groins."
+     },
+     {
+      "id": "gyn-dr-vagina-5",
+      "label": "Common Iliac & Para-aortic Nodes",
+      "x": 45,
+      "y": 22,
+      "blurb": "The next steps up from the pelvic chain."
+     }
+    ]
+   },
+   {
+    "id": "gyn-dr-vulva",
+    "title": "Vulva",
+    "style": "schematic",
+    "caption": "Vulva: groins first, then the pelvis. The vulva itself sits just below this drawing. Same Cancer Research UK nodal map (Wikimedia Commons, CC BY-SA 4.0).",
+    "image": "images/gyn/gyn-nodes-map.jpg",
+    "hotspots": [
+     {
+      "id": "gyn-dr-vulva-0",
+      "label": "Primary: Vulva (Below the Drawing)",
+      "x": 51,
+      "y": 88,
+      "blurb": "The vulva sits below the vaginal opening. It is skin, and it drains like skin: to the groins."
+     },
+     {
+      "id": "gyn-dr-vulva-1",
+      "label": "Superficial Inguinal Nodes",
+      "x": 40,
+      "y": 78,
+      "blurb": "First echelon. The nodes along the inguinal ligament and the great saphenous vein."
+     },
+     {
+      "id": "gyn-dr-vulva-2",
+      "label": "Deep Femoral Nodes (Cloquet's)",
+      "x": 42,
+      "y": 70,
+      "blurb": "Next, along the femoral vein. Cloquet's node, under the inguinal ligament, is the gateway to the pelvis."
+     },
+     {
+      "id": "gyn-dr-vulva-3",
+      "label": "Opposite Groin",
+      "x": 61,
+      "y": 78,
+      "blurb": "Midline tumors (clitoris, perineal body) drain to both groins, so both are evaluated."
+     },
+     {
+      "id": "gyn-dr-vulva-4",
+      "label": "External Iliac Nodes",
+      "x": 39,
+      "y": 50,
+      "blurb": "Only reached after the groins. For the vulva these count as distant, not regional."
+     }
+    ]
+   }
+  ]
+ }
+}

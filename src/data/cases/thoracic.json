@@ -1,0 +1,632 @@
+{
+ "category": "Case-Based Practice",
+ "intro": "<p>Eight cases that get harder as you go, from a screening-detected nodule to central tumors, oligometastatic disease, and small cell lung cancer. Each starts with a one-liner, then gives you more information step by step: the <strong>workup and imaging</strong>, the <strong>stage</strong>, the <strong>treatment</strong>, the <strong>dose and target</strong>, the <strong>landmark trials</strong>, and the <strong>side effects</strong> to watch for. Some steps are multiple choice, some are fill-in-the-blank. Staging uses the <strong>AJCC 9th edition</strong> (N2a/N2b, M1c1/M1c2), the version used in the current NCCN guidelines.</p>",
+ "cases": [
+  {
+   "id": "case-1",
+   "level": "Foundational",
+   "title": "Case 1: The Screening Scan",
+   "oneLiner": "A 74-year-old former smoker with severe COPD (FEV1 38% predicted) has a new lung nodule on her annual low-dose screening CT. Biopsy shows adenocarcinoma.",
+   "steps": [
+    {
+     "label": "Workup",
+     "prompt": "Pulmonology says she is medically inoperable because of her poor lung function. What is the most important question to answer before recommending SBRT?",
+     "choices": [
+      "What is her performance status?",
+      "Is the disease truly node-negative, and has staging (PET/CT, plus EBUS when indicated) been adequate?",
+      "Could she tolerate concurrent chemotherapy?",
+      "Does she have a targetable mutation?"
+     ],
+     "correctIndex": 1,
+     "explanation": "SBRT treats the primary only, so hidden nodal or distant disease would change the whole plan. Confirm N0 with PET/CT, and add EBUS if the tumor is central, over 3 cm, or PET shows any nodes."
+    },
+    {
+     "label": "Imaging",
+     "context": "<p><strong>CT:</strong> a 2.6 cm spiculated nodule in the periphery of the left lower lobe, touching the posterior pleura but not invading the chest wall. <strong>PET/CT:</strong> avid primary; no hilar, mediastinal, or distant uptake.</p>",
+     "image": "images/thoracic/th-nodule.jpg",
+     "caption": "Axial CT, lung window: a spiculated nodule in the left lower lobe against the posterior pleura (patient's left is on your right).",
+     "prompt": "Stage this tumor (AJCC 9th edition).",
+     "answer": "T1c N0 M0, Stage IA3",
+     "explanation": "2.6 cm is T1c (over 2 and up to 3 cm). Touching the pleura without invading it does not upstage the tumor; invading the parietal pleura or chest wall would make it T3."
+    },
+    {
+     "label": "Treatment",
+     "prompt": "What is the treatment?",
+     "choices": [
+      "Lobectomy anyway",
+      "Definitive SBRT, with no chemotherapy",
+      "Concurrent chemoradiation to 60 Gy",
+      "Observation until it grows"
+     ],
+     "correctIndex": 1,
+     "explanation": "Node-negative and medically inoperable means SBRT. Local control is about 90-95%, and chemo is not added for early-stage disease."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial showed that SBRT controlled the primary tumor in about 98% of inoperable patients with peripheral stage I NSCLC at 3 years?",
+     "choices": [
+      "RTOG 0236",
+      "RTOG 0617",
+      "PACIFIC",
+      "LungART"
+     ],
+     "correctIndex": 0,
+     "explanation": "RTOG 0236 made SBRT the standard for inoperable, peripheral, early-stage NSCLC. RTOG 0617 is the stage III dose-escalation trial, PACIFIC the durvalumab trial, and LungART the PORT trial."
+    },
+    {
+     "label": "Dose",
+     "prompt": "Because the tumor sits against the chest wall, which regimen fits best?",
+     "choices": [
+      "54 Gy in 3 fractions",
+      "48 Gy in 4 or 50 Gy in 5 fractions",
+      "60 Gy in 30 fractions with chemo",
+      "8 Gy in 1 fraction"
+     ],
+     "correctIndex": 1,
+     "explanation": "A tumor abutting the chest wall is still an SBRT case, but many centers spread the dose over 4-5 fractions to lower the risk of chest wall pain and rib fracture. The goal is still a BED10 of at least 100 Gy; below that, local control drops."
+    },
+    {
+     "label": "Two years later",
+     "image": "images/thoracic/th-c-rib.jpg",
+     "caption": "Rib changes years after SBRT next to the chest wall (arrows), in another patient. Matsumoto Y, Jpn J Radiol 2022 (PMC9252968), CC BY 4.0.",
+     "prompt": "Two years later she has sharp pain over the treated area of her back. Her CT looks like this. What is it?",
+     "choices": [
+      "Tumor recurrence in the rib",
+      "Rib fracture, a known late effect of SBRT next to the chest wall",
+      "Radiation pneumonitis",
+      "A new primary lung cancer"
+     ],
+     "correctIndex": 1,
+     "explanation": "Chest wall pain and rib fracture are the classic late effects of SBRT to a tumor against the chest wall, which is why she was counseled about them beforehand. Pneumonitis, the other main side effect, usually comes in the first months and is mild after SBRT."
+    }
+   ]
+  },
+  {
+   "id": "case-4",
+   "level": "Foundational",
+   "title": "Case 2: The Fit Golfer",
+   "oneLiner": "A 66-year-old who still plays 18 holes a week has a 1.8 cm peripheral nodule in the right upper lobe. Biopsy shows adenocarcinoma. PET/CT and EBUS show no nodal or distant disease, and his lung function is excellent.",
+   "steps": [
+    {
+     "label": "Treatment",
+     "prompt": "What is the standard treatment?",
+     "choices": [
+      "SBRT, 54 Gy in 3 fractions",
+      "Surgery: a segmentectomy (or lobectomy) with lymph node sampling",
+      "Concurrent chemoradiation",
+      "Systemic therapy alone"
+     ],
+     "correctIndex": 1,
+     "explanation": "For a fit patient with N0 disease, surgery is the standard and SBRT is for everyone else. For a peripheral N0 tumor 2 cm or smaller, segmentectomy is now standard: CALGB 140503 showed it was noninferior to lobectomy, and JCOG0802 showed better overall survival."
+    },
+    {
+     "label": "Surprise",
+     "image": "images/thoracic/th-iaslc.jpg",
+     "caption": "Frontal drawing of the trachea, bronchi, aortic arch, and esophagus with the main IASLC nodal stations marked.",
+     "prompt": "At surgery, a node from station 4R is positive. Where is station 4R, and what N category is it?",
+     "choices": [
+      "A hilar node: N1",
+      "The right lower paratracheal node, a mediastinal station: N2",
+      "A supraclavicular node: N3",
+      "A lobar node: N1"
+     ],
+     "correctIndex": 1,
+     "explanation": "Single-digit stations are mediastinal. An ipsilateral mediastinal node is N2, and one involved station is N2a in the AJCC 9th edition. 10-14 are hilar and intrapulmonary (N1)."
+    },
+    {
+     "label": "Pathology",
+     "context": "<p><strong>Final pathology:</strong> 1.8 cm adenocarcinoma, margins negative. 1 of 4 nodes at station 4R positive, all other stations negative, no extranodal extension.</p>",
+     "prompt": "What is his pathologic stage?",
+     "answer": "pT1b N2a M0, Stage IIB (AJCC 9th edition)",
+     "explanation": "1.8 cm is T1b (over 1 and up to 2 cm). In the 9th edition, T1 with single-station N2 (N2a) is stage IIB; T2 N2a would be IIIA."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "The resident asks whether he needs postoperative radiation (PORT) because he has N2 disease. Which trial answered this?",
+     "choices": [
+      "LungART",
+      "RTOG 0236",
+      "CheckMate 816",
+      "PACIFIC"
+     ],
+     "correctIndex": 0,
+     "explanation": "In LungART, PORT after complete resection of N2 disease did not improve disease-free survival and added heart and lung toxicity. PORT is for a positive margin, not for resected N2 with clear margins."
+    },
+    {
+     "label": "Adjuvant",
+     "prompt": "His tumor has an EGFR exon 19 deletion. What adjuvant treatment fits?",
+     "choices": [
+      "PORT to the mediastinum",
+      "Chemo if indicated, then osimertinib",
+      "Observation only",
+      "Durvalumab for 1 year"
+     ],
+     "correctIndex": 1,
+     "explanation": "Stage II-III disease gets adjuvant systemic therapy. With an EGFR mutation, osimertinib is added (ADAURA); alectinib for ALK (ALINA); immunotherapy for PD-L1-positive tumors without a driver (IMpower010)."
+    },
+    {
+     "label": "What if",
+     "prompt": "Change one detail: the bronchial margin is positive. What now?",
+     "answer": "Re-resect if possible; if not, postoperative radiation to the margin (with or without chemo).",
+     "explanation": "A positive margin (R1 or R2) is the main reason radiation enters the plan after a lung cancer resection."
+    }
+   ]
+  },
+  {
+   "id": "case-2",
+   "level": "Intermediate",
+   "title": "Case 3: Cough and Blood",
+   "oneLiner": "A 61-year-old who still smokes has 6 weeks of cough and blood-streaked sputum. Bronchoscopic biopsy of a central left-sided mass shows squamous cell carcinoma.",
+   "steps": [
+    {
+     "label": "Stage",
+     "context": "<p><strong>CT:</strong> a 5.2 cm central left perihilar mass against the mediastinal pleura. <strong>PET/CT:</strong> avid primary and a separate avid <strong>subcarinal (station 7)</strong> node, EBUS-confirmed. No distant disease. <strong>Brain MRI:</strong> negative.</p>",
+     "image": "images/thoracic/th-g-pet7.jpg",
+     "caption": "Fused PET/CT: an FDG-avid subcarinal (station 7) node. Khosa J, Cho RJ, Diagnostics 2026 (PMC13206069), CC BY 4.0.",
+     "prompt": "Stage this tumor (AJCC 9th edition).",
+     "answer": "T3 N2a M0, Stage IIIB",
+     "explanation": "5.2 cm is T3 (over 5 and up to 7 cm). The subcarinal station has a single digit, so it is N2, and one station is N2a. T3 N2a is stage IIIB."
+    },
+    {
+     "label": "Treatment",
+     "prompt": "Tumor board calls it unresectable. What is the treatment?",
+     "choices": [
+      "SBRT to the primary",
+      "Concurrent platinum-based chemoradiation, then durvalumab for 1 year",
+      "Neoadjuvant chemo-immunotherapy, then surgery",
+      "Chemotherapy alone"
+     ],
+     "correctIndex": 1,
+     "explanation": "Unresectable stage III: concurrent chemoRT, then consolidation durvalumab (PACIFIC) if there is no progression. With an EGFR mutation, osimertinib would replace durvalumab (LAURA). SBRT does not treat the nodes."
+    },
+    {
+     "label": "Target",
+     "prompt": "Which nodes go in the radiation target?",
+     "choices": [
+      "The primary plus the PET-positive or biopsy-proven nodes only",
+      "The primary plus every mediastinal station, electively",
+      "The primary plus both supraclavicular fossae",
+      "The primary only"
+     ],
+     "correctIndex": 0,
+     "explanation": "Lung cancer is treated without elective nodal irradiation: the primary and involved nodes (here, station 7) are the target."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial showed that raising the dose from 60 Gy to 74 Gy made survival worse, with heart dose predicting death?",
+     "choices": [
+      "RTOG 0617",
+      "PACIFIC",
+      "RTOG 0813",
+      "CONVERT"
+     ],
+     "correctIndex": 0,
+     "explanation": "RTOG 0617 made 60 Gy in 30 fractions the standard for stage III NSCLC and put heart dose on everyone's radar."
+    },
+    {
+     "label": "Dose",
+     "prompt": "Give the dose and fractionation.",
+     "answer": "60 Gy in 30 fractions (2 Gy per fraction), with concurrent chemo.",
+     "explanation": "Conventional fractionation, not SBRT. Don't escalate past 60 Gy."
+    },
+    {
+     "label": "Side effects",
+     "prompt": "What side effects do you counsel him about, and when do they happen?",
+     "answer": "Esophagitis (painful swallowing, from about week 2-3), fatigue, skin irritation, and cough during RT; radiation pneumonitis 1-6 months after RT (cough, low fever, shortness of breath); plus chemo effects such as low counts and nausea.",
+     "explanation": "These drive the plan constraints: total lung V20 under 30-35% and mean lung dose under 20 Gy for pneumonitis, mean esophagus dose under 34 Gy, mean heart dose as low as possible, and spinal cord max under 45-50 Gy."
+    }
+   ]
+  },
+  {
+   "id": "case-3",
+   "level": "Intermediate",
+   "title": "Case 4: The Tumor Board Question",
+   "oneLiner": "A 58-year-old woman with a 3.4 cm right lower lobe adenocarcinoma has a single PET-avid lower right paratracheal (4R) node. She is fit for surgery.",
+   "steps": [
+    {
+     "label": "Nodal staging",
+     "image": "images/thoracic/th-g-ebus.jpg",
+     "caption": "Stations reachable by EBUS only (blue), EUS-B only (light blue), or both (green). Biondini D et al., Diagnostics 2023 (PMC10417616), CC BY 4.0.",
+     "prompt": "How should the PET-avid 4R node be confirmed before treatment is decided?",
+     "choices": [
+      "Repeat PET in 3 months",
+      "EBUS-guided needle sampling",
+      "Mediastinal radiation as a test",
+      "Assume it is benign"
+     ],
+     "correctIndex": 1,
+     "explanation": "PET can be falsely positive (and falsely negative), and a mediastinal node changes the stage and the treatment. EBUS reaches most mediastinal and hilar stations through the airway; EUS-B adds stations next to the esophagus."
+    },
+    {
+     "label": "Stage",
+     "prompt": "EBUS confirms cancer in 4R only. Stage it (AJCC 9th edition).",
+     "answer": "T2a N2a M0, Stage IIIA",
+     "explanation": "3.4 cm is T2a (over 3 and up to 4 cm). A single ipsilateral mediastinal station is N2a; multiple stations would be N2b. T2 N2a is IIIA."
+    },
+    {
+     "label": "Biomarkers",
+     "prompt": "Before starting systemic therapy, which tumor tests are essential?",
+     "choices": [
+      "Only PD-L1",
+      "EGFR, ALK (and other drivers) plus PD-L1",
+      "HER2 and ER",
+      "p16"
+     ],
+     "correctIndex": 1,
+     "explanation": "A driver mutation changes the plan: EGFR- or ALK-positive tumors get targeted therapy rather than immunotherapy. PD-L1 helps select immunotherapy."
+    },
+    {
+     "label": "Approach",
+     "prompt": "No driver is found. Thoracic surgery feels the tumor and node are resectable. What is the modern standard?",
+     "choices": [
+      "Concurrent chemoradiation, no surgery",
+      "Upfront surgery, then decide",
+      "Neoadjuvant chemo-immunotherapy, then surgery",
+      "SBRT to the primary and node"
+     ],
+     "correctIndex": 2,
+     "explanation": "The first question for every stage III patient is resectable or not. Single-station, non-bulky N2 is often resectable, and those patients get neoadjuvant (perioperative) chemo-immunotherapy and then surgery."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial showed that adding nivolumab to chemo before surgery raised the pathologic complete response rate from 2% to 24%?",
+     "choices": [
+      "CheckMate 816",
+      "PACIFIC",
+      "ADAURA",
+      "SABR-COMET"
+     ],
+     "correctIndex": 0,
+     "explanation": "CheckMate 816 established neoadjuvant chemo-immunotherapy for resectable NSCLC; KEYNOTE-671 supports a perioperative approach."
+    },
+    {
+     "label": "Radiation",
+     "prompt": "Is radiation part of her upfront plan? When would it come in?",
+     "answer": "No. Radiation would only be added after surgery for a positive margin, not simply because she had N2 disease.",
+     "explanation": "Had the disease been bulky or multi-station N2, she would have gone down the unresectable path: concurrent chemoRT to 60 Gy, then durvalumab."
+    }
+   ]
+  },
+  {
+   "id": "th-case-pancoast",
+   "level": "Intermediate",
+   "title": "Case 5: The Shoulder That Won't Quit",
+   "oneLiner": "A 57-year-old heavy smoker has 4 months of right shoulder pain that now runs down the inner arm into his ring and little fingers. Physical therapy hasn't helped. His wife says his right eyelid droops.",
+   "steps": [
+    {
+     "label": "Localize",
+     "prompt": "His right pupil is small and the right side of his face doesn't sweat. What explains the whole picture?",
+     "choices": [
+      "Rotator cuff tear",
+      "A tumor at the right lung apex invading the lower brachial plexus and the sympathetic chain (Horner syndrome)",
+      "Cervical disc herniation at C5-6",
+      "A brainstem stroke"
+     ],
+     "correctIndex": 1,
+     "explanation": "A superior sulcus (Pancoast) tumor sits at the lung apex next to the lower brachial plexus (C8-T1: pain into the ulnar fingers) and the sympathetic chain (ptosis, miosis, anhidrosis). Shoulder pain in a smoker with these findings needs chest imaging."
+    },
+    {
+     "label": "Imaging",
+     "image": "images/thoracic/th-mri-pancoast.jpg",
+     "caption": "Coronal T2 MRI of a right superior sulcus tumor. Manenti G et al., Case Rep Radiol 2013 (PMC3626318), CC BY 3.0.",
+     "prompt": "CT shows a right apical mass. Which study best shows whether it invades the brachial plexus, subclavian vessels, or vertebrae?",
+     "choices": [
+      "Chest X-ray",
+      "MRI of the thoracic inlet",
+      "Bone scan",
+      "Ultrasound"
+     ],
+     "correctIndex": 1,
+     "explanation": "MRI is the modality for superior sulcus tumors because plexus, vessel, and vertebral invasion decide resectability. Full staging (PET/CT and brain MRI) comes too."
+    },
+    {
+     "label": "Stage",
+     "context": "<p><strong>MRI:</strong> 4.5 cm tumor invading the chest wall and the T1 nerve root; vertebral bodies, subclavian vessels, and upper plexus are free. <strong>PET/CT and brain MRI:</strong> no nodal or distant disease.</p>",
+     "prompt": "Stage it (AJCC 9th edition).",
+     "answer": "T3 N0 M0, Stage IIB",
+     "explanation": "Chest wall and T1 nerve root involvement make a superior sulcus tumor T3. Vertebral body, subclavian vessel, or brachial plexus trunk (C8 and above) invasion would be T4. T3 N0 is IIB."
+    },
+    {
+     "label": "Treatment",
+     "prompt": "What is the standard sequence for a resectable superior sulcus tumor?",
+     "choices": [
+      "Surgery alone",
+      "Neoadjuvant chemoradiation (about 45-50 Gy), then surgery, then more systemic therapy",
+      "SBRT, 54 Gy in 3 fractions",
+      "Palliative RT only"
+     ],
+     "correctIndex": 1,
+     "explanation": "Induction chemoRT shrinks the tumor away from the plexus and vessels so the surgeon can get clear margins."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial showed that induction chemoradiation followed by surgery achieved a complete (R0) resection in over 90% of Pancoast tumors?",
+     "choices": [
+      "SWOG 9416 / INT 0160",
+      "RTOG 0236",
+      "INT 0139",
+      "HILUS"
+     ],
+     "correctIndex": 0,
+     "explanation": "SWOG 9416 (INT 0160) set the trimodality standard for superior sulcus tumors. INT 0139 is remembered for high mortality after pneumonectomy following chemoRT."
+    },
+    {
+     "label": "Organ at risk",
+     "prompt": "Which normal structure's dose limit matters most in this plan?",
+     "choices": [
+      "Brachial plexus (max under about 66 Gy)",
+      "Kidneys",
+      "Rectum",
+      "Lens of the eye"
+     ],
+     "correctIndex": 0,
+     "explanation": "The tumor sits on the plexus, so plexopathy (pain, weakness, numbness in the arm) is the big worry. Spinal cord, lung, and esophagus limits apply too."
+    },
+    {
+     "label": "What if",
+     "prompt": "Change one detail: MRI shows invasion of the T1 vertebral body that makes it unresectable. What now?",
+     "answer": "Definitive concurrent chemoradiation to 60-66 Gy, then consolidation durvalumab, respecting the brachial plexus and cord limits.",
+     "explanation": "Unresectable superior sulcus tumors follow the stage III unresectable paradigm."
+    }
+   ]
+  },
+  {
+   "id": "case-6",
+   "level": "Advanced",
+   "title": "Case 6: Next to the Airway",
+   "oneLiner": "A 79-year-old with heart failure and oxygen-dependent COPD has a 2.8 cm squamous cell carcinoma in the right lung, 1 cm from the right main bronchus. PET/CT and EBUS show no nodal or distant disease. He cannot have surgery.",
+   "steps": [
+    {
+     "label": "Location",
+     "image": "images/thoracic/th-pbt.jpg",
+     "caption": "Frontal drawing of the trachea, main and lobar bronchi, pleura, chest wall, and diaphragm. The zone 2 cm around the proximal bronchial tree defines a central tumor.",
+     "prompt": "What makes this tumor 'central'?",
+     "choices": [
+      "It is larger than 2 cm",
+      "It lies within 2 cm of the proximal bronchial tree (or touches the mediastinal pleura)",
+      "It is squamous histology",
+      "It is in the right lung"
+     ],
+     "correctIndex": 1,
+     "explanation": "The proximal bronchial tree runs from the trachea to the lobar bronchi. Tumors within 2 cm of it are central, and the airway, vessels, and esophagus can't take a 3-fraction dose."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which study found that central tumors treated in 3 fractions had about 11 times the risk of severe toxicity, creating the 2 cm 'no-fly zone'?",
+     "choices": [
+      "The Indiana phase II trial (Timmerman)",
+      "RTOG 0813",
+      "HILUS",
+      "RTOG 0617"
+     ],
+     "correctIndex": 0,
+     "explanation": "The Indiana trial defined the no-fly zone. RTOG 0813 then showed central tumors tolerate 5 fractions up to 12 Gy x 5, and HILUS showed the danger of 8-fraction SBRT right next to the main bronchi and trachea."
+    },
+    {
+     "label": "Dose",
+     "prompt": "Which regimen fits a central tumor?",
+     "choices": [
+      "54 Gy in 3 fractions",
+      "50 Gy in 5 fractions (up to 60 Gy in 5) or 60 Gy in 8",
+      "8 Gy in 1 fraction",
+      "30 Gy in 10 fractions"
+     ],
+     "correctIndex": 1,
+     "explanation": "The closer to the middle of the chest, the more fractions: peripheral 3, central 5, ultracentral 8 or more. Never 3 fractions for a central tumor."
+    },
+    {
+     "label": "Ultracentral",
+     "prompt": "On the plan, the PTV overlaps the wall of the right main bronchus. Now what?",
+     "choices": [
+      "Keep 50 Gy in 5 fractions and ignore the bronchus",
+      "Treat as ultracentral: 60 Gy in 8 or 15 (or 60 Gy in 30), respecting airway limits even if part of the PTV is underdosed",
+      "Switch to 54 Gy in 3",
+      "Abandon treatment"
+     ],
+     "correctIndex": 1,
+     "explanation": "When the tumor or PTV touches the trachea, main bronchi, or esophagus, toxicity drives the plan. In HILUS, 56 Gy in 8 near the main bronchi caused treatment-related death in about 15%, mostly from bleeding."
+    },
+    {
+     "label": "Toxicity",
+     "prompt": "What severe late toxicity are you trying to prevent with an ultracentral tumor?",
+     "answer": "Fatal hemoptysis (bleeding from the airway or a vessel), plus airway stenosis or fistula.",
+     "explanation": ""
+    },
+    {
+     "label": "What if",
+     "prompt": "Change the story: he has liver and bone metastases, his ECOG is 3, and he is coughing up blood from this tumor. What radiation is best?",
+     "choices": [
+      "60 Gy in 30 fractions with chemo",
+      "A short palliative course: 20 Gy in 5, 17 Gy in 2 (1 week apart), or 10 Gy in 1",
+      "Ablative SBRT to every site",
+      "No radiation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Metastatic lung cancer with hemoptysis does not mean 6 weeks of chemoRT. Ask what the goal is: usually palliation, with a short course chosen by prognosis and goals, not stage."
+    }
+   ]
+  },
+  {
+   "id": "case-5",
+   "level": "Advanced",
+   "title": "Case 7: Four Months Later",
+   "oneLiner": "A 55-year-old woman finished concurrent chemoradiation (60 Gy) for stage IIIA right upper lobe NSCLC 4 months ago and is on consolidation durvalumab. She now has a dry cough, a low-grade fever, and is short of breath on stairs.",
+   "steps": [
+    {
+     "label": "Diagnosis",
+     "image": "images/thoracic/th-c-pneumonitis.jpg",
+     "caption": "Before RT (a), the dose distribution (b), and later consolidation in the treated right upper lung (c), in another patient. Choi JH et al., Acta Radiol Open 2024 (PMC11459547), CC BY-NC 4.0.",
+     "prompt": "Her CT is shown. What is the most likely diagnosis?",
+     "choices": [
+      "Bacterial pneumonia in the opposite lung",
+      "Radiation pneumonitis",
+      "Tumor progression",
+      "Pulmonary embolism"
+     ],
+     "correctIndex": 1,
+     "explanation": "Radiation pneumonitis typically appears 1-6 months after RT, with ground-glass opacity and consolidation that match the high-dose region of the plan, often with straight edges that don't follow anatomy."
+    },
+    {
+     "label": "Two causes",
+     "prompt": "She is also on durvalumab. How does radiation pneumonitis usually differ from immune checkpoint pneumonitis?",
+     "choices": [
+      "They look identical and always occur in the same place",
+      "RT pneumonitis follows the radiation field; immune pneumonitis can be patchy or diffuse and outside the field",
+      "Immune pneumonitis only happens years later",
+      "RT pneumonitis never needs treatment"
+     ],
+     "correctIndex": 1,
+     "explanation": "Both can happen in PACIFIC patients and overlap. Compare the CT to the dose plan, and rule out infection."
+    },
+    {
+     "label": "Management",
+     "prompt": "Her symptoms limit her daily activities (grade 2). What is the right management?",
+     "choices": [
+      "Antibiotics only",
+      "Hold durvalumab and start oral steroids (e.g. prednisone about 1 mg/kg) with a slow taper over weeks",
+      "Re-irradiate",
+      "Continue everything and recheck in 6 months"
+     ],
+     "correctIndex": 1,
+     "explanation": "Symptomatic pneumonitis is treated with steroids tapered slowly (tapering too fast can cause a flare). Durvalumab is held and may be restarted once it resolves, depending on the grade."
+    },
+    {
+     "label": "Plan metric",
+     "prompt": "Which plan metrics best predict radiation pneumonitis?",
+     "choices": [
+      "Spinal cord max dose",
+      "Total lung V20 and mean lung dose",
+      "Mean esophagus dose",
+      "Heart V50"
+     ],
+     "correctIndex": 1,
+     "explanation": "Keep lung V20 under about 30-35% and mean lung dose under about 20 Gy. The esophagus limit predicts esophagitis, and heart dose predicts cardiac events and survival (RTOG 0617)."
+    },
+    {
+     "label": "New finding",
+     "prompt": "She recovers. At 14 months, CT shows a new, isolated 1.8 cm left adrenal nodule, biopsy-proven metastatic NSCLC; nothing else is new. Restage her.",
+     "answer": "M1b (a single extrathoracic metastasis), now Stage IVA",
+     "explanation": "M1a is intrathoracic spread (pleural or pericardial disease, contralateral lung nodules). A single extrathoracic metastasis is M1b, and multiple extrathoracic metastases are M1c."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial showed better overall survival when SABR to all sites was added to standard care for up to 5 metastases?",
+     "choices": [
+      "SABR-COMET",
+      "PACIFIC",
+      "LungART",
+      "RTOG 0236"
+     ],
+     "correctIndex": 0,
+     "explanation": "SABR-COMET (up to 5 metastases) and the Gomez phase II trial (up to 3) support treating every site in oligometastatic disease while continuing systemic therapy."
+    },
+    {
+     "label": "Dose",
+     "prompt": "What kind of radiation would you use for the adrenal metastasis?",
+     "answer": "An ablative SBRT course, typically in about 5 fractions, with continued systemic therapy.",
+     "explanation": "The dose depends on nearby organs at risk: kidney, stomach, and bowel."
+    }
+   ]
+  },
+  {
+   "id": "th-case-sclc",
+   "level": "Advanced",
+   "title": "Case 8: The Swollen Face",
+   "oneLiner": "A 58-year-old woman with a 50 pack-year history has 2 weeks of face and arm swelling that is worse in the morning, and she gets short of breath lying flat. Visible veins have appeared across her chest.",
+   "steps": [
+    {
+     "label": "Exam",
+     "image": "images/thoracic/th-c-svc.jpg",
+     "caption": "Dilated superficial veins on the chest wall in superior vena cava syndrome (another patient). EMAHkempny, Wikimedia Commons, CC BY-SA 4.0.",
+     "prompt": "What syndrome is this, and what usually comes first if her airway is stable?",
+     "choices": [
+      "Superior vena cava syndrome; get a tissue diagnosis before treatment (stent first if severe)",
+      "Heart failure; start diuretics",
+      "Allergic reaction; give epinephrine",
+      "Cushing syndrome; check cortisol"
+     ],
+     "correctIndex": 0,
+     "explanation": "A mediastinal mass compressing the SVC causes face and arm swelling and collateral chest wall veins. Unless there is stridor or airway compromise, it is not an emergency for radiation: tissue comes first, because treatment depends on histology. A stent gives the fastest relief."
+    },
+    {
+     "label": "Pathology",
+     "image": "images/thoracic/th-c-sclc-path.jpg",
+     "caption": "Small cell carcinoma of the lung on CT-guided core biopsy, H&E. Wikimedia Commons, CC BY-SA 3.0.",
+     "prompt": "The biopsy shows sheets of small cells with scant cytoplasm, crushed nuclei, and nuclear molding. What is it?",
+     "choices": [
+      "Squamous cell carcinoma",
+      "Small cell lung cancer",
+      "Adenocarcinoma",
+      "Carcinoid"
+     ],
+     "correctIndex": 1,
+     "explanation": "Small round blue cells with nuclear molding and crush artifact are small cell lung cancer, usually central, bulky, and smoking-related."
+    },
+    {
+     "label": "Stage",
+     "image": "images/thoracic/th-c-sclc-ct.jpg",
+     "caption": "CT of small cell carcinoma: a left hilar and mediastinal mass. Yale Rosen, Wikimedia Commons, CC BY-SA 2.0.",
+     "prompt": "PET/CT and brain MRI show the left hilar mass and mediastinal nodes only, all fitting in one radiation field. How is this classified?",
+     "choices": [
+      "Limited stage",
+      "Extensive stage",
+      "Stage IV",
+      "Unstageable"
+     ],
+     "correctIndex": 0,
+     "explanation": "Limited-stage SCLC is disease that can be safely encompassed in one radiation field (essentially stage I-III). Distant metastases or disease too large for one field is extensive stage."
+    },
+    {
+     "label": "Treatment",
+     "prompt": "What is the treatment?",
+     "choices": [
+      "Lobectomy",
+      "Cisplatin-etoposide with concurrent thoracic RT, started early (cycle 1-2)",
+      "Chemo alone",
+      "SBRT to the primary"
+     ],
+     "correctIndex": 1,
+     "explanation": "Limited-stage SCLC is treated for cure with concurrent chemoRT, starting radiation early. Surgery is only for the rare T1-2 N0 tumor."
+    },
+    {
+     "label": "Trial",
+     "tag": "Landmark trial",
+     "prompt": "Which trial showed that 45 Gy in 30 fractions given twice daily beat 45 Gy once daily?",
+     "choices": [
+      "Turrisi (INT 0096)",
+      "CONVERT",
+      "ADRIATIC",
+      "CREST"
+     ],
+     "correctIndex": 0,
+     "explanation": "Turrisi established 45 Gy twice daily; CONVERT then found 66 Gy once daily about equal. ADRIATIC added consolidation durvalumab, and CREST is the extensive-stage thoracic RT trial."
+    },
+    {
+     "label": "After chemoRT",
+     "prompt": "She responds well. What comes next?",
+     "choices": [
+      "Nothing",
+      "Consolidation durvalumab (ADRIATIC), plus PCI or MRI brain surveillance",
+      "Pneumonectomy",
+      "Whole-body RT"
+     ],
+     "correctIndex": 1,
+     "explanation": "ADRIATIC showed better survival with durvalumab after chemoRT for limited-stage SCLC. The brain is a common site of relapse, so responders get PCI (25 Gy in 10) or close MRI surveillance."
+    },
+    {
+     "label": "Brain",
+     "prompt": "What does PCI involve, and what side effect is the main trade-off?",
+     "answer": "Prophylactic cranial irradiation, 25 Gy in 10 fractions to the whole brain, for patients who responded. The trade-off is memory and thinking decline (plus fatigue and hair loss).",
+     "explanation": "This is why many centers now offer close MRI surveillance as an alternative."
+    }
+   ]
+  }
+ ]
+}
