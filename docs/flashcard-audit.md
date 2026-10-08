@@ -403,3 +403,13 @@ generally nonregional), gix-25 (at-risk patient), gix-36, gix-43 (structured
 watch-and-wait), gix-51 (selected portal vein thrombus; Child-Pugh A, selected B).
 Added gix-61 (selective RT omission in lower-risk rectal cancer) and gix-63 (why
 upper GI targets need 4D-CT).
+
+**Before You Start revision (October 7, 2026), 342 → 344 cards.** The six Before You
+Start readings were rewritten as one workflow (what radiation is, why it works, the
+tools, how to present, how to decide, how a plan is built), each opening with
+"By the end, you should be able to..." goals. Physics content moved to where it is
+now taught: the particle cards (ov-56, ov-58, ov-59) moved to Radiation Modalities;
+the radiobiology cards (ov-26, ov-31, ov-32, ov-92) moved to How Radiation Works.
+ov-90 now asks whether protons are automatically better (no; the benefit depends on
+disease, anatomy, and the comparison photon plan). Added ov-103 (consolidative
+intent) and ov-104 (a DVH shows how much dose, not where).

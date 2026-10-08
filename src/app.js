@@ -330,7 +330,7 @@ function renderLearningPath(){
   const all = allCards(), st = cardStats(all);
   const { done, total } = caseTotals();
   const steps = [
-    { label: "Before you start", text: "Understand the specialty, the four treatment intents, and how a patient moves through radiation treatment.", links: bgLinksHTML(["rad-onc-101"]), go: "bg:rad-onc-101", cta: "Start here" },
+    { label: "Before you start", text: "Six short readings that build one workflow: what radiation is, how it works, the tools, how to present, how to decide, and how a plan is built.", links: bgLinksHTML(["rad-onc-101"]), go: "bg:rad-onc-101", cta: "Start here" },
     { label: "Clinical skills", text: "Learn what happens in a rad onc consult and how to present new patients, follow-ups, and on-treatment visits.", links: bgLinksHTML(["the-consult", "presenting-patients"]), go: "bg:the-consult", cta: "Open" },
     { label: "How radiation works", text: "Radiobiology and physics, the machines and techniques, and how contours and beams become a plan.", links: bgLinksHTML(["how-rt-works", "machines-modalities", "treatment-planning"]), go: "bg:how-rt-works", cta: "Open" },
     { label: "Disease sites", text: "Build clinical knowledge site by site, from epidemiology and anatomy to staging and treatment paradigms.", status: plural(SERVICES.length, "module"), go: "sites", cta: "Browse sites" },
@@ -1473,6 +1473,7 @@ function openBackground(id){
     lede: sec.question,
     html: sec.html,
     introLabel: "Orientation",
+    goals: sec.objectives || [],
     mount: (bodyEl) => { mountInteractiveModule(null, null, "var(--accent)"); mountContourExercises(); },
     cards: fc ? svcCards(fc.svcId).filter(c => c.category === fc.catName) : [],
     facts: [["Section", sec.title]],
@@ -1902,11 +1903,19 @@ const QUIZ_SETS = {
       q: "A patient with widely metastatic cancer has a painful bone metastasis. She receives a short course of radiation to that site to relieve the pain, not to treat her cancer overall. What intent is this?",
       a: "<strong>Palliative.</strong> The goal is symptom relief, not cure, which is why these courses are usually shorter than definitive treatment.",
     },
+    {
+      q: "A patient with bulky lymphoma has a residual mass after completing chemotherapy. Radiation is given to that site to improve control. What intent is this?",
+      a: "<strong>Consolidative.</strong> Radiation follows another treatment modality (here, chemotherapy) to improve control of disease that remains after it.",
+    },
+    {
+      q: "A patient with metastatic cancer has three small metastases that are stable on systemic therapy. SBRT is offered to each one, aiming for durable control. What intent is this?",
+      a: "<strong>Oligometastatic.</strong> Ablative treatment of limited metastatic disease in a selected patient, usually alongside systemic therapy. The goal is durable control, not symptom relief.",
+    },
   ],
   "modalities-pick": [
     {
       q: "A head and neck tumor wraps around the spinal cord and parotid glands, and needs a highly sculpted dose distribution over several weeks. Which technique, and why?",
-      a: "<strong>IMRT or VMAT.</strong> The target sits close to critical structures, so beam intensity modulation is needed to shape dose around them while sparing the cord and parotids &mdash; a job 3D-CRT's simple fixed beams can't do as precisely.",
+      a: "<strong>IMRT or VMAT.</strong> The target sits close to critical structures, so beam intensity modulation is needed to shape dose around them while sparing the cord and parotids. That's a job 3D-CRT's simple fixed beams can't do as precisely.",
     },
     {
       q: "A patient has a single, small brain metastasis. The team wants to deliver a very high, tightly conformal dose in a single session, with minimal margin and rapid falloff outside the target. Which technique?",
@@ -1914,11 +1923,15 @@ const QUIZ_SETS = {
     },
     {
       q: "A patient with cervical cancer is receiving definitive chemoradiation. After external beam treatment, the team plans to place a radioactive source directly in the uterus and vagina to boost dose to the cervix. Which technique, and why can't it just be replaced with more external beam?",
-      a: "<strong>Brachytherapy.</strong> Because dose falls off so rapidly with distance from the source, it can deliver a very high dose right at the cervix while sparing nearby tissue &mdash; a dose gradient external beam alone can't reproduce. For definitive cervical cancer, brachytherapy is considered essential, not optional.",
+      a: "<strong>Brachytherapy.</strong> Because dose falls off so rapidly with distance from the source, it can deliver a very high dose right at the cervix while sparing nearby tissue, a dose gradient external beam alone can't reproduce. For definitive cervical cancer, brachytherapy is considered essential, not optional.",
     },
     {
       q: "A patient needs palliative radiation to a painful bone metastasis. The team wants a simple, fast plan without much sculpting. Which technique fits best?",
       a: "<strong>3D-CRT.</strong> A few fixed beams shaped to the target is often all that's needed for a straightforward palliative course, where speed and simplicity matter more than a highly conformal dose distribution.",
+    },
+    {
+      q: "A family asks whether their father's prostate cancer should be treated with protons because \"protons are better radiation.\" How do you frame it?",
+      a: "<strong>Protons change the physical dose distribution</strong> (no exit dose past the Bragg peak). Whether that's a meaningful clinical advantage depends on the disease, the anatomy, and the photon plan it's compared with. Protons are not automatically better.",
     },
   ],
   "consult-spiel": [
@@ -1928,11 +1941,11 @@ const QUIZ_SETS = {
     },
     {
       q: "A patient assumes that today's simulation appointment means treatment is starting today. What should you clarify?",
-      a: "<strong>Simulation is not treatment</strong> &mdash; it's a planning CT done in the treatment position, used to build the plan. Actual treatment typically doesn't start until one to two weeks later, after contouring, planning, and quality assurance are complete.",
+      a: "<strong>Simulation is not treatment.</strong> It's a planning CT done in the treatment position, used to build the plan. Actual treatment typically doesn't start until one to two weeks later, after contouring, planning, and quality assurance are complete.",
     },
     {
       q: "A patient is worried that daily treatment visits will take up their whole day. What can you tell them about how that time is actually spent?",
-      a: "Visits are usually around an hour, but the actual radiation delivery itself only takes a few minutes &mdash; most of the visit is spent getting the patient positioned and lined up correctly.",
+      a: "Visits are usually around an hour, but the actual radiation delivery itself only takes a few minutes; most of the visit is spent getting the patient positioned and lined up correctly.",
     },
     {
       q: "A patient feels completely fine during week one of treatment and wonders if it's even working. What should you prepare them for?",
@@ -4088,6 +4101,15 @@ function styleLearningComponents(bodyEl, bigIdeaBadge){
   });
 }
 
+// "By the end, you should be able to..." box shown at the top of a module.
+function goalsHTML(items){
+  return `<aside class="callout-essential callout-goals">
+    <span class="edu-badge badge-essential">Learning goals</span>
+    <p class="ess-lead">By the end, you should be able to:</p>
+    <ul>${items.map(t => `<li>${escapeHtml(t)}</li>`).join("")}</ul>
+  </aside>`;
+}
+
 function essentialHTML(items){
   return `<aside class="callout-essential">
     <span class="edu-badge badge-essential">Sub-I essential</span>
@@ -4117,7 +4139,7 @@ function moduleRefsHTML(svcId, html){
 }
 
 // opts: { color, crumbs, eyebrow, position, title, lede, html, introLabel,
-//   essentials, objectives, mount(bodyEl), cards, facts, caseSvc, refs,
+//   goals, essentials, objectives, mount(bodyEl), cards, facts, caseSvc, refs,
 //   reviewed, path:{title, items}, prev, next, navLabel }
 function renderModulePage(o){
   const view = document.getElementById("view-doc");
@@ -4135,6 +4157,11 @@ function renderModulePage(o){
   const bodyEl = document.getElementById("doc-body");
   bodyEl.innerHTML = o.html;
   const { intro, sections } = sectionizeDoc(bodyEl, o.introLabel);
+  if((o.goals || []).length){
+    const tmp = document.createElement("div");
+    tmp.innerHTML = goalsHTML(o.goals);
+    intro ? intro.appendChild(tmp.firstElementChild) : bodyEl.insertBefore(tmp.firstElementChild, bodyEl.firstChild);
+  }
   if((o.essentials || []).length){
     const anchor = intro || bodyEl.firstChild;
     const tmp = document.createElement("div");

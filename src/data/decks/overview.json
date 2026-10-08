@@ -49,6 +49,13 @@
   "extra": "It can delay progression or the need to change systemic therapy."
  },
  {
+  "id": "ov-103",
+  "category": "General Principles",
+  "front": "What is consolidative radiation?",
+  "back": "RT given after another treatment modality, usually chemotherapy, to improve control of the disease that remains (e.g., residual bulky lymphoma).",
+  "extra": "Name the intent before the dose: it decides how much toxicity is acceptable and how aggressive the plan is."
+ },
+ {
   "id": "ov-6",
   "category": "General Principles",
   "front": "Why is smoking cessation addressed with essentially every radiation patient?",
@@ -85,35 +92,35 @@
  },
  {
   "id": "ov-90",
-  "category": "Radiation Physics",
-  "front": "When do protons offer a real advantage over photons, and what is their main drawback?",
-  "back": "When sparing tissue beyond the target matters most (e.g., children, tumors next to critical structures), because there is no exit dose. Drawback: they are more sensitive to setup and anatomic changes.",
-  "extra": ""
+  "category": "Radiation Modalities",
+  "front": "Do protons automatically give better results than photons?",
+  "back": "No. Their Bragg peak removes exit dose, which may matter in selected cases (children, craniospinal RT, tumors next to critical structures). Drawbacks: range uncertainty and sensitivity to anatomic change.",
+  "extra": "Whether the physical dose difference becomes a clinical advantage depends on the disease, the anatomy, and the photon plan it's compared with."
  },
  {
   "id": "ov-26",
-  "category": "Radiation Biology",
+  "category": "How Radiation Works",
   "front": "Which cell cycle phase is most radiosensitive, and which is most radioresistant?",
   "back": "Most sensitive: M (mitosis). Most resistant: late S, because a replicated copy of DNA is available for accurate repair.",
   "extra": "Redistribution between fractions catches more cells in sensitive phases."
  },
  {
   "id": "ov-31",
-  "category": "Radiation Biology",
+  "category": "How Radiation Works",
   "front": "Which tissues have a high α/β ratio and which have a low one?",
   "back": "High (~10): early-responding tissues (skin, mucosa, marrow) and most tumors. Low (~3): late-responding tissues (spinal cord, lung, kidney, liver, bladder).",
   "extra": "Prostate and breast cancers are exceptions with low α/β."
  },
  {
   "id": "ov-92",
-  "category": "Radiation Biology",
+  "category": "How Radiation Works",
   "front": "What are BED and EQD2 used for?",
   "back": "Comparing radiation regimens with different fraction sizes on one scale (EQD2 = the equivalent dose if given in 2 Gy fractions)",
   "extra": "BED = nd[1 + d/(α/β)]. Published normal-tissue limits usually assume 2 Gy fractions, so EQD2 lets you compare hypofractionated plans against them."
  },
  {
   "id": "ov-32",
-  "category": "Radiation Biology",
+  "category": "How Radiation Works",
   "front": "What drives acute vs late radiation toxicity?",
   "back": "Acute (inflammation, in fast-dividing tissues) depends mainly on total dose over time. Late (fibrosis, months to years later) depends mainly on dose per fraction.",
   "extra": "That's why large fractions near late-responding organs demand caution."
@@ -232,21 +239,21 @@
  },
  {
   "id": "ov-56",
-  "category": "How Radiation Works",
+  "category": "Radiation Modalities",
   "front": "Why are deep tumors treated with several photon beams or arcs instead of one?",
   "back": "Photons pass through the tumor and keep going (exit dose), so overlapping beams build the highest dose at the tumor while spreading the lower dose across normal tissue.",
   "extra": ""
  },
  {
   "id": "ov-58",
-  "category": "How Radiation Works",
+  "category": "Radiation Modalities",
   "front": "Why might electrons be used instead of photons for a superficial skin lesion?",
   "back": "Electrons deposit dose at shallow depth and then fall off quickly, sparing the tissue underneath.",
   "extra": "Also used for scar boosts and some shallow nodal targets."
  },
  {
   "id": "ov-59",
-  "category": "How Radiation Works",
+  "category": "Radiation Modalities",
   "front": "What lets protons put most of their dose at a specific depth?",
   "back": "The Bragg peak: protons release most of their energy where they stop, with almost no dose beyond.",
   "extra": "The depth is set by the beam energy. Several energies are combined into a spread-out Bragg peak (SOBP) to cover the full tumor thickness. Protons are assigned an RBE of 1.1."
@@ -341,6 +348,13 @@
   "front": "What does a dose-volume histogram (DVH) show?",
   "back": "What percentage of a structure's volume receives at least each dose",
   "extra": "It lets you check every target and organ at risk against its limits without scrolling through every slice."
+ },
+ {
+  "id": "ov-104",
+  "category": "Treatment Planning",
+  "front": "Why isn't a DVH enough on its own to judge a plan?",
+  "back": "It shows how much dose each structure receives, not where; hotspots and coverage gaps must be checked on the isodose lines slice by slice.",
+  "extra": ""
  },
  {
   "id": "ov-78",

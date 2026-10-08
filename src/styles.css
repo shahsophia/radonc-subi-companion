@@ -2681,3 +2681,18 @@ html:has(body.on-home){scroll-snap-type:y proximity;scroll-padding-top:var(--nav
 .doc-body .target-map .tn-oars li{margin:0;font-size:12.5px;padding:3px 9px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);}
 .doc-body .target-map .tn-oars li::before{content:none;}
 @media (max-width:640px){ .doc-body .target-map{grid-template-columns:1fr;} }
+
+/* ============ BEFORE YOU START: learning goals + vertical workflow ============ */
+.callout-goals{margin:22px 0 0;}
+.callout-goals ul{grid-template-columns:1fr;}
+.doc-body .v-flow{margin:18px 0 24px;}
+.doc-body .v-flow .vf-phase{font-family:var(--font-mono);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--svc,var(--accent));margin:14px 0 10px;}
+.doc-body .v-flow .vf-phase:first-child{margin-top:0;}
+.doc-body .v-flow .vf-step{display:flex;gap:14px;position:relative;padding-bottom:14px;}
+.doc-body .v-flow .vf-step::before{content:"";position:absolute;left:15px;top:34px;bottom:2px;width:2px;background:var(--line);}
+.doc-body .v-flow .vf-step:last-child::before,
+.doc-body .v-flow .vf-step:has(+ .vf-phase)::before{display:none;}
+.doc-body .v-flow .vf-num{flex:0 0 32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--svc,var(--accent));background:color-mix(in srgb, var(--svc,var(--accent)) 12%, var(--surface));border:1.5px solid color-mix(in srgb, var(--svc,var(--accent)) 45%, transparent);}
+.doc-body .v-flow .vf-body{min-width:0;padding-top:5px;}
+.doc-body .v-flow .vf-body > strong{display:block;color:var(--ink);font-size:15.5px;}
+.doc-body .v-flow .vf-body p{margin:2px 0 0;font-size:15px;line-height:1.5;color:var(--ink-soft);}
