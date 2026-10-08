@@ -18,7 +18,7 @@
   "category": "Epidemiology & Risk Factors",
   "front": "Anal and rectal cancer are neighbors. How do they differ in histology and in the curative treatment?",
   "back": "Anal cancer is HPV-driven squamous cell carcinoma cured with definitive chemoradiation. Rectal cancer is adenocarcinoma, where surgery is the central curative step.",
-  "extra": "For anal cancer, surgery is salvage. For rectal cancer, chemoRT prepares for surgery (or organ preservation)."
+  "extra": "For anal cancer, surgery is mainly salvage. For rectal cancer, neoadjuvant therapy is risk-adapted, followed by TME or organ preservation."
  },
  {
   "id": "gix-6",
@@ -39,13 +39,13 @@
   "category": "Anatomy & Lymphatics",
   "front": "Why do esophageal radiation fields use long margins up and down but short margins sideways?",
   "back": "A longitudinal submucosal lymphatic network lets tumor spread several cm along the esophagus.",
-  "extra": "Typical CTV: about 3-4 cm up and down, ~1 cm radially. The esophagus also lacks a serosa, so it reaches the mediastinum early."
+  "extra": "A common CTV is about 3-4 cm up and down and ~1 cm radially, though margins vary by protocol. The esophagus also lacks a serosa."
  },
  {
   "id": "gix-11",
   "category": "Anatomy & Lymphatics",
   "front": "Why does a low rectal tumor (within about 5 cm of the anal verge) matter for treatment?",
-  "back": "It may need an abdominoperineal resection with a permanent colostomy, so it is a prime candidate for organ-preserving neoadjuvant therapy.",
+  "back": "It may need an abdominoperineal resection with a permanent colostomy, so organ preservation is especially valuable.",
   "extra": "Height is measured from the anal verge: low 0-5 cm, mid 5-10 cm, upper 10-15 cm. Upper rectal tumors above the peritoneal reflection behave more like colon cancer."
  },
  {
@@ -66,7 +66,7 @@
   "id": "gix-15",
   "category": "Anatomy & Lymphatics",
   "front": "Are inguinal nodes regional for anal cancer? For rectal cancer?",
-  "back": "Anal: yes, always regional and always in the field. Rectal: no, they are distant (M1) unless the tumor invades the anal canal.",
+  "back": "Anal: yes, regional and part of the standard field. Rectal: generally nonregional, unless the tumor involves the anal canal, which can change the drainage and the field.",
   "extra": "External iliac nodes follow the same rule: regional for anal, nonregional for rectal."
  },
  {
@@ -74,21 +74,21 @@
   "category": "Anatomy & Lymphatics",
   "front": "What does the standard rectal cancer radiation target include?",
   "back": "The tumor, the entire mesorectum, and the presacral, internal iliac, and obturator nodes",
-  "extra": "Add external iliac nodes for T4 tumors invading anterior organs, and inguinal nodes if the anal canal is involved."
+  "extra": "Add external iliac nodes for anterior organ invasion (bladder, prostate, vagina) or selected T4, and inguinal nodes if the anal canal is involved."
  },
  {
   "id": "gix-19",
   "category": "Imaging",
-  "front": "What is the key local staging study for rectal cancer, and what does it report?",
-  "back": "High-resolution pelvic MRI: T stage, distance to the mesorectal fascia, EMVI, involved nodes, and height from the anal verge",
-  "extra": "A restaging MRI with endoscopy after neoadjuvant therapy decides who can try watch-and-wait."
+  "front": "What three questions does a rectal MRI answer?",
+  "back": "T (how far through the wall), Margin (distance to the mesorectal fascia), and Spread (EMVI, nodes, tumor deposits)",
+  "extra": "Also note the height from the anal verge and sphincter involvement. A restaging MRI with endoscopy after neoadjuvant therapy decides who may be a watch-and-wait candidate."
  },
  {
   "id": "gix-54",
   "category": "Imaging",
   "front": "On rectal MRI, when is the mesorectal fascia (circumferential margin) \"threatened\"?",
   "back": "When tumor, a node, a tumor deposit, or EMVI is within 1 mm of it",
-  "extra": "A threatened margin pushes toward total neoadjuvant therapy, usually with long-course chemoRT."
+  "extra": "A threatened margin raises the risk of local recurrence and is a reason to intensify neoadjuvant therapy (TNT, often with long-course chemoRT)."
  },
  {
   "id": "gix-21",
@@ -107,15 +107,15 @@
  {
   "id": "gix-55",
   "category": "Imaging",
-  "front": "What does a pancreatic-protocol CT show that decides the treatment plan?",
-  "back": "How much the tumor touches the major arteries and veins, which decides resectability",
+  "front": "What question does a pancreatic-protocol CT answer?",
+  "back": "Can the tumor be removed with a negative (R0) margin, judged by its contact with the major arteries and veins",
   "extra": "Thin-slice arterial and portal venous phases. Get it before a biliary stent if possible, because stent inflammation blurs the edges."
  },
  {
   "id": "gix-25",
   "category": "Imaging",
   "front": "When can hepatocellular carcinoma be diagnosed without a biopsy?",
-  "back": "In a cirrhotic liver, when multiphase CT or MRI shows arterial hyperenhancement with washout (LI-RADS 5)",
+  "back": "In an at-risk patient (usually cirrhosis), when multiphase CT or MRI shows arterial enhancement with washout (LI-RADS 5)",
   "extra": "HCC enhances early because it is fed by the hepatic artery."
  },
  {
@@ -123,7 +123,7 @@
   "category": "Workup & Staging",
   "front": "What pattern does TNM staging follow for most GI cancers?",
   "back": "T = depth through the wall layers; N = number of involved regional nodes; M = distant spread",
-  "extra": "Wall layers: mucosa → submucosa → muscularis propria → beyond the wall → adjacent organs."
+  "extra": "Wall layers: mucosa → submucosa → muscularis propria → beyond the wall → adjacent organs. But GI has no single staging logic: pancreas is planned by resectability, HCC by tumor burden plus liver function, and anal cancer by size and node location."
  },
  {
   "id": "gix-27",
@@ -137,7 +137,7 @@
   "category": "Workup & Staging",
   "front": "How is pancreatic cancer \"staged\" in practice?",
   "back": "By resectability: no arterial contact and limited vein contact = resectable; >180° contact with the SMA or celiac axis (or an unreconstructable vein) = locally advanced; in between = borderline.",
-  "extra": "Decided by multidisciplinary review of the pancreatic-protocol CT. Any distant metastasis makes it unresectable."
+  "extra": "TNM is prognostic; treatment is planned on the pancreatic-protocol CT with multidisciplinary surgical review. Any distant metastasis makes it unresectable."
  },
  {
   "id": "gix-35",
@@ -157,7 +157,7 @@
   "id": "gix-36",
   "category": "Workup & Staging",
   "front": "Which biomarker changes rectal cancer management the most, and how?",
-  "back": "MMR deficiency (MSI-high): these patients get immunotherapy first.",
+  "back": "MMR deficiency (MSI-high): checkpoint immunotherapy is considered first and may spare radiation and surgery.",
   "extra": "With dostarlimab alone, essentially all patients in the Cercek study had a complete clinical response. MMR deficiency can be hereditary (Lynch syndrome), which also causes endometrial, ovarian, gastric, and urinary tract cancers."
  },
  {
@@ -199,8 +199,8 @@
   "id": "gix-40",
   "category": "Treatment Paradigms",
   "front": "What are the short-course and long-course radiation options for rectal cancer?",
-  "back": "Short-course: 25 Gy in 5 fractions without chemo. Long-course: 45-50.4 Gy in 25-28 fractions with capecitabine.",
-  "extra": "Long-course is preferred for a threatened margin or T4 tumor."
+  "back": "Short-course: 5 fractions over one week, usually without concurrent chemo. Long-course: about 5-6 weeks of daily fractions with concurrent capecitabine or 5-FU.",
+  "extra": "Typical doses are 25 Gy in 5 and 45-50.4 Gy in 25-28. Long-course is particularly useful for a threatened margin, T4, a low or bulky tumor, or when organ preservation is a priority."
  },
  {
   "id": "gix-60",
@@ -221,48 +221,62 @@
   "category": "Treatment Paradigms",
   "front": "What is total neoadjuvant therapy (TNT) for rectal cancer?",
   "back": "Giving all the chemotherapy and radiation before surgery",
-  "extra": "RAPIDO (fewer treatment failures) and PRODIGE 23 (better survival). It is followed by TME, or watch-and-wait after a complete response. MRI features that push toward TNT: T4, a threatened mesorectal fascia, EMVI, N2 or lateral pelvic nodes, or a low tumor where organ preservation is the goal."
+  "extra": "RAPIDO (fewer treatment failures) and PRODIGE 23 (better survival). It is followed by TME, or watch-and-wait after a clinical complete response. Used for higher-risk disease: T4, a threatened mesorectal fascia, EMVI, bulky or lateral nodes, or a low tumor."
  },
  {
   "id": "gix-43",
   "category": "Treatment Paradigms",
   "front": "What is \"watch-and-wait\" in rectal cancer?",
-  "back": "Skipping TME surgery after a complete clinical response to neoadjuvant therapy, with close endoscopy and MRI surveillance and surgery if the tumor regrows",
-  "extra": "In OPRA, about half of patients kept their rectum; chemoRT followed by consolidation chemo did best."
+  "back": "A structured nonoperative strategy for selected patients with a clinical complete response after neoadjuvant therapy, with intensive endoscopy and MRI surveillance and TME if the tumor regrows",
+  "extra": "It is not skipping surgery because the MRI looks better; it needs a true clinical complete response and an experienced center. In OPRA, about half of patients kept their rectum."
+ },
+ {
+  "id": "gix-61",
+  "category": "Treatment Paradigms",
+  "front": "Can radiation be omitted for some locally advanced rectal cancers?",
+  "back": "Yes, in carefully selected lower-risk patients (such as mid/upper tumors with a clear mesorectal fascia), using neoadjuvant chemo with chemoRT reserved for poor responders",
+  "extra": "PROSPECT. Higher-risk tumors (T4, threatened margin, EMVI, bulky or lateral nodes, low tumors) still get TNT."
  },
  {
   "id": "gix-45",
   "category": "Treatment Paradigms",
-  "front": "What is the CROSS regimen for esophageal cancer?",
-  "back": "Neoadjuvant chemoradiation (41.4 Gy in 23 fractions with weekly carboplatin/paclitaxel), then esophagectomy",
-  "extra": "Nearly doubled median survival. SCC responds best. For adenocarcinoma, perioperative FLOT is an alternative (ESOPEC)."
+  "front": "What did the CROSS regimen establish for esophageal cancer?",
+  "back": "Neoadjuvant chemoradiation (weekly carboplatin/paclitaxel) followed by esophagectomy improves survival over surgery alone",
+  "extra": "41.4 Gy in 23 fractions. SCC responds best. For adenocarcinoma, perioperative chemotherapy has become increasingly important (ESOPEC favored FLOT), so the choice is multidisciplinary."
  },
  {
   "id": "gix-46",
   "category": "Treatment Paradigms",
-  "front": "Who gets definitive (non-surgical) chemoradiation for esophageal cancer, and to what dose?",
-  "back": "Cervical esophageal tumors, squamous cell cancers, T4b tumors, and patients unfit for surgery; about 50-50.4 Gy",
-  "extra": "RTOG 8501: chemoRT beat RT alone. RTOG 9405: 64.8 Gy was no better than 50.4 Gy."
+  "front": "Who gets definitive (non-surgical) chemoradiation for esophageal cancer?",
+  "back": "Cervical esophageal tumors, unresectable disease, patients unfit for surgery, and selected squamous cell cancers",
+  "extra": "Typical dose about 50-50.4 Gy. RTOG 8501: chemoRT beat RT alone. RTOG 9405: 64.8 Gy was no better than 50.4 Gy."
  },
  {
   "id": "gix-48",
   "category": "Treatment Paradigms",
   "front": "What is the role of radiation in gastric cancer?",
-  "back": "Limited: adjuvant chemoRT after an inadequate node dissection or a positive margin, and palliation of bleeding",
-  "extra": "The standard is perioperative FLOT chemotherapy with D2 gastrectomy; adding postoperative chemoRT after that didn't help (CRITICS). Typical palliative courses for bleeding: 8 Gy × 1-2 up to 30 Gy in 10."
+  "back": "Selective: some postoperative situations (positive margin or inadequate node dissection) and palliation of bleeding, pain, or obstruction",
+  "extra": "Surgery plus perioperative systemic therapy is the backbone. After periop chemo and D2 surgery, adding postoperative chemoRT didn't help (CRITICS)."
  },
  {
   "id": "gix-50",
   "category": "Treatment Paradigms",
   "front": "In locally advanced pancreatic cancer, what does radiation (chemoRT or SBRT) after chemo accomplish?",
   "back": "Better local control and pain relief, but no proven survival benefit",
-  "extra": "LAP07. Pancreatic cancer treatment is chemo-led. The duodenum and bowel next to the pancreas limit SBRT dose."
+  "extra": "LAP07. Systemic therapy comes first, and RT is offered to selected patients without progression. The duodenum and bowel next to the pancreas limit SBRT dose."
+ },
+ {
+  "id": "gix-63",
+  "category": "Treatment Paradigms",
+  "front": "Why do distal esophageal, pancreatic, and liver targets need 4D-CT at simulation?",
+  "back": "They move with breathing, so the target must be defined across the breathing cycle (or treated in breath hold)",
+  "extra": "Other options: abdominal compression and fiducials for daily alignment. Pelvic targets move more with bladder and rectal filling."
  },
  {
   "id": "gix-51",
   "category": "Treatment Paradigms",
   "front": "When is SBRT used for hepatocellular carcinoma, and what patient factor limits it?",
-  "back": "For tumors not suited to resection or ablation, as a bridge to transplant, or for portal vein thrombus; limited by liver function (Child-Pugh A to B7)",
-  "extra": "RTOG 1112: SBRT + sorafenib improved survival. Enough normal liver must be spared to avoid radiation-induced liver disease."
+  "back": "For tumors not suited to resection or ablation, as a bridge to transplant, or for selected portal vein thrombus; limited by liver function (usually Child-Pugh A, selected B)",
+  "extra": "RTOG 1112: SBRT + sorafenib improved outcomes. In HCC the liver is also the critical organ at risk, so enough normal liver must be spared to avoid radiation-induced liver disease."
  }
 ]

@@ -2755,148 +2755,148 @@ const QUIZ_SETS = {
   ],
   "gi-epi": [
     {
+      q: "What is radiation's core role in anal versus rectal cancer?",
+      a: "<strong>Anal SCC</strong>: definitive chemoRT is the cure; surgery is mainly salvage. <strong>Rectal adenocarcinoma</strong>: MRI risk stratification decides neoadjuvant therapy (TNT or RT, sometimes omitted), followed by <strong>TME or organ preservation</strong>.",
+    },
+    {
       q: "Esophageal squamous cell carcinoma vs adenocarcinoma: where in the esophagus, and what drives each?",
-      a: "<strong>SCC</strong>: upper/middle esophagus; <strong>smoking, alcohol</strong>, hot beverages, achalasia, caustic injury (worldwide ~90%). <strong>Adenocarcinoma</strong>: <strong>distal esophagus/GEJ</strong>; <strong>GERD, Barrett's, obesity</strong> (dominant in the US).",
+      a: "<strong>SCC</strong>: upper/middle esophagus; <strong>smoking and alcohol</strong>; dominant worldwide; more radiosensitive. <strong>Adenocarcinoma</strong>: <strong>distal esophagus/GEJ</strong>; <strong>Barrett's, GERD, obesity</strong>; dominant in the US.",
     },
     {
       q: "What virus causes most anal cancers, and which patients are at highest risk?",
-      a: "<strong>HPV</strong> (85&ndash;90%, mostly HPV-16). Highest risk: <strong>people with HIV</strong> (especially MSM), immunosuppression, smoking, and a history of cervical/vulvar/vaginal cancer or dysplasia.",
-    },
-    {
-      q: "At what age does average-risk colorectal cancer screening start, and why was it lowered?",
-      a: "<strong>Age 45</strong>, because colorectal cancer incidence is rising in younger adults. Lynch syndrome screening starts at 20&ndash;25.",
+      a: "<strong>HPV</strong> (mostly HPV-16). Highest risk: <strong>people with HIV</strong> and other immunosuppression, smokers, and people with prior HPV-related dysplasia or cancer. Symptoms are often blamed on hemorrhoids.",
     },
     {
       q: "A 67-year-old has new-onset diabetes and unexplained weight loss. What cancer should you worry about?",
-      a: "<strong>Pancreatic adenocarcinoma.</strong> New diabetes after 50 with weight loss can be the first sign.",
+      a: "<strong>Pancreatic adenocarcinoma.</strong> It is relatively uncommon but disproportionately lethal because it is usually found late.",
     },
     {
-      q: "What causes most hepatocellular carcinoma?",
-      a: "<strong>Cirrhosis</strong> from any cause: <strong>hepatitis B and C</strong>, <strong>alcohol</strong>, and increasingly <strong>fatty liver disease (MASLD)</strong>. Hepatitis B can cause HCC even without cirrhosis. Cirrhotic patients get ultrasound &plusmn; AFP every 6 months.",
+      q: "Why does liver function matter so much in hepatocellular carcinoma?",
+      a: "HCC usually arises in <strong>cirrhosis</strong> (hepatitis B/C, alcohol, MASLD), so the patient has two diseases. The liver's reserve (<strong>Child-Pugh</strong>) limits every treatment, including radiation.",
     },
   ],
   "gi-anatomy": [
     {
-      q: "How are esophageal tumor locations described, and where is the GEJ?",
-      a: "By <strong>distance from the incisors</strong> on endoscopy: cervical (15&ndash;20 cm), upper thoracic (20&ndash;25), middle (25&ndash;30), lower (30&ndash;40), and the <strong>GEJ at ~40 cm</strong>. The carina sits at ~25 cm.",
+      q: "Why are esophageal radiation target volumes long?",
+      a: "The esophagus <strong>lacks a serosa</strong> and has a <strong>longitudinal submucosal lymphatic network</strong>, so microscopic disease can extend well beyond the visible tumor along the length of the organ.",
     },
     {
       q: "What is the mesorectal fascia, and why does it matter?",
-      a: "The envelope around the <strong>mesorectum</strong> (fat, vessels, nodes around the rectum). It's the plane surgeons remove in a <strong>total mesorectal excision</strong>. Tumor <strong>&le;1 mm</strong> from it on MRI = <strong>threatened circumferential margin</strong>.",
+      a: "The envelope around the <strong>mesorectum</strong> (fat, vessels, nodes around the rectum). It's the plane surgeons remove in a <strong>total mesorectal excision</strong>, so tumor close to it on MRI threatens the surgical margin.",
     },
     {
       q: "What landmark divides the anal canal's lymphatic drainage?",
-      a: "The <strong>dentate (pectinate) line</strong>. Above &rarr; mesorectal and internal iliac nodes. Below (and the anal margin) &rarr; <strong>inguinal</strong> nodes. That's why anal cancer fields always include the groins.",
+      a: "The <strong>dentate line</strong>. Above &rarr; mesorectal and internal iliac nodes. Below (and the anal margin) &rarr; <strong>inguinal</strong> nodes, which is why anal cancer fields include the groins.",
     },
     {
-      q: "Which vessels decide whether a pancreatic cancer can be resected?",
-      a: "Arteries: <strong>SMA, celiac axis, common hepatic artery</strong>. Veins: <strong>SMV and portal vein</strong>. Encasement (&gt;180&deg;) of the SMA or celiac = locally advanced.",
+      q: "Why does tumor height matter in low rectal cancer?",
+      a: "The <strong>sphincter</strong> and thin mesorectal planes decide whether sphincter-saving surgery is possible or an <strong>APR</strong> (permanent colostomy) is needed, which makes <strong>organ preservation</strong> especially valuable.",
     },
     {
-      q: "Where is the upper rectum vs the lower rectum measured from, and why does it matter?",
-      a: "Distance of the tumor's lower edge from the <strong>anal verge</strong>: low 0&ndash;5 cm, mid 5&ndash;10, upper 10&ndash;15. <strong>Low</strong> tumors risk needing an <strong>APR</strong> (permanent colostomy) and are the main targets of organ-preservation strategies.",
+      q: "Why is the liver itself an organ at risk in HCC?",
+      a: "HCC grows inside a usually cirrhotic liver, so every treatment must balance <strong>tumor control</strong> against preserving <strong>enough functioning liver</strong>.",
     },
   ],
   "gi-lymph": [
     {
-      q: "Where do mid-to-low rectal cancers drain?",
-      a: "<strong>Mesorectal</strong> nodes, then along the <strong>superior rectal/IMA</strong> and laterally to the <strong>internal iliac and obturator</strong> nodes, plus <strong>presacral</strong>. <strong>External iliac and inguinal</strong> nodes only matter if the tumor reaches the anal canal or adjacent organs.",
+      q: "What is the standard nodal coverage for rectal cancer, and what adds more?",
+      a: "<strong>Mesorectal + presacral + internal iliac/obturator</strong>. Add <strong>external iliac</strong> for anterior organ invasion (bladder, prostate, vagina) or selected T4, and <strong>inguinal</strong> when the tumor involves the anal canal.",
     },
     {
-      q: "For anal cancer, which nodal regions are included in the elective field?",
-      a: "<strong>Inguinal</strong>, <strong>mesorectal</strong>, <strong>presacral</strong>, <strong>internal and external iliac</strong> (and obturator) nodes.",
+      q: "For anal cancer, which nodal regions are in the standard field?",
+      a: "<strong>Inguinal</strong>, <strong>mesorectal</strong>, <strong>presacral</strong>, and <strong>internal and external iliac</strong> nodes. The groins are regional for anal cancer.",
     },
     {
-      q: "A distal esophageal adenocarcinoma has a positive celiac node. Regional or distant (AJCC 8)?",
-      a: "<strong>Regional.</strong> Celiac nodes are regional for esophageal cancer; the number of positive nodes sets N (N1 1&ndash;2, N2 3&ndash;6, N3 &ge;7). Supraclavicular nodes are <strong>distant (M1)</strong>.",
+      q: "A distal esophageal adenocarcinoma has a positive celiac node. Regional or distant?",
+      a: "<strong>Regional.</strong> Celiac nodes are regional for esophageal cancer and are covered for distal and GEJ tumors. Supraclavicular nodes are generally considered distant.",
     },
     {
-      q: "Why do esophageal cancers skip around so much in their nodal spread?",
-      a: "The esophagus has a <strong>longitudinal submucosal lymphatic network</strong>, so tumors can spread several cm up or down and skip nodal stations. That's why RT margins are longer superiorly/inferiorly (~3&ndash;4 cm) than radially.",
+      q: "Are inguinal nodes regional for rectal cancer?",
+      a: "<strong>Generally no.</strong> Rectal cancer drains mainly to mesorectal and pelvic nodes. A tumor that involves the <strong>anal canal</strong> (or certain adjacent structures) can change the drainage pattern and the field.",
     },
   ],
   "gi-imaging": [
     {
-      q: "Which imaging is the key staging study for rectal cancer, and what four things do you report?",
-      a: "<strong>Pelvic MRI (high-resolution T2).</strong> Report <strong>T stage</strong>, <strong>distance to the mesorectal fascia (MRF)</strong>, <strong>EMVI</strong>, and <strong>nodes</strong> (mesorectal and lateral), plus height from the anal verge.",
+      q: "How do you read a rectal MRI?",
+      a: "<strong>T, Margin, Spread.</strong> T: how far through the wall. Margin: distance to the <strong>mesorectal fascia</strong> (&le;1 mm = threatened). Spread: <strong>EMVI</strong>, nodes (including lateral), tumor deposits. Also note height and sphincter involvement.",
     },
     {
-      q: "What is the 'double duct sign'?",
-      a: "Dilation of both the <strong>common bile duct and the pancreatic duct</strong>: classic for a <strong>pancreatic head</strong> (or ampullary) mass.",
+      q: "What question does a pancreatic-protocol CT answer?",
+      a: "<strong>Can the tumor be removed with a negative (R0) margin?</strong> It shows the degrees of contact with the SMA, celiac axis, common hepatic artery, SMV, and portal vein.",
     },
     {
       q: "What imaging defines esophageal T stage best?",
-      a: "<strong>Endoscopic ultrasound (EUS)</strong>, which shows the wall layers (T1a mucosa, T1b submucosa, T2 muscularis propria, T3 adventitia) and nearby nodes. PET/CT stages nodes and distant disease.",
+      a: "<strong>Endoscopic ultrasound (EUS)</strong>, which shows the wall layers and nearby nodes. <strong>PET/CT</strong> stages nodes and distant disease and helps define tumor length.",
     },
     {
-      q: "What are the classic multiphase CT/MRI features of HCC?",
-      a: "<strong>Arterial phase hyperenhancement</strong> with <strong>washout</strong> on portal venous/delayed phases, and an <strong>enhancing capsule</strong>. In a cirrhotic liver, a LI-RADS 5 lesion can be diagnosed as HCC without biopsy.",
+      q: "When can HCC be diagnosed without a biopsy?",
+      a: "In an <strong>at-risk patient</strong> (usually cirrhosis), when multiphase CT or MRI shows <strong>arterial enhancement with washout</strong> (LI-RADS 5).",
     },
     {
       q: "Why is PET/CT especially useful in anal cancer?",
-      a: "It finds <strong>inguinal and pelvic nodes</strong> that CT misses, changing the stage and the RT dose to nodes, and it assesses response after chemoRT.",
+      a: "It finds <strong>inguinal and pelvic nodes</strong> that CT misses, which can change the stage and the dose to nodes.",
     },
   ],
   "gi-staging": [
     {
-      q: "Rectal MRI: tumor extends 6 mm into the mesorectal fat and is 0.5 mm from the mesorectal fascia. T stage and what's the concern?",
-      a: "<strong>T3</strong> (T3c by depth), with a <strong>threatened MRF</strong> (&le;1 mm). High risk of a positive margin: needs neoadjuvant therapy (TNT).",
+      q: "Rectal MRI: tumor extends 6 mm into the mesorectal fat and is 0.5 mm from the mesorectal fascia. What's the concern?",
+      a: "A <strong>T3</strong> tumor with a <strong>threatened MRF</strong> (&le;1 mm): higher risk of local recurrence, so it is higher-risk disease that usually gets <strong>TNT</strong>, often with long-course chemoRT.",
     },
     {
       q: "Anal cancer 4 cm with no nodes. T stage?",
-      a: "<strong>T2</strong> (&gt;2 to &le;5 cm). T1 &le;2 cm; T3 &gt;5 cm; T4 invades adjacent organs (vagina, urethra, bladder), not just the sphincter or skin.",
+      a: "<strong>T2</strong> (&gt;2 to &le;5 cm). T1 &le;2 cm; T3 &gt;5 cm; T4 invades an adjacent organ (vagina, urethra, bladder), not just the sphincter or skin.",
     },
     {
-      q: "How is esophageal N stage defined?",
-      a: "By the <strong>number</strong> of positive regional nodes: <strong>N1 1&ndash;2</strong>, <strong>N2 3&ndash;6</strong>, <strong>N3 &ge;7</strong>.",
+      q: "What does pancreatic TNM do, and what drives treatment instead?",
+      a: "TNM gives <strong>prognostic</strong> staging; treatment is planned on <strong>radiographic resectability</strong> and <strong>multidisciplinary surgical assessment</strong>.",
     },
     {
       q: "Pancreatic head cancer with 200&deg; encasement of the SMA. Resectable, borderline, or locally advanced?",
       a: "<strong>Locally advanced</strong> (SMA or celiac contact &gt;180&deg;). &le;180&deg; SMA contact would be borderline.",
     },
     {
-      q: "Which tumor markers are followed for pancreatic, colorectal, and liver cancer?",
-      a: "<strong>CA 19-9</strong> (pancreas; unreliable if the patient is jaundiced or Lewis-antigen negative), <strong>CEA</strong> (colorectal), <strong>AFP</strong> (HCC).",
+      q: "What three things does HCC treatment planning weigh together?",
+      a: "<strong>Tumor burden</strong>, <strong>liver function</strong> (Child-Pugh), and <strong>performance status</strong>, which the BCLC system combines.",
     },
   ],
   "gi-treatment-rectal": [
     {
       q: "What is total neoadjuvant therapy (TNT) for rectal cancer?",
-      a: "Giving <strong>all the chemo and radiation before surgery</strong>: either short-course RT (25 Gy/5) or long-course chemoRT (50.4 Gy/28 + capecitabine) combined with ~4 months of FOLFOX/CAPOX, then TME or <strong>watch-and-wait</strong> if complete response.",
+      a: "Giving <strong>both the chemotherapy and the radiation before surgery</strong> (short-course RT or long-course chemoRT plus several months of chemo), then restaging for <strong>TME</strong> or <strong>watch-and-wait</strong>.",
     },
     {
-      q: "Short-course vs long-course RT for rectal cancer?",
-      a: "<strong>Short-course: 25 Gy in 5 fractions</strong>, no concurrent chemo (RAPIDO uses it with chemo after). <strong>Long-course: 45&ndash;50.4 Gy/25&ndash;28 with capecitabine or 5-FU</strong>, preferred when you want more shrinkage (threatened MRF, low tumor for organ preservation).",
+      q: "When is long-course chemoRT particularly useful in rectal cancer?",
+      a: "When you need shrinkage or a complete response: a <strong>threatened MRF</strong>, <strong>T4</strong>, a <strong>bulky or low</strong> tumor, high-risk nodes, or when <strong>organ preservation</strong> is a priority.",
     },
     {
-      q: "What did the German CAO/ARO/AIO-94 trial show?",
-      a: "<strong>Preoperative</strong> chemoRT had <strong>better local control</strong> (6% vs 13%) and <strong>less toxicity</strong> than postoperative chemoRT, with similar survival. Preop became the standard.",
+      q: "Can radiation be omitted for some locally advanced rectal cancers?",
+      a: "<strong>Yes, in carefully selected lower-risk patients</strong> (e.g., mid/upper tumors with a clear MRF): neoadjuvant chemo with chemoRT only for poor responders (PROSPECT).",
     },
     {
-      q: "What's the role of immunotherapy in rectal cancer?",
-      a: "For <strong>MMR-deficient</strong> locally advanced rectal cancer, <strong>dostarlimab</strong> alone gave complete clinical responses in essentially all patients in the Cercek trial, often avoiding RT and surgery.",
+      q: "What is watch-and-wait, and what is it not?",
+      a: "A <strong>structured nonoperative strategy</strong> for selected patients with a <strong>clinical complete response</strong> after neoadjuvant therapy, with intensive surveillance and TME if the tumor regrows. It is <strong>not</strong> skipping surgery just because the MRI looks better.",
     },
   ],
   "gi-treatment": [
     {
-      q: "What is the standard treatment for anal SCC (T2N0)?",
-      a: "<strong>Definitive chemoRT</strong>: <strong>5-FU (or capecitabine) + mitomycin</strong> with IMRT ~<strong>50.4 Gy/28</strong> to the primary and ~42 Gy to elective nodes (RTOG 0529). Surgery (APR) only for salvage.",
+      q: "Walk through anal cancer management.",
+      a: "Biopsy-proven SCC &rarr; stage (including the groins) &rarr; <strong>definitive chemoRT</strong> with 5-FU or capecitabine + mitomycin &rarr; expect a slow response and observe &rarr; biopsy persistent or progressive disease &rarr; <strong>salvage APR</strong>.",
     },
     {
-      q: "When do you judge the response after anal cancer chemoRT?",
-      a: "Up to <strong>26 weeks</strong> after starting treatment (ACT II): many tumors keep regressing. Biopsy/APR only for persistent or progressing disease.",
+      q: "Which esophageal cancer patients get definitive chemoRT instead of surgery?",
+      a: "<strong>Cervical</strong> tumors, <strong>unresectable</strong> disease, patients <strong>unfit</strong> for surgery, and selected <strong>SCC</strong> (which is more radiosensitive).",
     },
     {
-      q: "What is the CROSS regimen?",
-      a: "<strong>41.4 Gy in 23 fractions + weekly carboplatin/paclitaxel</strong>, then <strong>esophagectomy</strong>. Improved survival over surgery alone; pCR ~29% (~49% in SCC).",
+      q: "What did CROSS establish?",
+      a: "Preoperative <strong>chemoRT before esophagectomy</strong> improved survival over surgery alone, making trimodality therapy a major pathway (especially for SCC).",
     },
     {
-      q: "Definitive chemoRT dose for esophageal cancer, and which trial set it?",
-      a: "<strong>50.4 Gy</strong> with chemo. RTOG 9405 (INT 0123): 64.8 Gy was <strong>no better</strong> than 50.4 Gy. RTOG 8501 showed chemoRT beats RT alone.",
+      q: "Where does radiation fit in locally advanced pancreatic cancer?",
+      a: "<strong>Systemic therapy first.</strong> Selected patients without progression may get chemoRT or SBRT for <strong>local control</strong>; it improved local control but not survival in LAP07.",
     },
     {
-      q: "Which liver cancer trial supported SBRT?",
-      a: "<strong>RTOG 1112</strong>: adding SBRT to sorafenib improved overall and progression-free survival in unresectable HCC. SBRT needs enough spared liver (e.g., &ge;700 cc under 15 Gy) and good liver function (Child-Pugh A&ndash;B7).",
+      q: "Which organ most limits pancreatic SBRT, and which organ limits liver SBRT?",
+      a: "Pancreas: the <strong>duodenum</strong> (with stomach and bowel). Liver: the <strong>uninvolved liver</strong> itself, plus nearby stomach and bowel.",
     },
   ],
 };
@@ -3285,12 +3285,12 @@ const DRILL_SETS = {
     items: [
       { p: "<strong>Rectum</strong>: mesorectal node", a: "Regional", why: "Mesorectal nodes are the first echelon: regional (N)." },
       { p: "<strong>Rectum</strong>: internal iliac node", a: "Regional", why: "Internal iliac (and obturator/presacral) nodes are regional for the rectum." },
-      { p: "<strong>Rectum</strong> (not involving the anal canal): inguinal node", a: "Distant (M1)", why: "Inguinal nodes are <strong>distant (M1a)</strong> for rectal cancer. They're regional for anal cancer." },
+      { p: "<strong>Rectum</strong> (not involving the anal canal): inguinal node", a: "Distant (M1)", why: "Inguinal nodes are generally <strong>nonregional</strong> for rectal cancer (staged as M1). Anal canal involvement changes the drainage and the field. They're regional for anal cancer." },
       { p: "<strong>Rectum</strong>: external iliac node", a: "Distant (M1)", why: "AJCC treats external iliac nodes as <strong>nonregional</strong> for rectal cancer (unless the tumor invades an organ that drains there)." },
-      { p: "<strong>Anal canal</strong>: inguinal node", a: "Regional", why: "Regional (N1a) for anal cancer: the reason the groins are always in the field." },
+      { p: "<strong>Anal canal</strong>: inguinal node", a: "Regional", why: "Regional (N1a) for anal cancer: the reason the groins are part of the standard field." },
       { p: "<strong>Anal canal</strong>: external iliac node", a: "Regional", why: "Regional for anal cancer (N1b)." },
       { p: "<strong>Esophagus</strong>: celiac node", a: "Regional", why: "Celiac nodes are regional for esophageal cancer (AJCC 8)." },
-      { p: "<strong>Esophagus</strong>: supraclavicular node", a: "Distant (M1)", why: "Supraclavicular nodes are <strong>distant</strong> for esophageal cancer." },
+      { p: "<strong>Esophagus</strong>: supraclavicular node", a: "Distant (M1)", why: "Supraclavicular nodes are generally considered <strong>distant</strong> for esophageal cancer (though they may be covered for upper tumors)." },
       { p: "<strong>Pancreas</strong>: para-aortic node", a: "Distant (M1)", why: "Para-aortic nodes are distant for pancreatic cancer." },
       { p: "<strong>Pancreas</strong>: peripancreatic node", a: "Regional", why: "Regional (N)." },
     ],
@@ -3428,16 +3428,16 @@ function renderGpaBuilder(container){
 function rectalPlan(o){
   const adv = o.t === "T3" || o.t === "T4" || o.n;
   if(o.dmmr && adv) return { title: "MMR-deficient, locally advanced",
-    body: "<strong>Checkpoint inhibitor first</strong> (e.g., dostarlimab): nearly all achieved a complete clinical response in the Cercek trial &rarr; <strong>watch-and-wait</strong>, often avoiding RT and surgery." };
+    body: "<strong>Checkpoint immunotherapy</strong> is considered first: complete clinical responses have been seen in nearly all patients treated (Cercek), which may spare RT and surgery. Usually managed at experienced centers." };
   if(!adv) return { title: "Early (T1&ndash;T2 N0)",
-    body: "<strong>TME surgery</strong> (low anterior resection, or APR if the sphincter can't be saved). Small T1: <strong>local excision</strong>. Low tumor + wants to keep the rectum: chemoRT/TNT &rarr; <strong>watch-and-wait</strong> in selected patients." };
+    body: "<strong>TME surgery</strong> (low anterior resection, or APR if the sphincter can't be saved), usually without RT. Small T1: <strong>local excision</strong> in selected patients. Low tumor + wants to keep the rectum: neoadjuvant therapy aiming for <strong>organ preservation</strong> in selected patients." };
   const high = o.t === "T4" || o.mrf || o.emvi || o.lat || o.low;
   if(!high) return { title: "Locally advanced, lower risk",
-    body: "Neoadjuvant therapy then <strong>TME</strong>: short-course RT (25 Gy/5), long-course chemoRT (50.4 Gy/28 + capecitabine), or <strong>TNT</strong>. For mid/upper tumors with a clear MRF, <strong>FOLFOX with selective RT</strong> (PROSPECT) is an option." };
-  return { title: "High risk: total neoadjuvant therapy (TNT)",
-    body: "<strong>TNT</strong>: short-course RT + chemo (RAPIDO) or long-course chemoRT + chemo (OPRA, PRODIGE 23), then restage &rarr; <strong>TME</strong>, or <strong>watch-and-wait</strong> if complete clinical response." +
-      (o.t === "T4" || o.mrf || o.lat ? " Favor <strong>long-course chemoRT</strong> for shrinkage (threatened MRF, T4) and boost enlarged <strong>lateral nodes</strong>." : "") +
-      (o.low ? " Low tumor: TNT with consolidation chemo maximizes the chance of <strong>organ preservation</strong>." : "") };
+    body: "More than one reasonable path: neoadjuvant chemo with <strong>selective RT omission</strong> in carefully selected mid/upper tumors (PROSPECT), short- or long-course RT then <strong>TME</strong>, or <strong>TNT</strong>." };
+  return { title: "Higher risk: total neoadjuvant therapy (TNT)",
+    body: "<strong>TNT</strong>: RT plus chemo before surgery (RAPIDO, PRODIGE 23, OPRA), then restage &rarr; <strong>TME</strong>, or structured <strong>watch-and-wait</strong> after a clinical complete response." +
+      (o.t === "T4" || o.mrf || o.lat ? " <strong>Long-course chemoRT</strong> is particularly useful here for shrinkage away from the margin (threatened MRF, T4, lateral nodes)." : "") +
+      (o.low ? " Low tumor: long-course chemoRT within TNT maximizes the chance of <strong>organ preservation</strong>." : "") };
 }
 function renderRectalBuilder(container){
   container.classList.add("quiz-carousel", "stage-builder", "rectal-builder");
@@ -3470,9 +3470,9 @@ function renderRectalBuilder(container){
    ============================================================ */
 function pancreasResect(o){
   if(o.mets) return { title: "Metastatic", body: "<strong>Systemic therapy</strong> (FOLFIRINOX or gemcitabine/nab-paclitaxel; targeted therapy if a driver). RT for pain (celiac plexus) or bleeding." };
-  if(o.art === 2 || o.vein === 3) return { title: "Locally advanced (unresectable)", body: "<strong>Chemotherapy first</strong> (FOLFIRINOX or gem/nab-paclitaxel), then consider <strong>chemoRT or SBRT</strong> for local control or pain; re-evaluate for surgery in rare responders (LAP07: chemoRT improved local control, not survival)." };
-  if(o.art === 1 || o.vein === 2) return { title: "Borderline resectable", body: "<strong>Neoadjuvant chemotherapy</strong> (e.g., mFOLFIRINOX) &plusmn; chemoRT or SBRT, then restage &rarr; <strong>resection</strong>. The role of neoadjuvant RT is still debated." };
-  return { title: "Resectable", body: "<strong>Surgery</strong> (Whipple for the head; distal pancreatectomy for body/tail) &rarr; <strong>adjuvant mFOLFIRINOX</strong> (PRODIGE 24). Neoadjuvant chemo is increasingly used. Adjuvant chemoRT for a positive margin in selected patients." };
+  if(o.art === 2 || o.vein === 3) return { title: "Locally advanced (unresectable)", body: "<strong>Systemic therapy first</strong>. Selected patients without progression may receive <strong>chemoRT or SBRT</strong> for local control or pain (LAP07: better local control, not survival); rarely, a strong response allows surgery." };
+  if(o.art === 1 || o.vein === 2) return { title: "Borderline resectable", body: "<strong>Neoadjuvant systemic therapy</strong> &plusmn; chemoRT or SBRT, then restage &rarr; <strong>resection if feasible</strong>. The role of neoadjuvant RT is still debated." };
+  return { title: "Resectable", body: "<strong>Surgery</strong> (Whipple for the head; distal pancreatectomy for body/tail) &rarr; <strong>adjuvant chemotherapy</strong> (mFOLFIRINOX for fit patients, PRODIGE 24). Neoadjuvant chemo is increasingly used. Routine adjuvant chemoRT is controversial." };
 }
 function renderPancreasBuilder(container){
   container.classList.add("quiz-carousel", "stage-builder", "pancreas-builder");

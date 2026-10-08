@@ -1,6 +1,6 @@
 {
  "category": "Case-Based Practice",
- "intro": "<p>Eight cases that get harder as you go, across the anus, esophagus, rectum, pancreas, and liver. Each starts with a one-liner, then gives you more information step by step: the <strong>exam, endoscopy, MRI, and PET</strong>, the <strong>stage</strong>, where radiation fits around <strong>surgery and chemo</strong>, the <strong>dose and targets</strong>, the <strong>landmark trials</strong>, and the <strong>side effects and follow-up</strong>. Some steps are multiple choice, some are fill-in-the-blank.</p>",
+ "intro": "<p>Eight cases that get harder as you go, across the anus, esophagus, rectum, pancreas, and liver. Each starts with a one-liner, then gives you more information step by step: the <strong>exam, endoscopy, MRI, and PET</strong>, the <strong>stage</strong>, where radiation fits around <strong>surgery and chemo</strong>, the <strong>targets and organs at risk</strong>, the <strong>landmark trials</strong>, and the <strong>side effects and follow-up</strong>. Some steps are multiple choice, some are fill-in-the-blank.</p>",
  "cases": [
   {
    "id": "gi-case-1",
@@ -55,12 +55,12 @@
      "explanation": "Nigro first showed chemoRT could replace APR. RTOG 9811 favored mitomycin, and ACT II confirmed cisplatin was no better and maintenance chemo didn't help."
     },
     {
-     "label": "Dose",
+     "label": "Field",
      "image": "images/gi/gi-g-rtog-atlas.jpg",
      "caption": "Elective nodal CTV (yellow) for anal cancer on axial CT slices, from L5 down to the inguinal nodes. Dapper H et al., BMC Cancer 2019 (PMC6664500), CC BY 4.0.",
-     "prompt": "Give the RTOG 0529 doses for her T2 N0 tumor.",
-     "answer": "Primary 50.4 Gy in 28 fractions; elective nodes (inguinal and pelvic) 42 Gy in 28 fractions.",
-     "explanation": "Every patient has the groins and pelvic nodes treated, even when node-negative."
+     "prompt": "She is node-negative. Which nodes are still in her radiation field?",
+     "answer": "The inguinal, mesorectal, presacral, and internal and external iliac nodes, with a higher dose to the primary than to the elective nodes.",
+     "explanation": "The groins are regional for anal cancer and part of the standard field even when node-negative. For reference, RTOG 0529 used about 50.4 Gy to a T2N0 primary and 42 Gy to elective nodes in 28 fractions."
     },
     {
      "label": "Response",
@@ -134,13 +134,13 @@
       "CheckMate 577"
      ],
      "correctIndex": 0,
-     "explanation": "CROSS gave a pCR rate of 29% overall (49% in squamous cell). For adenocarcinoma, perioperative FLOT is an alternative; ESOPEC found better survival with FLOT than CROSS."
+     "explanation": "CROSS gave a pCR rate of 29% overall (49% in squamous cell). For adenocarcinoma, perioperative chemotherapy has become increasingly important (ESOPEC favored FLOT over CROSS), so the choice is a multidisciplinary one."
     },
     {
-     "label": "Dose",
-     "prompt": "Give the CROSS dose and a key lung constraint.",
-     "answer": "41.4 Gy in 23 fractions with weekly carboplatin and paclitaxel; keep lung V20 under about 20% to limit lung complications after surgery.",
-     "explanation": "Heart dose matters too for distal tumors."
+     "label": "Organs at risk",
+     "prompt": "Which organs limit his preoperative plan, and why does it matter that surgery comes next?",
+     "answer": "The lungs and heart (plus the spinal cord). Lung dose raises the risk of pulmonary complications after esophagectomy.",
+     "explanation": "For reference, CROSS gives 41.4 Gy in 23 fractions with weekly carboplatin and paclitaxel."
     },
     {
      "label": "After surgery",
@@ -215,12 +215,12 @@
      "explanation": "The German rectal trial made neoadjuvant treatment the standard. RAPIDO and PRODIGE 23 then supported total neoadjuvant therapy; OPRA showed organ preservation; PROSPECT allowed selective RT omission for lower-risk tumors."
     },
     {
-     "label": "Dose and nodes",
+     "label": "Targets",
      "image": "images/gi/gi-ax-rectum.jpg",
      "caption": "Axial T2 MRI of a T3 rectal cancer reaching the left mesorectal fascia. Pikūnienė I et al., Cureus 2023 (PMC10493462), CC BY 4.0.",
-     "prompt": "Give the long-course chemoRT dose and the nodes you would cover.",
-     "answer": "45 Gy to the pelvis with a boost to 50.4-54 Gy (28-30 fractions) and capecitabine; cover the tumor, the whole mesorectum, and the presacral, internal iliac, and obturator nodes.",
-     "explanation": "Add external iliac nodes for T4 tumors into anterior organs, and inguinal nodes if the anal canal is involved."
+     "prompt": "Which areas would his neoadjuvant radiation cover?",
+     "answer": "The tumor, the whole mesorectum, and the presacral, internal iliac, and obturator nodes.",
+     "explanation": "Add external iliac nodes for anterior organ invasion, and inguinal nodes if the anal canal is involved. For reference, long-course chemoRT is usually 45-50.4 Gy in 25-28 fractions with capecitabine."
     },
     {
      "label": "Restaging",
@@ -284,10 +284,10 @@
      "explanation": "Node-positive anal cancer is still treated with definitive chemoRT."
     },
     {
-     "label": "Doses",
-     "prompt": "Give the RTOG 0529 doses for the primary, the involved node, and the elective nodes.",
-     "answer": "Primary 54 Gy in 30; involved node 3 cm or less 50.4 Gy in 30 (over 3 cm, 54 Gy); elective nodes 45 Gy in 30.",
-     "explanation": "Dose painting with IMRT spares the skin, bowel, bladder, and genitals compared with older 3D plans."
+     "label": "Dose painting",
+     "prompt": "How does an IMRT plan handle his primary, his involved groin node, and the elective nodes?",
+     "answer": "Each gets its own dose level: the highest to the primary and the involved node (scaled to its size), and a lower dose to the elective nodal regions, all in one plan.",
+     "explanation": "Dose painting spares skin, bowel, bladder, and genitals compared with older 3D plans. For reference, RTOG 0529 used about 54 Gy to a T3-4 primary, 50.4-54 Gy to involved nodes by size, and 45 Gy to elective nodes in 30 fractions."
     },
     {
      "label": "Acute toxicity",
@@ -417,7 +417,7 @@
     {
      "label": "Plan",
      "prompt": "What is the plan?",
-     "answer": "Biliary stent for the jaundice; neoadjuvant mFOLFIRINOX (± chemoRT or SBRT); restage; then a Whipple with vein resection if feasible, followed by more chemo.",
+     "answer": "Biliary stent for the jaundice; neoadjuvant systemic therapy (e.g., mFOLFIRINOX) ± chemoRT or SBRT; restage; then a Whipple with vein resection if feasible.",
      "explanation": "Germline testing is done for every pancreatic cancer (BRCA status changes systemic options)."
     },
     {
@@ -435,9 +435,9 @@
     },
     {
      "label": "SBRT",
-     "prompt": "If SBRT is used, what dose range, and which organs limit it?",
-     "answer": "About 33-40 Gy in 5 fractions; the duodenum, stomach, and bowel right next to the pancreas (bleeding, ulcer, perforation) limit the dose.",
-     "explanation": ""
+     "prompt": "If SBRT is used, which organs limit the dose?",
+     "answer": "The duodenum, stomach, and bowel right next to the pancreas; too much dose risks bleeding, ulcer, or perforation.",
+     "explanation": "For reference, pancreatic SBRT is commonly about 33-40 Gy in 5 fractions."
     },
     {
      "label": "Palliation",
@@ -477,7 +477,7 @@
      "label": "Staging",
      "context": "<p><strong>MRI:</strong> 4 cm segment VII HCC abutting the IVC, not suited to ablation; no vascular invasion or extrahepatic disease. Resection declined (portal hypertension). Transplant evaluation is under way.</p>",
      "prompt": "What BCLC stage is he, and why does Child-Pugh matter for RT?",
-     "answer": "BCLC A (single tumor, preserved liver function, performance status 0). Child-Pugh A (to B7) patients can get SBRT with a lower risk of liver toxicity.",
+     "answer": "BCLC A (single tumor, preserved liver function, performance status 0). Liver SBRT needs good liver function (usually Child-Pugh A, selected B), because the remaining liver must keep working after treatment.",
      "explanation": "Liver function, not just the tumor, decides what can be offered."
     },
     {
@@ -490,7 +490,7 @@
       "Brachytherapy"
      ],
      "correctIndex": 1,
-     "explanation": "SBRT is used for tumors not suited to ablation, as a bridge to transplant, and for portal vein tumor thrombus. TACE and Y-90 are other liver-directed options."
+     "explanation": "SBRT is used for tumors not suited to ablation, as a bridge to transplant, and in selected patients with portal vein tumor thrombus. TACE and Y-90 are other liver-directed options."
     },
     {
      "label": "Trial",
@@ -506,10 +506,10 @@
      "explanation": "RTOG 1112 made SBRT a real option for HCC."
     },
     {
-     "label": "Dose",
-     "prompt": "Give an SBRT dose range and the normal liver constraint.",
-     "answer": "About 30-50 Gy in 3-5 fractions; keep at least 700 cc of normal liver under 15 Gy (and respect stomach and duodenum limits).",
-     "explanation": ""
+     "label": "Plan limit",
+     "prompt": "What is the main thing his SBRT plan must protect?",
+     "answer": "Enough uninvolved, functioning liver, plus the nearby stomach, duodenum, and bowel.",
+     "explanation": "In HCC the liver is both the organ with the tumor and the critical organ at risk. For reference, a common goal is at least about 700 cc of uninvolved liver under 15 Gy, with doses commonly 30-50 Gy in 3-5 fractions."
     },
     {
      "label": "Toxicity",

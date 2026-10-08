@@ -222,7 +222,7 @@
       "label": "Portal Vein",
       "x": 43.0,
       "y": 84.3,
-      "blurb": "Tumor thrombus in the portal vein is common in HCC and changes treatment (SBRT can treat it)."
+      "blurb": "Tumor thrombus in the portal vein signals advanced HCC and changes treatment; liver-directed RT may be an option in selected patients."
      },
      {
       "id": "hv",
@@ -515,7 +515,7 @@
       "label": "External Iliac Nodes (EI)",
       "x": 19.0,
       "y": 64.5,
-      "blurb": "Regional for anal cancer; distant for rectal cancer unless an anterior organ is invaded."
+      "blurb": "Regional for anal cancer; generally nonregional for rectal cancer, but added to the field when the tumor invades an anterior organ."
      }
     ],
     "image": "images/gi/gi-nodes-pelvis.jpg"

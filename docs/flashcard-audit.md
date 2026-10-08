@@ -380,3 +380,26 @@ cnsx-64 (deferring RT for CNS-active systemic therapy is a multidisciplinary,
 case-by-case decision), cnsx-65 (SINS), cnsx-66 (MRI-CT fusion), cnsx-67 (CTV for
 glioma vs none for SRS), cnsx-68 (optic chiasm decides SRS vs fractionated for
 sellar tumors), cnsx-69 (steroids first for radionecrosis).
+
+**GI reading revision (October 7, 2026), 340 → 342 cards.** The GI reading was
+reorganized around "I have a GI consult tomorrow: what is radiation's job?" It now
+opens with six diseases and six treatment identities (anus, rectum, esophagus,
+pancreas, liver, stomach; colon intentionally out of scope), drops incidence and
+survival numbers and the ABCDEF/BOG mnemonics, and turns drainage into "what changes
+my field?" with esophageal margins and nodal volumes in planning boxes. Imaging is
+organized by the clinical question each study answers, with rectal MRI read as T,
+Margin, Spread. Staging leads with "what actually decides the plan" (pancreatic TNM
+described as prognostic, with treatment driven by resectability; NCCN resectability
+criteria and BCLC moved to reference boxes). Treatment drops "everywhere else:
+surgery cures, chemoRT prepares," teaches risk-adapted rectal therapy (selective RT
+omission, TNT for higher risk, watch-and-wait as a structured strategy), histology-
+neutral esophageal neoadjuvant choice, systemic-therapy-first pancreas, "the liver is
+the OAR" for HCC, a short stomach section, palliative RT, a five-step GI planning
+workflow with OAR table and two target maps, six core trials (statistics in a details
+box), and three integrated consults (rectum, anus, pancreas). Card changes: doses
+moved out of answers into Extra (gix-40, gix-45, gix-46, gix-48); gix-19 is now T,
+Margin, Spread; gix-55 asks the R0 question; softened gix-15 (rectal inguinal nodes
+generally nonregional), gix-25 (at-risk patient), gix-36, gix-43 (structured
+watch-and-wait), gix-51 (selected portal vein thrombus; Child-Pugh A, selected B).
+Added gix-61 (selective RT omission in lower-risk rectal cancer) and gix-63 (why
+upper GI targets need 4D-CT).

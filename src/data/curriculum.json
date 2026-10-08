@@ -793,21 +793,21 @@
   },
   "gi": {
    "title": "GI Cancer",
-   "summary": "Esophagus to anus: rectal MRI staging, pancreas resectability, anal cancer chemoradiation, and the paradigms for each organ.",
+   "summary": "Six radiation oncology diseases along one tube: what radiation is for in anal, rectal, esophageal, pancreatic, liver, and gastric cancer, from rectal MRI to liver SBRT.",
    "topics": [
+    "Six Treatment Identities",
     "Rectal MRI",
     "Anal ChemoRT",
-    "Esophagus",
     "Pancreas Resectability",
-    "Liver (HCC)"
+    "Liver as the OAR"
    ],
    "objectives": [
-    "Compare esophageal, gastric, pancreatic, liver, rectal, and anal cancer at a glance",
-    "Map the GI tract and its lymph drainage by organ",
-    "Stage rectal cancer on MRI and use the MRI features to choose a plan",
-    "Classify pancreatic cancer resectability on pancreatic-protocol CT",
-    "Explain why chemoradiation is the curative treatment for anal cancer",
-    "Follow the paradigms for rectal, esophageal, gastric, pancreatic, and liver cancer"
+    "Name the treatment identity and radiation's job for each of the six GI cancers",
+    "Explain how anatomy and drainage change the radiation field",
+    "Read rectal MRI as T, Margin, and Spread and use it to stratify risk",
+    "Classify pancreatic cancer resectability and know where radiation fits",
+    "Walk through anal cancer chemoradiation from staging to salvage",
+    "Plan a GI case around targets, motion, organs at risk, and toxicity"
    ],
    "guideline": "NCCN Esophageal/Gastric, Pancreatic, Hepatobiliary, Rectal, and Anal Carcinoma Guidelines",
    "staging": [
@@ -815,9 +815,7 @@
     "BCLC (HCC)"
    ],
    "trials": [
-    "RTOG 8501",
-    "CROSS",
-    "CheckMate 577",
+    "Nigro",
     "RTOG 9811",
     "ACT II",
     "RTOG 0529",
@@ -826,90 +824,98 @@
     "PRODIGE 23",
     "OPRA",
     "PROSPECT",
-    "PREOPANC",
-    "LAP07",
+    "CROSS",
+    "RTOG 8501",
+    "RTOG 9405",
+    "ESOPEC",
+    "CheckMate 577",
     "PRODIGE 24",
-    "RTOG 1112"
+    "LAP07",
+    "PREOPANC",
+    "RTOG 1112",
+    "INT-0116",
+    "CRITICS"
    ],
    "modules": {
     "Epidemiology & Risk Factors": {
-     "lede": "Learn the risk factors and presentation of esophageal, stomach, liver, pancreatic, rectal, and anal cancer.",
+     "lede": "GI is six different radiation oncology diseases along one tube. Learn each one's treatment identity, who gets it, and how it presents.",
      "essentials": [
-      "Squamous versus adenocarcinoma of the esophagus",
-      "Pancreatic cancer presentation",
-      "Lynch syndrome in rectal cancer",
-      "HPV and anal cancer"
+      "Six diseases, six treatment identities",
+      "Esophageal SCC versus adenocarcinoma",
+      "Rectal versus anal cancer",
+      "Liver function in HCC"
      ],
      "objectives": [
+      "Name the core treatment identity of each GI cancer",
       "Contrast esophageal squamous cell carcinoma with adenocarcinoma",
-      "Recognize how pancreatic cancer presents",
-      "Identify the risk factors for rectal and anal cancer",
-      "Know who is screened for hepatocellular carcinoma"
+      "Distinguish rectal from anal cancer by cause and treatment",
+      "Recognize how pancreatic cancer presents and why it is so lethal"
      ]
     },
     "Anatomy & Lymphatics": {
-     "lede": "Follow the GI tract top to bottom, and learn the nodal drainage by organ that decides regional versus distant disease.",
+     "lede": "For each organ, learn its regions, what sits next to it, and where it drains, then ask what about the tumor changes the radiation field.",
      "essentials": [
-      "Esophagus by distance from the incisors",
-      "Rectal height and the mesorectal fascia",
+      "Why esophageal target volumes are long",
+      "The mesorectal fascia and low rectal tumors",
       "The dentate line",
-      "Pancreatic vessels"
+      "What changes the nodal field"
      ],
      "objectives": [
-      "Describe esophageal and rectal tumor location by distance",
-      "Identify the mesorectal fascia and its surgical importance",
+      "Explain why esophageal disease spreads along the organ",
+      "Identify the mesorectal fascia and why tumor height matters",
       "Explain how the dentate line splits anal drainage",
-      "Know which nodes are regional for anal versus rectal cancer",
-      "Locate the vessels that decide pancreatic resectability"
+      "Name the standard nodal coverage for rectal and anal cancer and what adds more",
+      "Explain why the liver is an organ at risk in HCC"
      ]
     },
     "Imaging": {
-     "lede": "Work through each primary from the esophagus to the anus: normal axial anatomy, then the key staging scan, from EUS and PET/CT to rectal MRI.",
+     "lede": "Every study answers a clinical question. Work through each primary from the esophagus to the anus, with rectal MRI (T, Margin, Spread) as the signature study.",
      "essentials": [
-      "Rectal MRI and the mesorectal fascia",
-      "Pancreatic-protocol CT",
-      "EUS for esophageal depth",
+      "The question each study answers",
+      "Rectal MRI: T, Margin, Spread",
+      "Pancreatic-protocol CT and resectability",
       "LI-RADS 5"
      ],
      "objectives": [
-      "Read the key findings on rectal MRI",
+      "Match each GI imaging study to the question it answers",
+      "Read rectal MRI for T stage, margin, and spread",
       "Use pancreatic-protocol CT to judge vessel contact",
-      "Know how esophageal cancer is staged with EUS and PET/CT",
-      "Know when to judge anal cancer response",
-      "Diagnose HCC on imaging without a biopsy"
+      "Diagnose HCC on imaging in an at-risk patient",
+      "Know why anal cancer response is judged over months"
      ]
     },
     "Workup & Staging": {
-     "lede": "Learn the T, N, and M pattern that repeats across GI sites, the two exceptions (pancreas and liver), and the one or two features that decide treatment at each site.",
+     "lede": "GI has no single staging logic. Learn what actually decides the plan at each site, from MRI risk in the rectum to resectability in the pancreas and liver function in HCC.",
      "essentials": [
-      "The repeating T, N, and M pattern",
+      "What decides the plan at each site",
       "Pancreatic resectability",
-      "BCLC for HCC",
-      "Rectal MRI risk features"
+      "Rectal risk stratification",
+      "Anal cancer size and node location"
      ],
      "objectives": [
-      "Apply the shared TNM logic across GI sites",
+      "Name the staging question that matters at each GI site",
       "List the core GI workup",
       "Classify pancreatic cancer by resectability",
-      "Stage HCC with BCLC and Child-Pugh",
-      "Identify high-risk rectal cancer on MRI",
+      "Weigh tumor burden, liver function, and performance status in HCC",
+      "Sort rectal cancer into lower and higher risk",
       "Stage anal cancer by size and node location"
      ]
     },
     "Treatment Paradigms": {
-     "lede": "Follow the paradigms site by site: anal chemoradiation, early and locally advanced rectal cancer, esophagus, stomach, pancreas, liver, and palliation.",
+     "lede": "Ask what radiation's job is for this patient, then follow each paradigm: anal chemoradiation, risk-adapted rectal therapy, esophagus, pancreas, liver, stomach, and palliation, ending with a planning workflow and three consults.",
      "essentials": [
-      "Anal cancer chemoradiation",
-      "Total neoadjuvant therapy for rectal cancer",
-      "CROSS versus definitive chemoradiation",
-      "Selective RT in pancreatic cancer"
+      "Anal cancer: chemoRT cures, surgery salvages",
+      "Risk-adapted rectal therapy and watch-and-wait",
+      "Neoadjuvant versus definitive esophageal chemoRT",
+      "How to plan a GI radiation case"
      ],
      "objectives": [
-      "Describe definitive chemoradiation for anal cancer",
-      "Choose treatment for early and locally advanced rectal cancer",
-      "Outline treatment of esophageal and gastric cancer",
-      "Explain the selective role of RT in pancreatic cancer and SBRT for HCC",
-      "Recall the trials behind each paradigm"
+      "Describe definitive chemoradiation and salvage for anal cancer",
+      "Choose between selective RT, TNT, and organ preservation in rectal cancer",
+      "Decide between neoadjuvant and definitive treatment for esophageal cancer",
+      "Explain the selective role of RT in pancreatic, liver, and gastric cancer",
+      "Plan a GI case around target, motion, organs at risk, and toxicity",
+      "Recall the core trial behind each paradigm"
      ]
     }
    }

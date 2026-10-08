@@ -34,7 +34,7 @@
       "label": "Spinal Cord",
       "x": 51.0,
       "y": 71.5,
-      "blurb": "Keep Dmax ~45 Gy."
+      "blurb": "Sits right behind the esophagus, so it is a dose-limiting organ in every esophageal plan."
      },
      {
       "id": "e1-lungs",
@@ -357,7 +357,7 @@
       "label": "Portal Vein Tumor Thrombus",
       "x": 67.9,
       "y": 45.0,
-      "blurb": "Enhancing thrombus expanding the vein: advanced HCC; SBRT can treat it."
+      "blurb": "Enhancing thrombus expanding the vein: advanced HCC. It changes treatment selection and may be treatable with liver-directed RT in selected patients."
      },
      {
       "id": "h-spleen",
@@ -573,7 +573,7 @@
       "label": "Inguinal Nodes / Femoral Vessels",
       "x": 31.5,
       "y": 39.3,
-      "blurb": "Always in the anal cancer field (and for low rectal tumors invading the anal canal)."
+      "blurb": "Part of the standard anal cancer field (and added for low rectal tumors invading the anal canal)."
      },
      {
       "id": "e6-fh",
@@ -610,7 +610,7 @@
       "label": "Inguinal Node",
       "x": 64.0,
       "y": 12.7,
-      "blurb": "Regional (N1a). Gets a higher dose (50.4–54 Gy) when involved."
+      "blurb": "Regional (N1a). An involved node gets a higher dose than the elective nodes."
      },
      {
       "id": "a-ei",
