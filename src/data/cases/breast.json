@@ -82,7 +82,7 @@
     {
      "label": "Mammogram",
      "image": "images/breast/br-g-calcs.jpg",
-     "caption": "Magnified craniocaudal mammogram view of the area of concern.",
+     "caption": "Magnified craniocaudal mammogram view of the area of concern. Jmarchn, Wikimedia Commons, CC BY-SA 3.0.",
      "prompt": "The magnified views show fine, linear, branching (casting) calcifications over a 2.5 cm segment, BI-RADS 4C. What do calcifications like these most suggest?",
      "choices": [
       "Benign fat necrosis",

@@ -22,9 +22,9 @@ CAP = {
  "spine-mri": "Sagittal T2 MRI of the thoracic spine: pathologic T5 fracture from metastatic rectal cancer with epidural extension compressing the cord. Source: Kuah T et al., Cancers 2022 (PMC9265325), Fig. 10a, CC BY 4.0.",
 }
 TITLE = {}
-LABEL = {("srs-plan", "srs-chiasm"): ("Optic Nerves / Chiasm", "Orange contours: the optic apparatus is an OAR for every SRS plan. Single-fraction chiasm limit ~8–10 Gy."),
+LABEL = {("srs-plan", "srs-chiasm"): ("Optic Nerves / Chiasm", "Orange contours: the optic apparatus is an OAR for every SRS plan. Single-fraction chiasm limit ~8-10 Gy."),
          ("post-tx", "pt-rcbv"): (None, "High rCBV = tumor (lots of new vessels). Low rCBV = treatment effect, as in this proven radiation necrosis."),
-         ("srs-plan", "srs-v12"): (None, "Normal brain getting 12 Gy in a single fraction: >~5–10 cc raises radionecrosis risk. The blue wash here is the low-dose spill around the target.")}
+         ("srs-plan", "srs-v12"): (None, "Normal brain getting 12 Gy in a single fraction: >~5-10 cc raises radionecrosis risk. The blue wash here is the low-dose spill around the target.")}
 GAL = {("anatomy", "anat-cns-overview", 0): ("cns-g-territories.jpg", "Vascular territories", "ACA (yellow: medial frontal/parietal), MCA (red: most of the lateral hemisphere), PCA (blue: occipital, inferior temporal). Source: Frank Gaillard, derivative work (Wikimedia Commons, Cerebral vascular territories), CC BY 2.5."),
        ("anatomy", "anat-cns-overview", 1): ("cns-g-homunculus.jpg", "Homunculus", "Sensory homunculus on the postcentral gyrus; the motor strip just in front follows the same map: leg medial, arm and face lateral. Source: OpenStax College (Wikimedia Commons, 1421 Sensory Homunculus), CC BY 3.0."),
        ("anatomy", "anat-cns-special", 0): ("cns-g-hawbrt.jpg", "HA-WBRT dose", "Hippocampal-avoidance whole-brain plan: the two cool spots in the middle are the spared hippocampi. Source: Yang X et al., Eur J Med Res 2023 (PMC9841677), Fig. 1B, CC BY 4.0."),

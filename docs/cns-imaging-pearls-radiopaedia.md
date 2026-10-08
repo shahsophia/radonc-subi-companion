@@ -1,15 +1,15 @@
-# CNS Tumor Imaging Pearls (Radiopaedia-sourced) — for Flashcards
+# CNS Tumor Imaging Pearls (Radiopaedia-sourced), for Flashcards
 
 ## MRI Sequences (what each shows, in a brain-tumor workup)
 - **T1**: anatomy; tumor usually hypo-to-isointense to gray matter
 - **T1+contrast (Gd)**: enhancement = blood-brain barrier breakdown → marker of high-grade/malignant tissue and the key sequence for target delineation
 - **T2/FLAIR**: edema + infiltrative tumor signal; FLAIR nulls CSF, better shows periventricular/cortical lesions
 - **DWI/ADC**: restricted diffusion = high cellularity (tumor) or abscess/pyogenic pus; facilitated diffusion favors necrosis/treatment effect
-- **Perfusion (rCBV)**: proxy for neovascularity/grade — elevated rCBV = high-grade tumor or true progression; low rCBV = treatment effect
+- **Perfusion (rCBV)**: proxy for neovascularity/grade; elevated rCBV = high-grade tumor or true progression; low rCBV = treatment effect
 
 ## Glioblastoma (IDH-wildtype), classic appearance
 - Thick, **irregular ring enhancement** around a **central necrotic core**; "pseudopalisading" necrosis is fairly unique to GBM
-- **Vasogenic edema** on T2/FLAIR — importantly, this edema is infiltrated by tumor cells, not just fluid
+- **Vasogenic edema** on T2/FLAIR. This edema is infiltrated by tumor cells, not just fluid
 - Can cross corpus callosum → **"butterfly glioma"**
 - Elevated **rCBV** vs lower-grade tumors/normal brain; ITSS (microhemorrhage) on SWI
 - Differentiators: abscess has a smooth, complete SWI rim + restricted diffusion centrally (GBM rim is irregular/incomplete, center facilitated diffusion); IDH-mutant grade 4 astrocytoma shows the **T2/FLAIR mismatch sign**; lymphoma tends to enhance homogeneously (no necrosis)
@@ -22,7 +22,7 @@
 - Classically **multiple** lesions **centered at the gray-white matter junction** (embolic seeding at the caliber change of penetrating vessels)
 - Enhancement is heterogeneous, often with small necrotic foci in larger lesions; **vasogenic edema is disproportionately large** relative to lesion size (helpful vs. primary glioma)
 - Lower rCBV within surrounding edema than GBM edema (GBM edema is infiltrated by tumor and hypervascular; metastasis edema is not)
-- Melanoma mets: T1 hyperintense (melanin effect) — distinctive among mets
+- Melanoma mets: T1 hyperintense (melanin effect), distinctive among mets
 
 ## Pseudoprogression vs true progression (post-chemoRT GBM)
 - **Timing**: pseudoprogression typically occurs within the first ~3 months after completing chemoRT
@@ -32,7 +32,7 @@
 
 ## SRS treatment planning notes
 - Target delineation for SRS relies on **thin-slice, post-contrast T1** sequences for precise 3D localization of enhancing tumor/metastasis margins
-- (Radiopaedia's SRS/Gamma Knife articles are largely conceptual/technique-focused rather than protocol-detailed — supplement with institutional/ASTRO planning guidelines for slice-thickness specifics)
+- (Radiopaedia's SRS/Gamma Knife articles are largely conceptual/technique-focused rather than protocol-detailed; supplement with institutional/ASTRO planning guidelines for slice-thickness specifics)
 
 ## Sources (Radiopaedia.org)
 - Glioblastoma, IDH-wildtype: https://radiopaedia.org/articles/glioblastoma-idh-wildtype

@@ -175,7 +175,7 @@ plate("pr-nodes-ax-mid", "pr-nodes-ax-mid.jpg", [("hgf/210.png", HM, (20, 30, 50
     ("m-int-r", "Right Internal Iliac Nodes", 0, 37.0, 57.0, None),
     ("m-ext-l", "Left External Iliac Nodes", 0, 71.0, 42.0, None),
     ("m-int-l", "Left Internal Iliac Nodes", 0, 67.0, 56.0, None),
-    ("m-presacral", "Presacral Nodes (S2–S3)", 0, 52.0, 76.0, None),
+    ("m-presacral", "Presacral Nodes (S2-S3)", 0, 52.0, 76.0, None),
     ("m-bowel", "Sigmoid / Bowel", 0, 49.0, 36.0, None)],
     "Contrast-enhanced axial CT through the upper sacrum in a healthy adult male: external iliac vessels in front, internal iliac vessels along the sidewall. " + HAGG)
 plate("pr-nodes-ax-low", "pr-nodes-ax-low.jpg", [("hgf/250.png", HM, (20, 30, 500, 312), None)], BL, [
@@ -214,7 +214,7 @@ plate("pr-mri-sag", "pr-mri-sag.jpg", [(CAAC, CB, (1040, 40, 1500, 485), None), 
     ("sag-apex", "Apex", 1, 50.0, 82.0, None),
     ("sag-bladder", "Bladder", 0, 53.0, 30.0, None),
     ("sag-rectum", "Rectum", 0, 50.0, 70.0, None)],
-    "Seminal vesicle invasion (T3b) on axial (left) and coronal (right) T2 MRI: dark tumor replaces the normally bright seminal vesicle tubules. " + CAACC % "C–D",
+    "Seminal vesicle invasion (T3b) on axial (left) and coronal (right) T2 MRI: dark tumor replaces the normally bright seminal vesicle tubules. " + CAACC % "C-D",
     "MRI: Seminal Vesicle Invasion (Axial & Coronal T2)")
 
 # =============== Imaging: CT ===============

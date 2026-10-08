@@ -98,7 +98,7 @@
     "hotspots": [
      {
       "id": "eus-muc",
-      "label": "Mucosa (Layers 1–4)",
+      "label": "Mucosa (Layers 1-4)",
       "x": 88.0,
       "y": 30.1,
       "blurb": "Tumor limited here = T1a: may be treated with endoscopic resection."
@@ -112,7 +112,7 @@
      },
      {
       "id": "eus-mp",
-      "label": "Muscularis Propria (Layers 6–8)",
+      "label": "Muscularis Propria (Layers 6-8)",
       "x": 88.0,
       "y": 20.4,
       "blurb": "Invasion = T2."
@@ -167,11 +167,11 @@
   ]
  },
  "img-gi-stomach": {
-  "intro": "<p>The <strong>GEJ and cardia</strong> at T11&ndash;T12, with the celiac axis and crura. This is the level for distal esophageal, GEJ, and proximal gastric tumors.</p>",
+  "intro": "<p>The <strong>GEJ and cardia</strong> at T11-T12, with the celiac axis and crura. This is the level for distal esophageal, GEJ, and proximal gastric tumors.</p>",
   "plates": [
    {
     "id": "ax-gej",
-    "title": "Normal CT: GEJ / Upper Abdomen (T11–T12)",
+    "title": "Normal CT: GEJ / Upper Abdomen (T11-T12)",
     "style": "ct",
     "caption": "Contrast-enhanced axial CT at the gastroesophageal junction in a healthy adult. Häggström M, CT of a normal abdomen and pelvis (Wikimedia Commons), CC0.",
     "hotspots": [
@@ -227,7 +227,7 @@
   "plates": [
    {
     "id": "ax-pancreas",
-    "title": "Normal CT: Pancreatic Head (L1–L2)",
+    "title": "Normal CT: Pancreatic Head (L1-L2)",
     "style": "ct",
     "caption": "Contrast-enhanced axial CT through the pancreatic head in a healthy adult. Häggström M, CT of a normal abdomen and pelvis (Wikimedia Commons), CC0.",
     "hotspots": [
@@ -336,7 +336,7 @@
     "id": "hcc",
     "title": "Multiphase CT: Hepatocellular Carcinoma",
     "style": "mri",
-    "caption": "Multiphase CT of HCC in segment 6: (A) arterial phase hyperenhancement, (B) washout on the delayed phase, with tumor extending into the right portal vein (second arrow). Han JE et al., J Liver Cancer 2021 (PMC10035689), Fig. 1A–B, CC BY-NC 4.0.",
+    "caption": "Multiphase CT of HCC in segment 6: (A) arterial phase hyperenhancement, (B) washout on the delayed phase, with tumor extending into the right portal vein (second arrow). Han JE et al., J Liver Cancer 2021 (PMC10035689), Fig. 1A-B, CC BY-NC 4.0.",
     "hotspots": [
      {
       "id": "h-ape",
@@ -436,7 +436,7 @@
       "label": "Extramural Spread into Mesorectal Fat",
       "x": 55.1,
       "y": 16.3,
-      "blurb": "Depth beyond the muscularis: T3a <1 mm, T3b 1–5, T3c 5–15, T3d >15 mm."
+      "blurb": "Depth beyond the muscularis: T3a <1 mm, T3b 1-5, T3c 5-15, T3d >15 mm."
      },
      {
       "id": "r-mrf",
@@ -633,7 +633,7 @@
   "gallery": [
    {
     "title": "PET/CT: inguinal node",
-    "caption": "FDG-avid inguinal (yellow), external iliac (red), and lateral pelvic (dotted) nodes in anal cancer. Park IJ, Chang G, Ann Coloproctol 2020 (PMC7837391), Fig. 2A–B, CC BY-NC 4.0.",
+    "caption": "FDG-avid inguinal (yellow), external iliac (red), and lateral pelvic (dotted) nodes in anal cancer. Park IJ, Chang G, Ann Coloproctol 2020 (PMC7837391), Fig. 2A-B, CC BY-NC 4.0.",
     "style": "pet",
     "image": "images/gi/gi-g-pet-inguinal.jpg"
    },

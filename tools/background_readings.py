@@ -98,7 +98,7 @@ RAD101 = f"""
 </div>
 <p>You'll hear four broad patterns:</p>
 {cards([
-    ("Conventional", "About 1.8&ndash;2 Gy per fraction, usually over five to eight weeks."),
+    ("Conventional", "About 1.8-2 Gy per fraction, usually over five to eight weeks."),
     ("Hypofractionation", "Fewer, larger fractions. Example: 40 Gy in 15 fractions for breast."),
     ("Stereotactic (SRS / SBRT)", "One to five large, highly precise fractions to a small target."),
     ("Single fraction", "One treatment. Example: 8 Gy once for a painful bone metastasis."),
@@ -119,7 +119,7 @@ RAD101 = f"""
 <h3 id='why-fractions'>Why Fractions?</h3>
 <div class='big-idea'>Radiation is often divided into fractions so normal tissues can repair between treatments while damage to the tumor accumulates.</div>
 <p>A single dose large enough to sterilize most tumors would also badly injure the normal tissue around them. Splitting it up lets normal tissue recover a little each day while the tumor falls further behind. That's why a curative course is often weeks long, and why missed treatments matter.</p>
-<p>The exception proves the rule: when the target is small and can be hit very precisely (SRS, SBRT), little normal tissue sits in the high-dose region, so a few large fractions become possible.</p>
+<p>SRS and SBRT are the exception. When the target is small and can be hit very precisely, little normal tissue sits in the high-dose region, so a few large fractions become possible.</p>
 
 <h3 id='path'>Where the Next Five Readings Go</h3>
 <p>These six readings build one workflow. Every disease-site module applies the same framework to one cancer.</p>
@@ -271,7 +271,7 @@ Schematic dose-versus-depth curves (not to scale). <span style='color:var(--acce
 </figure>"""
 
 MODALITIES = f"""
-<p>The question here isn't &ldquo;can you memorize every machine?&rdquo; It's <strong>&ldquo;what tools does a radiation oncologist have, and when would I reach for each one?&rdquo;</strong> Learn each technique by the one thing it adds.</p>
+<p>You don't need to memorize every machine. You need to know <strong>what tools a radiation oncologist has, and when you would reach for each one</strong>. Learn each technique by the one thing it adds.</p>
 <div class='big-idea'>For every technique, ask: what can this do that the one before it can't?</div>
 
 <h3 id='big-split'>The Big Split: External Beam vs. Brachytherapy</h3>
@@ -381,7 +381,7 @@ When someone says protons are better, ask: better than which photon plan, for wh
 # 04  HOW TO GIVE A PRESENTATION
 # ---------------------------------------------------------------------------
 PRESENTATION = f"""
-<p>This reading is about <strong>how you communicate the patient</strong>. The next one, <em>The Rad Onc Consult</em>, is about how you think through the patient. The goal here isn't to list the parts of a presentation; it's to sound like a Rad Onc trainee: short, staged, and ending in a radiation recommendation.</p>
+<p>This reading is about <strong>how you communicate the patient</strong>. The next one, <em>The Rad Onc Consult</em>, is about how you think through the patient. A good Rad Onc presentation is short, says the stage out loud, and ends in a radiation recommendation.</p>
 <p>Most Sub-Is start with shadowing. Once you're comfortable, ask to present. It's one of the most learnable skills on the rotation because the structure is the same for every disease site.</p>
 
 <h3 id='one-rule'>The One Rule: Don't Just Relay the Chart</h3>
@@ -566,7 +566,7 @@ Radiation toxicity accumulates. A patient who feels fine at fraction 5 may be mu
 # 05  THE RAD ONC CONSULT
 # ---------------------------------------------------------------------------
 CONSULT = f"""
-<p>The presentation is how you <strong>communicate</strong> the patient. The consult is how you <strong>think through</strong> the patient. A radiation oncologist's real question isn't &ldquo;can we radiate this?&rdquo; It's <strong>&ldquo;what problem would radiation solve, and is it the best way to solve it?&rdquo;</strong></p>
+<p>The presentation is how you <strong>communicate</strong> the patient. The consult is how you <strong>think through</strong> the patient. Almost anything can be radiated, so that isn't the question. The question is <strong>what problem radiation would solve for this patient, and whether it's the best way to solve it</strong>.</p>
 
 <h3 id='nine-questions'>Nine Questions for Every Consult</h3>
 <p>Work through these in order for every new patient, at every disease site.</p>
@@ -786,19 +786,20 @@ PLANNING = f"""
 <div class='contour-exercise' id='exercise-gtv-brainmet'></div>
 
 <h3 id='oars'>Organs at Risk</h3>
-<p>Organs at risk (OARs) are contoured too, because a structure that isn't drawn can't be protected. Which ones matter depends on location, and organs fail in two ways:</p>
+<p>Organs at risk (OARs) are contoured too, because a structure that isn't drawn can't be protected. Which ones matter depends on location. A useful first model sorts organs by how they respond to dose:</p>
 <div class='compare-grid'>
 <div class='compare-col'>
-<span class='compare-label'>Serial organs</span>
-<h5>Watch the maximum dose</h5>
-<p>Like links in a chain: a small overdosed segment can cause the whole function to fail. Spinal cord, brainstem, optic nerves, bowel.</p>
+<span class='compare-label'>Serial-type organs</span>
+<h5>The maximum dose gets attention</h5>
+<p>Function depends on every segment, like links in a chain, so a small overdosed region can matter. Classic examples: spinal cord, brainstem, optic pathway.</p>
 </div>
 <div class='compare-col'>
-<span class='compare-label'>Parallel organs</span>
-<h5>Watch the mean dose or volume</h5>
-<p>Function is spread across many units, so the organ tolerates a small high-dose region if enough is spared. Lung, liver, kidney, parotid.</p>
+<span class='compare-label'>Parallel-type organs</span>
+<h5>The mean dose or volume gets attention</h5>
+<p>Function is spread across many units, so the organ can tolerate a small high-dose region if enough of it is spared. Classic examples: lung, liver, kidney, parotid.</p>
 </div>
 </div>
+<p>Treat this as a way to read a constraint, not a clinical rule. Many organs behave partly both ways (bowel, esophagus, and heart all have maximum-dose and volume limits), and the actual limits depend on the site, the fractionation, and the protocol your department follows.</p>
 <div class='contour-exercise' id='exercise-oar-rectum'></div>
 
 <h3 id='sequence'>The Planning Sequence</h3>
@@ -831,7 +832,7 @@ PLANNING = f"""
 </div>
 </div>
 {DVH_SVG}
-<p>Dose limits are written in DVH language. &ldquo;Lung V20 &lt; 30%&rdquo; means less than 30% of the lung should receive 20 Gy or more. You don't need to interpret complicated DVHs yet; know what the curves are trying to show.</p>
+<p>Dose limits are written in DVH language. A limit like &ldquo;lung V20 &lt; 30%&rdquo; means less than 30% of the lung should receive 20 Gy or more (the exact number depends on the protocol). You don't need to interpret complicated DVHs yet; know what the curves are trying to show.</p>
 <div class='pearl'>
 <strong>Clinical Pearl</strong>
 A DVH tells you <em>how much</em> dose, not <em>where</em>. A plan can look fine on the DVH and still put a hotspot somewhere it shouldn't, so attendings always scroll through the isodose lines too.
@@ -968,7 +969,7 @@ SECTIONS = [
 def main():
     for s in SECTIONS:
         s["html"] = s["html"].strip() + "\n"
-        assert "&mdash;" not in s["html"] and "—" not in s["html"], f"em dash in {s['id']}"
+        assert "&mda" + "sh;" not in s["html"] and "\u2014" not in s["html"], f"em dash in {s['id']}"
     with open(OUT, "w") as f:
         json.dump(SECTIONS, f, indent=2, ensure_ascii=False)
         f.write("\n")

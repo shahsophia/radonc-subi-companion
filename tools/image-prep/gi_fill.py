@@ -95,10 +95,10 @@ def plate(pid, name, panels, color, hs, caption, title=None, rows=None):
 # ---------------- Anatomy: organs ----------------
 plate("gi-esoph", "gi-esoph.jpg", [("cs/clean_479.svg.png", None, (350, 280, 1050, 1290), None)], WH, [
     ("cric", "Cricopharyngeus (~15 cm)", 0, 39.5, 28.3, None),
-    ("upper-t", "Upper Thoracic (20–25 cm)", 0, 37.4, 37.5, None),
+    ("upper-t", "Upper Thoracic (20-25 cm)", 0, 37.4, 37.5, None),
     ("carina-e", "Carina Level (~25 cm)", 0, 37.4, 42.0, None),
-    ("mid-t", "Middle Thoracic (25–30 cm)", 0, 37.4, 48.5, None),
-    ("lower-t", "Lower Thoracic (30–40 cm)", 0, 38.0, 58.5, None),
+    ("mid-t", "Middle Thoracic (25-30 cm)", 0, 37.4, 48.5, None),
+    ("lower-t", "Lower Thoracic (30-40 cm)", 0, 38.0, 58.5, None),
     ("diaphragm-e", "Diaphragmatic Hiatus", 0, 37.6, 63.2, None),
     ("gej", "Gastroesophageal Junction (~40 cm)", 0, 40.2, 66.8, None)],
     "The esophagus from the cricopharyngeus to the stomach. The pale bands mark the upper, middle, and lower thirds. " + CRUK)
@@ -117,7 +117,7 @@ plate("gi-pancreas", "gi-pancreas.jpg", [("cs/Gray1099.png", None, None, None)],
     "The pancreas and duodenum seen from BEHIND, so the head sits on the right of the picture and the tail on the left. Gray H, Anatomy of the Human Body (1918), Fig. 1099 (Wikimedia Commons), public domain.",
     "Pancreas & Its Vessels (Posterior View)")
 plate("gi-liver", "gi-liver.jpg", [("cs/clean_376.svg.png", None, (100, 330, 1360, 1260), None)], WH, [
-    ("right-lobe", "Right Lobe (Segments V–VIII)", 0, 20.0, 55.0, None), ("left-lobe", "Left Lobe (Segments II–IV)", 0, 80.0, 44.0, None),
+    ("right-lobe", "Right Lobe (Segments V-VIII)", 0, 20.0, 55.0, None), ("left-lobe", "Left Lobe (Segments II-IV)", 0, 80.0, 44.0, None),
     ("pv", "Portal Vein", 0, 45.8, 80.0, None), ("hv", "Hepatic Veins / IVC", 0, 57.0, 25.0, None),
     ("gb", "Gallbladder", 0, 32.0, 81.0, None), ("dome", "Liver Dome", 0, 38.0, 27.5, None),
     ("ha", "Hepatic Artery", 0, 49.5, 78.0, "Runs beside the portal vein. HCC gets most of its blood supply from the hepatic artery, which is why it lights up in the arterial phase and why TACE works."),
@@ -125,8 +125,8 @@ plate("gi-liver", "gi-liver.jpg", [("cs/clean_376.svg.png", None, (100, 330, 136
     "The liver's right and left lobes with the portal vein (dark blue), hepatic artery (red), hepatic veins (light blue), and bile ducts (green). The caudate lobe (segment I) is not visible from this angle; see the Couinaud model below. " + CRUK,
     "Liver: Lobes & Vessels")
 plate("gi-rectum", "gi-rectum.jpg", [(BOG(8), (0, 0, 400, 407), None, None), (BOG(4), None, (400, 0, 797, 425), None)], WH, [
-    ("upper-r", "Upper Rectum (10–15 cm)", 0, 50.0, 25.0, None), ("pr", "Anterior Peritoneal Reflection", 0, 40.5, 47.0, None),
-    ("mid-r", "Mid Rectum (5–10 cm)", 0, 53.0, 46.0, None), ("low-r", "Low Rectum (0–5 cm)", 0, 48.0, 62.0, None),
+    ("upper-r", "Upper Rectum (10-15 cm)", 0, 50.0, 25.0, None), ("pr", "Anterior Peritoneal Reflection", 0, 40.5, 47.0, None),
+    ("mid-r", "Mid Rectum (5-10 cm)", 0, 53.0, 46.0, None), ("low-r", "Low Rectum (0-5 cm)", 0, 48.0, 62.0, None),
     ("mesorectum", "Mesorectum", 0, 61.0, 36.0, None), ("mrf", "Mesorectal Fascia (MRF)", 0, 66.5, 30.0, None),
     ("arj", "Anorectal Ring / Puborectalis", 1, 58.5, 57.0, None), ("dentate", "Dentate Line", 1, 70.0, 69.0, None),
     ("sphincters", "Internal & External Sphincters", 1, 59.0, 76.0, None), ("verge", "Anal Verge", 1, 70.5, 86.0, None)],
@@ -175,7 +175,7 @@ plate("gi-nodes-esoph", "gi-nodes-esoph.jpg", [(LI, (0, 0, 350, 688), (0, 0, 340
     ("n-scv", "Supraclavicular Nodes (104)", 0, 24.9, 13.1, None), ("n-paratr", "Paratracheal Nodes (106rec)", 0, 28.0, 17.5, None),
     ("n-subcar", "Subcarinal Nodes (107)", 0, 42.0, 32.0, None), ("n-paraesoph", "Paraesophageal Nodes (108 / 110)", 0, 34.0, 39.5, None),
     ("n-leftgastric", "Left Gastric Nodes (7)", 0, 42.0, 72.0, None), ("n-celiac", "Celiac Nodes (9)", 0, 33.0, 73.5, None),
-    ("n-perigastric", "Perigastric Nodes (1–6)", 0, 47.0, 77.5, None)],
+    ("n-perigastric", "Perigastric Nodes (1-6)", 0, 47.0, 77.5, None)],
     "Japanese Esophageal Society node stations along the esophagus and stomach (numbers are the JES/JGCA station names; colors show nodal grouping for GEJ cancers in the source, legend removed). Liang R et al., Front Oncol 2022 (PMC9743047), Fig. 1A, CC BY 4.0.")
 CHO = EP("PMC9748447_jksr-83-1240-g022.jpg")
 plate("gi-nodes-pancreas", "gi-nodes-pancreas.jpg", [(CHO, (0, 0, 793, 400), (5, 25, 785, 395), None)], WH, [
@@ -216,8 +216,8 @@ plate("pct", "gi-pct.jpg", [(EP("PMC11981547_cureus-0017-00000080356-i02.jpg"), 
     ("p-aorta", "Aorta", 0, 52.5, 55.0, "The SMA arises from the front of the aorta; follow it forward to judge arterial contact.")],
     "Portal venous phase CT of a hypoenhancing pancreatic head mass (red arrow) abutting, but not deforming, the SMV. A stent is in the common bile duct. Louis M et al., Cureus 2025 (PMC11981547), Fig. 2, CC BY 4.0.")
 plate("eus", "gi-eus.jpg", [(EP("PMC11473974_jksr-85-883-g002.jpg"), None, None, None)], WH, [
-    ("eus-muc", "Mucosa (Layers 1–4)", 0, 88.0, 25.5, None), ("eus-sub", "Submucosa (Layer 5, Bright)", 0, 88.0, 19.5, None),
-    ("eus-mp", "Muscularis Propria (Layers 6–8)", 0, 88.0, 13.5, None), ("eus-adv", "Adventitia (Layer 9)", 0, 88.0, 8.0, None)],
+    ("eus-muc", "Mucosa (Layers 1-4)", 0, 88.0, 25.5, None), ("eus-sub", "Submucosa (Layer 5, Bright)", 0, 88.0, 19.5, None),
+    ("eus-mp", "Muscularis Propria (Layers 6-8)", 0, 88.0, 13.5, None), ("eus-adv", "Adventitia (Layer 9)", 0, 88.0, 8.0, None)],
     "High-frequency EUS of a normal esophageal wall (left, red box) with a schematic of its nine echo layers (right). Standard EUS shows these as five layers. Yun SM et al., J Korean Soc Radiol 2024 (PMC11473974), Fig. 2, CC BY-NC 4.0.",
     "EUS: Esophageal Wall Layers")
 plate("epet", "gi-epet.jpg", [(EP("PMC12702577_scr-11-01-25-0603-g001.jpg"), None, None, None)], BL, [
@@ -233,7 +233,7 @@ plate("apet", "gi-apet.jpg", [(EP("PMC9179927_cancers-14-02668-g039.jpg"), None,
 plate("hcc", "gi-hcc.jpg", [(EP("PMC10035689_jlc-2021-08-26f1.jpg"), (0, 0, 495, 185), (0, 0, 492, 185), None)], BL, [
     ("h-ape", "Arterial Phase Hyperenhancement", 0, 13.5, 54.0, None), ("h-washout", "Washout (Delayed Phase)", 0, 62.0, 57.0, None),
     ("h-pvtt", "Portal Vein Tumor Thrombus", 0, 67.5, 40.0, None), ("h-spleen", "Spleen", 0, 91.0, 70.0, None)],
-    "Multiphase CT of HCC in segment 6: (A) arterial phase hyperenhancement, (B) washout on the delayed phase, with tumor extending into the right portal vein (second arrow). Han JE et al., J Liver Cancer 2021 (PMC10035689), Fig. 1A–B, CC BY-NC 4.0.",
+    "Multiphase CT of HCC in segment 6: (A) arterial phase hyperenhancement, (B) washout on the delayed phase, with tumor extending into the right portal vein (second arrow). Han JE et al., J Liver Cancer 2021 (PMC10035689), Fig. 1A-B, CC BY-NC 4.0.",
     "Multiphase CT: Hepatocellular Carcinoma")
 
 # ---------------- Gallery ----------------
@@ -244,7 +244,7 @@ gallery_img("gi-g-rtog-atlas.jpg", EP("PMC6664500_12885_2019_5970_Fig1_HTML.jpg"
 G = {
  ("anat-gi-organs", 0): ("gi-g-barrett.jpg", "Endoscopy: Barrett's", "Salmon-colored columnar mucosa extending above the EGJ (arrows mark the top of the gastric folds). Japan Esophageal Society, Esophagus 2017 (PMC5222925), Fig. 2-1d, CC BY 4.0."),
  ("anat-gi-organs", 1): ("gi-g-couinaud.jpg", "Couinaud segments", "The liver from below with its functional segments numbered; segment 1 (caudate) sits next to the IVC. BodyParts3D/DBCLS (Wikimedia Commons), CC BY-SA 2.1 JP."),
- ("anat-gi-nodes", 0): ("gi-g-pet-inguinal.jpg", "PET/CT: inguinal node", "FDG-avid inguinal (yellow), external iliac (red), and lateral pelvic (dotted) nodes in anal cancer. Park IJ, Chang G, Ann Coloproctol 2020 (PMC7837391), Fig. 2A–B, CC BY-NC 4.0."),
+ ("anat-gi-nodes", 0): ("gi-g-pet-inguinal.jpg", "PET/CT: inguinal node", "FDG-avid inguinal (yellow), external iliac (red), and lateral pelvic (dotted) nodes in anal cancer. Park IJ, Chang G, Ann Coloproctol 2020 (PMC7837391), Fig. 2A-B, CC BY-NC 4.0."),
  ("anat-gi-nodes", 1): ("gi-g-rtog-atlas.jpg", "RTOG anorectal atlas", "Elective nodal CTV (yellow) per RTOG guidance on axial CT slices for anal cancer, from L5 down to the inguinal nodes. Dapper H et al., BMC Cancer 2019 (PMC6664500), Fig. 1, CC BY 4.0."),
 }
 

@@ -13,7 +13,7 @@
       "label": "Cervical Tumor (Intermediate T2)",
       "x": 50,
       "y": 60,
-      "blurb": "Brighter than the dark cervical stroma. Measure the largest dimension: ≤2 cm IB1, 2–4 cm IB2, >4 cm IB3."
+      "blurb": "Brighter than the dark cervical stroma. Measure the largest dimension: ≤2 cm IB1, 2-4 cm IB2, >4 cm IB3."
      },
      {
       "id": "cx-uterus",
@@ -50,44 +50,38 @@
     "id": "gyn-mri-cx-ax",
     "title": "Cervix MRI: Axial T2 (Parametria)",
     "style": "mri",
-    "caption": "Placeholder MRI-style slice (axial oblique T2 perpendicular to the cervical canal). Swap in a real de-identified MRI image here.",
+    "caption": "Axial T2 MRI of a large cervical cancer with right parametrial invasion. The patient's right is on the image left; the original arrow has been removed. Alshakankery SM et al., Cureus 2025 (PMC11866034), Fig. 2, CC BY 4.0.",
     "hotspots": [
      {
-      "id": "ring-intact",
-      "label": "Intact Dark Stromal Ring",
-      "x": 62,
-      "y": 50,
-      "blurb": "A preserved low-T2 ring on one side essentially excludes parametrial invasion there."
+      "id": "cx-tumor",
+      "label": "Cervical Tumor",
+      "x": 50.0,
+      "y": 60.0,
+      "blurb": "Intermediate (gray) signal replacing the normally dark cervical stroma. Size over 4 cm makes it at least IB3."
      },
      {
       "id": "ring-broken",
-      "label": "Disrupted Ring / Parametrial Invasion",
-      "x": 34,
-      "y": 50,
-      "blurb": "Tumor breaking through the ring with spiculation into the fat = IIB."
+      "label": "Parametrial Invasion (Right)",
+      "x": 39.5,
+      "y": 52.0,
+      "blurb": "Tumor breaks through the edge of the cervix into the parametrial fat with spiculated strands. That is IIB, and the standard treatment becomes chemoradiation."
      },
      {
-      "id": "hydro",
-      "label": "Dilated Ureter",
-      "x": 22,
-      "y": 40,
-      "blurb": "Tumor encasing the ureter causes hydroureter/hydronephrosis = IIIB."
+      "id": "ring-intact",
+      "label": "Normal Parametrial Fat (Left)",
+      "x": 60.5,
+      "y": 49.0,
+      "blurb": "Bright fat with small vessels and a clean interface with the cervix. Compare the two sides on every scan."
      },
      {
-      "id": "sidewall-m",
-      "label": "Pelvic Side Wall",
-      "x": 8,
-      "y": 52,
-      "blurb": "Tumor reaching the side wall muscles/vessels = IIIB."
-     },
-     {
-      "id": "node-m",
-      "label": "Enlarged Obturator Node",
-      "x": 16,
-      "y": 64,
-      "blurb": "Short axis >1 cm or round/necrotic: suspicious (IIIC1 if confirmed by imaging/pathology)."
+      "id": "cx-rectum",
+      "label": "Rectum",
+      "x": 50.0,
+      "y": 81.0,
+      "blurb": "Directly behind the cervix. Mucosal invasion of the bladder or rectum is IVA; a preserved fat plane argues against it."
      }
-    ]
+    ],
+    "image": "images/gyn/gyn-mri-cx-ax.jpg"
    }
   ]
  },
@@ -96,53 +90,47 @@
   "plates": [
    {
     "id": "gyn-mri-endo",
-    "title": "Endometrial MRI: Sagittal T2 + DWI",
+    "title": "Endometrial MRI: Sagittal T2 and DWI",
     "style": "mri",
-    "caption": "Placeholder MRI-style slice (sagittal T2 of the uterus with an endometrial tumor). Swap in a real de-identified MRI image here.",
+    "caption": "Endometrial cancer with deep (50% or more) myometrial invasion: sagittal T2 (left) and axial DWI (right). Arrows and panel letters removed. Raja S et al., Cureus 2024 (PMC11238663), Fig. 3a and 3c, CC BY 4.0.",
     "hotspots": [
      {
       "id": "en-tumor",
       "label": "Endometrial Tumor",
-      "x": 50,
-      "y": 32,
-      "blurb": "Intermediate on T2, restricts on DWI, enhances less than the myometrium."
-     },
-     {
-      "id": "en-jz",
-      "label": "Junctional Zone",
-      "x": 38,
-      "y": 30,
-      "blurb": "Inner dark band of the myometrium. An intact junctional zone suggests no deep invasion."
+      "x": 25.0,
+      "y": 41.7,
+      "blurb": "Intermediate signal filling and expanding the endometrial cavity, slightly darker than the surrounding myometrium on T2."
      },
      {
       "id": "en-deep",
-      "label": "Deep Myometrial Invasion (≥50%)",
-      "x": 64,
-      "y": 28,
-      "blurb": "Tumor reaching the outer half of the myometrium = IB."
-     },
-     {
-      "id": "en-serosa",
-      "label": "Serosa",
-      "x": 74,
-      "y": 22,
-      "blurb": "Breach = IIIA."
+      "label": "Thinned Outer Myometrium",
+      "x": 37.0,
+      "y": 43.1,
+      "blurb": "Only a thin rim of myometrium is left outside the tumor. Invasion of 50% or more of the myometrium is IB."
      },
      {
       "id": "en-cx",
-      "label": "Cervical Stroma",
-      "x": 54,
-      "y": 60,
-      "blurb": "Invasion of the cervical stroma (not just the glands) = stage II."
+      "label": "Cervix",
+      "x": 30.0,
+      "y": 56.9,
+      "blurb": "Check for tumor in the cervical stroma. Stromal invasion is stage II and changes surgery and adjuvant therapy."
      },
      {
-      "id": "en-ovary",
-      "label": "Adnexa",
-      "x": 82,
-      "y": 40,
-      "blurb": "Adnexal involvement = IIIA."
+      "id": "en-bladder",
+      "label": "Bladder",
+      "x": 18.0,
+      "y": 55.5,
+      "blurb": "Sits in front of the uterus. Bladder mucosal invasion is IVA."
+     },
+     {
+      "id": "en-dwi",
+      "label": "Restricted Diffusion (DWI)",
+      "x": 73.0,
+      "y": 56.9,
+      "blurb": "Tumor is bright on high b-value DWI and dark on the ADC map. DWI makes the deepest point of invasion easier to see than T2 alone."
      }
-    ]
+    ],
+    "image": "images/gyn/gyn-mri-endo.jpg"
    }
   ]
  },
@@ -151,7 +139,7 @@
   "plates": [
    {
     "id": "gyn-nodes-ax-upper",
-    "title": "Axial CT: Para-aortic & Common Iliac (L3–L5)",
+    "title": "Axial CT: Para-aortic & Common Iliac (L3-L5)",
     "style": "ct",
     "caption": "Contrast CT at L4, near the aortic bifurcation, patient's right on your left (normal study; the patient is male, but the retroperitoneal anatomy is the same). Source: Mikael Häggström, via Wikimedia Commons, CC0.",
     "hotspots": [
@@ -174,7 +162,7 @@
       "label": "Kidney",
       "x": 25,
       "y": 40,
-      "blurb": "Key OAR for an extended field. The top of the field is usually the renal vessels (T12–L1)."
+      "blurb": "Key OAR for an extended field. The top of the field is usually the renal vessels (T12-L1)."
      },
      {
       "id": "u-bowel",
@@ -267,7 +255,7 @@
       "label": "Pelvic Node (IIIC1)",
       "x": 61,
       "y": 28,
-      "blurb": "Avid external iliac or obturator node: boost it (e.g., to 55–60 Gy total)."
+      "blurb": "Avid external iliac or obturator node: boost it (e.g., to 55-60 Gy total)."
      },
      {
       "id": "pet-pa",
@@ -425,65 +413,45 @@
     "id": "gyn-brachy-mri",
     "title": "Brachytherapy: Tandem & Ring on MRI (Sagittal)",
     "style": "mri",
-    "caption": "Placeholder MRI-style slice (sagittal T2 with a tandem and ring applicator in place). Swap in a real de-identified MRI image here.",
+    "caption": "Para-sagittal T2 MRI with a tandem and ring in place, contoured for MRI-guided brachytherapy: HR-CTV in cyan, bladder in yellow, rectum in magenta. Owrangi AM et al., J Contemp Brachytherapy 2015 (PMC4663219), Fig. 2, CC BY-NC-SA.",
     "hotspots": [
      {
       "id": "tandem",
       "label": "Tandem",
-      "x": 50,
-      "y": 34,
-      "blurb": "Goes through the cervical os into the uterus. Dose falls off steeply around it."
-     },
-     {
-      "id": "ring",
-      "label": "Ring (or Ovoids)",
-      "x": 56,
-      "y": 60,
-      "blurb": "Sits in the vaginal fornices against the cervix."
+      "x": 47.4,
+      "y": 25.0,
+      "blurb": "The dark line running up the uterine canal. It goes through the cervical os, and dose falls off steeply around it."
      },
      {
       "id": "hrctv",
       "label": "HR-CTV",
-      "x": 52,
-      "y": 50,
-      "blurb": "Whole cervix plus residual tumor at brachy. Goal D90 ≥85 Gy EQD2 (EBRT + brachy)."
-     },
-     {
-      "id": "pointa",
-      "label": "Point A",
-      "x": 40,
-      "y": 46,
-      "blurb": "2 cm above the os along the tandem, 2 cm lateral. The historical prescription point."
+      "x": 55.0,
+      "y": 22.0,
+      "blurb": "Whole cervix plus any residual tumor at the time of brachytherapy. Goal D90 of at least 85 Gy EQD2 (EBRT plus brachy)."
      },
      {
       "id": "bladder-b",
-      "label": "Bladder",
-      "x": 28,
-      "y": 48,
-      "blurb": "D2cc <80–90 Gy EQD2."
+      "label": "Bladder (Foley Balloon)",
+      "x": 68.5,
+      "y": 36.0,
+      "blurb": "The dark circle is the Foley balloon. Bladder D2cc is kept under about 80-90 Gy EQD2."
      },
      {
       "id": "rectum-b",
-      "label": "Rectum",
-      "x": 76,
-      "y": 62,
-      "blurb": "D2cc <65–75 Gy EQD2. Vaginal packing or a rectal retractor pushes it away."
+      "label": "Rectum and Sigmoid",
+      "x": 28.9,
+      "y": 52.0,
+      "blurb": "Behind the applicator. Rectal D2cc is kept under about 65-75 Gy EQD2; the sigmoid can drape over the tandem tip."
      },
      {
-      "id": "sigmoid-b",
-      "label": "Sigmoid",
-      "x": 66,
-      "y": 18,
-      "blurb": "D2cc <70–75 Gy EQD2. Can drape over the tandem tip."
-     },
-     {
-      "id": "needles",
-      "label": "Interstitial Needles",
-      "x": 30,
-      "y": 58,
-      "blurb": "Added for bulky or parametrial residual disease that the tandem can't cover."
+      "id": "packing",
+      "label": "Vaginal Packing",
+      "x": 49.9,
+      "y": 52.0,
+      "blurb": "Gauze packed around the applicator holds it in place and pushes the rectum and bladder away from the high-dose region."
      }
-    ]
+    ],
+    "image": "images/gyn/gyn-brachy-mri.jpg"
    }
   ]
  }

@@ -6,7 +6,7 @@
     "id": "br-sagittal",
     "title": "Breast Side View (Sagittal)",
     "style": "photo",
-    "caption": "Sagittal section of the breast: nipple on the left, chest wall on the right. Illustration by Patrick J. Lynch.",
+    "caption": "Sagittal section of the breast: nipple on the left, chest wall on the right. Illustration by Patrick J. Lynch, CC BY 2.5.",
     "hotspots": [
      {
       "id": "skin",
@@ -27,7 +27,7 @@
       "label": "Glandular Tissue (Lobes)",
       "x": 55,
       "y": 42,
-      "blurb": "15–20 lobes, each draining through its own duct to the nipple. Dense glandular tissue lowers mammogram sensitivity."
+      "blurb": "15-20 lobes, each draining through its own duct to the nipple. Dense glandular tissue lowers mammogram sensitivity."
      },
      {
       "id": "ducts",
@@ -121,7 +121,7 @@
    },
    {
     "title": "Histology: IDC",
-    "caption": "Cohesive nests and glands forming a mass.",
+    "caption": "Cohesive nests and glands forming a mass. Mikael Häggström, Wikimedia Commons, CC0.",
     "style": "photo",
     "image": "images/breast/br-g-idc.jpg"
    },
@@ -144,7 +144,7 @@
     "hotspots": [
      {
       "id": "ax",
-      "label": "Axillary Nodes (Levels I–III)",
+      "label": "Axillary Nodes (Levels I-III)",
       "x": 26,
       "y": 38,
       "blurb": "The main drainage for every part of the breast (~75% of lymph). Divided into levels I, II, III by the pectoralis minor."
@@ -161,7 +161,7 @@
       "label": "Internal Mammary Nodes",
       "x": 53,
       "y": 40,
-      "blurb": "Along the internal mammary vessels, just lateral to the sternum in intercostal spaces 1–3. Medial and central tumors drain here."
+      "blurb": "Along the internal mammary vessels, just lateral to the sternum in intercostal spaces 1-3. Medial and central tumors drain here."
      },
      {
       "id": "icv",
@@ -189,7 +189,7 @@
    },
    {
     "id": "br-axillary-levels",
-    "title": "Axillary Levels I–III",
+    "title": "Axillary Levels I-III",
     "style": "schematic",
     "caption": "Drawing of the right axilla: level I nodes (red) lateral to the pectoralis minor, level II (purple) behind it, level III (blue) medial to it. Source: Lu Q et al., PLoS One 2013 (PMC3702586), Fig. 1, CC BY 4.0; labels and legend removed.",
     "hotspots": [
@@ -198,7 +198,7 @@
       "label": "Level I (Lateral to Pec Minor)",
       "x": 25,
       "y": 61,
-      "blurb": "Lateral to the lateral border of the pectoralis minor, down to about the 4th–5th rib. The sentinel node is usually here. Standard 'high tangents' cover much of it."
+      "blurb": "Lateral to the lateral border of the pectoralis minor, down to about the 4th-5th rib. The sentinel node is usually here. Standard 'high tangents' cover much of it."
      },
      {
       "id": "l2",
@@ -219,7 +219,7 @@
       "label": "Pectoralis Minor",
       "x": 37,
       "y": 76,
-      "blurb": "THE landmark: level I is lateral, level II is behind, level III is medial. It runs from ribs 3–5 up to the coracoid process."
+      "blurb": "THE landmark: level I is lateral, level II is behind, level III is medial. It runs from ribs 3-5 up to the coracoid process."
      },
      {
       "id": "axv",
@@ -230,63 +230,14 @@
      }
     ],
     "image": "images/breast/br-axillary-levels.jpg"
-   },
-   {
-    "id": "br-nodes-ct",
-    "title": "Nodal Contours on Axial CT",
-    "style": "ct",
-    "caption": "Placeholder CT-style axial slice through the upper chest — swap in a real planning CT with nodal contours — swap in a real labeled image here.",
-    "hotspots": [
-     {
-      "id": "ct-l1",
-      "label": "Level I Contour",
-      "x": 22,
-      "y": 52,
-      "blurb": "Lateral to the pectoralis minor, anterior to the latissimus and subscapularis."
-     },
-     {
-      "id": "ct-l2",
-      "label": "Level II Contour",
-      "x": 36,
-      "y": 46,
-      "blurb": "Deep to the pectoralis minor, around the axillary vessels."
-     },
-     {
-      "id": "ct-l3",
-      "label": "Level III Contour",
-      "x": 48,
-      "y": 38,
-      "blurb": "Medial to the pectoralis minor, just below the clavicle."
-     },
-     {
-      "id": "ct-scv",
-      "label": "Supraclavicular Contour",
-      "x": 54,
-      "y": 22,
-      "blurb": "Above the clavicular head, lateral to the jugular vein and anterior to the scalenes. The brachial plexus runs just behind it."
-     },
-     {
-      "id": "ct-imn",
-      "label": "Internal Mammary Vessels",
-      "x": 66,
-      "y": 55,
-      "blurb": "The IMN target follows the internal mammary artery and vein in the first 3 intercostal spaces."
-     },
-     {
-      "id": "ct-heart",
-      "label": "Heart",
-      "x": 64,
-      "y": 75,
-      "blurb": "The key organ at risk for left-sided treatment, especially when the IMNs are treated."
-     }
-    ]
    }
   ],
   "gallery": [
    {
-    "title": "RTOG / ESTRO contouring atlas slice",
-    "caption": "The official nodal boundaries as treatment-planning contours.",
-    "style": "ct"
+    "title": "Nodal CTVs on a planning CT",
+    "caption": "Left chest wall and regional nodal targets after mastectomy: (a) internal mammary (IMLN), chest wall (CW), and axillary (AXLN) volumes; (b) supraclavicular (SCF) and infraclavicular (ICF) volumes higher up. Pink is the PTV. Yu PC et al., Radiat Oncol 2018 (PMC6260755), Fig. 1a-b, CC BY 4.0.",
+    "style": "ct",
+    "image": "images/breast/br-g-nodal-ctv.jpg"
    },
    {
     "title": "Cadaveric dissection: the axilla",

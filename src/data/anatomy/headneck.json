@@ -142,11 +142,6 @@
         "caption": "Tonsil, base of tongue, parapharyngeal fat, and the medial pterygoid; note the asymmetric mass on one side.",
         "style": "mri",
         "image": "images/headneck/hn-g-op-mri.jpg"
-      },
-      {
-        "title": "Endoscopic view of base of tongue",
-        "caption": "Base of tongue and vallecula, the inferior boundary of the oropharynx.",
-        "style": "endoscopic"
       }
     ]
   },
@@ -537,16 +532,6 @@
         "image": "images/headneck/hn-g-ln-lateral.jpg"
       },
       {
-        "title": "Axial CT at the hyoid",
-        "caption": "Level II vs III boundary and the IIa/IIb split at the jugular vein.",
-        "style": "ct"
-      },
-      {
-        "title": "Contouring atlas slice",
-        "caption": "How the levels look as treatment-planning contours.",
-        "style": "ct"
-      },
-      {
         "title": "PET: FDG-avid neck node",
         "caption": "Coronal PET with an intensely avid node low in the jugular chain, just above the clavicle.",
         "style": "pet",
@@ -649,11 +634,6 @@
             "caption": "Cystic metastatic level II node (arrows) deep to the sternocleidomastoid, next to the internal jugular vein. Chengazi HU, Bhatt AA, Insights Imaging 2019 (PMC6377693), CC BY 4.0.",
             "style": "ct",
             "image": "images/headneck/hn-g-ln-op-cystic.jpg"
-          },
-          {
-            "title": "Axial CT: retropharyngeal node",
-            "caption": "Level VII node medial to the carotid.",
-            "style": "ct"
           }
         ],
         "image": "images/headneck/hn-neck-levels.jpg"
@@ -686,18 +666,6 @@
             "blurb": "Added when there is subglottic extension - the pretracheal (Delphian) and paratracheal nodes sit right in the path of subglottic spread."
           }
         ],
-        "gallery": [
-          {
-            "title": "Axial CT: level VI",
-            "caption": "Delphian / paratracheal nodes at risk with subglottic spread.",
-            "style": "ct"
-          },
-          {
-            "title": "Laryngoscopy",
-            "caption": "Supraglottic vs glottic primary.",
-            "style": "endoscopic"
-          }
-        ],
         "image": "images/headneck/hn-neck-levels.jpg"
       },
       {
@@ -726,18 +694,6 @@
             "x": 34,
             "y": 75,
             "blurb": "Nasopharynx is unique among H&N subsites in routinely requiring elective coverage of level V (posterior triangle) as well."
-          }
-        ],
-        "gallery": [
-          {
-            "title": "Axial MRI: retropharyngeal node",
-            "caption": "First-echelon node for NPC.",
-            "style": "mri"
-          },
-          {
-            "title": "Axial CT: level V node",
-            "caption": "Posterior triangle involvement.",
-            "style": "ct"
           }
         ],
         "image": "images/headneck/hn-neck-levels.jpg"

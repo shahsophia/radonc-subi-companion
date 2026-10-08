@@ -7,18 +7,11 @@
   "extra": "About 15% of lung cancers, almost always in smokers. Staged as limited vs extensive instead of by TNM groupings. Paraneoplastic clues: small cell causes SIADH, ectopic ACTH, and Lambert-Eaton; squamous cell causes hypercalcemia (PTHrP)."
  },
  {
-  "id": "thx-3",
-  "category": "Epidemiology & Risk Factors",
-  "front": "What is the most common lung cancer histology, and where in the lung does it usually arise?",
-  "back": "Adenocarcinoma, usually peripheral",
-  "extra": "It is also the most common type in never-smokers and carries most of the targetable driver mutations. Radon (from soil, collecting in basements) is the leading cause of lung cancer in never-smokers."
- },
- {
   "id": "thx-4",
   "category": "Epidemiology & Risk Factors",
-  "front": "Which two lung cancer histologies classically arise centrally?",
-  "back": "Squamous cell and small cell",
-  "extra": "Both S's sit in the Center. Both are strongly tied to smoking."
+  "front": "Which lung cancer histology usually arises peripherally, and which two classically arise centrally?",
+  "back": "Peripheral: adenocarcinoma (the most common type). Central: squamous cell and small cell.",
+  "extra": "Both S's sit in the Center, and both are strongly tied to smoking. Adenocarcinoma is the usual type in never-smokers (where radon is the leading cause) and carries most of the targetable driver mutations."
  },
  {
   "id": "thx-54",

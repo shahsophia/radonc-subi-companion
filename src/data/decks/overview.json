@@ -1,101 +1,24 @@
 [
  {
   "id": "ov-1",
-  "category": "General Principles",
+  "category": "Radiation 101",
   "front": "Of the three cancer treatment specialties, which give local therapy and which gives systemic therapy?",
   "back": "Local: surgical oncology and radiation oncology. Systemic: medical oncology (chemo, immunotherapy, targeted and hormone therapy).",
   "extra": "Systemic therapy treats cancer cells (including micrometastases) anywhere in the body. Most patients are planned at a multidisciplinary tumor board."
  },
  {
   "id": "ov-102",
-  "category": "Acronyms & Terminology",
+  "category": "Radiation 101",
   "front": "What happens at a CT simulation, and why is it done before planning?",
   "back": "The patient is CT-scanned in the exact treatment position with immobilization; that scan is used to contour targets and organs and build the plan, and marks/tattoos let the team reproduce the setup daily.",
   "extra": "An isocenter is set at sim as the fixed point the machine targets every day. 4D-CT, contrast, or bladder/rectal preparation are added when motion or anatomy calls for it."
  },
  {
-  "id": "ov-2",
-  "category": "General Principles",
-  "front": "What is the difference between neoadjuvant and adjuvant therapy?",
-  "back": "Neoadjuvant is given before the main treatment (e.g., to shrink a tumor before surgery); adjuvant is given after it to lower the risk of recurrence.",
-  "extra": "Always ask what the intent of this specific treatment is; one patient's plan can include both."
- },
- {
-  "id": "ov-79",
-  "category": "General Principles",
-  "front": "What does it mean when radiation is called \"definitive\"?",
-  "back": "It is intended to be the complete, final treatment, with no further therapy planned to finish the job (e.g., definitive chemoradiation instead of surgery).",
-  "extra": "Curative describes the goal (cure); definitive describes the role of the treatment."
- },
- {
-  "id": "ov-80",
-  "category": "General Principles",
-  "front": "Why is chemotherapy often given concurrently with radiation?",
-  "back": "It sensitizes the tumor to radiation (and treats disease outside the field).",
-  "extra": "Classic examples: cisplatin with head and neck or cervical RT."
- },
- {
-  "id": "ov-81",
-  "category": "General Principles",
-  "front": "What is the goal of palliative radiation, and what are classic reasons to give it?",
-  "back": "Symptom relief in incurable disease, e.g., painful bone metastases, spinal cord compression, bleeding, airway obstruction, or SVC syndrome",
-  "extra": "Palliative courses are usually short, chosen by prognosis and goals of care."
- },
- {
-  "id": "ov-82",
-  "category": "General Principles",
-  "front": "What is the role of radiation in oligometastatic disease?",
-  "back": "Focused high-dose RT (usually SBRT/SRS) to the few sites of metastatic disease to control them, often alongside systemic therapy",
-  "extra": "It can delay progression or the need to change systemic therapy."
- },
- {
-  "id": "ov-103",
-  "category": "General Principles",
-  "front": "What is consolidative radiation?",
-  "back": "RT given after another treatment modality, usually chemotherapy, to improve control of the disease that remains (e.g., residual bulky lymphoma).",
-  "extra": "Name the intent before the dose: it decides how much toxicity is acceptable and how aggressive the plan is."
- },
- {
-  "id": "ov-6",
-  "category": "General Principles",
-  "front": "Why is smoking cessation addressed with essentially every radiation patient?",
-  "back": "Smoking during radiation lowers tumor control and worsens side effects (tissue hypoxia makes tumors more radioresistant and slows healing).",
-  "extra": "Other \"don't forget\" items for a new patient: fertility counseling before gonadal exposure, a pregnancy test when relevant, genetic counseling when a hereditary syndrome is suspected, and performance status."
- },
- {
-  "id": "ov-9",
-  "category": "Radiation Delivery & Technique",
-  "front": "How does a LINAC produce its photon beam?",
-  "back": "It accelerates electrons into a tungsten target; as they decelerate near the nuclei they emit X-rays (Bremsstrahlung, \"braking radiation\").",
-  "extra": "The beam is then flattened and shaped by jaws and multileaf collimators. Removing the target lets the LINAC treat with electrons instead."
- },
- {
-  "id": "ov-16",
-  "category": "Radiation Physics",
-  "front": "Which photon interaction dominates at therapeutic energies, and what does it depend on?",
-  "back": "Compton scattering, which depends on electron density and is nearly independent of atomic number (Z)",
-  "extra": "That is why photon dose is fairly predictable across soft tissues. By contrast, the photoelectric effect (∝ Z³) dominates at diagnostic kV energies, which is why bone and contrast stand out on diagnostic X-rays but not on MV treatment images."
- },
- {
-  "id": "ov-88",
-  "category": "Radiation Physics",
-  "front": "Why does a megavoltage photon beam spare the skin?",
-  "back": "Dose builds up over the first part of tissue and peaks below the surface (at Dmax), so the skin gets less than the peak dose.",
-  "extra": "Higher-energy photons push Dmax deeper (about 1.5 cm for 6 MV). Bolus is added when the skin itself is the target. Trap: higher-energy photons lower the surface dose, but higher-energy electrons raise it."
- },
- {
-  "id": "ov-19",
-  "category": "Radiation Physics",
-  "front": "Rule of thumb: about how deep does the 90% isodose line of an E MeV electron beam reach?",
-  "back": "About E/3 cm",
-  "extra": "The practical range is about E/2 cm, beyond which dose falls to almost nothing. Pick the energy whose 90% line covers the lesion."
- },
- {
-  "id": "ov-90",
-  "category": "Radiation Modalities",
-  "front": "Do protons automatically give better results than photons?",
-  "back": "No. Their Bragg peak removes exit dose, which may matter in selected cases (children, craniospinal RT, tumors next to critical structures). Drawbacks: range uncertainty and sensitivity to anatomic change.",
-  "extra": "Whether the physical dose difference becomes a clinical advantage depends on the disease, the anatomy, and the photon plan it's compared with."
+  "id": "ov-97",
+  "category": "Radiation 101",
+  "front": "What dose per fraction counts as conventional fractionation, and what is hypofractionation?",
+  "back": "Conventional: about 1.8-2 Gy per fraction. Hypofractionation: fewer fractions with a larger dose per fraction.",
+  "extra": "Example: 70 Gy in 35 fractions is 2 Gy per fraction; 40 Gy in 15 fractions for breast is hypofractionated."
  },
  {
   "id": "ov-26",
@@ -116,7 +39,7 @@
   "category": "How Radiation Works",
   "front": "What are BED and EQD2 used for?",
   "back": "Comparing radiation regimens with different fraction sizes on one scale (EQD2 = the equivalent dose if given in 2 Gy fractions)",
-  "extra": "BED = nd[1 + d/(α/β)]. Published normal-tissue limits usually assume 2 Gy fractions, so EQD2 lets you compare hypofractionated plans against them."
+  "extra": "BED = nd[1 + d/(α/β)]. Published normal-tissue limits usually assume 2 Gy fractions, so a 1-5 fraction stereotactic plan needs its own limits or a BED/EQD2 conversion, not conventional limits applied directly."
  },
  {
   "id": "ov-32",
@@ -124,76 +47,6 @@
   "front": "What drives acute vs late radiation toxicity?",
   "back": "Acute (inflammation, in fast-dividing tissues) depends mainly on total dose over time. Late (fibrosis, months to years later) depends mainly on dose per fraction.",
   "extra": "That's why large fractions near late-responding organs demand caution."
- },
- {
-  "id": "ov-33",
-  "category": "Common Dose Constraints",
-  "front": "How do toxicity limits differ for \"series\" vs \"parallel\" organs?",
-  "back": "Series organs (spinal cord, brainstem, optic nerves, bowel) fail from a hot spot, so the maximum dose matters. Parallel organs (lung, liver, kidney, parotid) fail when enough volume is damaged, so mean or volume dose matters.",
-  "extra": "The single most useful idea for reading any constraint table."
- },
- {
-  "id": "ov-94",
-  "category": "Common Dose Constraints",
-  "front": "What does a constraint like \"lung V20 < 30%\" mean?",
-  "back": "Less than 30% of the lung volume should receive 20 Gy or more.",
-  "extra": "Dmax (or D0.03cc) is the maximum dose; D90 is the dose that 90% of a volume receives."
- },
- {
-  "id": "ov-34",
-  "category": "Common Dose Constraints",
-  "front": "What is the standard spinal cord maximum dose with conventional fractionation?",
-  "back": "About 50 Gy",
-  "extra": "Myelopathy risk is tiny at 50 Gy but rises steeply above it."
- },
- {
-  "id": "ov-35",
-  "category": "Common Dose Constraints",
-  "front": "With conventional fractionation, what maximum dose is used for the brainstem and optic nerves/chiasm?",
-  "back": "About 54-55 Gy",
-  "extra": "Exceeding these risks brainstem necrosis or blindness."
- },
- {
-  "id": "ov-95",
-  "category": "Common Dose Constraints",
-  "front": "What parotid dose goal helps preserve salivary function?",
-  "back": "Mean dose under about 26 Gy",
-  "extra": "A parallel organ, so the mean dose matters. Sparing the parotids reduces xerostomia."
- },
- {
-  "id": "ov-37",
-  "category": "Common Dose Constraints",
-  "front": "Can conventional (QUANTEC) dose limits be applied directly to an SBRT or SRS plan?",
-  "back": "No. They assume about 2 Gy fractions; stereotactic plans use their own limits (HYTEC) or doses converted with BED/EQD2.",
-  "extra": "Applying 2 Gy-based limits to a 1-5 fraction course gives a badly wrong answer."
- },
- {
-  "id": "ov-12",
-  "category": "Acronyms & Terminology",
-  "front": "What is the difference between a sequential boost and a simultaneous integrated boost (SIB)?",
-  "back": "Sequential (\"cone down\"): treat the large volume first, then a separate phase treats only the boost volume. SIB: both volumes are treated every day in one phase, at different doses per fraction.",
-  "extra": ""
- },
- {
-  "id": "ov-42",
-  "category": "Acronyms & Terminology",
-  "front": "What is the difference between overall survival (OS) and progression-free survival (PFS)?",
-  "back": "OS counts only death; PFS counts either disease progression or death as an event.",
-  "extra": "Also DFS (disease-free survival), EFS (event-free), DMFS (distant metastasis-free). Always check which endpoint a study reports."
- },
- {
-  "id": "ov-43",
-  "category": "Acronyms & Terminology",
-  "front": "What is the difference between Gy and monitor units (MU)?",
-  "back": "Gray (Gy) is the absorbed dose that is prescribed; MU is the machine's internal unit for delivering that dose.",
-  "extra": ""
- },
- {
-  "id": "ov-96",
-  "category": "Acronyms & Terminology",
-  "front": "What system is the current standard for grading treatment side effects?",
-  "back": "CTCAE (Common Terminology Criteria for Adverse Events)",
-  "extra": "The older RTOG scale is radiation-specific."
  },
  {
   "id": "ov-54",
@@ -231,11 +84,18 @@
   "extra": "Especially important for fast-growing tumors like head and neck squamous cell carcinoma."
  },
  {
-  "id": "ov-97",
-  "category": "How Radiation Works",
-  "front": "What dose per fraction counts as conventional fractionation, and what is hypofractionation?",
-  "back": "Conventional: about 1.8-2 Gy per fraction. Hypofractionation: fewer fractions with a larger dose per fraction.",
-  "extra": "Example: 70 Gy in 35 fractions is 2 Gy per fraction; 40 Gy in 15 fractions for breast is hypofractionated."
+  "id": "ov-88",
+  "category": "Radiation Modalities",
+  "front": "Why does a megavoltage photon beam spare the skin?",
+  "back": "Dose builds up over the first part of tissue and peaks below the surface (at Dmax), so the skin gets less than the peak dose.",
+  "extra": "Higher-energy photons push the dose peak deeper. Bolus is placed on the skin when the skin itself is the target (for example, a post-mastectomy chest wall)."
+ },
+ {
+  "id": "ov-90",
+  "category": "Radiation Modalities",
+  "front": "Do protons automatically give better results than photons?",
+  "back": "No. Their Bragg peak removes exit dose, which may matter in selected cases (children, craniospinal RT, tumors next to critical structures). Drawbacks: range uncertainty and sensitivity to anatomic change.",
+  "extra": "Whether the physical dose difference becomes a clinical advantage depends on the disease, the anatomy, and the photon plan it's compared with."
  },
  {
   "id": "ov-56",
@@ -249,7 +109,7 @@
   "category": "Radiation Modalities",
   "front": "Why might electrons be used instead of photons for a superficial skin lesion?",
   "back": "Electrons deposit dose at shallow depth and then fall off quickly, sparing the tissue underneath.",
-  "extra": "Also used for scar boosts and some shallow nodal targets."
+  "extra": "Also used for scar boosts and some shallow nodal targets. The higher the electron energy, the deeper it reaches."
  },
  {
   "id": "ov-59",
@@ -305,6 +165,118 @@
   "category": "Radiation Modalities",
   "front": "What is the difference between LDR and HDR brachytherapy, with a classic example of each?",
   "back": "LDR delivers dose slowly over a long time (permanent prostate seeds). HDR sends a high-activity source through an applicator for a few minutes and then removes it (cervical cancer).",
+  "extra": ""
+ },
+ {
+  "id": "ov-96",
+  "category": "How to Give a Presentation",
+  "front": "At an on-treatment visit, what system is used to grade a side effect like dermatitis or mucositis?",
+  "back": "CTCAE (Common Terminology Criteria for Adverse Events)",
+  "extra": "Present it with the grade and the trend: \"grade 1 dermatitis, slightly worse than last week.\" The older RTOG scale is radiation-specific."
+ },
+ {
+  "id": "ov-105",
+  "category": "How to Give a Presentation",
+  "front": "When you build a Rad Onc HPI, what question decides whether a detail belongs in it?",
+  "back": "Would this fact change the diagnosis, the stage, the treatment, or radiation safety? If not, it probably doesn't belong.",
+  "extra": "Always include prior radiation (site, dose, and when) and radiation-safety issues such as connective tissue disease, IBD before pelvic RT, or a pacemaker."
+ },
+ {
+  "id": "ov-106",
+  "category": "How to Give a Presentation",
+  "front": "What four questions should a radiation recommendation answer at the end of a presentation?",
+  "back": "What (the radiation and its intent), why (the problem it solves), how (what you would treat and protect), and what the main risks are.",
+  "extra": "Then name what is still open, for example whether a complete response might allow organ preservation."
+ },
+ {
+  "id": "ov-2",
+  "category": "The Rad Onc Consult",
+  "front": "What is the difference between neoadjuvant and adjuvant therapy?",
+  "back": "Neoadjuvant is given before the main treatment (e.g., to shrink a tumor before surgery); adjuvant is given after it to lower the risk of recurrence.",
+  "extra": "Always ask what the intent of this specific treatment is; one patient's plan can include both."
+ },
+ {
+  "id": "ov-79",
+  "category": "The Rad Onc Consult",
+  "front": "What does it mean when radiation is called \"definitive\"?",
+  "back": "It is intended to be the complete, final treatment, with no further therapy planned to finish the job (e.g., definitive chemoradiation instead of surgery).",
+  "extra": "Curative describes the goal (cure); definitive describes the role of the treatment."
+ },
+ {
+  "id": "ov-80",
+  "category": "The Rad Onc Consult",
+  "front": "Why is chemotherapy often given concurrently with radiation?",
+  "back": "It sensitizes the tumor to radiation (and treats disease outside the field).",
+  "extra": "Classic examples: cisplatin with head and neck or cervical RT."
+ },
+ {
+  "id": "ov-81",
+  "category": "The Rad Onc Consult",
+  "front": "What is the goal of palliative radiation, and what are classic reasons to give it?",
+  "back": "Symptom relief in incurable disease, e.g., painful bone metastases, spinal cord compression, bleeding, airway obstruction, or SVC syndrome",
+  "extra": "Palliative courses are usually short, chosen by prognosis and goals of care."
+ },
+ {
+  "id": "ov-82",
+  "category": "The Rad Onc Consult",
+  "front": "What is the role of radiation in oligometastatic disease?",
+  "back": "Focused high-dose RT (usually SBRT/SRS) to the few sites of metastatic disease to control them, often alongside systemic therapy",
+  "extra": "It can delay progression or the need to change systemic therapy."
+ },
+ {
+  "id": "ov-103",
+  "category": "The Rad Onc Consult",
+  "front": "What is consolidative radiation?",
+  "back": "RT given after another treatment modality, usually chemotherapy, to improve control of the disease that remains (e.g., residual bulky lymphoma).",
+  "extra": "Name the intent before the dose: it decides how much toxicity is acceptable and how aggressive the plan is."
+ },
+ {
+  "id": "ov-6",
+  "category": "The Rad Onc Consult",
+  "front": "Why is smoking cessation addressed with essentially every radiation patient?",
+  "back": "Smoking during radiation lowers tumor control and worsens side effects (tissue hypoxia makes tumors more radioresistant and slows healing).",
+  "extra": "Other \"don't forget\" items for a new patient: fertility counseling before gonadal exposure, a pregnancy test when relevant, genetic counseling when a hereditary syndrome is suspected, and performance status."
+ },
+ {
+  "id": "ov-33",
+  "category": "Treatment Planning",
+  "front": "As a first way of thinking about dose limits, how do \"serial\" and \"parallel\" organs differ?",
+  "back": "Serial-type organs (spinal cord, brainstem, optic pathway) can lose function from a small high-dose region, so the maximum dose gets attention. Parallel-type organs (lung, liver, kidney, parotid) can tolerate a small hot region if enough of the organ is spared, so mean dose or volume matters.",
+  "extra": "A teaching simplification: many organs behave partly both ways, and the actual limits are site- and protocol-specific."
+ },
+ {
+  "id": "ov-94",
+  "category": "Treatment Planning",
+  "front": "What does a constraint like \"lung V20 < 30%\" mean?",
+  "back": "Less than 30% of the lung volume should receive 20 Gy or more.",
+  "extra": "The number itself depends on the protocol and the situation. Dmax (or D0.03cc) is the maximum dose; D90 is the dose that 90% of a volume receives."
+ },
+ {
+  "id": "ov-34",
+  "category": "Treatment Planning",
+  "front": "What is the standard spinal cord maximum dose with conventional fractionation?",
+  "back": "About 50 Gy",
+  "extra": "Myelopathy risk is tiny at 50 Gy but rises steeply above it."
+ },
+ {
+  "id": "ov-35",
+  "category": "Treatment Planning",
+  "front": "With conventional fractionation, what maximum dose is used for the brainstem and optic nerves/chiasm?",
+  "back": "About 54-55 Gy",
+  "extra": "Exceeding these risks brainstem necrosis or blindness."
+ },
+ {
+  "id": "ov-95",
+  "category": "Treatment Planning",
+  "front": "What parotid dose goal helps preserve salivary function?",
+  "back": "Mean dose under about 26 Gy",
+  "extra": "A parallel organ, so the mean dose matters. Sparing the parotids reduces xerostomia."
+ },
+ {
+  "id": "ov-12",
+  "category": "Treatment Planning",
+  "front": "What is the difference between a sequential boost and a simultaneous integrated boost (SIB)?",
+  "back": "Sequential (\"cone down\"): treat the large volume first, then a separate phase treats only the boost volume. SIB: both volumes are treated every day in one phase, at different doses per fraction.",
   "extra": ""
  },
  {

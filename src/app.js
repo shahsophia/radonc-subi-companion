@@ -23,20 +23,6 @@ function escapeHtml(str) {
   return String(str).replace(/[&<>"']/g, (ch) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[ch]));
 }
 
-function animateNumber(el, to, suffix = "") {
-  const from = parseFloat((el.textContent || "").replace(/[^0-9.-]/g, "")) || 0;
-  if (REDUCED_MOTION || from === to) { el.textContent = to + suffix; return; }
-  const duration = 650;
-  const start = performance.now();
-  function tick(now) {
-    const p = Math.min(1, (now - start) / duration);
-    const eased = 1 - Math.pow(1 - p, 3);
-    el.textContent = Math.round(from + (to - from) * eased) + suffix;
-    if (p < 1) requestAnimationFrame(tick);
-  }
-  requestAnimationFrame(tick);
-}
-
 /* ============================================================
    SRS ENGINE (simplified Leitner / SM-2-lite)
    Intervals (days) by box: 0(new)->1, 1->2, 2->4, 3->9, 4->18, 5->35, 6+ mastered(60)
@@ -168,10 +154,12 @@ function docCategoriesFor(svcId){
 }
 
 /* ============================================================
-   RENDER: HOME (curriculum first, learning dashboard second)
+   RENDER: HOME (a curriculum map: framework, Before You Start,
+   disease sites, then practice and review; progress lives inside
+   the Cases and Flashcards views)
    ============================================================ */
 // One entry per Before You Start page and per disease site. The home grid
-// shows the disease sites; the Before You Start pages live in the learning path.
+// shows the disease sites; the Before You Start pages get their own section.
 function homeSections(){
   const out = [];
   for(const sec of BACKGROUND){
@@ -280,11 +268,11 @@ function nextCase(){
 function glanceItems(){
   const { total } = caseTotals();
   return [
-    [BACKGROUND.length, "foundation sections", "Workflow, physics, consults, presentations, and planning"],
-    [SERVICES.length, "disease-site modules", "Epidemiology to treatment paradigms"],
-    [total, "clinical cases", "Stage, treat, and dose, step by step"],
-    [allCards().length, "flashcards", "Spaced repetition, deck by deck"],
-    [totalPlates(), "interactive plates", "Anatomy and imaging, explore and quiz"],
+    [BACKGROUND.length, "Before You Start sections", "How radiation works, presenting, the consult, and planning"],
+    [SERVICES.length, "disease sites", "From presentation and staging to the role of radiation"],
+    [total, "clinical cases", "Diagnosis, stage, intent, and where radiation fits"],
+    [allCards().length, "flashcards", "High-yield review, deck by deck"],
+    [totalPlates(), "interactive plates", "Anatomy and imaging to explore and quiz"],
   ];
 }
 function glanceHTML(){
@@ -293,131 +281,61 @@ function glanceHTML(){
 }
 
 const ICONS = {
-  framework: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M15 4v4h4M8.5 12h7M8.5 15.5h7M8.5 8.5h3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>`,
-  site: `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/></svg>`,
-  cases: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h8v3H8zM6 5.5h-.5A1.5 1.5 0 0 0 4 7v12.5A1.5 1.5 0 0 0 5.5 21h13a1.5 1.5 0 0 0 1.5-1.5V7a1.5 1.5 0 0 0-1.5-1.5H18" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8.5 13l2.3 2.3 4.7-4.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
-  cards: `<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7 3h11.5A2.5 2.5 0 0 1 21 5.5V16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>`,
-  physics: `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="1.8" fill="currentColor"/><ellipse cx="12" cy="12" rx="9" ry="3.6" fill="none" stroke="currentColor" stroke-width="1.6"/><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(60 12 12)" fill="none" stroke="currentColor" stroke-width="1.6"/><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(-60 12 12)" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>`,
-  start: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5M4 5h11l-2 3.5L15 12H4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/></svg>`,
   arrow: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
   check: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
   play: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg>`,
 };
 
-function renderPillars(){
-  const { total } = caseTotals();
-  const pillars = [
-    { icon: "framework", label: "Clinical frameworks", text: "Learn how to approach consults, presentations, staging, treatment decisions, and follow-up.", meta: plural(BACKGROUND.length, "foundation section"), go: "learn" },
-    { icon: "site", label: "Disease-site learning", text: "Build high-yield knowledge across the most important radiation oncology disease sites.", meta: plural(SERVICES.length, "disease-site module"), go: "sites" },
-    { icon: "cases", label: "Clinical cases", text: "Practice applying staging, imaging, pathology, and treatment principles to realistic clinical scenarios.", meta: plural(total, "case"), go: "cases" },
-    { icon: "cards", label: "Flashcards", text: "Reinforce high-yield concepts with focused spaced-repetition review.", meta: plural(allCards().length, "card"), go: "flashcards" },
-  ];
-  document.getElementById("pillar-grid").innerHTML = pillars.map((p, i) => `
-    <button class="pillar" data-go="${p.go}">
-      <span class="pillar-top"><span class="pillar-icon">${ICONS[p.icon]}</span><span class="pillar-num tabular">${String(i + 1).padStart(2, "0")}</span></span>
-      <span class="pillar-label">${p.label}</span>
-      <span class="pillar-text">${p.text}</span>
-      <span class="pillar-meta">${p.meta}<span class="pillar-arrow">${ICONS.arrow}</span></span>
+function bgSection(id){ return BACKGROUND.find(s => s.id === id); }
+
+// Before You Start: the six foundations, phrased as the question each answers.
+// Home-page wording; falls back to the reading's own question.
+const BG_HOME_QUESTIONS = {
+  "rad-onc-101": "What happens when a patient receives radiation?",
+  "how-rt-works": "Why does radiation kill cancer cells?",
+  "machines-modalities": "What tools does a radiation oncologist use?",
+  "presenting-patients": "How do I present a patient on service?",
+  "the-consult": "How does a radiation oncologist decide what role radiation should play?",
+  "treatment-planning": "How does a clinical decision become an actual treatment plan?",
+};
+function renderBeforeYouStart(){
+  const el = document.getElementById("bys-grid");
+  if(!el) return;
+  el.innerHTML = BACKGROUND.map(sec => `
+    <button class="pillar" data-go="bg:${sec.id}">
+      <span class="pillar-num tabular">${String(sec.num).padStart(2, "0")}</span>
+      <span class="pillar-label">${escapeHtml(sec.title)}</span>
+      <span class="pillar-text">${escapeHtml(BG_HOME_QUESTIONS[sec.id] || sec.question || "")}</span>
+      <span class="pillar-meta">Read<span class="pillar-arrow">${ICONS.arrow}</span></span>
     </button>`).join("");
 }
 
-function bgSection(id){ return BACKGROUND.find(s => s.id === id); }
-function bgLinksHTML(ids){
-  return ids.map(bgSection).filter(Boolean).map(s =>
-    `<button class="lp-link" data-go="bg:${s.id}"><span class="lp-link-num tabular">${String(s.num).padStart(2, "0")}</span>${escapeHtml(s.title)}</button>`).join("");
-}
-function renderLearningPath(){
-  const all = allCards(), st = cardStats(all);
-  const { done, total } = caseTotals();
-  const steps = [
-    { label: "Before you start", text: "Six short readings that build one workflow: what radiation is, how it works, the tools, how to present, how to decide, and how a plan is built.", links: bgLinksHTML(["rad-onc-101"]), go: "bg:rad-onc-101", cta: "Start here" },
-    { label: "Clinical skills", text: "Learn what happens in a rad onc consult and how to present new patients, follow-ups, and on-treatment visits.", links: bgLinksHTML(["the-consult", "presenting-patients"]), go: "bg:the-consult", cta: "Open" },
-    { label: "How radiation works", text: "Radiobiology and physics, the machines and techniques, and how contours and beams become a plan.", links: bgLinksHTML(["how-rt-works", "machines-modalities", "treatment-planning"]), go: "bg:how-rt-works", cta: "Open" },
-    { label: "Disease sites", text: "Build clinical knowledge site by site, from epidemiology and anatomy to staging and treatment paradigms.", status: plural(SERVICES.length, "module"), go: "sites", cta: "Browse sites" },
-    { label: "Clinical cases", text: "Apply what you've learned: commit to a stage, a treatment, and a dose, one step at a time.", status: `${done} of ${total} completed`, go: "start-case", cta: done && done < total ? "Continue" : "Start a case" },
-    { label: "Flashcards", text: "Reinforce high-yield knowledge with spaced repetition. Choose the decks that match what you've read.", status: st.due ? `${st.due} due today` : `${all.length - st.suspended} of ${all.length} cards active`, go: "flashcards", cta: st.due ? "Review" : "Choose decks" },
-  ];
-  const el = document.getElementById("learning-path-list");
-  el.innerHTML = steps.map((s, i) => `
-    <li class="lp-step">
-      <span class="lp-num tabular" aria-hidden="true">${String(i + 1).padStart(2, "0")}</span>
-      <div class="lp-body">
-        <h3 class="lp-title"><span class="visually-hidden">Step ${i + 1}: </span>${s.label}</h3>
-        <p class="lp-text">${s.text}</p>
-        ${s.links ? `<div class="lp-links">${s.links}</div>` : ""}
-        ${s.status ? `<p class="lp-status">${s.status}</p>` : ""}
-      </div>
-      <button class="lp-cta" data-go="${s.go}" aria-label="${escapeHtml(s.cta)}: ${escapeHtml(s.label)}">${s.cta}${ICONS.arrow}</button>
-    </li>`).join("");
-}
-
-function renderCasesFeature(){
-  const { done, total } = caseTotals();
-  const sites = casesSites();
-  animateNumber(document.getElementById("stat-cases-done"), done);
-  document.getElementById("stat-cases-total").textContent = total;
-  document.getElementById("cf-site-count").textContent = sites.length;
-  const caseParts = sites.map(s => ({
-    label: s.name, color: s.color, n: casesFor(s.id).filter(c => isCaseDone(s.id, c.id)).length, of: casesFor(s.id).length,
-  }));
-  document.getElementById("cases-seg").innerHTML = segBarHTML([...caseParts, { label: "Not done", color: "var(--trk-suspended)", n: total - done }], total);
-  document.getElementById("cases-legend").innerHTML = caseParts
-    .map(p => `<li><span class="dot" style="background:${p.color}"></span>${escapeHtml(p.label)}<b class="tabular">${p.n}/${p.of}</b></li>`).join("");
-
-  const nx = nextCase();
-  const nextEl = document.getElementById("cf-next");
-  if(nx){
-    const steps = caseSteps(nx.kase, nx.svc.id).map(st => st.label);
-    nextEl.innerHTML = `
-      <div class="cf-next-head"><span class="edu-badge badge-case">Case</span><span>${nx.allDone ? "All cases complete. Revisit one" : "Next up"} &middot; ${escapeHtml(nx.svc.name)}</span></div>
-      <h3 class="cf-next-title">${escapeHtml(nx.kase.title)}</h3>
-      <p class="cf-next-one">${escapeHtml(nx.kase.oneLiner || "")}</p>
-      <ol class="cf-steps" aria-label="Case steps">${steps.map(s => `<li>${escapeHtml(s)}</li>`).join("")}</ol>`;
-    document.getElementById("btn-start-case").innerHTML = `${done && !nx.allDone ? "Continue cases" : "Start a case"} <span aria-hidden="true">&rarr;</span>`;
-  }
-  document.getElementById("cf-sites").innerHTML = sites.map(s => {
-    const list = casesFor(s.id), d = list.filter(c => isCaseDone(s.id, c.id)).length;
-    return `<li><button class="cf-site" data-go="cases:${s.id}" style="--svc:${s.color}">
-      <span class="cf-site-name"><span class="dot" aria-hidden="true"></span>${escapeHtml(s.name)}</span>
-      <span class="cf-site-bar" aria-hidden="true"><span style="width:${list.length ? Math.round(100 * d / list.length) : 0}%"></span></span>
-      <span class="cf-site-count tabular">${d}/${list.length}<span class="visually-hidden"> cases completed</span></span>
-    </button></li>`;
-  }).join("");
-}
-
-function renderFlashTracker(){
-  const all = allCards();
-  const st = cardStats(all);
-  animateNumber(document.getElementById("stat-due"), st.due);
-  document.getElementById("study-all-count").textContent = st.due;
-  document.getElementById("btn-study-all").disabled = false;
-  document.getElementById("cards-seg").innerHTML = segBarHTML(CARD_SEGMENTS.map(s => ({ ...s, n: st[s.key] })), st.total);
-  document.getElementById("cards-legend").innerHTML =
-    `<li><span class="dot" style="background:var(--trk-due)"></span>Due today<b class="tabular">${st.due}</b></li>` +
-    [...CARD_SEGMENTS].reverse().map(s => `<li><span class="dot" style="background:${s.color}"></span>${s.label}<b class="tabular">${st[s.key]}</b></li>`).join("");
-  const activeN = st.total - st.suspended;
-  document.getElementById("stat-due-sub").textContent = activeN
-    ? `${activeN} of ${st.total} cards unsuspended.`
-    : `All ${st.total} cards start suspended. Choose the decks you want in your daily review.`;
-}
-
+// The one framework for the whole curriculum. Stated once, on the home page.
 function renderMethod(){
   const el = document.getElementById("method-list");
   if(!el) return;
-  const { total } = caseTotals();
   const steps = [
-    ["Learn the framework", "Structured readings for the workflow and for each disease site, each ending in a high-yield summary.", `${BACKGROUND.length + SERVICES.reduce((n, s) => n + docCategoriesFor(s.id).filter(c => DOCS[s.id] && DOCS[s.id][c]).length, 0)} readings`],
-    ["See it applied", "Interactive anatomy and imaging plates, worked examples, and staging tools put the framework onto real images.", `${totalPlates()} interactive plates`],
-    ["Practice clinical reasoning", "Step-by-step cases ask you to commit to a stage, a treatment, and a dose before revealing the answer.", `${total} clinical cases`],
-    ["Reinforce with spaced repetition", "Flashcards that mirror each reading return right before you'd forget them.", `${allCards().length} flashcards`],
+    ["Learn", "Build the foundations and understand the major disease sites."],
+    ["Apply", "See how those concepts translate into real clinical decision-making."],
+    ["Practice", "Work through cases and interactive clinical problems."],
+    ["Reinforce", "Use flashcards to retain the high-yield material."],
   ];
-  el.innerHTML = steps.map(([t, p, m], i) => `
+  el.innerHTML = steps.map(([t, p], i) => `
     <li class="method-step">
       <span class="method-num tabular">${i + 1}</span>
       <h3>${t}</h3>
       <p>${p}</p>
-      <span class="method-meta">${m}</span>
     </li>`).join("");
+}
+
+// Practice + Reinforce: what each activity is, with one count each.
+// Completion and due-card tracking stay inside the Cases and Flashcards views.
+function renderPracticeReinforce(){
+  document.getElementById("stat-cases-total").textContent = caseTotals().total;
+  document.getElementById("stat-cards-total").textContent = allCards().length;
+  const plates = totalPlates();
+  document.getElementById("pr-plates").textContent = plates
+    ? `Inside the disease-site modules, ${plates} interactive anatomy and imaging plates let you practice finding the structures that drive staging and planning.` : "";
 }
 
 // Which reference categories the modules actually name (from curriculum.json).
@@ -433,26 +351,12 @@ function referenceCategories(){
   ];
   return cats;
 }
-function renderSourcesTeaser(){
-  const el = document.getElementById("src-teaser");
-  if(!el) return;
-  el.innerHTML = referenceCategories().map(c => `
-    <div class="src-cat">
-      <div class="src-cat-label">${c.label}</div>
-      <div class="src-cat-title">${c.title}</div>
-      <p>${c.text}</p>
-    </div>`).join("");
-}
-
 function renderDashboard(){
   document.getElementById("glance-list").innerHTML = glanceHTML();
-  renderPillars();
-  renderLearningPath();
-  renderSectionGrid();
-  renderCasesFeature();
-  renderFlashTracker();
   renderMethod();
-  renderSourcesTeaser();
+  renderBeforeYouStart();
+  renderSectionGrid();
+  renderPracticeReinforce();
   renderSidebar();
   renderMegaMenus();
   updateTopNav();
@@ -480,12 +384,7 @@ function renderSectionGrid(){
     const st = cardStats(sec.cards);
     const cDone = caseDoneCount(sec);
     const started = st.learning + st.mastered + cDone > 0;
-    const counts = [
-      plural(sec.sections, "reading"),
-      st.total ? plural(st.total, "flashcard") : "",
-      sec.cases.length ? plural(sec.cases.length, "case") : "",
-    ].filter(Boolean).join(" &middot; ");
-    const topics = (info.topics || sec.topics).map(t => `<span>${escapeHtml(t)}</span>`).join(" ");
+    const about = info.card || info.summary || sec.blurb;
     const progress = started || st.due ? `
         <div class="sc-progress">
           <div class="seg-bar sm" aria-hidden="true">${segBarHTML(CARD_SEGMENTS.map(s => ({ ...s, n: st[s.key] })), st.total)}</div>
@@ -499,8 +398,7 @@ function renderSectionGrid(){
       <div class="sec-body">
         <div class="sc-kicker"><span class="sc-dot" aria-hidden="true"></span>Disease site</div>
         <h3 class="sc-title">${escapeHtml(info.title || sec.name)}</h3>
-        <p class="sc-topics" aria-label="Topics covered">${topics}</p>
-        <p class="sc-counts">${counts}</p>
+        <p class="sc-topics">${escapeHtml(about)}</p>
         ${progress}
       </div>
       <div class="sec-foot">
@@ -509,12 +407,12 @@ function renderSectionGrid(){
       </div>
     </article>`;
   }).join("") + (list.length && !activeFilters ? `
-    <aside class="sec-card structure-card" aria-label="How every module is built">
-      <div class="sc-kicker">How every module is built</div>
+    <aside class="sec-card structure-card" aria-label="How each disease site is taught">
+      <div class="sc-kicker">How each site is taught</div>
       <ol class="structure-list">
-        <li>Epidemiology &amp; risk factors</li><li>Anatomy &amp; lymphatics</li><li>Imaging</li><li>Workup &amp; staging</li><li>Treatment paradigms</li>
+        <li>Presentation &amp; workup</li><li>Pathology &amp; imaging</li><li>Staging</li><li>Treatment decision &amp; the role of RT</li><li>Planning, toxicity &amp; follow-up</li>
       </ol>
-      <p class="structure-note">Each section ends with a high-yield summary and has its own flashcard deck. Most sites add a set of clinical cases.</p>
+      <p class="structure-note">The reasoning you need to understand and discuss the patient on service, not an exhaustive reference.</p>
     </aside>` : "");
 
   grid.querySelectorAll(".sec-card:not(.structure-card)").forEach((card, i) => {
@@ -552,9 +450,6 @@ function wireHomeControls(){
   document.getElementById("home-empty-clear").addEventListener("click", clear);
   const sort = document.getElementById("home-sort");
   sort.addEventListener("change", () => { homeFilters.sort = sort.value; saveHomePrefs(); renderSectionGrid(); });
-  document.getElementById("btn-manage-decks").addEventListener("click", openDecks);
-  document.getElementById("btn-open-cases").addEventListener("click", openCasesHub);
-  document.getElementById("btn-start-case").addEventListener("click", startNextCase);
   // close the filter popover on outside click / Escape
   const pop = document.getElementById("home-filters");
   document.addEventListener("click", (e) => { if(pop.open && !pop.contains(e.target)) pop.open = false; });
@@ -609,7 +504,7 @@ function navTo(target){
   const [kind, arg] = route.split(":");
   closeSearchDialog();
   if(kind === "home") goHome();
-  else if(kind === "learn") goHome("learning-path");
+  else if(kind === "learn") goHome("curriculum");
   else if(kind === "sites") goHome("disease-sites");
   else if(kind === "start") openBackground(BACKGROUND[0].id);
   else if(kind === "start-case") startNextCase();
@@ -697,25 +592,83 @@ function openAbout(){
    category, case set, and individual case
    ============================================================ */
 let SEARCH_INDEX = null;
+// Interactive builders and drills, so a search can land on the tool itself.
+// Keywords are the words a student would type to find it.
+const SEARCH_TOOLS = {
+  "stage-builder": ["Lung stage builder", "AJCC lung TNM stage group T N M builder quiz"],
+  "nstage-drill": ["N-stage drill: nodal stations", "IASLC lymph node station N1 N2 N3 subcarinal mediastinal hilar"],
+  "gleason-builder": ["Gleason and Grade Group builder", "Gleason score grade group pattern 3+4 4+3 primary secondary"],
+  "risk-builder": ["Prostate risk group builder", "NCCN risk group PSA grade group T stage favorable unfavorable intermediate high very high AJCC"],
+  "sedlis-builder": ["Sedlis / Peters checker", "cervix radical hysterectomy adjuvant Sedlis Peters LVSI stromal invasion margins nodes parametrium"],
+  "glioma-builder": ["Glioma classifier (WHO 2021)", "IDH 1p/19q codeletion astrocytoma oligodendroglioma glioblastoma WHO 2021 classification"],
+  "gpa-builder": ["Brain metastasis GPA", "graded prognostic assessment brain metastases KPS survival prognosis"],
+  "rectal-builder": ["Rectal MRI: from features to plan", "rectal MRI mesorectal fascia EMVI T stage TNT short-course long-course"],
+  "pancreas-builder": ["Pancreas resectability", "SMA celiac SMV portal vein contact resectable borderline locally advanced"],
+  "contour-exercise": ["Contouring exercise", "contour draw GTV OAR rectum brain metastasis"],
+};
+function toolEntries(html, where, go){
+  const out = [];
+  const seen = new Set();
+  const re = /class='([^']*)'(?:\s+(?:data-drill-set|id)='([^']*)')?/g;
+  let m;
+  while((m = re.exec(String(html || "")))){
+    for(const cls of m[1].split(/\s+/)){
+      let label = null, keys = "";
+      if(cls === "choice-drill" && m[2] && DRILL_SETS[m[2]]){
+        const set = DRILL_SETS[m[2]];
+        const tmp = document.createElement("textarea"); tmp.innerHTML = set.title;
+        label = "Drill: " + tmp.value.replace(/\u2192/g, "to"); keys = (set.choices || []).join(" ") + " " + (set.items || []).map(i => i.p).join(" ");
+      } else if(SEARCH_TOOLS[cls]){ [label, keys] = SEARCH_TOOLS[cls]; }
+      if(!label || seen.has(label)) continue;
+      seen.add(label);
+      out.push({ title: label, where, kind: "Tool", raw: label + " interactive tool practice " + keys,
+        go: () => { go(); setTimeout(() => { const el = document.querySelector(`#doc-body .${cls}${m[2] && cls === "choice-drill" ? `[data-drill-set="${m[2]}"]` : ""}`); if(el) el.scrollIntoView({ behavior: REDUCED_MOTION ? "auto" : "smooth", block: "center" }); }, 120); } });
+    }
+  }
+  return out;
+}
+// Titles and labels of the interactive anatomy/imaging plates mounted in a reading.
+function plateTextFor(svcId, html){
+  const groups = [ANATOMY[svcId], IMAGING[svcId]].filter(g => g && !g.plates);
+  const ids = [...String(html || "").matchAll(/data-plate-group='([^']+)'/g)].map(m => m[1]);
+  const parts = [];
+  for(const id of ids){
+    const g = groups.map(x => x[id]).find(Boolean);
+    if(!g) continue;
+    parts.push(g.intro || "");
+    for(const pl of g.plates || []) parts.push(pl.title || "", ...(pl.hotspots || []).map(h => h.label || ""));
+  }
+  return parts.join(" ");
+}
 function buildSearchIndex(){
   const idx = [];
   const strip = (html) => String(html || "").replace(/<[^>]+>/g, " ").replace(/&[a-z#0-9]+;/gi, " ").replace(/\s+/g, " ");
   for(const sec of BACKGROUND){
-    idx.push({ title: sec.title, where: "Before You Start", kind: "Reading", raw: sec.question + " " + strip(sec.html),
+    const fc = BACKGROUND_FLASHCARD_MAP[sec.id];
+    const cards = fc ? svcCards(fc.svcId).filter(c => c.category === fc.catName) : [];
+    idx.push({ title: sec.title, where: "Before You Start", kind: "Reading", raw: sec.title + " " + sec.question + " " + strip(sec.html),
       go: () => openBackground(sec.id) });
+    if(cards.length) idx.push({ title: `${sec.title} flashcards`, where: "Before You Start", kind: "Flashcards",
+      raw: cards.map(c => c.front + " " + c.back).join(" "), go: () => startStudySession(fc.svcId, fc.catName) });
+    idx.push(...toolEntries(sec.html, `Before You Start: ${sec.title}`, () => openBackground(sec.id)));
   }
   for(const svc of SERVICES){
     const info = siteInfo(svc.id);
     idx.push({ title: info.title || svc.name, where: "Disease site", kind: "Module",
-      raw: svc.name + " " + svc.blurb + " " + (info.summary || "") + " " + (info.topics || []).join(" ") + " " + (info.objectives || []).join(" "),
+      raw: svc.name + " " + svc.blurb + " " + (info.summary || "") + " " + (info.topics || []).join(" ") + " " + (info.objectives || []).join(" ") +
+        " " + (info.mentalModel || []).map(c => (c.label || "") + " " + (c.steps || []).join(" ")).join(" ") +
+        " " + (info.attendingQuestions || []).map(a => a.q).join(" "),
       go: () => openService(svc.id) });
     for(const cat of docCategoriesFor(svc.id)){
       const doc = DOCS[svc.id] && DOCS[svc.id][cat];
       const cards = svcCards(svc.id).filter(c => c.category === cat);
       const cardText = cards.map(c => c.front + " " + c.back).join(" ");
       idx.push({ title: cat, where: svc.name, kind: doc ? "Reading" : "Flashcards",
-        raw: cat + " " + svc.name + " " + strip(doc && doc.html) + " " + strip(cardText),
+        raw: cat + " " + svc.name + " " + strip(doc && doc.html) + " " + plateTextFor(svc.id, doc && doc.html),
         go: () => doc ? openDoc(svc.id, cat) : startStudySession(svc.id, cat) });
+      if(doc && cards.length) idx.push({ title: `${cat} flashcards`, where: svc.name, kind: "Flashcards",
+        raw: strip(cardText), go: () => startStudySession(svc.id, cat) });
+      if(doc) idx.push(...toolEntries(doc.html, `${svc.name}: ${cat}`, () => openDoc(svc.id, cat)));
     }
     const list = casesFor(svc.id);
     if(list.length){
@@ -757,14 +710,20 @@ function searchTopics(q){
     if(terms.length > 1) score += 4 * Math.sqrt(count(item.text, phrase));
     scored.push({ item, score });
   }
-  return scored.sort((a, b) => b.score - a.score).slice(0, 10).map(({ item }) => {
+  // keep the list mixed: readings and modules first, then at most a few of each other kind
+  const caps = { Flashcards: 2, Tool: 2, Case: 3 }, used = {};
+  const ranked = scored.sort((a, b) => b.score - a.score).filter(({ item }) => {
+    used[item.kind] = (used[item.kind] || 0) + 1;
+    return !caps[item.kind] || used[item.kind] <= caps[item.kind];
+  });
+  return ranked.slice(0, 10).map(({ item }) => {
     const i = item.text.indexOf(terms.length > 1 && item.text.includes(phrase) ? phrase : terms[0]);
     const snippet = i < 0 || item.title.toLowerCase().includes(phrase) ? "" :
       (i > 40 ? "…" : "") + item.raw.slice(Math.max(0, i - 40), i + 70).trim() + "…";
     return { ...item, snippet };
   });
 }
-const SEARCH_KIND_CLASS = { Module: "k-module", Reading: "k-reading", Flashcards: "k-cards", Cases: "k-case", Case: "k-case", Sources: "k-source", Page: "k-source" };
+const SEARCH_KIND_CLASS = { Module: "k-module", Reading: "k-reading", Flashcards: "k-cards", Tool: "k-tool", Cases: "k-case", Case: "k-case", Sources: "k-source", Page: "k-source" };
 // Wires one search input + results listbox. Used by the hero search and the
 // header search dialog; both share the same index.
 function wireSearch(inputId, boxId){
@@ -845,7 +804,8 @@ function wireSearchUI(){
 
 /* ============================================================
    ACCOUNT: a simple per-browser profile. Everything (reading,
-   flashcards, cases) is open to guests; an account saves progress.
+   flashcards, cases) is open to guests; a local profile saves progress
+   in this browser. There is no server-side account.
    ============================================================ */
 const PROFILE_KEY = "radonc-companion-profile-v1";
 let PROFILE = null;
@@ -855,7 +815,7 @@ function saveProfile(){ try{ PROFILE ? localStorage.setItem(PROFILE_KEY, JSON.st
 function isSignedIn(){ return !!(PROFILE && PROFILE.name); }
 function loadAllProgress(){ loadProgress(); loadSuspended(); loadCaseProgress(); }
 function saveAllProgress(){ saveProgress(); saveSuspended(); saveCaseProgress(); }
-// After creating an account / signing in: keep what the guest did this session
+// After saving a local profile: keep what the guest did this session
 // on top of anything already saved in this browser, then clear the guest copy.
 function mergeGuestIntoAccount(){
   const guest = { p: PROGRESS, s: SUSPENDED, c: CASE_PROGRESS };
@@ -885,11 +845,14 @@ function updateSignInButton(){
   if(isSignedIn()){
     label.textContent = PROFILE.name.split(/\s+/)[0];
     btn.classList.add("is-signed-in");
-    btn.title = "Your profile and progress";
+    btn.title = "Your local profile and progress (saved in this browser)";
+    btn.removeAttribute("aria-label");
   } else {
-    label.textContent = "Sign In";
+    // short label on phones so the header keeps its original fit
+    label.innerHTML = `<span class="sp-long">Save Progress</span><span class="sp-short">Progress</span>`;
     btn.classList.remove("is-signed-in");
-    btn.title = "Sign in to track your progress";
+    btn.title = "Save your progress in this browser";
+    btn.setAttribute("aria-label", "Save progress in this browser");
   }
 }
 function progressCode(){
@@ -914,14 +877,14 @@ function openAccount(reason){
   if(signedIn){
     document.getElementById("profile-avatar").textContent = initials(PROFILE.name);
     document.getElementById("profile-name").textContent = PROFILE.name;
-    document.getElementById("profile-school").textContent = PROFILE.school || "Progress saved in this browser";
+    document.getElementById("profile-school").textContent = (PROFILE.school ? PROFILE.school + " \u00b7 " : "") + "Local profile, saved in this browser only";
     const st = cardStats(allCards()); const { done, total } = caseTotals();
     document.getElementById("profile-stats").innerHTML = [
       [st.due, "cards due today"], [st.mastered, "cards mastered"], [`${done}/${total}`, "cases done"],
     ].map(([n, l]) => `<div><b class="tabular">${n}</b><span>${l}</span></div>`).join("");
     document.getElementById("export-code").value = progressCode();
   } else {
-    document.getElementById("account-reason").textContent = reason || "Everything is open without an account. Create one to save your flashcard and case progress in this browser.";
+    document.getElementById("account-reason").textContent = reason || "Everything is open without a profile. Add your name to keep your flashcard and case progress in this browser. Nothing is sent to a server.";
   }
   document.getElementById("account").hidden = false;
   setTimeout(() => (signedIn ? document.getElementById("account-close") : document.getElementById("signin-name")).focus(), 30);
@@ -1015,11 +978,6 @@ function updateTopNav(){
     if(on) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current");
   });
   document.body.classList.toggle("on-home", document.getElementById("view-dashboard").classList.contains("active"));
-}
-// Top-nav Flashcards: straight into due cards; with nothing due, the deck list.
-function onNavCards(){
-  if(totalDue() > 0) startStudySession(null, null, "decks");
-  else openDecks();
 }
 
 /* ============================================================
@@ -1241,7 +1199,7 @@ function renderMegaMenus(){
   learn.innerHTML = `<div class="mega-inner">
     ${megaCol("Before You Start", BACKGROUND.map(sec => megaLink(`<span class="mega-num">${String(sec.num).padStart(2, "0")}</span>${escapeHtml(sec.title)}`, `data-go="bg:${sec.id}"`)))}
     ${megaCol("Your Curriculum", [
-      megaLink("Your learning path", `data-go="learn"`),
+      megaLink("How the curriculum works", `data-go="learn"`),
       megaLink("Start the curriculum", `data-go="start"`),
       megaLink("All disease sites", `data-go="sites"`),
       megaLink("Resources &amp; sources", `data-go="resources"`),
@@ -1449,11 +1407,13 @@ function updateSidebarActive(){
 /* ============================================================
    RENDER + OPEN: BACKGROUND MODULE
    ============================================================ */
-// background pages are read-only by design (no flashcard deck attached),
-// except where explicitly mapped here to an existing DECKS category.
+// Each Before You Start page has a matching category in the overview deck.
 const BACKGROUND_FLASHCARD_MAP = {
+  "rad-onc-101": { svcId: "overview", catName: "Radiation 101" },
   "how-rt-works": { svcId: "overview", catName: "How Radiation Works" },
   "machines-modalities": { svcId: "overview", catName: "Radiation Modalities" },
+  "presenting-patients": { svcId: "overview", catName: "How to Give a Presentation" },
+  "the-consult": { svcId: "overview", catName: "The Rad Onc Consult" },
   "treatment-planning": { svcId: "overview", catName: "Treatment Planning" },
 };
 
@@ -1973,7 +1933,7 @@ const QUIZ_SETS = {
   "breast-anatomy": [
     {
       q: "A patient with 1 positive sentinel node skips axillary dissection (Z0011). How can the whole-breast fields be adjusted to cover more of the low axilla?",
-      a: "<strong>High tangents</strong>: the top edge of the tangent fields is raised to cover more of <strong>levels I&ndash;II</strong>. Adding level III, supraclavicular, or internal mammary fields would be regional nodal irradiation, a separate decision.",
+      a: "<strong>High tangents</strong>: the top edge of the tangent fields is raised to cover more of <strong>levels I-II</strong>. Adding level III, supraclavicular, or internal mammary fields would be regional nodal irradiation, a separate decision.",
     },
     {
       q: "A node lies directly behind the pectoralis minor. Which axillary level is it?",
@@ -1981,7 +1941,7 @@ const QUIZ_SETS = {
     },
     {
       q: "A lower inner quadrant tumor is being planned. Which nodal basin is it more likely to drain to than an upper outer tumor?",
-      a: "The <strong>internal mammary nodes</strong>, which run next to the sternum in intercostal spaces 1&ndash;3. The axilla is still the main basin for every quadrant.",
+      a: "The <strong>internal mammary nodes</strong>, which run next to the sternum in intercostal spaces 1-3. The axilla is still the main basin for every quadrant.",
     },
     {
       q: "A tumor invades the pectoralis major but not the ribs or intercostal muscles. Is it T4a?",
@@ -2009,15 +1969,15 @@ const QUIZ_SETS = {
   "breast-staging": [
     {
       q: "A 4.5 cm tumor with fixed, matted level II axillary nodes. What are the T, N, and group stage?",
-      a: "<strong>cT2 cN2a = Stage IIIA.</strong> 2&ndash;5 cm is T2; fixed or matted level I/II nodes are cN2a; T0&ndash;2 N2 is IIIA.",
+      a: "<strong>cT2 cN2a = Stage IIIA.</strong> 2-5 cm is T2; fixed or matted level I/II nodes are cN2a; T0-2 N2 is IIIA.",
     },
     {
       q: "After surgery, 5 of 14 axillary nodes are positive. What is the pN stage?",
-      a: "<strong>pN2a</strong> (4&ndash;9 positive axillary nodes). 1&ndash;3 = pN1a, &ge;10 = pN3a.",
+      a: "<strong>pN2a</strong> (4-9 positive axillary nodes). 1-3 = pN1a, &ge;10 = pN3a.",
     },
     {
       q: "A sentinel node shows a 0.15 mm cluster of tumor cells. How is it staged?",
-      a: "<strong>pN0(i+)</strong>: isolated tumor cells &le;0.2 mm count as node-negative. 0.2&ndash;2 mm would be a micrometastasis (pN1mi).",
+      a: "<strong>pN0(i+)</strong>: isolated tumor cells &le;0.2 mm count as node-negative. 0.2-2 mm would be a micrometastasis (pN1mi).",
     },
     {
       q: "A patient has a positive contralateral axillary node. What does that do to the stage?",
@@ -2031,7 +1991,7 @@ const QUIZ_SETS = {
   "breast-treatment": [
     {
       q: "A 62-year-old has a 1.8 cm ER+ cancer with 1 of 3 positive sentinel nodes after lumpectomy. Does she need an axillary dissection?",
-      a: "<strong>No.</strong> She fits <strong>ACOSOG Z0011</strong>: cT1&ndash;2 cN0, 1&ndash;2 positive sentinel nodes, lumpectomy with planned whole-breast RT. Omitting ALND didn't change survival.",
+      a: "<strong>No.</strong> She fits <strong>ACOSOG Z0011</strong>: cT1-2 cN0, 1-2 positive sentinel nodes, lumpectomy with planned whole-breast RT. Omitting ALND didn't change survival.",
     },
     {
       q: "After mastectomy, pathology shows a 3 cm tumor with 5 of 12 positive nodes and negative margins. Is PMRT indicated?",
@@ -2177,7 +2137,7 @@ const QUIZ_SETS = {
     },
     {
       q: "Who qualifies for low-dose CT lung cancer screening under the USPSTF (2021) criteria?",
-      a: "Age <strong>50&ndash;80</strong>, at least a <strong>20 pack-year</strong> history, and <strong>currently smoking or quit within the past 15 years</strong>. Screen annually. Screening finds cancers earlier, when more patients can be cured with <strong>surgery or SBRT</strong>.",
+      a: "Age <strong>50-80</strong>, at least a <strong>20 pack-year</strong> history, and <strong>currently smoking or quit within the past 15 years</strong>. Screen annually. Screening finds cancers earlier, when more patients can be cured with <strong>surgery or SBRT</strong>.",
     },
     {
       q: "What is the most common cause of lung cancer in people who have never smoked?",
@@ -2199,17 +2159,17 @@ const QUIZ_SETS = {
     },
     {
       q: "At what vertebral level is the carina, and what else is at that level?",
-      a: "The <strong>sternal angle (T4&ndash;T5)</strong>. It marks the carina, the bottom of the aortic arch, the azygos vein joining the SVC, and the boundary between the superior and inferior mediastinum.",
+      a: "The <strong>sternal angle (T4-T5)</strong>. It marks the carina, the bottom of the aortic arch, the azygos vein joining the SVC, and the boundary between the superior and inferior mediastinum.",
     },
     {
       q: "An apical tumor causes ptosis, miosis, and anhidrosis plus pain down the inner arm. Which structures are involved?",
-      a: "The <strong>sympathetic chain / stellate ganglion</strong> (Horner syndrome) and the <strong>lower brachial plexus (C8&ndash;T1)</strong>. This is a <strong>Pancoast (superior sulcus) tumor</strong>, best evaluated with <strong>MRI</strong>.",
+      a: "The <strong>sympathetic chain / stellate ganglion</strong> (Horner syndrome) and the <strong>lower brachial plexus (C8-T1)</strong>. This is a <strong>Pancoast (superior sulcus) tumor</strong>, best evaluated with <strong>MRI</strong>.",
     },
   ],
   "th-nodes": [
     {
       q: "What is the one-line rule for converting a nodal station number into N1 vs N2?",
-      a: "<strong>Single-digit stations (1&ndash;9) are mediastinal/supraclavicular; double-digit stations (10&ndash;14) are hilar and intrapulmonary.</strong> Ipsilateral 10&ndash;14 = N1, ipsilateral 2&ndash;9 = N2, and anything contralateral or supraclavicular = N3.",
+      a: "<strong>Single-digit stations (1-9) are mediastinal/supraclavicular; double-digit stations (10-14) are hilar and intrapulmonary.</strong> Ipsilateral 10-14 = N1, ipsilateral 2-9 = N2, and anything contralateral or supraclavicular = N3.",
     },
     {
       q: "A right lower lobe tumor has an FDG-avid station 5 (AP window) node. What N stage?",
@@ -2234,7 +2194,7 @@ const QUIZ_SETS = {
       a: "A <strong>spiculated margin</strong>, <strong>upper lobe location</strong>, and <strong>larger size</strong> (above 3 cm it's called a mass and treated as cancer until proven otherwise). A <strong>part-solid</strong> nodule also carries a high cancer risk, with the solid part usually representing invasive tumor.",
     },
     {
-      q: "Why does a patient with a PET/CT that's negative for distant disease still need a brain MRI before treatment for stage II&ndash;III NSCLC?",
+      q: "Why does a patient with a PET/CT that's negative for distant disease still need a brain MRI before treatment for stage II-III NSCLC?",
       a: "The brain has <strong>high normal FDG uptake</strong>, so PET is poor at finding brain metastases. <strong>Contrast-enhanced brain MRI</strong> is the test of choice, and finding a met changes the stage to IV.",
     },
     {
@@ -2269,7 +2229,7 @@ const QUIZ_SETS = {
     },
     {
       q: "What defines limited-stage small cell lung cancer?",
-      a: "Disease confined to <strong>one hemithorax</strong> (plus regional nodes) that can be encompassed in a <strong>tolerable radiation field</strong>. Anything beyond that, including a malignant effusion or distant metastases, is <strong>extensive stage</strong>. (TNM: LS is roughly stage I&ndash;III.)",
+      a: "Disease confined to <strong>one hemithorax</strong> (plus regional nodes) that can be encompassed in a <strong>tolerable radiation field</strong>. Anything beyond that, including a malignant effusion or distant metastases, is <strong>extensive stage</strong>. (TNM: LS is roughly stage I-III.)",
     },
   ],
   "th-treatment-n0": [
@@ -2279,7 +2239,7 @@ const QUIZ_SETS = {
     },
     {
       q: "A 2.2 cm tumor sits against the chest wall, N0. What changes in the SBRT plan?",
-      a: "Nothing about the indication; the concern is <strong>chest wall pain and rib fracture</strong>. Many centers use <strong>more fractions</strong> (for example, 4&ndash;5) and limit the chest wall dose.",
+      a: "Nothing about the indication; the concern is <strong>chest wall pain and rib fracture</strong>. Many centers use <strong>more fractions</strong> (for example, 4-5) and limit the chest wall dose.",
     },
     {
       q: "A 2 cm tumor sits 1.2 cm from the right main bronchus. What's the tumor called, and how does the SBRT regimen change?",
@@ -2309,11 +2269,11 @@ const QUIZ_SETS = {
     },
     {
       q: "Limited-stage SCLC: what's the classic radiation regimen, and what's given after chemoradiation?",
-      a: "<strong>45 Gy in 30 twice-daily fractions</strong> (Turrisi) or 60&ndash;66 Gy daily (CONVERT), <strong>concurrent with cisplatin/etoposide</strong>, starting early. Then <strong>durvalumab</strong> consolidation (ADRIATIC) and <strong>PCI or MRI surveillance</strong>.",
+      a: "<strong>45 Gy in 30 twice-daily fractions</strong> (Turrisi) or 60-66 Gy daily (CONVERT), <strong>concurrent with cisplatin/etoposide</strong>, starting early. Then <strong>durvalumab</strong> consolidation (ADRIATIC) and <strong>PCI or MRI surveillance</strong>.",
     },
     {
       q: "Three weeks into chemoradiation for stage III NSCLC, a patient has painful swallowing. Which organ at risk explains it, and which late toxicity is the plan's lung dose trying to prevent?",
-      a: "<strong>Esophagus</strong>: acute <strong>esophagitis</strong> is the most expected toxicity of conventional thoracic chemoRT. Lung dose drives <strong>radiation pneumonitis</strong> (usually 1&ndash;6 months after RT), and heart dose drives late <strong>cardiac toxicity</strong>.",
+      a: "<strong>Esophagus</strong>: acute <strong>esophagitis</strong> is the most expected toxicity of conventional thoracic chemoRT. Lung dose drives <strong>radiation pneumonitis</strong> (usually 1-6 months after RT), and heart dose drives late <strong>cardiac toxicity</strong>.",
     },
   ],
   "pr-epi": [
@@ -2327,7 +2287,7 @@ const QUIZ_SETS = {
     },
     {
       q: "A 50-year-old Black man whose father had prostate cancer at 58 asks about screening. What do you tell him?",
-      a: "He's at <strong>increased risk</strong> on two counts (Black ancestry and a first-degree relative), so the shared decision-making conversation about screening should start <strong>earlier</strong>, at about 40&ndash;45 in current AUA guidance.",
+      a: "He's at <strong>increased risk</strong> on two counts (Black ancestry and a first-degree relative), so the shared decision-making conversation about screening should start <strong>earlier</strong>, at about 40-45 in current AUA guidance.",
     },
     {
       q: "Name three benign causes of a raised PSA.",
@@ -2415,7 +2375,7 @@ const QUIZ_SETS = {
     },
     {
       q: "Name the three high-risk features.",
-      a: "<strong>T3a</strong>, <strong>Grade Group 4&ndash;5</strong>, <strong>PSA &gt;20</strong>. One = high risk. Two or more, or T3b&ndash;T4, or primary pattern 5, or &gt;4 cores GG4&ndash;5 = <strong>very high</strong>.",
+      a: "<strong>T3a</strong>, <strong>Grade Group 4-5</strong>, <strong>PSA &gt;20</strong>. One = high risk. Two or more, or T3b-T4, or primary pattern 5, or &gt;4 cores GG4-5 = <strong>very high</strong>.",
     },
     {
       q: "Any positive regional node: what AJCC stage?",
@@ -2429,11 +2389,11 @@ const QUIZ_SETS = {
     },
     {
       q: "Which step up in risk group is where ADT enters the radiation treatment paradigm?",
-      a: "<strong>Favorable to unfavorable intermediate.</strong> ADT is generally omitted for favorable intermediate risk; unfavorable intermediate gets <strong>short-term ADT</strong> (about 4&ndash;6 months) with RT.",
+      a: "<strong>Favorable to unfavorable intermediate.</strong> ADT is generally omitted for favorable intermediate risk; unfavorable intermediate gets <strong>short-term ADT</strong> (about 4-6 months) with RT.",
     },
     {
       q: "How long is ADT for unfavorable intermediate vs high risk with RT?",
-      a: "<strong>Unfavorable intermediate: 4&ndash;6 months.</strong> <strong>High/very high: 18&ndash;36 months</strong> (usually 2 years).",
+      a: "<strong>Unfavorable intermediate: 4-6 months.</strong> <strong>High/very high: 18-36 months</strong> (usually 2 years).",
     },
     {
       q: "Why does hypofractionation work so well for prostate cancer?",
@@ -2447,7 +2407,7 @@ const QUIZ_SETS = {
     },
     {
       q: "After prostatectomy, margins positive, PSA undetectable. Adjuvant RT now or wait?",
-      a: "<strong>Observe with PSA monitoring and give early salvage RT</strong> if the PSA rises above 0.1&ndash;0.2. RAVES, RADICALS-RT, and GETUG-AFU 17 showed no benefit to routine adjuvant RT, and about half of men never need RT.",
+      a: "<strong>Observe with PSA monitoring and give early salvage RT</strong> if the PSA rises above 0.1-0.2. RAVES, RADICALS-RT, and GETUG-AFU 17 showed no benefit to routine adjuvant RT, and about half of men never need RT.",
     },
     {
       q: "What is the definition of biochemical failure after surgery vs after RT?",
@@ -2569,7 +2529,7 @@ const QUIZ_SETS = {
     },
     {
       q: "What does FIGO 2023 do with a p53-abnormal endometrial cancer that invades the myometrium?",
-      a: "It's upstaged to <strong>IIC (m-p53abn)</strong>, reflecting its poor prognosis. A <strong>POLE-mutated</strong> stage I&ndash;II tumor is downstaged to <strong>IA (m-POLEmut)</strong>.",
+      a: "It's upstaged to <strong>IIC (m-p53abn)</strong>, reflecting its poor prognosis. A <strong>POLE-mutated</strong> stage I-II tumor is downstaged to <strong>IA (m-POLEmut)</strong>.",
     },
     {
       q: "Vulvar cancer, 1.5 cm, depth of invasion 0.8 mm. Stage, and do the nodes need to be checked?",
@@ -2925,15 +2885,15 @@ const LUNG_N = ["N0","N1","N2a","N2b","N3"];
 const LUNG_M = ["M0","M1a","M1b","M1c1","M1c2"];
 const LUNG_T_DEF = {
   T1mi: "Minimally invasive adenocarcinoma (&le;3 cm, &le;5 mm invasive)",
-  T1a: "&le;1 cm", T1b: "&gt;1&ndash;2 cm", T1c: "&gt;2&ndash;3 cm",
-  T2a: "&gt;3&ndash;4 cm, or visceral pleura / main bronchus / atelectasis to the hilum",
-  T2b: "&gt;4&ndash;5 cm",
-  T3: "&gt;5&ndash;7 cm, or chest wall / phrenic nerve / parietal pericardium, or a separate nodule in the same lobe",
+  T1a: "&le;1 cm", T1b: "&gt;1-2 cm", T1c: "&gt;2-3 cm",
+  T2a: "&gt;3-4 cm, or visceral pleura / main bronchus / atelectasis to the hilum",
+  T2b: "&gt;4-5 cm",
+  T3: "&gt;5-7 cm, or chest wall / phrenic nerve / parietal pericardium, or a separate nodule in the same lobe",
   T4: "&gt;7 cm, or mediastinum / heart / great vessels / trachea / carina / esophagus / spine / diaphragm / recurrent laryngeal nerve, or a nodule in a different ipsilateral lobe",
 };
 const LUNG_N_DEF = {
   N0: "No regional nodes",
-  N1: "Ipsilateral hilar / peribronchial / intrapulmonary (stations 10&ndash;14)",
+  N1: "Ipsilateral hilar / peribronchial / intrapulmonary (stations 10-14)",
   N2a: "A single ipsilateral mediastinal or subcarinal station",
   N2b: "Multiple ipsilateral mediastinal stations",
   N3: "Contralateral mediastinal or hilar, or any scalene / supraclavicular",
@@ -2963,7 +2923,7 @@ function lungStageGroup(t, n, m){
 function lungStageMeaning(stage, n){
   if(stage.startsWith("IV")) return "<strong>Metastatic.</strong> Systemic therapy (targeted therapy if a driver, otherwise chemo-immunotherapy). Radiation for oligometastatic sites (SBRT) or symptoms (palliative RT).";
   if(stage.startsWith("III")) return "<strong>Locally advanced.</strong> First question: resectable? Yes &rarr; neoadjuvant/perioperative chemo-immunotherapy &rarr; surgery. No &rarr; concurrent chemoRT (60 Gy/30) &rarr; durvalumab (or osimertinib if EGFR+).";
-  if(n === "N0") return "<strong>Early stage, node-negative.</strong> Operable &rarr; lobectomy (or segmentectomy if &le;2 cm peripheral) with nodal sampling. Inoperable &rarr; SBRT, with the fractionation set by location. Larger tumors (T2b&ndash;T3) also get perioperative systemic therapy.";
+  if(n === "N0") return "<strong>Early stage, node-negative.</strong> Operable &rarr; lobectomy (or segmentectomy if &le;2 cm peripheral) with nodal sampling. Inoperable &rarr; SBRT, with the fractionation set by location. Larger tumors (T2b-T3) also get perioperative systemic therapy.";
   return "<strong>Node-positive early stage.</strong> Operable &rarr; surgery with perioperative systemic therapy (chemo-IO, or osimertinib/alectinib for EGFR/ALK). Inoperable &rarr; concurrent chemoRT, not SBRT.";
 }
 const LUNG_QUIZ_T = {
@@ -3102,7 +3062,7 @@ function nStageFor(tumorSide, s){
       : { n: "N3", why: `Mediastinal station on the <strong>opposite side</strong> = contralateral = N3.` };
   }
   return same
-    ? { n: "N1", why: `Double-digit (10&ndash;14) station on the <strong>same side</strong> = hilar/intrapulmonary = N1.` }
+    ? { n: "N1", why: `Double-digit (10-14) station on the <strong>same side</strong> = hilar/intrapulmonary = N1.` }
     : { n: "N3", why: `A hilar node on the <strong>opposite side</strong> is contralateral = N3.` };
 }
 function renderNStageDrill(container){
@@ -3204,7 +3164,7 @@ const DRILL_SETS = {
       { p: "Gleason <strong>4+4=8</strong>", a: "GG4", why: "Any Gleason 8 is <strong>GG4</strong>: 4+4, 3+5, or 5+3." },
       { p: "Gleason <strong>3+5=8</strong>", a: "GG4", why: "Sum of 8 = <strong>GG4</strong>, whatever the order." },
       { p: "Gleason <strong>5+3=8</strong>", a: "GG4", why: "Sum of 8 = <strong>GG4</strong>. But primary pattern 5 also makes the patient <strong>very high risk</strong> by NCCN." },
-      { p: "Gleason <strong>4+5=9</strong>", a: "GG5", why: "Gleason 9&ndash;10 = <strong>GG5</strong>." },
+      { p: "Gleason <strong>4+5=9</strong>", a: "GG5", why: "Gleason 9-10 = <strong>GG5</strong>." },
       { p: "Gleason <strong>5+4=9</strong>", a: "GG5", why: "<strong>GG5</strong>, and primary pattern 5 = very high risk." },
       { p: "Gleason <strong>5+5=10</strong>", a: "GG5", why: "The most aggressive: <strong>GG5</strong>." },
     ],
@@ -3214,16 +3174,16 @@ const DRILL_SETS = {
     choices: ["Very low", "Low", "Favorable intermediate", "Unfavorable intermediate", "High", "Very high"],
     items: [
       { p: "cT1c, Gleason 3+3, PSA 4.2, PSA density 0.09", a: "Very low", why: "T1c + GG1 + PSA &lt;10 + PSA density &lt;0.15 = <strong>very low</strong>. Active surveillance." },
-      { p: "cT2a, Gleason 3+3, PSA 6.8", a: "Low", why: "T1&ndash;T2a, GG1, PSA &lt;10 = <strong>low</strong>." },
+      { p: "cT2a, Gleason 3+3, PSA 6.8", a: "Low", why: "T1-T2a, GG1, PSA &lt;10 = <strong>low</strong>." },
       { p: "cT1c, Gleason 3+4, PSA 7, 3 of 12 cores positive", a: "Favorable intermediate", why: "One intermediate factor (GG2), under 50% of cores: <strong>favorable intermediate</strong>." },
-      { p: "cT1c, Gleason 3+3, PSA 14, 2 of 12 cores positive", a: "Favorable intermediate", why: "One intermediate factor (PSA 10&ndash;20), GG1, few cores: <strong>favorable intermediate</strong>." },
+      { p: "cT1c, Gleason 3+3, PSA 14, 2 of 12 cores positive", a: "Favorable intermediate", why: "One intermediate factor (PSA 10-20), GG1, few cores: <strong>favorable intermediate</strong>." },
       { p: "cT1c, Gleason 4+3, PSA 6", a: "Unfavorable intermediate", why: "<strong>GG3 alone makes it unfavorable.</strong>" },
-      { p: "cT2b, Gleason 3+4, PSA 12", a: "Unfavorable intermediate", why: "Three intermediate factors (T2b, GG2, PSA 10&ndash;20): <strong>unfavorable intermediate</strong>." },
+      { p: "cT2b, Gleason 3+4, PSA 12", a: "Unfavorable intermediate", why: "Three intermediate factors (T2b, GG2, PSA 10-20): <strong>unfavorable intermediate</strong>." },
       { p: "cT1c, Gleason 3+4, PSA 8, 8 of 12 cores positive", a: "Unfavorable intermediate", why: "One intermediate factor, but <strong>&ge;50% of cores</strong> positive: unfavorable." },
       { p: "cT2a, Gleason 4+4, PSA 7", a: "High", why: "One high-risk feature (GG4): <strong>high risk</strong>." },
       { p: "cT1c, Gleason 3+4, PSA 26", a: "High", why: "One high-risk feature (PSA &gt;20): <strong>high risk</strong>." },
       { p: "cT3a (extension palpable on DRE), Gleason 3+4, PSA 9", a: "High", why: "T3a (extraprostatic extension) is a high-risk feature: <strong>high risk</strong>." },
-      { p: "cT3b (seminal vesicle invasion), Gleason 3+4, PSA 8", a: "Very high", why: "<strong>T3b&ndash;T4 = very high risk</strong>, on its own." },
+      { p: "cT3b (seminal vesicle invasion), Gleason 3+4, PSA 8", a: "Very high", why: "<strong>T3b-T4 = very high risk</strong>, on its own." },
       { p: "cT3a, Gleason 4+5, PSA 11", a: "Very high", why: "Two high-risk features (T3a and GG5): <strong>very high risk</strong>." },
       { p: "cT1c, Gleason 5+4, PSA 6", a: "Very high", why: "<strong>Primary Gleason pattern 5</strong> = very high risk." },
     ],
@@ -3313,7 +3273,7 @@ const DRILL_SETS = {
     choices: ["T1", "T2", "T3", "T4"],
     items: [
       { p: "1.5 cm anal canal tumor", a: "T1", why: "&le;2 cm = <strong>T1</strong>." },
-      { p: "3.5 cm tumor invading the internal and external sphincter", a: "T2", why: "Size decides (&gt;2&ndash;5 cm = <strong>T2</strong>). Sphincter invasion does <strong>not</strong> make it T4." },
+      { p: "3.5 cm tumor invading the internal and external sphincter", a: "T2", why: "Size decides (&gt;2-5 cm = <strong>T2</strong>). Sphincter invasion does <strong>not</strong> make it T4." },
       { p: "6 cm tumor", a: "T3", why: "&gt;5 cm = <strong>T3</strong>." },
       { p: "3 cm tumor invading the posterior vaginal wall", a: "T4", why: "Invasion of an adjacent organ (<strong>vagina, urethra, bladder</strong>) = <strong>T4</strong>, regardless of size." },
       { p: "2.5 cm tumor extending onto the perianal skin", a: "T2", why: "Skin, subcutaneous tissue, and sphincter involvement don't count as T4." },
@@ -3346,8 +3306,8 @@ function cervixPostop(o){
   return sedlis ? "sedlis" : "none";
 }
 const POSTOP_TX = {
-  peters: { title: "High risk (Peters)", body: "<strong>Adjuvant pelvic chemoradiation</strong>: 45&ndash;50.4 Gy + weekly cisplatin (GOG 109). Extend the field to the para-aortics if common iliac or para-aortic nodes are positive; add vaginal brachy for a positive vaginal margin." },
-  sedlis: { title: "Intermediate risk (Sedlis)", body: "<strong>Adjuvant pelvic RT</strong>: 45&ndash;50.4 Gy (GOG 92 cut recurrences roughly in half). Chemo isn't routinely added." },
+  peters: { title: "High risk (Peters)", body: "<strong>Adjuvant pelvic chemoradiation</strong>: 45-50.4 Gy + weekly cisplatin (GOG 109). Extend the field to the para-aortics if common iliac or para-aortic nodes are positive; add vaginal brachy for a positive vaginal margin." },
+  sedlis: { title: "Intermediate risk (Sedlis)", body: "<strong>Adjuvant pelvic RT</strong>: 45-50.4 Gy (GOG 92 cut recurrences roughly in half). Chemo isn't routinely added." },
   none: { title: "Low risk", body: "<strong>Observation.</strong> No Sedlis or Peters criteria." },
 };
 /* ============================================================
@@ -3363,11 +3323,11 @@ function classifyGlioma(o){
   if(o.codel){
     const g = (o.necmvp || o.anaplasia) ? 3 : 2;
     return { dx: "Oligodendroglioma, IDH-mutant and 1p/19q-codeleted", grade: g,
-      tx: g === 3 ? "Resection &rarr; <strong>RT 59.4 Gy + PCV</strong> (RTOG 9402, EORTC 26951)." : "Resection &rarr; observation (low risk), <strong>vorasidenib</strong> for residual non-enhancing tumor (INDIGO), or <strong>RT 50.4&ndash;54 Gy + PCV</strong> for high risk (RTOG 9802)." };
+      tx: g === 3 ? "Resection &rarr; <strong>RT 59.4 Gy + PCV</strong> (RTOG 9402, EORTC 26951)." : "Resection &rarr; observation (low risk), <strong>vorasidenib</strong> for residual non-enhancing tumor (INDIGO), or <strong>RT 50.4-54 Gy + PCV</strong> for high risk (RTOG 9802)." };
   }
   const g = (o.cdkn || o.necmvp) ? 4 : (o.anaplasia ? 3 : 2);
   return { dx: "Astrocytoma, IDH-mutant", grade: g,
-    tx: g === 4 ? "Resection &rarr; <strong>60 Gy + temozolomide</strong> (treated like GBM, better prognosis)." : g === 3 ? "Resection &rarr; <strong>RT 59.4 Gy + adjuvant temozolomide</strong> (CATNON)." : "Resection &rarr; observation, <strong>vorasidenib</strong> (INDIGO), or <strong>RT 50.4&ndash;54 Gy + chemo</strong> for high risk (age &ge;40, residual tumor)." };
+    tx: g === 4 ? "Resection &rarr; <strong>60 Gy + temozolomide</strong> (treated like GBM, better prognosis)." : g === 3 ? "Resection &rarr; <strong>RT 59.4 Gy + adjuvant temozolomide</strong> (CATNON)." : "Resection &rarr; observation, <strong>vorasidenib</strong> (INDIGO), or <strong>RT 50.4-54 Gy + chemo</strong> for high risk (age &ge;40, residual tumor)." };
 }
 function renderGliomaBuilder(container){
   container.classList.add("quiz-carousel", "stage-builder", "glioma-builder");
@@ -3407,9 +3367,9 @@ function renderGpaBuilder(container){
   container.classList.add("quiz-carousel", "stage-builder", "gpa-builder");
   const o = { age: 0.5, kps: 1, n: 0.5, ecm: 0 };
   const rows = [
-    ["age", "Age", [[1,"&lt;50"],[0.5,"50&ndash;60"],[0,"&gt;60"]]],
-    ["kps", "KPS", [[1,"90&ndash;100"],[0.5,"70&ndash;80"],[0,"&lt;70"]]],
-    ["n", "# Mets", [[1,"1"],[0.5,"2&ndash;3"],[0,"&gt;3"]]],
+    ["age", "Age", [[1,"&lt;50"],[0.5,"50-60"],[0,"&gt;60"]]],
+    ["kps", "KPS", [[1,"90-100"],[0.5,"70-80"],[0,"&lt;70"]]],
+    ["n", "# Mets", [[1,"1"],[0.5,"2-3"],[0,"&gt;3"]]],
     ["ecm", "Body mets", [[1,"None"],[0,"Present"]]],
   ];
   function survival(score){
@@ -3421,7 +3381,7 @@ function renderGpaBuilder(container){
   function render(){
     const score = o.age + o.kps + o.n + o.ecm;
     container.innerHTML = `
-      <div class="qc-header"><span class="qc-badge">Brain Metastasis GPA (2008)</span><span class="qc-counter">Score 0&ndash;4</span></div>
+      <div class="qc-header"><span class="qc-badge">Brain Metastasis GPA (2008)</span><span class="qc-counter">Score 0-4</span></div>
       ${rows.map(([k, label, opts]) => `<div class="sb-row sb-row-wide"><span class="sb-row-label">${label}</span><div class="sb-pills">${
         opts.map(([v, txt]) => `<button type="button" class="sb-pill ${o[k]===v?'active':''}" data-k="${k}" data-v="${v}">${txt} <small>(${v})</small></button>`).join("")
       }</div></div>`).join("")}
@@ -3442,7 +3402,7 @@ function rectalPlan(o){
   const adv = o.t === "T3" || o.t === "T4" || o.n;
   if(o.dmmr && adv) return { title: "MMR-deficient, locally advanced",
     body: "<strong>Checkpoint immunotherapy</strong> is considered first: complete clinical responses have been seen in nearly all patients treated (Cercek), which may spare RT and surgery. Usually managed at experienced centers." };
-  if(!adv) return { title: "Early (T1&ndash;T2 N0)",
+  if(!adv) return { title: "Early (T1-T2 N0)",
     body: "<strong>TME surgery</strong> (low anterior resection, or APR if the sphincter can't be saved), usually without RT. Small T1: <strong>local excision</strong> in selected patients. Low tumor + wants to keep the rectum: neoadjuvant therapy aiming for <strong>organ preservation</strong> in selected patients." };
   const high = o.t === "T4" || o.mrf || o.emvi || o.lat || o.low;
   if(!high) return { title: "Locally advanced, lower risk",
@@ -3529,7 +3489,7 @@ function renderSedlisBuilder(container){
       <div class="sb-row sb-row-wide"><span class="sb-row-label">Peters</span><div class="sb-pills">${tog("nodes","Positive nodes")}${tog("margin","Positive margin")}${tog("param","Parametrial invasion")}</div></div>
       ${pills("lvsi", "LVSI", [[true,"Present"],[false,"Absent"]])}
       ${pills("depth", "Stroma", [["superficial","Superficial 1/3"],["middle","Middle 1/3"],["deep","Deep 1/3"]])}
-      ${pills("size", "Size", [[1,"&lt;2 cm"],[2,"2&ndash;3.9 cm"],[4,"4&ndash;4.9 cm"],[5,"&ge;5 cm"]])}
+      ${pills("size", "Size", [[1,"&lt;2 cm"],[2,"2-3.9 cm"],[4,"4-4.9 cm"],[5,"&ge;5 cm"]])}
       <div class="sb-result">
         <div class="sb-stage"><span class="sb-group">${POSTOP_TX[res].title}</span></div>
         <div class="sb-meaning">${POSTOP_TX[res].body}</div>
@@ -3592,7 +3552,7 @@ function gleasonGG(p, s){
   return 5;
 }
 const GG_MEANING = {
-  1: "Behaves indolently; almost never metastasizes. With T1&ndash;T2a and PSA &lt;10 = low or very low risk &rarr; <strong>active surveillance</strong>.",
+  1: "Behaves indolently; almost never metastasizes. With T1-T2a and PSA &lt;10 = low or very low risk &rarr; <strong>active surveillance</strong>.",
   2: "Mostly pattern 3. An <strong>intermediate</strong> risk factor that can still be <strong>favorable</strong> intermediate.",
   3: "Mostly pattern 4. Automatically <strong>unfavorable intermediate</strong> risk (or worse).",
   4: "A <strong>high-risk</strong> feature by itself.",
@@ -3648,9 +3608,9 @@ const RISK_TX = {
   "Very low": "<strong>Active surveillance</strong> (PSA, exam, repeat MRI/biopsy).",
   "Low": "<strong>Active surveillance</strong> preferred; RT or prostatectomy if the patient chooses or progresses.",
   "Favorable intermediate": "<strong>RT alone</strong> (no ADT): EBRT, SBRT (e.g., 36.25 Gy/5), or LDR brachy monotherapy; or prostatectomy. Select patients: surveillance.",
-  "Unfavorable intermediate": "<strong>RT + 4&ndash;6 months ADT</strong> (or EBRT + brachy boost); or prostatectomy + pelvic node dissection.",
-  "High": "<strong>RT + 18&ndash;36 months ADT</strong> &plusmn; pelvic nodal RT &plusmn; brachy boost; or prostatectomy + pelvic node dissection.",
-  "Very high": "<strong>RT + 2&ndash;3 years ADT</strong> + pelvic nodes; add <strong>abiraterone</strong> if &ge;2 of T3&ndash;4, Gleason 8&ndash;10, PSA &ge;40 (STAMPEDE). Prostatectomy for select patients.",
+  "Unfavorable intermediate": "<strong>RT + 4-6 months ADT</strong> (or EBRT + brachy boost); or prostatectomy + pelvic node dissection.",
+  "High": "<strong>RT + 18-36 months ADT</strong> &plusmn; pelvic nodal RT &plusmn; brachy boost; or prostatectomy + pelvic node dissection.",
+  "Very high": "<strong>RT + 2-3 years ADT</strong> + pelvic nodes; add <strong>abiraterone</strong> if &ge;2 of T3-4, Gleason 8-10, PSA &ge;40 (STAMPEDE). Prostatectomy for select patients.",
 };
 function renderRiskBuilder(container){
   container.classList.add("quiz-carousel", "stage-builder", "risk-builder");
@@ -3670,11 +3630,11 @@ function renderRiskBuilder(container){
       <div class="qc-header"><span class="qc-badge">Risk Group Builder &middot; NCCN</span><span class="qc-counter">Assumes N0 M0</span></div>
       ${pills("t", "cT", ["T1c","T2a","T2b","T2c","T3a","T3b","T4"].map(v=>[v,v]), o.t)}
       ${pills("gg", "GG", [1,2,3,4,5].map(v=>[v,`GG${v}`]), o.gg)}
-      ${pills("psa", "PSA", [["<10","&lt;10"],["10-20","10&ndash;20"],[">20","&gt;20"]], o.psa)}
+      ${pills("psa", "PSA", [["<10","&lt;10"],["10-20","10-20"],[">20","&gt;20"]], o.psa)}
       <div class="sb-row sb-row-wide"><span class="sb-row-label">+</span><div class="sb-pills">
         ${toggle("cores50", "&ge;50% of cores positive")}
         ${o.t === "T1c" && o.gg === 1 && o.psa === "<10" ? toggle("psad", "PSA density &lt;0.15") : ""}
-        ${o.gg >= 4 ? toggle("cores4", "&gt;4 cores with GG4&ndash;5") : ""}
+        ${o.gg >= 4 ? toggle("cores4", "&gt;4 cores with GG4-5") : ""}
         ${o.gg === 5 ? toggle("primary5", "Primary pattern 5") : ""}
       </div></div>
       <div class="sb-result">
@@ -3836,6 +3796,14 @@ function openService(svcId){
   document.getElementById("svc-due-count").textContent = dueN;
   document.getElementById("mod-meta").innerHTML = contentMetaHTML(svcId);
 
+  // How a Rad Onc trainee thinks about this site: the mental model from curriculum.json.
+  const think = document.getElementById("mod-think");
+  const chains = info.mentalModel || [];
+  think.hidden = !chains.length;
+  think.innerHTML = `
+    <h2 class="mod-h2" id="mod-think-title">The mental model</h2>
+    <div class="mm-chains">${chains.map(mentalModelHTML).join("")}</div>`;
+
   document.getElementById("btn-start-module").onclick = () => readings.length ? openDoc(svcId, readings[0]) : startStudySession(svcId, null);
   const casesBtn = document.getElementById("btn-module-cases");
   casesBtn.hidden = !caseList.length;
@@ -3844,17 +3812,6 @@ function openService(svcId){
   document.getElementById("mod-objectives").innerHTML = (info.objectives || [])
     .map(o => `<li><span class="check" aria-hidden="true">${ICONS.check}</span>${escapeHtml(o)}</li>`).join("");
   document.querySelector(".mod-learn").hidden = !(info.objectives || []).length;
-
-  // Sub-I essential: the first point of the module's own staging high-yield summary.
-  const essential = subIEssential(svcId);
-  const essEl = document.getElementById("mod-essential");
-  essEl.hidden = !essential;
-  if(essential){
-    essEl.innerHTML = `<span class="edu-badge badge-essential">Sub-I essential</span>
-      <p class="ess-text">${escapeHtml(essential.text)}</p>
-      <button class="link-btn ess-src" data-ess-cat="${encodeURIComponent(essential.cat)}">From the ${escapeHtml(essential.cat)} high-yield summary &rarr;</button>`;
-    essEl.querySelector("[data-ess-cat]").onclick = () => openDoc(svcId, essential.cat);
-  }
 
   const catList = document.getElementById("cat-list");
   catList.innerHTML = "";
@@ -3913,6 +3870,15 @@ function openService(svcId){
     catList.appendChild(row);
   }
 
+  const aqs = info.attendingQuestions || [];
+  const aqEl = document.getElementById("mod-attending");
+  aqEl.hidden = !aqs.length;
+  aqEl.innerHTML = `
+    <h2 class="mod-h2" id="mod-aq-title">Attending questions</h2>
+    <p class="mod-aq-sub">Questions you could realistically be asked on service. Try each one out loud; if you get stuck, the link opens the reading that covers it.</p>
+    <ol class="aq-list">${aqs.map((a, i) => `<li><span class="aq-q">${escapeHtml(a.q)}</span>${DOCS[svcId] && DOCS[svcId][a.module] ? `<button class="link-btn aq-link" data-aq="${i}" aria-label="Open the ${escapeHtml(a.module)} reading">${escapeHtml(a.module)} <span aria-hidden="true">&rarr;</span></button>` : ""}</li>`).join("")}</ol>`;
+  aqEl.querySelectorAll("[data-aq]").forEach(b => { b.onclick = () => openDoc(svcId, aqs[+b.dataset.aq].module); });
+
   document.getElementById("mod-sources").innerHTML = `
     <h2 class="mod-h2" id="mod-sources-title">Sources &amp; References</h2>
     ${siteSourcesHTML(svcId)}
@@ -3928,7 +3894,28 @@ function openService(svcId){
   showView("view-service");
 }
 
-// "Content review" metadata: the staging system the module teaches, the
+// One step chain of a site's mental model (optionally labeled, e.g. "Rectum").
+function mentalModelHTML(chain){
+  const steps = chain.steps || [];
+  return `<div class="mm-chain">${chain.label ? `<span class="mm-label">${escapeHtml(chain.label)}</span>` : ""}
+    <ol class="mm-steps" aria-label="${escapeHtml((chain.label ? chain.label + ": " : "") + "steps in order")}">${steps.map((s, i) =>
+      `<li><span class="mm-step">${escapeHtml(s)}</span>${i < steps.length - 1 ? `<span class="mm-arrow" aria-hidden="true">&rarr;</span>` : ""}</li>`).join("")}</ol></div>`;
+}
+
+// Labels each trial box in a reading as "Core trial" (curriculum.json
+// coreTrials: know the takeaway) or "Know the name" (you'll hear it on service).
+function tierTrials(root, svcId){
+  const core = new Set((siteInfo(svcId).coreTrials || []).map(n => n.toLowerCase()));
+  if(!core.size) return;
+  root.querySelectorAll(".study .st-name, .trial .tr-name").forEach(nameEl => {
+    if(nameEl.querySelector(".st-tier")) return;
+    const isCore = core.has(nameEl.textContent.trim().toLowerCase());
+    nameEl.closest(".study, .trial").classList.add(isCore ? "is-core" : "is-name");
+    nameEl.insertAdjacentHTML("beforeend", ` <span class="st-tier">${isCore ? "Core trial" : "Know the name"}</span>`);
+  });
+}
+
+// Content metadata: the staging system the module teaches, the
 // guideline its tables are simplified from, and a review date only when one
 // is recorded in curriculum.json.
 function contentMetaHTML(svcId){
@@ -3936,7 +3923,7 @@ function contentMetaHTML(svcId){
   const items = [];
   if((info.staging || []).length) items.push(["Staging", info.staging.map(escapeHtml).join(", ")]);
   if(info.guideline) items.push(["Guidelines", `${escapeHtml(info.guideline)}`]);
-  if(info.reviewed) items.push(["Content review", escapeHtml(formatReviewed(info.reviewed))]);
+  if(info.reviewed) items.push(["Last reviewed", escapeHtml(formatReviewed(info.reviewed))]);
   if(!items.length) return "";
   return items.map(([k, v]) => `<div class="cm-item"><span class="cm-k">${k}</span><span class="cm-v">${v}</span></div>`).join("") +
     `<button class="cm-link link-btn" data-go="resources">See Sources &amp; References</button>`;
@@ -3945,16 +3932,6 @@ function formatReviewed(v){
   const m = /^(\d{4})-(\d{2})/.exec(v);
   if(!m) return v;
   return new Date(+m[1], +m[2] - 1, 1).toLocaleString("en-US", { month: "long", year: "numeric" });
-}
-function subIEssential(svcId){
-  const cat = docCategoriesFor(svcId).find(c => /^Workup/.test(c) && DOCS[svcId] && DOCS[svcId][c]);
-  if(!cat) return null;
-  const tmp = document.createElement("div");
-  tmp.innerHTML = DOCS[svcId][cat].html;
-  const pearls = [...tmp.querySelectorAll(".pearl")];
-  const hy = pearls.reverse().find(p => /high-yield/i.test(p.textContent)) || null;
-  const li = hy && hy.querySelector("li");
-  return li ? { cat, text: li.textContent.replace(/\s+/g, " ").trim() } : null;
 }
 // Restrained labels on callouts that already exist in the readings.
 function labelCallouts(root){
@@ -3966,7 +3943,19 @@ function labelCallouts(root){
     const b = document.createElement("span");
     b.className = `edu-badge ${hy ? "badge-hy" : "badge-pearl"}`;
     b.textContent = hy ? "High-yield summary" : "Clinical pearl";
-    if(hy) p.classList.add("pearl-hy");
+    if(hy){
+      p.classList.add("pearl-hy");
+      // "If you remember only N things": a numbered list built for recall
+      const ul = /^high-yield summary$/i.test(head) ? p.querySelector(":scope > ul") : null;
+      if(ul){
+        const ol = document.createElement("ol");
+        ol.innerHTML = ul.innerHTML;
+        ul.replaceWith(ol);
+        const n = ol.children.length;
+        const words = ["", "one thing", "two things", "three things", "four things", "five things", "six things", "seven things"];
+        ol.insertAdjacentHTML("beforebegin", `<p class="hy-lead">If you remember only ${words[n] || n + " things"} from this reading:</p>`);
+      }
+    }
     // when the callout's own heading just repeats the label, the badge replaces it
     if(strong && /^(high-yield summary|clinical pearl)$/i.test(head)){ strong.classList.add("visually-hidden"); b.setAttribute("aria-hidden", "true"); }
     p.insertBefore(b, p.firstChild);
@@ -4022,6 +4011,9 @@ function openDoc(svcId, catName){
     cards: svcCards(svcId).filter(c => c.category === catName),
     facts: [["Disease site", svc.name], ["Module", catName]],
     caseSvc: caseList.length ? svcId : null,
+    practiceFirst: idx === catNames.length - 1,
+    attending: (info.attendingQuestions || []).filter(a => a.module === catName).map(a => a.q),
+    trialSvc: svcId,
     refs: moduleRefsHTML(svcId, doc.html),
     reviewed: info.reviewed,
     path: {
@@ -4139,8 +4131,9 @@ function moduleRefsHTML(svcId, html){
 }
 
 // opts: { color, crumbs, eyebrow, position, title, lede, html, introLabel,
-//   goals, essentials, objectives, mount(bodyEl), cards, facts, caseSvc, refs,
-//   reviewed, path:{title, items}, prev, next, navLabel }
+//   goals, essentials, objectives, mount(bodyEl), cards, facts, caseSvc,
+//   practiceFirst, attending, trialSvc, refs, reviewed, path:{title, items},
+//   prev, next, navLabel }
 function renderModulePage(o){
   const view = document.getElementById("view-doc");
   view.style.setProperty("--svc", o.color);
@@ -4171,6 +4164,7 @@ function renderModulePage(o){
   o.mount && o.mount(bodyEl);
   mountQuizCarousels();
   labelCallouts(bodyEl);
+  if(o.trialSvc) tierTrials(bodyEl, o.trialSvc);
   styleLearningComponents(bodyEl, o.bigIdeaBadge);
 
   // on-this-page (desktop rail + mobile disclosure)
@@ -4216,14 +4210,24 @@ function renderModulePage(o){
     const done = list.filter(c => isCaseDone(svcId, c.id)).length;
     const nextIdx = list.findIndex(c => !isCaseDone(svcId, c.id));
     const svc = SERVICES.find(s => s.id === svcId);
+    const lead = o.practiceFirst
+      ? `You've finished the ${escapeHtml(svc.name)} readings. Now work through a patient from consult to plan.`
+      : `Try what you just read on a patient.`;
     document.getElementById("loop-a-sub").innerHTML = nextIdx >= 0
-      ? `Apply what you learned in a clinical case. Up next: <strong>${escapeHtml(list[nextIdx].title)}</strong> <span class="loop-meta tabular">(${done} of ${list.length} completed)</span>`
+      ? `${lead} Up next: <strong>${escapeHtml(list[nextIdx].title)}</strong> <span class="loop-meta tabular">(${done} of ${list.length} completed)</span>`
       : `You've completed all ${list.length} ${escapeHtml(svc.name)} cases. Revisit any of them.`;
     const btn = document.getElementById("btn-doc-case");
+    btn.className = o.practiceFirst ? "btn-cta" : "btn-cta-secondary";
     btn.innerHTML = nextIdx >= 0 ? `Start ${escapeHtml(svc.name)} case <span aria-hidden="true">&rarr;</span>` : `Review ${escapeHtml(svc.name)} cases <span aria-hidden="true">&rarr;</span>`;
     btn.onclick = () => { if(nextIdx >= 0){ casesOrigin = "service"; openCaseStepper(svcId, nextIdx); } else openCaseList(svcId, "service"); };
   }
   document.getElementById("loop-row").hidden = !cards.length && !o.caseSvc;
+  document.getElementById("loop-row").classList.toggle("practice-first", !!(o.caseSvc && o.practiceFirst));
+
+  // attending questions this reading answers (from curriculum.json)
+  const aq = o.attending || [];
+  document.getElementById("doc-aq").hidden = !aq.length;
+  document.getElementById("doc-aq-list").innerHTML = aq.map(q => `<li><span class="aq-q">${escapeHtml(q)}</span></li>`).join("");
 
   // what you should know
   const know = document.getElementById("doc-know");
@@ -4236,7 +4240,7 @@ function renderModulePage(o){
   refs.hidden = !o.refs;
   document.getElementById("doc-refs-body").innerHTML = o.refs || "";
   const meta = document.getElementById("doc-meta");
-  meta.innerHTML = o.reviewed ? `<div class="cm-item"><span class="cm-k">Content review</span><span class="cm-v">Last reviewed ${escapeHtml(formatReviewed(o.reviewed))}</span></div>` : "";
+  meta.innerHTML = o.reviewed ? `<div class="cm-item"><span class="cm-k">Last reviewed</span><span class="cm-v">${escapeHtml(formatReviewed(o.reviewed))}</span></div>` : "";
   meta.hidden = !o.reviewed;
   document.getElementById("doc-sources-line").hidden = true;
 
@@ -4379,7 +4383,7 @@ function plateGalleryHTML(items){
           <div class="plate-gallery-img style-${g.style || "schematic"} ${g.image ? "has-image" : ""}">
             ${g.image
               ? `<button class="plate-gallery-open" data-lightbox="${g.image}" data-lightbox-title="${escapeHtml(g.title)}" data-lightbox-caption="${escapeHtml(g.caption || "")}" aria-label="Enlarge: ${escapeHtml(g.title)}"><img src="${g.image}" alt="${escapeHtml(g.title)}"></button>`
-              : `<span class="plate-placeholder-badge">Image placeholder</span>`}
+              : `<span class="plate-placeholder-badge">Schematic, not a real scan</span>`}
           </div>
           <figcaption><strong>${escapeHtml(g.title)}</strong>${g.caption ? ` ${escapeHtml(g.caption)}` : ""}</figcaption>
         </figure>`).join("")}
@@ -4479,7 +4483,7 @@ function renderPlateBody(){
 
   const imageHtml = `
     <div class="plate-image-wrap style-${plate.style} ${plate.image ? 'has-image' : ''}">
-      ${plate.image ? `<img class="plate-image" src="${plate.image}" alt="${escapeHtml(plate.title)}">` : `<span class="plate-placeholder-badge">Placeholder image</span>`}
+      ${plate.image ? `<img class="plate-image" src="${plate.image}" alt="${escapeHtml(plate.title)}">` : `<span class="plate-placeholder-badge">Schematic, not a real scan</span>`}
       ${hotspotsHtml}
     </div>
     <div class="plate-caption">${escapeHtml(plate.caption)}</div>
@@ -4665,7 +4669,7 @@ function mountPlateGroup(container, data, kindLabel, svcColor){
 
     const imageHtml = `
       <div class="plate-image-wrap style-${plate.style} ${plate.image ? 'has-image' : ''}">
-        ${plate.image ? `<img class="plate-image" src="${plate.image}" alt="${escapeHtml(plate.title)}">` : `<span class="plate-placeholder-badge">Placeholder image</span>`}
+        ${plate.image ? `<img class="plate-image" src="${plate.image}" alt="${escapeHtml(plate.title)}">` : `<span class="plate-placeholder-badge">Schematic, not a real scan</span>`}
         ${hotspotsHtml}
       </div>
       <div class="plate-caption">${escapeHtml(plate.caption)}</div>
@@ -5445,7 +5449,6 @@ function init(){
   document.getElementById("theme-system").addEventListener("click", ()=>setTheme("system"));
   document.getElementById("theme-dark").addEventListener("click", ()=>setTheme("dark"));
 
-  document.getElementById("btn-study-all").addEventListener("click", onNavCards);
   document.getElementById("btn-back-dashboard").addEventListener("click", ()=> goHome("disease-sites"));
   document.getElementById("btn-back-from-doc").addEventListener("click", ()=>{
     if(currentDoc.kind === "background"){ renderDashboard(); showView("view-dashboard"); }

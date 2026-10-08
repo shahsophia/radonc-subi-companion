@@ -106,7 +106,7 @@
       "label": "Carina",
       "x": 49.5,
       "y": 36.6,
-      "blurb": "Tracheal bifurcation at the sternal angle (T4–T5). Carinal invasion = T4."
+      "blurb": "Tracheal bifurcation at the sternal angle (T4-T5). Carinal invasion = T4."
      },
      {
       "id": "rmb",
@@ -363,7 +363,7 @@
      },
      {
       "id": "s12-14",
-      "label": "Stations 12–14: Lobar, Segmental, Subsegmental",
+      "label": "Stations 12-14: Lobar, Segmental, Subsegmental",
       "x": 70.8,
       "y": 84.8,
       "blurb": "Intrapulmonary nodes along the lobar (12), segmental (13), and subsegmental (14) bronchi. N1; usually found by the pathologist, not on imaging."

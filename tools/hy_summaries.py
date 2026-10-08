@@ -95,7 +95,7 @@ HY = {
 },
 "gi": {
 "Epidemiology & Risk Factors": [
- "GI is six different radiation oncology diseases, and each has its own treatment identity: chemoradiation cures anal cancer, rectal cancer is risk-adapted around MRI, esophageal cancer is neoadjuvant or definitive, and pancreas, liver, and stomach use radiation selectively.",
+ "GI is six diseases with six treatment identities: chemoradiation cures anal cancer, rectal treatment is risk-adapted around the MRI, esophageal RT is neoadjuvant or definitive, and pancreas, liver, and stomach use RT selectively.",
  "Esophageal squamous cell carcinoma is upper or mid esophageal and linked to smoking and alcohol, while adenocarcinoma is distal or at the GEJ and linked to Barrett's, GERD, and obesity.",
  "Pancreatic cancer classically presents with painless jaundice, back pain, or new diabetes with weight loss, and it is disproportionately lethal because it is usually found late.",
  "Hepatocellular carcinoma usually arises in cirrhosis, so liver function limits treatment as much as the tumor does.",
@@ -258,9 +258,9 @@ HY = {
 ],
 "Anatomy & Lymphatics": [
  "Tumor location predicts both what the tumor can invade and which organs the radiation plan must protect.",
- "Peripheral tumors bring the lung and chest wall into the plan, central tumors bring the airway, esophagus, heart, and great vessels, apical tumors bring the brachial plexus and spinal cord, and lower lobe tumors move the most with breathing.",
+ "Location sets the OARs: peripheral tumors bring the lung and chest wall, central tumors the airway, esophagus, heart, and great vessels, and apical tumors the brachial plexus and cord; lower lobe tumors move the most.",
  "Central and ultracentral tumors are defined by how close they sit to the proximal bronchial tree and mediastinal structures, and exact definitions vary by protocol.",
- "Hilar and intrapulmonary nodes (stations 10 to 14) are N1, ipsilateral mediastinal nodes (stations 2 to 9) are N2, and contralateral or supraclavicular nodes are N3, with station 7 always N2 and stations 5 and 6 on the left.",
+ "Hilar and intrapulmonary nodes (stations 10 to 14) are N1, ipsilateral mediastinal nodes (stations 2 to 9, including subcarinal station 7) are N2, and contralateral or supraclavicular nodes are N3.",
  "If nodal status would change management, a suspicious mediastinal node needs tissue, usually by EBUS.",
 ],
 "Imaging": [
@@ -298,7 +298,7 @@ for site, sections in HY.items():
     d = json.load(open(p, encoding="utf8"))
     for cat, items in sections.items():
         assert 4 <= len(items) <= 5, (site, cat)
-        assert not any(("&rarr;" in t or "<strong>" in t or "—" in t) for t in items), (site, cat)
+        assert not any(("&rarr;" in t or "<strong>" in t or "\u2014" in t or "&mda" + "sh;" in t) for t in items), (site, cat)
         html = d[cat]["html"]
         new, n = PEARL.subn(lambda m: block(items), html)
         assert n == 1, (site, cat, n)

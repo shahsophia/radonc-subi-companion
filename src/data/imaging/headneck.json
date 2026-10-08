@@ -87,37 +87,45 @@
         "id": "hn-oc-pet",
         "title": "Oral Cavity - PET/CT",
         "style": "pet",
-        "caption": "Placeholder PET/CT-style axial slice - swap in a real de-identified PET/CT image here.",
+        "caption": "Staging FDG PET/CT for a T4aN2b left buccal mucosa cancer: fused PET/CT on top, matching CT below. Arrows and panel letters removed. Marcus C, Cancers 2025 (PMC12523320), Fig. 1A-D, CC BY 4.0.",
         "hotspots": [
           {
             "id": "oc-pet-primary",
-            "label": "Primary Tumor - FDG-Avid Focus",
-            "x": 45,
-            "y": 55,
-            "blurb": "Confirms metabolic activity and helps define gross tumor extent, though spatial resolution is lower than MRI/CT."
+            "label": "Primary Tumor (FDG-Avid)",
+            "x": 44.7,
+            "y": 14.0,
+            "blurb": "Intense uptake in the left buccal mass. PET confirms active tumor but blurs its edges, so MRI or CT still defines the extent."
           },
           {
-            "id": "oc-pet-physiologic",
-            "label": "Physiologic Muscle Uptake",
-            "x": 40,
-            "y": 45,
-            "blurb": "Tongue and pharyngeal musculature normally take up FDG, especially with swallowing or talking during the uptake period. Symmetric uptake is reassuring; asymmetric focal uptake is not - knowing this pitfall prevents false-positive reads."
+            "id": "oc-pet-primary-ct",
+            "label": "Primary on CT",
+            "x": 46.0,
+            "y": 63.0,
+            "blurb": "The same buccal mass on CT. Read PET and CT together: CT shows the anatomy, PET shows which tissue is active."
+          },
+          {
+            "id": "oc-pet-bone",
+            "label": "Mandible",
+            "x": 41.4,
+            "y": 66.0,
+            "blurb": "Check the cortex next to the tumor. Invasion through cortical bone makes an oral cavity cancer T4a."
           },
           {
             "id": "oc-pet-nodes",
-            "label": "Nodal FDG Uptake",
-            "x": 30,
-            "y": 32,
-            "blurb": "PET/CT is more sensitive than CT alone for detecting nodal metastases, particularly useful for an unknown primary workup."
+            "label": "FDG-Avid Level IB Node",
+            "x": 73.6,
+            "y": 16.0,
+            "blurb": "Small but avid submandibular node. PET often catches nodes that are not yet enlarged on CT."
           },
           {
-            "id": "oc-pet-distant",
-            "label": "Distant Mets / Second Primary Screening",
-            "x": 65,
-            "y": 70,
-            "blurb": "H&N cancer patients (especially with a heavy smoking history) are at real risk for a synchronous second aerodigestive primary or distant mets - lung is the classic site to scrutinize."
+            "id": "oc-pet-nodes-ct",
+            "label": "Same Node on CT",
+            "x": 73.6,
+            "y": 66.0,
+            "blurb": "Under 1 cm on CT, so size alone would miss it. Avid ipsilateral nodes upstage the neck (here N2b)."
           }
-        ]
+        ],
+        "image": "images/headneck/hn-oc-pet.jpg"
       }
     ]
   },

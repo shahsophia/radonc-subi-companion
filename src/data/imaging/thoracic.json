@@ -4,7 +4,7 @@
   "plates": [
    {
     "id": "th-ax-inlet",
-    "title": "Axial: Great Vessels (T2–T3)",
+    "title": "Axial: Great Vessels (T2-T3)",
     "style": "ct",
     "caption": "Contrast-enhanced axial CT just above the aortic arch, patient's right on your left. The five vessels in front of the trachea are the arch branches and the two brachiocephalic veins. Source: Hashmi R, Sectional Anatomy Quiz III, Asia Ocean J Nucl Med Biol (PMC6352052), CC BY 3.0; letter labels removed.",
     "hotspots": [
@@ -120,7 +120,7 @@
       "label": "Sternum (Manubrium)",
       "x": 46.5,
       "y": 15.0,
-      "blurb": "The manubrium joins the sternal body at the sternal angle (T4–T5), the level of the carina and the bottom of the arch."
+      "blurb": "The manubrium joins the sternal body at the sternal angle (T4-T5), the level of the carina and the bottom of the arch."
      },
      {
       "id": "vb",
@@ -134,7 +134,7 @@
    },
    {
     "id": "th-ax-apwindow",
-    "title": "Axial: Pulmonary Arteries & Main Bronchi (T5–T6)",
+    "title": "Axial: Pulmonary Arteries & Main Bronchi (T5-T6)",
     "style": "ct",
     "caption": "Contrast-enhanced axial CT just below the carina: the main pulmonary artery divides and the two main bronchi have separated. The SVC looks bright and streaky from undiluted contrast.",
     "hotspots": [
@@ -213,7 +213,7 @@
    },
    {
     "id": "th-ax-heart",
-    "title": "Axial: Heart (T7–T8)",
+    "title": "Axial: Heart (T7-T8)",
     "style": "ct",
     "caption": "Contrast-enhanced axial CT through the four cardiac chambers. Source: Hashmi R, Sectional Anatomy Quiz IV, Asia Ocean J Nucl Med Biol (PMC6661304), CC BY 3.0; letter labels and arrows removed.",
     "hotspots": [
@@ -287,7 +287,7 @@
     "id": "th-coronal",
     "title": "Coronal: Subcarinal Plane (IASLC Stations)",
     "style": "ct",
-    "caption": "Coronal CT through the subcarinal space, with the IASLC nodal stations drawn in color by the atlas authors. Source: Itazawa T et al., JLCS–JASTRO CT atlas for lymph node stations, J Radiat Res 2017 (PMC5321185), CC BY-NC 4.0.",
+    "caption": "Coronal CT through the subcarinal space, with the IASLC nodal stations drawn in color by the atlas authors. Source: Itazawa T et al., JLCS-JASTRO CT atlas for lymph node stations, J Radiat Res 2017 (PMC5321185), CC BY-NC 4.0.",
     "hotspots": [
      {
       "id": "arch",
@@ -381,7 +381,7 @@
     "id": "th-nodes-ax-arch",
     "title": "Axial CT: Above the Arch",
     "style": "ct",
-    "caption": "Upper mediastinal CT (above the arch) with station contours. Source: JLCS–JASTRO CT atlas of regional lymph node stations, J Radiat Res 2017 (PMC5321185), Fig. 3, CC BY-NC 4.0; station labels removed. The dashed blue line (Line A) separates 3a from 2R/2L.",
+    "caption": "Upper mediastinal CT (above the arch) with station contours. Source: JLCS-JASTRO CT atlas of regional lymph node stations, J Radiat Res 2017 (PMC5321185), Fig. 3, CC BY-NC 4.0; station labels removed. The dashed blue line (Line A) separates 3a from 2R/2L.",
     "hotspots": [
      {
       "id": "a3a",
@@ -418,7 +418,7 @@
     "id": "th-nodes-ax-ap",
     "title": "Axial CT: Azygos Arch / AP Window",
     "style": "ct",
-    "caption": "CT at the azygos arch / AP window with station contours. Source: JLCS–JASTRO CT atlas, J Radiat Res 2017 (PMC5321185), Fig. 5, CC BY-NC 4.0; station labels removed. The dashed red and blue lines (Lines B and C) are the atlas's boundaries for station 5.",
+    "caption": "CT at the azygos arch / AP window with station contours. Source: JLCS-JASTRO CT atlas, J Radiat Res 2017 (PMC5321185), Fig. 5, CC BY-NC 4.0; station labels removed. The dashed red and blue lines (Lines B and C) are the atlas's boundaries for station 5.",
     "hotspots": [
      {
       "id": "b3a",
@@ -469,7 +469,7 @@
     "id": "th-nodes-ax-sub",
     "title": "Axial CT: At & Below the Carina",
     "style": "ct",
-    "caption": "CT at the subcarinal level with station contours. Source: JLCS–JASTRO CT atlas, J Radiat Res 2017 (PMC5321185), CC BY-NC 4.0; station labels removed.",
+    "caption": "CT at the subcarinal level with station contours. Source: JLCS-JASTRO CT atlas, J Radiat Res 2017 (PMC5321185), CC BY-NC 4.0; station labels removed.",
     "hotspots": [
      {
       "id": "c7",
@@ -707,7 +707,7 @@
       "label": "Brachial Plexus / Superior Sulcus",
       "x": 35,
       "y": 53,
-      "blurb": "The thoracic inlet above the tumor, where the lower trunk (C8–T1) crosses the first rib. Here the fat plane is preserved: MRI is the best test for plexus invasion (T4)."
+      "blurb": "The thoracic inlet above the tumor, where the lower trunk (C8-T1) crosses the first rib. Here the fat plane is preserved: MRI is the best test for plexus invasion (T4)."
      },
      {
       "id": "canal",
@@ -729,121 +729,116 @@
   ]
  },
  "img-th-sim": {
-  "intro": "<p>The scans radiation oncologists make themselves: the <strong>4D-CT simulation</strong> used to plan, and the <strong>follow-up CT after SBRT</strong>, where you need to tell expected fibrosis from recurrence.</p>",
+  "intro": "<p>The scans radiation oncologists make themselves: the <strong>planning CT</strong> for lung SBRT, and the <strong>follow-up CT after SBRT</strong>, where you need to tell expected fibrosis from recurrence.</p>",
   "plates": [
    {
     "id": "th-img-4dct",
-    "title": "4D-CT Planning: Targets & OARs",
+    "title": "SBRT Planning CT: Targets & Dose",
     "style": "ct",
-    "caption": "Placeholder CT-style slice (axial planning CT with target volumes and OARs). Swap in a real de-identified CT image here.",
+    "caption": "Axial slice of a lung SBRT plan (50 Gy in 5 fractions) for a peripheral right lung metastasis. Red is the ITV, orange the PTV, and the green and blue lines are lower isodoses. Wegner RE et al., Front Oncol 2019 (PMC6514183), Fig. 1, CC BY 4.0.",
     "hotspots": [
-     {
-      "id": "gtv",
-      "label": "GTV",
-      "x": 30,
-      "y": 40,
-      "blurb": "Visible tumor on the lung window (plus PET-positive nodes for stage III)."
-     },
      {
       "id": "itv",
       "label": "ITV (Motion Envelope)",
-      "x": 30,
-      "y": 46,
-      "blurb": "GTV across all breathing phases of the 4D-CT (often drawn on the MIP). Covers where the tumor goes when the patient breathes."
+      "x": 23.0,
+      "y": 50.8,
+      "blurb": "The tumor on every phase of the 4D-CT, combined. It covers where the tumor moves as the patient breathes."
      },
      {
       "id": "ptv",
       "label": "PTV",
-      "x": 30,
-      "y": 52,
-      "blurb": "ITV plus a setup margin (about 5 mm for SBRT). For stage III, a CTV (about 5–8 mm) comes first."
+      "x": 26.5,
+      "y": 49.9,
+      "blurb": "ITV plus a setup margin, about 5 mm for SBRT. The prescription dose covers this ring."
      },
      {
-      "id": "pbt",
-      "label": "Proximal Bronchial Tree",
-      "x": 48,
-      "y": 36,
-      "blurb": "Contoured for every lung SBRT. Defines central and ultracentral."
+      "id": "iso10",
+      "label": "Low-Dose Spill (10 Gy)",
+      "x": 10.0,
+      "y": 59.1,
+      "blurb": "The star-shaped outline is the low-dose bath from many beam angles. It spreads dose thinly instead of piling it on one path."
      },
      {
-      "id": "esoph",
-      "label": "Esophagus",
-      "x": 53,
-      "y": 62,
-      "blurb": "Mean dose drives esophagitis in chemoradiation."
+      "id": "chestwall",
+      "label": "Chest Wall (Rib)",
+      "x": 21.0,
+      "y": 56.4,
+      "blurb": "Peripheral tumors sit against the chest wall. High dose here causes chest wall pain and rib fractures."
      },
      {
       "id": "heart",
       "label": "Heart",
-      "x": 62,
-      "y": 64,
-      "blurb": "Keep mean heart dose low; heart dose predicted survival in RTOG 0617."
+      "x": 54.0,
+      "y": 38.0,
+      "blurb": "Contoured for every lung plan. Mean heart dose predicted survival in RTOG 0617."
+     },
+     {
+      "id": "liver",
+      "label": "Liver Dome",
+      "x": 31.0,
+      "y": 40.7,
+      "blurb": "At the lung bases the liver rises into the slice. It moves with breathing, like the tumor."
      },
      {
       "id": "cord",
       "label": "Spinal Cord",
-      "x": 50,
-      "y": 84,
-      "blurb": "Max about 45–50 Gy conventional."
-     },
-     {
-      "id": "lungs",
-      "label": "Lungs Minus GTV",
-      "x": 76,
-      "y": 40,
-      "blurb": "V20 under about 30–35% and mean lung dose under about 20 Gy limit pneumonitis."
+      "x": 48.0,
+      "y": 68.3,
+      "blurb": "Serial organ with a strict maximum dose. Every plan reports its hottest point."
      }
-    ]
+    ],
+    "image": "images/thoracic/th-sbrt-plan.jpg"
    },
    {
     "id": "th-img-postsbrt",
-    "title": "Follow-Up CT After SBRT",
+    "title": "CT After SBRT: Mass-Like Fibrosis",
     "style": "ct",
-    "caption": "Placeholder CT-style slice (axial CT 18 months after lung SBRT). Swap in a real de-identified CT image here.",
+    "caption": "Right upper lobe cancer treated with SBRT (70 Gy in 10 fractions), followed for 4 years: (A) before treatment, (B) plan, (C) 3 months, (D) 9 months, (E) 3 years, (F) 4 years. Strange TA et al., Diagnostics 2023 (PMC10606648), Fig. 9, CC BY 4.0.",
     "hotspots": [
      {
-      "id": "fibrosis",
-      "label": "Linear / Mass-Like Fibrosis",
-      "x": 30,
-      "y": 40,
-      "blurb": "Expected. Consolidation and scarring conforming to the high-dose region, stable or shrinking over time."
+      "id": "pre",
+      "label": "Tumor Before SBRT",
+      "x": 17.0,
+      "y": 30.8,
+      "blurb": "Spiculated right upper lobe cancer (asterisk) before treatment. This is the baseline for every later scan."
      },
      {
-      "id": "air-bronch-keep",
-      "label": "Preserved Air Bronchograms",
-      "x": 34,
-      "y": 36,
-      "blurb": "Reassuring. Fibrosis usually keeps its air bronchograms."
+      "id": "plan",
+      "label": "SBRT Plan",
+      "x": 42.0,
+      "y": 29.3,
+      "blurb": "The tumor sits inside the highest isodose lines. Later fibrosis takes the shape of this high-dose region."
      },
      {
-      "id": "bulging",
-      "label": "Bulging Margin",
-      "x": 24,
-      "y": 44,
-      "blurb": "High-risk feature. A convex, bulging edge suggests tumor regrowth."
+      "id": "m3",
+      "label": "3 Months",
+      "x": 85.0,
+      "y": 28.5,
+      "blurb": "Slight shrinkage with minimal pneumonitis next to it. Early scans can look worse before they look better."
      },
      {
-      "id": "growth",
-      "label": "Enlargement After 12 Months",
-      "x": 36,
-      "y": 50,
-      "blurb": "The strongest warning sign. Fibrosis should stabilize after the first year."
+      "id": "m9",
+      "label": "9 Months: Retraction",
+      "x": 14.0,
+      "y": 65.8,
+      "blurb": "The treated area pulls toward the pleura with a solid rim around it. Expected fibrosis conforms to the dose and keeps its air bronchograms."
      },
      {
-      "id": "cc-growth",
-      "label": "Craniocaudal Growth",
-      "x": 30,
-      "y": 30,
-      "blurb": "Growth over 5 mm (and 20%) in the head-to-foot direction is a high-risk feature."
+      "id": "y3",
+      "label": "3 Years: Mass-Like Opacity",
+      "x": 46.0,
+      "y": 57.8,
+      "blurb": "A triangular opacity at the treated site. Fibrosis can keep changing for 2 to 4 years."
      },
      {
-      "id": "rib-fx",
-      "label": "Rib Fracture",
-      "x": 12,
-      "y": 50,
-      "blurb": "Late SBRT toxicity for chest wall-adjacent tumors."
+      "id": "y4",
+      "label": "4 Years: Stable Scar",
+      "x": 83.0,
+      "y": 57.8,
+      "blurb": "Stable compared with year 3. Growth after the first year, a bulging margin, or craniocaudal growth would raise concern for recurrence; PET or biopsy settles it."
      }
-    ]
+    ],
+    "image": "images/thoracic/th-postsbrt.jpg"
    }
   ]
  }

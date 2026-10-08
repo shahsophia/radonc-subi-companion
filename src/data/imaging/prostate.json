@@ -173,7 +173,7 @@
     "id": "pr-mri-sag",
     "title": "MRI: Seminal Vesicle Invasion (Axial & Coronal T2)",
     "style": "mri",
-    "caption": "Seminal vesicle invasion (T3b) on axial (left) and coronal (right) T2 MRI: dark tumor replaces the normally bright seminal vesicle tubules. Chakrabarti D et al., CA Cancer J Clin 2025 (PMC12593286), Fig. 2C–D, CC BY 4.0.",
+    "caption": "Seminal vesicle invasion (T3b) on axial (left) and coronal (right) T2 MRI: dark tumor replaces the normally bright seminal vesicle tubules. Chakrabarti D et al., CA Cancer J Clin 2025 (PMC12593286), Fig. 2C-D, CC BY 4.0.",
     "hotspots": [
      {
       "id": "sag-sv",
@@ -223,11 +223,11 @@
   ]
  },
  "img-pr-nodes": {
-  "intro": "<p>The pelvic nodes are found on CT by <strong>following the vessels</strong>. Step down three levels, from the top of the elective pelvic field at L5&ndash;S1 to the obturator nodes at the femoral heads, then see what involved nodes and a nodal target look like.</p>",
+  "intro": "<p>The pelvic nodes are found on CT by <strong>following the vessels</strong>. Step down three levels, from the top of the elective pelvic field at L5-S1 to the obturator nodes at the femoral heads, then see what involved nodes and a nodal target look like.</p>",
   "plates": [
    {
     "id": "pr-nodes-ax-high",
-    "title": "Axial CT: L5–S1 (Top of Pelvic Field)",
+    "title": "Axial CT: L5-S1 (Top of Pelvic Field)",
     "style": "ct",
     "caption": "Contrast-enhanced axial CT at L5 in a healthy adult male, where the common iliac vessels sit in front of the spine. Häggström M, CT of a normal abdomen and pelvis (Wikimedia Commons), CC0.",
     "hotspots": [
@@ -305,7 +305,7 @@
      },
      {
       "id": "m-presacral",
-      "label": "Presacral Nodes (S2–S3)",
+      "label": "Presacral Nodes (S2-S3)",
       "x": 51.7,
       "y": 72.4,
       "blurb": "The elective field covers presacral nodes down to about S3."

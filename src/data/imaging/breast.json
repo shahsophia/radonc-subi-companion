@@ -12,49 +12,49 @@
      {
       "id": "mass",
       "label": "Irregular Mass (Cancer)",
-      "x": 5,
+      "x": 25.5,
       "y": 13,
       "blurb": "A dense mass with irregular, ill-defined margins. Irregular or spiculated margins are the classic sign of invasive cancer and are BI-RADS 4 or 5 (biopsy)."
      },
      {
       "id": "vessel",
       "label": "Calcified Blood Vessel",
-      "x": 21,
+      "x": 34.2,
       "y": 17,
       "blurb": "A thin, winding, tubular line of calcium along a vein or artery wall. Vascular calcifications are benign (BI-RADS 2) and should not be confused with the fine, clustered calcifications of DCIS."
      },
      {
       "id": "fg",
       "label": "Fibroglandular Tissue",
-      "x": 38,
+      "x": 43.4,
       "y": 50,
       "blurb": "The white, wispy tissue is glands and connective tissue. The more of it there is (denser breasts), the easier it is for a cancer to hide."
      },
      {
       "id": "fat",
       "label": "Fat (Dark Areas)",
-      "x": 46,
+      "x": 47.8,
       "y": 36,
       "blurb": "Fat is gray to dark on a mammogram. A white cancer stands out best against a fatty background, which is why mammograms work better in older women."
      },
      {
       "id": "nipple",
       "label": "Nipple",
-      "x": 72,
+      "x": 61.9,
       "y": 42,
       "blurb": "The reference point for describing a lesion: clock face position and distance from the nipple (for example, 'left breast 2:00, 4 cm from the nipple')."
      },
      {
       "id": "skin",
       "label": "Skin Line",
-      "x": 64,
+      "x": 57.6,
       "y": 80,
       "blurb": "Thin, even skin edge. Diffuse skin thickening suggests inflammatory cancer (T4d) or post-radiation change."
      },
      {
       "id": "benign-calc",
       "label": "Coarse Benign Calcification",
-      "x": 5,
+      "x": 25.5,
       "y": 83,
       "blurb": "Large, smooth, rim-shaped calcification. Big, round, or rim calcifications are benign (BI-RADS 2); fine pleomorphic or linear branching calcifications are the suspicious ones."
      }
@@ -85,7 +85,7 @@
       "label": "Irregular, Angular Margins",
       "x": 41,
       "y": 55,
-      "blurb": "Margins that are angular or spiculated rather than smooth and circumscribed are suspicious for cancer (BI-RADS 4–5)."
+      "blurb": "Margins that are angular or spiculated rather than smooth and circumscribed are suspicious for cancer (BI-RADS 4-5)."
      },
      {
       "id": "us-skin",
@@ -114,15 +114,9 @@
    },
    {
     "title": "Magnification view of calcifications",
-    "caption": "Fine linear and branching (casting) calcifications of DCIS on a magnified CC view.",
+    "caption": "Fine linear and branching (casting) calcifications of DCIS on a magnified CC view. Jmarchn, Wikimedia Commons, CC BY-SA 3.0.",
     "style": "mammo",
     "image": "images/breast/br-g-calcs.jpg"
-   },
-   {
-    "title": "Ultrasound of an axillary node",
-    "caption": "Axillary lymph node on ultrasound. Look at cortical thickness and the fatty hilum: a thickened cortex (over 3 mm) or a lost hilum is suspicious.",
-    "style": "us",
-    "image": "images/breast/br-g-us-node.jpg"
    }
   ]
  },
@@ -131,7 +125,7 @@
   "plates": [
    {
     "id": "br-mri-dce",
-    "title": "Breast MRI — Contrast-Enhanced Axial",
+    "title": "Breast MRI: Contrast-Enhanced Axial",
     "style": "mri",
     "caption": "Axial contrast-enhanced (DCE) breast MRI of both breasts; the patient's right breast is on your left. The bright structure below is the heart.",
     "hotspots": [
@@ -187,53 +181,61 @@
   "plates": [
    {
     "id": "br-ct-sim",
-    "title": "CT Simulation — Axial",
+    "title": "CT Simulation: Right Breast Plan",
     "style": "ct",
-    "caption": "Placeholder CT-style axial slice through the treated breast — swap in a real labeled image here.",
+    "caption": "Planning CT for right breast radiation after lumpectomy, with the tumor bed, breast CTV, PTV, and organs at risk outlined. Text labels removed. Kolářová I et al., Curr Oncol 2024 (PMC10969207), Fig. 1, CC BY 4.0.",
     "hotspots": [
      {
       "id": "ct-cavity",
-      "label": "Lumpectomy Cavity / Seroma",
-      "x": 34,
-      "y": 40,
-      "blurb": "Fluid-filled cavity after surgery. It defines the tumor bed for a boost or partial breast RT."
+      "label": "Tumor Bed (Lumpectomy Cavity)",
+      "x": 15.8,
+      "y": 37.7,
+      "blurb": "The seroma and scar left by surgery. It defines the boost or partial breast target. Seroma is easiest to see in the first weeks after surgery."
      },
      {
       "id": "ct-clips",
-      "label": "Surgical Clips",
-      "x": 30,
-      "y": 46,
-      "blurb": "Placed by the surgeon to mark the cavity walls. Ask the surgeon to place them; they make the boost far more accurate."
+      "label": "Surgical Clip",
+      "x": 19.8,
+      "y": 35.4,
+      "blurb": "Bright dot on the cavity wall. Clips placed by the surgeon make the tumor bed far easier to find on CT, especially once the seroma resolves."
      },
      {
       "id": "ct-breast",
-      "label": "Whole Breast CTV",
-      "x": 40,
-      "y": 34,
-      "blurb": "All glandular tissue from the sternal edge to the midaxillary line, stopping above the pectoralis and a few mm below the skin."
+      "label": "Breast CTV",
+      "x": 14.0,
+      "y": 43.0,
+      "blurb": "The glandular breast tissue to be treated, stopping a few mm under the skin and above the pectoralis and ribs."
      },
      {
-      "id": "ct-heart",
-      "label": "Heart / LAD Region",
-      "x": 62,
-      "y": 68,
-      "blurb": "The left anterior descending artery lies right under the left breast. Heart dose increases cardiac events by about 7% per Gy of mean heart dose (Darby)."
+      "id": "ct-ptv",
+      "label": "PTV",
+      "x": 17.1,
+      "y": 51.0,
+      "blurb": "The CTV plus a margin for setup error and breathing. It is what the beams are shaped to cover."
      },
      {
       "id": "ct-lung",
       "label": "Ipsilateral Lung",
-      "x": 26,
-      "y": 68,
-      "blurb": "Tangent fields clip a slice of lung. Keeping that slice thin limits pneumonitis."
+      "x": 31.7,
+      "y": 56.5,
+      "blurb": "Tangent beams clip a thin slice of the lung behind the breast. Keeping that slice thin limits pneumonitis."
      },
      {
-      "id": "ct-imn",
-      "label": "Internal Mammary Region",
-      "x": 56,
-      "y": 40,
-      "blurb": "Covering the IMNs pushes the field deeper, raising heart and lung dose."
+      "id": "ct-heart",
+      "label": "Heart",
+      "x": 53.3,
+      "y": 38.7,
+      "blurb": "Far from a right breast target, which is why heart dose is mostly a left-sided problem. For left breast cancer, the LAD sits right under the breast and DIBH pulls it away."
+     },
+     {
+      "id": "ct-contra",
+      "label": "Contralateral Breast",
+      "x": 75.0,
+      "y": 22.1,
+      "blurb": "Contoured as an organ at risk. Keep its dose low, especially in young women, to limit second cancer risk."
      }
-    ]
+    ],
+    "image": "images/breast/br-ct-sim.jpg"
    }
   ],
   "gallery": [

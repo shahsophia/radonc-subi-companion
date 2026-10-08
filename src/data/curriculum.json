@@ -1,9 +1,23 @@
 {
- "_note": "Module metadata for disease-site cards and landing pages. Everything here describes content that already exists in docs/ (topics, objectives) or is named in it (guideline, staging, trials). 'reviewed' is optional (e.g. \"2026-10\"); the UI only shows a review date when one is recorded here. 'modules' holds per-reading metadata (lede, essentials, objectives), each written from that reading's own sections and High-Yield Summary.",
+ "_note": "Module metadata for disease-site cards and landing pages. Everything here describes content that already exists in docs/ (topics, objectives) or is named in it (guideline, staging, trials). 'card' is the one-line home-page description. 'reviewed' is optional (e.g. \"2026-10\"); the UI only shows a review date when one is recorded here. 'modules' holds per-reading metadata (lede, essentials, objectives), each written from that reading's own sections and High-Yield Summary. 'mentalModel' (one or more labeled step chains), 'centralQuestion', and 'attendingQuestions' (each tied to the reading that answers it) are shown on the site landing page; questions also appear at the end of their reading. 'coreTrials' marks the trials a Sub-I should know the takeaway for; every other trial box is labeled 'Know the name'.",
  "sites": {
   "headneck": {
    "title": "Head & Neck Cancer",
    "summary": "Subsite by subsite: oral cavity, oropharynx, nasopharynx, and larynx, with the neck node levels that drive what gets treated.",
+   "mentalModel": [
+    {
+     "steps": [
+      "Subsite",
+      "p16 / risk factors",
+      "Local extent and neck nodes",
+      "Resectable?",
+      "Adverse features after surgery",
+      "What RT must cover"
+     ]
+    }
+   ],
+   "centralQuestion": "Is this cancer better treated with surgery first or with radiation, and if radiation is used, which parts of the primary site and which neck levels need to be in the field?",
+   "card": "Oral cavity, oropharynx, nasopharynx, and larynx, and the neck node levels that decide what radiation treats.",
    "topics": [
     "HPV & Oropharynx",
     "Nasopharynx",
@@ -32,6 +46,41 @@
     "De-ESCALaTE",
     "Tata Memorial",
     "PARSPORT"
+   ],
+   "attendingQuestions": [
+    {
+     "q": "Why does p16 status matter in oropharynx cancer, and does it change the treatment?",
+     "module": "Epidemiology & Risk Factors"
+    },
+    {
+     "q": "What landmark separates the oral tongue from the base of tongue, and why does that line change the treatment?",
+     "module": "Anatomy"
+    },
+    {
+     "q": "For a tonsil cancer, which neck levels are at risk, and when can you treat only one side of the neck?",
+     "module": "Lymph Nodes"
+    },
+    {
+     "q": "Why does every head and neck patient see a dentist before radiation?",
+     "module": "Workup & Staging"
+    },
+    {
+     "q": "Which findings after surgery call for adjuvant radiation, and which two add chemotherapy?",
+     "module": "Treatment Paradigms"
+    },
+    {
+     "q": "What is the standard definitive dose, and what chemotherapy is given with it?",
+     "module": "Treatment Paradigms"
+    },
+    {
+     "q": "In locally advanced larynx cancer, what decides between organ preservation and laryngectomy?",
+     "module": "Treatment Paradigms"
+    }
+   ],
+   "coreTrials": [
+    "RTOG 9501 + EORTC 22931",
+    "RTOG 91-11",
+    "RTOG 1016 + De-ESCALaTE"
    ],
    "modules": {
     "Epidemiology & Risk Factors": {
@@ -135,6 +184,20 @@
   "breast": {
    "title": "Breast Cancer",
    "summary": "DCIS through locally advanced disease: receptor biology, regional nodes, the planning CT, staging before and after neoadjuvant therapy, and who gets what radiation after lumpectomy or mastectomy.",
+   "mentalModel": [
+    {
+     "steps": [
+      "Receptors and histology",
+      "Which operation",
+      "Nodal status",
+      "Residual risk",
+      "Breast or chest wall, ± boost, ± nodes",
+      "Protect heart and lung"
+     ]
+    }
+   ],
+   "centralQuestion": "After the operation this patient had, how much risk is left in the breast or chest wall and the regional nodes, and how much radiation does that risk justify?",
+   "card": "DCIS through locally advanced disease: receptor biology, staging, and who needs radiation after lumpectomy or mastectomy.",
    "topics": [
     "Receptor Subtypes",
     "Regional Nodes",
@@ -144,7 +207,7 @@
     "PMRT"
    ],
    "objectives": [
-    "Classify breast cancer as HR+/HER2−, HER2+, or triple-negative and by histology",
+    "Classify breast cancer as HR+/HER2-, HER2+, or triple-negative and by histology",
     "Map the regional lymph nodes to the radiation volumes that cover them",
     "Know what mammography, ultrasound, MRI, and the planning CT each contribute",
     "Stage with AJCC 8th edition, separating anatomic from prognostic stage and clinical from post-neoadjuvant stage",
@@ -175,11 +238,48 @@
     "NSABP B-51",
     "KEYNOTE-522"
    ],
+   "attendingQuestions": [
+    {
+     "q": "What are the three practical receptor groups, and what systemic therapy goes with each?",
+     "module": "Epidemiology & Risk Factors"
+    },
+    {
+     "q": "How does the pectoralis minor define axillary levels I, II, and III?",
+     "module": "Anatomy & Lymphatics"
+    },
+    {
+     "q": "Why do we use deep inspiration breath hold for many left-sided patients?",
+     "module": "Imaging"
+    },
+    {
+     "q": "After neoadjuvant chemotherapy, which stage drives the radiation decision?",
+     "module": "Workup & Staging"
+    },
+    {
+     "q": "Who gets a tumor bed boost after whole-breast radiation?",
+     "module": "Treatment Paradigms"
+    },
+    {
+     "q": "Does meeting Z0011 criteria mean the patient doesn't need regional nodal radiation?",
+     "module": "Treatment Paradigms"
+    },
+    {
+     "q": "What are the clear indications for post-mastectomy radiation?",
+     "module": "Treatment Paradigms"
+    }
+   ],
+   "coreTrials": [
+    "NSABP B-06 / Milan",
+    "ACOSOG Z0011",
+    "CALGB 9343 / PRIME II",
+    "START B / FAST-Forward",
+    "MA.20 / EORTC 22922"
+   ],
    "modules": {
     "Epidemiology & Risk Factors": {
      "lede": "Answer the first question: what kind of breast cancer is this? Receptor groups, histology, risk factors, and the hereditary syndromes that change radiation decisions.",
      "essentials": [
-      "HR+/HER2−, HER2+, and triple-negative",
+      "HR+/HER2-, HER2+, and triple-negative",
       "Ductal versus lobular, DCIS versus LCIS",
       "The five risk factor groups",
       "BRCA, TP53, and ATM"
@@ -264,6 +364,21 @@
   "thoracic": {
    "title": "Thoracic Cancer",
    "summary": "NSCLC and SCLC from biopsy to radiation plan: what kind of lung cancer it is, where it sits, how far it has spread, whether it is resectable, and what the radiation field must treat and protect.",
+   "mentalModel": [
+    {
+     "steps": [
+      "Histology",
+      "Location",
+      "Nodes",
+      "Metastases",
+      "Resectable and operable?",
+      "Surgery, SBRT, or chemoRT",
+      "RT plan"
+     ]
+    }
+   ],
+   "centralQuestion": "Can this tumor be removed in a patient who can tolerate surgery, and if radiation is used, what does the field need to cover while protecting the lungs, heart, esophagus, cord, and airway?",
+   "card": "Lung cancer from histology and staging to resectability, SBRT, chemoradiation, and treatment planning.",
    "topics": [
     "NSCLC vs SCLC",
     "Nodal Stations",
@@ -301,6 +416,43 @@
     "Turrisi",
     "CONVERT",
     "ADRIATIC"
+   ],
+   "attendingQuestions": [
+    {
+     "q": "What is the difference between N1, N2, and N3 disease?",
+     "module": "Workup & Staging"
+    },
+    {
+     "q": "When would you get an EBUS, and why isn't a PET-positive node enough?",
+     "module": "Workup & Staging"
+    },
+    {
+     "q": "What is the difference between resectability and operability?",
+     "module": "Workup & Staging"
+    },
+    {
+     "q": "Why do we simulate lung patients with a 4D-CT?",
+     "module": "Imaging"
+    },
+    {
+     "q": "What makes a lung tumor central or ultracentral, and how does that change SBRT?",
+     "module": "Treatment Paradigms"
+    },
+    {
+     "q": "Why isn't SBRT used for node-positive disease?",
+     "module": "Treatment Paradigms"
+    },
+    {
+     "q": "What is the standard treatment for unresectable stage III NSCLC?",
+     "module": "Treatment Paradigms"
+    }
+   ],
+   "coreTrials": [
+    "RTOG 0236",
+    "RTOG 0617",
+    "PACIFIC / LAURA",
+    "LungART",
+    "Turrisi / CONVERT"
    ],
    "modules": {
     "Epidemiology & Risk Factors": {
@@ -388,6 +540,21 @@
   "prostate": {
    "title": "Prostate Cancer",
    "summary": "The full radiation oncology workflow on one disease: PSA, MRI, and biopsy to an NCCN risk group, then radiation indication, target volumes, fractionation, image guidance, toxicity, and PSA follow-up.",
+   "mentalModel": [
+    {
+     "steps": [
+      "PSA",
+      "MRI",
+      "Biopsy",
+      "Grade Group",
+      "Risk group",
+      "Life expectancy",
+      "Treatment"
+     ]
+    }
+   ],
+   "centralQuestion": "For this risk group and life expectancy, does the patient need local treatment at all, and if so, how should radiation be combined with ADT, brachytherapy, pelvic nodal coverage, or systemic intensification?",
+   "card": "PSA → MRI → biopsy → Grade Group → risk → treatment → RT planning and follow-up.",
    "topics": [
     "PSA & MRI",
     "Grade Group & NCCN Risk",
@@ -431,6 +598,44 @@
     "RADICALS",
     "RAVES",
     "STAMPEDE"
+   ],
+   "reviewed": "2026-10",
+   "attendingQuestions": [
+    {
+     "q": "How do you assign a Grade Group from a Gleason score?",
+     "module": "Workup & Staging"
+    },
+    {
+     "q": "What is the difference between Gleason 3+4 and 4+3?",
+     "module": "Workup & Staging"
+    },
+    {
+     "q": "What does PSMA PET change, and what can't a negative scan tell you?",
+     "module": "Imaging"
+    },
+    {
+     "q": "What are the major organs at risk in a prostate plan?",
+     "module": "Anatomy & Lymphatics"
+    },
+    {
+     "q": "When would you add ADT to radiation, and for about how long?",
+     "module": "Treatment Paradigms"
+    },
+    {
+     "q": "Why do short, hypofractionated courses work for prostate cancer?",
+     "module": "Treatment Paradigms"
+    },
+    {
+     "q": "After prostatectomy, when is salvage radiation given?",
+     "module": "Treatment Paradigms"
+    }
+   ],
+   "coreTrials": [
+    "ProtecT",
+    "RTOG 9408",
+    "RTOG 9202 / EORTC 22961",
+    "CHHiP / PACE-B",
+    "RADICALS / RAVES / GETUG-AFU 17"
    ],
    "modules": {
     "Epidemiology & Risk Factors": {
@@ -515,12 +720,25 @@
       "Describe how a prostate plan is built and organize toxicity by timing"
      ]
     }
-   },
-   "reviewed": "2026-10"
+   }
   },
   "gyn": {
    "title": "Gynecologic Cancer",
    "summary": "Cervical, endometrial, vulvar, and vaginal cancer, taught the way a radiation oncologist works up a patient: biology, drainage, imaging, stage and risk, then what radiation does.",
+   "mentalModel": [
+    {
+     "steps": [
+      "Which organ?",
+      "MRI: local extent",
+      "PET: nodes and spread",
+      "FIGO stage and risk",
+      "Surgery or definitive chemoRT",
+      "EBRT ± brachytherapy"
+     ]
+    }
+   ],
+   "centralQuestion": "Is the best local treatment surgery or definitive chemoradiation, and if radiation is used, what must it cover (cervix or vaginal cuff, pelvic or para-aortic nodes, groins), and where does brachytherapy fit?",
+   "card": "Cervical, endometrial, vulvar, and vaginal cancer: imaging, stage and risk, and where external beam and brachytherapy fit.",
    "topics": [
     "Cervix",
     "Endometrium",
@@ -565,6 +783,41 @@
     "GOG 37",
     "GOG 205",
     "GROINSS-V"
+   ],
+   "attendingQuestions": [
+    {
+     "q": "Where does vulvar cancer spread first, and what does a positive pelvic node mean?",
+     "module": "Anatomy & Lymphatics"
+    },
+    {
+     "q": "How does PET change the radiation field in cervical cancer?",
+     "module": "Imaging"
+    },
+    {
+     "q": "What makes a cervical cancer stage IIB, and what pushes it to IIIB?",
+     "module": "Workup & Staging"
+    },
+    {
+     "q": "Why can't external beam replace brachytherapy in definitive cervical cancer treatment?",
+     "module": "Treatment Paradigms"
+    },
+    {
+     "q": "Why does overall treatment time matter in cervical chemoradiation?",
+     "module": "Treatment Paradigms"
+    },
+    {
+     "q": "What do the Sedlis and Peters criteria each trigger after radical hysterectomy?",
+     "module": "Treatment Paradigms"
+    },
+    {
+     "q": "After hysterectomy for endometrial cancer, when is vaginal brachytherapy enough?",
+     "module": "Treatment Paradigms"
+    }
+   ],
+   "coreTrials": [
+    "1999 Cisplatin Trials",
+    "PORTEC-2",
+    "GOG 37"
    ],
    "modules": {
     "Epidemiology & Risk Factors": {
@@ -651,6 +904,20 @@
   "cns": {
    "title": "CNS Tumors",
    "summary": "A CNS lesion worked through in order: what it is, where it is, what it looks like, how to classify it, how to treat it, and how to turn the MRI into a safe plan. Brain metastases, glioblastoma, benign skull base tumors, and the spine emergency.",
+   "mentalModel": [
+    {
+     "steps": [
+      "Primary or metastasis?",
+      "Where is it?",
+      "MRI appearance",
+      "Classify (WHO, GPA, spine status)",
+      "Resect or biopsy",
+      "Focal, regional, whole-brain, or craniospinal RT"
+     ]
+    }
+   ],
+   "centralQuestion": "What is this lesion, and should radiation be focal, regional, whole-brain, or craniospinal, given what sits next to it?",
+   "card": "Brain metastases, glioblastoma, benign skull base tumors, and cord compression, from the MRI to a safe plan.",
    "topics": [
     "Primary vs Metastatic",
     "Brain Metastases",
@@ -690,6 +957,43 @@
     "CATNON",
     "Patchell",
     "RTOG 90-05"
+   ],
+   "attendingQuestions": [
+    {
+     "q": "What do T1 post-contrast and T2/FLAIR each show, and which usually defines the GTV?",
+     "module": "Imaging"
+    },
+    {
+     "q": "What is pseudoprogression, and how do you handle it?",
+     "module": "Imaging"
+    },
+    {
+     "q": "How do IDH and 1p/19q status sort adult diffuse gliomas?",
+     "module": "Workup & Decision-Making"
+    },
+    {
+     "q": "A cancer patient has back pain and new leg weakness. What are your first two steps?",
+     "module": "Workup & Decision-Making"
+    },
+    {
+     "q": "Why is SRS alone preferred over SRS plus whole-brain RT for limited brain metastases?",
+     "module": "Treatment Paradigms"
+    },
+    {
+     "q": "What is the standard treatment for glioblastoma in a fit patient?",
+     "module": "Treatment Paradigms"
+    },
+    {
+     "q": "Why does a glioblastoma plan have a CTV when SRS for a brain metastasis usually doesn't?",
+     "module": "Radiation Planning & Toxicity"
+    }
+   ],
+   "coreTrials": [
+    "NCCTG N0574",
+    "Mahajan & N107C",
+    "NRG CC001",
+    "Stupp (EORTC/NCIC)",
+    "Patchell (2005)"
    ],
    "modules": {
     "Tumor Biology & Risk Factors": {
@@ -794,6 +1098,52 @@
   "gi": {
    "title": "GI Cancer",
    "summary": "Six radiation oncology diseases along one tube: what radiation is for in anal, rectal, esophageal, pancreatic, liver, and gastric cancer, from rectal MRI to liver SBRT.",
+   "mentalModel": [
+    {
+     "label": "Anus",
+     "steps": [
+      "Biopsy",
+      "Stage",
+      "Definitive chemoRT",
+      "Response assessment",
+      "Salvage APR if persistent or progressive"
+     ]
+    },
+    {
+     "label": "Rectum",
+     "steps": [
+      "MRI-defined local risk",
+      "Neoadjuvant strategy",
+      "TME or organ preservation"
+     ]
+    },
+    {
+     "label": "Esophagus",
+     "steps": [
+      "Histology and location",
+      "Resectable and fit?",
+      "Neoadjuvant chemoRT then surgery, or definitive chemoRT"
+     ]
+    },
+    {
+     "label": "Pancreas",
+     "steps": [
+      "Resectability on pancreatic-protocol CT",
+      "Systemic therapy first",
+      "Radiation in selected patients"
+     ]
+    },
+    {
+     "label": "Liver (HCC)",
+     "steps": [
+      "Tumor burden, liver function, and fitness",
+      "Resection, ablation, or transplant first",
+      "SBRT when the liver can tolerate it"
+     ]
+    }
+   ],
+   "centralQuestion": "Which of the six GI diseases is this, and what is radiation's job here: curing it, preparing for surgery, sparing an organ, controlling it locally, or relieving symptoms?",
+   "card": "What radiation is for in anal, rectal, esophageal, pancreatic, liver, and gastric cancer.",
    "topics": [
     "Six Treatment Identities",
     "Rectal MRI",
@@ -835,6 +1185,42 @@
     "RTOG 1112",
     "INT-0116",
     "CRITICS"
+   ],
+   "attendingQuestions": [
+    {
+     "q": "Why are inguinal nodes in the anal cancer field but not routinely in a rectal field?",
+     "module": "Anatomy & Lymphatics"
+    },
+    {
+     "q": "What three questions does a rectal MRI answer?",
+     "module": "Imaging"
+    },
+    {
+     "q": "How is pancreatic cancer staged in practice?",
+     "module": "Workup & Staging"
+    },
+    {
+     "q": "Why is anal cancer treated with chemoradiation instead of surgery?",
+     "module": "Treatment Paradigms"
+    },
+    {
+     "q": "How long do you wait before calling residual disease after anal cancer chemoradiation?",
+     "module": "Treatment Paradigms"
+    },
+    {
+     "q": "What is total neoadjuvant therapy, and who might be offered watch-and-wait?",
+     "module": "Treatment Paradigms"
+    },
+    {
+     "q": "What did CROSS establish for esophageal cancer?",
+     "module": "Treatment Paradigms"
+    }
+   ],
+   "coreTrials": [
+    "Nigro",
+    "RAPIDO & PRODIGE 23",
+    "OPRA",
+    "CROSS"
    ],
    "modules": {
     "Epidemiology & Risk Factors": {

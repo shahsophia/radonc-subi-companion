@@ -78,14 +78,14 @@ A3=[(266,239),(232,310),(357,361),(284,388)]
 plate("th-nodes-ax-arch","thoracic","th-nodes-ax-upper.jpg","at3",None,
   lambda im: inpaint(st(im,A3),rects=[(45,240,178,282)]),BL,
   [("a3a","Station 3a",266,239,None),("a2r","Station 2R",232,310,None),("a2l","Station 2L",357,361,None),("a3p","Station 3p",284,388,None)],
-  "Upper mediastinal CT (above the arch) with station contours. Source: JLCS–JASTRO CT atlas of regional lymph node stations, J Radiat Res 2017 (PMC5321185), Fig. 3, CC BY-NC 4.0; station labels removed. The dashed blue line (Line A) separates 3a from 2R/2L.",
+  "Upper mediastinal CT (above the arch) with station contours. Source: JLCS-JASTRO CT atlas of regional lymph node stations, J Radiat Res 2017 (PMC5321185), Fig. 3, CC BY-NC 4.0; station labels removed. The dashed blue line (Line A) separates 3a from 2R/2L.",
   "Axial CT: Above the Arch")
 A5=[(324,147),(393,229),(268,314),(357,332),(421,348),(352,423)]
 plate("th-nodes-ax-ap","thoracic","th-nodes-ax-ap.jpg","at5",None,
   lambda im: inpaint(fill(st(im,A5),[(420,384,500,430),(500,234,628,292),(468,236,500,272)]),rects=[(374,384,422,430)]),BL,
   [("b3a","Station 3a",324,147,"Prevascular, behind the sternum and in front of the great vessels."),("b6","Station 6",393,229,None),("b4r","Station 4R",268,314,None),
    ("b4l","Station 4L",357,332,None),("b5","Station 5",421,348,None),("b3p","Station 3p",352,423,"Behind the trachea, beside the esophagus.")],
-  "CT at the azygos arch / AP window with station contours. Source: JLCS–JASTRO CT atlas, J Radiat Res 2017 (PMC5321185), Fig. 5, CC BY-NC 4.0; station labels removed. The dashed red and blue lines (Lines B and C) are the atlas's boundaries for station 5.",
+  "CT at the azygos arch / AP window with station contours. Source: JLCS-JASTRO CT atlas, J Radiat Res 2017 (PMC5321185), Fig. 5, CC BY-NC 4.0; station labels removed. The dashed red and blue lines (Lines B and C) are the atlas's boundaries for station 5.",
   "Axial CT: Azygos Arch / AP Window")
 A10=[(472,276),(136,337),(297,374),(422,397),(230,400),(353,445)]
 def st2(im,pts,bx=26,by=16):
@@ -97,13 +97,13 @@ plate("th-nodes-ax-sub","thoracic","th-nodes-ax-carina.jpg","at10",None,
   lambda im: st2(im,A10),BL,
   [("c7","Station 7",297,374,None),("c8","Station 8",353,445,None),("c11r","Station 11R",136,337,None),
    ("c10r","Station 10R",230,400,"Right hilar nodes along the right main bronchus. Ipsilateral station 10 = N1."),("c10l","Station 10L",422,397,"Left hilar nodes along the left main bronchus. Ipsilateral = N1; for a right-sided tumor, contralateral hilar = N3.")],
-  "CT at the subcarinal level with station contours. Source: JLCS–JASTRO CT atlas, J Radiat Res 2017 (PMC5321185), CC BY-NC 4.0; station labels removed.",
+  "CT at the subcarinal level with station contours. Source: JLCS-JASTRO CT atlas, J Radiat Res 2017 (PMC5321185), CC BY-NC 4.0; station labels removed.",
   "Axial CT: At & Below the Carina")
 plate("th-compartments","thoracic","th-compartments.jpg","itmig",(0,0,768,1130),None,WH,
   [("prevascular","Prevascular Compartment",175,470,"Pink: behind the sternum, in front of the heart and great vessels. Thymus, fat, and station 3a nodes. Anterior mediastinal masses: thymoma, lymphoma, germ cell tumor, thyroid."),
    ("visceral","Visceral Compartment",300,560,"Blue: heart, pericardium, great vessels, trachea, carina, main bronchi, esophagus, and most mediastinal nodes. Where most lung cancer nodal disease lives."),
    ("paravertebral","Paravertebral Compartment",565,600,"Yellow: along the spine. Sympathetic chain and nerve roots; neurogenic tumors arise here."),
-   ("superior","Great Vessels & Trachea (Upper Mediastinum)",330,160,"The upper part of the visceral compartment: trachea, esophagus, and great vessels. In the classic scheme this is the superior mediastinum, above the sternal angle (T4–T5)."),
+   ("superior","Great Vessels & Trachea (Upper Mediastinum)",330,160,"The upper part of the visceral compartment: trachea, esophagus, and great vessels. In the classic scheme this is the superior mediastinum, above the sternal angle (T4-T5)."),
    ("heart","Heart & Pericardium",230,600,None),("diaphragm","Diaphragm",250,705,None)],
   "Sagittal diagram of the ITMIG mediastinal compartments: prevascular (pink), visceral (blue), paravertebral (yellow). Source: Zhao M et al., Front Oncol 2026 (PMC13056659), Fig. 1, CC BY 4.0.")
 plate("th-img-nodes","thoracic","th-img-nodes.jpg","mednodes",(20,20,722,470),
@@ -121,7 +121,7 @@ plate("th-img-mri-brain","thoracic","th-mri-brain.jpg","brmets",(0,0,778,845),
   "Axial T1 post-contrast MRI: brain metastases from squamous cell lung cancer. Source: Jeon J et al., Cancers 2026 (PMC13163019), Fig. 2A, CC BY 4.0; label removed.")
 plate("th-img-mri-pancoast","thoracic","th-mri-pancoast.jpg","pancoast",None,
   lambda im: cv2.inpaint(im,darkmask(im,[(78,268,166,356)],thr=35),5,cv2.INPAINT_TELEA),BL,
-  [("apical-mass","Apical Mass",150,520,None),("plexus","Brachial Plexus / Superior Sulcus",165,360,"The thoracic inlet above the tumor, where the lower trunk (C8–T1) crosses the first rib. Here the fat plane is preserved: MRI is the best test for plexus invasion (T4)."),
+  [("apical-mass","Apical Mass",150,520,None),("plexus","Brachial Plexus / Superior Sulcus",165,360,"The thoracic inlet above the tumor, where the lower trunk (C8-T1) crosses the first rib. Here the fat plane is preserved: MRI is the best test for plexus invasion (T4)."),
    ("canal","Spinal Canal",285,430,"Bright CSF around the cord on T2. Tumor tracking through the neural foramina toward the canal threatens the cord."),
    ("vb","Vertebral Body",285,545,None)],
   "Coronal T2 MRI of a right superior sulcus tumor with the superior sulcus structures intact. Source: Manenti G et al., Case Rep Radiol 2013 (PMC3626318), Fig. 4, CC BY 3.0; arrow removed.")

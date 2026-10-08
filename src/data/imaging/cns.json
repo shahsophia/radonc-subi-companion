@@ -347,7 +347,7 @@
       "label": "Medulla",
       "x": 49.5,
       "y": 57.0,
-      "blurb": "Lowest brainstem; CN IX–XII nuclei."
+      "blurb": "Lowest brainstem; CN IX-XII nuclei."
      },
      {
       "id": "m-tonsils",
@@ -461,60 +461,54 @@
    },
    {
     "id": "sag-spine",
-    "title": "Sagittal Spine: Cord & Cauda Equina",
+    "title": "Sagittal T2 Spine: Cord Compression",
     "style": "mri",
-    "caption": "Placeholder MRI-style slice (sagittal T2 of the thoracolumbar spine). Swap in a real de-identified MRI image here.",
+    "caption": "Sagittal T2 MRI of the thoracic spine: a pathologic T5 fracture from metastatic rectal cancer, with epidural tumor compressing the cord. Kuah T et al., Cancers 2022 (PMC9265325), Fig. 10a, CC BY 4.0.",
     "hotspots": [
      {
       "id": "sp-cord",
       "label": "Spinal Cord",
-      "x": 56,
-      "y": 30,
-      "blurb": "Organ at risk in every spine and craniospinal plan: injury means myelopathy."
+      "x": 52.4,
+      "y": 31,
+      "blurb": "Intermediate gray on T2, outlined by bright CSF in front and behind. The cord usually ends at L1-L2 (conus), so a cord compression level is always above that."
      },
      {
-      "id": "sp-conus",
-      "label": "Conus Medullaris (L1–L2)",
-      "x": 56,
-      "y": 56,
-      "blurb": "Where the cord ends in adults. Compression here causes bowel/bladder dysfunction and saddle anesthesia."
-     },
-     {
-      "id": "sp-cauda",
-      "label": "Cauda Equina",
-      "x": 56,
-      "y": 72,
-      "blurb": "Nerve roots below the conus. More tolerant than cord."
-     },
-     {
-      "id": "sp-thecal",
-      "label": "Thecal Sac End (S2)",
-      "x": 56,
-      "y": 88,
-      "blurb": "The bottom of CSF: the inferior border for craniospinal irradiation."
+      "id": "sp-csf",
+      "label": "CSF Around the Cord",
+      "x": 57,
+      "y": 62,
+      "blurb": "Bright on T2. Losing this CSF rim around the cord is what separates high-grade compression (Bilsky 2-3) from lower grades."
      },
      {
       "id": "sp-vb",
-      "label": "Vertebral Body",
-      "x": 36,
-      "y": 40,
-      "blurb": "Most spine metastases start here and grow back into the canal."
+      "label": "Normal Vertebral Body",
+      "x": 47,
+      "y": 60,
+      "blurb": "Square, with flat endplates and a normal height. Compare it with the collapsed level above."
+     },
+     {
+      "id": "sp-met",
+      "label": "Collapsed Vertebral Body (Metastasis)",
+      "x": 48.5,
+      "y": 45.5,
+      "blurb": "Pathologic fracture: the body has lost height and the marrow signal is abnormal. Most spinal metastases start in the vertebral body."
      },
      {
       "id": "sp-epi",
-      "label": "Epidural Space",
-      "x": 48,
-      "y": 40,
-      "blurb": "Tumor here compresses the cord: metastatic epidural spinal cord compression (Bilsky grade)."
+      "label": "Epidural Tumor Compressing the Cord",
+      "x": 54,
+      "y": 44,
+      "blurb": "Tumor pushing back from the vertebral body into the canal. With neurologic deficits this is an emergency: dexamethasone now, then surgery and/or radiation."
      },
      {
       "id": "sp-post",
       "label": "Posterior Elements",
-      "x": 72,
-      "y": 40,
-      "blurb": "Pedicles, lamina, spinous process."
+      "x": 62,
+      "y": 52,
+      "blurb": "Lamina and spinous processes. Tumor here, or a fracture involving both front and back, adds to spinal instability (SINS score)."
      }
-    ]
+    ],
+    "image": "images/cns/cns-spine-mri.jpg"
    }
   ],
   "gallery": [
@@ -613,12 +607,6 @@
     "caption": "Treated glioblastoma with a new enhancing lesion (left: T1 post-contrast) that was pathology-proven radiation necrosis; perfusion map (right) shows the lesion is not hyperperfused. Source: Mohamedbaqer Easa A et al., Cureus 2025 (PMC12393895), Fig. 2A-B, CC BY 4.0; circles and panel letters removed. Look for: New/Growing Enhancement; Perfusion (rCBV).",
     "style": "mri",
     "image": "images/cns/cns-post-tx.jpg"
-   },
-   {
-    "title": "MRI Spine: Cord Compression",
-    "caption": "Sagittal T2 MRI of the thoracic spine: pathologic T5 fracture from metastatic rectal cancer with epidural extension compressing the cord. Source: Kuah T et al., Cancers 2022 (PMC9265325), Fig. 10a, CC BY 4.0. Look for: Vertebral Body Metastasis; Epidural Tumor; Compressed Spinal Cord; CSF Around the Cord.",
-    "style": "mri",
-    "image": "images/cns/cns-spine-mri.jpg"
    }
   ]
  }

@@ -11,7 +11,7 @@
   "category": "Epidemiology & Risk Factors",
   "front": "What are the three practical breast cancer groups by receptor status, and what is the systemic backbone of each?",
   "back": "HR+/HER2-: endocrine therapy. HER2+: HER2-directed therapy (trastuzumab ± pertuzumab) with chemo. Triple-negative: chemo, often with immunotherapy.",
-  "extra": "HR+/HER2- is the most common and often relatively indolent; triple-negative is often more aggressive and more common in younger patients and BRCA1 carriers. The luminal/basal-like names map roughly onto these groups."
+  "extra": "HR+/HER2- is the most common and often relatively indolent; triple-negative is often more aggressive and more common in younger patients and BRCA1 carriers. The luminal/basal-like names map roughly onto these groups. Endocrine therapy is usually tamoxifen before menopause and an aromatase inhibitor after."
  },
  {
   "id": "br-28",
@@ -42,6 +42,13 @@
   "extra": "LCIS is no longer staged as Tis. Both ductal and lobular cancers start in the terminal duct lobular unit."
  },
  {
+  "id": "br-31",
+  "category": "Epidemiology & Risk Factors",
+  "front": "What protein is lost in invasive lobular carcinoma, and why is ILC hard to see on a mammogram?",
+  "back": "E-cadherin. Without it, cells spread in single-file lines instead of forming a mass, so mammography underestimates ILC and MRI is often used to define its extent.",
+  "extra": "ILC is more often multicentric or bilateral, almost always ER+/HER2-, lower grade, and less FDG-avid."
+ },
+ {
   "id": "br-10",
   "category": "Anatomy & Lymphatics",
   "front": "Which breast tumors are most likely to drain to the internal mammary nodes, and why does covering them matter for RT?",
@@ -61,13 +68,6 @@
   "front": "A standard axillary dissection removes which levels, and what does regional nodal irradiation add?",
   "back": "Levels I and II. Regional nodal RT covers level III (infraclavicular), the supraclavicular nodes, and usually the internal mammary nodes, plus any undissected axilla at risk.",
   "extra": "The brachial plexus sits behind the supraclavicular and level III targets, so high nodal doses risk plexopathy."
- },
- {
-  "id": "br-31",
-  "category": "Anatomy & Lymphatics",
-  "front": "What protein is lost in invasive lobular carcinoma, and why is ILC hard to see on a mammogram?",
-  "back": "E-cadherin. Without it, cells spread in single-file lines instead of forming a mass, so mammography underestimates ILC and MRI is often used to define its extent.",
-  "extra": "ILC is more often multicentric or bilateral, almost always ER+/HER2-, lower grade, and less FDG-avid."
  },
  {
   "id": "br-17",
@@ -110,13 +110,6 @@
   "front": "Which breast cancer patients need systemic staging imaging (CT chest/abdomen/pelvis + bone scan, or PET/CT)?",
   "back": "Higher-risk or locally advanced disease (e.g., clinical stage III: T4, N2-3, inflammatory), or anyone whose symptoms, exam, or labs suggest metastasis",
   "extra": "Often considered for some stage II patients going to neoadjuvant therapy; it is not a strict stage-number rule. Brain MRI only for symptoms. In asymptomatic early-stage disease, body imaging finds more false positives than metastases. PET is good at finding hidden internal mammary, infraclavicular, and supraclavicular nodes."
- },
- {
-  "id": "br-13",
-  "category": "Workup & Staging",
-  "front": "A breast cancer is HER2 2+ on IHC. What happens next?",
-  "back": "Reflex FISH to check for HER2 gene amplification (2+ is equivocal)",
-  "extra": "IHC 0-1+ = negative; 3+ = positive."
  },
  {
   "id": "br-15",
@@ -250,13 +243,6 @@
   "front": "How is chemotherapy sequenced with breast radiation?",
   "back": "Generally not at the same time: cytotoxic chemo is given before surgery or after surgery but before RT.",
   "extra": "Concurrent chemo with breast RT adds skin and other toxicity. Anti-HER2 drugs and endocrine therapy can continue during RT; endocrine therapy then runs for years."
- },
- {
-  "id": "br-27",
-  "category": "Treatment Paradigms",
-  "front": "Which adjuvant endocrine therapy is used before vs after menopause?",
-  "back": "Premenopausal: tamoxifen. Postmenopausal: an aromatase inhibitor.",
-  "extra": "Given for 5-10 years. Tamoxifen: clots and endometrial cancer; aromatase inhibitors: bone loss and arthralgias."
  },
  {
   "id": "br-55",
